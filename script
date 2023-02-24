@@ -1,0 +1,56 @@
+create database if not exists oldegg;
+ 
+use oldegg;
+ 
+drop table if exists Motherboards;
+drop table if exists Users;
+
+create table Motherboards (
+  id     int,
+  brand  varchar(50),
+  model varchar(50),
+  price  float,
+  qty    int,
+  formfactor varchar(50),
+  primary key (id)
+  );
+
+create table Users (
+    id int,
+    email varchar(50),
+    name varchar(50),
+    password varchar(50),
+    mobile_number int,
+    primary key (id)
+);
+
+insert into Motherboards values (1, 'Asus', 'B350', 350, 1, 'matx');
+insert into Motherboards values (2, 'Asus', 'B450', 450, 3, 'matx');
+insert into Motherboards values (4, 'Asus', 'B550', 550, 2, 'matx');
+insert into Motherboards values (3, 'Asus', 'B250', 250, 3, 'matx');
+insert into Motherboards values (5, 'Asrock', 'B450', 450, 4, 'matx');
+insert into Motherboards values (6, 'Asrock', 'B350', 350, 3, 'matx');
+insert into Motherboards values (7, 'Asrock', 'B550', 550, 3, 'matx');
+insert into Motherboards values (8, 'MSI', 'B450', 450, 3, 'matx');
+insert into Motherboards values (9, 'MSI', 'B350', 350, 4, 'matx');
+insert into Motherboards values (10, 'MSI', 'B550', 550, 3, 'atx');
+insert into Motherboards values (11, 'Asus', 'B350', 350, 1, 'atx');
+insert into Motherboards values (12, 'Asus', 'B450', 450, 3, 'atx');
+insert into Motherboards values (14, 'Asus', 'B550', 550, 2, 'atx');
+insert into Motherboards values (13, 'Asus', 'B250', 250, 3, 'atx');
+insert into Motherboards values (15, 'Asrock', 'B450', 450, 4, 'atx');
+insert into Motherboards values (16, 'Asrock', 'B350', 350, 3, 'atx');
+insert into Motherboards values (17, 'Asrock', 'B550', 550, 3, 'atx');
+insert into Motherboards values (18, 'MSI', 'B450', 450, 3, 'atx');
+insert into Motherboards values (19, 'MSI', 'B350', 350, 4, 'atx');
+insert into Motherboards values (20, 'MSI', 'B550', 550, 3, 'atx');
+
+
+insert into Users values (1, 'chockhong@gmail.com', 'lim chock hong', 'passwordlim', 837390484);
+insert into Users values (2, 'Jamesliu@gmail.com', 'James Liu', 'passwordliu', 84730572);
+insert into Users values (3, 'KellyTay@gmail.com', 'Kelly tay', 'passwordtay', 94728484);
+insert into Users values (4, 'BrandonTan@gmail.com', 'Brandon Tan', 'passwordTan', 93846289);
+insert into Users values (5, 'DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943);
+
+select * from Motherboards;
+select * from Users;
