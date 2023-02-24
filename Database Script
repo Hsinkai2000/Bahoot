@@ -1,0 +1,88 @@
+create database if not exists oldegg;
+ 
+use oldegg;
+ 
+drop table if exists Motherboards;
+drop table if exists GPUs;
+drop table if exists CPUs;
+drop table if exists RAMs;
+drop table if exists Cases;
+drop table if exists Storages;
+drop table if exists Coolers;
+drop table if exists Users;
+
+
+create table Motherboards (
+  id     int NOT NULL AUTO_INCREMENT,
+  brand  varchar(50),
+  model varchar(50),
+  socket varchar(50),
+  price  float,
+  qty    int,
+  formfactor varchar(50),
+  link varchar(150),
+  primary key (id)
+);
+
+create table GPUs(
+  id int NOT NULL AUTO_INCREMENT,
+  maker varchar(50),
+  brand varchar(50),
+  model varchar(50),
+  price float,
+  qty int,
+  link varchar(150),
+  primary key (id)
+);
+
+create table CPUs(
+  id int NOT NULL AUTO_INCREMENT,
+  brand varchar(50),
+  model varchar(50),
+  price float,
+  qty int,
+  link varchar(150),
+  primary key (id)
+);
+
+create table Users (
+    id int NOT NULL AUTO_INCREMENT,
+    email varchar(50),
+    name varchar(50),
+    password varchar(50),
+    mobile_number int,
+    primary key (id)
+);
+
+insert into Motherboards values("MSI", "MAG B550 TOMAHAWK", "AM4", 335.45, 116, "ATX", "https://m.media-amazon.com/images/I/910jyKG9QlL.jpg");
+insert into Motherboards values("MSI", "B550 PRO-VDH WIFI", "AM4", 254.92, 79, "MATX","https://m.media-amazon.com/images/I/91beeVTo4pL.jpg");
+insert into Motherboards values("Asus", "TUF GAMING B650-PLUS WIFI", "AM5", 346.96, 3, "ATX","https://media.karousell.com/media/photos/products/2022/10/12/asus_tuf_gaming_b650plus_wifi__1665598922_cdd698da");
+insert into Motherboards values("Gigabyte", "Z790 AORUS ELITE AX", "LGA1700", 413.63, 6, "ATX","https://static.gigabyte.com/StaticFile/Image/Global/0c6899b3e79329e5c8236fda4441fe0e/Product/32578/Png");
+insert into Motherboards values("Gigabyte", "B650 AORUS ELITE AX", "AM5", 435.73, 9, "ATX","https://media.ldlc.com/r1600/ld/products/00/05/98/55/LD0005985556.jpg");
+insert into Motherboards values("ASRock", "B660M-HDV", "LGA1700", 216.86, 3, "MATX","https://www.asrock.com/mb/photo/B660M-HDV(M1).png");
+insert into Motherboards values("Asus", "ROG STRIX B550-F GAMING WIFI II", "AM4", 360.32, 7, "ATX","https://simlimsquare.com.sg/image/images/620da7ae93efb.jpg?p=full");
+insert into Motherboards values("ASRock", "Z590 Pro4", "LGA1200", 253.60, 2, "ATX","https://m.media-amazon.com/images/I/91+aWDgEKYL.jpg");
+insert into Motherboards values("Asus", "Prime B550M-A WiFi", "AM4", 200.00, 1, "MATX","https://m.media-amazon.com/images/I/91L1ts-j0LL._AC_UF894,1000_QL80_.jpg");
+
+insert into GPUs values("AMD","SAPPHIRE", "RX 6800", 1000, 1, "https://m.media-amazon.com/images/I/81EkCyIHlJL.jpg");
+insert into GPUs values("NVIDIA","MSI", "RTX 2070 SUPER", 700, 2, "https://m.media-amazon.com/images/I/61-Y84LPYzL.jpg");
+insert into GPUs values("NVIDIA","ASUS", "RTX 4090", 2581.54, 15, "https://bytesize.com.sg/wp-content/uploads/2022/10/ROG-Strix-GeForce-RTX®-4090-OC-Edition-24GB-GDDR6X.png");
+insert into GPUs values("AMD","POWERCOLOR", "RX 7900 XTX", 1924, 18, "https://www.powercolor.com/_upload/images//2211180944190.png");
+insert into GPUs values("NVIDIA","ZOTAC", "GTX 1060", 330, 5, "https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-p10600b-10m_inage1.jpg?itok=yPhrJtMX");
+insert into GPUs values("NVIDIA","MSI", "RTX 3080", 1200, 2, "https://m.media-amazon.com/images/I/81UV-e3xgeL.jpg");
+insert into GPUs values("AMD","XFX", "RX 6800XT", 1100, 7, "https://m.media-amazon.com/images/I/81-70VBUexL.jpg");
+insert into GPUs values("AMD","GIGABYTE", "RX 6500XT", 220, 27, "https://cf.shopee.sg/file/3fa348fcf7624dfb97c398e5d51eab3f");
+insert into GPUs values("AMD","MSI", "RX 6650", 341.63, 31, "https://asset.msi.com/resize/image/global/product/product_1652175968d2d39b873b3c725249e989821bd092de.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png");
+
+insert into CPUs values("AMD", "RYZEN 7 5800X3D",550,1,"https://m.media-amazon.com/images/I/61Kq99IRdcL.jpg");
+insert into CPUs values("AMD", "RYZEN 7 5600X",290.17,53,"https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg");
+insert into CPUs values("AMD", "RYZEN 7 5800X",382.31,29,"https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg");
+
+insert into Users values ('chockhong@gmail.com', 'lim chock hong', 'passwordlim', 837390484);
+insert into Users values ('Jamesliu@gmail.com', 'James Liu', 'passwordliu', 84730572);
+insert into Users values ('KellyTay@gmail.com', 'Kelly tay', 'passwordtay', 94728484);
+insert into Users values ('BrandonTan@gmail.com', 'Brandon Tan', 'passwordTan', 93846289);
+insert into Users values ('DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943);
+
+select * from Motherboards;
+select * from Users;
