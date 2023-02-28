@@ -7,6 +7,10 @@ body{
     color: darkslategrey;
 }
 
+.bg_default{
+  background-color: #f4ece2;
+}
+
 .bg_orange{
     background-color: rgb(244, 183, 91) !important;
     color: aliceblue !important;
