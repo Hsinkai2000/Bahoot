@@ -85,4 +85,6 @@ insert into Users values (NULL,'BrandonTan@gmail.com', 'Brandon Tan', 'passwordT
 insert into Users values (NULL,'DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943);
 
 select * from Motherboards;
+select * from GPUs;
+select * from CPUs;
 select * from Users;
