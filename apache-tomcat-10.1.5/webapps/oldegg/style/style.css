@@ -55,8 +55,8 @@ background: #555;
   font-size:15px;
   line-height:24px;
   color:#737373;
-  background: rgb(243,224,197);
-background: linear-gradient(180deg, rgba(243,224,197,1) 0%, rgba(229,201,161,1) 26%, rgba(226,195,152,1) 100%);
+  background: rgb(244,236,226);
+background: linear-gradient(180deg, rgba(244,236,226,1) 0%, rgba(234,218,198,1) 33%, rgba(231,213,190,1) 100%);
 }
 .site-footer hr
 {

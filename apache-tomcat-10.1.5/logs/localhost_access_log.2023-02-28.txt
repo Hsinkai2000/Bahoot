@@ -805,3 +805,6 @@
 0:0:0:0:0:0:0:1 - - [28/Feb/2023:22:39:02 +0800] "GET /oldegg/style/style.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [28/Feb/2023:22:41:42 +0800] "GET /oldegg/index.html HTTP/1.1" 200 7993
 0:0:0:0:0:0:0:1 - - [28/Feb/2023:22:41:42 +0800] "GET /oldegg/style/style.css HTTP/1.1" 200 3303
+0:0:0:0:0:0:0:1 - - [28/Feb/2023:22:46:53 +0800] "GET /oldegg/index.html HTTP/1.1" 200 7993
+0:0:0:0:0:0:0:1 - - [28/Feb/2023:22:46:53 +0800] "GET /oldegg/style/style.css HTTP/1.1" 200 3303
+0:0:0:0:0:0:0:1 - - [28/Feb/2023:22:46:53 +0800] "GET /oldegg/images/oldegg-logo-transparent.png HTTP/1.1" 304 -
