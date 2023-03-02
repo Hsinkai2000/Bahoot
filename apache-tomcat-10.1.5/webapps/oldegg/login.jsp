@@ -38,7 +38,7 @@
           </div>
           <div class="col"></div>
         </div>
-        <form>
+        <form method="get" action="login">
           <div class="form-group pb-3">
             <div class="form-row row">
               <div class="col-3"></div>
@@ -55,6 +55,8 @@
                   class="form-control"
                   id="inputEmail"
                   placeholder="example@example.com"
+                  name="email"
+                  required
                 />
               </div>
               <div class="col-3"></div>
@@ -72,23 +74,33 @@
               <div class="col-3"></div>
               <div class="col-6">
                 <input
-                  type="password"
+                  type="text"
                   class="form-control"
                   id="inputPassword"
                   placeholder="***********"
+                  name="password"
+                  required
                 />
               </div>
               <div class="col-3"></div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <p style="color:red"><%= request.getParameter("data") %></p>
+            </div>
+            <div class="col-3"></div>
+          </div>
           <div class="row">
             <div class="col-3"></div>
             <div class="col-2">
-              <button type="submit" class="btn bg_orange">Sign in</button>
+              <button type="submit" class="btn bg_orange" >Sign in</button>
             </div>
             <div class="col-2">
-              <button type="submit" class="btn">
-                <a class="underline" href="signup.html">Sign Up</a>
+              <button class="btn">
+                <a class="underline" href="signup.jsp">Sign Up</a>
               </button>
             </div>
             <div class="col"></div>

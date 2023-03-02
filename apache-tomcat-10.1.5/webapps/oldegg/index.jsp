@@ -79,7 +79,7 @@
           <a class="nav-item nav-link" href="#"
             ><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"
           /></a>
-          <a class="nav-item nav-link" href="login.html"
+          <a class="nav-item nav-link" href="login.jsp"
             ><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
           /></a>
         </div>
