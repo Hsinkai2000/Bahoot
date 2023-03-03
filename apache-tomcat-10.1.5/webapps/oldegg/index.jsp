@@ -147,7 +147,7 @@
       <div class="pb-4 pt-4"></div>
 
       <div class="d-flex mb-3">
-        <h4 class="p-2">On Sale</h4>
+        <h4 class="p-2">${header.id}</h4>
         <a class="ms-auto p-2">see all ></a>
       </div>
 

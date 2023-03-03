@@ -181,3 +181,12 @@
 0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:10:34 +0800] "GET /oldegg/login.jsp HTTP/1.1" 200 3773
 0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:10:42 +0800] "GET /oldegg/login?email=chockhong%40gmail.com&password=passwordlim HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:10:42 +0800] "GET /oldegg/index.jsp?id=1 HTTP/1.1" 200 8960
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:32:44 +0800] "GET /oldegg/login.jsp HTTP/1.1" 200 3827
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:32:56 +0800] "GET /oldegg/login?email=asd%40asd.com&password=asdas HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:32:56 +0800] "GET /oldegg/login.jsp?data=Wrong%20Email%20or%20Password HTTP/1.1" 200 3846
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:33:14 +0800] "GET /oldegg/login?email=Jamesliu%40gmail.com&password=passwordliu HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:33:14 +0800] "GET /oldegg/index.jsp?id=2 HTTP/1.1" 200 8960
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:34:14 +0800] "GET /oldegg/login.jsp HTTP/1.1" 200 3827
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:34:16 +0800] "GET /oldegg/signup.jsp HTTP/1.1" 200 4952
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:40:35 +0800] "GET /oldegg/index.html HTTP/1.1" 404 772
+0:0:0:0:0:0:0:1 - - [02/Mar/2023:20:40:40 +0800] "GET /oldegg/index.jsp HTTP/1.1" 200 8960

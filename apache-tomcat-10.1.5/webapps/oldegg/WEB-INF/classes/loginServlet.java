@@ -1,5 +1,9 @@
 // To save as "<TOMCAT_HOME>\webapps\hello\WEB-INF\classes\QueryServlet.java".
 import java.io.*;
+import java.net.URI;
+import java.net.http.HttpHeaders;
+import java.net.http.HttpRequest;
+import java.util.logging.*;
 import java.sql.*;
 import jakarta.servlet.*; 
 import jakarta.servlet.*;             // Tomcat 10
@@ -11,7 +15,7 @@ import jakarta.servlet.annotation.*;
 
 @WebServlet("/login")   // Configure the request URL for this servlet (Tomcat 7/Servlet 3.0 upwards)
 public class loginServlet extends HttpServlet {
-
+   private static final Logger LOGGER = Logger.getLogger(loginServlet.class.getName());
    // The doGet() runs once per HTTP GET request to this servlet.
    @Override
    public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -42,8 +46,13 @@ public class loginServlet extends HttpServlet {
                   response.sendRedirect("http://localhost:9999/oldegg/login.jsp?data="+data);
             }
             else{
-                  int data = id;
-                  response.sendRedirect("http://localhost:9999/oldegg/index.jsp?id="+data);
+                  LOGGER.info("MyServlet called"); // Add a logging statement
+                  response.setIntHeader("id", id);
+                  try{
+                        response.sendRedirect("http://localhost:9999/oldegg/index.jsp");
+                    }catch(Exception e){
+                        
+                    }
             }
         }catch(Exception ex) {
          };

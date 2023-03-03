@@ -38,7 +38,7 @@
           </div>
           <div class="col"></div>
         </div>
-        <form>
+        <form  method="post" action="signup">
           <div class="form-group pb-3">
             <div class="form-row row">
               <div class="col-3"></div>
@@ -90,6 +90,28 @@
             <div class="form-row row">
               <div class="col-3"></div>
               <div class="col-6">
+                <label for="inputMobile"><h7>Mobile Number</h7></label>
+              </div>
+              <div class="col-3"></div>
+            </div>
+            <div class="form-row row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputMobile"
+                  name="mobile"
+                  required
+                />
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+          <div class="form-group pb-4">
+            <div class="form-row row">
+              <div class="col-3"></div>
+              <div class="col-6">
                 <label for="inputPassword"><h7>Password</h7></label>
               </div>
               <div class="col-3"></div>
@@ -114,7 +136,7 @@
             <div class="form-row row">
               <div class="col-3"></div>
               <div class="col-6">
-                <label for="inputMobile"><h7>Mobile Number</h7></label>
+                <label for="inputConfirm"><h7>Confirm Password</h7></label>
               </div>
               <div class="col-3"></div>
             </div>
@@ -124,14 +146,24 @@
                 <input
                   type="tel"
                   class="form-control"
-                  id="inputMobile"
-                  name="mobile"
-                  value="mobile"
+                  id="inputConfirm"
+                  name="confirm"
                   required
                 />
               </div>
               <div class="col-3"></div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <% if(request.getParameter("data") != null) { %>
+                <p style="color: red;"> <%= request.getParameter("data")%></p>
+              <%} else{%>
+                <p></p>
+              <%} %>
+            </div>
+            <div class="col-3"></div>
           </div>
           <div class="row">
             <div class="col-3"></div>
