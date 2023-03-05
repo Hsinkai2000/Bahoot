@@ -5,15 +5,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Old Egg | Home</title>
-    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png">
+    <title>OldEgg | <%= response.getHeader("name") %></title>
+    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link href="./style/style.css" rel="stylesheet" />
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body class="bg_default">
     <nav
@@ -88,75 +88,71 @@
       </div>
     </nav>
 
-    <div style="padding-left: 50px; padding-right: 50px" >
-      <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
-      <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="#"
-          >All</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="#"
-          >GPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="#"
-          >CPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="#"
-          >Motherboards</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="#"
-          >Rams</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="#"
-          >Storage</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="#"
-          >Cases</a
-        >
-      </nav>
-
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Recommended</h4>
-        <a class="ms-auto p-2">see all ></a>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <img
+                class="zoom"
+                
+                src="<%= response.getHeader("link") %>"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <p>
+                Have a similar item?
+                <a class="underline" href="#">Sell yours</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <h2><%= response.getHeader("name") %></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <h3>$<%= response.getHeader("price") %></h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <button class="btn bg_orange" style="width: 400px">
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <button class="btn bg_orange" style="width: 400px">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <p>Sold by <a href="#" class="underline">Anonymous panda</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <p class="text-justify">
+                <%= response.getHeader("itemInfo") %>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div
-        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
-        style="height: 300px"
-      >
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-      </div>
-
       <div class="pb-4 pt-4"></div>
 
       <div class="d-flex mb-3">
-        <h4 class="p-2">
-          <% if(response.getHeader("id") != null) { %>
-            <p style="color: red;"> <%=response.getHeader("id")%></p>
-          <%} else{%>
-            <p></p>
-          <%} %>
-        </h4>
-        <a class="ms-auto p-2">see all ></a>
+        <h4>Similar Items</h4>
+        <a class="ms-auto">see all ></a>
       </div>
 
       <div
@@ -256,6 +252,7 @@
         </div>
       </footer>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

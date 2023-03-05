@@ -1,188 +1,141 @@
-03-Mar-2023 14:58:12.493 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 14:58:12.493 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 14:58:16.393 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 14:58:16.394 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 14:58:16.395 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1c80e49b')
-03-Mar-2023 15:04:25.818 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 15:04:25.818 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 15:04:30.422 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 15:04:30.422 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 15:04:30.425 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@15c25153')
-03-Mar-2023 15:06:39.469 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 15:06:39.469 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 15:06:43.861 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 15:06:43.861 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 15:06:43.863 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@458342d3')
-03-Mar-2023 15:10:49.575 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 15:10:49.576 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 15:12:17.959 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 15:12:17.959 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 15:12:17.961 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@9ed238c')
-03-Mar-2023 15:20:45.094 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 15:20:45.094 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 15:20:48.893 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 15:20:48.893 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 15:20:48.895 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1c80e49b')
-03-Mar-2023 15:23:48.337 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 15:23:48.337 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 15:23:52.253 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 15:23:52.254 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 15:23:52.255 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@15c25153')
-03-Mar-2023 15:24:24.891 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 15:24:24.892 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 15:24:29.358 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 15:24:29.359 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 15:24:29.360 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@9ed238c')
-03-Mar-2023 15:28:16.339 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 15:28:16.339 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 15:28:20.798 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 15:28:20.799 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 15:28:20.800 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@15c25153')
-03-Mar-2023 16:15:12.279 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 16:15:12.279 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 16:15:16.473 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 16:15:16.473 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 16:15:16.475 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@9ed238c')
-03-Mar-2023 16:17:24.363 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 16:17:24.364 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 16:17:28.619 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 16:17:28.619 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 16:17:28.621 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@56276db8')
-03-Mar-2023 16:23:04.897 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 16:23:04.897 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 16:23:08.741 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 16:23:08.741 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 16:23:08.744 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1252b961')
-03-Mar-2023 16:24:49.662 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 16:24:49.662 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 16:24:54.279 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 16:24:54.280 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 16:24:54.282 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@458342d3')
-03-Mar-2023 16:26:12.047 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 16:26:12.047 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 16:26:17.021 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 16:26:17.021 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 16:26:17.024 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1252b961')
-03-Mar-2023 16:26:47.670 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 16:26:47.670 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 16:26:52.431 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 16:26:52.432 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 16:26:52.434 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@458342d3')
-03-Mar-2023 16:28:36.066 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 16:28:36.066 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 16:28:40.717 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 16:28:40.717 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 16:28:40.719 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1252b961')
-03-Mar-2023 16:30:37.600 SEVERE [http-nio-9999-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
-
-An error occurred at line: [160] in the jsp file: [/signup.jsp]
-The method print(boolean) in the type JspWriter is not applicable for the arguments ()
-157:           <div class="row">
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <p style="color:red"><%= if(request.getParameter("data") != null) {request.getParameter("data")} %></p>
-161:             </div>
-162:             <div class="col-3"></div>
-163:           </div>
-
-
-An error occurred at line: [160] in the jsp file: [/signup.jsp]
-Syntax error, insert ")" to complete MethodInvocation
-157:           <div class="row">
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <p style="color:red"><%= if(request.getParameter("data") != null) {request.getParameter("data")} %></p>
-161:             </div>
-162:             <div class="col-3"></div>
-163:           </div>
-
-
-An error occurred at line: [160] in the jsp file: [/signup.jsp]
-Syntax error, insert ";" to complete Statement
-157:           <div class="row">
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <p style="color:red"><%= if(request.getParameter("data") != null) {request.getParameter("data")} %></p>
-161:             </div>
-162:             <div class="col-3"></div>
-163:           </div>
-
-
-An error occurred at line: [160] in the jsp file: [/signup.jsp]
-Syntax error on tokens, delete these tokens
-157:           <div class="row">
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <p style="color:red"><%= if(request.getParameter("data") != null) {request.getParameter("data")} %></p>
-161:             </div>
-162:             <div class="col-3"></div>
-163:           </div>
-
-
-An error occurred at line: [312] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/signup_jsp.java]
-Syntax error, insert "else Statement" to complete IfStatement
-
-An error occurred at line: [312] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/signup_jsp.java]
-Syntax error, insert "}" to complete Block
-
-Stacktrace:] with root cause
-	org.apache.jasper.JasperException: Unable to compile class for JSP: 
-
-An error occurred at line: [160] in the jsp file: [/signup.jsp]
-The method print(boolean) in the type JspWriter is not applicable for the arguments ()
-157:           <div class="row">
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <p style="color:red"><%= if(request.getParameter("data") != null) {request.getParameter("data")} %></p>
-161:             </div>
-162:             <div class="col-3"></div>
-163:           </div>
-
-
-An error occurred at line: [160] in the jsp file: [/signup.jsp]
-Syntax error, insert ")" to complete MethodInvocation
-157:           <div class="row">
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <p style="color:red"><%= if(request.getParameter("data") != null) {request.getParameter("data")} %></p>
-161:             </div>
-162:             <div class="col-3"></div>
-163:           </div>
-
-
-An error occurred at line: [160] in the jsp file: [/signup.jsp]
-Syntax error, insert ";" to complete Statement
-157:           <div class="row">
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <p style="color:red"><%= if(request.getParameter("data") != null) {request.getParameter("data")} %></p>
-161:             </div>
-162:             <div class="col-3"></div>
-163:           </div>
-
-
-An error occurred at line: [160] in the jsp file: [/signup.jsp]
-Syntax error on tokens, delete these tokens
-157:           <div class="row">
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <p style="color:red"><%= if(request.getParameter("data") != null) {request.getParameter("data")} %></p>
-161:             </div>
-162:             <div class="col-3"></div>
-163:           </div>
-
-
-An error occurred at line: [312] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/signup_jsp.java]
-Syntax error, insert "else Statement" to complete IfStatement
-
-An error occurred at line: [312] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/signup_jsp.java]
-Syntax error, insert "}" to complete Block
-
-Stacktrace:
-		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
-		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
-		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+04-Mar-2023 23:21:57.123 SEVERE [http-nio-9999-exec-11] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: /index.jsp (line: [152], column: [27]) Unterminated [&lt;%=] tag
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+		at loginServlet.doGet(loginServlet.java:51)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+04-Mar-2023 23:22:08.615 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+04-Mar-2023 23:22:08.615 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+04-Mar-2023 23:22:13.335 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Mar-2023 23:22:13.335 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Mar-2023 23:22:13.338 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1252b961')
+04-Mar-2023 23:22:17.029 SEVERE [http-nio-9999-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: /index.jsp (line: [152], column: [27]) Unterminated [&lt;%=] tag
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+		at loginServlet.doGet(loginServlet.java:51)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+04-Mar-2023 23:22:32.347 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+04-Mar-2023 23:22:32.347 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+04-Mar-2023 23:22:36.874 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Mar-2023 23:22:36.875 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Mar-2023 23:22:36.876 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@56276db8')
+04-Mar-2023 23:23:13.284 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+04-Mar-2023 23:23:13.284 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+04-Mar-2023 23:23:17.492 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Mar-2023 23:23:17.493 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Mar-2023 23:23:17.494 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@458342d3')
+04-Mar-2023 23:26:45.809 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+04-Mar-2023 23:26:45.809 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+04-Mar-2023 23:26:49.641 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Mar-2023 23:26:49.641 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Mar-2023 23:26:49.643 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2756c0a7')
+04-Mar-2023 23:27:33.629 SEVERE [http-nio-9999-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/index.jsp (line: [152], column: [27]) Unterminated [&lt;%=] tag] with root cause
+	org.apache.jasper.JasperException: /index.jsp (line: [152], column: [27]) Unterminated [&lt;%=] tag
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
 		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
@@ -212,13 +165,24 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 16:33:15.025 SEVERE [http-nio-9999-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [signUpServlet] in context with path [/oldegg] threw exception
-	java.lang.NumberFormatException: For input string: "asdasdas"
-		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-		at java.base/java.lang.Integer.parseInt(Integer.java:668)
-		at java.base/java.lang.Integer.parseInt(Integer.java:786)
-		at signUpServlet.doPost(signUpServlet.java:31)
-		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+04-Mar-2023 23:27:40.230 SEVERE [http-nio-9999-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/index.jsp (line: [152], column: [27]) Unterminated [&lt;%=] tag] with root cause
+	org.apache.jasper.JasperException: /index.jsp (line: [152], column: [27]) Unterminated [&lt;%=] tag
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
 		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
@@ -242,31 +206,31 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 16:33:56.262 SEVERE [http-nio-9999-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+04-Mar-2023 23:28:26.037 SEVERE [http-nio-9999-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [161] in the jsp file: [/signup.jsp]
-Syntax error, insert ";" to complete Statement
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <% if(request.getParameter("data") != null) { %>
-161:                 <p style="color: red;"> <%request.getParameter("data")%></p>
-162:               <%} else{%>
-163:                 <p></p>
-164:               <%} %>
+An error occurred at line: [152] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+149:       <div class="pb-4 pt-4"></div>
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2"><%=header.id %></h4>
+153:         <a class="ms-auto p-2">see all ></a>
+154:       </div>
+155: 
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [161] in the jsp file: [/signup.jsp]
-Syntax error, insert ";" to complete Statement
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <% if(request.getParameter("data") != null) { %>
-161:                 <p style="color: red;"> <%request.getParameter("data")%></p>
-162:               <%} else{%>
-163:                 <p></p>
-164:               <%} %>
+An error occurred at line: [152] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+149:       <div class="pb-4 pt-4"></div>
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2"><%=header.id %></h4>
+153:         <a class="ms-auto p-2">see all ></a>
+154:       </div>
+155: 
 
 
 Stacktrace:
@@ -303,31 +267,53 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 16:34:01.388 SEVERE [http-nio-9999-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+04-Mar-2023 23:29:46.348 SEVERE [http-nio-9999-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [161] in the jsp file: [/signup.jsp]
-Syntax error, insert ";" to complete Statement
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <% if(request.getParameter("data") != null) { %>
-161:                 <p style="color: red;"> <%request.getParameter("data")%></p>
-162:               <%} else{%>
-163:                 <p></p>
-164:               <%} %>
+An error occurred at line: [153] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= header.id %></p>
+155:           <%} else{%>
+156:             <p></p>
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= header.id %></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [161] in the jsp file: [/signup.jsp]
-Syntax error, insert ";" to complete Statement
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <% if(request.getParameter("data") != null) { %>
-161:                 <p style="color: red;"> <%request.getParameter("data")%></p>
-162:               <%} else{%>
-163:                 <p></p>
-164:               <%} %>
+An error occurred at line: [153] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= header.id %></p>
+155:           <%} else{%>
+156:             <p></p>
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= header.id %></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
 
 
 Stacktrace:
@@ -364,31 +350,53 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 16:34:20.342 SEVERE [http-nio-9999-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+04-Mar-2023 23:30:01.964 SEVERE [http-nio-9999-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [161] in the jsp file: [/signup.jsp]
-Syntax error, insert ";" to complete Statement
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <% if(request.getParameter("data") != null) { %>
-161:                 <p style="color: red;"> <%request.getParameter("data")%></p>
-162:               <%} else{%>
-163:                 <p></p>
-164:               <%} %>
+An error occurred at line: [153] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= header.id.toString() %></p>
+155:           <%} else{%>
+156:             <p></p>
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= header.id.toString() %></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [161] in the jsp file: [/signup.jsp]
-Syntax error, insert ";" to complete Statement
-158:             <div class="col-3"></div>
-159:             <div class="col-6">
-160:               <% if(request.getParameter("data") != null) { %>
-161:                 <p style="color: red;"> <%request.getParameter("data")%></p>
-162:               <%} else{%>
-163:                 <p></p>
-164:               <%} %>
+An error occurred at line: [153] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= header.id.toString() %></p>
+155:           <%} else{%>
+156:             <p></p>
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= header.id.toString() %></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
 
 
 Stacktrace:
@@ -425,18 +433,82 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:49:09.940 SEVERE [http-nio-9999-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/viewListing.jsp (line: [95], column: [15]) Unterminated [&lt;%=] tag] with root cause
-	org.apache.jasper.JasperException: /viewListing.jsp (line: [95], column: [15]) Unterminated [&lt;%=] tag
-		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
-		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
-		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
-		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
-		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
-		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
-		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
-		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
-		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+04-Mar-2023 23:30:53.872 SEVERE [http-nio-9999-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [153] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+155:           <%} else{%>
+156:             <p></p>
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+Syntax error on token ";", delete this token
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [153] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+155:           <%} else{%>
+156:             <p></p>
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+Syntax error on token ";", delete this token
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
 		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
@@ -466,18 +538,126 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:49:43.468 SEVERE [http-nio-9999-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/viewListing.jsp (line: [95], column: [20]) Unterminated [&lt;%=] tag] with root cause
-	org.apache.jasper.JasperException: /viewListing.jsp (line: [95], column: [20]) Unterminated [&lt;%=] tag
-		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
-		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
-		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
-		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
-		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
-		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
-		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
-		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
-		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+04-Mar-2023 23:31:31.045 SEVERE [http-nio-9999-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+16:     <link href="./style/style.css" rel="stylesheet" />
+17:   </head>
+18:   <body class="bg_default">
+19:     <% header.id = 0 %>
+20:     <nav
+21:       class="navbar sticky-top navbar-expand-lg navbar-light bg_default"
+22:       style="padding: 20px 50px 15px 50px"
+
+
+An error occurred at line: [19] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete Statement
+16:     <link href="./style/style.css" rel="stylesheet" />
+17:   </head>
+18:   <body class="bg_default">
+19:     <% header.id = 0 %>
+20:     <nav
+21:       class="navbar sticky-top navbar-expand-lg navbar-light bg_default"
+22:       style="padding: 20px 50px 15px 50px"
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+151: 
+152:       <div class="d-flex mb-3">
+153:         <h4 class="p-2">
+154:           <% if(header.id != null) { %>
+155:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+156:           <%} else{%>
+157:             <p></p>
+
+
+An error occurred at line: [155] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+152:       <div class="d-flex mb-3">
+153:         <h4 class="p-2">
+154:           <% if(header.id != null) { %>
+155:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+156:           <%} else{%>
+157:             <p></p>
+158:           <%} %>
+
+
+An error occurred at line: [155] in the jsp file: [/index.jsp]
+Syntax error on token ";", delete this token
+152:       <div class="d-flex mb-3">
+153:         <h4 class="p-2">
+154:           <% if(header.id != null) { %>
+155:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+156:           <%} else{%>
+157:             <p></p>
+158:           <%} %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+16:     <link href="./style/style.css" rel="stylesheet" />
+17:   </head>
+18:   <body class="bg_default">
+19:     <% header.id = 0 %>
+20:     <nav
+21:       class="navbar sticky-top navbar-expand-lg navbar-light bg_default"
+22:       style="padding: 20px 50px 15px 50px"
+
+
+An error occurred at line: [19] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete Statement
+16:     <link href="./style/style.css" rel="stylesheet" />
+17:   </head>
+18:   <body class="bg_default">
+19:     <% header.id = 0 %>
+20:     <nav
+21:       class="navbar sticky-top navbar-expand-lg navbar-light bg_default"
+22:       style="padding: 20px 50px 15px 50px"
+
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+151: 
+152:       <div class="d-flex mb-3">
+153:         <h4 class="p-2">
+154:           <% if(header.id != null) { %>
+155:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+156:           <%} else{%>
+157:             <p></p>
+
+
+An error occurred at line: [155] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+152:       <div class="d-flex mb-3">
+153:         <h4 class="p-2">
+154:           <% if(header.id != null) { %>
+155:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+156:           <%} else{%>
+157:             <p></p>
+158:           <%} %>
+
+
+An error occurred at line: [155] in the jsp file: [/index.jsp]
+Syntax error on token ";", delete this token
+152:       <div class="d-flex mb-3">
+153:         <h4 class="p-2">
+154:           <% if(header.id != null) { %>
+155:             <p style="color: red;"> <%= Integer.toString((header.id)); %></p>
+156:           <%} else{%>
+157:             <p></p>
+158:           <%} %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
 		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
@@ -507,18 +687,38 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:49:49.703 SEVERE [http-nio-9999-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/viewListing.jsp (line: [95], column: [20]) Unterminated [&lt;%=] tag] with root cause
-	org.apache.jasper.JasperException: /viewListing.jsp (line: [95], column: [20]) Unterminated [&lt;%=] tag
-		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
-		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
-		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
-		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
-		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
-		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
-		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
-		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
-		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+04-Mar-2023 23:32:14.497 SEVERE [http-nio-9999-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [153] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> test</p>
+155:           <%} else{%>
+156:             <p></p>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [153] in the jsp file: [/index.jsp]
+header.id cannot be resolved to a type
+150: 
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(header.id != null) { %>
+154:             <p style="color: red;"> test</p>
+155:           <%} else{%>
+156:             <p></p>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
 		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
@@ -548,24 +748,48 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:49:54.341 SEVERE [http-nio-9999-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/viewListing.jsp (line: [95], column: [20]) Unterminated [&lt;%=] tag] with root cause
-	org.apache.jasper.JasperException: /viewListing.jsp (line: [95], column: [20]) Unterminated [&lt;%=] tag
-		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
-		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
-		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
-		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
-		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
-		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
-		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
-		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
-		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+04-Mar-2023 23:39:16.173 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+04-Mar-2023 23:39:16.174 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+04-Mar-2023 23:39:20.263 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Mar-2023 23:39:20.264 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Mar-2023 23:39:20.268 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1252b961')
+04-Mar-2023 23:40:03.735 SEVERE [http-nio-9999-exec-8] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete Statement
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(response.getHeader("id") != null) { %>
+154:             <p style="color: red;"> <%response.getHeader("id")%></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
 		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
 		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
 		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
 		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+		at loginServlet.doGet(loginServlet.java:51)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
 		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
@@ -589,24 +813,43 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:50:16.135 SEVERE [http-nio-9999-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/viewListing.jsp (line: [96], column: [20]) Unterminated [&lt;%=] tag] with root cause
-	org.apache.jasper.JasperException: /viewListing.jsp (line: [96], column: [20]) Unterminated [&lt;%=] tag
-		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
-		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
-		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
-		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
-		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
-		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
-		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
-		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
-		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+04-Mar-2023 23:40:10.176 SEVERE [http-nio-9999-exec-10] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete Statement
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(response.getHeader("id") != null) { %>
+154:             <p style="color: red;"> <%response.getHeader("id")%></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
 		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
 		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
 		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
 		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+		at loginServlet.doGet(loginServlet.java:51)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
 		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
@@ -630,18 +873,25 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:50:21.431 SEVERE [http-nio-9999-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/viewListing.jsp (line: [96], column: [20]) Unterminated [&lt;%=] tag] with root cause
-	org.apache.jasper.JasperException: /viewListing.jsp (line: [96], column: [20]) Unterminated [&lt;%=] tag
-		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
-		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
-		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
-		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
-		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
-		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
-		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
-		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
-		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+04-Mar-2023 23:40:21.938 SEVERE [http-nio-9999-exec-6] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [154] in the jsp file: [/index.jsp]
+Syntax error, insert ";" to complete Statement
+151:       <div class="d-flex mb-3">
+152:         <h4 class="p-2">
+153:           <% if(response.getHeader("id") != null) { %>
+154:             <p style="color: red;"> <%response.getHeader("id")%></p>
+155:           <%} else{%>
+156:             <p></p>
+157:           <%} %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
 		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
 		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
@@ -654,120 +904,12 @@ Stacktrace:
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
-		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
-		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
-		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
-		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:50:35.309 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-03-Mar-2023 17:50:35.309 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
-03-Mar-2023 17:50:39.978 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-03-Mar-2023 17:50:39.978 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-03-Mar-2023 17:50:39.980 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@56276db8')
-03-Mar-2023 17:50:44.428 SEVERE [http-nio-9999-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/viewListing.jsp (line: [96], column: [20]) Unterminated [&lt;%=] tag] with root cause
-	org.apache.jasper.JasperException: /viewListing.jsp (line: [96], column: [20]) Unterminated [&lt;%=] tag
-		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
-		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
-		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
-		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
-		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
-		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
-		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
-		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
-		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
-		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
-		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
-		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
-		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
-		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
-		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
-		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
-		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
-		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
-		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:50:45.368 SEVERE [http-nio-9999-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.viewListing_jsp] with root cause
-	java.lang.ClassNotFoundException: org.apache.jsp.viewListing_jsp
-		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
-		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
-		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
-		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
-		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
-		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
-		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
-		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
-		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
-		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
-		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
-		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
-		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
-		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:833)
-03-Mar-2023 17:51:00.999 SEVERE [http-nio-9999-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [/viewListing.jsp (line: [96], column: [20]) Unterminated [&lt;%=] tag] with root cause
-	org.apache.jasper.JasperException: /viewListing.jsp (line: [96], column: [20]) Unterminated [&lt;%=] tag
-		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
-		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
-		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
-		at org.apache.jasper.compiler.Parser.parseExpression(Parser.java:705)
-		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1452)
-		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
-		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
-		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
-		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
-		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
-		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
-		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
-		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
-		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+		at loginServlet.doGet(loginServlet.java:51)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
 		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
