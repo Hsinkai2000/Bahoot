@@ -180,7 +180,6 @@ pageEncoding="UTF-8"%>
                 itemIDList.add(rset.getInt("itemID"));
                 count++;
               }
-              Thread.sleep(1000); 
               while(i<=count){
                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
                 ResultSet itemset = stmt.executeQuery(getitems);
