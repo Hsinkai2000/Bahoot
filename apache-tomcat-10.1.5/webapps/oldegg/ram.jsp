@@ -1,4 +1,5 @@
 <%@ page import = "java.io.*,java.util.*,java.sql.*,java.text.*"%>
+
 <% 
 DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
 Connection conn = DriverManager.getConnection(
@@ -182,6 +183,10 @@ ResultSet rset = stmt.executeQuery(sqlStr);
             <div class="card-body">
               <h5 class="card-text"><%=rset.getString("name")+" "+rset.getString("speed")+" "+rset.getString("module") %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
           </div>
         </div>

@@ -30,8 +30,6 @@ ResultSet rset = stmt.executeQuery(sqlStr);
 
 %>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -170,13 +168,14 @@ ResultSet rset = stmt.executeQuery(sqlStr);
           Sort by  
         </button>
         <ul class="dropdown-menu">
-         
           <li><a class="dropdown-item" href="?sort=lp">Lowest Price</a></li>
           <li><a class="dropdown-item" href="?sort=hp">Highest Price</a></li>
           <li><a class="dropdown-item" href="?sort=az">Name: A to Z</a></li>
           <li><a class="dropdown-item" href="?sort=za">Name: Z to A</a></li>
         </ul>
       </div>
+
+      
 
       
 
@@ -188,6 +187,10 @@ ResultSet rset = stmt.executeQuery(sqlStr);
             <div class="card-body">
               <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="2" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
           </div>
         </div>
