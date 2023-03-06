@@ -24,6 +24,7 @@ public class listingServlet extends HttpServlet {
     static int itemID;
     static float price;
     static int qty;
+    static String type;
     static String name, link;
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -93,7 +94,7 @@ public class listingServlet extends HttpServlet {
         try {
             // select coolers.* from coolers, listings where listings.id=4 and
             // coolers.id=listings.itemID;
-            String type = listing.type;
+            type = listing.type;
             String getListing = "SELECT " + type + ".* FROM " + type + ",listings WHERE listings.id=" + listing.id
                     + " and " + type + ".id=" + listing.itemID;
             ResultSet itemResultSet = stmt.executeQuery(getListing);
@@ -149,6 +150,7 @@ public class listingServlet extends HttpServlet {
 
     private static void createHeader(ResultSet resultSet, HttpServletResponse response) {
         try {
+            response.addHeader("type",type);
             response.addIntHeader("uid", userID);
             response.addIntHeader("itemID", itemID);
             response.addHeader("name", resultSet.getString("name"));

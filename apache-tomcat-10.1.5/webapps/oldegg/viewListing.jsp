@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
+<%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*"%> 
+<% Connection conn = DriverManager.getConnection(
+"jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+"root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -172,18 +176,52 @@ pageEncoding="UTF-8"%>
         <a class="ms-auto">see all ></a>
       </div>
 
-      <div
-        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
-        style="height: 300px"
-      >
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
+      
+      <div class="container-fluid py-2">
+        <div class="d-flex flex-row flex-nowrap overflow-auto">
+            <% 
+            try{
+              String listing = "select * from listings where type = '" + response.getHeader("type") +  "'";
+              ResultSet rset = stmt.executeQuery(listing);
+              List typeList = new ArrayList(); 
+              List listingIDList =  new ArrayList(); 
+              List itemIDList = new ArrayList(); 
+              int count=0;
+              int i=0;
+              while (rset.next()){                
+                typeList.add(rset.getString("type"));
+                listingIDList.add(rset.getInt("id"));
+                itemIDList.add(rset.getInt("itemID"));
+                count++;
+              }
+              while(i<=count){
+                String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+                ResultSet itemset = stmt.executeQuery(getitems);
+                  while(itemset.next()){
+                  String link = itemset.getString("link");
+                  String name = itemset.getString("name");
+                  Float price = itemset.getFloat("price");
+                %>
+                <div class="card card-body" style="height: 500px;min-width: 300px;">
+                <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
+                <form method="get" action="viewListing">
+                  <h3 style="width: 200px;"><%= name %></h3>
+                  <p>$<%= price %></p>
+                  <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+                  <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                  <button type="submit" class="btn bg_orange">View Listing</button>
+                </form>
+              </div>
+                <%}i++;
+              }
+            } catch (SQLException e) {
+              e.printStackTrace();
+              
+            }
+            %>
+          </div>                
       </div>
+      
     </div>
 
     <div class="footer">

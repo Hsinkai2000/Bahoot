@@ -380,3 +380,1478 @@ Stacktrace:
 06-Mar-2023 22:04:47.941 INFO [http-nio-9999-exec-6] listingServlet.doPost Add to cart
 06-Mar-2023 22:04:47.941 INFO [http-nio-9999-exec-6] listingServlet.addtocart In function
 06-Mar-2023 22:04:47.943 INFO [http-nio-9999-exec-6] listingServlet.addtocart Added to cart!
+06-Mar-2023 22:08:23.638 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:12:00.602 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
+06-Mar-2023 22:12:01.165 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:12:01.167 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+06-Mar-2023 22:12:03.925 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:12:03.928 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 22:12:03.951 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:12:03.964 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:12:04.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 22:12:04.726 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:12:04.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:12:04.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 22:12:04.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 22:12:04.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 22:12:04.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 22:12:04.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 22:12:04.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 22:12:04.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 22:12:04.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 22:12:04.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 22:12:04.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 22:12:04.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:12:04.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:12:04.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 22:12:04.749 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 22:12:05.001 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:12:05.028 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [469] milliseconds
+06-Mar-2023 22:12:05.069 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 22:12:05.069 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 22:12:05.079 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 22:12:06.135 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:12:06.186 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,107] ms
+06-Mar-2023 22:12:06.187 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 22:12:06.896 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:12:06.899 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [711] ms
+06-Mar-2023 22:12:06.899 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 22:12:07.388 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:12:07.395 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [496] ms
+06-Mar-2023 22:12:07.396 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 22:12:08.387 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:12:08.409 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [1,013] ms
+06-Mar-2023 22:12:08.410 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 22:12:08.816 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:12:08.818 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [408] ms
+06-Mar-2023 22:12:08.818 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 22:12:09.293 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:12:09.295 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [477] ms
+06-Mar-2023 22:12:09.297 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:12:09.312 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4283] milliseconds
+06-Mar-2023 22:12:15.782 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 1
+06-Mar-2023 22:12:16.141 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =3
+06-Mar-2023 22:12:17.752 INFO [http-nio-9999-exec-2] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [184] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+181:             <% 
+182:             try{
+183:               String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [184] in the jsp file: [/viewListing.jsp]
+stmt cannot be resolved
+181:             <% 
+182:             try{
+183:               String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [185] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+182:             try{
+183:               String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [185] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+182:             try{
+183:               String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+183:               String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+183:               String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+190:               while (rset.next()){                
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+190:               while (rset.next()){                
+
+
+An error occurred at line: [198] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+195:               Thread.sleep(1000);
+196:               while(i<=count){
+197:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+198:                 ResultSet itemset = stmt.executeQuery(getitems);
+199:                   while(itemset.next()){
+200:                   String link = itemset.getString("link");
+201:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [198] in the jsp file: [/viewListing.jsp]
+stmt cannot be resolved
+195:               Thread.sleep(1000);
+196:               while(i<=count){
+197:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+198:                 ResultSet itemset = stmt.executeQuery(getitems);
+199:                   while(itemset.next()){
+200:                   String link = itemset.getString("link");
+201:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [216] in the jsp file: [/viewListing.jsp]
+SQLException cannot be resolved to a type
+213:               </div>
+214:                 <%}i++;
+215:               }
+216:             } catch (SQLException e) {
+217:               e.printStackTrace();
+218:               
+219:             }
+
+
+Stacktrace:
+06-Mar-2023 22:13:07.634 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 1
+06-Mar-2023 22:13:07.644 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =3
+06-Mar-2023 22:13:07.870 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [184] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+181:             <% 
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [184] in the jsp file: [/viewListing.jsp]
+stmt cannot be resolved
+181:             <% 
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [185] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [185] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+190:               while (rset.next()){                
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+190:               while (rset.next()){                
+
+
+An error occurred at line: [198] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+195:               Thread.sleep(1000);
+196:               while(i<=count){
+197:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+198:                 ResultSet itemset = stmt.executeQuery(getitems);
+199:                   while(itemset.next()){
+200:                   String link = itemset.getString("link");
+201:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [198] in the jsp file: [/viewListing.jsp]
+stmt cannot be resolved
+195:               Thread.sleep(1000);
+196:               while(i<=count){
+197:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+198:                 ResultSet itemset = stmt.executeQuery(getitems);
+199:                   while(itemset.next()){
+200:                   String link = itemset.getString("link");
+201:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [216] in the jsp file: [/viewListing.jsp]
+SQLException cannot be resolved to a type
+213:               </div>
+214:                 <%}i++;
+215:               }
+216:             } catch (SQLException e) {
+217:               e.printStackTrace();
+218:               
+219:             }
+
+
+Stacktrace:
+06-Mar-2023 22:13:11.798 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+06-Mar-2023 22:13:11.803 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =3
+06-Mar-2023 22:13:11.954 INFO [http-nio-9999-exec-6] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [184] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+181:             <% 
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [184] in the jsp file: [/viewListing.jsp]
+stmt cannot be resolved
+181:             <% 
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [185] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [185] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+190:               while (rset.next()){                
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+190:               while (rset.next()){                
+
+
+An error occurred at line: [198] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+195:               Thread.sleep(1000);
+196:               while(i<=count){
+197:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+198:                 ResultSet itemset = stmt.executeQuery(getitems);
+199:                   while(itemset.next()){
+200:                   String link = itemset.getString("link");
+201:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [198] in the jsp file: [/viewListing.jsp]
+stmt cannot be resolved
+195:               Thread.sleep(1000);
+196:               while(i<=count){
+197:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+198:                 ResultSet itemset = stmt.executeQuery(getitems);
+199:                   while(itemset.next()){
+200:                   String link = itemset.getString("link");
+201:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [216] in the jsp file: [/viewListing.jsp]
+SQLException cannot be resolved to a type
+213:               </div>
+214:                 <%}i++;
+215:               }
+216:             } catch (SQLException e) {
+217:               e.printStackTrace();
+218:               
+219:             }
+
+
+Stacktrace:
+06-Mar-2023 22:13:59.468 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:13:59.657 INFO [http-nio-9999-exec-8] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [184] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+181:             <% 
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [184] in the jsp file: [/viewListing.jsp]
+stmt cannot be resolved
+181:             <% 
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [185] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [185] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+182:             try{
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+183:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+190:               while (rset.next()){                
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+184:               ResultSet rset = stmt.executeQuery(listing);
+185:               List typeList = new ArrayList(); 
+186:               List listingIDList =  new ArrayList(); 
+187:               List itemIDList = new ArrayList(); 
+188:               int count=largernumber-smallernumber;
+189:               int i=0;
+190:               while (rset.next()){                
+
+
+An error occurred at line: [198] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+195:               Thread.sleep(1000);
+196:               while(i<=count){
+197:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+198:                 ResultSet itemset = stmt.executeQuery(getitems);
+199:                   while(itemset.next()){
+200:                   String link = itemset.getString("link");
+201:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [198] in the jsp file: [/viewListing.jsp]
+stmt cannot be resolved
+195:               Thread.sleep(1000);
+196:               while(i<=count){
+197:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+198:                 ResultSet itemset = stmt.executeQuery(getitems);
+199:                   while(itemset.next()){
+200:                   String link = itemset.getString("link");
+201:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [216] in the jsp file: [/viewListing.jsp]
+SQLException cannot be resolved to a type
+213:               </div>
+214:                 <%}i++;
+215:               }
+216:             } catch (SQLException e) {
+217:               e.printStackTrace();
+218:               
+219:             }
+
+
+Stacktrace:
+06-Mar-2023 22:15:20.131 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:15:20.355 INFO [http-nio-9999-exec-10] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+DecimalFormat cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+DecimalFormat cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+Connection cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+DriverManager cannot be resolved
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [5] in the jsp file: [/viewListing.jsp]
+Statement cannot be resolved to a type
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+7: <html lang="en">
+8:   <head>
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+184:             <% 
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+193:               while (rset.next()){                
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+193:               while (rset.next()){                
+
+
+An error occurred at line: [201] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+198:               Thread.sleep(1000);
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+204:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [219] in the jsp file: [/viewListing.jsp]
+SQLException cannot be resolved to a type
+216:               </div>
+217:                 <%}i++;
+218:               }
+219:             } catch (SQLException e) {
+220:               e.printStackTrace();
+221:               
+222:             }
+
+
+Stacktrace:
+06-Mar-2023 22:15:23.747 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 3
+06-Mar-2023 22:15:23.751 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:15:23.754 INFO [http-nio-9999-exec-1] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.viewListing_jsp
+06-Mar-2023 22:15:26.575 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 3
+06-Mar-2023 22:15:26.582 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:15:26.732 INFO [http-nio-9999-exec-2] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+DecimalFormat cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+DecimalFormat cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+Connection cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+DriverManager cannot be resolved
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [5] in the jsp file: [/viewListing.jsp]
+Statement cannot be resolved to a type
+2: pageEncoding="UTF-8"%>
+3: <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+7: <html lang="en">
+8:   <head>
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+184:             <% 
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+193:               while (rset.next()){                
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+193:               while (rset.next()){                
+
+
+An error occurred at line: [201] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+198:               Thread.sleep(1000);
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+204:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [219] in the jsp file: [/viewListing.jsp]
+SQLException cannot be resolved to a type
+216:               </div>
+217:                 <%}i++;
+218:               }
+219:             } catch (SQLException e) {
+220:               e.printStackTrace();
+221:               
+222:             }
+
+
+Stacktrace:
+06-Mar-2023 22:15:46.307 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 3
+06-Mar-2023 22:15:46.313 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:15:46.450 INFO [http-nio-9999-exec-3] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+Connection cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [3] in the jsp file: [/viewListing.jsp]
+DriverManager cannot be resolved
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: <% Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+
+
+An error occurred at line: [5] in the jsp file: [/viewListing.jsp]
+Statement cannot be resolved to a type
+2: pageEncoding="UTF-8"%>
+3: <% Connection conn = DriverManager.getConnection(
+4: "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+5: "root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+6: <!DOCTYPE html>
+7: <html lang="en">
+8:   <head>
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+184:             <% 
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+185:             try{
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+186:               String listing = "select * from listings where type = '" + request.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+List cannot be resolved to a type
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+193:               while (rset.next()){                
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+ArrayList cannot be resolved to a type
+187:               ResultSet rset = stmt.executeQuery(listing);
+188:               List typeList = new ArrayList(); 
+189:               List listingIDList =  new ArrayList(); 
+190:               List itemIDList = new ArrayList(); 
+191:               int count=largernumber-smallernumber;
+192:               int i=0;
+193:               while (rset.next()){                
+
+
+An error occurred at line: [201] in the jsp file: [/viewListing.jsp]
+ResultSet cannot be resolved to a type
+198:               Thread.sleep(1000);
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+204:                   String name = itemset.getString("name");
+
+
+An error occurred at line: [219] in the jsp file: [/viewListing.jsp]
+SQLException cannot be resolved to a type
+216:               </div>
+217:                 <%}i++;
+218:               }
+219:             } catch (SQLException e) {
+220:               e.printStackTrace();
+221:               
+222:             }
+
+
+Stacktrace:
+06-Mar-2023 22:16:11.858 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 3
+06-Mar-2023 22:16:11.866 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:16:13.111 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               Thread.sleep(1000);
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:16:15.570 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 3
+06-Mar-2023 22:16:15.576 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:16:16.588 INFO [http-nio-9999-exec-6] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               Thread.sleep(1000);
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:17:24.535 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 3
+06-Mar-2023 22:17:24.539 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:17:24.717 INFO [http-nio-9999-exec-8] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [200]
+
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:17:25.894 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 3
+06-Mar-2023 22:17:25.899 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:17:25.908 INFO [http-nio-9999-exec-9] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [200]
+
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:17:27.149 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 3
+06-Mar-2023 22:17:27.154 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:17:27.160 INFO [http-nio-9999-exec-10] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [200]
+
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:17:28.278 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 3
+06-Mar-2023 22:17:28.281 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:17:28.288 INFO [http-nio-9999-exec-1] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [200]
+
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:17:29.222 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 3
+06-Mar-2023 22:17:29.225 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:28.877 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 3
+06-Mar-2023 22:18:28.883 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:29.050 INFO [http-nio-9999-exec-4] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 listingIDList.add(rset.getInt("id"));
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               %><%= typeList.get(0)%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+06-Mar-2023 22:18:30.407 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 3
+06-Mar-2023 22:18:30.411 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:30.420 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 listingIDList.add(rset.getInt("id"));
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               %><%= typeList.get(0)%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+06-Mar-2023 22:18:31.092 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 3
+06-Mar-2023 22:18:31.097 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:31.104 INFO [http-nio-9999-exec-6] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 listingIDList.add(rset.getInt("id"));
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               %><%= typeList.get(0)%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+06-Mar-2023 22:18:31.894 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 3
+06-Mar-2023 22:18:31.898 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:31.905 INFO [http-nio-9999-exec-7] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 listingIDList.add(rset.getInt("id"));
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               %><%= typeList.get(0)%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+06-Mar-2023 22:18:32.726 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 3
+06-Mar-2023 22:18:32.729 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:32.734 INFO [http-nio-9999-exec-8] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 listingIDList.add(rset.getInt("id"));
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               %><%= typeList.get(0)%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+06-Mar-2023 22:18:33.474 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 3
+06-Mar-2023 22:18:33.478 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:33.484 INFO [http-nio-9999-exec-9] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 listingIDList.add(rset.getInt("id"));
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               %><%= typeList.get(0)%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+06-Mar-2023 22:18:34.179 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 3
+06-Mar-2023 22:18:34.184 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:34.190 INFO [http-nio-9999-exec-10] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 listingIDList.add(rset.getInt("id"));
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               %><%= typeList.get(0)%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+06-Mar-2023 22:18:36.717 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 3
+06-Mar-2023 22:18:36.723 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:18:36.730 INFO [http-nio-9999-exec-1] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 listingIDList.add(rset.getInt("id"));
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               %><%= typeList.get(0)%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+06-Mar-2023 22:19:06.326 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 3
+06-Mar-2023 22:19:06.331 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:14.733 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:14.739 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:14.924 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= request.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:20:16.413 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:16.418 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:16.424 INFO [http-nio-9999-exec-6] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= request.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:20:17.197 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:17.203 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:17.210 INFO [http-nio-9999-exec-7] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= request.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:20:17.749 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:17.753 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:17.758 INFO [http-nio-9999-exec-8] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= request.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:20:18.306 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:18.310 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:18.317 INFO [http-nio-9999-exec-9] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= request.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:20:18.875 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:18.880 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:18.886 INFO [http-nio-9999-exec-10] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= request.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:20:19.471 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:19.475 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:19.483 INFO [http-nio-9999-exec-1] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= request.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:20:19.989 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:19.993 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:19.999 INFO [http-nio-9999-exec-2] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= request.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:20:40.448 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 3
+06-Mar-2023 22:20:40.452 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:20:40.626 INFO [http-nio-9999-exec-4] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [201]
+
+198:               }
+199:               %><%= response.getHeader("type")%><%
+200:               while(i<=count){
+201:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+202:                 ResultSet itemset = stmt.executeQuery(getitems);
+203:                   while(itemset.next()){
+204:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:21:30.753 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 3
+06-Mar-2023 22:21:30.761 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:21:30.961 INFO [http-nio-9999-exec-6] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+largernumber cannot be resolved to a variable
+186:               List typeList = new ArrayList(); 
+187:               List listingIDList =  new ArrayList(); 
+188:               List itemIDList = new ArrayList(); 
+189:               int count=largernumber-smallernumber;
+190:               int i=0;
+191:               while (rset.next()){                
+192:                 typeList.add(rset.getString("type"));
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+smallernumber cannot be resolved to a variable
+186:               List typeList = new ArrayList(); 
+187:               List listingIDList =  new ArrayList(); 
+188:               List itemIDList = new ArrayList(); 
+189:               int count=largernumber-smallernumber;
+190:               int i=0;
+191:               while (rset.next()){                
+192:                 typeList.add(rset.getString("type"));
+
+
+Stacktrace:
+06-Mar-2023 22:21:32.689 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 3
+06-Mar-2023 22:21:32.694 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:21:32.700 INFO [http-nio-9999-exec-7] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [204]
+
+201:                   String name = itemset.getString("name");
+202:                   Float price = itemset.getFloat("price");
+203:                 %>
+204:                 <div class="card card-body" style="height: 500px;min-width: 300px;">
+205:                 <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
+206:                 <form method="get" action="viewListing">
+207:                   <h3 style="width: 200px;"><%= name %></h3>
+
+
+Stacktrace:
+06-Mar-2023 22:21:33.688 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 3
+06-Mar-2023 22:21:33.692 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:21:43.945 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 3
+06-Mar-2023 22:21:43.951 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:21:44.105 INFO [http-nio-9999-exec-9] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+largernumber cannot be resolved to a variable
+186:               List typeList = new ArrayList(); 
+187:               List listingIDList =  new ArrayList(); 
+188:               List itemIDList = new ArrayList(); 
+189:               int count=largernumber-smallernumber;
+190:               int i=0;
+191:               while (rset.next()){                
+192:                 typeList.add(rset.getString("type"));
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+smallernumber cannot be resolved to a variable
+186:               List typeList = new ArrayList(); 
+187:               List listingIDList =  new ArrayList(); 
+188:               List itemIDList = new ArrayList(); 
+189:               int count=largernumber-smallernumber;
+190:               int i=0;
+191:               while (rset.next()){                
+192:                 typeList.add(rset.getString("type"));
+
+
+Stacktrace:
+06-Mar-2023 22:22:06.809 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 3
+06-Mar-2023 22:22:06.814 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:22:07.022 INFO [http-nio-9999-exec-1] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+186:               List typeList = new ArrayList(); 
+187:               List listingIDList =  new ArrayList(); 
+188:               List itemIDList = new ArrayList(); 
+189:               int count=0
+190:               int i=0;
+191:               while (rset.next()){                
+192:                 typeList.add(rset.getString("type"));
+
+
+Stacktrace:
+06-Mar-2023 22:22:15.686 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 3
+06-Mar-2023 22:22:15.691 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:22:15.870 INFO [http-nio-9999-exec-2] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [198]
+
+195:                 count++;
+196:               }
+197:               while(i<=count){
+198:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+199:                 ResultSet itemset = stmt.executeQuery(getitems);
+200:                   while(itemset.next()){
+201:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:22:49.101 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 3
+06-Mar-2023 22:22:49.106 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:22:49.120 INFO [http-nio-9999-exec-4] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [198]
+
+195:                 count++;
+196:               }
+197:               while(i<=count){
+198:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+199:                 ResultSet itemset = stmt.executeQuery(getitems);
+200:                   while(itemset.next()){
+201:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:22:50.655 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 3
+06-Mar-2023 22:22:50.658 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:22:50.675 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [198]
+
+195:                 count++;
+196:               }
+197:               while(i<=count){
+198:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+199:                 ResultSet itemset = stmt.executeQuery(getitems);
+200:                   while(itemset.next()){
+201:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:22:51.280 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 3
+06-Mar-2023 22:22:51.285 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =4
+06-Mar-2023 22:22:51.296 INFO [http-nio-9999-exec-6] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [198]
+
+195:                 count++;
+196:               }
+197:               while(i<=count){
+198:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+199:                 ResultSet itemset = stmt.executeQuery(getitems);
+200:                   while(itemset.next()){
+201:                   String link = itemset.getString("link");
+
+
+Stacktrace:
