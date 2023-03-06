@@ -1,0 +1,27 @@
+06-Mar-2023 00:00:51.583 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 3
+06-Mar-2023 00:00:51.588 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =3
+06-Mar-2023 00:00:53.671 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 3
+06-Mar-2023 00:00:53.676 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =3
+06-Mar-2023 00:00:58.680 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 3
+06-Mar-2023 00:00:58.686 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =3
+06-Mar-2023 00:01:02.159 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 3
+06-Mar-2023 00:01:02.163 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =3
+06-Mar-2023 00:01:03.701 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 3
+06-Mar-2023 00:01:03.705 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =3
+06-Mar-2023 00:01:04.918 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 3
+06-Mar-2023 00:01:04.922 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+06-Mar-2023 00:01:04.922 INFO [http-nio-9999-exec-6] listingServlet.doPost Make Purchase
+06-Mar-2023 00:01:04.922 INFO [http-nio-9999-exec-6] listingServlet.purchaseItem In puchase function
+06-Mar-2023 00:01:04.922 INFO [http-nio-9999-exec-6] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 00:02:19.849 INFO [http-nio-9999-exec-9] listingServlet.doPost userid: 1
+06-Mar-2023 00:02:19.853 INFO [http-nio-9999-exec-9] listingServlet.doPost POST
+06-Mar-2023 00:02:19.853 INFO [http-nio-9999-exec-9] listingServlet.doPost Make Purchase
+06-Mar-2023 00:02:19.853 INFO [http-nio-9999-exec-9] listingServlet.doPost SQL Connection error: java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null
+06-Mar-2023 00:02:32.094 INFO [http-nio-9999-exec-10] listingServlet.doPost userid: 1
+06-Mar-2023 00:02:32.097 INFO [http-nio-9999-exec-10] listingServlet.doPost POST
+06-Mar-2023 00:02:32.098 INFO [http-nio-9999-exec-10] listingServlet.doPost Make Purchase
+06-Mar-2023 00:02:32.098 INFO [http-nio-9999-exec-10] listingServlet.doPost SQL Connection error: java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null
+06-Mar-2023 00:02:45.766 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+06-Mar-2023 00:02:45.766 INFO [http-nio-9999-exec-1] listingServlet.doPost Add to cart
+06-Mar-2023 00:02:45.767 INFO [http-nio-9999-exec-1] listingServlet.addtocart In function
+06-Mar-2023 00:02:45.777 INFO [http-nio-9999-exec-1] listingServlet.addtocart Added to cart!

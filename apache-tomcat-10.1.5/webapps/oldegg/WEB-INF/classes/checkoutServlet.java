@@ -9,8 +9,8 @@ import jakarta.servlet.*; // Tomcat 10
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet("/signup")
-public class signUpServlet extends HttpServlet {
+@WebServlet("/checkout")
+public class checkoutServlet extends HttpServlet {
     static String email;
     static String password;
     static String confirm;
@@ -63,42 +63,4 @@ public class signUpServlet extends HttpServlet {
         }
     }
 
-    private static void registerToDb(HttpServletResponse response, Statement stmt) {
-        // register user
-        try {
-            String sqlStrRegister = "INSERT INTO Users Values (null, '" + email + "', '" + name + "', '" + password
-                    + "', '" + mobile + "')";
-            stmt.executeUpdate(sqlStrRegister);
-            int id = verifyEmail(stmt);
-            response.setIntHeader("id", id);
-            try {
-                response.sendRedirect("http://localhost:9999/oldegg/login.jsp");
-            } catch (Exception e) {
-                LOGGER.info("Redirect Failed" + e); // Add a logging statement
-
-            }
-        } catch (SQLException e) {
-
-            LOGGER.info("SQL Failed" + e); // Add a logging statement
-        }
-
-    }
-
-    private static int verifyEmail(Statement stmt) {
-        // check if email exists
-        try {
-            int id = 0;
-            String sqlStrEmail = "SELECT * FROM users WHERE email ='" + email + "'";
-            ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail);
-
-            while (rsetEmail.next()) {
-                id = rsetEmail.getInt(1);
-            }
-            return id;
-        } catch (SQLException e) {
-
-            LOGGER.info("SQL Failed" + e); // Add a logging statement
-        }
-        return 0;
-    }
 }

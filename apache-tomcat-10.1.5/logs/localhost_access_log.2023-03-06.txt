@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:00:51 +0800] "GET /oldegg/viewListing?listingId=3&uid=3 HTTP/1.1" 200 10078
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:00:51 +0800] "GET /oldegg/style/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:00:53 +0800] "GET /oldegg/viewListing?listingId=3&uid=3 HTTP/1.1" 200 10078
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:00:58 +0800] "GET /oldegg/viewListing?listingId=3&uid=3 HTTP/1.1" 200 10065
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:01:02 +0800] "GET /oldegg/viewListing?listingId=3&uid=3 HTTP/1.1" 200 10065
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:01:03 +0800] "GET /oldegg/viewListing?listingId=3&uid=3 HTTP/1.1" 200 10078
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:01:05 +0800] "POST /oldegg/viewListing HTTP/1.1" 200 11085
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:02:19 +0800] "POST /oldegg/viewListing?itemID=3&action=purchase&uid=1 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:02:32 +0800] "POST /oldegg/viewListing?itemID=3&action=purchase&uid=1 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:02:45 +0800] "POST /oldegg/viewListing?itemID=3&action=addtocart HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [06/Mar/2023:00:02:45 +0800] "GET /oldegg/login.jsp HTTP/1.1" 200 3843

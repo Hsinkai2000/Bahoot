@@ -11,11 +11,35 @@ drop table if exists Storage;
 drop table if exists Coolers;
 drop table if exists Users;
 drop table if exists Listings;
+drop table if exists Carts;
+drop table if exists Orders;
+drop table if exists OrderItems;
+
+
+create table Orders(
+  id int NOT NULL AUTO_INCREMENT,
+  userID int,
+  primary key (id)
+);
+
+create table OrderItems(
+  id int NOT NULL AUTO_INCREMENT,
+  orderID int,
+  itemID int,
+  primary key (id)
+);
 
 create table Listings (
   id int NOT NULL AUTO_INCREMENT,
   type varchar(50) NOT NULL,
   itemID int NOT NULL,
+  primary key (id)
+);
+
+create table Carts(
+  id int NOT NULL AUTO_INCREMENT,
+  itemID int,
+  userID int,
   primary key (id)
 );
 

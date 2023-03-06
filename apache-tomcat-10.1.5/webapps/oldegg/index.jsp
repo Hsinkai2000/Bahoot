@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Old Egg | Home</title>
-    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png">
+    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -88,7 +88,13 @@
       </div>
     </nav>
 
-    <div style="padding-left: 50px; padding-right: 50px" >
+    <form method="get" action="viewListing">
+      <input name="listingId" value="3" />
+      <input name="uid" <% if(request.getParameter("uid") != null) { %> value =
+      request.getParameter("uid") <%} else{%> value = "" <%}%> />
+      <button type="submit">button</button>
+    </form>
+    <div style="padding-left: 50px; padding-right: 50px">
       <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
         <a
@@ -151,9 +157,9 @@
       <div class="d-flex mb-3">
         <h4 class="p-2">
           <% if(response.getHeader("id") != null) { %>
-            <p style="color: red;"> <%=response.getHeader("id")%></p>
+          <p style="color: red"><%=response.getHeader("id")%></p>
           <%} else{%>
-            <p></p>
+          <p></p>
           <%} %>
         </h4>
         <a class="ms-auto p-2">see all ></a>

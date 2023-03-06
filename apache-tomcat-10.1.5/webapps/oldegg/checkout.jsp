@@ -5,7 +5,7 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OldEgg | <%= response.getHeader("name") %></title>
+    <title>Old Egg | Home</title>
     <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@ pageEncoding="UTF-8"%>
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <link href="./style/style.css" rel="stylesheet" />
   </head>
   <body class="bg_default">
     <nav
@@ -22,7 +22,7 @@ pageEncoding="UTF-8"%>
     >
       <a
         class="navbar-brand"
-        href="index.jsp"
+        href="#"
         style="padding-bottom: 15px; padding-right: 50px"
       >
         <img
@@ -92,97 +92,124 @@ pageEncoding="UTF-8"%>
       <div class="row">
         <div class="col-lg-6">
           <div class="row">
-            <div class="col-lg-12">
-              <img class="zoom" src="<%= response.getHeader("link") %>" />
-            </div>
+            <h1>Checkout</h1>
           </div>
-          <div class="row pt-3">
-            <div class="col-lg-12">
-              <p>
-                Have a similar item?
-                <a class="underline" href="#">Sell yours</a>
-              </p>
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="<%= response.getHeader("link") %>"
+              style="height:200px;width:200px;max-height:400px;max-width:400px;"
+              />
+            </div>
+
+            <div class="col-lg-8">
+              <div class="row pb-2">
+                <h5><%= response.getHeader("itemName") %></h5>
+              </div>
+              <div class="row">
+                <h6>qty</h6>
+                <div class="row pb-2">
+                  <div>
+                    <button onclick="decrement()">-</button>
+                    <input
+                      disabled
+                      type="number"
+                      id="quantity"
+                      value="1"
+                      min="1"
+                      max="10"
+                    />
+                    <button onclick="increment()">+</button>
+                    <br />
+                    <h6 id="price" class="pt-3"></h6>
+                    <p hidden id="hiddenprice">
+                      <%= response.getHeader("price") %>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="col-lg-6">
+          <div class="row"></div>
           <div class="row">
-            <div class="col-lg-12 pb-3">
-              <h2><%= response.getHeader("name") %></h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 pb-3">
-              <h3>$<%= response.getHeader("price") %></h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <form method="post" action="viewListing">
-                <input type="hidden" name="itemID" value=<%= response.getHeader("itemID") %> ></input>
-                <input type="hidden" name="uid" value=<%= response.getHeader("uid") %>></input>
-                <input type="hidden" name="name" value="<%= response.getHeader("name") %>" ></input>
-                <input type="hidden" name="price" value=<%= response.getHeader("price") %>></input>
-                <input type="hidden" name="qty" value=<%= response.getHeader("qty") %> ></input>
-                <input type="hidden" name="link" value=<%= response.getHeader("link") %>></input>
-                <input type="hidden" name="itemInfo" value="<%= response.getHeader("itemInfo") %>" ></input>
-                <input type="hidden" name="action" value="purchase" ></input>
+            <form id="checkout-form" method="post" action="checkout">
+              <input type="hidden" name="product_id" value="<%=
+              request.getParameter("product_id") %>">
+              <div class="form-group pb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name"
+                placeholder="Enter your name" value="<%=
+                response.getHeader("name") %>" required />
+              </div>
+              <div class="form-group pb-3">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email"
+                placeholder="Enter your email" value="<%=
+                response.getHeader("email") %>" required />
+              </div>
+              <div class="form-group pb-3">
+                <label for="address">Address</label>
                 <input
-                style="width: 300px;"
-                  type="submit"
-                  class="btn bg_orange"
-                  value="Purchase"
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  name="address"
+                  placeholder="Enter your address"
+                  required
                 />
-              </form>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 pb-3">
-              <form method="post" action="viewListing">
-                <input type="hidden" name="itemID" value=<%= response.getHeader("itemID") %>></input>
-                <br />
-                <input type="hidden" name="uid" value=<%= response.getHeader("uid") %>></input>
-                <input type="hidden" name="action" value="addtocart" type="text" ></input>
+              </div>
+              <div class="form-group pb-3">
+                <label for="card-number">Card Number</label>
                 <input
-                style="width: 300px;"
-                  type="submit"
-                  class="btn bg_orange"
-                  value="Add to Cart"
+                  type="number"
+                  class="form-control"
+                  id="card-number"
+                  name="card_number"
+                  placeholder="Enter your card number"
+                  required
                 />
-              </form>
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="col-lg-12 pb-3">
-              <p>Sold by <a href="#" class="underline">Anonymous panda</a></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 pb-3">
-              <p class="text-justify"><%= response.getHeader("itemInfo") %></p>
-            </div>
+              </div>
+              <div class="form-group pb-3">
+                <label for="expiry-date">Expiry Date</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="expiry-date"
+                  name="expiry_date"
+                  placeholder="Enter expiry date (MM/YY)"
+                  maxlength="5"
+                  required
+                />
+              </div>
+              <div class="form-group pb-3">
+                <label for="cvv">CVV</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="cvv"
+                  name="cvv"
+                  placeholder="Enter your CVV"
+                  maxlength="3"
+                  required
+                />
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <button type="submit" class="btn bg_orange mt-3">
+                    Purchase
+                  </button>
+                </div>
+                <div class="col-lg-6">
+                  <button type="submit" class="btn btn-danger mt-3">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-      <div class="pb-4 pt-4"></div>
-
-      <div class="d-flex mb-3">
-        <h4>Similar Items</h4>
-        <a class="ms-auto">see all ></a>
-      </div>
-
-      <div
-        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
-        style="height: 300px"
-      >
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
       </div>
     </div>
 
@@ -269,11 +296,35 @@ pageEncoding="UTF-8"%>
         </div>
       </footer>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var quantityInput = document.getElementById("quantity");
+      var priceOutput = document.getElementById("price");
+      var pricePerUnit = document.getElementById("hiddenprice");
+
+      function updatePrice() {
+        var quantity = quantityInput.value;
+        var price = quantity * pricePerUnit.innerHTML;
+        priceOutput.textContent = "Price: $" + price.toFixed(2);
+      }
+
+      function increment() {
+        quantityInput.value++;
+        updatePrice();
+      }
+
+      function decrement() {
+        if (quantityInput.value > 1) {
+          quantityInput.value--;
+          updatePrice();
+        }
+      }
+
+      updatePrice();
+    </script>
   </body>
 </html>
