@@ -27,7 +27,7 @@ pageEncoding="UTF-8"%>
         <div class="row pb-4">
           <div class="col"></div>
           <div class="col">
-            <a href="index.jsp">
+            <a href="index.html">
               <img src="./images/oldegg-icon.png" width="200px" />
             </a>
           </div>
@@ -87,6 +87,7 @@ pageEncoding="UTF-8"%>
               <div class="col-3"></div>
             </div>
           </div>
+
 
           <div class="row">
             <div class="col-3"></div>
