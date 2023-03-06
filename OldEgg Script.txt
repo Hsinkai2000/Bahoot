@@ -7,7 +7,7 @@ drop table if exists GPUs;
 drop table if exists CPUs;
 drop table if exists RAMs;
 drop table if exists Cases;
-drop table if exists Storages;
+drop table if exists Storage;
 drop table if exists Coolers;
 drop table if exists Users;
 drop table if exists Listings;
@@ -29,6 +29,12 @@ create table OrderItems(
   primary key (id)
 );
 
+create table Listings (
+  id int NOT NULL AUTO_INCREMENT,
+  type varchar(50) NOT NULL,
+  itemID int NOT NULL,
+  primary key (id)
+);
 
 create table Carts(
   id int NOT NULL AUTO_INCREMENT,
@@ -282,7 +288,7 @@ create table Listings (
   select * from Motherboards;
   select * from RAMS;
   select * from Cases;
-  select * from Storages;
+  select * from Storage;
   select * from Coolers;
   select * from Users;
   Select * from Listings;
