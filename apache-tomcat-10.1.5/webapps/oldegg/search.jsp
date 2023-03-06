@@ -6,8 +6,14 @@ Connection conn = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                            "root", "rootpass");
 Statement stmt = conn.createStatement();
+
+String searchStr = request.getParameter("srch-term");
+
+Boolean found = false;
 String sqlStr;
+
 %>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +63,6 @@ String sqlStr;
               height="50dp"
               type="submit"
             >
-            
               <img src="./images/btn-search.svg" alt="Wishlist" height="30dp" />
             </button>
           </div>
@@ -138,218 +143,185 @@ String sqlStr;
         >
       </nav>
 
+    
+      <%
+      if (searchStr == "") {
+        response.sendRedirect("http://localhost:9999/oldegg/#");
+       } else {%>
+
+      <%
+      sqlStr = "SELECT * FROM gpus WHERE BRAND LIKE '%" + searchStr + "%' OR model LIKE '%"+ searchStr +"%' OR maker LIKE '%" +searchStr + "%'";
+      ResultSet rset = stmt.executeQuery(sqlStr);
+      if (rset.next() == true) {
+      %>
+      <%found = true;%>
       <div class="d-flex mb-3">
-        <h4 class="p-2">Recommended</h4>
-        <a class="ms-auto p-2" href ="all.jsp">see all </a>
+        <h4 class="p-2">Graphics Card</h4>
       </div>
 
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% 
+        do{%>
+        <div class="col h-25 w-25">
+          <div class="card">
+            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
+            <div class="card-body">
+              <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
+              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+            </div>
+          </div>
+        </div>
+        <%}while(rset.next());%>
+      </div>
+      <%}%>
 
       <% 
-        int number = (int)Math.floor(Math.random() * 10);
-        if (number == 0)
-          ++number;
+        sqlStr = "SELECT * FROM cpus WHERE BRAND LIKE '%" + searchStr + "%' OR model LIKE '%"+ searchStr +"%'";
+        rset = stmt.executeQuery(sqlStr);
+        if (rset.next() == true) {
       %>
-      <div
-        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
-        style="height: 550px"
-      >
-         <%
-            sqlStr = "SELECT * FROM gpus where id =" + Integer.toString(number);
-            ResultSet rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
-              <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-        </div>
-        <%  
-            number = (int)Math.floor(Math.random() * 10);
-            if (number == 0)
-              ++number;
-            sqlStr = "SELECT * FROM cpus where id =" + Integer.toString(number);
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
 
-        <div class="card h-25 w-25">
+      <%found = true;%>
+      <div class="d-flex mb-3">
+        <h4 class="p-2">Central Processing Units</h4>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% 
+        do{%>
+        <div class="col h-25 w-25">
+          <div class="card">
             <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
+            <div class="card-body">
               <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
             </div>
+          </div>
         </div>
+        <%}while(rset.next());%>
+      </div>
+      <%}%>
 
-        <%  
-            number = (int)Math.floor(Math.random() * 10);
-            if (number == 0)
-              ++number;
-            sqlStr = "SELECT * FROM motherboards where id =" + Integer.toString(number);
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25">
+       <% 
+        sqlStr = "SELECT * FROM motherboards WHERE BRAND LIKE '%" + searchStr + "%' OR model LIKE '%"+ searchStr +"%'";
+        rset = stmt.executeQuery(sqlStr);
+        if (rset.next() == true) {
+      %>
+
+      <%found = true;%>
+      <div class="d-flex mb-3">
+        <h4 class="p-2">Motherboards</h4>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% 
+        do{%>
+        <div class="col h-25 w-25">
+          <div class="card">
             <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
+            <div class="card-body">
               <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
             </div>
+          </div>
         </div>
+        <%}while(rset.next());%>
+      </div>
+      <%}%>
 
-         <%  
-            number = (int)Math.floor(Math.random() * 10);
-            if (number == 0)
-              ++number;
-            sqlStr = "SELECT * FROM rams where id =" + Integer.toString(number);
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25">
+      <% 
+        sqlStr = "SELECT * FROM rams WHERE name LIKE '%" + searchStr + "%'";
+        rset = stmt.executeQuery(sqlStr);
+        if (rset.next() == true) {
+      %>
+
+      <%found = true;%>
+      <div class="d-flex mb-3">
+        <h4 class="p-2">RAM</h4>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% 
+        do{%>
+        <div class="col h-25 w-25">
+          <div class="card">
             <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
+            <div class="card-body">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
             </div>
+          </div>
         </div>
+        <%}while(rset.next());%>
+      </div>
+      <%}%>
 
-        <%  
-            number = (int)Math.floor(Math.random() * 10);
-            if (number == 0)
-              ++number;
-            sqlStr = "SELECT * FROM storage where id =" + Integer.toString(number);
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25">
+      <% 
+        sqlStr = "SELECT * FROM storage WHERE name LIKE '%" + searchStr + "%'";
+        rset = stmt.executeQuery(sqlStr);
+        if (rset.next() == true) {
+      %>
+
+      <%found = true;%>
+      <div class="d-flex mb-3">
+        <h4 class="p-2">Storage</h4>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% 
+        do{%>
+        <div class="col h-25 w-25">
+          <div class="card">
             <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
+            <div class="card-body">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
             </div>
+          </div>
         </div>
+        <%}while(rset.next());%>
+      </div>
+      <%}%>
 
-        <%  
-            number = (int)Math.floor(Math.random() * 10);
-            if (number == 0)
-              ++number;
-            sqlStr = "SELECT * FROM cases where id =" + Integer.toString(number);
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25 card-block mx-2">
+      <% 
+        sqlStr = "SELECT * FROM cases WHERE name LIKE '%" + searchStr + "%'";
+        rset = stmt.executeQuery(sqlStr);
+        if (rset.next() == true) {
+      %>
+
+      <%found = true;%>
+      <div class="d-flex mb-3">
+        <h4 class="p-2">Cases</h4>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% 
+        do{%>
+        <div class="col h-25 w-25">
+          <div class="card">
             <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
+            <div class="card-body">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
             </div>
+          </div>
         </div>
+        <%}while(rset.next());%>
+      </div>
+      <%}%>
         
-      </div>
-
-      <div class="pb-4 pt-4"></div>
-
+      <%}%>
+      <%if(found == false) {%>
       <div class="d-flex mb-3">
-        <h4 class="p-2">${header.id}</h4>
-        <a class="ms-auto p-2" href="all.jsp">see all </a>
+        <h4 class="p-2">No results for <%=searchStr%></h4>
       </div>
+
+      <%}%>
       
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Ready Stock</h4>
-      </div>
-
-      <div
-        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
-        style="height: 550px"
-      >
-      
-        <%
-            sqlStr = "SELECT * FROM gpus ORDER BY qty DESC";
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
-              <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-        </div>
-        <%  
-            sqlStr = "SELECT * FROM cpus ORDER BY qty DESC";
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-
-        <div class="card h-25 w-25">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
-              <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-        </div>
-
-        <%  
-            
-            sqlStr = "SELECT * FROM motherboards ORDER BY qty DESC";
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
-              <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-        </div>
-
-         <%  
-            
-            sqlStr = "SELECT * FROM rams ORDER BY qty DESC";
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
-              <h5 class="card-text"><%=rset.getString("name")%></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-        </div>
-
-        <%  
-            
-            sqlStr = "SELECT * FROM storage ORDER BY qty DESC";
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
-              <h5 class="card-text"><%=rset.getString("name")%></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-        </div>
-
-        <%  
-            sqlStr = "SELECT * FROM cases ORDER BY qty DESC";
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-          %>
-        <div class="card h-25 w-25 card-block mx-2">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card">
-              <h5 class="card-text"><%=rset.getString("name")%></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-        </div>
-      </div>
-
-
+ 
 
     </div>
-
+  
     <div class="footer">
       <footer class="site-footer">
         <div class="container">

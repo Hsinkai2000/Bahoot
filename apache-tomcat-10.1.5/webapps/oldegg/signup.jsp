@@ -1,11 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OldEgg | Sign Up</title>
+    <title>OldEgg | Login</title>
     <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -27,7 +25,7 @@
         <div class="row pb-4">
           <div class="col"></div>
           <div class="col">
-            <a href="index.jsp">
+            <a href="index.html">
               <img src="./images/oldegg-icon.png" width="200px" />
             </a>
           </div>
@@ -82,7 +80,6 @@
                   name="name"
                   value="${name}"
                   required
-                  
                 />
               </div>
               <div class="col-3"></div>
