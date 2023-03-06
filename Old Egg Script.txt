@@ -11,37 +11,6 @@ drop table if exists Storage;
 drop table if exists Coolers;
 drop table if exists Users;
 drop table if exists Listings;
-drop table if exists Carts;
-drop table if exists Orders;
-drop table if exists OrderItems;
-
-
-create table Orders(
-  id int NOT NULL AUTO_INCREMENT,
-  userID int,
-  primary key (id)
-);
-
-create table OrderItems(
-  id int NOT NULL AUTO_INCREMENT,
-  orderID int,
-  itemID int,
-  primary key (id)
-);
-
-create table Listings (
-  id int NOT NULL AUTO_INCREMENT,
-  type varchar(50) NOT NULL,
-  itemID int NOT NULL,
-  primary key (id)
-);
-
-create table Carts(
-  id int NOT NULL AUTO_INCREMENT,
-  itemID int,
-  userID int,
-  primary key (id)
-);
 
 create table Motherboards (
   id int NOT NULL AUTO_INCREMENT,
@@ -194,7 +163,6 @@ INSERT INTO Coolers (name , type, price, qty, link) VALUES
 	('Corsair iCUE H100i ELITE CAPELLIX', 'AIO', '149.99', '68', 'https://www.corsair.com/us/en/medias/sys_master/images/images/hd4/h6e/9582790082590/base-icue-elite-cooler-config/Gallery/H100i_ELITE_CAPELLIX_01/-base-icue-elite-cooler-config-Gallery-H100i-ELITE-CAPELLIX-01.png_1200Wx1200H '),
 	('ID-COOLING SE-214-XT', 'AIR', '19.98', '14', 'https://www.idcooling.com/Admin/Tpl/default/Public/kindeditor-4.1.7/attached/image/20211123/20211123150851_36843.jpg '),
 	('Corsair iCUE H150i ELITE LCD', 'AIO', '289.99', '15', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h56/he9/9889310539806/CW-9060062-WW/Gallery/Common/H150i_ELITE_LCD_RENDER_01/-CW-9060062-WW-Gallery-Common-H150i-ELITE-LCD-RENDER-01.png_1200Wx1200H ');
-
 
 create table Users (
     id int NOT NULL AUTO_INCREMENT,
