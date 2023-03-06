@@ -162,9 +162,6 @@ pageEncoding="UTF-8"%>
           int largernumber = (int)Math.floor(Math.random() * 10*5); if (smallernumber == 0)
       ++smallernumber; if (largernumber== 0)
       largernumber=20;%>
-      <p><%=smallernumber%></p>
-
-      <p><%=largernumber%></p>
       <div class="container-fluid py-2">
         <div class="d-flex flex-row flex-nowrap overflow-auto">
             <% 
