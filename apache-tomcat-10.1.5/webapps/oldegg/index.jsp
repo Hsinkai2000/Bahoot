@@ -57,7 +57,6 @@ String sqlStr;
               height="50dp"
               type="submit"
             >
-            
               <img src="./images/btn-search.svg" alt="Wishlist" height="30dp" />
             </button>
           </div>
@@ -152,17 +151,22 @@ String sqlStr;
       <div
         class="d-flex flex-row flex-nowrap overflow-auto pb-2"
         style="height: 550px"
+        
       >
          <%
             sqlStr = "SELECT * FROM gpus where id =" + Integer.toString(number);
             ResultSet rset = stmt.executeQuery(sqlStr);
             rset.next();
           %>
-        <div class="card h-25 w-25">
+        <div class="card h-25 w-25" id = "tile";>
             <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
             <div class="card">
               <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
         <%  
@@ -179,6 +183,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
 
@@ -195,6 +203,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
 
@@ -211,6 +223,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
 
@@ -227,6 +243,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
 
@@ -243,6 +263,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
         
@@ -274,6 +298,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
         <%  
@@ -287,6 +315,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
 
@@ -301,6 +333,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
 
@@ -315,6 +351,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
 
@@ -329,6 +369,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
 
@@ -342,6 +386,10 @@ String sqlStr;
             <div class="card">
               <h5 class="card-text"><%=rset.getString("name")%></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
         </div>
       </div>
@@ -437,6 +485,16 @@ String sqlStr;
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
-    ></script>
+    >
+    
+    document.getElementById('tile').addEventListener('click', cl_Div);
+
+    function cl_Div() {
+
+    document.getElementById('tile').innerHTML = "Welcome to JavaScript";
+
+}
+    
+    </script>
   </body>
 </html>
