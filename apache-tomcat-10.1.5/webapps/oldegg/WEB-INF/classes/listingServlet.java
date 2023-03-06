@@ -75,7 +75,7 @@ public class listingServlet extends HttpServlet {
             Listing listing = obtainListing(stmt);
             ResultSet resultSet = getItemInfo(listing, stmt);
             if (resultSet.next()) {
-                createHeader(resultSet, response);
+                createHeader(resultSet, response,listing);
             }
 
             try {
@@ -148,9 +148,11 @@ public class listingServlet extends HttpServlet {
         return finalString;
     }
 
-    private static void createHeader(ResultSet resultSet, HttpServletResponse response) {
+    private static void createHeader(ResultSet resultSet, HttpServletResponse response, Listing listing) {
         try {
-            response.addHeader("type",type);
+            response.addHeader("type",listing.type);
+            LOGGER.info("listing type = " + listing.type);
+            response.addIntHeader("listingId", listing.id);
             response.addIntHeader("uid", userID);
             response.addIntHeader("itemID", itemID);
             response.addHeader("name", resultSet.getString("name"));
@@ -198,6 +200,8 @@ public class listingServlet extends HttpServlet {
                 response.addIntHeader("qty", qty);
                 response.addHeader("link", link);
                 response.addHeader("itemName", name);
+                response.addIntHeader("listingId",listingId);
+                response.addHeader("itemType",type);
                 request.getRequestDispatcher("checkout.jsp").forward(request, response);
             }
             // response.sendRedirect("http://localhost:9999/oldegg/checkout.jsp?uid=" +
@@ -226,7 +230,7 @@ public class listingServlet extends HttpServlet {
     }
 
     private void getProductNamePrice(HttpServletRequest request) {
-
+        type = request.getParameter("itemType");
         itemID = Integer.parseInt(request.getParameter("itemID"));
         price = Float.parseFloat(request.getParameter("price"));
         qty = Integer.parseInt(request.getParameter("qty"));

@@ -1855,3 +1855,1774 @@ Stacktrace:
 
 
 Stacktrace:
+06-Mar-2023 22:25:06.053 INFO [http-nio-9999-exec-8] listingServlet.doPost userid: 3
+06-Mar-2023 22:25:06.058 INFO [http-nio-9999-exec-8] listingServlet.doPost POST
+06-Mar-2023 22:25:06.058 INFO [http-nio-9999-exec-8] listingServlet.doPost Make Purchase
+06-Mar-2023 22:25:06.059 INFO [http-nio-9999-exec-8] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:25:06.059 INFO [http-nio-9999-exec-8] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:41:02.830 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 2
+06-Mar-2023 22:41:02.835 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =3
+06-Mar-2023 22:41:02.967 INFO [http-nio-9999-exec-3] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [198]
+
+195:                 count++;
+196:               }
+197:               while(i<=count){
+198:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+199:                 ResultSet itemset = stmt.executeQuery(getitems);
+200:                   while(itemset.next()){
+201:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:41:06.398 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 2
+06-Mar-2023 22:41:06.401 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+06-Mar-2023 22:41:06.401 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+06-Mar-2023 22:41:06.402 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:41:06.402 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:41:06.491 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem Failed to purchaseorg.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [198] in the jsp file: [/checkout.jsp]
+listingIDList cannot be resolved
+195:                   required
+196:                 />
+197:               </div>
+198:               <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+199:               <input hidden name="uid" <% if(response.getHeader("uid") != null) {%>value="<%=response.getHeader("uid") %>"<% } else {%>value="" <%}%> />
+200:               <div class="row">
+201:                 <div class="col-lg-6">
+
+
+An error occurred at line: [198] in the jsp file: [/checkout.jsp]
+i cannot be resolved to a variable
+195:                   required
+196:                 />
+197:               </div>
+198:               <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+199:               <input hidden name="uid" <% if(response.getHeader("uid") != null) {%>value="<%=response.getHeader("uid") %>"<% } else {%>value="" <%}%> />
+200:               <div class="row">
+201:                 <div class="col-lg-6">
+
+
+Stacktrace:
+06-Mar-2023 22:41:20.685 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 2
+06-Mar-2023 22:41:20.688 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+06-Mar-2023 22:41:20.689 INFO [http-nio-9999-exec-6] listingServlet.doPost Make Purchase
+06-Mar-2023 22:41:20.689 INFO [http-nio-9999-exec-6] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:41:20.689 INFO [http-nio-9999-exec-6] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:41:20.764 INFO [http-nio-9999-exec-6] listingServlet.purchaseItem Failed to purchaseorg.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [198] in the jsp file: [/checkout.jsp]
+listingIDList cannot be resolved
+195:                   required
+196:                 />
+197:               </div>
+198:               <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+199:               <input hidden name="uid" <% if(response.getHeader("uid") != null) {%>value="<%=response.getHeader("uid") %>"<% } else {%>value="" <%}%> />
+200:               <div class="row">
+201:                 <div class="col-lg-6">
+
+
+An error occurred at line: [198] in the jsp file: [/checkout.jsp]
+i cannot be resolved to a variable
+195:                   required
+196:                 />
+197:               </div>
+198:               <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+199:               <input hidden name="uid" <% if(response.getHeader("uid") != null) {%>value="<%=response.getHeader("uid") %>"<% } else {%>value="" <%}%> />
+200:               <div class="row">
+201:                 <div class="col-lg-6">
+
+
+Stacktrace:
+06-Mar-2023 22:42:55.033 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:42:55.036 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 22:42:55.070 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:42:55.084 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:42:56.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 22:42:56.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 22:42:56.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 22:42:56.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 22:42:56.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 22:42:56.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 22:42:56.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 22:42:56.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 22:42:56.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 22:42:56.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:42:56.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:42:56.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 22:42:56.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 22:42:56.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 22:42:56.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 22:42:56.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 22:42:56.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 22:42:56.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 22:42:56.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 22:42:56.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 22:42:56.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 22:42:56.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:42:56.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:42:56.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 22:42:56.191 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 22:42:56.450 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:42:56.482 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [505] milliseconds
+06-Mar-2023 22:42:56.531 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 22:42:56.531 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 22:42:56.545 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 22:42:57.272 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:42:57.361 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [816] ms
+06-Mar-2023 22:42:57.361 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 22:42:57.939 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:42:57.941 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [580] ms
+06-Mar-2023 22:42:57.941 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 22:42:58.487 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:42:58.496 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [554] ms
+06-Mar-2023 22:42:58.496 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 22:42:59.366 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:42:59.400 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [904] ms
+06-Mar-2023 22:42:59.409 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 22:43:00.142 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:43:00.145 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [736] ms
+06-Mar-2023 22:43:00.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 22:43:00.838 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:43:00.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [694] ms
+06-Mar-2023 22:43:00.844 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:43:00.863 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4381] milliseconds
+06-Mar-2023 22:43:03.544 INFO [http-nio-9999-exec-1] listingServlet.doPost userid: 2
+06-Mar-2023 22:43:03.687 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+06-Mar-2023 22:43:03.688 INFO [http-nio-9999-exec-1] listingServlet.doPost Make Purchase
+06-Mar-2023 22:43:03.688 INFO [http-nio-9999-exec-1] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:43:03.689 INFO [http-nio-9999-exec-1] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:43:11.244 INFO [http-nio-9999-exec-2] listingServlet.doPost userid: 2
+06-Mar-2023 22:43:11.248 INFO [http-nio-9999-exec-2] listingServlet.doPost POST
+06-Mar-2023 22:43:11.248 INFO [http-nio-9999-exec-2] listingServlet.doPost Make Purchase
+06-Mar-2023 22:43:11.249 INFO [http-nio-9999-exec-2] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:43:11.249 INFO [http-nio-9999-exec-2] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:44:13.527 INFO [http-nio-9999-exec-4] listingServlet.doPost userid: 2
+06-Mar-2023 22:44:13.533 INFO [http-nio-9999-exec-4] listingServlet.doPost POST
+06-Mar-2023 22:44:13.534 INFO [http-nio-9999-exec-4] listingServlet.doPost Make Purchase
+06-Mar-2023 22:44:13.534 INFO [http-nio-9999-exec-4] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:44:13.534 INFO [http-nio-9999-exec-4] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:44:32.224 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 2
+06-Mar-2023 22:44:32.229 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+06-Mar-2023 22:44:32.229 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+06-Mar-2023 22:44:32.230 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:44:32.230 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:45:40.546 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 2
+06-Mar-2023 22:45:40.555 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =3
+06-Mar-2023 22:45:40.797 INFO [http-nio-9999-exec-7] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [199]
+
+196:                 count++;
+197:               }
+198:               while(i<=count){
+199:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+200:                 ResultSet itemset = stmt.executeQuery(getitems);
+201:                   while(itemset.next()){
+202:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 22:45:46.311 INFO [http-nio-9999-exec-8] listingServlet.doPost userid: 2
+06-Mar-2023 22:45:46.318 INFO [http-nio-9999-exec-8] listingServlet.doPost POST
+06-Mar-2023 22:45:46.318 INFO [http-nio-9999-exec-8] listingServlet.doPost Make Purchase
+06-Mar-2023 22:45:46.319 INFO [http-nio-9999-exec-8] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:45:46.319 INFO [http-nio-9999-exec-8] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:51:50.535 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:51:50.539 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 22:51:50.574 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:51:50.588 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:51:51.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 22:51:51.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 22:51:51.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 22:51:51.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 22:51:51.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 22:51:51.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 22:51:51.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 22:51:51.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 22:51:51.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 22:51:51.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:51:51.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:51:51.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 22:51:51.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 22:51:51.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 22:51:51.422 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 22:51:51.677 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:51:51.714 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [491] milliseconds
+06-Mar-2023 22:51:51.758 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 22:51:51.759 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 22:51:51.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 22:51:53.166 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:51:53.224 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,449] ms
+06-Mar-2023 22:51:53.224 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 22:51:53.788 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:51:53.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [567] ms
+06-Mar-2023 22:51:53.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 22:51:54.442 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:51:54.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [660] ms
+06-Mar-2023 22:51:54.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 22:51:55.291 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:51:55.311 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [859] ms
+06-Mar-2023 22:51:55.312 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 22:51:55.833 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:51:55.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [525] ms
+06-Mar-2023 22:51:55.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 22:51:56.363 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 22:51:56.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [529] ms
+06-Mar-2023 22:51:56.367 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 22:51:56.381 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4666] milliseconds
+06-Mar-2023 22:52:40.456 INFO [http-nio-9999-exec-1] listingServlet.doPost userid: 2
+06-Mar-2023 22:52:40.717 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+06-Mar-2023 22:52:40.717 INFO [http-nio-9999-exec-1] listingServlet.doPost Make Purchase
+06-Mar-2023 22:52:40.717 INFO [http-nio-9999-exec-1] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:52:40.718 INFO [http-nio-9999-exec-1] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 22:59:02.239 INFO [http-nio-9999-exec-3] listingServlet.doPost userid: 2
+06-Mar-2023 22:59:02.244 INFO [http-nio-9999-exec-3] listingServlet.doPost POST
+06-Mar-2023 22:59:02.244 INFO [http-nio-9999-exec-3] listingServlet.doPost Make Purchase
+06-Mar-2023 22:59:02.244 INFO [http-nio-9999-exec-3] listingServlet.purchaseItem In puchase function
+06-Mar-2023 22:59:02.244 INFO [http-nio-9999-exec-3] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:01:47.469 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
+06-Mar-2023 23:01:47.861 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:01:47.862 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+06-Mar-2023 23:01:59.460 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:01:59.465 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 23:01:59.487 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:01:59.502 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:02:00.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 23:02:00.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 23:02:00.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 23:02:00.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 23:02:00.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 23:02:00.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 23:02:00.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 23:02:00.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 23:02:00.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 23:02:00.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:02:00.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:02:00.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 23:02:00.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 23:02:00.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 23:02:00.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 23:02:00.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 23:02:00.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 23:02:00.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 23:02:00.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 23:02:00.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 23:02:00.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 23:02:00.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:02:00.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:02:00.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 23:02:00.489 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 23:02:00.938 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:02:00.971 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [694] milliseconds
+06-Mar-2023 23:02:01.012 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 23:02:01.013 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 23:02:01.023 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 23:02:02.024 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:02:02.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,066] ms
+06-Mar-2023 23:02:02.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 23:02:03.012 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:02:03.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [926] ms
+06-Mar-2023 23:02:03.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 23:02:03.714 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:02:03.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [710] ms
+06-Mar-2023 23:02:03.728 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 23:02:04.915 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:02:04.954 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [1,227] ms
+06-Mar-2023 23:02:04.955 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 23:02:05.514 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:02:05.518 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [563] ms
+06-Mar-2023 23:02:05.518 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 23:02:06.234 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:02:06.239 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [720] ms
+06-Mar-2023 23:02:06.243 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:02:06.265 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5292] milliseconds
+06-Mar-2023 23:02:45.511 INFO [http-nio-9999-exec-1] listingServlet.doPost userid: 2
+06-Mar-2023 23:02:45.705 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+06-Mar-2023 23:02:45.705 INFO [http-nio-9999-exec-1] listingServlet.doPost Make Purchase
+06-Mar-2023 23:02:45.706 INFO [http-nio-9999-exec-1] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:02:45.706 INFO [http-nio-9999-exec-1] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:03:33.738 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:03:33.743 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 23:03:33.781 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:03:33.789 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:03:34.919 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 23:03:34.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 23:03:34.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 23:03:34.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 23:03:34.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 23:03:34.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 23:03:34.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 23:03:34.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 23:03:34.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 23:03:34.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:03:34.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:03:34.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 23:03:34.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 23:03:34.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 23:03:34.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 23:03:34.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 23:03:34.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 23:03:34.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 23:03:34.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 23:03:34.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 23:03:34.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 23:03:34.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:03:34.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:03:34.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 23:03:34.944 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 23:03:35.217 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:03:35.246 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [481] milliseconds
+06-Mar-2023 23:03:35.299 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 23:03:35.299 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 23:03:35.314 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 23:03:36.325 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:03:36.370 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,056] ms
+06-Mar-2023 23:03:36.371 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 23:03:37.073 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:03:37.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [706] ms
+06-Mar-2023 23:03:37.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 23:03:37.537 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:03:37.542 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [465] ms
+06-Mar-2023 23:03:37.542 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 23:03:38.441 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:03:38.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [933] ms
+06-Mar-2023 23:03:38.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 23:03:38.990 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:03:38.993 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [517] ms
+06-Mar-2023 23:03:38.993 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 23:03:39.625 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:03:39.629 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [635] ms
+06-Mar-2023 23:03:39.631 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:03:39.646 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4399] milliseconds
+06-Mar-2023 23:03:42.801 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 2
+06-Mar-2023 23:03:43.067 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:03:43.076 INFO [http-nio-9999-exec-1] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:03:44.393 INFO [http-nio-9999-exec-1] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+rset cannot be resolved
+183:         <div class="d-flex flex-row flex-nowrap overflow-auto">
+184:             <% 
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+typeList cannot be resolved
+184:             <% 
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+rset cannot be resolved
+184:             <% 
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+listingIDList cannot be resolved
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+rset cannot be resolved
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+itemIDList cannot be resolved
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+rset cannot be resolved
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+count cannot be resolved to a variable
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+
+
+An error occurred at line: [192] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+
+
+An error occurred at line: [192] in the jsp file: [/viewListing.jsp]
+count cannot be resolved to a variable
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+typeList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+typeList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+listingIDList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+typeList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+itemIDList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [205] in the jsp file: [/viewListing.jsp]
+listingIDList cannot be resolved
+202:                 <form method="get" action="viewListing">
+203:                   <h3 style="width: 200px;"><%= name %></h3>
+204:                   <p>$<%= price %></p>
+205:                   <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+206:                   <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+207:                   <button type="submit" class="btn bg_orange">View Listing</button>
+208:                 </form>
+
+
+An error occurred at line: [205] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+202:                 <form method="get" action="viewListing">
+203:                   <h3 style="width: 200px;"><%= name %></h3>
+204:                   <p>$<%= price %></p>
+205:                   <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+206:                   <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+207:                   <button type="submit" class="btn bg_orange">View Listing</button>
+208:                 </form>
+
+
+An error occurred at line: [210] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+207:                   <button type="submit" class="btn bg_orange">View Listing</button>
+208:                 </form>
+209:               </div>
+210:                 <%}i++;
+211:               }
+212:             } catch (SQLException e) {
+213:               e.printStackTrace();
+
+
+An error occurred at line: [496] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [498] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [498] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [499] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [499] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [501] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [502] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [507] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [507] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [510] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [511] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+06-Mar-2023 23:03:52.308 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 2
+06-Mar-2023 23:03:52.313 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:03:52.314 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:03:52.558 INFO [http-nio-9999-exec-2] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [186] in the jsp file: [/viewListing.jsp]
+rset cannot be resolved
+183:         <div class="d-flex flex-row flex-nowrap overflow-auto">
+184:             <% 
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+typeList cannot be resolved
+184:             <% 
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+
+
+An error occurred at line: [187] in the jsp file: [/viewListing.jsp]
+rset cannot be resolved
+184:             <% 
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+listingIDList cannot be resolved
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+
+
+An error occurred at line: [188] in the jsp file: [/viewListing.jsp]
+rset cannot be resolved
+185:            
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+itemIDList cannot be resolved
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+
+
+An error occurred at line: [189] in the jsp file: [/viewListing.jsp]
+rset cannot be resolved
+186:               while (rset.next()){                
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+count cannot be resolved to a variable
+187:                 typeList.add(rset.getString("type"));
+188:                 listingIDList.add(rset.getInt("id"));
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+
+
+An error occurred at line: [192] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+
+
+An error occurred at line: [192] in the jsp file: [/viewListing.jsp]
+count cannot be resolved to a variable
+189:                 itemIDList.add(rset.getInt("itemID"));
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+typeList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+typeList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+listingIDList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+typeList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+itemIDList cannot be resolved
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [193] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+190:                 count++;
+191:               }
+192:               while(i<=count){
+193:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+194:                 ResultSet itemset = stmt.executeQuery(getitems);
+195:                   while(itemset.next()){
+196:                   String link = itemset.getString("link");
+
+
+An error occurred at line: [205] in the jsp file: [/viewListing.jsp]
+listingIDList cannot be resolved
+202:                 <form method="get" action="viewListing">
+203:                   <h3 style="width: 200px;"><%= name %></h3>
+204:                   <p>$<%= price %></p>
+205:                   <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+206:                   <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+207:                   <button type="submit" class="btn bg_orange">View Listing</button>
+208:                 </form>
+
+
+An error occurred at line: [205] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+202:                 <form method="get" action="viewListing">
+203:                   <h3 style="width: 200px;"><%= name %></h3>
+204:                   <p>$<%= price %></p>
+205:                   <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+206:                   <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+207:                   <button type="submit" class="btn bg_orange">View Listing</button>
+208:                 </form>
+
+
+An error occurred at line: [210] in the jsp file: [/viewListing.jsp]
+i cannot be resolved to a variable
+207:                   <button type="submit" class="btn bg_orange">View Listing</button>
+208:                 </form>
+209:               </div>
+210:                 <%}i++;
+211:               }
+212:             } catch (SQLException e) {
+213:               e.printStackTrace();
+
+
+An error occurred at line: [496] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [498] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [498] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [499] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [499] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [501] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [502] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [507] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [507] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [510] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [511] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+06-Mar-2023 23:05:29.496 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 2
+06-Mar-2023 23:05:29.503 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:05:29.504 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:05:29.702 INFO [http-nio-9999-exec-4] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+largernumber cannot be resolved to a variable
+187:               List typeList = new ArrayList(); 
+188:               List listingIDList =  new ArrayList(); 
+189:               List itemIDList = new ArrayList(); 
+190:               int count=largernumber-smallernumber;
+191:               int i=0;
+192:               while (rset.next()){                
+193:                 typeList.add(rset.getString("type"));
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+smallernumber cannot be resolved to a variable
+187:               List typeList = new ArrayList(); 
+188:               List listingIDList =  new ArrayList(); 
+189:               List itemIDList = new ArrayList(); 
+190:               int count=largernumber-smallernumber;
+191:               int i=0;
+192:               while (rset.next()){                
+193:                 typeList.add(rset.getString("type"));
+
+
+An error occurred at line: [502] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [505] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [505] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [507] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [508] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [510] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [513] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [513] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [516] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [517] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+06-Mar-2023 23:05:33.318 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 2
+06-Mar-2023 23:05:33.324 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:05:33.326 INFO [http-nio-9999-exec-5] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:05:33.329 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.viewListing_jsp
+06-Mar-2023 23:05:51.166 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 2
+06-Mar-2023 23:05:51.171 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:05:51.172 INFO [http-nio-9999-exec-6] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:05:51.364 INFO [http-nio-9999-exec-6] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+largernumber cannot be resolved to a variable
+187:               List typeList = new ArrayList(); 
+188:               List listingIDList =  new ArrayList(); 
+189:               List itemIDList = new ArrayList(); 
+190:               int count=largernumber-smallernumber;
+191:               int i=0;
+192:               while (rset.next()){                
+193:                 typeList.add(rset.getString("type"));
+
+
+An error occurred at line: [190] in the jsp file: [/viewListing.jsp]
+smallernumber cannot be resolved to a variable
+187:               List typeList = new ArrayList(); 
+188:               List listingIDList =  new ArrayList(); 
+189:               List itemIDList = new ArrayList(); 
+190:               int count=largernumber-smallernumber;
+191:               int i=0;
+192:               while (rset.next()){                
+193:                 typeList.add(rset.getString("type"));
+
+
+An error occurred at line: [502] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [505] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [505] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [507] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [508] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [510] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [513] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [513] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [516] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [517] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+06-Mar-2023 23:06:13.622 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:06:13.627 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 23:06:13.654 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:06:13.665 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:06:14.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 23:06:14.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 23:06:14.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 23:06:14.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 23:06:14.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 23:06:14.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 23:06:14.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 23:06:14.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 23:06:14.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 23:06:14.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:06:14.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:06:14.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 23:06:14.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 23:06:14.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 23:06:14.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 23:06:14.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 23:06:14.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 23:06:14.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 23:06:14.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 23:06:14.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 23:06:14.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 23:06:14.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:06:14.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:06:14.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 23:06:14.988 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 23:06:15.287 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:06:15.327 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [532] milliseconds
+06-Mar-2023 23:06:15.380 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 23:06:15.380 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 23:06:15.399 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 23:06:16.293 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:06:16.343 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [944] ms
+06-Mar-2023 23:06:16.343 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 23:06:16.785 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:06:16.787 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [444] ms
+06-Mar-2023 23:06:16.788 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 23:06:17.192 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:06:17.199 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [411] ms
+06-Mar-2023 23:06:17.200 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 23:06:17.893 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:06:17.917 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [718] ms
+06-Mar-2023 23:06:17.917 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 23:06:18.330 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:06:18.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [417] ms
+06-Mar-2023 23:06:18.335 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 23:06:18.882 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:06:18.884 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [549] ms
+06-Mar-2023 23:06:18.887 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:06:18.899 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3571] milliseconds
+06-Mar-2023 23:06:20.602 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 2
+06-Mar-2023 23:06:20.758 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:06:20.763 INFO [http-nio-9999-exec-1] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:06:21.840 INFO [http-nio-9999-exec-1] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [502] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [505] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [505] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [507] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [508] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [510] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [513] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [513] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [516] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [517] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+06-Mar-2023 23:06:30.343 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 2
+06-Mar-2023 23:06:30.349 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:06:30.350 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:06:30.560 INFO [http-nio-9999-exec-2] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [502] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [504] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [505] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [505] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [507] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [508] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [510] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [513] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [513] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [516] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [517] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/viewListing_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+06-Mar-2023 23:07:07.526 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 2
+06-Mar-2023 23:07:07.532 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:07:07.533 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:07:07.779 INFO [http-nio-9999-exec-4] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [200]
+
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:07:10.195 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 2
+06-Mar-2023 23:07:10.199 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:07:10.200 INFO [http-nio-9999-exec-5] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:07:10.214 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [200]
+
+197:                 itemIDList.add(rset.getInt("itemID"));
+198:               }
+199:               while(i<=count){
+200:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+201:                 ResultSet itemset = stmt.executeQuery(getitems);
+202:                   while(itemset.next()){
+203:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:08:30.903 INFO [http-nio-9999-exec-7] listingServlet.doPost userid: 2
+06-Mar-2023 23:08:30.907 INFO [http-nio-9999-exec-7] listingServlet.doPost POST
+06-Mar-2023 23:08:30.907 INFO [http-nio-9999-exec-7] listingServlet.doPost Make Purchase
+06-Mar-2023 23:08:30.908 INFO [http-nio-9999-exec-7] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:08:30.908 INFO [http-nio-9999-exec-7] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:08:45.148 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 2
+06-Mar-2023 23:08:45.154 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:08:45.155 INFO [http-nio-9999-exec-8] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:08:45.336 INFO [http-nio-9999-exec-8] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:08:46.882 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 2
+06-Mar-2023 23:08:46.888 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:08:46.889 INFO [http-nio-9999-exec-9] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:08:46.901 INFO [http-nio-9999-exec-9] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:08:47.703 INFO [http-nio-9999-exec-1] listingServlet.doPost userid: 2
+06-Mar-2023 23:08:47.708 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+06-Mar-2023 23:08:47.708 INFO [http-nio-9999-exec-1] listingServlet.doPost Make Purchase
+06-Mar-2023 23:08:47.708 INFO [http-nio-9999-exec-1] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:08:47.708 INFO [http-nio-9999-exec-1] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:15:21.416 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:15:21.420 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 23:15:21.446 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:15:21.457 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:15:23.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 23:15:23.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 23:15:23.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 23:15:23.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 23:15:23.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 23:15:23.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 23:15:23.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 23:15:23.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 23:15:23.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 23:15:23.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:15:23.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:15:23.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 23:15:23.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 23:15:23.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 23:15:23.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 23:15:23.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 23:15:23.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 23:15:23.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 23:15:23.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 23:15:23.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 23:15:23.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 23:15:23.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:15:23.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:15:23.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 23:15:23.688 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 23:15:23.981 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:15:24.012 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [572] milliseconds
+06-Mar-2023 23:15:24.059 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 23:15:24.060 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 23:15:24.071 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 23:15:25.275 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:15:25.322 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,251] ms
+06-Mar-2023 23:15:25.322 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 23:15:25.941 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:15:25.944 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [621] ms
+06-Mar-2023 23:15:25.944 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 23:15:26.537 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:15:26.548 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [604] ms
+06-Mar-2023 23:15:26.549 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 23:15:27.252 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:15:27.285 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [737] ms
+06-Mar-2023 23:15:27.286 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 23:15:27.718 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:15:27.720 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [435] ms
+06-Mar-2023 23:15:27.720 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 23:15:28.109 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:15:28.111 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [391] ms
+06-Mar-2023 23:15:28.115 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:15:28.128 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4115] milliseconds
+06-Mar-2023 23:18:14.062 INFO [http-nio-9999-exec-2] listingServlet.doPost userid: 2
+06-Mar-2023 23:18:14.190 INFO [http-nio-9999-exec-2] listingServlet.doPost POST
+06-Mar-2023 23:18:14.191 INFO [http-nio-9999-exec-2] listingServlet.doPost Make Purchase
+06-Mar-2023 23:18:14.191 INFO [http-nio-9999-exec-2] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:18:14.191 INFO [http-nio-9999-exec-2] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:18:25.644 INFO [http-nio-9999-exec-3] listingServlet.doPost userid: 2
+06-Mar-2023 23:18:25.648 INFO [http-nio-9999-exec-3] listingServlet.doPost POST
+06-Mar-2023 23:18:25.648 INFO [http-nio-9999-exec-3] listingServlet.doPost Make Purchase
+06-Mar-2023 23:18:25.648 INFO [http-nio-9999-exec-3] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:18:25.648 INFO [http-nio-9999-exec-3] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:19:39.956 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 2
+06-Mar-2023 23:19:39.962 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:19:39.967 INFO [http-nio-9999-exec-5] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:19:40.220 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:19:43.870 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 2
+06-Mar-2023 23:19:43.874 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+06-Mar-2023 23:19:43.874 INFO [http-nio-9999-exec-6] listingServlet.doPost Make Purchase
+06-Mar-2023 23:19:43.874 INFO [http-nio-9999-exec-6] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:19:43.874 INFO [http-nio-9999-exec-6] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:21:20.386 INFO [http-nio-9999-exec-9] listingServlet.doPost userid: 2
+06-Mar-2023 23:21:20.393 INFO [http-nio-9999-exec-9] listingServlet.doPost POST
+06-Mar-2023 23:21:20.393 INFO [http-nio-9999-exec-9] listingServlet.doPost Make Purchase
+06-Mar-2023 23:21:20.394 INFO [http-nio-9999-exec-9] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:21:20.394 INFO [http-nio-9999-exec-9] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:21:24.039 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 2
+06-Mar-2023 23:21:24.044 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:21:24.046 INFO [http-nio-9999-exec-10] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:21:24.056 INFO [http-nio-9999-exec-10] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:21:25.806 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 2
+06-Mar-2023 23:21:25.812 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:21:25.814 INFO [http-nio-9999-exec-1] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:21:25.821 INFO [http-nio-9999-exec-1] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:21:27.160 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 2
+06-Mar-2023 23:21:27.166 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =3
+06-Mar-2023 23:21:27.167 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = motherboards
+06-Mar-2023 23:21:27.185 INFO [http-nio-9999-exec-2] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:21:32.808 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 2
+06-Mar-2023 23:21:32.812 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =4
+06-Mar-2023 23:21:32.813 INFO [http-nio-9999-exec-3] listingServlet.createHeader listing type = cpus
+06-Mar-2023 23:21:32.823 INFO [http-nio-9999-exec-3] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [/viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:21:34.415 INFO [http-nio-9999-exec-4] listingServlet.doPost userid: 2
+06-Mar-2023 23:21:34.419 INFO [http-nio-9999-exec-4] listingServlet.doPost POST
+06-Mar-2023 23:21:34.419 INFO [http-nio-9999-exec-4] listingServlet.doPost Make Purchase
+06-Mar-2023 23:21:34.419 INFO [http-nio-9999-exec-4] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:21:34.419 INFO [http-nio-9999-exec-4] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:21:48.645 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 2
+06-Mar-2023 23:21:48.650 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+06-Mar-2023 23:21:48.650 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+06-Mar-2023 23:21:48.651 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:21:48.651 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:22:10.852 INFO [http-nio-9999-exec-7] checkoutServlet.doPost MyServlet called
+06-Mar-2023 23:22:10.871 INFO [http-nio-9999-exec-7] checkoutServlet.doPost Something Failedjava.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=36 WHERE id =4' at line 1
+06-Mar-2023 23:23:22.133 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:23:22.139 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 23:23:22.172 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:23:22.187 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:23:23.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 23:23:23.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 23:23:23.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 23:23:23.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 23:23:23.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 23:23:23.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 23:23:23.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 23:23:23.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 23:23:23.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 23:23:23.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:23:23.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:23:23.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 23:23:23.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 23:23:23.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 23:23:23.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 23:23:23.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 23:23:23.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 23:23:23.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 23:23:23.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 23:23:23.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 23:23:23.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 23:23:23.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:23:23.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:23:23.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 23:23:23.478 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 23:23:23.950 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:23:23.992 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [734] milliseconds
+06-Mar-2023 23:23:24.056 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 23:23:24.057 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 23:23:24.067 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 23:23:25.402 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:23:25.460 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,392] ms
+06-Mar-2023 23:23:25.460 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 23:23:26.391 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:23:26.395 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [935] ms
+06-Mar-2023 23:23:26.396 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 23:23:27.093 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:23:27.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [709] ms
+06-Mar-2023 23:23:27.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 23:23:28.108 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:23:28.152 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [1,046] ms
+06-Mar-2023 23:23:28.152 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 23:23:28.713 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:23:28.715 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [563] ms
+06-Mar-2023 23:23:28.715 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 23:23:29.356 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:23:29.361 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [646] ms
+06-Mar-2023 23:23:29.365 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:23:29.387 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5395] milliseconds
+06-Mar-2023 23:23:31.742 INFO [http-nio-9999-exec-1] checkoutServlet.doPost MyServlet called
+06-Mar-2023 23:23:31.760 INFO [http-nio-9999-exec-1] checkoutServlet.doPost purchased
+06-Mar-2023 23:24:03.970 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =1
+06-Mar-2023 23:24:03.975 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:24:04.007 INFO [http-nio-9999-exec-4] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:24:06.388 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 0
+06-Mar-2023 23:24:06.392 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+06-Mar-2023 23:24:06.392 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+06-Mar-2023 23:24:06.393 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:24:06.393 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:24:06.394 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName Failed to insert to cartjava.sql.SQLException: Illegal operation on empty result set.
+06-Mar-2023 23:24:20.332 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 0
+06-Mar-2023 23:24:20.336 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+06-Mar-2023 23:24:20.336 INFO [http-nio-9999-exec-6] listingServlet.doPost Make Purchase
+06-Mar-2023 23:24:20.337 INFO [http-nio-9999-exec-6] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:24:20.337 INFO [http-nio-9999-exec-6] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:24:20.338 INFO [http-nio-9999-exec-6] listingServlet.getUserEmailName Failed to insert to cartjava.sql.SQLException: Illegal operation on empty result set.
+06-Mar-2023 23:24:43.402 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 2
+06-Mar-2023 23:24:43.408 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =1
+06-Mar-2023 23:24:43.410 INFO [http-nio-9999-exec-8] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:24:43.427 INFO [http-nio-9999-exec-8] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:24:45.090 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 3
+06-Mar-2023 23:24:45.095 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =1
+06-Mar-2023 23:24:45.096 INFO [http-nio-9999-exec-9] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:24:45.101 INFO [http-nio-9999-exec-9] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:24:48.789 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 3
+06-Mar-2023 23:24:48.793 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =1
+06-Mar-2023 23:24:48.794 INFO [http-nio-9999-exec-10] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:24:48.807 INFO [http-nio-9999-exec-10] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:24:51.845 INFO [http-nio-9999-exec-1] listingServlet.doPost userid: 3
+06-Mar-2023 23:24:51.848 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+06-Mar-2023 23:24:51.849 INFO [http-nio-9999-exec-1] listingServlet.doPost Make Purchase
+06-Mar-2023 23:24:51.849 INFO [http-nio-9999-exec-1] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:24:51.849 INFO [http-nio-9999-exec-1] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:25:04.669 INFO [http-nio-9999-exec-2] checkoutServlet.doPost MyServlet called
+06-Mar-2023 23:25:04.674 INFO [http-nio-9999-exec-2] checkoutServlet.doPost purchased
+06-Mar-2023 23:28:36.130 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:28:36.133 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 23:28:36.164 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:28:36.172 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:28:39.121 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 23:28:39.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 23:28:39.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 23:28:39.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 23:28:39.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 23:28:39.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 23:28:39.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 23:28:39.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 23:28:39.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 23:28:39.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:28:39.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:28:39.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 23:28:39.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 23:28:39.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 23:28:39.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 23:28:39.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 23:28:39.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 23:28:39.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 23:28:39.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 23:28:39.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 23:28:39.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 23:28:39.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:28:39.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:28:39.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 23:28:39.158 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 23:28:39.648 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:28:39.717 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [790] milliseconds
+06-Mar-2023 23:28:39.780 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 23:28:39.780 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 23:28:39.793 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 23:28:40.693 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:28:40.737 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [943] ms
+06-Mar-2023 23:28:40.738 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 23:28:41.308 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:28:41.312 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [575] ms
+06-Mar-2023 23:28:41.313 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 23:28:41.884 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:28:41.896 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [583] ms
+06-Mar-2023 23:28:41.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 23:28:42.944 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:28:42.971 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [1,074] ms
+06-Mar-2023 23:28:42.971 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 23:28:43.359 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:28:43.360 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [389] ms
+06-Mar-2023 23:28:43.361 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 23:28:43.916 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:28:43.920 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [559] ms
+06-Mar-2023 23:28:43.923 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:28:43.953 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4235] milliseconds
+06-Mar-2023 23:28:47.541 INFO [http-nio-9999-exec-1] checkoutServlet.doPost MyServlet called
+06-Mar-2023 23:28:47.565 INFO [http-nio-9999-exec-1] checkoutServlet.doPost Something Failedjava.sql.SQLException: Operation not allowed for a result set of type ResultSet.TYPE_FORWARD_ONLY.
+06-Mar-2023 23:28:53.265 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 3
+06-Mar-2023 23:28:53.271 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =1
+06-Mar-2023 23:28:53.278 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:28:53.397 INFO [http-nio-9999-exec-2] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:28:54.284 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 3
+06-Mar-2023 23:28:54.290 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =1
+06-Mar-2023 23:28:54.291 INFO [http-nio-9999-exec-3] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:28:54.298 INFO [http-nio-9999-exec-3] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:28:55.170 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 3
+06-Mar-2023 23:28:55.176 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =1
+06-Mar-2023 23:28:55.177 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:28:55.184 INFO [http-nio-9999-exec-4] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:28:56.200 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 3
+06-Mar-2023 23:28:56.207 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =1
+06-Mar-2023 23:28:56.209 INFO [http-nio-9999-exec-5] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:28:56.223 INFO [http-nio-9999-exec-5] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:28:57.334 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 3
+06-Mar-2023 23:28:57.339 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+06-Mar-2023 23:28:57.339 INFO [http-nio-9999-exec-6] listingServlet.doPost Make Purchase
+06-Mar-2023 23:28:57.339 INFO [http-nio-9999-exec-6] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:28:57.339 INFO [http-nio-9999-exec-6] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:29:08.241 INFO [http-nio-9999-exec-7] checkoutServlet.doPost MyServlet called
+06-Mar-2023 23:29:08.244 INFO [http-nio-9999-exec-7] checkoutServlet.doPost Something Failedjava.sql.SQLException: Operation not allowed for a result set of type ResultSet.TYPE_FORWARD_ONLY.
+06-Mar-2023 23:39:02.816 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:39:02.820 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Mar-2023 23:39:02.850 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:39:02.855 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:39:03.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+06-Mar-2023 23:39:03.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+06-Mar-2023 23:39:03.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+06-Mar-2023 23:39:03.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+06-Mar-2023 23:39:03.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+06-Mar-2023 23:39:03.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+06-Mar-2023 23:39:03.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+06-Mar-2023 23:39:03.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+06-Mar-2023 23:39:03.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+06-Mar-2023 23:39:03.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:39:03.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:39:03.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+06-Mar-2023 23:39:03.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2023 23:39:03.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2023 23:39:03.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2023 23:39:03.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Mar-2023 23:39:03.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2023 23:39:03.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2023 23:39:03.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2023 23:39:03.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2023 23:39:03.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2023 23:39:03.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:39:03.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+06-Mar-2023 23:39:03.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+06-Mar-2023 23:39:03.725 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-Mar-2023 23:39:04.266 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:39:04.304 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [789] milliseconds
+06-Mar-2023 23:39:04.353 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Mar-2023 23:39:04.353 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+06-Mar-2023 23:39:04.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+06-Mar-2023 23:39:05.306 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:39:05.373 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,007] ms
+06-Mar-2023 23:39:05.374 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+06-Mar-2023 23:39:06.185 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:39:06.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [816] ms
+06-Mar-2023 23:39:06.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+06-Mar-2023 23:39:06.706 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:39:06.714 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [523] ms
+06-Mar-2023 23:39:06.714 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+06-Mar-2023 23:39:07.554 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:39:07.593 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [878] ms
+06-Mar-2023 23:39:07.593 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+06-Mar-2023 23:39:08.306 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:39:08.311 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [717] ms
+06-Mar-2023 23:39:08.311 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+06-Mar-2023 23:39:08.890 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Mar-2023 23:39:08.893 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [582] ms
+06-Mar-2023 23:39:08.895 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+06-Mar-2023 23:39:08.907 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4602] milliseconds
+06-Mar-2023 23:39:08.966 INFO [http-nio-9999-exec-1] listingServlet.doPost userid: 3
+06-Mar-2023 23:39:09.106 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+06-Mar-2023 23:39:09.106 INFO [http-nio-9999-exec-1] listingServlet.doPost Make Purchase
+06-Mar-2023 23:39:09.107 INFO [http-nio-9999-exec-1] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:39:09.107 INFO [http-nio-9999-exec-1] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:39:18.294 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =8
+06-Mar-2023 23:39:18.302 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = coolers
+06-Mar-2023 23:39:18.329 INFO [http-nio-9999-exec-4] listingServlet.doGet unable to dispatch org.apache.jasper.JasperException: An exception occurred processing [viewListing.jsp] at line [203]
+
+200:                 itemIDList.add(rset.getInt("itemID"));
+201:               }
+202:               while(i<=count){
+203:                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+204:                 ResultSet itemset = stmt.executeQuery(getitems);
+205:                   while(itemset.next()){
+206:                   String link = itemset.getString("link");
+
+
+Stacktrace:
+06-Mar-2023 23:39:20.195 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 3
+06-Mar-2023 23:39:20.202 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+06-Mar-2023 23:39:20.202 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+06-Mar-2023 23:39:20.202 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+06-Mar-2023 23:39:20.202 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+06-Mar-2023 23:39:31.324 INFO [http-nio-9999-exec-6] checkoutServlet.doPost MyServlet called
+06-Mar-2023 23:39:31.335 INFO [http-nio-9999-exec-6] checkoutServlet.doPost purchased

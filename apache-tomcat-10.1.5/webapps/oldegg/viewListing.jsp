@@ -123,14 +123,17 @@ pageEncoding="UTF-8"%>
           <div class="row">
             <div class="col-lg-12">
               <form method="post" action="viewListing">
+                
                 <input type="hidden" name="itemID" value=<%= response.getHeader("itemID") %> ></input>
                 <input type="hidden" name="uid" value=<%= response.getHeader("uid") %>></input>
                 <input type="hidden" name="name" value="<%= response.getHeader("name") %>" ></input>
                 <input type="hidden" name="price" value=<%= response.getHeader("price") %>></input>
                 <input type="hidden" name="qty" value=<%= response.getHeader("qty") %> ></input>
                 <input type="hidden" name="link" value=<%= response.getHeader("link") %>></input>
+                <input type="hidden" name="itemType" value=<%= response.getHeader("type") %>></input>
                 <input type="hidden" name="itemInfo" value="<%= response.getHeader("itemInfo") %>" ></input>
                 <input type="hidden" name="action" value="purchase" ></input>
+                <input hidden name="listingId" value=<%= request.getParameter("listingId") %>></input>
                 <input
                 style="width: 300px;"
                   type="submit"
@@ -176,23 +179,25 @@ pageEncoding="UTF-8"%>
         <a class="ms-auto">see all ></a>
       </div>
 
-      
+      <% int smallernumber = (int)Math.floor(Math.random() * 10);
+          int largernumber = (int)Math.floor(Math.random() * 10*5); if (smallernumber == 0)
+      ++smallernumber; if (largernumber== 0)
+      largernumber=20;%>
       <div class="container-fluid py-2">
         <div class="d-flex flex-row flex-nowrap overflow-auto">
             <% 
             try{
-              String listing = "select * from listings where type = '" + response.getHeader("type") +  "'";
+              String listing = "select * from listings where type = '" + response.getHeader("type") +  "' AND id > " + smallernumber + " and id<" + largernumber;
               ResultSet rset = stmt.executeQuery(listing);
               List typeList = new ArrayList(); 
               List listingIDList =  new ArrayList(); 
               List itemIDList = new ArrayList(); 
-              int count=0;
+              int count=largernumber-smallernumber;
               int i=0;
               while (rset.next()){                
                 typeList.add(rset.getString("type"));
                 listingIDList.add(rset.getInt("id"));
                 itemIDList.add(rset.getInt("itemID"));
-                count++;
               }
               while(i<=count){
                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);

@@ -174,7 +174,7 @@ pageEncoding="UTF-8"%>
               <div class="form-group pb-3">
                 <label for="expiry-date">Expiry Date</label>
                 <input
-                  type="text"
+                  type="date"
                   class="form-control"
                   id="expiry-date"
                   name="expiry_date"
@@ -194,7 +194,13 @@ pageEncoding="UTF-8"%>
                   maxlength="3"
                   required
                 />
-              </div>
+              </div>              
+
+              <input  name="qty" value="<%=response.getHeader("qty") %>">
+              <input  name="itemType" value="<%=response.getHeader("itemType") %>">
+              <input  name="itemID" value="<%=response.getHeader("itemID") %>">
+              <input  name="listingId" value="<%=response.getHeader("listingId") %>">
+              <input  name="uid" <% if(response.getHeader("uid") != null) {%>value="<%=response.getHeader("uid") %>"<% } else {%>value="" <%}%> />
               <div class="row">
                 <div class="col-lg-6">
                   <button type="submit" class="btn bg_orange mt-3">
