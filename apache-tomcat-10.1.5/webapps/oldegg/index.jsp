@@ -118,11 +118,6 @@ pageEncoding="UTF-8"%>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
         <a
           class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="all.jsp"
-          >All</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
           href="gpu.jsp"
           >GPUs</a
         >
@@ -151,6 +146,11 @@ pageEncoding="UTF-8"%>
           href="cases.jsp"
           >Cases</a
         >
+        <a
+          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+          href="coolers.jsp"
+          >Coolers</a
+        >
       </nav>
 
       <div class="d-flex mb-3">
@@ -158,28 +158,30 @@ pageEncoding="UTF-8"%>
         <a class="ms-auto p-2" href="all.jsp">see all </a>
       </div>
 
-      <% int number = (int)Math.floor(Math.random() * 10); if (number == 0)
-      ++number; %>
-      
+      <% int smallernumber = (int)Math.floor(Math.random() * 10);
+          int largernumber = (int)Math.floor(Math.random() * 10*5); if (smallernumber == 0)
+      ++smallernumber; if (largernumber== 0)
+      largernumber=20;%>
+      <p><%=smallernumber%></p>
+
+      <p><%=largernumber%></p>
       <div class="container-fluid py-2">
         <div class="d-flex flex-row flex-nowrap overflow-auto">
             <% 
             try{
-              String listing = "SELECT * FROM listings ORDER BY RAND()";
+              String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
               ResultSet rset = stmt.executeQuery(listing);
-              ResultSetMetaData rsmd = rset.getMetaData(); 
-              int columnCount = rsmd.getColumnCount();
               List typeList = new ArrayList(); 
               List listingIDList =  new ArrayList(); 
               List itemIDList = new ArrayList(); 
-              int count=0;
+              int count=largernumber-smallernumber;
               int i=0;
               while (rset.next()){                
                 typeList.add(rset.getString("type"));
                 listingIDList.add(rset.getInt("id"));
                 itemIDList.add(rset.getInt("itemID"));
-                count++;
               }
+              Thread.sleep(1000);
               while(i<=count){
                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
                 ResultSet itemset = stmt.executeQuery(getitems);
@@ -202,6 +204,7 @@ pageEncoding="UTF-8"%>
               }
             } catch (SQLException e) {
               e.printStackTrace();
+              
             }
             %>
           </div>                
