@@ -7,22 +7,22 @@ Connection conn = DriverManager.getConnection(
                            "root", "password");
 Statement stmt = conn.createStatement();
 
-String sqlStr = "select * from storage";
+String sqlStr = "select * from coolers";
 if (request.getParameter("sort") !=null) {
   if (request.getParameter("sort").equals("lp")) {
-    sqlStr = "SELECT * FROM storage ORDER BY price ASC";
+    sqlStr = "SELECT * FROM coolers ORDER BY price ASC";
   }
 
   if (request.getParameter("sort").equals("hp")) {
-    sqlStr = "SELECT * FROM storage ORDER BY price DESC";
+    sqlStr = "SELECT * FROM coolers ORDER BY price DESC";
   }
 
   if (request.getParameter("sort").equals("az")) {
-    sqlStr = "SELECT * FROM storage ORDER BY name ASC";
+    sqlStr = "SELECT * FROM coolers ORDER BY name ASC";
   }
 
   if (request.getParameter("sort").equals("za")) {
-    sqlStr = "SELECT * FROM storage ORDER BY name DESC";
+    sqlStr = "SELECT * FROM coolers ORDER BY name DESC";
   }
 }
 ResultSet rset = stmt.executeQuery(sqlStr);
@@ -158,7 +158,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
       </nav>
       
       <div class="d-flex mb-3">
-        <h4 class="p-2">Storage</h4>
+        <h4 class="p-2">Coolers</h4>
       </div>
 
       <div class="dropdown">
@@ -183,11 +183,11 @@ ResultSet rset = stmt.executeQuery(sqlStr);
                   
                 </div>
                 <div class="card-footer">
-                  <h5 class="card-text"><%=rset.getString("name")+" "+rset.getString("capacity")+" "%></h5>
+                  <h5 class="card-text"><%=rset.getString("name")%></h5>
                   <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
                   <form method="get" action="viewListing">
                     <input type="hidden" value="#############" name="listingId" />
-                    <button type="submit" class="btn btn-primary" >View Listing</button>
+                    <button type="submit" class="btn bg_orange" >View Listing</button>
                   </form>
                 </div>
               </div>

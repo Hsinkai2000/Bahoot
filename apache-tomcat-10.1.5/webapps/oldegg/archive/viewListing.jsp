@@ -1,48 +1,19 @@
-<%@ page import = "java.io.*,java.util.*,java.sql.*,java.text.*"%>
-
-<% 
-DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
-Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                           "root", "password");
-Statement stmt = conn.createStatement();
-
-String sqlStr = "select * from storage";
-if (request.getParameter("sort") !=null) {
-  if (request.getParameter("sort").equals("lp")) {
-    sqlStr = "SELECT * FROM storage ORDER BY price ASC";
-  }
-
-  if (request.getParameter("sort").equals("hp")) {
-    sqlStr = "SELECT * FROM storage ORDER BY price DESC";
-  }
-
-  if (request.getParameter("sort").equals("az")) {
-    sqlStr = "SELECT * FROM storage ORDER BY name ASC";
-  }
-
-  if (request.getParameter("sort").equals("za")) {
-    sqlStr = "SELECT * FROM storage ORDER BY name DESC";
-  }
-}
-ResultSet rset = stmt.executeQuery(sqlStr);
-%>
-
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Old Egg | Home</title>
-    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png">
+    <title>OldEgg | <%= response.getHeader("name") %></title>
+    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link href="./style/style.css" rel="stylesheet" />
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body class="bg_default">
     <nav
@@ -51,7 +22,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
     >
       <a
         class="navbar-brand"
-        href="index.jsp"
+        href="#"
         style="padding-bottom: 15px; padding-right: 50px"
       >
         <img
@@ -61,12 +32,12 @@ ResultSet rset = stmt.executeQuery(sqlStr);
           alt="OldEgg"
         />
       </a>
-      <form method="get" action ="search.jsp" class="navbar-form" role="search">
+      <form class="navbar-form" role="search">
         <div class="input-group" style="width: 40em">
           <input
             type="text"
             class="form-control pl-5"
-            placeholder="Search parts"
+            placeholder="Search parts and sellers"
             name="srch-term"
             id="srch-term-header"
           />
@@ -117,83 +88,84 @@ ResultSet rset = stmt.executeQuery(sqlStr);
       </div>
     </nav>
 
-    <div style="padding-left: 50px; padding-right: 50px">
-      <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
-      <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="gpu.jsp"
-          >GPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="cpu.jsp"
-          >CPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="motherboards.jsp"
-          >Motherboards</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="ram.jsp"
-          >Rams</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="storage.jsp"
-          >Storage</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="cases.jsp"
-          >Cases</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="coolers.jsp"
-          >Coolers</a
-        >
-      </nav>
-      
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Storage</h4>
-      </div>
-
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Sort By:
-        </button>
-        <ul class="dropdown-menu">
-         
-          <li><a class="dropdown-item" href="?sort=lp">Lowest Price</a></li>
-          <li><a class="dropdown-item" href="?sort=hp">Highest Price</a></li>
-          <li><a class="dropdown-item" href="?sort=az">Name: A to Z</a></li>
-          <li><a class="dropdown-item" href="?sort=za">Name: Z to A</a></li>
-        </ul>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-6 g-4">
-          <% while (rset.next()) {%>
-            <div class="col">
-              <div class="card h-100">
-                <img src="<%=rset.getString("link")%>"class="card-img-top" alt="...">
-                <div class="card-body">
-                  
-                </div>
-                <div class="card-footer">
-                  <h5 class="card-text"><%=rset.getString("name")+" "+rset.getString("capacity")+" "%></h5>
-                  <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-                  <form method="get" action="viewListing">
-                    <input type="hidden" value="#############" name="listingId" />
-                    <button type="submit" class="btn btn-primary" >View Listing</button>
-                  </form>
-                </div>
-              </div>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <img
+                class="zoom"
+                
+                src="<%= response.getHeader("link") %>"
+              />
             </div>
-          <%}%>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <p>
+                Have a similar item?
+                <a class="underline" href="#">Sell yours</a>
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <h2><%= response.getHeader("name") %></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <h3>$<%= response.getHeader("price") %></h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <button class="btn bg_orange" style="width: 400px">
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <button class="btn bg_orange" style="width: 400px">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <p>Sold by <a href="#" class="underline">Anonymous panda</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-3">
+              <p class="text-justify">
+                <%= response.getHeader("itemInfo") %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pb-4 pt-4"></div>
+
+      <div class="d-flex mb-3">
+        <h4>Similar Items</h4>
+        <a class="ms-auto">see all ></a>
+      </div>
+
+      <div
+        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
+        style="height: 300px"
+      >
+        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
+        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
+        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
+        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
+        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
+        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
+        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
       </div>
     </div>
 
@@ -216,27 +188,27 @@ ResultSet rset = stmt.executeQuery(sqlStr);
               <h6>Categories</h6>
               <ul class="footer-links">
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="all.jsp">All</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="#">All</a>
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp">GPUs</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="#">GPUs</a>
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp">CPUs</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="#">CPUs</a>
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="#"
                     >Motherboards</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp">Rams</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="#">Rams</a>
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp">Storage</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="#">Storage</a>
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp">Cases</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="#">Cases</a>
                 </li>
               </ul>
             </div>
@@ -280,6 +252,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
         </div>
       </footer>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

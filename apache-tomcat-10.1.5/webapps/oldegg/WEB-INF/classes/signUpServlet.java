@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.net.URI;
 import java.net.http.HttpHeaders;
@@ -22,55 +21,58 @@ public class signUpServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        LOGGER.info("MyServlet called"); // Add a logging statement
-			
-        email = request.getParameter("email");
-        name = request.getParameter("name");
-        password = request.getParameter("password");
-        confirm = request.getParameter("confirm");
-	    mobile = Integer.parseInt(request.getParameter("mobile")) ;
-		String err="";
-
-        int count = verifyEmail();
-
-
-        if (email == null || password == null || confirm == null) {
-            err += "Please fill out all fields.\n";
-        } else if (email.isEmpty() || password.isEmpty() || confirm.isEmpty()) {
-            err += "Please fill out all fields.\n";
-        } else if (!password.equals(confirm)) {
-            err += "Passwords do not match.\n";
-        } else if (count != 0) {
-            err += "Email is already in use.\n";
-        } 
-        
-        if(err!=""){
-
-            LOGGER.info("error found: " + err); // Add a logging statement
-            response.sendRedirect("http://localhost:9999/oldegg/signup.jsp?data="+err);
-        }
-        else {
-            //add to database and go to index.jsp
-
-            LOGGER.info("Register"); // Add a logging statement
-            registerToDb(response);
-        }
-    }
-
-    private static void registerToDb(HttpServletResponse response ) {
-        //register user
         try(
             Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                                "root", "rootpass"); 
+                                "root", "password"); 
             
             Statement stmt = conn.createStatement();
-        ){
+        )
+        {
+            LOGGER.info("MyServlet called"); // Add a logging statement
+                
+            email = request.getParameter("email");
+            name = request.getParameter("name");
+            password = request.getParameter("password");
+            confirm = request.getParameter("confirm");
+            mobile = Integer.parseInt(request.getParameter("mobile")) ;
+            String err="";
 
+            int count = verifyEmail(stmt);
+
+
+            if (email == null || password == null || confirm == null) {
+                err += "Please fill out all fields.\n";
+            } else if (email.isEmpty() || password.isEmpty() || confirm.isEmpty()) {
+                err += "Please fill out all fields.\n";
+            } else if (!password.equals(confirm)) {
+                err += "Passwords do not match.\n";
+            } else if (count != 0) {
+                err += "Email is already in use.\n";
+            } 
+            
+            if(err!=""){
+
+                LOGGER.info("error found: " + err); // Add a logging statement
+                response.sendRedirect("http://localhost:9999/oldegg/signup.jsp?data="+err);
+            }
+            else {
+                //add to database and go to index.jsp
+
+                LOGGER.info("Register"); // Add a logging statement
+                registerToDb(response, stmt);
+        }
+        }catch(Exception e){
+            LOGGER.info("Something Failed" + e); // Add a logging statement
+        }
+    }
+
+    private static void registerToDb(HttpServletResponse response , Statement stmt ) {
+        //register user
+        try{
             String sqlStrRegister = "INSERT INTO Users Values (null, '" + email + "', '"+ name + "', '" + password + "', '" + mobile + "')";
             stmt.executeUpdate(sqlStrRegister);  
-            int id = verifyEmail();        
+            int id = verifyEmail(stmt);        
             response.setIntHeader("id", id);
             try{
                 response.sendRedirect("http://localhost:9999/oldegg/index.jsp");
@@ -87,16 +89,9 @@ public class signUpServlet extends HttpServlet {
 		
     }
 
-    private static int verifyEmail() {        
+    private static int verifyEmail(Statement stmt) {        
         //check if email exists
-        try(
-            Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                                "root", "rootpass"); 
-            
-            Statement stmt = conn.createStatement();
-        )
-        {
+        try{
             int id=0;
             String sqlStrEmail = "SELECT * FROM users WHERE email ='" + email + "'";
             ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail); 
