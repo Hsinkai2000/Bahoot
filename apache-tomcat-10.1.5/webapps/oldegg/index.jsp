@@ -1,91 +1,16 @@
-<%@ page import = "java.io.*,java.util.*,java.sql.*,java.text.*"%>
-
-<% 
-DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
-Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                           "root", "password");
-Statement stmt = conn.createStatement();
-%>
-
-<%!
-  public int getRandomNumber (int max, int min){
-    return (int) ((Math.random() * (max - min)) + min);
-  }
-%>
-
-<%!
-  public String getRandomProduct(int i){
-    String product = "";
-    switch(i){
-      case 1: product = "gpus";
-      break;
-
-      case 2: product = "cpus";
-      break;
-
-      case 3: product = "motherboards";
-      break;
-
-      case 4: product = "rams";
-      break;
-
-      case 5: product = "storages";
-      break;
-
-      case 6: product = "cases";
-      break;
-
-      case 7: product = "coolers";
-      break;
-
-      default:;
-    }
-    return product;
-    }
-%>
-
-<%!
-  public String getSQLStr(String product, int id){
-    String sqlStr = "";
-    switch(product){
-      case "gpus": sqlStr = "SELECT * FROM gpus WHERE id = " + id;
-      break;
-
-      case "cpus": sqlStr = "SELECT * FROM cpus WHERE id = " + id;
-      break;
-
-      case "motherboards": sqlStr = "SELECT * FROM motherboards WHERE id = " + id;
-      break;
-
-      case "rams": sqlStr = "SELECT * FROM rams WHERE id = " + id;
-      break;
-
-      case "storages": sqlStr = "SELECT * FROM storage WHERE id = " + id;
-      break;
-
-      case "cases": sqlStr = "SELECT * FROM cases WHERE id = " + id;
-      break;
-
-      case "coolers": sqlStr = "SELECT * FROM coolers WHERE id = " + id;
-      break;
-
-      default:;
-    }
-    return sqlStr;
-    }
-%>
-
-
-
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%> 
+<%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*"%> 
+<% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+"jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+"root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Old Egg | Home</title>
-    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png">
+    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -93,6 +18,21 @@ Statement stmt = conn.createStatement();
       crossorigin="anonymous"
     />
     <link href="./style/style.css" rel="stylesheet" />
+    <style>
+      .carousel {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .carousel-inner {
+        display: inline-block;
+    }
+    .carousel-item {
+        display: inline-block;
+        width: 300px; /* adjust this as needed */
+        margin-right: 10px; /* adjust this as needed */
+    }
+    </style>
   </head>
   <body class="bg_default">
     <nav
@@ -111,7 +51,7 @@ Statement stmt = conn.createStatement();
           alt="OldEgg"
         />
       </a>
-      <form method="get" action ="search.jsp" class="navbar-form" role="search">
+      <form method="get" action="search.jsp" class="navbar-form" role="search">
         <div class="input-group" style="width: 40em">
           <input
             type="text"
@@ -167,9 +107,20 @@ Statement stmt = conn.createStatement();
       </div>
     </nav>
 
+    <form method="get" action="viewListing">
+      <input name="listingId" value="3" />
+      <input name="uid" <% if(request.getParameter("uid") != null) { %> value =
+      request.getParameter("uid") <%} else{%> value = "" <%}%> />
+      <button type="submit">button</button>
+    </form>
     <div style="padding-left: 50px; padding-right: 50px">
       <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
+        <a
+          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+          href="all.jsp"
+          >All</a
+        >
         <a
           class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
           href="gpu.jsp"
@@ -200,48 +151,76 @@ Statement stmt = conn.createStatement();
           href="cases.jsp"
           >Cases</a
         >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="coolers.jsp"
-          >Coolers</a
-        >
       </nav>
 
       <div class="d-flex mb-3">
         <h4 class="p-2">Recommended</h4>
+        <a class="ms-auto p-2" href="all.jsp">see all </a>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-6 g-4">
-          <% for (int i = 0; i < 12; i++) {%>
-            <%
-                int rng = getRandomNumber(1,7);
-                String product = getRandomProduct(rng);
-                int id = getRandomNumber(1,9);
-                String sqlStr = getSQLStr(product,id);
-                ResultSet rset = stmt.executeQuery(sqlStr);
-                rset.next();
-                
-            %>
-
-            <div class="col">
-              <div class="card h-100">
-                <img src="<%=rset.getString("link")%>"class="card-img-top" alt="...">
-                <div class="card-body">
-                  
-                </div>
-                <div class="card-footer">
-                  <h5 class="card-text"><%=rset.getString("name")%></h5>
-                  <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-                  <form method="get" action="viewListing">
-                    <input type="hidden" value="2" name="listingId" />
-                    <button type="submit" class="btn btn-primary" >View Listing</button>
-                  </form>
-                </div>
+      <% int number = (int)Math.floor(Math.random() * 10); if (number == 0)
+      ++number; %>
+      
+      <div class="container-fluid py-2">
+        <div class="d-flex flex-row flex-nowrap overflow-auto">
+            <% 
+            try{
+              String listing = "SELECT * FROM listings ORDER BY RAND()";
+              ResultSet rset = stmt.executeQuery(listing);
+              ResultSetMetaData rsmd = rset.getMetaData(); 
+              int columnCount = rsmd.getColumnCount();
+              List typeList = new ArrayList(); 
+              List listingIDList =  new ArrayList(); 
+              List itemIDList = new ArrayList(); 
+              int count=0;
+              int i=0;
+              while (rset.next()){                
+                typeList.add(rset.getString("type"));
+                listingIDList.add(rset.getInt("id"));
+                itemIDList.add(rset.getInt("itemID"));
+                count++;
+              }
+              while(i<=count){
+                String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+                ResultSet itemset = stmt.executeQuery(getitems);
+                  while(itemset.next()){
+                  String link = itemset.getString("link");
+                  String name = itemset.getString("name");
+                  Float price = itemset.getFloat("price");
+                %>
+                <div class="card card-body" style="height: 500px;min-width: 300px;">
+                <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
+                <form method="get" action="viewListing">
+                  <h3 style="width: 200px;"><%= name %></h3>
+                  <p>$<%= price %></p>
+                  <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+                  <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                  <button type="submit" class="btn bg_orange">View Listing</button>
+                </form>
               </div>
-            </div>
-          
-          <%}%>
-        </div>
+                <%}i++;
+              }
+            } catch (SQLException e) {
+              e.printStackTrace();
+            }
+            %>
+          </div>                
+      </div>
+      <div class="d-flex mb-3">
+        <h4 class="p-2">
+          <% if(response.getHeader("id") != null) { %>
+          <p style="color: red"><%=response.getHeader("id")%></p>
+          <%} else{%>
+          <p></p>
+          <%} %>
+        </h4>
+        <a class="ms-auto p-2" href="all.jsp">see all </a>
+      </div>
+
+      <div class="d-flex mb-3">
+        <h4 class="p-2">Ready Stock</h4>
+      </div>
+
       </div>
     </div>
 
@@ -264,27 +243,41 @@ Statement stmt = conn.createStatement();
               <h6>Categories</h6>
               <ul class="footer-links">
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp">GPUs</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="all.jsp"
+                    >All</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp">CPUs</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp"
+                    >GPUs</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp"
+                    >CPUs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="flex-sm-fill text-sm nav-link"
+                    href="motherboards.jsp"
                     >Motherboards</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp">Rams</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp"
+                    >Rams</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp">Storage</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp"
+                    >Storage</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp">Cases</a>
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="coolers.jsp">Coolers</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp"
+                    >Cases</a
+                  >
                 </li>
               </ul>
             </div>
@@ -333,6 +326,14 @@ Statement stmt = conn.createStatement();
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     >
+
+          document.getElementById('tile').addEventListener('click', cl_Div);
+
+          function cl_Div() {
+
+          document.getElementById('tile').innerHTML = "Welcome to JavaScript";
+
+      }
     </script>
   </body>
 </html>

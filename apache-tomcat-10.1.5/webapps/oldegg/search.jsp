@@ -3,9 +3,8 @@
 <% 
 DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
 Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                           "root", "password");
-Statement stmt = conn.createStatement();
+"jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+"root", "password"); Statement stmt = conn.createStatement();
 
 String searchStr = request.getParameter("srch-term");
 

@@ -3,9 +3,8 @@
 <% 
 DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
 Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                           "root", "password");
-Statement stmt = conn.createStatement();
+"jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+"root", "password"); Statement stmt = conn.createStatement();
 
 String sqlStr = "select * from motherboards";
 
@@ -19,11 +18,11 @@ if (request.getParameter("sort") !=null) {
   }
 
   if (request.getParameter("sort").equals("az")) {
-    sqlStr = "SELECT * FROM motherboards ORDER BY name ASC";
+    sqlStr = "SELECT * FROM motherboards ORDER BY model ASC";
   }
 
   if (request.getParameter("sort").equals("za")) {
-    sqlStr = "SELECT * FROM motherboards ORDER BY name DESC";
+    sqlStr = "SELECT * FROM motherboards ORDER BY model DESC";
   }
 }
 
@@ -125,6 +124,11 @@ ResultSet rset = stmt.executeQuery(sqlStr);
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
         <a
           class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+          href="all.jsp"
+          >All</a
+        >
+        <a
+          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
           href="gpu.jsp"
           >GPUs</a
         >
@@ -153,18 +157,13 @@ ResultSet rset = stmt.executeQuery(sqlStr);
           href="cases.jsp"
           >Cases</a
         >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="coolers.jsp"
-          >Coolers</a
-        >
       </nav>
       <div class="d-flex mb-3">
         <h4 class="p-2">Motherboards</h4>
       </div>
 
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn bg_orange dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Sort By:
         </button>
         <ul class="dropdown-menu">
@@ -176,28 +175,24 @@ ResultSet rset = stmt.executeQuery(sqlStr);
         </ul>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-6 g-4">
-          <% while (rset.next()) {%>
-            <div class="col">
-              <div class="card h-100">
-                <img src="<%=rset.getString("link")%>"class="card-img-top" alt="...">
-                <div class="card-body">
-                  
-                </div>
-                <div class="card-footer">
-                  <h5 class="card-text"><%=rset.getString("name")%></h5>
-                  <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-                  <form method="get" action="viewListing">
-                    <input type="hidden" value="#############" name="listingId" />
-                    <button type="submit" class="btn btn-primary" >View Listing</button>
-                  </form>
-                </div>
-              </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% 
+        while (rset.next()) {%>
+        <div class="col h-25 w-25">
+          <div class="card">
+            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
+            <div class="card-body">
+              <h5 class="card-text"><%=rset.getString("name")  %></h5>
+              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+              <form method="get" action="viewListing">
+                <input type="hidden" value="#############" name="listingId" />
+                <button type="submit" class="btn btn-primary" >View Listing</button>
+              </form>
             </div>
-          <%}%>
+          </div>
         </div>
+        <%}%>
       </div>
-    </div>
   
     <div class="footer">
       <footer class="site-footer">

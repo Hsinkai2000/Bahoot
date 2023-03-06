@@ -3,9 +3,8 @@
 <% 
 DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
 Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                           "root", "password");
-Statement stmt = conn.createStatement();
+"jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+"root", "password"); Statement stmt = conn.createStatement();
 
 String sqlStr = "select * from gpus";
 ResultSet rset = stmt.executeQuery(sqlStr);
@@ -150,7 +149,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
             <div class="card">
               <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
               <div class="card-body">
-                <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
+                <h5 class="card-text"><%=rset.getString("name")  %></h5>
                 <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
                 <form method="get" action="viewListing">
                 <input type="hidden" value="#############" name="listingId" />
@@ -176,7 +175,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
             <div class="card">
               <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
               <div class="card-body">
-                <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
+                <h5 class="card-text"><%=rset.getString("name") %></h5>
                 <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
                 <form method="get" action="viewListing">
                 <input type="hidden" value="#############" name="listingId" />
@@ -202,7 +201,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
             <div class="card">
               <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
               <div class="card-body">
-                <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
+                <h5 class="card-text"><%=rset.getString("name")%></h5>
                 <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
               </div>
             </div>
