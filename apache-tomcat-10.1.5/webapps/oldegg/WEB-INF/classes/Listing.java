@@ -1,4 +1,3 @@
-
 public class Listing {
     int id;
     String type;
@@ -12,5 +11,5 @@ public class Listing {
 
     public Listing() {
     }
-    
+
 }
