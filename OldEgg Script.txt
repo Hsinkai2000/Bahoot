@@ -1,5 +1,5 @@
 create database if not exists oldegg;
- 
+
 use oldegg;
  
 drop table if exists Motherboards;
@@ -12,13 +12,6 @@ drop table if exists Coolers;
 drop table if exists Users;
 drop table if exists Listings;
 
-create table Listings (
-  id int NOT NULL AUTO_INCREMENT,
-  type varchar(50) NOT NULL,
-  itemID int NOT NULL,
-  primary key (id)
-);
-
 create table Motherboards (
   id int NOT NULL AUTO_INCREMENT,
   name varchar(50),
@@ -30,6 +23,17 @@ create table Motherboards (
   primary key (id)
 );
 
+INSERT INTO Motherboards (name, socket, price, qty, formfactor, link) VALUES
+	("MSI MAG B550 TOMAHAWK", "AM4", 335.45, 116, "ATX", "https://m.media-amazon.com/images/I/910jyKG9QlL.jpg"),
+	("MSI B550 PRO-VDH WIFI", "AM4", 254.92, 79, "MATX","https://m.media-amazon.com/images/I/91beeVTo4pL.jpg"),
+	("Asus TUF GAMING B650-PLUS WIFI", "AM5", 346.96, 3, "ATX","https://m.media-amazon.com/images/I/81SXll1-k8L._AC_SL1500_.jpg"),
+	("Gigabyte Z790 AORUS ELITE AX", "LGA1700", 413.63, 6, "ATX","https://static.gigabyte.com/StaticFile/Image/Global/0c6899b3e79329e5c8236fda4441fe0e/Product/32578/Png"),
+	("Gigabyte B650 AORUS ELITE AX", "AM5", 435.73, 9, "ATX","https://media.ldlc.com/r1600/ld/products/00/05/98/55/LD0005985556.jpg"),
+	("ASRock B660M-HDV", "LGA1700", 216.86, 3, "MATX","https://www.asrock.com/mb/photo/B660M-HDV(M1).png"),
+	("Asus ROG STRIX B550-F GAMING WIFI II", "AM4", 360.32, 7, "ATX","https://simlimsquare.com.sg/image/images/620da7ae93efb.jpg?p=full"),
+	("ASRock Z590 Pro4", "LGA1200", 253.60, 2, "ATX","https://m.media-amazon.com/images/I/91+aWDgEKYL.jpg"),
+	("Asus Prime B550M-A WiFi", "AM4", 200.00, 1, "MATX","https://m.media-amazon.com/images/I/91L1ts-j0LL._AC_UF894,1000_QL80_.jpg");
+
 create table GPUs(
   id int NOT NULL AUTO_INCREMENT,
   name varchar(50),
@@ -38,6 +42,17 @@ create table GPUs(
   link varchar(150),
   primary key (id)
 );
+
+INSERT INTO GPUs (name, price, qty, link) VALUES
+	('AMD SAPPHIRE RX 6800', '1000', '1', 'https://m.media-amazon.com/images/I/81EkCyIHlJL.jpg'),
+	('NVIDIA MSI RTX 2070 SUPER', '700', '2', 'https://m.media-amazon.com/images/I/61-Y84LPYzL.jpg'),
+	("NVIDIA ASUS RTX 4090", 2581.54, '15', 'https://bytesize.com.sg/wp-content/uploads/2022/10/ROG-Strix-GeForce-RTX®-4090-OC-Edition-24GB-GDDR6X.png'),
+	('AMD POWERCOLOR RX 7900 XTX', '1924', '18', 'https://www.powercolor.com/_upload/images//2211180944190.png'),
+	('NVIDIA ZOTAC GTX 1060', '330', '5', 'https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-p10600b-10m_inage1.jpg?itok=yPhrJtMX'),
+	('NVIDIA MSI RTX 3080', '1200', '2', 'https://m.media-amazon.com/images/I/81UV-e3xgeL.jpg'),
+	('AMD XFX RX 6800XT', '1100', '7', 'https://m.media-amazon.com/images/I/81-70VBUexL.jpg'),
+	('AMD GIGABYTE RX 6500XT', '220', '27', 'https://cf.shopee.sg/file/3fa348fcf7624dfb97c398e5d51eab3f'),
+	('AMD MSI RX 6650', '341.63', '31', 'https://asset.msi.com/resize/image/global/product/product_1652175968d2d39b873b3c725249e989821bd092de.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png');
 
 create table CPUs(
   id int NOT NULL AUTO_INCREMENT,
@@ -48,47 +63,16 @@ create table CPUs(
   primary key (id)
 );
 
-
-
-create table Users (
-    id int NOT NULL AUTO_INCREMENT,
-    email varchar(50),
-    name varchar(50),
-    password varchar(50),
-    mobile_number int,
-    primary key (id)
-);
-
-insert into Motherboards values(NULL,"MSI MAG B550 TOMAHAWK", "AM4", 335.45, 116, "ATX", "https://m.media-amazon.com/images/I/910jyKG9QlL.jpg");
-insert into Motherboards values(NULL,"MSI B550 PRO-VDH WIFI", "AM4", 254.92, 79, "MATX","https://m.media-amazon.com/images/I/91beeVTo4pL.jpg");
-insert into Motherboards values(NULL,"Asus TUF GAMING B650-PLUS WIFI", "AM5", 346.96, 3, "ATX","https://media.karousell.com/media/photos/products/2022/10/12/asus_tuf_gaming_b650plus_wifi__1665598922_cdd698da");
-insert into Motherboards values(NULL,"Gigabyte Z790 AORUS ELITE AX", "LGA1700", 413.63, 6, "ATX","https://static.gigabyte.com/StaticFile/Image/Global/0c6899b3e79329e5c8236fda4441fe0e/Product/32578/Png");
-insert into Motherboards values(NULL,"Gigabyte B650 AORUS ELITE AX", "AM5", 435.73, 9, "ATX","https://media.ldlc.com/r1600/ld/products/00/05/98/55/LD0005985556.jpg");
-insert into Motherboards values(NULL,"ASRock B660M-HDV", "LGA1700", 216.86, 3, "MATX","https://www.asrock.com/mb/photo/B660M-HDV(M1).png");
-insert into Motherboards values(NULL,"Asus ROG STRIX B550-F GAMING WIFI II", "AM4", 360.32, 7, "ATX","https://simlimsquare.com.sg/image/images/620da7ae93efb.jpg?p=full");
-insert into Motherboards values(NULL,"ASRock Z590 Pro4", "LGA1200", 253.60, 2, "ATX","https://m.media-amazon.com/images/I/91+aWDgEKYL.jpg");
-insert into Motherboards values(NULL,"Asus Prime B550M-A WiFi", "AM4", 200.00, 1, "MATX","https://m.media-amazon.com/images/I/91L1ts-j0LL._AC_UF894,1000_QL80_.jpg");
-
-insert into GPUs values(NULL,"AMD SAPPHIRE RX 6800", 1000, 1, "https://m.media-amazon.com/images/I/81EkCyIHlJL.jpg");
-insert into GPUs values(NULL,"NVIDIA MSI RTX 2070 SUPER", 700, 2, "https://m.media-amazon.com/images/I/61-Y84LPYzL.jpg");
-insert into GPUs values(NULL,"NVIDIA ASUS RTX 4090", 2581.54, 15, "https://bytesize.com.sg/wp-content/uploads/2022/10/ROG-Strix-GeForce-RTX®-4090-OC-Edition-24GB-GDDR6X.png");
-insert into GPUs values(NULL,"AMD POWERCOLOR RX 7900 XTX", 1924, 18, "https://www.powercolor.com/_upload/images//2211180944190.png");
-insert into GPUs values(NULL,"NVIDIA ZOTAC GTX 1060", 330, 5, "https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-p10600b-10m_inage1.jpg?itok=yPhrJtMX");
-insert into GPUs values(NULL,"NVIDIA MSI RTX 3080", 1200, 2, "https://m.media-amazon.com/images/I/81UV-e3xgeL.jpg");
-insert into GPUs values(NULL,"AMD XFX RX 6800XT", 1100, 7, "https://m.media-amazon.com/images/I/81-70VBUexL.jpg");
-insert into GPUs values(NULL,"AMD GIGABYTE RX 6500XT", 220, 27, "https://cf.shopee.sg/file/3fa348fcf7624dfb97c398e5d51eab3f");
-insert into GPUs values(NULL,"AMD MSI RX 6650", 341.63, 31, "https://asset.msi.com/resize/image/global/product/product_1652175968d2d39b873b3c725249e989821bd092de.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png");
-
-insert into Users values (NULL,'chockhong@gmail.com', 'lim chock hong', 'passwordlim', 837390484);
-insert into Users values (NULL,'Jamesliu@gmail.com', 'James Liu', 'passwordliu', 84730572);
-insert into Users values (NULL,'KellyTay@gmail.com', 'Kelly tay', 'passwordtay', 94728484);
-insert into Users values (NULL,'BrandonTan@gmail.com', 'Brandon Tan', 'passwordTan', 93846289);
-insert into Users values (NULL,'DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943);
-
-select * from Motherboards;
-select * from GPUs;
-select * from CPUs;
-select * from Users;
+INSERT INTO CPUs (name, price, qty, link) VALUES
+	('AMD RYZEN 7 5800X3D', '550', '1', 'https://m.media-amazon.com/images/I/61Kq99IRdcL.jpg '),
+	('AMD RYZEN 7 5600X', '290.17', '53', 'https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg '),
+	('AMD RYZEN 7 5800X', '382.31', '29', 'https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg '),
+	('Intel Core i5-13600K', '492.47', '35', 'https://m.media-amazon.com/images/I/61ObMmbxwgL.jpg '),
+	('Intel Core i9-13900K', '892', '17', 'https://m.media-amazon.com/images/I/61uI+orDOZL.jpg '),
+	('AMD Ryzen 9 7950X', '921.23', '13', 'https://m.media-amazon.com/images/I/51nBGlyDOoL.jpg '),
+	('Intel Core i7-12700KF', '443.95', '23', 'https://m.media-amazon.com/images/I/51o+isnQxdL._AC_SL1000_.jpg '),
+	('Intel Core i7-13700K', '643.37', '34', 'https://m.media-amazon.com/images/I/61gcREq9LqL._AC_SL1500_.jpg '),
+	('Intel Ryzen 9 5900X', '538.91', '199', 'https://m.media-amazon.com/images/I/616VM20+AzL._AC_SL1384_.jpg ');
 
 create table RAMs(
   id int NOT NULL AUTO_INCREMENT,
@@ -101,7 +85,6 @@ create table RAMs(
   primary key (id)
 );
 
-
 INSERT INTO RAMs (name, speed, module, price, qty, link) VALUES
 	('Corsair Vengeance LPX 16 GB', 'DDR4-3200', '2 x 8GB', '105.63', '427', 'https://www.corsair.com/medias/sys_master/images/images/hf5/h6f/9110987210782/-CMK16GX4M2B3200C16-Gallery-VENG-LPX-BLK-00.png '),
 	('Corsair Vengeance RGB Pro 32 GB', 'DDR4-3600', '2 x 16GB', '199.64', '69', 'https://www.corsair.com/medias/sys_master/images/images/h40/hbe/9112785322014/-CMW32GX4M2C3200C16-Gallery-CMW32GX4M2C3200C16-Vengeance-RGB-Pro-01.png '),
@@ -112,7 +95,6 @@ INSERT INTO RAMs (name, speed, module, price, qty, link) VALUES
 	('Kingston FURY Beast 16 GB', 'DDR4-3200', '2 x 8GB', '99.55', '3', 'https://media.kingston.com/kingston/features/ktc-features-memory-beast-ddr4-rgb.jpg '),
 	('G.Skill Flare X5 32 GB', 'DDR5-6000', '2 x 16GB', '129.99', '16', 'https://www.gskill.com/_upload/images/166262266410.png '),
 	('Corsair Vengeance RGB Pro 16 GB', 'DDR4-3200', '2 x 8GB', '64.98', '162', 'https://www.corsair.com/medias/sys_master/images/images/h1f/hbd/9420610568222/-CMW16GX4M2C3200C16-Gallery-Vengeance-RGB-Pro-01.png ');
-
 
 CREATE TABLE Cases 
 (
@@ -135,7 +117,6 @@ INSERT INTO Cases (name, form_factor, price, qty, link) VALUES
 	('Corsair Crystal 280X RGB', 'MATX', '179.95', '20', 'https://www.corsair.com/medias/sys_master/images/images/h20/h23/9112715329566/-CC-9011135-WW-Gallery-280X-RGB-BLK-01.png '),
 	('Corsair 5000D Airflow', 'ATX', '174.99', '35', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h27/hc1/9659514355742/base-5000d-airflow/Gallery/5000D_AF_WHITE_001/-base-5000d-airflow-Gallery-5000D-AF-WHITE-001.png_1200Wx1200H '),
 	('Asus ROG Strix Helios', 'ATX', '327.98', '12', 'https://dlcdnwebimgs.asus.com/gain/117ACAB9-87EE-4E2B-8D1C-CE9E578768BB/w717/h525 ');
-
 
 CREATE TABLE Storage 
 (
@@ -183,13 +164,29 @@ INSERT INTO Coolers (name , type, price, qty, link) VALUES
 	('ID-COOLING SE-214-XT', 'AIR', '19.98', '14', 'https://www.idcooling.com/Admin/Tpl/default/Public/kindeditor-4.1.7/attached/image/20211123/20211123150851_36843.jpg '),
 	('Corsair iCUE H150i ELITE LCD', 'AIO', '289.99', '15', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h56/he9/9889310539806/CW-9060062-WW/Gallery/Common/H150i_ELITE_LCD_RENDER_01/-CW-9060062-WW-Gallery-Common-H150i-ELITE-LCD-RENDER-01.png_1200Wx1200H ');
 
-INSERT INTO CPUs (name, price, qty, link) VALUES
-	('Intel Core i5-13600K', '492.47', '35 ', 'null'),
-	('Intel Core i9-13900K', '892', '17 ', 'null'),
-	('AMD Ryzen 9 7950X', '921.23', '13 ', 'null'),
-	('Intel Core i7-12700KF', '443.95', '23 ', 'null'),
-	('Intel Core i7-13700K', '643.37', '34 ', 'null'),
-	('Intel Ryzen 9 5900X', '538.91', '199 ', 'null');
+create table Users (
+    id int NOT NULL AUTO_INCREMENT,
+    email varchar(50),
+    name varchar(50),
+    password varchar(50),
+    mobile_number int,
+    primary key (id)
+);
+
+INSERT INTO Users (email, name, password, mobile_number) VALUES 
+	('chockhong@gmail.com', 'lim chock hong', 'passwordlim', 837390484),
+	('Jamesliu@gmail.com', 'James Liu', 'passwordliu', 84730572),
+	('KellyTay@gmail.com', 'Kelly tay', 'passwordtay', 94728484),
+	('BrandonTan@gmail.com', 'Brandon Tan', 'passwordTan', 93846289),
+	('DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943);
+
+
+create table Listings (
+  id int NOT NULL AUTO_INCREMENT,
+  type varchar(50) NOT NULL,
+  itemID int NOT NULL,
+  primary key (id)
+);
 
   INSERT INTO Listings (type, itemID) VALUES 
   ("motherboards",1),
@@ -252,3 +249,14 @@ INSERT INTO CPUs (name, price, qty, link) VALUES
   ("gpus",7),
   ("gpus",8),
   ("gpus",9);
+  
+  show tables;
+  select * from GPUs;
+  select * from CPUs;
+  select * from Motherboards;
+  select * from RAMS;
+  select * from Cases;
+  select * from Storage;
+  select * from Coolers;
+  select * from Users;
+  Select * from Listings;
