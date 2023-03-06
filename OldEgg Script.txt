@@ -25,7 +25,7 @@ create table Orders(
 create table OrderItems(
   id int NOT NULL AUTO_INCREMENT,
   orderID int,
-  itemID int,
+  listingID int,
   primary key (id)
 );
 
@@ -38,7 +38,7 @@ create table Listings (
 
 create table Carts(
   id int NOT NULL AUTO_INCREMENT,
-  itemID int,
+  listingID int,
   userID int,
   primary key (id)
 );

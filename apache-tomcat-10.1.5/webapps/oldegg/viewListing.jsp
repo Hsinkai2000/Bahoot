@@ -139,10 +139,10 @@ pageEncoding="UTF-8"%>
           <div class="row">
             <div class="col-lg-12 pb-3">
               <form method="post" action="viewListing">
-                <input type="hidden" name="itemID" value=<%= response.getHeader("itemID") %>></input>
+                <input hidden name="listingId" value=<%= request.getParameter("listingId") %>></input>
                 <br />
-                <input type="hidden" name="uid" value=<%= response.getHeader("uid") %>></input>
-                <input type="hidden" name="action" value="addtocart" type="text" ></input>
+                <input hidden name="uid" value=<%= response.getHeader("uid") %>></input>
+                <input hidden name="action" value="addtocart" type="text" ></input>
                 <input
                 style="width: 300px;"
                   type="submit"

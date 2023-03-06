@@ -59,7 +59,7 @@ public class listingServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if (request.getParameter("uid") != null) {
+        if (request.getParameter("uid") != "") {
             userID = Integer.parseInt(request.getParameter("uid"));
             LOGGER.info("userid: " + userID);
         }
@@ -165,7 +165,7 @@ public class listingServlet extends HttpServlet {
             throws ServletException, IOException {
         try {
             LOGGER.info("In function");
-            String addCart = "INSERT INTO Carts (itemID,userID) VALUES (" + itemID + "," + userID + ")";
+            String addCart = "INSERT INTO Carts (listingID,userID) VALUES (" + listingId + "," + userID + ")";
             stmt.executeUpdate(addCart);
 
             response.setContentType("text/html");
