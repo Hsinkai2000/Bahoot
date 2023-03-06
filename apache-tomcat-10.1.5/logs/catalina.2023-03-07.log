@@ -1,0 +1,73 @@
+07-Mar-2023 00:22:31.137 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 1
+07-Mar-2023 00:22:31.139 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =8
+07-Mar-2023 00:22:35.898 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 1
+07-Mar-2023 00:22:35.899 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =4
+07-Mar-2023 00:22:37.466 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 1
+07-Mar-2023 00:22:37.468 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =1
+07-Mar-2023 00:29:30.802 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+07-Mar-2023 00:29:30.804 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =7
+07-Mar-2023 00:31:27.351 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 1
+07-Mar-2023 00:31:27.353 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =7
+07-Mar-2023 00:31:53.917 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 1
+07-Mar-2023 00:31:53.919 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =2
+07-Mar-2023 00:32:17.883 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
+07-Mar-2023 00:32:17.885 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =2
+07-Mar-2023 00:33:09.829 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 1
+07-Mar-2023 00:33:09.831 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =2
+07-Mar-2023 00:33:23.943 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
+07-Mar-2023 00:33:23.944 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =7
+07-Mar-2023 00:37:13.269 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+07-Mar-2023 00:37:13.271 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =8
+07-Mar-2023 00:37:38.774 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 1
+07-Mar-2023 00:37:38.775 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =4
+07-Mar-2023 00:38:21.020 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+07-Mar-2023 00:38:21.022 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =3
+07-Mar-2023 00:38:28.890 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 1
+07-Mar-2023 00:38:28.891 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =7
+07-Mar-2023 00:39:50.928 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 1
+07-Mar-2023 00:39:50.929 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =6
+07-Mar-2023 00:39:52.806 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 1
+07-Mar-2023 00:40:17.600 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 1
+07-Mar-2023 00:41:22.952 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
+07-Mar-2023 00:41:26.234 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+07-Mar-2023 00:41:28.211 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 1
+07-Mar-2023 00:42:16.715 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 1
+07-Mar-2023 00:42:16.716 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =8
+07-Mar-2023 00:42:33.177 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 1
+07-Mar-2023 00:42:33.179 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =8
+07-Mar-2023 00:42:39.477 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
+07-Mar-2023 00:42:39.478 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =7
+07-Mar-2023 00:49:46.871 INFO [http-nio-9999-exec-10] loginServlet.doGet MyServlet called
+07-Mar-2023 00:49:49.517 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 1
+07-Mar-2023 00:49:49.519 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =8
+07-Mar-2023 00:49:52.069 INFO [http-nio-9999-exec-7] listingServlet.doPost userid: 1
+07-Mar-2023 00:49:52.071 INFO [http-nio-9999-exec-7] listingServlet.doPost POST
+07-Mar-2023 00:49:52.071 INFO [http-nio-9999-exec-7] listingServlet.doPost Add to cart
+07-Mar-2023 00:49:52.071 INFO [http-nio-9999-exec-7] listingServlet.addtocart In function
+07-Mar-2023 00:49:52.074 INFO [http-nio-9999-exec-7] listingServlet.addtocart Added to cart!
+07-Mar-2023 00:50:54.153 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
+07-Mar-2023 00:50:54.155 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =6
+07-Mar-2023 00:52:06.101 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 1
+07-Mar-2023 00:52:06.103 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =7
+07-Mar-2023 00:59:35.936 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 1
+07-Mar-2023 00:59:35.938 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =4
+07-Mar-2023 00:59:43.383 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 1
+07-Mar-2023 00:59:43.385 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =5
+07-Mar-2023 01:05:26.340 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 1
+07-Mar-2023 01:05:26.341 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =9
+07-Mar-2023 01:05:29.578 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 1
+07-Mar-2023 01:05:29.580 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =5
+07-Mar-2023 01:05:36.125 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
+07-Mar-2023 01:05:36.126 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =3
+07-Mar-2023 01:05:55.660 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 1
+07-Mar-2023 01:05:55.661 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =4
+07-Mar-2023 01:06:00.062 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 1
+07-Mar-2023 01:06:00.065 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =8
+07-Mar-2023 01:06:04.529 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
+07-Mar-2023 01:06:04.530 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =1
+07-Mar-2023 01:06:06.462 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+07-Mar-2023 01:06:06.463 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =9
+07-Mar-2023 01:06:08.172 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 1
+07-Mar-2023 01:06:08.173 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =1
+07-Mar-2023 01:11:31.102 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
+07-Mar-2023 01:11:31.103 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =4

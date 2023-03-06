@@ -41,7 +41,7 @@ pageEncoding="UTF-8"%>
     >
       <a
         class="navbar-brand"
-        href="index.jsp"
+        href="index.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
         style="padding-bottom: 15px; padding-right: 50px"
       >
         <img
@@ -60,6 +60,7 @@ pageEncoding="UTF-8"%>
             name="srch-term"
             id="srch-term-header"
           />
+          <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
           <div class="input-group-btn">
             <button
               class="btn bg_orange"
@@ -107,50 +108,37 @@ pageEncoding="UTF-8"%>
       </div>
     </nav>
 
-    <form method="get" action="viewListing">
-      <input name="listingId" value="3" />
-      <input name="uid" <% if(request.getParameter("uid") != null) { %> value =
-      request.getParameter("uid") <%} else{%> value = "" <%}%> />
-      <button type="submit">button</button>
-    </form>
+
     <div style="padding-left: 50px; padding-right: 50px">
       <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="gpu.jsp"
-          >GPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="cpu.jsp"
-          >CPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="motherboards.jsp"
-          >Motherboards</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="ram.jsp"
-          >Rams</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="storage.jsp"
-          >Storage</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="cases.jsp"
-          >Cases</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="coolers.jsp"
-          >Coolers</a
-        >
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >GPUs</a>
+
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >CPUs</a>
+        
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Motherboards</a>
+         
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Rams</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Storage</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Cases</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Coolers</a>
       </nav>
 
       <div class="d-flex mb-3">
@@ -169,7 +157,7 @@ pageEncoding="UTF-8"%>
         <div class="d-flex flex-row flex-nowrap overflow-auto">
             <% 
             try{
-              String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
+              String listing = "SELECT * FROM listings ORDER BY RAND()";
               ResultSet rset = stmt.executeQuery(listing);
               List typeList = new ArrayList(); 
               List listingIDList =  new ArrayList(); 
@@ -189,17 +177,18 @@ pageEncoding="UTF-8"%>
                   String link = itemset.getString("link");
                   String name = itemset.getString("name");
                   Float price = itemset.getFloat("price");
-                %>
+
+              %>
                 <div class="card card-body" style="height: 500px;min-width: 300px;">
-                <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
-                <form method="get" action="viewListing">
-                  <h3 style="width: 200px;"><%= name %></h3>
-                  <p>$<%= price %></p>
-                  <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
-                  <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
-                  <button type="submit" class="btn bg_orange">View Listing</button>
-                </form>
-              </div>
+                  <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
+                  <form method="get" action="viewListing">
+                    <h3 style="width: 200px;"><%= name %></h3>
+                    <p>$<%= price %></p>
+                    <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+                    <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                    <button type="submit" class="btn bg_orange">View Listing</button>
+                  </form>
+                </div>
                 <%}i++;
               }
             } catch (SQLException e) {
@@ -246,40 +235,38 @@ pageEncoding="UTF-8"%>
               <h6>Categories</h6>
               <ul class="footer-links">
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="all.jsp"
-                    >All</a
-                  >
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
                     >GPUs</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
                     >CPUs</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="flex-sm-fill text-sm nav-link"
-                    href="motherboards.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
                     >Motherboards</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
                     >Rams</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
                     >Storage</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
                     >Cases</a
+                  >
+                </li>
+                <li>
+                  <a class="flex-sm-fill text-sm nav-link" href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Coolers</a
                   >
                 </li>
               </ul>

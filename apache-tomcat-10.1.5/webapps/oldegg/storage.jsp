@@ -6,23 +6,24 @@ Connection conn = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                            "root", "password");
 Statement stmt = conn.createStatement();
+Statement stmt2 = conn.createStatement();
 
-String sqlStr = "select * from storage";
+String sqlStr = "select * from storages";
 if (request.getParameter("sort") !=null) {
   if (request.getParameter("sort").equals("lp")) {
-    sqlStr = "SELECT * FROM storage ORDER BY price ASC";
+    sqlStr = "SELECT * FROM storages ORDER BY price ASC";
   }
 
   if (request.getParameter("sort").equals("hp")) {
-    sqlStr = "SELECT * FROM storage ORDER BY price DESC";
+    sqlStr = "SELECT * FROM storages ORDER BY price DESC";
   }
 
   if (request.getParameter("sort").equals("az")) {
-    sqlStr = "SELECT * FROM storage ORDER BY name ASC";
+    sqlStr = "SELECT * FROM storages ORDER BY name ASC";
   }
 
   if (request.getParameter("sort").equals("za")) {
-    sqlStr = "SELECT * FROM storage ORDER BY name DESC";
+    sqlStr = "SELECT * FROM storages ORDER BY name DESC";
   }
 }
 ResultSet rset = stmt.executeQuery(sqlStr);
@@ -51,7 +52,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
     >
       <a
         class="navbar-brand"
-        href="index.jsp"
+        href="index.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
         style="padding-bottom: 15px; padding-right: 50px"
       >
         <img
@@ -70,6 +71,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
             name="srch-term"
             id="srch-term-header"
           />
+          <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
           <div class="input-group-btn">
             <button
               class="btn bg_orange"
@@ -120,41 +122,33 @@ ResultSet rset = stmt.executeQuery(sqlStr);
     <div style="padding-left: 50px; padding-right: 50px">
       <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="gpu.jsp"
-          >GPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="cpu.jsp"
-          >CPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="motherboards.jsp"
-          >Motherboards</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="ram.jsp"
-          >Rams</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="storage.jsp"
-          >Storage</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="cases.jsp"
-          >Cases</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="coolers.jsp"
-          >Coolers</a
-        >
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >GPUs</a>
+
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >CPUs</a>
+        
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Motherboards</a>
+         
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Rams</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Storage</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Cases</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Coolers</a>
       </nav>
       
       <div class="d-flex mb-3">
@@ -162,38 +156,43 @@ ResultSet rset = stmt.executeQuery(sqlStr);
       </div>
 
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn bg_orange dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Sort By:
         </button>
         <ul class="dropdown-menu">
          
-          <li><a class="dropdown-item" href="?sort=lp">Lowest Price</a></li>
-          <li><a class="dropdown-item" href="?sort=hp">Highest Price</a></li>
-          <li><a class="dropdown-item" href="?sort=az">Name: A to Z</a></li>
-          <li><a class="dropdown-item" href="?sort=za">Name: Z to A</a></li>
+          <li><a class="dropdown-item" href="?sort=lp&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">Lowest Price</a></li>
+          <li><a class="dropdown-item" href="?sort=hp&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">Highest Price</a></li>
+          <li><a class="dropdown-item" href="?sort=az&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">Name: A to Z</a></li>
+          <li><a class="dropdown-item" href="?sort=za&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">Name: Z to A</a></li>
         </ul>
       </div>
 
       <div class="row row-cols-1 row-cols-md-6 g-4">
-          <% while (rset.next()) {%>
-            <div class="col">
-              <div class="card h-100">
-                <img src="<%=rset.getString("link")%>"class="card-img-top" alt="...">
-                <div class="card-body">
-                  
-                </div>
-                <div class="card-footer">
-                  <h5 class="card-text"><%=rset.getString("name")+" "+rset.getString("capacity")+" "%></h5>
-                  <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-                  <form method="get" action="viewListing">
-                    <input type="hidden" value="#############" name="listingId" />
-                    <button type="submit" class="btn btn-primary" >View Listing</button>
-                  </form>
-                </div>
+        <% while (rset.next()) {%>
+          <div class="col">
+            <div class="card h-100">
+              <img src="<%=rset.getString("link")%>"class="card-img-top" alt="...">
+              <div class="card-body">
+              </div>
+              <div class="card-footer">
+                <h5 class="card-text"><%=rset.getString("name")%></h5>
+                <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+                <%
+                    String listing = "SELECT * FROM listings WHERE type = 'storages' AND itemID = '" +rset.getString("id")+"'";
+                    ResultSet listingSet = stmt2.executeQuery(listing);
+                    listingSet.next();
+                    String listingID = listingSet.getString("id");
+                %>
+                <form method="get" action="viewListing">
+                  <input hidden name="listingId" value="<%=listingID%>"/>
+                  <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                  <button type="submit" class="btn bg_orange" >View Listing</button>
+                </form>
               </div>
             </div>
-          <%}%>
-        </div>
+          </div>
+        <%}%>
       </div>
     </div>
 
@@ -214,29 +213,41 @@ ResultSet rset = stmt.executeQuery(sqlStr);
 
             <div class="col-xs-6 col-md-3">
               <h6>Categories</h6>
-              <ul class="footer-links">
+               <ul class="footer-links">
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="all.jsp">All</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >GPUs</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp">GPUs</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >CPUs</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp">CPUs</a>
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
                     >Motherboards</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp">Rams</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Rams</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp">Storage</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Storage</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp">Cases</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Cases</a
+                  >
+                </li>
+                <li>
+                  <a class="flex-sm-fill text-sm nav-link" href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Coolers</a
+                  >
                 </li>
               </ul>
             </div>

@@ -1,18 +1,105 @@
-<%@ page import = "java.io.*,java.util.*,java.sql.*,java.text.*"%>
+<%@ page import = "java.io.*,java.util.*,java.sql.*,java.text.*,java.util.ArrayList"%>
 
 <% 
 DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
 Connection conn = DriverManager.getConnection(
 "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-"root", "password"); Statement stmt = conn.createStatement();
+"root", "password"); 
 
 String searchStr = request.getParameter("srch-term");
+String uid = request.getParameter("uid");
 
-Boolean found = false;
-String sqlStr;
+Statement stmt= conn.createStatement();
+Statement stmt2= conn.createStatement();
+Statement stmtGPU = conn.createStatement();
+Statement stmtCPU = conn.createStatement();
+Statement stmtMotherboards = conn.createStatement();
+Statement stmtRam = conn.createStatement();
+Statement stmtCase = conn.createStatement();
+Statement stmtStorage = conn.createStatement();
+Statement stmtCooler = conn.createStatement();
+Statement stmtSearch = conn.createStatement();
+
+Boolean gpuFound;
+Boolean cpuFound;
+Boolean motherboardFound;
+Boolean ramFound;
+Boolean caseFound;
+Boolean StorageFound;
+Boolean coolerFound;
+int count = 0;
+ArrayList<String> searchList = new ArrayList<>();
+
+String gpuSQL = "SELECT * FROM gpus WHERE name LIKE '%" + searchStr +"%'";
+String cpuSQL = "SELECT * FROM cpus WHERE name LIKE '%" + searchStr +"%'";
+String motherboardSQL = "SELECT * FROM motherboards WHERE name LIKE '%" + searchStr +"%'";
+String ramSQL = "SELECT * FROM rams WHERE name LIKE '%" + searchStr +"%'";
+String caseSQL = "SELECT * FROM cases WHERE name LIKE '%" + searchStr +"%'";
+String storageSQL = "SELECT * FROM storages WHERE name LIKE '%" + searchStr +"%'";
+String coolerSQL = "SELECT * FROM coolers WHERE name LIKE '%" + searchStr +"%'";
+
+ResultSet gpuResult = stmtGPU.executeQuery(gpuSQL);
+ResultSet cpuResult = stmtCPU.executeQuery(cpuSQL);
+ResultSet motherboardResult = stmtMotherboards.executeQuery(motherboardSQL);
+ResultSet ramResult = stmtCase.executeQuery(ramSQL);
+ResultSet caseResult = stmtRam.executeQuery(caseSQL);
+ResultSet storageResult = stmtStorage.executeQuery(storageSQL);
+ResultSet coolerResult = stmtCooler.executeQuery(coolerSQL);
+
+ResultSet searchResult;
+
+try {
+
+while(gpuResult.next()) {
+    searchResult = stmtSearch.executeQuery("SELECT * FROM listings WHERE type = 'gpus' AND itemID = " + gpuResult.getString("id"));
+    searchResult.next();
+    searchList.add(searchResult.getString("id"));
+}
+
+while(cpuResult.next()) {
+    searchResult = stmtSearch.executeQuery("SELECT * FROM listings WHERE type = 'cpus' AND itemID = " + cpuResult.getString("id"));
+    searchResult.next();
+    searchList.add(searchResult.getString("id"));
+}
+
+while(motherboardResult.next()) {
+    searchResult = stmtSearch.executeQuery("SELECT * FROM listings WHERE type = 'motherboards' AND itemID = " + motherboardResult.getString("id"));
+    searchResult.next();
+    searchList.add(searchResult.getString("id"));
+}
+
+while(ramResult.next()) {
+    searchResult = stmtSearch.executeQuery("SELECT * FROM listings WHERE type = 'rams' AND itemID = " + ramResult.getString("id"));
+    searchResult.next();
+    searchList.add(searchResult.getString("id"));
+}
+
+while(caseResult.next()) {
+    searchResult = stmtSearch.executeQuery("SELECT * FROM listings WHERE type = 'cases' AND itemID = " + caseResult.getString("id"));
+    searchResult.next();
+    searchList.add(searchResult.getString("id"));
+}
+
+while(storageResult.next()) {
+    searchResult = stmtSearch.executeQuery("SELECT * FROM listings WHERE type = 'storages' AND itemID = " + storageResult.getString("id"));
+    searchResult.next();
+    searchList.add(searchResult.getString("id"));
+}
+
+while(coolerResult.next()) {
+    searchResult = stmtSearch.executeQuery("SELECT * FROM listings WHERE type = 'coolers' AND itemID = " + coolerResult.getString("id"));
+    searchResult.next();
+    searchList.add(searchResult.getString("id"));
+}
+
+for (int i = 0; i < searchList.size(); i++) {
+    count++;
+}
+} catch(Exception e) {
+  response.sendRedirect("http://localhost:9999/oldegg/index.jsp?uid=" + uid);
+}
 
 %>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +123,7 @@ String sqlStr;
     >
       <a
         class="navbar-brand"
-        href="index.jsp"
+        href="index.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
         style="padding-bottom: 15px; padding-right: 50px"
       >
         <img
@@ -55,6 +142,7 @@ String sqlStr;
             name="srch-term"
             id="srch-term-header"
           />
+          <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
           <div class="input-group-btn">
             <button
               class="btn bg_orange"
@@ -105,220 +193,92 @@ String sqlStr;
     <div style="padding-left: 50px; padding-right: 50px">
       <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="all.jsp"
-          >All</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="gpu.jsp"
-          >GPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="cpu.jsp"
-          >CPUs</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="motherboards.jsp"
-          >Motherboards</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="ram.jsp"
-          >Rams</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="storage.jsp"
-          >Storage</a
-        >
-        <a
-          class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-          href="cases.jsp"
-          >Cases</a
-        >
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >GPUs</a>
+
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >CPUs</a>
+        
+        <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Motherboards</a>
+         
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Rams</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Storage</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Cases</a>
+
+         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+           href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+         >Coolers</a>
       </nav>
 
+      <% if (count != 0){%>
+             <div class="d-flex mb-3">
+              <h4 class="p-2">Search results for "<%=searchStr%>"</h4>
+             </div>
+          <%}%>
+
     
-      <%
-      if (searchStr == "") {
-        response.sendRedirect("http://localhost:9999/oldegg/#");
+      <% if (searchStr == "") {
+
        } else {%>
 
-      <%
-      sqlStr = "SELECT * FROM gpus WHERE BRAND LIKE '%" + searchStr + "%' OR model LIKE '%"+ searchStr +"%' OR maker LIKE '%" +searchStr + "%'";
-      ResultSet rset = stmt.executeQuery(sqlStr);
-      if (rset.next() == true) {
-      %>
-      <%found = true;%>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Graphics Card</h4>
-      </div>
+          <div class="row row-cols-1 row-cols-md-6 g-4">
+            <% for(int j = 0; j < count; j++ ){%>
+              <%
+              String listingStr = "SELECT * FROM listings where id = " + searchList.get(j);
+              ResultSet set = stmt.executeQuery(listingStr);
+              set.next();
+              String type = set.getString("type");
+              String listingIDD = set.getString("id");
+              String itemID = set.getString("itemID");
 
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <% 
-        do{%>
-        <div class="col h-25 w-25">
-          <div class="card">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card-body">
-              <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
+              listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+              ResultSet rset = stmt.executeQuery(listingStr);
+              rset.next();
+                             
+            
+              %>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="<%=rset.getString("link")%>"class="card-img-top" alt="...">
+                  <div class="card-body">
+                  </div>
+                  <div class="card-footer">
+                    <h5 class="card-text"><%=rset.getString("name")%></h5>
+                    <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+                    
+                    <form method="get" action="viewListing">
+                      <input hidden name="listingId" value="<%=searchList.get(j)%>"/>
+                      <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                      <button type="submit" class="btn bg_orange" >View Listing</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            <%}%>
           </div>
-        </div>
-        <%}while(rset.next());%>
-      </div>
-      <%}%>
+          
+          
+          <%}%>
 
-      <% 
-        sqlStr = "SELECT * FROM cpus WHERE BRAND LIKE '%" + searchStr + "%' OR model LIKE '%"+ searchStr +"%'";
-        rset = stmt.executeQuery(sqlStr);
-        if (rset.next() == true) {
-      %>
-
-      <%found = true;%>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Central Processing Units</h4>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <% 
-        do{%>
-        <div class="col h-25 w-25">
-          <div class="card">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card-body">
-              <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-          </div>
-        </div>
-        <%}while(rset.next());%>
-      </div>
-      <%}%>
-
-       <% 
-        sqlStr = "SELECT * FROM motherboards WHERE BRAND LIKE '%" + searchStr + "%' OR model LIKE '%"+ searchStr +"%'";
-        rset = stmt.executeQuery(sqlStr);
-        if (rset.next() == true) {
-      %>
-
-      <%found = true;%>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Motherboards</h4>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <% 
-        do{%>
-        <div class="col h-25 w-25">
-          <div class="card">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card-body">
-              <h5 class="card-text"><%=rset.getString("brand")+" "+rset.getString("model")  %></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-          </div>
-        </div>
-        <%}while(rset.next());%>
-      </div>
-      <%}%>
-
-      <% 
-        sqlStr = "SELECT * FROM rams WHERE name LIKE '%" + searchStr + "%'";
-        rset = stmt.executeQuery(sqlStr);
-        if (rset.next() == true) {
-      %>
-
-      <%found = true;%>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">RAM</h4>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <% 
-        do{%>
-        <div class="col h-25 w-25">
-          <div class="card">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card-body">
-              <h5 class="card-text"><%=rset.getString("name")%></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-          </div>
-        </div>
-        <%}while(rset.next());%>
-      </div>
-      <%}%>
-
-      <% 
-        sqlStr = "SELECT * FROM storage WHERE name LIKE '%" + searchStr + "%'";
-        rset = stmt.executeQuery(sqlStr);
-        if (rset.next() == true) {
-      %>
-
-      <%found = true;%>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Storage</h4>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <% 
-        do{%>
-        <div class="col h-25 w-25">
-          <div class="card">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card-body">
-              <h5 class="card-text"><%=rset.getString("name")%></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-          </div>
-        </div>
-        <%}while(rset.next());%>
-      </div>
-      <%}%>
-
-      <% 
-        sqlStr = "SELECT * FROM cases WHERE name LIKE '%" + searchStr + "%'";
-        rset = stmt.executeQuery(sqlStr);
-        if (rset.next() == true) {
-      %>
-
-      <%found = true;%>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Cases</h4>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <% 
-        do{%>
-        <div class="col h-25 w-25">
-          <div class="card">
-            <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
-            <div class="card-body">
-              <h5 class="card-text"><%=rset.getString("name")%></h5>
-              <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
-            </div>
-          </div>
-        </div>
-        <%}while(rset.next());%>
-      </div>
-      <%}%>
-        
-      <%}%>
-      <%if(found == false) {%>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">No results for <%=searchStr%></h4>
-      </div>
-
-      <%}%>
+          <% if (count == 0){%>
+             <div class="d-flex mb-3">
+              <h4 class="p-2">No results for "<%=searchStr%>"</h4>
+             </div>
+          <%}%>
       
- 
-
+    
     </div>
   
     <div class="footer">
@@ -340,27 +300,39 @@ String sqlStr;
               <h6>Categories</h6>
               <ul class="footer-links">
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="all.jsp">All</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >GPUs</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp">GPUs</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >CPUs</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp">CPUs</a>
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp"
+                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
                     >Motherboards</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp">Rams</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Rams</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp">Storage</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Storage</a
+                  >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp">Cases</a>
+                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Cases</a
+                  >
+                </li>
+                <li>
+                  <a class="flex-sm-fill text-sm nav-link" href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                    >Coolers</a
+                  >
                 </li>
               </ul>
             </div>
