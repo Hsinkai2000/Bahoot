@@ -3,9 +3,8 @@
 <% 
 DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
 Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                           "root", "rootpass");
-Statement stmt = conn.createStatement();
+"jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+"root", "password"); Statement stmt = conn.createStatement();
 
 String sqlStr = "select * from storage";
 if (request.getParameter("sort") !=null) {
@@ -162,7 +161,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
       </div>
 
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn bg_orange dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Sort By:
         </button>
         <ul class="dropdown-menu">

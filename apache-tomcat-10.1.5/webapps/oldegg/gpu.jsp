@@ -3,9 +3,8 @@
 <% 
 DecimalFormat priceFormatter = new DecimalFormat("$#0.00");
 Connection conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                           "root", "rootpass");
-Statement stmt = conn.createStatement();
+"jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+"root", "password"); Statement stmt = conn.createStatement();
 String sqlStr = "select * from gpus";
 
 if (request.getParameter("sort") !=null) {
@@ -164,7 +163,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
       
 
       <div class="btn-group">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <button type="button" class="btn bg_orange dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Sort by  
         </button>
         <ul class="dropdown-menu">
@@ -185,7 +184,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
           <div class="card">
             <img src="<%=rset.getString("link")%>" class="card-img-bottom" alt="...">
             <div class="card-body">
-              <h5 class="card-text"><%=rset.getString("maker")+" "+rset.getString("brand")+" "+rset.getString("model")  %></h5>
+              <h5 class="card-text"><%=rset.getString("name")  %></h5>
               <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
               <form method="get" action="viewListing">
                 <input type="hidden" value="2" name="listingId" />

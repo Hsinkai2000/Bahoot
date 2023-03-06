@@ -1,15 +1,16 @@
+
 import java.io.*;
 import java.net.URI;
 import java.net.http.HttpHeaders;
 import java.net.http.HttpRequest;
 import java.util.logging.*;
 import java.sql.*;
-import jakarta.servlet.*;
-import jakarta.servlet.*; // Tomcat 10
+import jakarta.servlet.*; 
+import jakarta.servlet.*;             // Tomcat 10
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet("/signup")
+@WebServlet("/signup") 
 public class signUpServlet extends HttpServlet {
     static String email;
     static String password;
@@ -21,84 +22,93 @@ public class signUpServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try (
-                Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                        "root", "password");
 
-                Statement stmt = conn.createStatement();) {
-            LOGGER.info("MyServlet called"); // Add a logging statement
+        LOGGER.info("MyServlet called"); // Add a logging statement
+			
+        email = request.getParameter("email");
+        name = request.getParameter("name");
+        password = request.getParameter("password");
+        confirm = request.getParameter("confirm");
+	    mobile = Integer.parseInt(request.getParameter("mobile")) ;
+		String err="";
 
-            email = request.getParameter("email");
-            name = request.getParameter("name");
-            password = request.getParameter("password");
-            confirm = request.getParameter("confirm");
-            mobile = Integer.parseInt(request.getParameter("mobile"));
-            String err = "";
+        int count = verifyEmail();
 
-            int count = verifyEmail(stmt);
 
-            if (email == null || password == null || confirm == null) {
-                err += "Please fill out all fields.\n";
-            } else if (email.isEmpty() || password.isEmpty() || confirm.isEmpty()) {
-                err += "Please fill out all fields.\n";
-            } else if (!password.equals(confirm)) {
-                err += "Passwords do not match.\n";
-            } else if (count != 0) {
-                err += "Email is already in use.\n";
-            }
+        if (email == null || password == null || confirm == null) {
+            err += "Please fill out all fields.\n";
+        } else if (email.isEmpty() || password.isEmpty() || confirm.isEmpty()) {
+            err += "Please fill out all fields.\n";
+        } else if (!password.equals(confirm)) {
+            err += "Passwords do not match.\n";
+        } else if (count != 0) {
+            err += "Email is already in use.\n";
+        } 
+        
+        if(err!=""){
 
-            if (err != "") {
+            LOGGER.info("error found: " + err); // Add a logging statement
+            response.sendRedirect("http://localhost:9999/oldegg/signup.jsp?data="+err);
+        }
+        else {
+            //add to database and go to index.jsp
 
-                LOGGER.info("error found: " + err); // Add a logging statement
-                response.sendRedirect("http://localhost:9999/oldegg/signup.jsp?data=" + err);
-            } else {
-                // add to database and go to index.jsp
-
-                LOGGER.info("Register"); // Add a logging statement
-                registerToDb(response, stmt);
-            }
-        } catch (Exception e) {
-            LOGGER.info("Something Failed" + e); // Add a logging statement
+            LOGGER.info("Register"); // Add a logging statement
+            registerToDb(response);
         }
     }
 
-    private static void registerToDb(HttpServletResponse response, Statement stmt) {
-        // register user
-        try {
-            String sqlStrRegister = "INSERT INTO Users Values (null, '" + email + "', '" + name + "', '" + password
-                    + "', '" + mobile + "')";
-            stmt.executeUpdate(sqlStrRegister);
-            int id = verifyEmail(stmt);
+    private static void registerToDb(HttpServletResponse response ) {
+        //register user
+        try(
+            Connection conn = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+                                "root", "rootpass"); 
+            
+            Statement stmt = conn.createStatement();
+        ){
+
+            String sqlStrRegister = "INSERT INTO Users Values (null, '" + email + "', '"+ name + "', '" + password + "', '" + mobile + "')";
+            stmt.executeUpdate(sqlStrRegister);  
+            int id = verifyEmail();        
             response.setIntHeader("id", id);
-            try {
-                response.sendRedirect("http://localhost:9999/oldegg/login.jsp");
-            } catch (Exception e) {
+            try{
+                response.sendRedirect("http://localhost:9999/oldegg/index.jsp");
+            }catch(Exception e){
                 LOGGER.info("Redirect Failed" + e); // Add a logging statement
 
             }
-        } catch (SQLException e) {
+        }
+        catch(SQLException e){
 
             LOGGER.info("SQL Failed" + e); // Add a logging statement
         }
 
+		
     }
 
-    private static int verifyEmail(Statement stmt) {
-        // check if email exists
-        try {
-            int id = 0;
+    private static int verifyEmail() {        
+        //check if email exists
+        try(
+            Connection conn = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+                                "root", "rootpass"); 
+            
+            Statement stmt = conn.createStatement();
+        )
+        {
+            int id=0;
             String sqlStrEmail = "SELECT * FROM users WHERE email ='" + email + "'";
-            ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail);
-
-            while (rsetEmail.next()) {
+            ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail); 
+    
+            while(rsetEmail.next()){
                 id = rsetEmail.getInt(1);
             }
             return id;
         } catch (SQLException e) {
-
+            
             LOGGER.info("SQL Failed" + e); // Add a logging statement
         }
-        return 0;
+       return 0;
     }
 }

@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%> ======= <%@ page import =
-"java.io.*,java.util.*,java.sql.*,java.text.*"%> <% DecimalFormat priceFormatter
-= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
+pageEncoding="UTF-8"%> 
+<%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*"%> 
+<% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
 "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-"root", "rootpass"); Statement stmt = conn.createStatement(); String sqlStr; %>
+"root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,6 +18,21 @@ pageEncoding="UTF-8"%> ======= <%@ page import =
       crossorigin="anonymous"
     />
     <link href="./style/style.css" rel="stylesheet" />
+    <style>
+      .carousel {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .carousel-inner {
+        display: inline-block;
+    }
+    .carousel-item {
+        display: inline-block;
+        width: 300px; /* adjust this as needed */
+        margin-right: 10px; /* adjust this as needed */
+    }
+    </style>
   </head>
   <body class="bg_default">
     <nav
@@ -145,144 +160,53 @@ pageEncoding="UTF-8"%> ======= <%@ page import =
 
       <% int number = (int)Math.floor(Math.random() * 10); if (number == 0)
       ++number; %>
-      <div
-        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
-        style="height: 550px"
-      >
-        <% sqlStr = "SELECT * FROM gpus where id =" + Integer.toString(number);
-        ResultSet rset = stmt.executeQuery(sqlStr); rset.next(); %>
-        <div class="card h-25 w-25" id="tile" ;>
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text">
-              <%=rset.getString("maker")+" "+rset.getString("brand")+"
-              "+rset.getString("model") %>
-            </h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-        <% number = (int)Math.floor(Math.random() * 10); if (number == 0)
-        ++number; sqlStr = "SELECT * FROM cpus where id =" +
-        Integer.toString(number); rset = stmt.executeQuery(sqlStr); rset.next();
-        %>
-
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text">
-              <%=rset.getString("brand")+" "+rset.getString("model") %>
-            </h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <% number = (int)Math.floor(Math.random() * 10); if (number == 0)
-        ++number; sqlStr = "SELECT * FROM motherboards where id =" +
-        Integer.toString(number); rset = stmt.executeQuery(sqlStr); rset.next();
-        %>
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text">
-              <%=rset.getString("brand")+" "+rset.getString("model") %>
-            </h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <% number = (int)Math.floor(Math.random() * 10); if (number == 0)
-        ++number; sqlStr = "SELECT * FROM rams where id =" +
-        Integer.toString(number); rset = stmt.executeQuery(sqlStr); rset.next();
-        %>
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text"><%=rset.getString("name")%></h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <% number = (int)Math.floor(Math.random() * 10); if (number == 0)
-        ++number; sqlStr = "SELECT * FROM storage where id =" +
-        Integer.toString(number); rset = stmt.executeQuery(sqlStr); rset.next();
-        %>
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text"><%=rset.getString("name")%></h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <% number = (int)Math.floor(Math.random() * 10); if (number == 0)
-        ++number; sqlStr = "SELECT * FROM cases where id =" +
-        Integer.toString(number); rset = stmt.executeQuery(sqlStr); rset.next();
-        %>
-        <div class="card h-25 w-25 card-block mx-2">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text"><%=rset.getString("name")%></h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
+      
+      <div class="container-fluid py-2">
+        <div class="d-flex flex-row flex-nowrap overflow-auto">
+            <% 
+            try{
+              String listing = "SELECT * FROM listings ORDER BY RAND()";
+              ResultSet rset = stmt.executeQuery(listing);
+              ResultSetMetaData rsmd = rset.getMetaData(); 
+              int columnCount = rsmd.getColumnCount();
+              List typeList = new ArrayList(); 
+              List listingIDList =  new ArrayList(); 
+              List itemIDList = new ArrayList(); 
+              int count=0;
+              int i=0;
+              while (rset.next()){                
+                typeList.add(rset.getString("type"));
+                listingIDList.add(rset.getInt("id"));
+                itemIDList.add(rset.getInt("itemID"));
+                count++;
+              }
+              Thread.sleep(1000); 
+              while(i<=count){
+                String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+                ResultSet itemset = stmt.executeQuery(getitems);
+                  while(itemset.next()){
+                  String link = itemset.getString("link");
+                  String name = itemset.getString("name");
+                  Float price = itemset.getFloat("price");
+                %>
+                <div class="card card-body" style="height: 500px;min-width: 300px;">
+                <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
+                <form method="get" action="viewListing">
+                  <h3 style="width: 200px;"><%= name %></h3>
+                  <p>$<%= price %></p>
+                  <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+                  <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                  <button type="submit" class="btn bg_orange">View Listing</button>
+                </form>
+              </div>
+                <%}i++;
+              }
+            } catch (SQLException e) {
+              e.printStackTrace();
+            }
+            %>
+          </div>                
       </div>
-
-      <div class="pb-4 pt-4"></div>
-
       <div class="d-flex mb-3">
         <h4 class="p-2">
           <% if(response.getHeader("id") != null) { %>
@@ -298,130 +222,6 @@ pageEncoding="UTF-8"%> ======= <%@ page import =
         <h4 class="p-2">Ready Stock</h4>
       </div>
 
-      <div
-        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
-        style="height: 550px"
-      >
-        <% sqlStr = "SELECT * FROM gpus ORDER BY qty DESC"; rset =
-        stmt.executeQuery(sqlStr); rset.next(); %>
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text">
-              <%=rset.getString("maker")+" "+rset.getString("brand")+"
-              "+rset.getString("model") %>
-            </h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-        <% sqlStr = "SELECT * FROM cpus ORDER BY qty DESC"; rset =
-        stmt.executeQuery(sqlStr); rset.next(); %>
-
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text">
-              <%=rset.getString("brand")+" "+rset.getString("model") %>
-            </h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <% sqlStr = "SELECT * FROM motherboards ORDER BY qty DESC"; rset =
-        stmt.executeQuery(sqlStr); rset.next(); %>
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text">
-              <%=rset.getString("brand")+" "+rset.getString("model") %>
-            </h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <% sqlStr = "SELECT * FROM rams ORDER BY qty DESC"; rset =
-        stmt.executeQuery(sqlStr); rset.next(); %>
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text"><%=rset.getString("name")%></h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <% sqlStr = "SELECT * FROM storage ORDER BY qty DESC"; rset =
-        stmt.executeQuery(sqlStr); rset.next(); %>
-        <div class="card h-25 w-25">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text"><%=rset.getString("name")%></h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <% sqlStr = "SELECT * FROM cases ORDER BY qty DESC"; rset =
-        stmt.executeQuery(sqlStr); rset.next(); %>
-        <div class="card h-25 w-25 card-block mx-2">
-          <img src="<%=rset.getString("link")%>" class="card-img-bottom"
-          alt="...">
-          <div class="card">
-            <h5 class="card-text"><%=rset.getString("name")%></h5>
-            <h5 class="card-text">
-              <%out.print(priceFormatter.format(rset.getFloat("price")));%>
-            </h5>
-            <form method="get" action="viewListing">
-              <input type="hidden" value="#############" name="listingId" />
-              <button type="submit" class="btn btn-primary">
-                View Listing
-              </button>
-            </form>
-          </div>
-        </div>
       </div>
     </div>
 

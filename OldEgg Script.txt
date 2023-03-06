@@ -208,12 +208,12 @@ INSERT INTO Coolers (name , type, price, qty, link) VALUES
 	('Corsair iCUE H150i ELITE LCD', 'AIO', '289.99', '15', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h56/he9/9889310539806/CW-9060062-WW/Gallery/Common/H150i_ELITE_LCD_RENDER_01/-CW-9060062-WW-Gallery-Common-H150i-ELITE-LCD-RENDER-01.png_1200Wx1200H ');
 
 INSERT INTO CPUs (name, price, qty, link) VALUES
-	('Intel Core i5-13600K', '492.47', '35 ', 'null'),
-	('Intel Core i9-13900K', '892', '17 ', 'null'),
-	('AMD Ryzen 9 7950X', '921.23', '13 ', 'null'),
-	('Intel Core i7-12700KF', '443.95', '23 ', 'null'),
-	('Intel Core i7-13700K', '643.37', '34 ', 'null'),
-	('Intel Ryzen 9 5900X', '538.91', '199 ', 'null');
+	('Intel Core i5-13600K', '492.47', '35 ', 'https://files.pccasegear.com/images/1663551102-BX8071513600K-thb.jpg'),
+	('Intel Core i9-13900K', '892', '17 ', 'https://files.pccasegear.com/images/1666761631-BX8071513900K-thb.jpg'),
+	('AMD Ryzen 9 7950X', '921.23', '13 ', 'https://m.media-amazon.com/images/I/51nBGlyDOoL._AC_UF894,1000_QL80_.jpg'),
+	('Intel Core i7-12700KF', '443.95', '23 ', 'https://www.definepc.com.sg/wp-content/uploads/2022/11/12700kf.jpg'),
+	('Intel Core i7-13700K', '643.37', '34 ', 'https://bytesize.com.sg/wp-content/uploads/2022/11/13th-Gen-i7-K.webp'),
+	('AMD Ryzen 9 5900X', '538.91', '199 ', 'https://www.amd.com/system/files/2020-09/616656-amd-ryzen-9-5000-series-PIB-1260x709_0.png');
 
   INSERT INTO Listings (type, itemID) VALUES 
   ("motherboards",1),
