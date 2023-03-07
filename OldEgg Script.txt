@@ -54,20 +54,29 @@ create table Motherboards (
   primary key (id)
 );
 
-INSERT INTO Motherboards (name, socket, price, qty, formfactor, link) VALUES
-	("MSI MAG B550 TOMAHAWK", "AM4", 335.45, 116, "ATX", "https://m.media-amazon.com/images/I/910jyKG9QlL.jpg"),
-	("MSI B550 PRO-VDH WIFI", "AM4", 254.92, 79, "MATX","https://m.media-amazon.com/images/I/91beeVTo4pL.jpg"),
-	("Asus TUF GAMING B650-PLUS WIFI", "AM5", 346.96, 3, "ATX","https://m.media-amazon.com/images/I/81SXll1-k8L._AC_SL1500_.jpg"),
-	("Gigabyte Z790 AORUS ELITE AX", "LGA1700", 413.63, 6, "ATX","https://static.gigabyte.com/StaticFile/Image/Global/0c6899b3e79329e5c8236fda4441fe0e/Product/32578/Png"),
-	("Gigabyte B650 AORUS ELITE AX", "AM5", 435.73, 9, "ATX","https://media.ldlc.com/r1600/ld/products/00/05/98/55/LD0005985556.jpg"),
-	("ASRock B660M-HDV", "LGA1700", 216.86, 3, "MATX","https://www.asrock.com/mb/photo/B660M-HDV(M1).png"),
-	("Asus ROG STRIX B550-F GAMING WIFI II", "AM4", 360.32, 7, "ATX","https://simlimsquare.com.sg/image/images/620da7ae93efb.jpg?p=full"),
-	("ASRock Z590 Pro4", "LGA1200", 253.60, 2, "ATX","https://m.media-amazon.com/images/I/91+aWDgEKYL.jpg"),
-	("Asus Prime B550M-A WiFi", "AM4", 200.00, 1, "MATX","https://m.media-amazon.com/images/I/91L1ts-j0LL._AC_UF894,1000_QL80_.jpg");
+INSERT INTO Motherboards (name, socket, price, qty, formfactor, link ) VALUES
+	('MSI MAG B550 TOMAHAWK', 'AM4', '335.45', '116', 'ATX', 'https://m.media-amazon.com/images/I/910jyKG9QlL.jpg '),
+	('MSI B550M PRO-VDH WIFI', 'AM4', '254.92', '79', 'MATX', 'https://m.media-amazon.com/images/I/91beeVTo4pL.jpg '),
+	('ASUS TUF GAMING B650-PLUS WIFI', 'AM5', '346.96', '43', 'ATX', 'https://m.media-amazon.com/images/I/81SXll1-k8L._AC_SL1500_.jpg '),
+	('Gigabyte Z790 AORUS ELITE AX', 'LGA1700', '413.63', '22', 'ATX', 'https://static.gigabyte.com/StaticFile/Image/Global/0c6899b3e79329e5c8236fda4441fe0e/Product/32578/Png '),
+	('Gigabyte B650 AORUS ELITE AX', 'AM5', '435.73', '79', 'ATX', 'https://media.ldlc.com/r1600/ld/products/00/05/98/55/LD0005985556.jpg '),
+	('ASRock B660M-HDV', 'LGA1700', '216.86', '73', 'MATX', 'https://www.asrock.com/mb/photo/B660M-HDV(M1).png '),
+	('Asus ROG STRIX B550-F GAMING WIFI II', 'AM4', '360.32', '40', 'ATX', 'https://simlimsquare.com.sg/image/images/620da7ae93efb.jpg?p=full '),
+	('Asrock Z590 Pro4', 'LGA1200', '253.6', '26', 'ATX', 'https://m.media-amazon.com/images/I/91+aWDgEKYL.jpg '),
+	('Asus Prime B550M-A WiFi', 'AM4', '200', '75', 'MATX', 'https://m.media-amazon.com/images/I/91L1ts-j0LL._AC_UF894,1000_QL80_.jpg '),
+	('GIGABYTE Z690 AORUS PRO', 'LGA1700', '519', '71', 'ATX', 'https://m.media-amazon.com/images/I/61BLpnAud-L._AC_SL1000_.jpg '),
+	('ASRock A320M-HDV R4.0', 'AM4', '125', '10', 'MATX', 'https://m.media-amazon.com/images/I/71EXL1PByOL._AC_SX679_.jpg '),
+	('MSI MPG B560I Gaming Edge WiFi', 'LGA1200', '438.17', '54', 'MATX', 'https://m.media-amazon.com/images/I/81l4XjB+uVL._AC_SL1500_.jpg '),
+	('ASUS ROG Strix B550-A', 'AM4', '258.76', '60', 'ATX', 'https://m.media-amazon.com/images/I/91LqAWWBgSL._AC_SL1500_.jpg '),
+	('ASUS TUF Gaming B760-PLUS WiFi D4', 'LGA1700', '306.97', '69', 'ATX', 'https://m.media-amazon.com/images/I/81Kr0WwOO0L._AC_SL1500_.jpg '),
+	('MSI PRO Z690-A DDR4 ProSeries', 'LGA1700', '277.73', '4', 'ATX', 'https://m.media-amazon.com/images/I/91ZpekDlH3L._AC_SL1500_.jpg '),
+	('MSI MPG Z790 Edge WiFi DDR4', 'LGA1700', '454.66', '13', 'ATX', 'https://m.media-amazon.com/images/I/81LHT-z5-EL._AC_SL1500_.jpg '),
+	('ASUS AM4 TUF Gaming X570-Plus (Wi-Fi) ', 'AM4', '209.99', '27', 'ATX', 'https://m.media-amazon.com/images/I/710hyHWebnL._AC_SL1500_.jpg '),
+	('ASUS ROG MAXIMUS Z690 HERO EVA (ROG X EVANGELION)', 'LGA1700', '895.55', '10', 'ATX', 'https://m.media-amazon.com/images/I/811WsAtV8FL._AC_SL1500_.jpg');
 
 create table GPUs(
   id int NOT NULL AUTO_INCREMENT,
-  name varchar(50),
+  name varchar(75),
   price float,
   qty int,
   link varchar(150),
@@ -82,9 +91,17 @@ INSERT INTO GPUs (name, price, qty, link ) VALUES
 	('NVIDIA ZOTAC GTX 1060', '330', '88', 'https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-p10600b-10m_inage1.jpg?itok=yPhrJtMX '),
 	('NVIDIA MSI SUPRIM RTX 3080', '1200', '55', 'https://m.media-amazon.com/images/I/81UV-e3xgeL.jpg '),
 	('AMD XFX MERC 319 RX 6800 XT', '1100', '96', 'https://m.media-amazon.com/images/I/81-70VBUexL.jpg '),
-	('GIGABYTE RX 6500XT EAGLE', '220', '27', 'https://cf.shopee.sg/file/3fa348fcf7624dfb97c398e5d51eab3f '),
-	('MSI RX 6650XT MECH', '451.64', '31', 'https://asset.msi.com/resize/image/global/product/product_1652175968d2d39b873b3c725249e989821bd092de.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png ');
-
+	('AMD GIGABYTE RX 6500XT EAGLE', '220', '27', 'https://cf.shopee.sg/file/3fa348fcf7624dfb97c398e5d51eab3f '),
+	('AMD MSI RX 6650XT MECH', '451.64', '31', 'https://asset.msi.com/resize/image/global/product/product_1652175968d2d39b873b3c725249e989821bd092de.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png '),
+	('AMD XFX SPEEDSTER MERC310 AMD RX 7900 XT', '1262.76', '59', 'https://m.media-amazon.com/images/I/61F2rF1rKCL._AC_UL640_FMwebp_QL65_.jpg '),
+	('NVIDIA ASUS TUF GAMING RTX 4080', '2128', '23', 'https://m.media-amazon.com/images/I/81BTQB6jbXL._AC_UL640_FMwebp_QL65_.jpg '),
+	('AMD GIGABYTE RX 6900 XT GAMING OC', '1488', '9', 'https://m.media-amazon.com/images/I/81kQDW0TzoL._AC_UL640_FMwebp_QL65_.jpg '),
+	('NVIDIA ZOTAC GTX 1660 SUPER', '362.07', '24', 'https://m.media-amazon.com/images/I/71AAVqtFfvL._AC_UL640_QL65_.jpg '),
+	('NVIDIA ASUS ROG STRIX RTX 3080 GUNDAM EDITON', '1500', '27', 'https://dlcdnwebimgs.asus.com/gain/A96FC491-FEAA-4DFA-96A8-B95832F87C8B/w1000/h732'),
+	('NVIDIA MSI GTX 1660 SUPER VENTUS XS', '384.44', '29', 'https://m.media-amazon.com/images/I/619Ui9f--pL._AC_SL1000_.jpg '),
+	('NVIDIA GIGABYTE RTX 3070 GAMING OC', '768.44', '34', 'https://m.media-amazon.com/images/I/71XcVOdHX+S._AC_UY436_FMwebp_QL65_.jpg '),
+	('NVIDIA ZOTAC RTX 4070 TI TRINITY OC', '1145.55', '28', 'https://m.media-amazon.com/images/I/81ywJlcuVOL._AC_UY436_FMwebp_QL65_.jpg '),
+	('NVIDIA ASUS ROG STRIX RTX 3080 EVA (ROG X EVANGELION)', '1400', '10', 'https://m.media-amazon.com/images/I/81h5R6ojhwL._AC_SL1500_.jpg');
 
 
 create table CPUs(
@@ -96,13 +113,26 @@ create table CPUs(
   primary key (id)
 );
 
-INSERT INTO CPUs (name, price, qty, link) VALUES
-	('AMD RYZEN 7 5800X3D', '550', '1', 'https://m.media-amazon.com/images/I/61Kq99IRdcL.jpg '),
-	('AMD RYZEN 7 5600X', '290.17', '53', 'https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg '),
-	('AMD RYZEN 7 5800X', '382.31', '29', 'https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg '),
+INSERT INTO CPUs (name, price, qty, link ) VALUES
+	('AMD Ryzen 7 5800X3D', '550', '1', 'https://m.media-amazon.com/images/I/61Kq99IRdcL.jpg '),
+	('AMD Ryzen 7 5600X', '290.17', '53', 'https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg '),
+	('AMD Ryzen 7 5800X', '382.31', '29', 'https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg '),
 	('Intel Core i5-13600K', '492.47', '35', 'https://m.media-amazon.com/images/I/61ObMmbxwgL.jpg '),
 	('Intel Core i9-13900K', '892', '17', 'https://m.media-amazon.com/images/I/61uI+orDOZL.jpg '),
-	('AMD Ryzen 9 7950X', '921.23', '13', 'https://m.media-amazon.com/images/I/51nBGlyDOoL.jpg ');
+	('AMD Ryzen 9 7950X', '921.23', '13', 'https://m.media-amazon.com/images/I/51nBGlyDOoL.jpg '),
+	('Intel Core i7-12700KF', '443.95', '23', 'https://m.media-amazon.com/images/I/51o+isnQxdL._AC_SL1000_.jpg '),
+	('Intel Core i7-13700K', '643.37', '34', 'https://m.media-amazon.com/images/I/61gcREq9LqL._AC_SL1500_.jpg '),
+	('AMD Ryzen 9 5900X', '538.91', '199', 'https://m.media-amazon.com/images/I/616VM20+AzL._AC_SL1384_.jpg '),
+	('AMD Ryzen 5 5600G', '177.69', '515', 'https://m.media-amazon.com/images/I/51f2hkWjTlL._AC_UY436_FMwebp_QL65_.jpg '),
+	('Intel Core i3-12100F', '147.33', '368', 'https://m.media-amazon.com/images/I/41MO1qkT+FL._AC_UY436_FMwebp_QL65_.jpg '),
+	('AMD Ryzen 3 3200G', '143.29', '306', 'https://m.media-amazon.com/images/I/51Dx39HJ8kL._AC_UY436_FMwebp_QL65_.jpg '),
+	('AMD Ryzen 3 3100', '192.88', '228', 'https://m.media-amazon.com/images/I/71DTUOZdDnL._AC_UY436_FMwebp_QL65_.jpg '),
+	('Intel Core i3-10100', '136.04', '97', 'https://m.media-amazon.com/images/I/51S2a+GyxUS._AC_UY436_FMwebp_QL65_.jpg '),
+	('Intel Core i5-12400', '251.85', '23', 'https://m.media-amazon.com/images/I/51V+MalhMHL._AC_UY436_FMwebp_QL65_.jpg '),
+	('Intel Core i5-11400F', '180.2', '17', 'https://m.media-amazon.com/images/I/71LIKeM7GGL._AC_UY436_FMwebp_QL65_.jpg '),
+	('Intel Core i9-12900KF', '563.32', '14', 'https://m.media-amazon.com/images/I/510jsZcyEDL._AC_UY436_FMwebp_QL65_.jpg '),
+	('Intel Core i9-11900K', '478.63', '126', 'https://m.media-amazon.com/images/I/71diouNMRHL._AC_UY436_FMwebp_QL65_.jpg');
+
 
 create table RAMs(
   id int NOT NULL AUTO_INCREMENT,
@@ -229,12 +259,34 @@ create table Listings (
   ("motherboards",7),
   ("motherboards",8),
   ("motherboards",9),
+  ("motherboards",10),
+  ("motherboards",11),
+  ("motherboards",12),
+  ("motherboards",13),
+  ("motherboards",14),
+  ("motherboards",15),
+  ("motherboards",16),
+  ("motherboards",17),
+  ("motherboards",18),
+  ("motherboards",19),
   ("cpus",1),
   ("cpus",2),
   ("cpus",3),
   ("cpus",4),
   ("cpus",5),
   ("cpus",6),
+  ("cpus",7),
+  ("cpus",8),
+  ("cpus",9),
+  ("cpus",10),
+  ("cpus",11),
+  ("cpus",12),
+  ("cpus",13),
+  ("cpus",14),
+  ("cpus",15),
+  ("cpus",16),
+  ("cpus",17),
+  ("cpus",18),
   ("coolers",1),
   ("coolers",2),
   ("coolers",3),
@@ -279,15 +331,16 @@ create table Listings (
   ("gpus",6),
   ("gpus",7),
   ("gpus",8),
-  ("gpus",9);
+  ("gpus",9),
+  ("gpus",10),
+  ("gpus",11),
+  ("gpus",12),
+  ("gpus",13),
+  ("gpus",14),
+  ("gpus",15),
+  ("gpus",16),
+  ("gpus",17),
+  ("gpus",18);
   
   show tables;
-  select * from GPUs;
-  select * from CPUs;
-  select * from Motherboards;
-  select * from RAMS;
-  select * from Cases;
-  select * from Storage;
-  select * from Coolers;
-  select * from Users;
-  Select * from Listings;
+ 
