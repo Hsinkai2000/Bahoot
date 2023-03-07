@@ -2,5 +2,8 @@
 apache-tomcat-10.1.5/work/
 apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/
 apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/search_jsp.java
-.gitignore
+apache-tomcat-10.1.5/logs/localhost.2023-03-08.log
+apache-tomcat-10.1.5/logs/localhost_access_log.2023-03-08.txt
+apache-tomcat-10.1.5/logs/catalina.2023-03-08.log
 apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/cpu_jsp.class
+apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/cpu_jsp.java

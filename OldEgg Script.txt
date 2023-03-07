@@ -272,6 +272,7 @@ create table Listings (
   ("coolers",9),
   ("storages",1),
   ("storages",2),
+  ("cpus",3),
   ("storages",3),
   ("storages",4),
   ("storages",5),
