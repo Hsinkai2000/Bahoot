@@ -71,3 +71,60 @@
 07-Mar-2023 01:06:08.173 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =1
 07-Mar-2023 01:11:31.102 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 1
 07-Mar-2023 01:11:31.103 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =4
+07-Mar-2023 11:23:51.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+07-Mar-2023 11:23:51.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+07-Mar-2023 11:23:51.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+07-Mar-2023 11:23:51.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+07-Mar-2023 11:23:51.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+07-Mar-2023 11:23:51.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+07-Mar-2023 11:23:51.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+07-Mar-2023 11:23:51.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+07-Mar-2023 11:23:51.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Mar-2023 11:23:51.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5
+07-Mar-2023 11:23:51.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5
+07-Mar-2023 11:23:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5
+07-Mar-2023 11:23:51.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/temp
+07-Mar-2023 11:23:51.098 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/irfansyakir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+07-Mar-2023 11:23:51.269 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+07-Mar-2023 11:23:51.305 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [350] milliseconds
+07-Mar-2023 11:23:51.323 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Mar-2023 11:23:51.323 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+07-Mar-2023 11:23:51.327 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+07-Mar-2023 11:23:51.627 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2023 11:23:51.645 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [317] ms
+07-Mar-2023 11:23:51.645 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+07-Mar-2023 11:23:51.783 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2023 11:23:51.784 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [139] ms
+07-Mar-2023 11:23:51.784 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+07-Mar-2023 11:23:51.928 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2023 11:23:51.932 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [147] ms
+07-Mar-2023 11:23:51.932 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+07-Mar-2023 11:23:52.134 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2023 11:23:52.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [210] ms
+07-Mar-2023 11:23:52.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+07-Mar-2023 11:23:52.268 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2023 11:23:52.268 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [126] ms
+07-Mar-2023 11:23:52.269 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+07-Mar-2023 11:23:52.400 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2023 11:23:52.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [132] ms
+07-Mar-2023 11:23:52.401 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+07-Mar-2023 11:23:52.407 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1102] milliseconds
+07-Mar-2023 11:47:31.176 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 1
+07-Mar-2023 11:47:31.190 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =4
+07-Mar-2023 15:39:34.320 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+07-Mar-2023 15:39:34.329 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =4
+07-Mar-2023 15:39:49.047 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 1
+07-Mar-2023 15:39:49.051 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =9
+07-Mar-2023 15:57:46.841 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 1
+07-Mar-2023 15:57:46.846 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =6

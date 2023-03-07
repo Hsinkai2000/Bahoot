@@ -153,16 +153,8 @@ ResultSet rset = stmt.executeQuery(sqlStr);
 
       <div class="d-flex mb-3">
         <h4 class="p-2">Central Processing Units</h4>
-        
-      </div>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">sort by filter dropdown not working for some reason, full list of CPUs not showing</h4>
-      </div>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">Other component pages working as expected</h4>
       </div>
       
-
       <div class="btn-group">
         <button type="button" class="btn bg_orange dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Sort by  

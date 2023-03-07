@@ -7,7 +7,7 @@ drop table if exists GPUs;
 drop table if exists CPUs;
 drop table if exists RAMs;
 drop table if exists Cases;
-drop table if exists Storage;
+drop table if exists Storages;
 drop table if exists Coolers;
 drop table if exists Users;
 drop table if exists Listings;
@@ -74,16 +74,18 @@ create table GPUs(
   primary key (id)
 );
 
-INSERT INTO GPUs (name, price, qty, link) VALUES
-	('AMD SAPPHIRE RX 6800', '1000', '1', 'https://m.media-amazon.com/images/I/81EkCyIHlJL.jpg'),
-	('NVIDIA MSI RTX 2070 SUPER', '700', '2', 'https://m.media-amazon.com/images/I/61-Y84LPYzL.jpg'),
-	("NVIDIA ASUS RTX 4090", 2581.54, '15', 'https://bytesize.com.sg/wp-content/uploads/2022/10/ROG-Strix-GeForce-RTX®-4090-OC-Edition-24GB-GDDR6X.png'),
-	('AMD POWERCOLOR RX 7900 XTX', '1924', '18', 'https://www.powercolor.com/_upload/images//2211180944190.png'),
-	('NVIDIA ZOTAC GTX 1060', '330', '5', 'https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-p10600b-10m_inage1.jpg?itok=yPhrJtMX'),
-	('NVIDIA MSI RTX 3080', '1200', '2', 'https://m.media-amazon.com/images/I/81UV-e3xgeL.jpg'),
-	('AMD XFX RX 6800XT', '1100', '7', 'https://m.media-amazon.com/images/I/81-70VBUexL.jpg'),
-	('AMD GIGABYTE RX 6500XT', '220', '27', 'https://cf.shopee.sg/file/3fa348fcf7624dfb97c398e5d51eab3f'),
-	('AMD MSI RX 6650', '341.63', '31', 'https://asset.msi.com/resize/image/global/product/product_1652175968d2d39b873b3c725249e989821bd092de.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png');
+INSERT INTO GPUs (name, price, qty, link ) VALUES
+	('AMD SAPPHIRE NITRO+ RX 6800 ', '1000', '1', 'https://m.media-amazon.com/images/I/81EkCyIHlJL.jpg '),
+	('NVIDIA MSI RTX 2070 SUPER VENTUS ', '700', '54', 'https://m.media-amazon.com/images/I/61-Y84LPYzL.jpg '),
+	('NVIDIA ASUS ROG STRIX RTX 4090', '2581.54', '15', 'https://bytesize.com.sg/wp-content/uploads/2022/10/ROG-Strix-GeForce-RTX®-4090-OC-Edition-24GB-GDDR6X.png '),
+	('AMD POWER RED DEVIL RX 7900 XTX', '1924', '18', 'https://www.powercolor.com/_upload/images//2211180944190.png '),
+	('NVIDIA ZOTAC GTX 1060', '330', '88', 'https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-p10600b-10m_inage1.jpg?itok=yPhrJtMX '),
+	('NVIDIA MSI SUPRIM RTX 3080', '1200', '55', 'https://m.media-amazon.com/images/I/81UV-e3xgeL.jpg '),
+	('AMD XFX MERC 319 RX 6800 XT', '1100', '96', 'https://m.media-amazon.com/images/I/81-70VBUexL.jpg '),
+	('GIGABYTE RX 6500XT EAGLE', '220', '27', 'https://cf.shopee.sg/file/3fa348fcf7624dfb97c398e5d51eab3f '),
+	('MSI RX 6650XT MECH', '451.64', '31', 'https://asset.msi.com/resize/image/global/product/product_1652175968d2d39b873b3c725249e989821bd092de.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png ');
+
+
 
 create table CPUs(
   id int NOT NULL AUTO_INCREMENT,
@@ -100,10 +102,7 @@ INSERT INTO CPUs (name, price, qty, link) VALUES
 	('AMD RYZEN 7 5800X', '382.31', '29', 'https://m.media-amazon.com/images/I/61DYLoyNRWL.jpg '),
 	('Intel Core i5-13600K', '492.47', '35', 'https://m.media-amazon.com/images/I/61ObMmbxwgL.jpg '),
 	('Intel Core i9-13900K', '892', '17', 'https://m.media-amazon.com/images/I/61uI+orDOZL.jpg '),
-	('AMD Ryzen 9 7950X', '921.23', '13', 'https://m.media-amazon.com/images/I/51nBGlyDOoL.jpg '),
-	('Intel Core i7-12700KF', '443.95', '23', 'https://m.media-amazon.com/images/I/51o+isnQxdL._AC_SL1000_.jpg '),
-	('Intel Core i7-13700K', '643.37', '34', 'https://m.media-amazon.com/images/I/61gcREq9LqL._AC_SL1500_.jpg '),
-	('Intel Ryzen 9 5900X', '538.91', '199', 'https://m.media-amazon.com/images/I/616VM20+AzL._AC_SL1384_.jpg ');
+	('AMD Ryzen 9 7950X', '921.23', '13', 'https://m.media-amazon.com/images/I/51nBGlyDOoL.jpg ');
 
 create table RAMs(
   id int NOT NULL AUTO_INCREMENT,
