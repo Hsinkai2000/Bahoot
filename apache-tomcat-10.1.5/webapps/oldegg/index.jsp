@@ -143,9 +143,10 @@ pageEncoding="UTF-8"%>
 
       <div class="d-flex mb-3">
         <h4 class="p-2">Recommended</h4>
-        <a class="ms-auto p-2" href="all.jsp">see all </a>
+        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">See all </a>
       </div>
 
+  
       <% 
         int smallerNumber = 0, largerNumber = 0;
         do {
@@ -155,13 +156,20 @@ pageEncoding="UTF-8"%>
             ++smallerNumber; 
           if (largerNumber == 0)
             largerNumber=20;
-        } while (smallerNumber > largerNumber); 
+        } while ((smallerNumber > largerNumber) && (smallerNumber != largerNumber) && (largerNumber - smallerNumber != 1)); 
       %>
+        <!--
+      <div class="d-flex mb-3">
+        <h4 class="p-2"><%--=smallerNumber--%></h4>
+        <h4 class="p-2"><%--=largerNumber--%></h4>
+      </div>
+      !-->
+
       <div class="container-fluid py-2">
         <div class="d-flex flex-row flex-nowrap overflow-auto">
             <% 
             try{
-              String listing = "select * from listings where id > " + smallerNumber + " and id<" + largerNumber;
+              String listing = "select * from listings where id > " + smallerNumber + " and id <" + largerNumber;
               ResultSet rset = stmt.executeQuery(listing);
               List typeList = new ArrayList(); 
               List listingIDList =  new ArrayList(); 
@@ -188,7 +196,7 @@ pageEncoding="UTF-8"%>
                   <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
                   <form method="get" action="viewListing">
                     <h3 style="width: 200px;"><%= name %></h3>
-                    <p>$<%= price %></p>
+                    <p><%out.print(priceFormatter.format(price));%></p>
                     <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
                     <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
                     <button type="submit" class="btn bg_orange">View Listing</button>
@@ -211,7 +219,7 @@ pageEncoding="UTF-8"%>
           <p></p>
           <%} %>
         </h4>
-        <a class="ms-auto p-2" href="all.jsp">see all </a>
+        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">See all </a>
       </div>
 
       <div class="d-flex mb-3">

@@ -92,11 +92,26 @@ while(coolerResult.next()) {
     searchList.add(searchResult.getString("id"));
 }
 
-for (int i = 0; i < searchList.size(); i++) {
-    count++;
+
+if (searchStr.equals("ALLALLALL")) {
+    searchResult = stmtSearch.executeQuery("SELECT * FROM LISTINGS");
+    while (searchResult.next())
+      searchList.add(searchResult.getString("id"));
+
 }
+for (int i = 0; i < searchList.size(); i++) {
+  count++;
+}
+
+if (searchStr.equals("")) {
+  response.sendRedirect("http://localhost:9999/oldegg/search.jsp?srch-term=ALLALLALL&uid=" + uid);
+
+}
+
+
+
 } catch(Exception e) {
-  response.sendRedirect("http://localhost:9999/oldegg/index.jsp?uid=" + uid);
+  response.sendRedirect("http://localhost:9999/oldegg/search.jsp?srch-term=ALLALLALL&uid=" + uid);
 }
 
 %>
@@ -138,6 +153,10 @@ for (int i = 0; i < searchList.size(); i++) {
           <input
             type="text"
             class="form-control pl-5"
+            <% if (!searchStr.equals("") && !searchStr.equals("ALLALLALL") ) {%>
+              value="<%=searchStr%>"
+            <%}%>
+
             placeholder="Search parts"
             name="srch-term"
             id="srch-term-header"
@@ -222,11 +241,18 @@ for (int i = 0; i < searchList.size(); i++) {
          >Coolers</a>
       </nav>
 
-      <% if (count != 0){%>
+      <% if (count != 0 && (!searchStr.equals("ALLALLALL"))){%>
              <div class="d-flex mb-3">
               <h4 class="p-2">Search results for "<%=searchStr%>"</h4>
              </div>
-          <%}%>
+      <%}%>
+
+      <% if (searchStr.equals("ALLALLALL")){%>
+        <div class="d-flex mb-3">
+         <h4 class="p-2">All Products</h4>
+        </div>
+ <%}%>
+
 
     
       <% if (searchStr == "") {
