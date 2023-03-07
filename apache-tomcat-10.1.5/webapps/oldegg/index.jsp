@@ -156,14 +156,15 @@ pageEncoding="UTF-8"%>
             ++smallerNumber; 
           if (largerNumber == 0)
             largerNumber=20;
-        } while ((smallerNumber > largerNumber) && (smallerNumber != largerNumber) && (largerNumber - smallerNumber != 1)); 
+        } while ((smallerNumber >= largerNumber) && (largerNumber - smallerNumber != 1)); 
       %>
-        <!--
+      <!-- Debug
       <div class="d-flex mb-3">
-        <h4 class="p-2"><%--=smallerNumber--%></h4>
-        <h4 class="p-2"><%--=largerNumber--%></h4>
+        <h4 class="p-2"><%=smallerNumber%></h4>
+        <h4 class="p-2"><%=largerNumber%></h4>
       </div>
-      !-->
+    -->
+      
 
       <div class="container-fluid py-2">
         <div class="d-flex flex-row flex-nowrap overflow-auto">
@@ -190,17 +191,18 @@ pageEncoding="UTF-8"%>
                   String link = itemset.getString("link");
                   String name = itemset.getString("name");
                   Float price = itemset.getFloat("price");
-
               %>
-                <div class="card card-body" style="height: 500px;min-width: 300px;">
-                  <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
-                  <form method="get" action="viewListing">
-                    <h3 style="width: 200px;"><%= name %></h3>
-                    <p><%out.print(priceFormatter.format(price));%></p>
-                    <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
-                    <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
-                    <button type="submit" class="btn bg_orange">View Listing</button>
-                  </form>
+                <div class="card" style="height: 500px;min-width: 300px;">
+                  <img src="<%= link %>" alt="<%= name %>"" style="height: 300px;width: 300px;">
+                  <!--div class = "card-footer" style="height: 250px;width: 300px;"-->
+                    <form method="get" action="viewListing">
+                      <h3 style="width: 300px;"><%= name %></h3>
+                      <p><%out.print(priceFormatter.format(price));%></p>
+                      <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+                      <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                      <button type="submit" class="btn bg_orange">View Listing</button>
+                    </form>
+                  <!--/div-->
                 </div>
                 <%}i++;
               }

@@ -199,3 +199,73 @@
 07-Mar-2023 22:12:53.312 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =18
 07-Mar-2023 22:23:43.237 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 1
 07-Mar-2023 22:23:43.243 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =18
+07-Mar-2023 22:36:20.979 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 1
+07-Mar-2023 22:36:20.983 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =13
+07-Mar-2023 22:36:25.065 INFO [http-nio-9999-exec-7] listingServlet.doPost userid: 1
+07-Mar-2023 22:36:25.069 INFO [http-nio-9999-exec-7] listingServlet.doPost POST
+07-Mar-2023 22:36:25.069 INFO [http-nio-9999-exec-7] listingServlet.doPost Make Purchase
+07-Mar-2023 22:36:25.069 INFO [http-nio-9999-exec-7] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:36:25.069 INFO [http-nio-9999-exec-7] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:36:40.952 INFO [http-nio-9999-exec-9] listingServlet.doPost userid: 1
+07-Mar-2023 22:36:40.957 INFO [http-nio-9999-exec-9] listingServlet.doPost POST
+07-Mar-2023 22:36:40.957 INFO [http-nio-9999-exec-9] listingServlet.doPost Make Purchase
+07-Mar-2023 22:36:40.958 INFO [http-nio-9999-exec-9] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:36:40.958 INFO [http-nio-9999-exec-9] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:41:18.884 INFO [http-nio-9999-exec-10] listingServlet.doPost userid: 1
+07-Mar-2023 22:41:18.895 INFO [http-nio-9999-exec-10] listingServlet.doPost POST
+07-Mar-2023 22:41:18.895 INFO [http-nio-9999-exec-10] listingServlet.doPost Make Purchase
+07-Mar-2023 22:41:18.896 INFO [http-nio-9999-exec-10] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:41:18.896 INFO [http-nio-9999-exec-10] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:41:22.865 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 1
+07-Mar-2023 22:41:29.466 INFO [http-nio-9999-exec-2] listingServlet.doPost userid: 1
+07-Mar-2023 22:41:29.471 INFO [http-nio-9999-exec-2] listingServlet.doPost POST
+07-Mar-2023 22:41:29.471 INFO [http-nio-9999-exec-2] listingServlet.doPost Make Purchase
+07-Mar-2023 22:41:29.472 INFO [http-nio-9999-exec-2] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:41:29.472 INFO [http-nio-9999-exec-2] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:41:31.952 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+07-Mar-2023 22:42:51.901 INFO [http-nio-9999-exec-3] listingServlet.doPost userid: 1
+07-Mar-2023 22:42:51.910 INFO [http-nio-9999-exec-3] listingServlet.doPost POST
+07-Mar-2023 22:42:51.910 INFO [http-nio-9999-exec-3] listingServlet.doPost Make Purchase
+07-Mar-2023 22:42:51.911 INFO [http-nio-9999-exec-3] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:42:51.911 INFO [http-nio-9999-exec-3] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:42:57.686 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 1
+07-Mar-2023 22:42:57.691 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =5
+07-Mar-2023 22:43:00.329 INFO [http-nio-9999-exec-9] listingServlet.doPost userid: 1
+07-Mar-2023 22:43:00.332 INFO [http-nio-9999-exec-9] listingServlet.doPost POST
+07-Mar-2023 22:43:00.332 INFO [http-nio-9999-exec-9] listingServlet.doPost Make Purchase
+07-Mar-2023 22:43:00.332 INFO [http-nio-9999-exec-9] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:43:00.332 INFO [http-nio-9999-exec-9] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:43:39.137 INFO [http-nio-9999-exec-10] listingServlet.doPost userid: 1
+07-Mar-2023 22:43:39.150 INFO [http-nio-9999-exec-10] listingServlet.doPost POST
+07-Mar-2023 22:43:39.150 INFO [http-nio-9999-exec-10] listingServlet.doPost Make Purchase
+07-Mar-2023 22:43:39.150 INFO [http-nio-9999-exec-10] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:43:39.151 INFO [http-nio-9999-exec-10] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:44:10.394 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 1
+07-Mar-2023 22:44:10.397 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+07-Mar-2023 22:44:10.398 INFO [http-nio-9999-exec-6] listingServlet.doPost Make Purchase
+07-Mar-2023 22:44:10.398 INFO [http-nio-9999-exec-6] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:44:10.398 INFO [http-nio-9999-exec-6] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:44:14.838 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 1
+07-Mar-2023 22:44:14.841 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =10
+07-Mar-2023 22:44:15.893 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 1
+07-Mar-2023 22:44:15.896 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+07-Mar-2023 22:44:15.896 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+07-Mar-2023 22:44:15.896 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:44:15.896 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:44:53.090 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 1
+07-Mar-2023 22:44:53.094 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =4
+07-Mar-2023 22:44:55.026 INFO [http-nio-9999-exec-3] listingServlet.doPost userid: 1
+07-Mar-2023 22:44:55.029 INFO [http-nio-9999-exec-3] listingServlet.doPost POST
+07-Mar-2023 22:44:55.029 INFO [http-nio-9999-exec-3] listingServlet.doPost Make Purchase
+07-Mar-2023 22:44:55.029 INFO [http-nio-9999-exec-3] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:44:55.029 INFO [http-nio-9999-exec-3] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:45:00.627 INFO [http-nio-9999-exec-4] listingServlet.doPost userid: 1
+07-Mar-2023 22:45:00.631 INFO [http-nio-9999-exec-4] listingServlet.doPost POST
+07-Mar-2023 22:45:00.631 INFO [http-nio-9999-exec-4] listingServlet.doPost Make Purchase
+07-Mar-2023 22:45:00.631 INFO [http-nio-9999-exec-4] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:45:00.631 INFO [http-nio-9999-exec-4] listingServlet.getUserEmailName In getUserEmailName function
+07-Mar-2023 22:45:16.617 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 1
+07-Mar-2023 22:45:16.622 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+07-Mar-2023 22:45:16.623 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+07-Mar-2023 22:45:16.623 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+07-Mar-2023 22:45:16.623 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
