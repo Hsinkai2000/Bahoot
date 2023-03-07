@@ -1,2 +1,6 @@
 #ignore work files
 apache-tomcat-10.1.5/work/
+apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/
+apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/search_jsp.java
+.gitignore
+apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/cpu_jsp.class
