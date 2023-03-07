@@ -157,20 +157,21 @@ pageEncoding="UTF-8"%>
         <div class="d-flex flex-row flex-nowrap overflow-auto">
             <% 
             try{
-              String listing = "SELECT * FROM listings ORDER BY RAND()";
+              String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
               ResultSet rset = stmt.executeQuery(listing);
               List typeList = new ArrayList(); 
               List listingIDList =  new ArrayList(); 
               List itemIDList = new ArrayList(); 
-              int count=largernumber-smallernumber;
+              int count = 0;
               int i=0;
               while (rset.next()){                
                 typeList.add(rset.getString("type"));
                 listingIDList.add(rset.getInt("id"));
                 itemIDList.add(rset.getInt("itemID"));
+                count++;
               }
               Thread.sleep(1000);
-              while(i<=count){
+              while(i<count){
                 String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
                 ResultSet itemset = stmt.executeQuery(getitems);
                   while(itemset.next()){
