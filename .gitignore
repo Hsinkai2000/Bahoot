@@ -7,3 +7,6 @@ apache-tomcat-10.1.5/logs/localhost_access_log.2023-03-08.txt
 apache-tomcat-10.1.5/logs/catalina.2023-03-08.log
 apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/cpu_jsp.class
 apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/cpu_jsp.java
+apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/index_jsp.class
+apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/index_jsp.java
+apache-tomcat-10.1.5/work/Catalina/localhost/OldEgg/org/apache/jsp/viewListing_jsp.java

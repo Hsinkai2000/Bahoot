@@ -183,10 +183,6 @@ pageEncoding="UTF-8"%>
         <a class="ms-auto">see all ></a>
       </div>
 
-      <% int smallernumber = (int)Math.floor(Math.random() * 10);
-      int largernumber = (int)Math.floor(Math.random() * 10*5); if (smallernumber == 0)
-  ++smallernumber; if (largernumber== 0)
-  largernumber=20; if(largernumber<smallernumber){smallernumber+=1;largernumber=smallernumber+3;}%>
       <div class="container-fluid py-2">
         <div class="d-flex flex-row flex-nowrap overflow-auto">
             <% 
