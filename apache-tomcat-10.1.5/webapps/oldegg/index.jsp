@@ -146,18 +146,22 @@ pageEncoding="UTF-8"%>
         <a class="ms-auto p-2" href="all.jsp">see all </a>
       </div>
 
-      <% int smallernumber = (int)Math.floor(Math.random() * 10);
-          int largernumber = (int)Math.floor(Math.random() * 10*5); if (smallernumber == 0)
-      ++smallernumber; if (largernumber== 0)
-      largernumber=20;%>
-      <p><%=smallernumber%></p>
-
-      <p><%=largernumber%></p>
+      <% 
+        int smallerNumber = 0, largerNumber = 0;
+        do {
+          smallerNumber = (int)Math.floor(Math.random() * 10);
+          largerNumber = (int)Math.floor(Math.random() * 10*5); 
+          if (smallerNumber == 0)
+            ++smallerNumber; 
+          if (largerNumber == 0)
+            largerNumber=20;
+        } while (smallerNumber > largerNumber); 
+      %>
       <div class="container-fluid py-2">
         <div class="d-flex flex-row flex-nowrap overflow-auto">
             <% 
             try{
-              String listing = "select * from listings where id > " + smallernumber + " and id<" + largernumber;
+              String listing = "select * from listings where id > " + smallerNumber + " and id<" + largerNumber;
               ResultSet rset = stmt.executeQuery(listing);
               List typeList = new ArrayList(); 
               List listingIDList =  new ArrayList(); 
