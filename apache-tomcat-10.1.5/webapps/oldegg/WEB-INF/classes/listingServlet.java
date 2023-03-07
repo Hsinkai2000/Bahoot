@@ -24,6 +24,7 @@ public class listingServlet extends HttpServlet {
     static int itemID;
     static float price;
     static int qty;
+    static String type;
     static String name, link;
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -32,7 +33,8 @@ public class listingServlet extends HttpServlet {
             userID = Integer.parseInt(request.getParameter("uid"));
             LOGGER.info("userid: " + userID);
         } else {
-            response.sendRedirect("http://localhost:9999/oldegg/login.jsp");
+            listingId = Integer.parseInt(request.getParameter("listingId"));
+            response.sendRedirect("http://localhost:9999/oldegg/login.jsp?listingId="+listingId);
         }
         try (
                 Connection conn = DriverManager.getConnection(
@@ -59,7 +61,7 @@ public class listingServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if (request.getParameter("uid") != null) {
+        if (request.getParameter("uid") != null ) {
             userID = Integer.parseInt(request.getParameter("uid"));
             LOGGER.info("userid: " + userID);
         }
@@ -74,7 +76,7 @@ public class listingServlet extends HttpServlet {
             Listing listing = obtainListing(stmt);
             ResultSet resultSet = getItemInfo(listing, stmt);
             if (resultSet.next()) {
-                createHeader(resultSet, response);
+                createHeader(resultSet, response,listing);
             }
 
             try {
@@ -93,7 +95,7 @@ public class listingServlet extends HttpServlet {
         try {
             // select coolers.* from coolers, listings where listings.id=4 and
             // coolers.id=listings.itemID;
-            String type = listing.type;
+            type = listing.type;
             String getListing = "SELECT " + type + ".* FROM " + type + ",listings WHERE listings.id=" + listing.id
                     + " and " + type + ".id=" + listing.itemID;
             ResultSet itemResultSet = stmt.executeQuery(getListing);
@@ -147,8 +149,11 @@ public class listingServlet extends HttpServlet {
         return finalString;
     }
 
-    private static void createHeader(ResultSet resultSet, HttpServletResponse response) {
+    private static void createHeader(ResultSet resultSet, HttpServletResponse response, Listing listing) {
         try {
+            response.addHeader("type",listing.type);
+            LOGGER.info("listing type = " + listing.type);
+            response.addIntHeader("listingId", listing.id);
             response.addIntHeader("uid", userID);
             response.addIntHeader("itemID", itemID);
             response.addHeader("name", resultSet.getString("name"));
@@ -165,7 +170,7 @@ public class listingServlet extends HttpServlet {
             throws ServletException, IOException {
         try {
             LOGGER.info("In function");
-            String addCart = "INSERT INTO Carts (itemID,userID) VALUES (" + itemID + "," + userID + ")";
+            String addCart = "INSERT INTO Carts (listingID,userID) VALUES (" + listingId + "," + userID + ")";
             stmt.executeUpdate(addCart);
 
             response.setContentType("text/html");
@@ -196,6 +201,8 @@ public class listingServlet extends HttpServlet {
                 response.addIntHeader("qty", qty);
                 response.addHeader("link", link);
                 response.addHeader("itemName", name);
+                response.addIntHeader("listingId",listingId);
+                response.addHeader("itemType",type);
                 request.getRequestDispatcher("checkout.jsp").forward(request, response);
             }
             // response.sendRedirect("http://localhost:9999/oldegg/checkout.jsp?uid=" +
@@ -224,7 +231,7 @@ public class listingServlet extends HttpServlet {
     }
 
     private void getProductNamePrice(HttpServletRequest request) {
-
+        type = request.getParameter("itemType");
         itemID = Integer.parseInt(request.getParameter("itemID"));
         price = Float.parseFloat(request.getParameter("price"));
         qty = Integer.parseInt(request.getParameter("qty"));

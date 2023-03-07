@@ -164,6 +164,9 @@
             </div>
             <div class="col-3"></div>
           </div>
+          <% if(request.getParameter("listingId") != null) { %>
+            <input type="hidden" name="listingId" value="<%=request.getParameter("listingId")%>">
+          <% } %>
           <div class="row">
             <div class="col-3"></div>
             <div class="col-6">

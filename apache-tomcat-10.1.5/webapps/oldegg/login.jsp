@@ -100,6 +100,9 @@ pageEncoding="UTF-8"%>
             </div>
             <div class="col-3"></div>
           </div>
+          <% if(request.getParameter("listingId") != null) { %>
+            <input type="hidden" name="listingId" value="<%=request.getParameter("listingId")%>">
+          <% } %>
           <div class="row">
             <div class="col-3"></div>
             <div class="col-2">
@@ -107,7 +110,7 @@ pageEncoding="UTF-8"%>
             </div>
             <div class="col-2">
               <button class="btn">
-                <a class="underline" href="signup.jsp">Sign Up</a>
+                <a class="underline" href="signup.jsp<%= request.getParameter("listingId") != null ? "?listingId=" + request.getParameter("listingId") : "" %>">Sign Up</a>
               </button>
             </div>
             <div class="col"></div>

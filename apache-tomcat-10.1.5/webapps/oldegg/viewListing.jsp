@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
+<%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*"%> 
+<% Connection conn = DriverManager.getConnection(
+"jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+"root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -121,13 +125,17 @@ pageEncoding="UTF-8"%>
             <div class="col-lg-12">
               <form method="post" action="viewListing">
                 <input type="hidden" name="itemID" value=<%= response.getHeader("itemID") %> ></input>
-                <input type="hidden" name="uid" value=<%= response.getHeader("uid") %>></input>
+                <% if(request.getParameter("uid") != null) { %>
+                  <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+                <% } %>
                 <input type="hidden" name="name" value="<%= response.getHeader("name") %>" ></input>
                 <input type="hidden" name="price" value=<%= response.getHeader("price") %>></input>
                 <input type="hidden" name="qty" value=<%= response.getHeader("qty") %> ></input>
                 <input type="hidden" name="link" value=<%= response.getHeader("link") %>></input>
                 <input type="hidden" name="itemInfo" value="<%= response.getHeader("itemInfo") %>" ></input>
                 <input type="hidden" name="action" value="purchase" ></input>
+                <input type="hidden" name="itemType" value=<%= response.getHeader("type") %>></input>
+                <input hidden name="listingId" value=<%= request.getParameter("listingId") %>></input>
                 <input
                 style="width: 300px;"
                   type="submit"
@@ -140,10 +148,12 @@ pageEncoding="UTF-8"%>
           <div class="row">
             <div class="col-lg-12 pb-3">
               <form method="post" action="viewListing">
-                <input type="hidden" name="itemID" value=<%= response.getHeader("itemID") %>></input>
+                <input hidden name="listingId" value=<%= request.getParameter("listingId") %>></input>
                 <br />
-                <input type="hidden" name="uid" value=<%= response.getHeader("uid") %>></input>
-                <input type="hidden" name="action" value="addtocart" type="text" ></input>
+                <% if(request.getParameter("uid") != null) { %>
+                  <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+                <% } %>
+                <input hidden name="action" value="addtocart" type="text" ></input>
                 <input
                 style="width: 300px;"
                   type="submit"
@@ -173,18 +183,57 @@ pageEncoding="UTF-8"%>
         <a class="ms-auto">see all ></a>
       </div>
 
-      <div
-        class="d-flex flex-row flex-nowrap overflow-auto pb-2"
-        style="height: 300px"
-      >
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-        <div class="card card-block mx-2" style="min-width: 300px">Card</div>
-      </div>
+      <% int smallernumber = (int)Math.floor(Math.random() * 10);
+      int largernumber = (int)Math.floor(Math.random() * 10*5); if (smallernumber == 0)
+  ++smallernumber; if (largernumber== 0)
+  largernumber=20; if(largernumber<smallernumber){smallernumber+=1;largernumber=smallernumber+3;}%>
+      <div class="container-fluid py-2">
+        <div class="d-flex flex-row flex-nowrap overflow-auto">
+            <% 
+            try{
+              String listing = "select * from listings where type = '" + response.getHeader("type") +  "'";
+              ResultSet rset = stmt.executeQuery(listing);
+              List typeList = new ArrayList(); 
+              List listingIDList =  new ArrayList(); 
+              List itemIDList = new ArrayList(); 
+              int count=0;
+              int i=0;
+              while (rset.next()){                
+                typeList.add(rset.getString("type"));
+                listingIDList.add(rset.getInt("id"));
+                itemIDList.add(rset.getInt("itemID"));
+                count++;
+              }
+              while(i<count){
+                String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+                ResultSet itemset = stmt.executeQuery(getitems);
+                  while(itemset.next()){
+                  String link = itemset.getString("link");
+                  String name = itemset.getString("name");
+                  Float price = itemset.getFloat("price");
+                %>
+                <div class="card card-body" style="height: 500px;min-width: 300px;">
+                <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
+                <form method="get" action="viewListing">
+                  <h3 style="width: 200px;"><%= name %></h3>
+                  <p>$<%= price %></p>
+                  <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+                  <% if(request.getParameter("uid") != null) { %>
+                    <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+                  <% } %>
+                  <button type="submit" class="btn bg_orange">View Listing</button>
+                </form>
+              </div>
+                <%}i++;
+              }
+            } catch (SQLException e) {
+              e.printStackTrace();
+              
+            }
+            %>
+          </div>    
+        </div>  
+
     </div>
 
     <div class="footer">
