@@ -123,31 +123,31 @@ ResultSet rset = stmt.executeQuery(sqlStr);
       <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-           href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+           href="gpu.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
          >GPUs</a>
 
         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-           href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+           href="cpu.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
          >CPUs</a>
         
         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-           href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+           href="motherboards.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
          >Motherboards</a>
          
          <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-           href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+           href="ram.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
          >Rams</a>
 
          <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-           href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+           href="storage.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
          >Storage</a>
 
          <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-           href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+           href="cases.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
          >Cases</a>
 
          <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
-           href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+           href="coolers.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
          >Coolers</a>
       </nav>
 
@@ -186,7 +186,9 @@ ResultSet rset = stmt.executeQuery(sqlStr);
                 %>
                 <form method="get" action="viewListing">
                   <input hidden name="listingId" value="<%=listingID%>"/>
-                  <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                  <% if(request.getParameter("uid") != null) { %>
+                    <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+                  <% } %>
                   <button type="submit" class="btn bg_orange" >View Listing</button>
                 </form>
               </div>
