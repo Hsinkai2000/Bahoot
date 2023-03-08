@@ -32,36 +32,37 @@ public class listingServlet extends HttpServlet {
         if (request.getParameter("uid") != null) {
             userID = Integer.parseInt(request.getParameter("uid"));
             LOGGER.info("userid: " + userID);
+            try (
+                    Connection conn = DriverManager.getConnection(
+                            "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+                            "root", "password");
+
+                    Statement stmt = conn.createStatement();) {
+
+                LOGGER.info("POST");
+                if (action.equals("purchase")) {
+                    LOGGER.info("Make Purchase");
+                    getProductNamePrice(request);
+                    purchaseItem(request, response, stmt);
+                } else if (action.equals("addtocart")) {
+                    LOGGER.info("Add to cart");
+                    addtocart(request, response, stmt);
+                }
+            } catch (Exception e) {
+                LOGGER.info("SQL Connection error: " + e);
+            }
+            response.getHeader("");
         } else {
             listingId = Integer.parseInt(request.getParameter("listingId"));
-            response.sendRedirect("http://localhost:9999/oldegg/login.jsp?listingId="+listingId);
+            response.sendRedirect("http://localhost:9999/oldegg/login.jsp?listingId=" + listingId);
         }
-        try (
-                Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                        "root", "password");
 
-                Statement stmt = conn.createStatement();) {
-
-            LOGGER.info("POST");
-            if (action.equals("purchase")) {
-                LOGGER.info("Make Purchase");
-                getProductNamePrice(request);
-                purchaseItem(request, response, stmt);
-            } else if (action.equals("addtocart")) {
-                LOGGER.info("Add to cart");
-                addtocart(request, response, stmt);
-            }
-        } catch (Exception e) {
-            LOGGER.info("SQL Connection error: " + e);
-        }
-        response.getHeader("");
     }
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if (request.getParameter("uid") != null ) {
+        if (request.getParameter("uid") != null) {
             userID = Integer.parseInt(request.getParameter("uid"));
             LOGGER.info("userid: " + userID);
         }
@@ -76,7 +77,7 @@ public class listingServlet extends HttpServlet {
             Listing listing = obtainListing(stmt);
             ResultSet resultSet = getItemInfo(listing, stmt);
             if (resultSet.next()) {
-                createHeader(resultSet, response,listing);
+                createHeader(resultSet, response, listing);
             }
 
             try {
@@ -151,7 +152,7 @@ public class listingServlet extends HttpServlet {
 
     private static void createHeader(ResultSet resultSet, HttpServletResponse response, Listing listing) {
         try {
-            response.addHeader("type",listing.type);
+            response.addHeader("type", listing.type);
             LOGGER.info("listing type = " + listing.type);
             response.addIntHeader("listingId", listing.id);
             response.addIntHeader("uid", userID);
@@ -177,7 +178,7 @@ public class listingServlet extends HttpServlet {
             PrintWriter out = response.getWriter();
             out.println("<html><body>");
             out.println("<p>Product has been added to cart!</p>");
-            out.println("<button onclick=\"location.href='index.jsp'\">Go back to index</button>");
+            out.println("<button onclick=\"location.href='index.jsp?uid=" + userID + "'\">Go back to index</button>");
             out.println("</body></html>");
             LOGGER.info("Added to cart!");
         } catch (Exception e) {
@@ -201,8 +202,8 @@ public class listingServlet extends HttpServlet {
                 response.addIntHeader("qty", qty);
                 response.addHeader("link", link);
                 response.addHeader("itemName", name);
-                response.addIntHeader("listingId",listingId);
-                response.addHeader("itemType",type);
+                response.addIntHeader("listingId", listingId);
+                response.addHeader("itemType", type);
                 request.getRequestDispatcher("checkout.jsp").forward(request, response);
             }
             // response.sendRedirect("http://localhost:9999/oldegg/checkout.jsp?uid=" +

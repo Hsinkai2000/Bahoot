@@ -83,7 +83,7 @@ public class checkoutServlet extends HttpServlet {
                         out.println("<html><body>");
                         out.println(
                                 "<p>Congratulations on your purchase! please wait patiently for your item to arrive!</p>");
-                        out.println("<button onclick=\"location.href='index.jsp'\">Go back to index</button>");
+                        out.println("<button onclick=\"location.href='index.jsp?uid=" + uid + "'\">Go back to index</button>");
                         out.println("</body></html>");
                         LOGGER.info("purchased"); // Add a logging statement
                     }
@@ -92,7 +92,7 @@ public class checkoutServlet extends HttpServlet {
                     out.println("<html><body>");
                     out.println(
                             "<p>Sorry something went wrong. please try again.</p>");
-                    out.println("<button onclick=\"location.href='index.jsp'\">Go back to index</button>");
+                    out.println("<button onclick=\"location.href='index.jsp?uid=" + uid + "'\">Go back to index</button>");
                     out.println("</body></html>");
                     LOGGER.info("failure to purchase"); // Add a logging statement
                 }
