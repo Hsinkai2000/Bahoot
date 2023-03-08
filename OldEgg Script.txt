@@ -1,4 +1,4 @@
-create database if not exists oldegg;
+	create database if not exists oldegg;
 
 use oldegg;
  
@@ -136,7 +136,7 @@ INSERT INTO CPUs (name, price, qty, link ) VALUES
 
 create table RAMs(
   id int NOT NULL AUTO_INCREMENT,
-  name varchar(50),
+  name varchar(75),
   speed varchar(50),
   module varchar(50),	
   price float,
@@ -145,16 +145,25 @@ create table RAMs(
   primary key (id)
 );
 
-INSERT INTO RAMs (name, speed, module, price, qty, link) VALUES
-	('Corsair Vengeance LPX 16 GB', 'DDR4-3200', '2 x 8GB', '105.63', '427', 'https://www.corsair.com/medias/sys_master/images/images/hf5/h6f/9110987210782/-CMK16GX4M2B3200C16-Gallery-VENG-LPX-BLK-00.png '),
-	('Corsair Vengeance RGB Pro 32 GB', 'DDR4-3600', '2 x 16GB', '199.64', '69', 'https://www.corsair.com/medias/sys_master/images/images/h40/hbe/9112785322014/-CMW32GX4M2C3200C16-Gallery-CMW32GX4M2C3200C16-Vengeance-RGB-Pro-01.png '),
-	('G.Skill Ripjaws V 32 GB', 'DDR4-3200', '2 x 16GB', '160.93', '109', 'https://www.gskill.com/_upload/images/153611092211.png '),
-	('G.Skill Trident Z5 RGB 32 GB', 'DDR5-6000', '2 x 16GB', '260.12', '10', 'https://www.gskill.com/_upload/images/164923497710.png '),
-	('Corsair Dominator Platinum RGB 32 GB', 'DDR5-6200', '2 x 16GB', '361.87', '4', 'https://www.corsair.com/medias/sys_master/images/images/h92/h96/9181007020062/-CMT32GX4M2C3200C16-Gallery-DOMINATOR-PLAT-RGB-01.png '),
-	('Corsair Vengeance RGB Pro SL 32 GB', 'DDR4-3600', '2 x 16GB', '188.84', '23', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h93/h95/9678466547742/CMH32GX4M2E3200C16/Gallery/VENGEANCE_RGB_PRO_SL_BLACK_01/-CMH32GX4M2E3200C16-Gallery-VENGEANCE-RGB-PRO-SL-BLACK-01.png_1200Wx1200H '),
-	('Kingston FURY Beast 16 GB', 'DDR4-3200', '2 x 8GB', '99.55', '3', 'https://media.kingston.com/kingston/features/ktc-features-memory-beast-ddr4-rgb.jpg '),
-	('G.Skill Flare X5 32 GB', 'DDR5-6000', '2 x 16GB', '129.99', '16', 'https://www.gskill.com/_upload/images/166262266410.png '),
-	('Corsair Vengeance RGB Pro 16 GB', 'DDR4-3200', '2 x 8GB', '64.98', '162', 'https://www.corsair.com/medias/sys_master/images/images/h1f/hbd/9420610568222/-CMW16GX4M2C3200C16-Gallery-Vengeance-RGB-Pro-01.png ');
+INSERT INTO RAMs (name, speed, module, price, qty, link ) VALUES
+	('Corsair Vengeance LPX DDR4 16 GB', 'DDR4-3200', '2 x 8GB', '105.63', '427', 'https://www.corsair.com/medias/sys_master/images/images/hf5/h6f/9110987210782/-CMK16GX4M2B3200C16-Gallery-VENG-LPX-BLK-00.png '),
+	('Corsair Vengeance RGB DDR4 Pro 32 GB', 'DDR4-3600', '2 x 16GB', '199.64', '69', 'https://www.corsair.com/medias/sys_master/images/images/h40/hbe/9112785322014/-CMW32GX4M2C3200C16-Gallery-CMW32GX4M2C3200C16-Vengeance-RGB-Pro-01.png '),
+	('G.Skill Ripjaws V DDR4 32 GB', 'DDR4-3200', '2 x 16GB', '160.93', '109', 'https://www.gskill.com/_upload/images/153611092211.png '),
+	('G.Skill Trident Z5 RGB DDR5 32 GB', 'DDR5-6000', '2 x 16GB', '260.12', '10', 'https://www.gskill.com/_upload/images/164923497710.png '),
+	('Corsair Dominator Platinum RGB DDR5 32 GB', 'DDR5-6200', '2 x 16GB', '361.87', '4', 'https://www.corsair.com/medias/sys_master/images/images/h92/h96/9181007020062/-CMT32GX4M2C3200C16-Gallery-DOMINATOR-PLAT-RGB-01.png '),
+	('Corsair Vengeance RGB Pro SL DDR4 32 GB', 'DDR4-3600', '2 x 16GB', '188.84', '23', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h93/h95/9678466547742/CMH32GX4M2E3200C16/Gallery/VENGEANCE_RGB_PRO_SL_BLACK_01/-CMH32GX4M2E3200C16-Gallery-VENGEANCE-RGB-PRO-SL-BLACK-01.png_1200Wx1200H '),
+	('Kingston FURY Beast DDR4 16 GB', 'DDR4-3200', '2 x 8GB', '99.55', '3', 'https://media.kingston.com/kingston/features/ktc-features-memory-beast-ddr4-rgb.jpg '),
+	('G.Skill Flare X5 DDR5 32 GB', 'DDR5-6000', '2 x 16GB', '129.99', '16', 'https://www.gskill.com/_upload/images/166262266410.png '),
+	('Corsair Vengeance RGB Pro DDR4 16 GB', 'DDR4-3200', '2 x 8GB', '64.98', '162', 'https://www.corsair.com/medias/sys_master/images/images/h1f/hbd/9420610568222/-CMW16GX4M2C3200C16-Gallery-Vengeance-RGB-Pro-01.png '),
+	('Crucial RAM DDR4 8GB', 'DDR4-3200', '1 x 8GB', '27', '548', 'https://m.media-amazon.com/images/I/61j3CTxnXVL._AC_SL1280_.jpg '),
+	('TEAMGROUP T-Force Vulcan Z DDR4 32GB', 'DDR4-3200', '2 x 16GB', '112.09', '67', 'https://m.media-amazon.com/images/I/61+0UEKmgoL._AC_SL1500_.jpg '),
+	('Corsair Vengeance DDR5 64GB', 'DDR5-5200', '2 x 32GB', '336.2', '18', 'https://m.media-amazon.com/images/I/71AV5PQu1yL._AC_SL1500_.jpg '),
+	('TEAMGROUP T-Force Vulcan TUF Gaming Alliance DDR4 16GB', 'DDR4-3200', '2 x 8GB', '69.31', '17', 'https://m.media-amazon.com/images/I/81EgktUz9RL._AC_SL1500_.jpg '),
+	('TEAMGROUP Elite DDR3 16GB', 'DDR3-1600', '2 x 8GB', '42.99', '56', 'https://m.media-amazon.com/images/I/81F2qnrhIZL._AC_SL1500_.jpg '),
+	('TEAMGROUP T-Force Delta RGB DDR4 16GB', 'DDR4-3200', '2 x 8GB', '120.28', '12', 'https://m.media-amazon.com/images/I/71KvpD-WuNL._AC_SL1500_.jpg '),
+	('CORSAIR VENGEANCE RGB DDR5 32GB', 'DDR5-5200', '2 x 16GB', '190.02', '345', 'https://m.media-amazon.com/images/I/41uwPndwufL._AC_SL1000_.jpg '),
+	('OLOy Memory DDR4 64GB', 'DDR4-3200', '2 x 32GB', '215.88', '49', 'https://m.media-amazon.com/images/I/61DPQ7B7BmL._AC_SL1500_.jpg '),
+	('Crucial Ballistix RGB DDR4 16GB', 'DDR4-3200', '2 x 8GB', '85.63', '90', 'https://m.media-amazon.com/images/I/612hKK9-nFL._AC_SL1494_.jpg');
 
 CREATE TABLE Cases 
 (
@@ -191,7 +200,7 @@ CREATE TABLE Storages
   primary key (id)
 );
 
-INSERT INTO Storages (name, capacity, type, interface, price, qty, link) VALUES
+INSERT INTO Storages (name, capacity, type, interface, price, qty, link ) VALUES
 	('Samsung 970 Evo Plus', '1TB', 'SSD', 'M.2 PCIe 4.0 X4', '79.98', '365', 'https://images.samsung.com/is/image/samsung/sg-970-evoplus-nvme-m2-ssd-mz-v7s1t0bw-frontblack-285806219?$1300_1038_PNG$ '),
 	('Samsung 980 Pro', '2TB', 'SSD', 'M.2 PCIe 3.0 X4', '159.99', '83', 'https://images.samsung.com/is/image/samsung/sg-980-pro-nvme-m2-ssd-mz-v8p1t0bw-frontblack-293274350?$2052_1641_PNG$ '),
 	('Seagate Barracuda Compute', '2TB', 'HDD', 'SATA 6.0 Gb/s', '49.99', '688', 'https://www.seagate.com/content/dam/seagate/migrated-assets/www-content/products/hard-drives/barracuda-hard-drive/_shared/images/barracuda-2-5-5tb-hero-left-400x400.png '),
@@ -200,8 +209,16 @@ INSERT INTO Storages (name, capacity, type, interface, price, qty, link) VALUES
 	('Western Digital Blue', '2TB', 'HDD', 'SATA 6.0 Gb/s', '49.99', '18', 'https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-desktop-sata-hdd/gallery/wd-blue-pc-desktop-hard-drive-500gb.png.wdthumb.1280.1280.webp '),
 	('Samsung 970 Evo Plus', '500GB', 'SSD', 'M.2 PCIe 3.0 X4', '58.22', '212', 'https://images.samsung.com/is/image/samsung/sg-970-evoplus-nvme-m2-ssd-mz-v7s500bw-frontblack-285806272?$2052_1641_PNG$ '),
 	('Western Digital Gold', '22TB', 'HDD', 'SATA 6.0 Gb/s', '499.99', '10', 'https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-gold-sata-hdd/gallery/WD-GOLD-1TB.png.wdthumb.1280.1280.webp '),
-	('Seagate IronWolf Pro', '20TB', 'HDD', 'SATA 6.0 Gb/s', '399.99', '5', 'https://www.seagate.com/content/dam/seagate/migrated-assets/www-content/products/nas-drives/ironwolf-hard-drive/_shared/images/ironwolf-pro-20tb-hero-front.png ');
-
+	('Seagate IronWolf Pro', '20TB', 'HDD', 'SATA 6.0 Gb/s', '399.99', '5', 'https://www.seagate.com/content/dam/seagate/migrated-assets/www-content/products/nas-drives/ironwolf-hard-drive/_shared/images/ironwolf-pro-20tb-hero-front.png '),
+	('Kingston A400', '240GB', 'SSD', 'SATA 6.0 Gb/s', '48.23', '400', 'https://m.media-amazon.com/images/I/91RL+MhTWbL._AC_SL1500_.jpg '),
+	('Western Digital WD_BLACK SN770', '1TB', 'SSD', 'M.2 PCIe 4.0 X4', '87.69', '27', 'https://m.media-amazon.com/images/I/51vNa5DEr4L._AC_SL1100_.jpg '),
+	('Seagate IronWolf', '4TB', 'HDD', 'SATA 6.0 Gb/s', '113.67', '481', 'https://m.media-amazon.com/images/I/71SAuEK-ZYL._AC_SL1500_.jpg '),
+	('Seagate Barracuda Compute', '8TB', 'HDD', 'SATA 6.0 Gb/s', '193.66', '16', 'https://m.media-amazon.com/images/I/71dpms8gexL._AC_SL1500_.jpg '),
+	('Western Digital Purple Pro', '10TB', 'HDD', 'SATA 6.0 Gb/s', '350', '123', 'https://m.media-amazon.com/images/I/61trMtBnYMS._AC_SL1280_.jpg '),
+	('Crucial CT1000MX500SSD1', '1TB', 'SSD', 'SATA 6.0 Gb/s', '86.26', '57', 'https://m.media-amazon.com/images/I/81rg-38AdJL._AC_SL1500_.jpg '),
+	('SAMSUNG 980 PRO', '250GB', 'SSD', 'M.2 PCIe 4.0 X4', '160.83', '54', 'https://m.media-amazon.com/images/I/81eujrQV8oL._AC_SL1500_.jpg '),
+	('Western Digital Red NAS', '4TB', 'HDD', 'SATA 6.0 Gb/s', '101.62', '39', 'https://m.media-amazon.com/images/I/710aEelzoRL._AC_SL1500_.jpg '),
+	('Western Digital WD Blue SN570', '1TB', 'SSD', 'M.2 PCIe 3.0 X4', '67', '26', 'https://m.media-amazon.com/images/I/61a+U9YhovL._AC_SL1500_.jpg');
 CREATE TABLE Coolers 
 (
   id int NOT NULL AUTO_INCREMENT,
@@ -280,12 +297,15 @@ create table Listings (
   ("storages",7),
   ("storages",8),
   ("storages",9),
-  ("motherboards",18),
-  ("motherboards",19),
-  ("cpus",1),
-  ("cpus",2),
-  ("coolers",6),
-  ("coolers",7),
+  ("storages",10),
+  ("storages",11),
+  ("storages",12),
+  ("storages",13),
+  ("storages",14),
+  ("storages",15),
+  ("storages",16),
+  ("storages",17),
+  ("storages",18),
   ("cases",1),
   ("cases",2),
   ("cases",3),
@@ -335,8 +355,29 @@ create table Listings (
   ("cpus",11),
   ("gpus",1),
   ("rams",9),
-  ("motherboards",14),
-  ("motherboards",15),
+  ("rams",10),
+  ("rams",11),
+  ("rams",12),
+  ("rams",13),
+  ("rams",14),
+  ("rams",15),
+  ("rams",16),
+  ("rams",17),
+  ("rams",18),
+  ("gpus",1),
+  ("gpus",2),
+  ("gpus",3),
+  ("gpus",4),
+  ("gpus",5),
+  ("gpus",6),
+  ("gpus",7),
+  ("gpus",8),
+  ("gpus",9),
+  ("gpus",10),
+  ("gpus",11),
+  ("gpus",12),
+  ("gpus",13),
+  ("gpus",14),
   ("gpus",15),
   ("gpus",16),
   ("gpus",17),

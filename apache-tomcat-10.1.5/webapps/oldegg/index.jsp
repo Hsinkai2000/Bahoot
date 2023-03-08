@@ -108,7 +108,6 @@ pageEncoding="UTF-8"%>
       </div>
     </nav>
 
-
     <div style="padding-left: 50px; padding-right: 50px">
       <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
@@ -228,53 +227,56 @@ pageEncoding="UTF-8"%>
       <div class="d-flex mb-3">
         <h4 class="p-2">Ready Stock</h4>
       </div>
-      <div class="container-fluid py-2">
-        <div class="d-flex flex-row flex-nowrap overflow-auto">
-            <% 
-            try{
-              String listing = "select * from listings where id > " + smallerNumber2 + " and id <" + largerNumber2;
-              ResultSet rset = stmt.executeQuery(listing);
-              List typeList = new ArrayList(); 
-              List listingIDList =  new ArrayList(); 
-              List itemIDList = new ArrayList(); 
-              int count = 0;
-              int i=0;
-              while (rset.next()){                
-                typeList.add(rset.getString("type"));
-                listingIDList.add(rset.getInt("id"));
-                itemIDList.add(rset.getInt("itemID"));
-                count++;
+        <div class="container-fluid py-2">
+          <div class="d-flex flex-row flex-nowrap overflow-auto">
+              <% 
+              try{
+                String listing = "select * from listings where id > " + smallerNumber2 + " and id <" + largerNumber2;
+                ResultSet rset = stmt.executeQuery(listing);
+                List typeList = new ArrayList(); 
+                List listingIDList =  new ArrayList(); 
+                List itemIDList = new ArrayList(); 
+                int count = 0;
+                int i=0;
+                while (rset.next()){                
+                  typeList.add(rset.getString("type"));
+                  listingIDList.add(rset.getInt("id"));
+                  itemIDList.add(rset.getInt("itemID"));
+                  count++;
+                }
+                while(i<count){
+                  String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+                  ResultSet itemset = stmt.executeQuery(getitems);
+                    while(itemset.next()){
+                    String link = itemset.getString("link");
+                    String name = itemset.getString("name");
+                    Float price = itemset.getFloat("price");
+                %>
+                  <div class="card card-body" style="height: 500px;min-width: 300px;">
+                    <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
+                    <form method="get" action="viewListing">
+                      <h3 style="width: 200px;"><%= name %></h3>
+                      <p><%out.print(priceFormatter.format(price));%></p>
+                      <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
+                      <% if(request.getParameter("uid") != null) { %>
+                        <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+                      <% } %>
+                      <button type="submit" class="btn bg_orange">View Listing</button>
+                    </form>
+                  </div>
+                  <%}i++;
+                }
+              } catch (SQLException e) {
+                e.printStackTrace();
+                
               }
-              while(i<count){
-                String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
-                ResultSet itemset = stmt.executeQuery(getitems);
-                  while(itemset.next()){
-                  String link = itemset.getString("link");
-                  String name = itemset.getString("name");
-                  Float price = itemset.getFloat("price");
               %>
-                <div class="card card-body" style="height: 500px;min-width: 300px;">
-                  <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
-                  <form method="get" action="viewListing">
-                    <h3 style="width: 200px;"><%= name %></h3>
-                    <p><%out.print(priceFormatter.format(price));%></p>
-                    <input hidden name="listingId" value="<%=listingIDList.get(i) %>">
-                    <% if(request.getParameter("uid") != null) { %>
-                      <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
-                    <% } %>
-                    <button type="submit" class="btn bg_orange">View Listing</button>
-                  </form>
-                </div>
-                <%}i++;
-              }
-            } catch (SQLException e) {
-              e.printStackTrace();
-              
-            }
-            %>
-          </div>                
+            </div>                
+        </div>
       </div>
-      </div>
+      
+
+
     </div>
 
     <div class="footer">

@@ -270,6 +270,7 @@
 07-Mar-2023 22:45:16.623 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
 07-Mar-2023 22:45:16.623 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
 07-Mar-2023 22:45:16.623 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+<<<<<<< Updated upstream
 =======
 07-Mar-2023 22:26:45.503 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
 07-Mar-2023 22:26:46.430 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
@@ -1349,4 +1350,19 @@ Stacktrace:
 07-Mar-2023 23:57:00.483 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
 07-Mar-2023 23:57:00.819 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 07-Mar-2023 23:57:00.820 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+>>>>>>> Stashed changes
+=======
+07-Mar-2023 23:12:22.099 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 1
+07-Mar-2023 23:12:22.107 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =18
+07-Mar-2023 23:13:07.304 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 1
+07-Mar-2023 23:13:07.309 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =18
+07-Mar-2023 23:13:12.895 INFO [http-nio-9999-exec-8] listingServlet.doPost userid: 1
+07-Mar-2023 23:13:12.898 INFO [http-nio-9999-exec-8] listingServlet.doPost POST
+07-Mar-2023 23:13:12.898 INFO [http-nio-9999-exec-8] listingServlet.doPost Add to cart
+07-Mar-2023 23:13:12.898 INFO [http-nio-9999-exec-8] listingServlet.addtocart In function
+07-Mar-2023 23:13:12.937 INFO [http-nio-9999-exec-8] listingServlet.addtocart Added to cart!
+07-Mar-2023 23:59:08.295 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+07-Mar-2023 23:59:08.302 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Mar-2023 23:59:08.347 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+07-Mar-2023 23:59:08.363 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
 >>>>>>> Stashed changes
