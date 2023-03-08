@@ -2171,3 +2171,7 @@
 08-Mar-2023 23:53:26.340 INFO [http-nio-9999-exec-2] listingServlet.doPost Add to cart
 08-Mar-2023 23:53:26.340 INFO [http-nio-9999-exec-2] listingServlet.addtocart In function
 08-Mar-2023 23:53:26.342 INFO [http-nio-9999-exec-2] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:59:11.783 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:59:11.786 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 23:59:11.818 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:59:11.833 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]

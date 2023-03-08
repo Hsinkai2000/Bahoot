@@ -5,8 +5,8 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Old Egg | Home</title>
-    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png" />
+    <title>Old Egg | Sign Out</title>
+    <link rel="icon" href="./images/oldegg-icon.ico" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"

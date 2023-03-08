@@ -1,0 +1,203 @@
+09-Mar-2023 00:00:52.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+09-Mar-2023 00:00:52.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+09-Mar-2023 00:00:52.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+09-Mar-2023 00:00:52.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+09-Mar-2023 00:00:52.559 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+09-Mar-2023 00:00:52.559 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+09-Mar-2023 00:00:52.559 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+09-Mar-2023 00:00:52.559 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+09-Mar-2023 00:00:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+09-Mar-2023 00:00:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+09-Mar-2023 00:00:52.560 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+09-Mar-2023 00:00:52.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+09-Mar-2023 00:00:52.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Mar-2023 00:00:52.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Mar-2023 00:00:52.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Mar-2023 00:00:52.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+09-Mar-2023 00:00:52.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Mar-2023 00:00:52.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Mar-2023 00:00:52.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Mar-2023 00:00:52.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Mar-2023 00:00:52.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2023 00:00:52.582 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+09-Mar-2023 00:00:52.582 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+09-Mar-2023 00:00:52.582 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+09-Mar-2023 00:00:52.610 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+09-Mar-2023 00:00:53.070 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+09-Mar-2023 00:00:53.131 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [798] milliseconds
+09-Mar-2023 00:00:53.181 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Mar-2023 00:00:53.181 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+09-Mar-2023 00:00:53.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+09-Mar-2023 00:00:54.154 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:00:54.198 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,007] ms
+09-Mar-2023 00:00:54.198 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+09-Mar-2023 00:00:54.799 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:00:54.802 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [604] ms
+09-Mar-2023 00:00:54.803 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+09-Mar-2023 00:00:55.270 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:00:55.279 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [476] ms
+09-Mar-2023 00:00:55.280 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+09-Mar-2023 00:00:55.950 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:00:55.973 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [693] ms
+09-Mar-2023 00:00:55.973 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+09-Mar-2023 00:00:56.343 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:00:56.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [372] ms
+09-Mar-2023 00:00:56.346 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+09-Mar-2023 00:00:56.725 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:00:56.728 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [381] ms
+09-Mar-2023 00:00:56.729 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+09-Mar-2023 00:00:56.740 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3608] milliseconds
+09-Mar-2023 00:01:06.313 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =18
+09-Mar-2023 00:01:06.322 INFO [http-nio-9999-exec-9] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:01:30.701 INFO [http-nio-9999-exec-5] signUpServlet.doPost MyServlet called
+09-Mar-2023 00:01:30.707 INFO [http-nio-9999-exec-5] signUpServlet.doPost Register
+09-Mar-2023 00:01:37.969 INFO [http-nio-9999-exec-7] loginServlet.doGet MyServlet called
+09-Mar-2023 00:01:42.177 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 6
+09-Mar-2023 00:01:42.183 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =18
+09-Mar-2023 00:01:42.186 INFO [http-nio-9999-exec-10] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:01:43.129 INFO [http-nio-9999-exec-2] listingServlet.doPost userid: 6
+09-Mar-2023 00:01:43.132 INFO [http-nio-9999-exec-2] listingServlet.doPost POST
+09-Mar-2023 00:01:43.132 INFO [http-nio-9999-exec-2] listingServlet.doPost Make Purchase
+09-Mar-2023 00:01:43.132 INFO [http-nio-9999-exec-2] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:01:43.133 INFO [http-nio-9999-exec-2] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:01:56.838 INFO [http-nio-9999-exec-1] checkoutServlet.doPost MyServlet called
+09-Mar-2023 00:01:56.846 INFO [http-nio-9999-exec-1] checkoutServlet.doPost Item TYPE!!!!!!= gpus
+09-Mar-2023 00:01:56.851 INFO [http-nio-9999-exec-1] checkoutServlet.doPost purrchased
+09-Mar-2023 00:02:04.304 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 6
+09-Mar-2023 00:02:04.308 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =18
+09-Mar-2023 00:02:04.310 INFO [http-nio-9999-exec-5] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:02:05.896 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 6
+09-Mar-2023 00:02:05.899 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+09-Mar-2023 00:02:05.900 INFO [http-nio-9999-exec-6] listingServlet.doPost Add to cart
+09-Mar-2023 00:02:05.900 INFO [http-nio-9999-exec-6] listingServlet.addtocart In function
+09-Mar-2023 00:02:05.903 INFO [http-nio-9999-exec-6] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:02:14.989 INFO [http-nio-9999-exec-10] groupCheckOutServlet.doPost MyServlet called
+09-Mar-2023 00:02:14.989 INFO [http-nio-9999-exec-10] groupCheckOutServlet.getCart getCart called
+09-Mar-2023 00:02:14.993 INFO [http-nio-9999-exec-10] groupCheckOutServlet.doPost count : 1
+09-Mar-2023 00:02:14.997 INFO [http-nio-9999-exec-10] groupCheckOutServlet.doPost getitems called
+09-Mar-2023 00:02:14.999 INFO [http-nio-9999-exec-10] groupCheckOutServlet.doPost createOrderItem called
+09-Mar-2023 00:02:15.009 INFO [http-nio-9999-exec-10] groupCheckOutServlet.doPost reduceQTY called
+09-Mar-2023 00:02:15.010 INFO [http-nio-9999-exec-10] groupCheckOutServlet.doPost purchased
+09-Mar-2023 00:02:20.744 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 6
+09-Mar-2023 00:02:20.749 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =18
+09-Mar-2023 00:02:20.751 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:04:28.622 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =9
+09-Mar-2023 00:04:28.624 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = cpus
+09-Mar-2023 00:04:38.710 INFO [http-nio-9999-exec-7] loginServlet.doGet MyServlet called
+09-Mar-2023 00:04:38.711 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 6
+09-Mar-2023 00:04:38.714 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =9
+09-Mar-2023 00:04:38.715 INFO [http-nio-9999-exec-7] listingServlet.createHeader listing type = cpus
+09-Mar-2023 00:04:41.185 INFO [http-nio-9999-exec-8] listingServlet.doPost userid: 6
+09-Mar-2023 00:04:41.188 INFO [http-nio-9999-exec-8] listingServlet.doPost POST
+09-Mar-2023 00:04:41.188 INFO [http-nio-9999-exec-8] listingServlet.doPost Make Purchase
+09-Mar-2023 00:04:41.189 INFO [http-nio-9999-exec-8] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:04:41.189 INFO [http-nio-9999-exec-8] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:06:38.279 INFO [http-nio-9999-exec-2] listingServlet.doPost userid: 6
+09-Mar-2023 00:06:38.283 INFO [http-nio-9999-exec-2] listingServlet.doPost POST
+09-Mar-2023 00:06:38.283 INFO [http-nio-9999-exec-2] listingServlet.doPost Make Purchase
+09-Mar-2023 00:06:38.284 INFO [http-nio-9999-exec-2] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:06:38.284 INFO [http-nio-9999-exec-2] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:10:54.745 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =5
+09-Mar-2023 00:10:54.746 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:15:53.900 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =2
+09-Mar-2023 00:15:53.900 INFO [http-nio-9999-exec-8] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:16:31.981 INFO [http-nio-9999-exec-5] loginServlet.doGet MyServlet called
+09-Mar-2023 00:16:31.982 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 6
+09-Mar-2023 00:16:31.985 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =2
+09-Mar-2023 00:16:31.986 INFO [http-nio-9999-exec-5] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:16:39.572 INFO [http-nio-9999-exec-8] listingServlet.doGet userid: 6
+09-Mar-2023 00:16:39.576 INFO [http-nio-9999-exec-8] listingServlet.obtainListing Listing result =9
+09-Mar-2023 00:16:39.576 INFO [http-nio-9999-exec-8] listingServlet.createHeader listing type = cpus
+09-Mar-2023 00:16:40.610 INFO [http-nio-9999-exec-9] listingServlet.doPost userid: 6
+09-Mar-2023 00:16:40.613 INFO [http-nio-9999-exec-9] listingServlet.doPost POST
+09-Mar-2023 00:16:40.613 INFO [http-nio-9999-exec-9] listingServlet.doPost Make Purchase
+09-Mar-2023 00:16:40.613 INFO [http-nio-9999-exec-9] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:16:40.614 INFO [http-nio-9999-exec-9] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:17:46.377 INFO [http-nio-9999-exec-10] listingServlet.doPost userid: 6
+09-Mar-2023 00:17:46.381 INFO [http-nio-9999-exec-10] listingServlet.doPost POST
+09-Mar-2023 00:17:46.381 INFO [http-nio-9999-exec-10] listingServlet.doPost Make Purchase
+09-Mar-2023 00:17:46.381 INFO [http-nio-9999-exec-10] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:17:46.381 INFO [http-nio-9999-exec-10] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:18:14.654 INFO [http-nio-9999-exec-4] listingServlet.doPost userid: 6
+09-Mar-2023 00:18:14.657 INFO [http-nio-9999-exec-4] listingServlet.doPost POST
+09-Mar-2023 00:18:14.657 INFO [http-nio-9999-exec-4] listingServlet.doPost Make Purchase
+09-Mar-2023 00:18:14.658 INFO [http-nio-9999-exec-4] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:18:14.658 INFO [http-nio-9999-exec-4] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:19:25.865 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 6
+09-Mar-2023 00:19:25.868 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+09-Mar-2023 00:19:25.869 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+09-Mar-2023 00:19:25.869 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:19:25.869 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:20:04.628 INFO [http-nio-9999-exec-7] listingServlet.doPost userid: 6
+09-Mar-2023 00:20:04.634 INFO [http-nio-9999-exec-7] listingServlet.doPost POST
+09-Mar-2023 00:20:04.634 INFO [http-nio-9999-exec-7] listingServlet.doPost Make Purchase
+09-Mar-2023 00:20:04.634 INFO [http-nio-9999-exec-7] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:20:04.634 INFO [http-nio-9999-exec-7] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:20:14.063 INFO [http-nio-9999-exec-8] listingServlet.doPost userid: 6
+09-Mar-2023 00:20:14.066 INFO [http-nio-9999-exec-8] listingServlet.doPost POST
+09-Mar-2023 00:20:14.066 INFO [http-nio-9999-exec-8] listingServlet.doPost Make Purchase
+09-Mar-2023 00:20:14.066 INFO [http-nio-9999-exec-8] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:20:14.067 INFO [http-nio-9999-exec-8] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:21:34.092 INFO [http-nio-9999-exec-10] loginServlet.doGet MyServlet called
+09-Mar-2023 00:21:36.654 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 6
+09-Mar-2023 00:21:36.658 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =9
+09-Mar-2023 00:21:36.659 INFO [http-nio-9999-exec-5] listingServlet.createHeader listing type = cpus
+09-Mar-2023 00:21:38.498 INFO [http-nio-9999-exec-3] listingServlet.doPost userid: 6
+09-Mar-2023 00:21:38.502 INFO [http-nio-9999-exec-3] listingServlet.doPost POST
+09-Mar-2023 00:21:38.502 INFO [http-nio-9999-exec-3] listingServlet.doPost Make Purchase
+09-Mar-2023 00:21:38.502 INFO [http-nio-9999-exec-3] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:21:38.502 INFO [http-nio-9999-exec-3] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:22:04.580 INFO [http-nio-9999-exec-9] listingServlet.doPost userid: 6
+09-Mar-2023 00:22:04.583 INFO [http-nio-9999-exec-9] listingServlet.doPost POST
+09-Mar-2023 00:22:04.583 INFO [http-nio-9999-exec-9] listingServlet.doPost Make Purchase
+09-Mar-2023 00:22:04.583 INFO [http-nio-9999-exec-9] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:22:04.583 INFO [http-nio-9999-exec-9] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:22:14.804 INFO [http-nio-9999-exec-2] listingServlet.doPost userid: 6
+09-Mar-2023 00:22:14.808 INFO [http-nio-9999-exec-2] listingServlet.doPost POST
+09-Mar-2023 00:22:14.808 INFO [http-nio-9999-exec-2] listingServlet.doPost Make Purchase
+09-Mar-2023 00:22:14.808 INFO [http-nio-9999-exec-2] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:22:14.808 INFO [http-nio-9999-exec-2] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:22:27.844 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 6
+09-Mar-2023 00:22:27.847 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =6
+09-Mar-2023 00:22:27.848 INFO [http-nio-9999-exec-1] listingServlet.createHeader listing type = rams
+09-Mar-2023 00:22:28.861 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 6
+09-Mar-2023 00:22:28.864 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+09-Mar-2023 00:22:28.864 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+09-Mar-2023 00:22:28.865 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:22:28.865 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:24:44.062 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 6
+09-Mar-2023 00:24:44.067 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+09-Mar-2023 00:24:44.067 INFO [http-nio-9999-exec-6] listingServlet.doPost Make Purchase
+09-Mar-2023 00:24:44.067 INFO [http-nio-9999-exec-6] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:24:44.067 INFO [http-nio-9999-exec-6] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:25:26.758 INFO [http-nio-9999-exec-2] listingServlet.doPost userid: 6
+09-Mar-2023 00:25:26.762 INFO [http-nio-9999-exec-2] listingServlet.doPost POST
+09-Mar-2023 00:25:26.762 INFO [http-nio-9999-exec-2] listingServlet.doPost Make Purchase
+09-Mar-2023 00:25:26.762 INFO [http-nio-9999-exec-2] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:25:26.762 INFO [http-nio-9999-exec-2] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:25:35.670 INFO [http-nio-9999-exec-10] listingServlet.doPost userid: 6
+09-Mar-2023 00:25:35.673 INFO [http-nio-9999-exec-10] listingServlet.doPost POST
+09-Mar-2023 00:25:35.674 INFO [http-nio-9999-exec-10] listingServlet.doPost Make Purchase
+09-Mar-2023 00:25:35.674 INFO [http-nio-9999-exec-10] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:25:35.674 INFO [http-nio-9999-exec-10] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:26:46.674 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 6
+09-Mar-2023 00:26:46.678 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+09-Mar-2023 00:26:46.678 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+09-Mar-2023 00:26:46.678 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:26:46.679 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:26:51.978 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 6
+09-Mar-2023 00:26:51.981 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =3
+09-Mar-2023 00:26:51.981 INFO [http-nio-9999-exec-6] listingServlet.createHeader listing type = cpus
+09-Mar-2023 00:26:53.380 INFO [http-nio-9999-exec-8] listingServlet.doPost userid: 6
+09-Mar-2023 00:26:53.383 INFO [http-nio-9999-exec-8] listingServlet.doPost POST
+09-Mar-2023 00:26:53.383 INFO [http-nio-9999-exec-8] listingServlet.doPost Add to cart
+09-Mar-2023 00:26:53.383 INFO [http-nio-9999-exec-8] listingServlet.addtocart In function
+09-Mar-2023 00:26:53.386 INFO [http-nio-9999-exec-8] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:26:56.568 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 6
+09-Mar-2023 00:26:56.571 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =9
+09-Mar-2023 00:26:56.571 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = cpus
+09-Mar-2023 00:26:57.830 INFO [http-nio-9999-exec-10] listingServlet.doPost userid: 6
+09-Mar-2023 00:26:57.833 INFO [http-nio-9999-exec-10] listingServlet.doPost POST
+09-Mar-2023 00:26:57.833 INFO [http-nio-9999-exec-10] listingServlet.doPost Add to cart
+09-Mar-2023 00:26:57.833 INFO [http-nio-9999-exec-10] listingServlet.addtocart In function
+09-Mar-2023 00:26:57.835 INFO [http-nio-9999-exec-10] listingServlet.addtocart Added to cart!

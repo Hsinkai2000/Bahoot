@@ -16,8 +16,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Old Egg | Home</title>
-    <link rel="icon" type="image/x-icon" href="./images/oldegg-icon.png" />
+    <title>Old Egg | Checkout</title><link rel="icon" href="./images/oldegg-icon.ico" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -194,15 +193,34 @@ ResultSet rset = stmt.executeQuery(sqlStr);
                                 </div>
                                 <div class="form-group pb-3">
                                   <label for="expiry-date">Expiry Date</label>
-                                  <input
-                                    type="date"
-                                    class="form-control"
-                                    id="expiry-date"
-                                    name="expiry_date"
-                                    placeholder="Enter expiry date (MM/YY)"
-                                    maxlength="5"
-                                    required
-                                  />
+                                  <span>
+                                    <select id="month" name="month">
+                                      <option >January</option>
+                                      <option>February</option>
+                                      <option selected>March</option>
+                                      <option>April</option>
+                                      <option>May</option>
+                                      <option>June</option>
+                                      <option>July</option>
+                                      <option>August</option>
+                                      <option>September</option>
+                                      <option>October</option>
+                                      <option>November</option>
+                                      <option>December</option>
+                                    </select>
+                                  </span>
+                                  <span>
+                                    <label for="year">Year:</label>
+                                    <select id="year" name="year">
+                                      <option >2023</option>
+                                      <option selected>2024</option>
+                                      <option >2025</option>
+                                      <option>2026</option>
+                                      <option>2027</option>
+                                      <option>2028</option>
+                                      <option>2029</option>
+                                    </select>
+                                  </span>
                                 </div>
                                 <div class="form-group pb-3">
                                   <label for="cvv">CVV</label>
