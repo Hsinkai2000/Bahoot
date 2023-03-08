@@ -75,33 +75,25 @@ pageEncoding="UTF-8"%>
         id="navbarNavAltMarkup"
       >
         <div class="navbar-nav">
-          <a
-            class="nav-item nav-link active btn rounded-pill px-4"
-            style="color: aliceblue; background-color: #7541b0"
-            href="#"
-            ><span class="sr-only">Sell</span></a
-          >
-          <a class="nav-item nav-link" href="#"
-            ><img src="./images/btn-wishlist.svg" alt="Wishlist" height="30dp"
-          /></a>
-          <a class="nav-item nav-link" href="#"
-            ><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"
-          /></a>
-          <a class="nav-item nav-link" 
           <%
           if(request.getParameter("uid") != null) {
           %>
-              <a href="signout.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
-                /></a>
+              <a class="nav-item nav-link" href="cart.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"/> Cart</a>
+          <%
+            }%>
+          <%
+          if(request.getParameter("uid") != null) {
+          %>
+              <a class="nav-item nav-link" href="signout.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
+                />Sign out</a>
           <%
             } else {
           %>
-              <a href="login.jsp"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
-                /></a>
+              <a class="nav-item nav-link" href="login.jsp"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
+                />Log In</a>
           <%
             }
           %>
-          </a>
         </div>
       </div>
     </nav>
@@ -112,14 +104,6 @@ pageEncoding="UTF-8"%>
           <div class="row">
             <div class="col-lg-12">
               <img class="zoom" src="<%= response.getHeader("link") %>" />
-            </div>
-          </div>
-          <div class="row pt-3">
-            <div class="col-lg-12">
-              <p>
-                Have a similar item?
-                <a class="underline" href="#">Sell yours</a>
-              </p>
             </div>
           </div>
         </div>
@@ -186,11 +170,7 @@ pageEncoding="UTF-8"%>
             </div>
           </div>
           
-          <div class="row">
-            <div class="col-lg-12 pb-3">
-              <p>Sold by <a href="#" class="underline">Anonymous panda</a></p>
-            </div>
-          </div>
+          
           <div class="row">
             <div class="col-lg-12 pb-3">
               <p class="text-justify"><%= response.getHeader("itemInfo") %></p>
@@ -202,7 +182,7 @@ pageEncoding="UTF-8"%>
 
       <div class="d-flex mb-3">
         <h4>Similar Items</h4>
-        <a class="ms-auto">see all ></a>
+        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL<%= request.getParameter("uid") != null ? "&uid=" + request.getParameter("uid") : "" %>">See all </a>
       </div>
 
       <div class="container-fluid py-2">

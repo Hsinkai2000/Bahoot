@@ -38,9 +38,7 @@ public class loginServlet extends HttpServlet {
                   ResultSet rset = stmt.executeQuery(sqlStr);
                   int count = 0;
                   int id = 0;
-                  if (request.getParameter("listingId") != null) {
-                        listingId = Integer.parseInt(request.getParameter("listingId"));
-                  }
+                  
                   while (rset.next()) {
                         count++;
                         id = rset.getInt(1);
@@ -50,10 +48,10 @@ public class loginServlet extends HttpServlet {
                         response.sendRedirect("http://localhost:9999/oldegg/login.jsp?data=" + data);
                   } else {
                         LOGGER.info("MyServlet called");
-                        if (listingId != 0) {
+                        if (request.getParameter("listingId") != null) {
                               // response.sendRedirect("http://localhost:9999/oldegg/viewListing.jsp?uid=" + id + "&listingId=" + listingId);
                               
-                              String queryString = "?uid=" + id  + "&listingId=" + listingId;
+                              String queryString = "?uid=" + id  + "&listingId=" + request.getParameter("listingId");
                               
                               RequestDispatcher dispatcher = request.getRequestDispatcher("viewListing" + queryString);
                               dispatcher.forward(request, response);

@@ -71,33 +71,25 @@ pageEncoding="UTF-8"%>
         id="navbarNavAltMarkup"
       >
         <div class="navbar-nav">
-          <a
-            class="nav-item nav-link active btn rounded-pill px-4"
-            style="color: aliceblue; background-color: #7541b0"
-            href="#"
-            ><span class="sr-only">Sell</span></a
-          >
-          <a class="nav-item nav-link" href="#"
-            ><img src="./images/btn-wishlist.svg" alt="Wishlist" height="30dp"
-          /></a>
-          <a class="nav-item nav-link" href="#"
-            ><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"
-          /></a>
-          <a class="nav-item nav-link" 
           <%
           if(request.getParameter("uid") != null) {
           %>
-              <a href="signout.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
-                /></a>
+              <a class="nav-item nav-link" href="cart.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"/> Cart</a>
+          <%
+            }%>
+          <%
+          if(request.getParameter("uid") != null) {
+          %>
+              <a class="nav-item nav-link" href="signout.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
+                />Sign out</a>
           <%
             } else {
           %>
-              <a href="login.jsp"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
-                /></a>
+              <a class="nav-item nav-link" href="login.jsp"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
+                />Log In</a>
           <%
             }
           %>
-          </a>
         </div>
       </div>
     </nav>

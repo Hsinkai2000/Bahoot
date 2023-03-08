@@ -71,33 +71,25 @@ pageEncoding="UTF-8"%>
         id="navbarNavAltMarkup"
       >
         <div class="navbar-nav">
-          <a
-            class="nav-item nav-link active btn rounded-pill px-4"
-            style="color: aliceblue; background-color: #7541b0"
-            href="#"
-            ><span class="sr-only">Sell</span></a
-          >
-          <a class="nav-item nav-link" href="#"
-            ><img src="./images/btn-wishlist.svg" alt="Wishlist" height="30dp"
-          /></a>
-          <a class="nav-item nav-link" href="#"
-            ><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"
-          /></a>
-          <a class="nav-item nav-link" 
           <%
           if(request.getParameter("uid") != null) {
           %>
-              <a href="signout.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
-                /></a>
+              <a class="nav-item nav-link" href="cart.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"/> Cart</a>
+          <%
+            }%>
+          <%
+          if(request.getParameter("uid") != null) {
+          %>
+              <a class="nav-item nav-link" href="signout.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
+                />Sign out</a>
           <%
             } else {
           %>
-              <a href="login.jsp"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
-                /></a>
+              <a class="nav-item nav-link" href="login.jsp"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
+                />Log In</a>
           <%
             }
           %>
-          </a>
         </div>
       </div>
     </nav>
@@ -129,45 +121,45 @@ pageEncoding="UTF-8"%>
             </div>
 
             <div class="col-xs-6 col-md-3">
-              <h6>Categories</h6>
-              <ul class="footer-links">
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
-                    >GPUs</a
-                  >
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
-                    >CPUs</a
-                  >
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
-                    >Motherboards</a
-                  >
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
-                    >Rams</a
-                  >
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
-                    >Storage</a
-                  >
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
-                    >Cases</a
-                  >
-                </li>
-                <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
-                    >Coolers</a
-                  >
-                </li>
-              </ul>
-            </div>
+                <h6>Categories</h6>
+                <ul class="footer-links">
+                  <li>
+                    <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
+                      >GPUs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
+                      >CPUs</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
+                      >Motherboards</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex-sm-fill text-sm nav-link" href="ram.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
+                      >Rams</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex-sm-fill text-sm nav-link" href="storage.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
+                      >Storage</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex-sm-fill text-sm nav-link" href="cases.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
+                      >Cases</a
+                    >
+                  </li>
+                  <li>
+                    <a class="flex-sm-fill text-sm nav-link" href="coolers.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
+                      >Coolers</a
+                    >
+                  </li>
+                </ul>
+              </div>
           </div>
           <hr />
         </div>

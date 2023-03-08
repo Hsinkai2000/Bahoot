@@ -940,3 +940,1234 @@
 08-Mar-2023 20:55:55.224 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
 08-Mar-2023 20:55:55.707 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 08-Mar-2023 20:55:55.712 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+08-Mar-2023 21:46:55.507 INFO [http-nio-9999-exec-13] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in the request target [/oldegg/cart.jsp?uid=6\ ]. The valid characters are defined in RFC 7230 and RFC 3986
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:494)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:272)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 22:36:55.663 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
+08-Mar-2023 22:36:55.664 INFO [Catalina-utility-2] org.apache.catalina.core.StandardWrapper.unload Waiting for [1] instance(s) to be deallocated for Servlet [jsp]
+08-Mar-2023 22:36:56.688 INFO [Catalina-utility-2] org.apache.catalina.core.StandardWrapper.unload Waiting for [1] instance(s) to be deallocated for Servlet [jsp]
+08-Mar-2023 22:36:57.716 INFO [Catalina-utility-2] org.apache.catalina.core.StandardWrapper.unload Waiting for [1] instance(s) to be deallocated for Servlet [jsp]
+08-Mar-2023 22:36:57.826 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [oldegg] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation. Stack trace of request processing thread:[
+ java.base@17.0.5/sun.nio.ch.SocketDispatcher.read0(Native Method)
+ java.base@17.0.5/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:47)
+ java.base@17.0.5/sun.nio.ch.NioSocketImpl.tryRead(NioSocketImpl.java:261)
+ java.base@17.0.5/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:312)
+ java.base@17.0.5/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@17.0.5/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@17.0.5/java.net.Socket$SocketInputStream.read(Socket.java:966)
+ com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+ com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+ com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+ java.base@17.0.5/java.io.FilterInputStream.read(FilterInputStream.java:132)
+ com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+ com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+ com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+ com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+ com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+ com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+ com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+ com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+ com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:575)
+ com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:761)
+ com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:700)
+ com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1051)
+ com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:997)
+ com.mysql.cj.NativeSession.execSQL(NativeSession.java:663)
+ com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1168)
+ org.apache.jsp.cart_jsp._jspService(cart_jsp.java:332)
+ org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+ jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+ org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+ org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+ org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+ jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+ org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+ org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+ org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+ org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+ org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+ org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+ org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+ org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+ org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+ org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+ org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+ org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+ org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+ org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+ org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+ org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+ org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+ org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+ org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+ org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+ org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)]
+08-Mar-2023 22:36:58.252 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:36:58.253 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+08-Mar-2023 22:48:49.001 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:48:49.004 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 22:48:49.028 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:48:54.038 WARNING [Thread-1] org.apache.tomcat.util.net.AbstractEndpoint.shutdownExecutor The executor associated with thread pool [http-nio-9999] has not fully shutdown. Some application threads may still be running.
+08-Mar-2023 22:48:54.041 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:48:56.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 22:48:56.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 22:48:56.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 22:48:56.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 22:48:56.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 22:48:56.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 22:48:56.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 22:48:56.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 22:48:56.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 22:48:56.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:48:56.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:48:56.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 22:48:56.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 22:48:56.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 22:48:56.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 22:48:56.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 22:48:56.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 22:48:56.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 22:48:56.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 22:48:56.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 22:48:56.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 22:48:56.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:48:56.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:48:56.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 22:48:56.127 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 22:48:56.368 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:48:56.392 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [445] milliseconds
+08-Mar-2023 22:48:56.432 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 22:48:56.433 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 22:48:56.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 22:48:57.118 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:48:57.166 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [721] ms
+08-Mar-2023 22:48:57.166 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 22:48:57.562 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:48:57.564 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [398] ms
+08-Mar-2023 22:48:57.564 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 22:48:58.095 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:48:58.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [541] ms
+08-Mar-2023 22:48:58.106 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 22:48:59.273 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:48:59.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [1,194] ms
+08-Mar-2023 22:48:59.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 22:48:59.838 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:48:59.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [539] ms
+08-Mar-2023 22:48:59.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 22:49:00.251 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:49:00.255 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [414] ms
+08-Mar-2023 22:49:00.257 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:49:00.278 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3886] milliseconds
+08-Mar-2023 22:49:02.993 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 22:49:03.031 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost Something Failedjava.sql.SQLException: Operation not allowed after ResultSet closed
+08-Mar-2023 22:50:05.412 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:05.419 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 22:50:05.447 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:05.456 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:07.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 22:50:07.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 22:50:07.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 22:50:07.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 22:50:07.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 22:50:07.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 22:50:07.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 22:50:07.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 22:50:07.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 22:50:07.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:50:07.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:50:07.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 22:50:07.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 22:50:07.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 22:50:07.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 22:50:07.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 22:50:07.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 22:50:07.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 22:50:07.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 22:50:07.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 22:50:07.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 22:50:07.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:50:07.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:50:07.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 22:50:07.261 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 22:50:07.713 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:07.771 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [713] milliseconds
+08-Mar-2023 22:50:07.850 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 22:50:07.850 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 22:50:07.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 22:50:09.042 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:09.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,210] ms
+08-Mar-2023 22:50:09.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 22:50:09.550 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:09.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [474] ms
+08-Mar-2023 22:50:09.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 22:50:10.096 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:10.102 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [548] ms
+08-Mar-2023 22:50:10.103 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 22:50:10.833 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:10.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [750] ms
+08-Mar-2023 22:50:10.853 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 22:50:11.354 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:11.356 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [503] ms
+08-Mar-2023 22:50:11.356 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 22:50:11.921 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:11.924 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [567] ms
+08-Mar-2023 22:50:11.926 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:11.939 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4168] milliseconds
+08-Mar-2023 22:50:14.171 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 22:50:14.174 INFO [http-nio-9999-exec-1] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 22:50:14.189 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 22:50:14.208 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost Something Failedjava.sql.SQLException: Operation not allowed after ResultSet closed
+08-Mar-2023 22:50:45.801 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:45.808 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 22:50:45.838 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:45.845 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:47.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 22:50:47.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 22:50:47.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 22:50:47.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 22:50:47.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 22:50:47.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 22:50:47.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 22:50:47.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 22:50:47.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 22:50:47.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:50:47.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:50:47.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 22:50:47.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 22:50:47.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 22:50:47.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 22:50:47.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 22:50:47.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 22:50:47.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 22:50:47.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 22:50:47.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 22:50:47.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 22:50:47.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:50:47.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:50:47.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 22:50:47.430 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 22:50:47.828 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:47.872 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [650] milliseconds
+08-Mar-2023 22:50:47.934 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 22:50:47.934 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 22:50:47.947 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 22:50:48.656 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:48.688 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [741] ms
+08-Mar-2023 22:50:48.689 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 22:50:49.095 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:49.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [409] ms
+08-Mar-2023 22:50:49.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 22:50:49.513 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:49.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [421] ms
+08-Mar-2023 22:50:49.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 22:50:50.074 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:50.095 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [576] ms
+08-Mar-2023 22:50:50.095 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 22:50:50.463 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:50.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [369] ms
+08-Mar-2023 22:50:50.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 22:50:50.825 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:50:50.827 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [362] ms
+08-Mar-2023 22:50:50.830 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:50:50.841 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2968] milliseconds
+08-Mar-2023 22:51:01.231 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 22:51:01.234 INFO [http-nio-9999-exec-1] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 22:51:01.247 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 22:51:01.251 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 22:51:01.255 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 22:51:01.264 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost Something Failedjava.sql.SQLException: Operation not allowed after ResultSet closed
+08-Mar-2023 22:52:56.957 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:52:56.961 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 22:52:56.993 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:52:57.000 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:53:02.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 22:53:02.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 22:53:02.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 22:53:02.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 22:53:02.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 22:53:02.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 22:53:02.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 22:53:02.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 22:53:02.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 22:53:02.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:53:02.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:53:02.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 22:53:02.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 22:53:02.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 22:53:02.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:53:02.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 22:53:02.498 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 22:53:02.733 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:53:02.757 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [459] milliseconds
+08-Mar-2023 22:53:02.792 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 22:53:02.792 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 22:53:02.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 22:53:03.831 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:53:03.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,109] ms
+08-Mar-2023 22:53:03.912 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 22:53:04.572 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:53:04.574 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [663] ms
+08-Mar-2023 22:53:04.574 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 22:53:05.187 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:53:05.198 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [623] ms
+08-Mar-2023 22:53:05.198 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 22:53:05.841 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:53:05.859 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [661] ms
+08-Mar-2023 22:53:05.860 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 22:53:06.193 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:53:06.195 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [335] ms
+08-Mar-2023 22:53:06.195 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 22:53:06.539 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:53:06.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [346] ms
+08-Mar-2023 22:53:06.542 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:53:06.554 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3796] milliseconds
+08-Mar-2023 22:53:12.604 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 22:53:12.606 INFO [http-nio-9999-exec-1] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 22:53:12.621 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 22:53:12.625 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 22:53:12.630 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 22:53:12.639 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost Something Failedjava.sql.SQLException: Operation not allowed after ResultSet closed
+08-Mar-2023 22:54:56.761 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
+08-Mar-2023 22:54:57.122 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:54:57.125 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+08-Mar-2023 22:54:57.198 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:54:57.200 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 22:54:57.220 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:54:57.225 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:54:58.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 22:54:58.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 22:54:58.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 22:54:58.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 22:54:58.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 22:54:58.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 22:54:58.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 22:54:58.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 22:54:58.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 22:54:58.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:54:58.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:54:58.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 22:54:58.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 22:54:58.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 22:54:58.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 22:54:58.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 22:54:58.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 22:54:58.303 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 22:54:58.303 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 22:54:58.303 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 22:54:58.303 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 22:54:58.303 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:54:58.303 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:54:58.303 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 22:54:58.317 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 22:54:58.716 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:54:58.760 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [629] milliseconds
+08-Mar-2023 22:54:58.822 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 22:54:58.823 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 22:54:58.837 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 22:55:00.258 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:55:00.350 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,512] ms
+08-Mar-2023 22:55:00.350 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 22:55:00.983 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:55:00.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [636] ms
+08-Mar-2023 22:55:00.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 22:55:01.670 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:55:01.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [693] ms
+08-Mar-2023 22:55:01.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 22:55:02.497 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:55:02.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [846] ms
+08-Mar-2023 22:55:02.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 22:55:02.949 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:55:02.952 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [425] ms
+08-Mar-2023 22:55:02.952 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 22:55:03.400 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:55:03.402 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [450] ms
+08-Mar-2023 22:55:03.404 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:55:03.416 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4655] milliseconds
+08-Mar-2023 22:55:06.496 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 22:55:06.499 INFO [http-nio-9999-exec-1] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 22:55:06.517 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 22:55:06.522 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 22:55:06.528 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 22:55:06.528 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 22:55:06.529 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 22:55:06.529 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 22:55:06.529 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 22:55:06.530 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 22:55:06.530 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost purchased
+08-Mar-2023 22:55:06.541 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost Something Failedjava.sql.SQLException: Operation not allowed after ResultSet closed
+08-Mar-2023 22:59:30.772 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:59:30.779 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 22:59:30.809 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:59:30.817 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:59:32.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 22:59:32.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 22:59:32.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 22:59:32.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 22:59:32.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 22:59:32.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 22:59:32.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 22:59:32.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 22:59:32.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 22:59:32.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:59:32.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:59:32.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 22:59:32.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 22:59:32.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 22:59:32.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 22:59:32.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 22:59:32.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 22:59:32.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 22:59:32.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 22:59:32.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 22:59:32.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 22:59:32.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:59:32.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 22:59:32.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 22:59:32.284 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 22:59:32.652 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:59:32.718 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [620] milliseconds
+08-Mar-2023 22:59:32.804 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 22:59:32.805 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 22:59:32.831 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 22:59:33.836 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:59:33.871 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,040] ms
+08-Mar-2023 22:59:33.872 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 22:59:34.601 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:59:34.607 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [735] ms
+08-Mar-2023 22:59:34.608 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 22:59:35.290 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:59:35.297 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [689] ms
+08-Mar-2023 22:59:35.297 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 22:59:35.975 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:59:36.025 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [728] ms
+08-Mar-2023 22:59:36.025 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 22:59:36.590 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:59:36.592 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [567] ms
+08-Mar-2023 22:59:36.593 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 22:59:37.032 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 22:59:37.035 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [443] ms
+08-Mar-2023 22:59:37.036 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 22:59:37.048 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4329] milliseconds
+08-Mar-2023 22:59:37.672 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 22:59:37.676 INFO [http-nio-9999-exec-1] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 22:59:37.687 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost count : 4
+08-Mar-2023 22:59:37.694 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 22:59:37.699 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 22:59:37.705 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 22:59:37.706 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 22:59:37.707 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 22:59:37.707 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 22:59:37.707 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 22:59:37.708 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 22:59:37.708 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost purchased
+08-Mar-2023 22:59:37.722 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost Something Failedjava.sql.SQLException: Operation not allowed after ResultSet closed
+08-Mar-2023 23:03:29.363 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:03:29.366 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 23:03:29.393 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:03:29.402 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:03:31.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 23:03:31.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 23:03:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 23:03:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 23:03:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 23:03:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 23:03:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 23:03:31.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 23:03:31.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 23:03:31.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:03:31.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:03:31.584 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:03:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 23:03:31.596 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 23:03:31.880 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:03:31.918 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [496] milliseconds
+08-Mar-2023 23:03:31.964 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 23:03:31.965 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 23:03:31.975 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 23:03:32.645 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:03:32.688 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [712] ms
+08-Mar-2023 23:03:32.688 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 23:03:33.081 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:03:33.083 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [395] ms
+08-Mar-2023 23:03:33.083 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 23:03:33.465 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:03:33.472 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [389] ms
+08-Mar-2023 23:03:33.472 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 23:03:33.969 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:03:33.997 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [525] ms
+08-Mar-2023 23:03:33.998 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 23:03:34.357 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:03:34.359 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [361] ms
+08-Mar-2023 23:03:34.359 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 23:03:34.696 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:03:34.699 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [340] ms
+08-Mar-2023 23:03:34.700 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:03:34.713 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2794] milliseconds
+08-Mar-2023 23:03:39.912 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 23:03:39.915 INFO [http-nio-9999-exec-1] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 23:03:39.926 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost count : 4
+08-Mar-2023 23:03:39.931 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:03:39.935 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:03:39.940 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:03:39.940 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:03:39.941 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:03:39.941 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:03:39.941 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:03:39.941 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:03:39.941 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:03:39.942 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:03:39.944 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:03:39.945 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:03:39.946 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:03:39.946 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:03:39.946 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:03:39.946 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:03:39.947 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:03:39.947 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:03:39.948 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:03:39.950 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:03:39.951 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:03:39.952 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:03:39.952 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:03:39.952 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:03:39.952 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:03:39.952 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:03:39.952 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:03:39.953 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:03:39.955 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:03:39.958 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:03:39.958 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:03:39.958 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:03:39.958 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:03:39.958 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:03:39.958 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:03:39.958 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:03:50.844 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 23:03:50.844 INFO [http-nio-9999-exec-2] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 23:03:50.846 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost count : 4
+08-Mar-2023 23:03:50.848 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:03:50.851 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:03:50.853 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:03:50.853 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:03:50.853 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:03:50.854 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:03:50.854 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:03:50.854 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:03:50.854 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:03:50.855 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:03:50.856 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:03:50.858 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:03:50.858 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:03:50.858 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:03:50.858 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:03:50.858 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:03:50.858 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:03:50.858 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:03:50.859 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:03:50.860 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:03:50.863 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:03:50.863 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:03:50.863 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:03:50.863 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:03:50.863 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:03:50.863 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:03:50.864 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:03:50.864 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:03:50.866 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:03:50.867 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:03:50.867 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:03:50.867 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:03:50.867 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:03:50.868 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:03:50.868 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:03:50.868 INFO [http-nio-9999-exec-2] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:04:03.844 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 23:04:03.844 INFO [http-nio-9999-exec-3] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 23:04:03.845 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost count : 4
+08-Mar-2023 23:04:03.848 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:04:03.851 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:04:03.852 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:04:03.853 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:04:03.853 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:04:03.853 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:04:03.853 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:04:03.853 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:04:03.853 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:04:03.854 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:04:03.856 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:04:03.857 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:04:03.857 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:04:03.857 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:04:03.857 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:04:03.858 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:04:03.858 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:04:03.858 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:04:03.859 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:04:03.860 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:04:03.861 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:04:03.861 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:04:03.861 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:04:03.861 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:04:03.861 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:04:03.861 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:04:03.861 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:04:03.862 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:04:03.864 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:04:03.865 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:04:03.865 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:04:03.865 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:04:03.865 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:04:03.865 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:04:03.865 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:04:03.865 INFO [http-nio-9999-exec-3] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:04:36.317 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 23:04:36.317 INFO [http-nio-9999-exec-9] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 23:04:36.320 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost count : 4
+08-Mar-2023 23:04:36.326 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:04:36.328 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:04:36.330 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:04:36.330 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:04:36.330 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:04:36.331 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:04:36.331 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:04:36.331 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:04:36.331 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:04:36.332 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:04:36.334 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:04:36.336 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:04:36.337 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:04:36.337 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:04:36.337 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:04:36.337 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:04:36.337 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:04:36.337 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:04:36.338 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:04:36.341 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:04:36.343 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:04:36.344 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:04:36.345 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:04:36.347 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:04:36.347 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:04:36.347 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:04:36.347 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:04:36.348 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:04:36.350 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:04:36.352 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:04:36.352 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 118 called
+08-Mar-2023 23:04:36.352 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 120 called
+08-Mar-2023 23:04:36.352 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 123 called
+08-Mar-2023 23:04:36.352 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 127 called
+08-Mar-2023 23:04:36.353 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost 130 called
+08-Mar-2023 23:04:36.353 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:07:20.673 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:07:20.676 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 23:07:20.707 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:07:20.713 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:07:22.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 23:07:22.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 23:07:22.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 23:07:22.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 23:07:22.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 23:07:22.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 23:07:22.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 23:07:22.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 23:07:22.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 23:07:22.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:07:22.794 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:07:22.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 23:07:22.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 23:07:22.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 23:07:22.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 23:07:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 23:07:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 23:07:22.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 23:07:22.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 23:07:22.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 23:07:22.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 23:07:22.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:07:22.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:07:22.811 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 23:07:22.824 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 23:07:23.248 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:07:23.280 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [679] milliseconds
+08-Mar-2023 23:07:23.327 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 23:07:23.328 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 23:07:23.340 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 23:07:24.278 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:07:24.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,040] ms
+08-Mar-2023 23:07:24.382 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 23:07:25.247 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:07:25.250 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [868] ms
+08-Mar-2023 23:07:25.250 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 23:07:25.909 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:07:25.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [669] ms
+08-Mar-2023 23:07:25.920 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 23:07:26.877 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:07:26.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [988] ms
+08-Mar-2023 23:07:26.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 23:07:27.340 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:07:27.343 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [434] ms
+08-Mar-2023 23:07:27.344 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 23:07:27.784 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:07:27.788 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [444] ms
+08-Mar-2023 23:07:27.790 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:07:27.809 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4528] milliseconds
+08-Mar-2023 23:07:29.610 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 23:07:29.614 INFO [http-nio-9999-exec-1] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 23:07:29.625 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost count : 4
+08-Mar-2023 23:07:29.629 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:07:29.636 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:07:29.644 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:07:29.646 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:07:29.648 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:07:29.650 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:07:29.653 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:07:29.655 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:07:29.656 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:07:29.657 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:11:38.326 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
+08-Mar-2023 23:11:38.677 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:11:38.678 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+08-Mar-2023 23:11:41.955 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:11:41.958 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 23:11:41.979 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:11:41.984 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:11:43.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 23:11:43.407 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 23:11:43.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 23:11:43.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 23:11:43.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 23:11:43.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 23:11:43.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 23:11:43.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 23:11:43.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 23:11:43.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:11:43.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:11:43.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 23:11:43.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 23:11:43.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 23:11:43.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 23:11:43.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 23:11:43.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 23:11:43.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 23:11:43.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 23:11:43.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 23:11:43.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 23:11:43.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:11:43.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:11:43.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 23:11:43.440 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 23:11:43.742 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:11:43.771 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [564] milliseconds
+08-Mar-2023 23:11:43.814 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 23:11:43.814 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 23:11:43.826 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 23:11:44.821 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:11:44.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,070] ms
+08-Mar-2023 23:11:44.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 23:11:45.468 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:11:45.471 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [573] ms
+08-Mar-2023 23:11:45.471 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 23:11:45.997 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:11:46.015 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [544] ms
+08-Mar-2023 23:11:46.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 23:11:46.922 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:11:46.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [964] ms
+08-Mar-2023 23:11:46.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 23:11:47.582 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:11:47.584 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [603] ms
+08-Mar-2023 23:11:47.585 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 23:11:48.318 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:11:48.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [739] ms
+08-Mar-2023 23:11:48.330 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:11:48.353 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4581] milliseconds
+08-Mar-2023 23:12:06.918 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 23:12:06.921 INFO [http-nio-9999-exec-1] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 23:12:06.932 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost count : 4
+08-Mar-2023 23:12:06.938 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:12:06.944 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:12:06.948 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:12:06.950 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:12:06.952 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:12:06.954 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:12:06.956 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:12:06.958 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:12:06.963 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:12:06.964 INFO [http-nio-9999-exec-1] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:19:45.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 23:19:45.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 23:19:45.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 23:19:45.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 23:19:45.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 23:19:45.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 23:19:45.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 23:19:45.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 23:19:45.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 23:19:45.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:19:45.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:19:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 23:19:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 23:19:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 23:19:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 23:19:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 23:19:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 23:19:45.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 23:19:45.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 23:19:45.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 23:19:45.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 23:19:45.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:19:45.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:19:45.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 23:19:45.650 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 23:19:45.909 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:19:45.941 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [475] milliseconds
+08-Mar-2023 23:19:45.977 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 23:19:45.977 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 23:19:45.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 23:19:46.840 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:19:46.878 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [890] ms
+08-Mar-2023 23:19:46.878 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 23:19:47.597 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:19:47.601 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [722] ms
+08-Mar-2023 23:19:47.601 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 23:19:48.390 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:19:48.410 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [809] ms
+08-Mar-2023 23:19:48.411 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 23:19:49.318 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:19:49.342 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [931] ms
+08-Mar-2023 23:19:49.343 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 23:19:49.736 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:19:49.739 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [396] ms
+08-Mar-2023 23:19:49.739 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 23:19:50.148 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:19:50.151 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [412] ms
+08-Mar-2023 23:19:50.153 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:19:50.166 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4225] milliseconds
+08-Mar-2023 23:20:09.058 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:20:09.068 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 23:20:09.094 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:20:09.105 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:20:10.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 23:20:10.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 23:20:10.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 23:20:10.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 23:20:10.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 23:20:10.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 23:20:10.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 23:20:10.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 23:20:10.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 23:20:10.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:20:10.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:20:10.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 23:20:10.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 23:20:10.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 23:20:10.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 23:20:10.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 23:20:10.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 23:20:10.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 23:20:10.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 23:20:10.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 23:20:10.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 23:20:10.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:20:10.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:20:10.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 23:20:10.210 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 23:20:10.478 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:20:10.510 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [552] milliseconds
+08-Mar-2023 23:20:10.558 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 23:20:10.558 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 23:20:10.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 23:20:11.385 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:20:11.429 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [859] ms
+08-Mar-2023 23:20:11.429 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 23:20:11.881 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:20:11.883 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [454] ms
+08-Mar-2023 23:20:11.884 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 23:20:12.359 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:20:12.366 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [481] ms
+08-Mar-2023 23:20:12.366 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 23:20:13.015 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:20:13.040 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [674] ms
+08-Mar-2023 23:20:13.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 23:20:13.454 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:20:13.456 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [416] ms
+08-Mar-2023 23:20:13.456 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 23:20:13.886 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:20:13.888 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [432] ms
+08-Mar-2023 23:20:13.889 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:20:13.901 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3390] milliseconds
+08-Mar-2023 23:20:43.393 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =4
+08-Mar-2023 23:20:43.404 INFO [http-nio-9999-exec-9] listingServlet.createHeader listing type = cases
+08-Mar-2023 23:21:57.638 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =10
+08-Mar-2023 23:21:57.640 INFO [http-nio-9999-exec-3] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:22:22.267 INFO [http-nio-9999-exec-9] signUpServlet.doPost MyServlet called
+08-Mar-2023 23:22:22.271 INFO [http-nio-9999-exec-9] signUpServlet.doPost Register
+08-Mar-2023 23:22:31.523 INFO [http-nio-9999-exec-2] loginServlet.doGet MyServlet called
+08-Mar-2023 23:22:31.527 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 6
+08-Mar-2023 23:22:31.531 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =10
+08-Mar-2023 23:22:31.531 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:22:37.739 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 6
+08-Mar-2023 23:22:37.743 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =10
+08-Mar-2023 23:22:37.744 INFO [http-nio-9999-exec-3] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:22:44.483 INFO [http-nio-9999-exec-4] listingServlet.doPost userid: 6
+08-Mar-2023 23:22:44.486 INFO [http-nio-9999-exec-4] listingServlet.doPost POST
+08-Mar-2023 23:22:44.486 INFO [http-nio-9999-exec-4] listingServlet.doPost Add to cart
+08-Mar-2023 23:22:44.486 INFO [http-nio-9999-exec-4] listingServlet.addtocart In function
+08-Mar-2023 23:22:44.492 INFO [http-nio-9999-exec-4] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:22:47.869 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 6
+08-Mar-2023 23:22:47.874 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =2
+08-Mar-2023 23:22:47.875 INFO [http-nio-9999-exec-7] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:22:50.364 INFO [http-nio-9999-exec-6] listingServlet.doPost userid: 6
+08-Mar-2023 23:22:50.367 INFO [http-nio-9999-exec-6] listingServlet.doPost POST
+08-Mar-2023 23:22:50.367 INFO [http-nio-9999-exec-6] listingServlet.doPost Add to cart
+08-Mar-2023 23:22:50.367 INFO [http-nio-9999-exec-6] listingServlet.addtocart In function
+08-Mar-2023 23:22:50.370 INFO [http-nio-9999-exec-6] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:22:52.504 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 6
+08-Mar-2023 23:22:52.508 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =13
+08-Mar-2023 23:22:52.509 INFO [http-nio-9999-exec-9] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:22:54.040 INFO [http-nio-9999-exec-10] listingServlet.doPost userid: 6
+08-Mar-2023 23:22:54.043 INFO [http-nio-9999-exec-10] listingServlet.doPost POST
+08-Mar-2023 23:22:54.043 INFO [http-nio-9999-exec-10] listingServlet.doPost Add to cart
+08-Mar-2023 23:22:54.043 INFO [http-nio-9999-exec-10] listingServlet.addtocart In function
+08-Mar-2023 23:22:54.045 INFO [http-nio-9999-exec-10] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:22:56.893 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 6
+08-Mar-2023 23:22:56.896 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =4
+08-Mar-2023 23:22:56.897 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = cases
+08-Mar-2023 23:22:57.499 INFO [http-nio-9999-exec-3] listingServlet.doPost userid: 6
+08-Mar-2023 23:22:57.502 INFO [http-nio-9999-exec-3] listingServlet.doPost POST
+08-Mar-2023 23:22:57.502 INFO [http-nio-9999-exec-3] listingServlet.doPost Add to cart
+08-Mar-2023 23:22:57.502 INFO [http-nio-9999-exec-3] listingServlet.addtocart In function
+08-Mar-2023 23:22:57.505 INFO [http-nio-9999-exec-3] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:23:38.348 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 23:23:38.348 INFO [http-nio-9999-exec-8] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 23:23:38.350 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost count : 4
+08-Mar-2023 23:23:38.355 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:23:38.358 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:23:38.364 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:23:38.366 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:23:38.368 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:23:38.370 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:23:38.372 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:23:38.373 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:23:38.376 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:23:38.376 INFO [http-nio-9999-exec-8] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:28:41.531 INFO [http-nio-9999-exec-9] loginServlet.doGet MyServlet called
+08-Mar-2023 23:28:41.532 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 6
+08-Mar-2023 23:28:41.536 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =10
+08-Mar-2023 23:28:41.537 INFO [http-nio-9999-exec-9] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:28:49.720 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 6
+08-Mar-2023 23:28:49.724 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =17
+08-Mar-2023 23:28:49.724 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:28:50.827 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 6
+08-Mar-2023 23:28:50.833 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+08-Mar-2023 23:28:50.833 INFO [http-nio-9999-exec-5] listingServlet.doPost Add to cart
+08-Mar-2023 23:28:50.833 INFO [http-nio-9999-exec-5] listingServlet.addtocart In function
+08-Mar-2023 23:28:50.836 INFO [http-nio-9999-exec-5] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:29:41.492 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 6
+08-Mar-2023 23:29:41.496 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =17
+08-Mar-2023 23:29:41.496 INFO [http-nio-9999-exec-10] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:29:45.385 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 6
+08-Mar-2023 23:29:45.389 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =4
+08-Mar-2023 23:29:45.390 INFO [http-nio-9999-exec-1] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:29:47.693 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 6
+08-Mar-2023 23:29:47.697 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =8
+08-Mar-2023 23:29:47.698 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:30:38.937 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 6
+08-Mar-2023 23:30:38.944 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =8
+08-Mar-2023 23:30:38.945 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:30:41.149 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 6
+08-Mar-2023 23:30:41.151 INFO [http-nio-9999-exec-5] listingServlet.obtainListing Listing result =8
+08-Mar-2023 23:30:41.152 INFO [http-nio-9999-exec-5] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:30:44.475 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 6
+08-Mar-2023 23:30:44.478 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =4
+08-Mar-2023 23:30:44.479 INFO [http-nio-9999-exec-7] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:30:45.955 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 6
+08-Mar-2023 23:30:45.958 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =11
+08-Mar-2023 23:30:45.959 INFO [http-nio-9999-exec-6] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:31:46.065 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 6
+08-Mar-2023 23:31:46.070 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =11
+08-Mar-2023 23:31:46.071 INFO [http-nio-9999-exec-9] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:37:52.128 INFO [http-nio-9999-exec-5] signUpServlet.doPost MyServlet called
+08-Mar-2023 23:37:52.134 INFO [http-nio-9999-exec-5] signUpServlet.doPost Register
+08-Mar-2023 23:37:57.730 INFO [http-nio-9999-exec-6] loginServlet.doGet MyServlet called
+08-Mar-2023 23:37:57.731 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 7
+08-Mar-2023 23:37:57.734 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =10
+08-Mar-2023 23:37:57.734 INFO [http-nio-9999-exec-6] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:38:48.631 INFO [http-nio-9999-exec-2] loginServlet.doGet MyServlet called
+08-Mar-2023 23:38:48.632 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 7
+08-Mar-2023 23:38:48.636 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =10
+08-Mar-2023 23:38:48.636 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:39:43.247 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:39:43.251 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 23:39:43.281 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:39:43.291 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:39:44.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 23:39:44.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 23:39:44.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 23:39:44.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 23:39:44.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 23:39:44.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 23:39:44.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 23:39:44.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 23:39:44.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 23:39:44.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:39:44.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:39:44.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 23:39:44.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 23:39:44.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 23:39:44.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 23:39:44.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 23:39:44.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 23:39:44.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 23:39:44.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 23:39:44.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 23:39:44.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 23:39:44.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:39:44.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:39:44.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 23:39:44.297 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 23:39:44.665 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:39:44.701 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [662] milliseconds
+08-Mar-2023 23:39:44.740 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 23:39:44.740 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 23:39:44.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 23:39:45.785 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:39:45.832 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [1,081] ms
+08-Mar-2023 23:39:45.832 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 23:39:46.467 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:39:46.470 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [637] ms
+08-Mar-2023 23:39:46.470 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 23:39:47.152 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:39:47.159 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [689] ms
+08-Mar-2023 23:39:47.159 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 23:39:48.235 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:39:48.276 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [1,117] ms
+08-Mar-2023 23:39:48.277 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 23:39:48.986 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:39:48.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [713] ms
+08-Mar-2023 23:39:48.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 23:39:49.697 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:39:49.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [711] ms
+08-Mar-2023 23:39:49.704 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:39:49.717 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5015] milliseconds
+08-Mar-2023 23:39:58.755 INFO [http-nio-9999-exec-4] loginServlet.doGet MyServlet called
+08-Mar-2023 23:40:03.548 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 7
+08-Mar-2023 23:40:03.553 INFO [http-nio-9999-exec-6] listingServlet.obtainListing Listing result =12
+08-Mar-2023 23:40:03.558 INFO [http-nio-9999-exec-6] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:40:07.742 INFO [http-nio-9999-exec-7] listingServlet.doPost userid: 7
+08-Mar-2023 23:40:07.746 INFO [http-nio-9999-exec-7] listingServlet.doPost POST
+08-Mar-2023 23:40:07.747 INFO [http-nio-9999-exec-7] listingServlet.doPost Add to cart
+08-Mar-2023 23:40:07.747 INFO [http-nio-9999-exec-7] listingServlet.addtocart In function
+08-Mar-2023 23:40:07.752 INFO [http-nio-9999-exec-7] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:40:19.114 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =13
+08-Mar-2023 23:40:19.115 INFO [http-nio-9999-exec-1] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:40:27.754 INFO [http-nio-9999-exec-4] loginServlet.doGet MyServlet called
+08-Mar-2023 23:40:27.755 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 7
+08-Mar-2023 23:40:27.760 INFO [http-nio-9999-exec-4] listingServlet.obtainListing SQL Failedjava.sql.SQLException: Illegal operation on empty result set.
+08-Mar-2023 23:40:27.761 INFO [http-nio-9999-exec-4] listingServlet.doGet SQL Failedjava.lang.NullPointerException: Cannot read field "type" because "<parameter1>" is null
+08-Mar-2023 23:40:31.749 INFO [http-nio-9999-exec-5] loginServlet.doGet MyServlet called
+08-Mar-2023 23:40:31.750 INFO [http-nio-9999-exec-5] listingServlet.doGet userid: 7
+08-Mar-2023 23:40:31.753 INFO [http-nio-9999-exec-5] listingServlet.obtainListing SQL Failedjava.sql.SQLException: Illegal operation on empty result set.
+08-Mar-2023 23:40:31.754 INFO [http-nio-9999-exec-5] listingServlet.doGet SQL Failedjava.lang.NullPointerException: Cannot read field "type" because "<parameter1>" is null
+08-Mar-2023 23:40:38.658 INFO [http-nio-9999-exec-6] loginServlet.doGet MyServlet called
+08-Mar-2023 23:40:38.659 INFO [http-nio-9999-exec-6] listingServlet.doGet userid: 7
+08-Mar-2023 23:40:38.663 INFO [http-nio-9999-exec-6] listingServlet.obtainListing SQL Failedjava.sql.SQLException: Illegal operation on empty result set.
+08-Mar-2023 23:40:38.664 INFO [http-nio-9999-exec-6] listingServlet.doGet SQL Failedjava.lang.NullPointerException: Cannot read field "type" because "<parameter1>" is null
+08-Mar-2023 23:42:38.125 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:42:38.129 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2023 23:42:38.161 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:42:38.177 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:42:40.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+08-Mar-2023 23:42:40.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+08-Mar-2023 23:42:40.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+08-Mar-2023 23:42:40.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Mar-2023 23:42:40.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+08-Mar-2023 23:42:40.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Mar-2023 23:42:40.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+08-Mar-2023 23:42:40.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+08-Mar-2023 23:42:40.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+08-Mar-2023 23:42:40.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:42:40.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:42:40.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/conf/logging.properties
+08-Mar-2023 23:42:40.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2023 23:42:40.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2023 23:42:40.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2023 23:42:40.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Mar-2023 23:42:40.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2023 23:42:40.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2023 23:42:40.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2023 23:42:40.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2023 23:42:40.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2023 23:42:40.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:42:40.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5
+08-Mar-2023 23:42:40.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/temp
+08-Mar-2023 23:42:40.625 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Mar-2023 23:42:40.909 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:42:40.942 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [514] milliseconds
+08-Mar-2023 23:42:40.981 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2023 23:42:40.981 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+08-Mar-2023 23:42:40.989 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg]
+08-Mar-2023 23:42:41.823 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:42:41.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/oldegg] has finished in [879] ms
+08-Mar-2023 23:42:41.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs]
+08-Mar-2023 23:42:42.326 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:42:42.330 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/docs] has finished in [460] ms
+08-Mar-2023 23:42:42.330 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager]
+08-Mar-2023 23:42:42.816 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:42:42.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/manager] has finished in [494] ms
+08-Mar-2023 23:42:42.825 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples]
+08-Mar-2023 23:42:43.405 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:42:43.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/examples] has finished in [608] ms
+08-Mar-2023 23:42:43.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT]
+08-Mar-2023 23:42:43.887 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:42:43.889 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/ROOT] has finished in [456] ms
+08-Mar-2023 23:42:43.890 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager]
+08-Mar-2023 23:42:44.384 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Mar-2023 23:42:44.387 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/webapps/host-manager] has finished in [497] ms
+08-Mar-2023 23:42:44.389 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+08-Mar-2023 23:42:44.401 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3458] milliseconds
+08-Mar-2023 23:42:58.854 INFO [http-nio-9999-exec-2] loginServlet.doGet MyServlet called
+08-Mar-2023 23:42:58.867 INFO [http-nio-9999-exec-2] listingServlet.doGet userid: 7
+08-Mar-2023 23:42:58.871 INFO [http-nio-9999-exec-2] listingServlet.obtainListing Listing result =13
+08-Mar-2023 23:42:58.881 INFO [http-nio-9999-exec-2] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:43:16.930 INFO [http-nio-9999-exec-6] loginServlet.doGet MyServlet called
+08-Mar-2023 23:43:20.962 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =9
+08-Mar-2023 23:43:20.964 INFO [http-nio-9999-exec-10] listingServlet.createHeader listing type = cpus
+08-Mar-2023 23:43:27.553 INFO [http-nio-9999-exec-3] loginServlet.doGet MyServlet called
+08-Mar-2023 23:43:27.553 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 7
+08-Mar-2023 23:43:27.557 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =9
+08-Mar-2023 23:43:27.558 INFO [http-nio-9999-exec-3] listingServlet.createHeader listing type = cpus
+08-Mar-2023 23:44:07.140 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 7
+08-Mar-2023 23:44:07.145 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =18
+08-Mar-2023 23:44:07.146 INFO [http-nio-9999-exec-7] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:44:11.940 INFO [http-nio-9999-exec-8] listingServlet.doPost userid: 7
+08-Mar-2023 23:44:11.943 INFO [http-nio-9999-exec-8] listingServlet.doPost POST
+08-Mar-2023 23:44:11.943 INFO [http-nio-9999-exec-8] listingServlet.doPost Make Purchase
+08-Mar-2023 23:44:11.944 INFO [http-nio-9999-exec-8] listingServlet.purchaseItem In puchase function
+08-Mar-2023 23:44:11.944 INFO [http-nio-9999-exec-8] listingServlet.getUserEmailName In getUserEmailName function
+08-Mar-2023 23:44:34.353 INFO [http-nio-9999-exec-10] checkoutServlet.doPost MyServlet called
+08-Mar-2023 23:44:34.359 INFO [http-nio-9999-exec-10] checkoutServlet.doPost Item TYPE!!!!!!= gpus
+08-Mar-2023 23:44:34.364 INFO [http-nio-9999-exec-10] checkoutServlet.doPost purrchased
+08-Mar-2023 23:44:41.540 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 7
+08-Mar-2023 23:44:41.544 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =18
+08-Mar-2023 23:44:41.545 INFO [http-nio-9999-exec-3] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:44:47.358 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 7
+08-Mar-2023 23:44:47.363 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =18
+08-Mar-2023 23:44:47.364 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:44:52.433 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 7
+08-Mar-2023 23:44:52.438 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+08-Mar-2023 23:44:52.438 INFO [http-nio-9999-exec-5] listingServlet.doPost Make Purchase
+08-Mar-2023 23:44:52.439 INFO [http-nio-9999-exec-5] listingServlet.purchaseItem In puchase function
+08-Mar-2023 23:44:52.439 INFO [http-nio-9999-exec-5] listingServlet.getUserEmailName In getUserEmailName function
+08-Mar-2023 23:45:15.231 INFO [http-nio-9999-exec-9] listingServlet.doGet userid: 7
+08-Mar-2023 23:45:15.235 INFO [http-nio-9999-exec-9] listingServlet.obtainListing Listing result =18
+08-Mar-2023 23:45:15.236 INFO [http-nio-9999-exec-9] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:45:18.641 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 7
+08-Mar-2023 23:45:18.646 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =18
+08-Mar-2023 23:45:18.647 INFO [http-nio-9999-exec-10] listingServlet.createHeader listing type = motherboards
+08-Mar-2023 23:45:19.958 INFO [http-nio-9999-exec-1] listingServlet.doPost userid: 7
+08-Mar-2023 23:45:19.961 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+08-Mar-2023 23:45:19.962 INFO [http-nio-9999-exec-1] listingServlet.doPost Add to cart
+08-Mar-2023 23:45:19.962 INFO [http-nio-9999-exec-1] listingServlet.addtocart In function
+08-Mar-2023 23:45:19.964 INFO [http-nio-9999-exec-1] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:45:27.736 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 7
+08-Mar-2023 23:45:27.740 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =8
+08-Mar-2023 23:45:27.740 INFO [http-nio-9999-exec-3] listingServlet.createHeader listing type = cases
+08-Mar-2023 23:45:28.601 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 7
+08-Mar-2023 23:45:28.604 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+08-Mar-2023 23:45:28.604 INFO [http-nio-9999-exec-5] listingServlet.doPost Add to cart
+08-Mar-2023 23:45:28.604 INFO [http-nio-9999-exec-5] listingServlet.addtocart In function
+08-Mar-2023 23:45:28.606 INFO [http-nio-9999-exec-5] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:45:30.705 INFO [http-nio-9999-exec-7] listingServlet.doGet userid: 7
+08-Mar-2023 23:45:30.708 INFO [http-nio-9999-exec-7] listingServlet.obtainListing Listing result =15
+08-Mar-2023 23:45:30.709 INFO [http-nio-9999-exec-7] listingServlet.createHeader listing type = cpus
+08-Mar-2023 23:45:31.532 INFO [http-nio-9999-exec-8] listingServlet.doPost userid: 7
+08-Mar-2023 23:45:31.536 INFO [http-nio-9999-exec-8] listingServlet.doPost POST
+08-Mar-2023 23:45:31.536 INFO [http-nio-9999-exec-8] listingServlet.doPost Add to cart
+08-Mar-2023 23:45:31.536 INFO [http-nio-9999-exec-8] listingServlet.addtocart In function
+08-Mar-2023 23:45:31.537 INFO [http-nio-9999-exec-8] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:45:34.663 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 7
+08-Mar-2023 23:45:34.667 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =13
+08-Mar-2023 23:45:34.668 INFO [http-nio-9999-exec-10] listingServlet.createHeader listing type = storages
+08-Mar-2023 23:45:35.397 INFO [http-nio-9999-exec-1] listingServlet.doPost userid: 7
+08-Mar-2023 23:45:35.400 INFO [http-nio-9999-exec-1] listingServlet.doPost POST
+08-Mar-2023 23:45:35.400 INFO [http-nio-9999-exec-1] listingServlet.doPost Add to cart
+08-Mar-2023 23:45:35.400 INFO [http-nio-9999-exec-1] listingServlet.addtocart In function
+08-Mar-2023 23:45:35.401 INFO [http-nio-9999-exec-1] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:45:38.746 INFO [http-nio-9999-exec-3] listingServlet.doGet userid: 7
+08-Mar-2023 23:45:38.750 INFO [http-nio-9999-exec-3] listingServlet.obtainListing Listing result =12
+08-Mar-2023 23:45:38.751 INFO [http-nio-9999-exec-3] listingServlet.createHeader listing type = gpus
+08-Mar-2023 23:45:39.572 INFO [http-nio-9999-exec-4] listingServlet.doPost userid: 7
+08-Mar-2023 23:45:39.576 INFO [http-nio-9999-exec-4] listingServlet.doPost POST
+08-Mar-2023 23:45:39.576 INFO [http-nio-9999-exec-4] listingServlet.doPost Add to cart
+08-Mar-2023 23:45:39.576 INFO [http-nio-9999-exec-4] listingServlet.addtocart In function
+08-Mar-2023 23:45:39.577 INFO [http-nio-9999-exec-4] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:46:29.122 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost MyServlet called
+08-Mar-2023 23:46:29.123 INFO [http-nio-9999-exec-9] groupCheckOutServlet.getCart getCart called
+08-Mar-2023 23:46:29.124 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost count : 6
+08-Mar-2023 23:46:29.127 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:46:29.129 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:46:29.134 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:46:29.135 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:46:29.138 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:46:29.139 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:46:29.141 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:46:29.143 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:46:29.145 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:46:29.146 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:46:29.148 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost getitems called
+08-Mar-2023 23:46:29.150 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost createOrderItem called
+08-Mar-2023 23:46:29.153 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost reduceQTY called
+08-Mar-2023 23:46:29.153 INFO [http-nio-9999-exec-9] groupCheckOutServlet.doPost purchased
+08-Mar-2023 23:46:56.076 INFO [http-nio-9999-exec-10] listingServlet.doGet userid: 7
+08-Mar-2023 23:46:56.079 INFO [http-nio-9999-exec-10] listingServlet.obtainListing Listing result =3
+08-Mar-2023 23:46:56.080 INFO [http-nio-9999-exec-10] listingServlet.createHeader listing type = coolers
+08-Mar-2023 23:50:40.019 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =15
+08-Mar-2023 23:50:40.020 INFO [http-nio-9999-exec-1] listingServlet.createHeader listing type = cpus
+08-Mar-2023 23:50:46.531 INFO [http-nio-9999-exec-4] loginServlet.doGet MyServlet called
+08-Mar-2023 23:50:46.531 INFO [http-nio-9999-exec-4] listingServlet.doGet userid: 7
+08-Mar-2023 23:50:46.535 INFO [http-nio-9999-exec-4] listingServlet.obtainListing Listing result =15
+08-Mar-2023 23:50:46.536 INFO [http-nio-9999-exec-4] listingServlet.createHeader listing type = cpus
+08-Mar-2023 23:50:47.841 INFO [http-nio-9999-exec-5] listingServlet.doPost userid: 7
+08-Mar-2023 23:50:47.845 INFO [http-nio-9999-exec-5] listingServlet.doPost POST
+08-Mar-2023 23:50:47.845 INFO [http-nio-9999-exec-5] listingServlet.doPost Add to cart
+08-Mar-2023 23:50:47.845 INFO [http-nio-9999-exec-5] listingServlet.addtocart In function
+08-Mar-2023 23:50:47.848 INFO [http-nio-9999-exec-5] listingServlet.addtocart Added to cart!
+08-Mar-2023 23:53:25.540 INFO [http-nio-9999-exec-1] listingServlet.doGet userid: 7
+08-Mar-2023 23:53:25.544 INFO [http-nio-9999-exec-1] listingServlet.obtainListing Listing result =9
+08-Mar-2023 23:53:25.545 INFO [http-nio-9999-exec-1] listingServlet.createHeader listing type = cpus
+08-Mar-2023 23:53:26.337 INFO [http-nio-9999-exec-2] listingServlet.doPost userid: 7
+08-Mar-2023 23:53:26.340 INFO [http-nio-9999-exec-2] listingServlet.doPost POST
+08-Mar-2023 23:53:26.340 INFO [http-nio-9999-exec-2] listingServlet.doPost Add to cart
+08-Mar-2023 23:53:26.340 INFO [http-nio-9999-exec-2] listingServlet.addtocart In function
+08-Mar-2023 23:53:26.342 INFO [http-nio-9999-exec-2] listingServlet.addtocart Added to cart!

@@ -741,3 +741,2449 @@ Stacktrace:
 08-Mar-2023 20:55:14.200 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
 08-Mar-2023 20:55:14.200 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
 08-Mar-2023 20:55:14.202 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@56276db8')
+08-Mar-2023 21:02:05.402 SEVERE [http-nio-9999-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select * from carts where userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+An error occurred at line: [169] in the jsp file: [/cart.jsp]
+stmt2 cannot be resolved
+166:                 <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+167:                 <%
+168:                     String listing = "SELECT * FROM listings WHERE type = 'cases' AND itemID = '" +rset.getString("id")+"'";
+169:                     ResultSet listingSet = stmt2.executeQuery(listing);
+170:                     listingSet.next();
+171:                     String listingID = listingSet.getString("id");
+172:                 %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select * from carts where userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+An error occurred at line: [169] in the jsp file: [/cart.jsp]
+stmt2 cannot be resolved
+166:                 <h5 class="card-text"><%out.print(priceFormatter.format(rset.getFloat("price")));%></h5>
+167:                 <%
+168:                     String listing = "SELECT * FROM listings WHERE type = 'cases' AND itemID = '" +rset.getString("id")+"'";
+169:                     ResultSet listingSet = stmt2.executeQuery(listing);
+170:                     listingSet.next();
+171:                     String listingID = listingSet.getString("id");
+172:                 %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:02:32.393 SEVERE [http-nio-9999-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select * from carts where userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select * from carts where userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:02:33.464 SEVERE [http-nio-9999-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:02:34.335 SEVERE [http-nio-9999-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:02:34.798 SEVERE [http-nio-9999-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:02:35.344 SEVERE [http-nio-9999-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:02:35.878 SEVERE [http-nio-9999-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.cart_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:15:59.179 SEVERE [http-nio-9999-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+An error occurred at line: [188] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from Object to String
+185:                         <h5 class="card-text"><%=name%></h5>
+186:                         <h5 class="card-text"><%=price%></h5>
+187:                         <%
+188:                             String listingID = listingIDList.get(i);
+189:                         %>
+190:                         <form method="get" action="viewListing">
+191:                             <input hidden name="listingId" value="<%=listingID%>"/>
+
+
+An error occurred at line: [551] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [568] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [569] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+An error occurred at line: [188] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from Object to String
+185:                         <h5 class="card-text"><%=name%></h5>
+186:                         <h5 class="card-text"><%=price%></h5>
+187:                         <%
+188:                             String listingID = listingIDList.get(i);
+189:                         %>
+190:                         <form method="get" action="viewListing">
+191:                             <input hidden name="listingId" value="<%=listingID%>"/>
+
+
+An error occurred at line: [551] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [568] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [569] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:17:15.969 SEVERE [http-nio-9999-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+An error occurred at line: [551] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [568] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [569] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+An error occurred at line: [551] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [568] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [569] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:17:31.628 SEVERE [http-nio-9999-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+An error occurred at line: [551] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [568] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [569] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from String to int
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = request.getParameter("uid");
+10: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+An error occurred at line: [551] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [568] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [569] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:17:59.517 SEVERE [http-nio-9999-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [551] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [568] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [569] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [551] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [568] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [569] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/cart_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:19:46.596 SEVERE [http-nio-9999-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/cart.jsp] at line [9]
+
+6:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+7:                            "root", "password");
+8: Statement stmt = conn.createStatement();
+9: int uid = Integer.parseInt(request.getParameter("uid"));
+10: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+11: ResultSet rset = stmt.executeQuery(sqlStr);
+12: 
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: Cannot parse null string
+		at java.base/java.lang.Integer.parseInt(Integer.java:630)
+		at java.base/java.lang.Integer.parseInt(Integer.java:786)
+		at org.apache.jsp.cart_jsp._jspService(cart_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:36:11.291 SEVERE [http-nio-9999-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [200] in the jsp file: [/cart.jsp]
+item cannot be resolved
+197:                                     <button onclick="increment(<%=i%>)">+</button>
+198:                                     <br />
+199:                                     <h6 id="price_<%=i%>" class="pt-3"></h6>
+200:                                     <h6 hidden id="hiddenprice_<%=i%>"><%= item.getPrice() %></h6>
+201:                                   </div>
+202:                                 </div>
+203:                               </div>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [200] in the jsp file: [/cart.jsp]
+item cannot be resolved
+197:                                     <button onclick="increment(<%=i%>)">+</button>
+198:                                     <br />
+199:                                     <h6 id="price_<%=i%>" class="pt-3"></h6>
+200:                                     <h6 hidden id="hiddenprice_<%=i%>"><%= item.getPrice() %></h6>
+201:                                   </div>
+202:                                 </div>
+203:                               </div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:40:58.323 SEVERE [http-nio-9999-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [172] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from double to Float
+169:                   itemIDList.add(rset.getInt("itemID"));
+170:                   count++;
+171:                 }
+172:                 Float totalprice =0.0;
+173:                 while(i<count){
+174:                     String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+175:                   ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [172] in the jsp file: [/cart.jsp]
+Type mismatch: cannot convert from double to Float
+169:                   itemIDList.add(rset.getInt("itemID"));
+170:                   count++;
+171:                 }
+172:                 Float totalprice =0.0;
+173:                 while(i<count){
+174:                     String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+175:                   ResultSet itemset = stmt.executeQuery(getitems);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 21:47:34.899 SEVERE [http-nio-9999-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [cpu.jsp] at line [199]
+
+196:                     String listing = "SELECT id FROM listings WHERE type = 'cpus' AND itemID = '" +rset.getString("id")+"'";
+197:                     ResultSet listingSet = stmt2.executeQuery(listing);
+198:                     listingSet.next();
+199:                     String listingID = listingSet.getString("id");
+200:                 %> 
+201:                 <form method="get" action="viewListing">
+202:                   <input hidden name="listingId" value="<%=listingID%>"/>
+
+
+Stacktrace:] with root cause
+	java.sql.SQLException: Illegal operation on empty result set.
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+		at com.mysql.cj.jdbc.result.ResultSetImpl.checkRowPos(ResultSetImpl.java:532)
+		at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:878)
+		at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:896)
+		at org.apache.jsp.cpu_jsp._jspService(cpu_jsp.java:375)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 22:06:22.871 SEVERE [http-nio-9999-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [4] in the jsp file: [/groupcheckout.jsp]
+Connection cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: 
+4: <%Connection conn = DriverManager.getConnection(
+5:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+6:                            "root", "password");
+7: Statement stmt = conn.createStatement();
+
+
+An error occurred at line: [4] in the jsp file: [/groupcheckout.jsp]
+DriverManager cannot be resolved
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: 
+4: <%Connection conn = DriverManager.getConnection(
+5:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+6:                            "root", "password");
+7: Statement stmt = conn.createStatement();
+
+
+An error occurred at line: [7] in the jsp file: [/groupcheckout.jsp]
+Statement cannot be resolved to a type
+4: <%Connection conn = DriverManager.getConnection(
+5:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+6:                            "root", "password");
+7: Statement stmt = conn.createStatement();
+8: int uid = Integer.parseInt(request.getParameter("uid"));
+9: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+10: ResultSet rset = stmt.executeQuery(sqlStr);
+
+
+An error occurred at line: [10] in the jsp file: [/groupcheckout.jsp]
+ResultSet cannot be resolved to a type
+7: Statement stmt = conn.createStatement();
+8: int uid = Integer.parseInt(request.getParameter("uid"));
+9: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+10: ResultSet rset = stmt.executeQuery(sqlStr);
+11: %>
+12: <!DOCTYPE html>
+13: <html lang="en">
+
+
+An error occurred at line: [124] in the jsp file: [/groupcheckout.jsp]
+List cannot be resolved to a type
+121:             <div class="col-lg-6" style="padding-left: 200px;">
+122: 
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+
+
+An error occurred at line: [124] in the jsp file: [/groupcheckout.jsp]
+ArrayList cannot be resolved to a type
+121:             <div class="col-lg-6" style="padding-left: 200px;">
+122: 
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+
+
+An error occurred at line: [125] in the jsp file: [/groupcheckout.jsp]
+List cannot be resolved to a type
+122: 
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+128:                     int i=0;
+
+
+An error occurred at line: [125] in the jsp file: [/groupcheckout.jsp]
+ArrayList cannot be resolved to a type
+122: 
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+128:                     int i=0;
+
+
+An error occurred at line: [126] in the jsp file: [/groupcheckout.jsp]
+List cannot be resolved to a type
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+128:                     int i=0;
+129:                     while (rset.next()){                
+
+
+An error occurred at line: [126] in the jsp file: [/groupcheckout.jsp]
+ArrayList cannot be resolved to a type
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+128:                     int i=0;
+129:                     while (rset.next()){                
+
+
+An error occurred at line: [139] in the jsp file: [/groupcheckout.jsp]
+ResultSet cannot be resolved to a type
+136:                         double totalprice =0.0;
+137:                         while(i<count){
+138:                             String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+139:                         ResultSet itemset = stmt.executeQuery(getitems);
+140:                             while(itemset.next()){
+141:                                 String link = itemset.getString("link");
+142:                                 String name = itemset.getString("name");
+
+
+An error occurred at line: [581] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: [581] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [598] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [599] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [4] in the jsp file: [/groupcheckout.jsp]
+Connection cannot be resolved to a type
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: 
+4: <%Connection conn = DriverManager.getConnection(
+5:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+6:                            "root", "password");
+7: Statement stmt = conn.createStatement();
+
+
+An error occurred at line: [4] in the jsp file: [/groupcheckout.jsp]
+DriverManager cannot be resolved
+1: <%@ page language="java" contentType="text/html; charset=UTF-8"
+2: pageEncoding="UTF-8"%>
+3: 
+4: <%Connection conn = DriverManager.getConnection(
+5:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+6:                            "root", "password");
+7: Statement stmt = conn.createStatement();
+
+
+An error occurred at line: [7] in the jsp file: [/groupcheckout.jsp]
+Statement cannot be resolved to a type
+4: <%Connection conn = DriverManager.getConnection(
+5:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+6:                            "root", "password");
+7: Statement stmt = conn.createStatement();
+8: int uid = Integer.parseInt(request.getParameter("uid"));
+9: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+10: ResultSet rset = stmt.executeQuery(sqlStr);
+
+
+An error occurred at line: [10] in the jsp file: [/groupcheckout.jsp]
+ResultSet cannot be resolved to a type
+7: Statement stmt = conn.createStatement();
+8: int uid = Integer.parseInt(request.getParameter("uid"));
+9: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+10: ResultSet rset = stmt.executeQuery(sqlStr);
+11: %>
+12: <!DOCTYPE html>
+13: <html lang="en">
+
+
+An error occurred at line: [124] in the jsp file: [/groupcheckout.jsp]
+List cannot be resolved to a type
+121:             <div class="col-lg-6" style="padding-left: 200px;">
+122: 
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+
+
+An error occurred at line: [124] in the jsp file: [/groupcheckout.jsp]
+ArrayList cannot be resolved to a type
+121:             <div class="col-lg-6" style="padding-left: 200px;">
+122: 
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+
+
+An error occurred at line: [125] in the jsp file: [/groupcheckout.jsp]
+List cannot be resolved to a type
+122: 
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+128:                     int i=0;
+
+
+An error occurred at line: [125] in the jsp file: [/groupcheckout.jsp]
+ArrayList cannot be resolved to a type
+122: 
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+128:                     int i=0;
+
+
+An error occurred at line: [126] in the jsp file: [/groupcheckout.jsp]
+List cannot be resolved to a type
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+128:                     int i=0;
+129:                     while (rset.next()){                
+
+
+An error occurred at line: [126] in the jsp file: [/groupcheckout.jsp]
+ArrayList cannot be resolved to a type
+123:                 <h4>Cart</h4>
+124:                 <% List typeList = new ArrayList(); 
+125:                     List listingIDList =  new ArrayList(); 
+126:                     List itemIDList = new ArrayList(); 
+127:                     int count = 0;
+128:                     int i=0;
+129:                     while (rset.next()){                
+
+
+An error occurred at line: [139] in the jsp file: [/groupcheckout.jsp]
+ResultSet cannot be resolved to a type
+136:                         double totalprice =0.0;
+137:                         while(i<count){
+138:                             String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
+139:                         ResultSet itemset = stmt.executeQuery(getitems);
+140:                             while(itemset.next()){
+141:                                 String link = itemset.getString("link");
+142:                                 String name = itemset.getString("name");
+
+
+An error occurred at line: [581] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: [581] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [598] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [599] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 22:06:51.745 SEVERE [http-nio-9999-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [591] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: [591] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [608] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [609] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [591] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: [591] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [608] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [609] in the generated java file: [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/groupcheckout_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 22:07:14.267 SEVERE [http-nio-9999-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/groupcheckout.jsp] at line [10]
+
+7:             "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+8:                            "root", "password");
+9: Statement stmt = conn.createStatement();
+10: int uid = Integer.parseInt(request.getParameter("uid"));
+11: String sqlStr = "select listings.* from listings,carts where listings.id = carts.listingID AND carts.userID = " + uid;
+12: ResultSet rset = stmt.executeQuery(sqlStr);
+13: %>
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: Cannot parse null string
+		at java.base/java.lang.Integer.parseInt(Integer.java:630)
+		at java.base/java.lang.Integer.parseInt(Integer.java:786)
+		at org.apache.jsp.groupcheckout_jsp._jspService(groupcheckout_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 22:10:31.977 SEVERE [http-nio-9999-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [140] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "%", delete this token
+137:                             String link = itemset.getString("link");
+138:                             String name = itemset.getString("name");
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+
+
+An error occurred at line: [141] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token ">", delete this token
+138:                             String name = itemset.getString("name");
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on tokens, Expression expected instead
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on tokens, Expression expected instead
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token(s), misplaced construct(s)
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "<", @ expected
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "=", <= expected
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+String literal is not properly closed by a double-quote
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [140] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "%", delete this token
+137:                             String link = itemset.getString("link");
+138:                             String name = itemset.getString("name");
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+
+
+An error occurred at line: [141] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token ">", delete this token
+138:                             String name = itemset.getString("name");
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on tokens, Expression expected instead
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on tokens, Expression expected instead
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token(s), misplaced construct(s)
+139:                             Float price = itemset.getFloat("price");
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "<", @ expected
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "=", <= expected
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+String literal is not properly closed by a double-quote
+140:                             %
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 22:10:43.338 SEVERE [http-nio-9999-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [141] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token ">", delete this token
+138:                             String name = itemset.getString("name");
+139:                             Float price = itemset.getFloat("price");
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on tokens, Expression expected instead
+139:                             Float price = itemset.getFloat("price");
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on tokens, Expression expected instead
+139:                             Float price = itemset.getFloat("price");
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token(s), misplaced construct(s)
+139:                             Float price = itemset.getFloat("price");
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "<", @ expected
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "=", <= expected
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+String literal is not properly closed by a double-quote
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [141] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token ">", delete this token
+138:                             String name = itemset.getString("name");
+139:                             Float price = itemset.getFloat("price");
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on tokens, Expression expected instead
+139:                             Float price = itemset.getFloat("price");
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on tokens, Expression expected instead
+139:                             Float price = itemset.getFloat("price");
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [142] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token(s), misplaced construct(s)
+139:                             Float price = itemset.getFloat("price");
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "<", @ expected
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+Syntax error on token "=", <= expected
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+An error occurred at line: [143] in the jsp file: [/groupcheckout.jsp]
+String literal is not properly closed by a double-quote
+140:                             
+141:                             totalprice+=price;>
+142:                             <div class="row pb-3">
+143:                             <div class="col-lg-3"><img src="<%=link%>"class="card-img-top" alt="..." style="max-height: 150px;max-width: 150px;height: 100px;width: 100px;"></div>
+144:                             <div class="col-lg-9">                            
+145:                                 <h6><%=name%></h6>
+146:                                 <div class="row">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 22:20:17.946 SEVERE [http-nio-9999-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/groupcheckout.jsp] at line [128]
+
+125:                     List itemIDList = new ArrayList(); 
+126:                     int count = 0;
+127:                     int i=0;
+128:                     while (rset.next()){                
+129:                       typeList.add(rset.getString("type"));
+130:                       listingIDList.add(rset.getInt("id"));
+131:                       itemIDList.add(rset.getInt("itemID"));
+
+
+Stacktrace:] with root cause
+	java.sql.SQLException: Operation not allowed after ResultSet closed
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+		at com.mysql.cj.jdbc.result.ResultSetImpl.checkClosed(ResultSetImpl.java:485)
+		at com.mysql.cj.jdbc.result.ResultSetImpl.next(ResultSetImpl.java:1802)
+		at org.apache.jsp.groupcheckout_jsp._jspService(groupcheckout_jsp.java:275)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 22:48:49.012 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 22:48:49.012 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 22:48:59.291 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 22:48:59.291 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 22:48:59.294 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@51e8e6e6')
+08-Mar-2023 22:50:05.436 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 22:50:05.436 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 22:50:10.846 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 22:50:10.846 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 22:50:10.847 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@9ed238c')
+08-Mar-2023 22:50:45.826 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 22:50:45.826 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 22:50:50.088 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 22:50:50.088 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 22:50:50.089 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@9ed238c')
+08-Mar-2023 22:52:56.978 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 22:52:56.978 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 22:53:05.852 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 22:53:05.852 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 22:53:05.853 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@9ed238c')
+08-Mar-2023 22:54:57.208 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 22:54:57.208 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 22:55:02.515 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 22:55:02.515 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 22:55:02.517 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@51e8e6e6')
+08-Mar-2023 22:59:30.795 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 22:59:30.795 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 22:59:36.006 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 22:59:36.006 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 22:59:36.009 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@350ec41e')
+08-Mar-2023 23:03:29.380 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 23:03:29.380 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 23:03:33.984 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 23:03:33.984 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 23:03:33.987 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@51e8e6e6')
+08-Mar-2023 23:07:20.692 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 23:07:20.692 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 23:07:26.898 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 23:07:26.898 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 23:07:26.900 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@51e8e6e6')
+08-Mar-2023 23:11:41.966 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 23:11:41.966 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 23:11:46.966 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 23:11:46.966 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 23:11:46.968 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@56f6d40b')
+08-Mar-2023 23:19:49.332 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 23:19:49.332 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 23:19:49.333 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@277f7dd3')
+08-Mar-2023 23:20:09.082 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 23:20:09.083 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 23:20:13.031 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 23:20:13.031 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 23:20:13.033 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@9ed238c')
+08-Mar-2023 23:20:33.917 SEVERE [http-nio-9999-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [search.jsp] at line [292]
+
+289:               String itemID = set.getString("itemID");
+290: 
+291:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+292:               ResultSet rset = stmt.executeQuery(listingStr);
+293:               rset.next();
+294:                              
+295:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:474)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:20:38.858 SEVERE [http-nio-9999-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [search.jsp] at line [292]
+
+289:               String itemID = set.getString("itemID");
+290: 
+291:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+292:               ResultSet rset = stmt.executeQuery(listingStr);
+293:               rset.next();
+294:                              
+295:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:474)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:21:11.647 SEVERE [http-nio-9999-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [search.jsp] at line [292]
+
+289:               String itemID = set.getString("itemID");
+290: 
+291:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+292:               ResultSet rset = stmt.executeQuery(listingStr);
+293:               rset.next();
+294:                              
+295:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:474)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:29:36.664 SEVERE [http-nio-9999-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:31:49.014 SEVERE [http-nio-9999-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:32:28.180 SEVERE [http-nio-9999-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:33:21.699 SEVERE [http-nio-9999-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:33:51.857 SEVERE [http-nio-9999-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:39:43.268 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 23:39:43.268 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 23:39:48.263 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 23:39:48.263 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 23:39:48.265 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@36676c1a')
+08-Mar-2023 23:42:38.145 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+08-Mar-2023 23:42:38.145 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+08-Mar-2023 23:42:43.421 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+08-Mar-2023 23:42:43.422 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+08-Mar-2023 23:42:43.424 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@51e8e6e6')
+08-Mar-2023 23:46:36.355 SEVERE [http-nio-9999-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:46:38.646 SEVERE [http-nio-9999-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:47:30.338 SEVERE [http-nio-9999-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:47:37.543 SEVERE [http-nio-9999-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:48:00.448 SEVERE [http-nio-9999-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:48:52.578 SEVERE [http-nio-9999-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Mar-2023 23:49:00.035 SEVERE [http-nio-9999-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/oldegg] threw exception [An exception occurred processing [/search.jsp] at line [284]
+
+281:               String itemID = set.getString("itemID");
+282: 
+283:               listingStr = "SELECT * FROM " + type + " where id = " + itemID;
+284:               ResultSet rset = stmt.executeQuery(listingStr);
+285:               rset.next();
+286:                              
+287:             
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: Table 'oldegg.ram' doesn't exist
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+		at org.apache.jsp.search_jsp._jspService(search_jsp.java:472)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
