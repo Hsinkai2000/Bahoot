@@ -52,8 +52,9 @@ ResultSet rset = stmt.executeQuery(sqlStr);
     >
       <a
         class="navbar-brand"
-        href="index.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+        href="index.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
         style="padding-bottom: 15px; padding-right: 50px"
+        
       >
         <img
           src="./images/oldegg-logo-transparent.png"
@@ -112,9 +113,21 @@ ResultSet rset = stmt.executeQuery(sqlStr);
           <a class="nav-item nav-link" href="#"
             ><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"
           /></a>
-          <a class="nav-item nav-link" href="login.jsp"
-            ><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
-          /></a>
+          <a class="nav-item nav-link" 
+          <%
+          if(request.getParameter("uid") != null) {
+          %>
+              <a href="signout.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
+                /></a>
+          <%
+            } else {
+          %>
+              <a href="login.jsp"><img src="./images/btn-account.svg" alt="Wishlist" height="30dp"
+                /></a>
+          <%
+            }
+          %>
+          </a>
         </div>
       </div>
     </nav>

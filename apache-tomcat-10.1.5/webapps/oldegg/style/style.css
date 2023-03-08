@@ -38,6 +38,12 @@ body {
   margin: 10px;
 }
 
+.bg_red {
+  background-color: #db3734 !important;
+  color: aliceblue !important;
+  margin: 10px;
+}
+
 
 
 .bg_slategrey {
