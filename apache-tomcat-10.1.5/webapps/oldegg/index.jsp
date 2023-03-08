@@ -61,7 +61,9 @@ pageEncoding="UTF-8"%>
             name="srch-term"
             id="srch-term-header"
           />
-          <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+          <% if(request.getParameter("uid") != null) { %>
+            <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+          <% } %>
           <div class="input-group-btn">
             <button
               class="btn bg_orange"
@@ -226,19 +228,10 @@ pageEncoding="UTF-8"%>
             %>
           </div>                
       </div>
-      <div class="d-flex mb-3">
-        <h4 class="p-2">
-          <% if(response.getHeader("id") != null) { %>
-          <p style="color: red"><%=response.getHeader("id")%></p>
-          <%} else{%>
-          <p></p>
-          <%} %>
-        </h4>
-        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">See all </a>
-      </div>
 
-      <div class="d-flex mb-3">
+      <div class="d-flex mb-3 mt-5">
         <h4 class="p-2">Ready Stock</h4>
+        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">See all </a>
       </div>
         <div class="container-fluid py-2">
           <div class="d-flex flex-row flex-nowrap overflow-auto">

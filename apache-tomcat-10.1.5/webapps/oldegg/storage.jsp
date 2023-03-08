@@ -63,7 +63,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
           alt="OldEgg"
         />
       </a>
-      <form method="get" action ="search.jsp" class="navbar-form" role="search">
+      <form method="get" action="search.jsp" class="navbar-form" role="search">
         <div class="input-group" style="width: 40em">
           <input
             type="text"
@@ -72,7 +72,9 @@ ResultSet rset = stmt.executeQuery(sqlStr);
             name="srch-term"
             id="srch-term-header"
           />
-          <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+          <% if(request.getParameter("uid") != null) { %>
+            <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+          <% } %>
           <div class="input-group-btn">
             <button
               class="btn bg_orange"

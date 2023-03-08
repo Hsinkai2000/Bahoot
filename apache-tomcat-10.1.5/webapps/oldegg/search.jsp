@@ -104,14 +104,18 @@ for (int i = 0; i < searchList.size(); i++) {
 }
 
 if (searchStr.equals("")) {
+  if(uid!=null){
   response.sendRedirect("http://localhost:9999/oldegg/search.jsp?srch-term=ALLALLALL&uid=" + uid);
-
+  }
+  else{
+    response.sendRedirect("http://localhost:9999/oldegg/search.jsp?srch-term=ALLALLALL");
+  }
 }
 
 
 
 } catch(Exception e) {
-  response.sendRedirect("http://localhost:9999/oldegg/search.jsp?srch-term=ALLALLALL&uid=" + uid);
+  response.sendRedirect("http://localhost:9999/oldegg/search.jsp?srch-term=ALLALLALL");
 }
 
 %>
@@ -137,11 +141,11 @@ if (searchStr.equals("")) {
       style="padding: 20px 50px 15px 50px"
     >
       <a
-        class="navbar-brand"
-        href="index.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
-        style="padding-bottom: 15px; padding-right: 50px"
-        
-      >
+      class="navbar-brand"
+      href="index.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
+      style="padding-bottom: 15px; padding-right: 50px"
+      
+    > 
         <img
           src="./images/oldegg-logo-transparent.png"
           width="150dp"
@@ -162,7 +166,9 @@ if (searchStr.equals("")) {
             name="srch-term"
             id="srch-term-header"
           />
-          <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+          <% if(request.getParameter("uid") != null) { %>
+            <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+          <% } %>
           <div class="input-group-btn">
             <button
               class="btn bg_orange"
@@ -299,7 +305,9 @@ if (searchStr.equals("")) {
                     
                     <form method="get" action="viewListing">
                       <input hidden name="listingId" value="<%=searchList.get(j)%>"/>
-                      <input hidden name="uid" <% if(request.getParameter("uid") != null) {%>value="<%=request.getParameter("uid") %>"<% } else {%>value="" <%}%> />
+                      <% if(request.getParameter("uid") != null) { %>
+                        <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
+                      <% } %>
                       <button type="submit" class="btn bg_orange" >View Listing</button>
                     </form>
                   </div>
