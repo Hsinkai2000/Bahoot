@@ -157,7 +157,7 @@ pageEncoding="UTF-8"%>
 
       <div class="d-flex mb-3">
         <h4 class="p-2">Recommended</h4>
-        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">See all </a>
+        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL<%= request.getParameter("uid") != null ? "&uid=" + request.getParameter("uid") : "" %>">See all </a>
       </div>
 
   
@@ -231,7 +231,7 @@ pageEncoding="UTF-8"%>
 
       <div class="d-flex mb-3 mt-5">
         <h4 class="p-2">Ready Stock</h4>
-        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL&uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">See all </a>
+        <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL<%= request.getParameter("uid") != null ? "&uid=" + request.getParameter("uid") : "" %>">See all </a>
       </div>
         <div class="container-fluid py-2">
           <div class="d-flex flex-row flex-nowrap overflow-auto">
@@ -304,37 +304,37 @@ pageEncoding="UTF-8"%>
               <h6>Categories</h6>
               <ul class="footer-links">
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                  <a class="flex-sm-fill text-sm nav-link" href="gpu.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
                     >GPUs</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                  <a class="flex-sm-fill text-sm nav-link" href="cpu.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
                     >CPUs</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                  <a class="flex-sm-fill text-sm nav-link" href="motherboards.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
                     >Motherboards</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                  <a class="flex-sm-fill text-sm nav-link" href="ram.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
                     >Rams</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                  <a class="flex-sm-fill text-sm nav-link" href="storage.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
                     >Storage</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                  <a class="flex-sm-fill text-sm nav-link" href="cases.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
                     >Cases</a
                   >
                 </li>
                 <li>
-                  <a class="flex-sm-fill text-sm nav-link" href="coolers.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>"
+                  <a class="flex-sm-fill text-sm nav-link" href="coolers.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
                     >Coolers</a
                   >
                 </li>

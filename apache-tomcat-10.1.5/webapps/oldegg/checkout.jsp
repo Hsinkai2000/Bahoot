@@ -103,134 +103,137 @@ pageEncoding="UTF-8"%>
     </nav>
 
     <div class="container pt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="row">
-            <h1>Checkout</h1>
-          </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <img src="<%= response.getHeader("link") %>"
-              style="height:200px;width:200px;max-height:400px;max-width:400px;"
-              />
+      <form id="checkout-form" method="post" action="checkout">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <h1>Checkout</h1>
             </div>
-
-            <div class="col-lg-8">
-              <div class="row pb-2">
-                <h5><%= response.getHeader("itemName") %></h5>
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="<%= response.getHeader("link") %>"
+                style="height:200px;width:200px;max-height:400px;max-width:400px;"
+                />
               </div>
-              <div class="row">
-                <h6>Quantity</h6>
+
+              <div class="col-lg-8">
                 <div class="row pb-2">
-                  <div>
-                    <button onclick="decrement()">-</button>
-                    <input
-                      disabled
-                      type="number"
-                      id="quantity"
-                      value="1"
-                      min="1"
-                      max="10"
-                    />
-                    <button onclick="increment()">+</button>
-                    <br />
-                    <h6 id="price" class="pt-3"></h6>
-                    <p hidden id="hiddenprice">
-                      <%= response.getHeader("price") %>
-                    </p>
+                  <h5><%= response.getHeader("itemName") %></h5>
+                </div>
+                <div class="row">
+                  <h6>Quantity</h6>
+                  <div class="row pb-2">
+                    <div>
+                      <button onclick="decrement()">-</button>
+                      <input
+                        
+                        type="number"
+                        name ="quantityBought"
+                        id="quantity"
+                        value="1"
+                        min="1"
+                        max="10"
+                      />
+                      <button onclick="increment()">+</button>
+                      <br />
+                      <h6 id="price" class="pt-3"></h6>
+                      <p hidden id="hiddenprice">
+                        <%= response.getHeader("price") %>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-6">
-          <div class="row"></div>
-          <div class="row">
-            <form id="checkout-form" method="post" action="checkout">
-              <input type="hidden" name="product_id" value="<%=
-              request.getParameter("product_id") %>">
-              <div class="form-group pb-3">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name"
-                placeholder="Enter your name" value="<%=
-                response.getHeader("name") %>" required />
-              </div>
-              <div class="form-group pb-3">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" name="email"
-                placeholder="Enter your email" value="<%=
-                response.getHeader("email") %>" required />
-              </div>
-              <div class="form-group pb-3">
-                <label for="address">Address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address"
-                  name="address"
-                  placeholder="Enter your address"
-                  required
-                />
-              </div>
-              <div class="form-group pb-3">
-                <label for="card-number">Card Number</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="card-number"
-                  name="card_number"
-                  placeholder="Enter your card number"
-                  required
-                />
-              </div>
-              <div class="form-group pb-3">
-                <label for="expiry-date">Expiry Date</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  id="expiry-date"
-                  name="expiry_date"
-                  placeholder="Enter expiry date (MM/YY)"
-                  maxlength="5"
-                  required
-                />
-              </div>
-              <div class="form-group pb-3">
-                <label for="cvv">CVV</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="cvv"
-                  name="cvv"
-                  placeholder="Enter your CVV"
-                  maxlength="3"
-                  required
-                />
-              </div>
+          <div class="col-lg-6">
+            <div class="row"></div>
+            <div class="row">
+              
+                <input type="hidden" name="product_id" value="<%=
+                request.getParameter("product_id") %>">
+                <div class="form-group pb-3">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name"
+                  placeholder="Enter your name" value="<%=
+                  response.getHeader("name") %>" required />
+                </div>
+                <div class="form-group pb-3">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email"
+                  placeholder="Enter your email" value="<%=
+                  response.getHeader("email") %>" required />
+                </div>
+                <div class="form-group pb-3">
+                  <label for="address">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    name="address"
+                    placeholder="Enter your address"
+                    required
+                  />
+                </div>
+                <div class="form-group pb-3">
+                  <label for="card-number">Card Number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="card-number"
+                    name="card_number"
+                    placeholder="Enter your card number"
+                    required
+                  />
+                </div>
+                <div class="form-group pb-3">
+                  <label for="expiry-date">Expiry Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="expiry-date"
+                    name="expiry_date"
+                    placeholder="Enter expiry date (MM/YY)"
+                    maxlength="5"
+                    required
+                  />
+                </div>
+                <div class="form-group pb-3">
+                  <label for="cvv">CVV</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="cvv"
+                    name="cvv"
+                    placeholder="Enter your CVV"
+                    maxlength="3"
+                    required
+                  />
+                </div>
 
-              <input name="qty" value="<%=response.getHeader("qty") %>"> <input
-              name="itemType" value="<%=response.getHeader("itemType") %>">
-              <input name="itemID" value="<%=response.getHeader("itemID") %>">
-              <input name="listingId" value="<%=response.getHeader("listingId")
-              %>"> <input name="uid" <% if(response.getHeader("uid") != null)
-              {%>value="<%=response.getHeader("uid") %>"<% } else {%>value=""
-              <%}%> />
-              <div class="row">
-                <div class="col-lg-6">
-                  <button type="submit" class="btn bg_orange mt-3">
-                    Purchase
-                  </button>
+                <input name="qty" value="<%=response.getHeader("qty") %>"> <input
+                name="itemType" value="<%=response.getHeader("itemType") %>">
+                <input name="itemID" value="<%=response.getHeader("itemID") %>">
+                <input name="listingId" value="<%=response.getHeader("listingId")
+                %>"> <input name="uid" <% if(response.getHeader("uid") != null)
+                {%>value="<%=response.getHeader("uid") %>"<% } else {%>value=""
+                <%}%> />
+                <div class="row">
+                  <div class="col-lg-6">
+                    <button type="submit" class="btn bg_orange mt-3">
+                      Purchase
+                    </button>
+                  </div>
+                  <div class="col-lg-6">
+                    <a class="flex-sm-fill text-sm nav-link" href="index.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">Cancel</a>
+                  </div>
                 </div>
-                <div class="col-lg-6">
-                  <a class="flex-sm-fill text-sm nav-link" href="index.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">Cancel</a>
-                </div>
-              </div>
-            </form>
+             
+            </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
 
     <div class="footer">

@@ -9,6 +9,7 @@ import jakarta.servlet.*; // Tomcat 10
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
+
 @WebServlet("/checkout")
 public class checkoutServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(checkoutServlet.class.getName());
@@ -21,6 +22,7 @@ public class checkoutServlet extends HttpServlet {
     static int itemID;
     static String itemType;
     static int qty;
+    static int qtyBought;
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -34,6 +36,8 @@ public class checkoutServlet extends HttpServlet {
         itemID = Integer.parseInt(request.getParameter("itemID"));
         itemType = request.getParameter("itemType");
         qty = Integer.parseInt(request.getParameter("qty"));
+        //qtyBought = 1;
+        qtyBought = Integer.parseInt(request.getParameter("quantityBought"));
 
         try (
                 Connection conn = DriverManager.getConnection(
@@ -76,7 +80,8 @@ public class checkoutServlet extends HttpServlet {
                                 + listingID + ")";
                         stmt.executeUpdate(createOrderItem);
                         // reduce qty
-                        String reduceQTY = "UPDATE " + itemType + " SET qty =" + (qty - 1) + " WHERE id =" + itemID;
+                        LOGGER.info("Item TYPE!!!!!!= "+ itemType);
+                        String reduceQTY = "UPDATE " + itemType + " SET qty =" + (qty - qtyBought) + " WHERE id =" + itemID;
                         stmt.executeUpdate(reduceQTY);
 
                         response.setContentType("text/html");
@@ -85,7 +90,7 @@ public class checkoutServlet extends HttpServlet {
                                 "<p>Congratulations on your purchase! please wait patiently for your item to arrive!</p>");
                         out.println("<button onclick=\"location.href='index.jsp?uid=" + uid + "'\">Go back to index</button>");
                         out.println("</body></html>");
-                        LOGGER.info("purchased"); // Add a logging statement
+                        LOGGER.info("purrchased"); // Add a logging statement
                     }
                 }
                 else{

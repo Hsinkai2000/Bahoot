@@ -149,12 +149,17 @@ pageEncoding="UTF-8"%>
                 <input type="hidden" name="action" value="purchase" ></input>
                 <input type="hidden" name="itemType" value=<%= response.getHeader("type") %>></input>
                 <input hidden name="listingId" value=<%= request.getParameter("listingId") %>></input>
+                <% int qtyCheck = Integer.parseInt(response.getHeader("qty"));
+                    if (qtyCheck <= 0) {%>
+                  <h3 style ="color:red">THIS ITEM IS OUT OF STOCK</h3>
+                <%} else {%>
                 <input
-                style="width: 300px;"
+                  style="width: 300px;"
                   type="submit"
                   class="btn bg_orange"
                   value="Purchase"
                 />
+                <%}%>
               </form>
             </div>
           </div>
@@ -167,12 +172,16 @@ pageEncoding="UTF-8"%>
                   <input type="hidden" name="uid" value="<%=request.getParameter("uid")%>">
                 <% } %>
                 <input hidden name="action" value="addtocart" type="text" ></input>
-                <input
-                style="width: 300px;"
-                  type="submit"
-                  class="btn bg_orange"
-                  value="Add to Cart"
-                />
+                <% if (qtyCheck > 0) {%>
+                  <input
+                  style="width: 300px;"
+                    type="submit"
+                    class="btn bg_orange"
+                    value="Add to Cart"
+                  />
+                <%}%>
+
+                
               </form>
             </div>
           </div>
