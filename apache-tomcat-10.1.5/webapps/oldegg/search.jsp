@@ -127,6 +127,13 @@ if (searchStr.equals("")) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Old Egg | Search</title>
     <link rel="icon" href="./images/oldegg-icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" / >
+    <% if(!searchStr.equals("ALLALLALL")) {%>
+      <title>Old Egg | <%=searchStr%></title>
+    <%} else {%>
+      <title>Old Egg | All Products</title>
+    <%}%>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -201,6 +208,7 @@ if (searchStr.equals("")) {
           if(request.getParameter("uid") != null) {
           %>
               <a class="nav-item nav-link" href="cart.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"/> Cart</a>
+              <a class="nav-item nav-link" href="orders.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-orders.svg" alt="Wishlist" height="30dp"/> My Purchases</a>
           <%
             }%>
           <%
@@ -383,7 +391,7 @@ if (searchStr.equals("")) {
             <div class="col-md-8 col-sm-6 col-xs-12">
               <p class="copyright-text">
                 Copyright &copy; 2023 All Rights Reserved by
-                <a href="#">Ng Hsin-Kai</a> and <a href="#">Irfan Syakir</a>
+                <a href="https://www.instagram.com/asdfghjkl_hk/">Ng Hsin-Kai</a> and <a href="https://www.instagram.com/_fantrash/">Irfan Syakir</a>
               </p>
             </div>
 

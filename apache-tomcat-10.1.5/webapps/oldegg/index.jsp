@@ -3,7 +3,26 @@ pageEncoding="UTF-8"%>
 <%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*"%> 
 <% DecimalFormat priceFormatter= new DecimalFormat("$#0.00"); Connection conn = DriverManager.getConnection(
 "jdbc:mysql://localhost:3306/oldegg?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-"root", "password"); Statement stmt = conn.createStatement(); String sqlStr; %>
+"root", "password"); Statement stmt = conn.createStatement(); String sqlStr; 
+
+String userName = "";
+if(request.getParameter("uid") != null) {
+
+  String userID = request.getParameter("uid");
+  Statement userStmt = conn.createStatement();
+  String userSQL = "SELECT * FROM users WHERE ID = " + userID;
+  ResultSet userResult = userStmt.executeQuery(userSQL);
+
+  userResult.next();
+
+  userName = userResult.getString("name");
+
+}
+
+
+
+
+%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -97,6 +116,7 @@ pageEncoding="UTF-8"%>
           if(request.getParameter("uid") != null) {
           %>
               <a class="nav-item nav-link" href="cart.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"/> Cart</a>
+              <a class="nav-item nav-link" href="orders.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-orders.svg" alt="Wishlist" height="30dp"/> My Purchases</a>
           <%
             }%>
           <%
@@ -120,6 +140,7 @@ pageEncoding="UTF-8"%>
       <span class="inline" style="color: #7541b0">SHOP CATEGORIES:</span>
       <nav class="nav nav-pills flex-column flex-sm-row inline pb-5 pt-1">
         <a class="flex-sm-fill text-sm-center nav-link bg_white border50 mx-3"
+          
            href="gpu.jsp<%= request.getParameter("uid") != null ? "?uid=" + request.getParameter("uid") : "" %>"
          >GPUs</a>
 
@@ -148,6 +169,26 @@ pageEncoding="UTF-8"%>
          >Coolers</a>
       </nav>
 
+      
+
+      <% if(request.getParameter("purchased") != null) {%>
+        <div class="centered">
+          <h4 class="p-2", style="color: dodgerblue;">Congratulations on your purchase! please wait patiently for your item to arrive!</h4>
+        </div>
+      <%}%>
+
+      <% if(request.getParameter("cart") != null) {%>
+        <div class="centered">
+          <h4 class="p-2", style="color: dodgerblue;">Product has been added to cart!</h4>
+        </div>
+      <%}%>
+
+      <%if(request.getParameter("uid") != null) {%>
+        <div class="d-flex mb-3">
+          <h4 class="p-2">Welcome, <%=userName%></h4>
+        </div>
+      <%}%>
+
       <div class="d-flex mb-3">
         <h4 class="p-2">Recommended</h4>
         <a class="ms-auto p-2" href="search.jsp?srch-term=ALLALLALL<%= request.getParameter("uid") != null ? "&uid=" + request.getParameter("uid") : "" %>">See all </a>
@@ -163,7 +204,7 @@ pageEncoding="UTF-8"%>
             ++smallerNumber; 
           if (largerNumber == 0)
             largerNumber=20;
-        } while ((smallerNumber >= largerNumber) && (largerNumber - smallerNumber != 1)); 
+        } while ((smallerNumber >= largerNumber) && (largerNumber - smallerNumber > 1)); 
         int smallerNumber2 = 0, largerNumber2 = 0;
         do {
           smallerNumber2 = (int)Math.floor(Math.random() * 10);
@@ -172,7 +213,7 @@ pageEncoding="UTF-8"%>
             ++smallerNumber2; 
           if (largerNumber2 == 0)
             largerNumber2=20;
-        } while ((smallerNumber2 >= largerNumber2) && (largerNumber2 - smallerNumber2 != 1)); 
+        } while ((smallerNumber2 >= largerNumber2) && (largerNumber2 - smallerNumber2 > 1)); 
       %>
 
       <div class="container-fluid py-2">
@@ -200,7 +241,7 @@ pageEncoding="UTF-8"%>
                   String name = itemset.getString("name");
                   Float price = itemset.getFloat("price");
               %>
-                <div class="card card-body" style="height: 500px;min-width: 300px;">
+                <div class="card card-body" style="height: 550px;min-width: 300px;">
                   <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
                   <form method="get" action="viewListing">
                     <h3 style="width: 200px;"><%= name %></h3>
@@ -246,12 +287,12 @@ pageEncoding="UTF-8"%>
                 while(i<count){
                   String getitems = "SELECT " + typeList.get(i) + ".* FROM " + typeList.get(i) + ",listings WHERE listings.id=" + listingIDList.get(i) + " and " + typeList.get(i) + ".id=" + itemIDList.get(i);
                   ResultSet itemset = stmt.executeQuery(getitems);
-                    while(itemset.next()){
+                    while(itemset.next()){  
                     String link = itemset.getString("link");
                     String name = itemset.getString("name");
                     Float price = itemset.getFloat("price");
                 %>
-                  <div class="card card-body" style="height: 500px;min-width: 300px;">
+                  <div class="card card-body" style="height: 550px;min-width: 300px;">
                     <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
                     <form method="get" action="viewListing">
                       <h3 style="width: 200px;"><%= name %></h3>
@@ -341,7 +382,7 @@ pageEncoding="UTF-8"%>
             <div class="col-md-8 col-sm-6 col-xs-12">
               <p class="copyright-text">
                 Copyright &copy; 2023 All Rights Reserved by
-                <a href="#">Ng Hsin-Kai</a> and <a href="#">Irfan Syakir</a>
+                <a href="https://www.instagram.com/asdfghjkl_hk/">Ng Hsin-Kai</a> and <a href="https://www.instagram.com/_fantrash/">Irfan Syakir</a>
               </p>
             </div>
 

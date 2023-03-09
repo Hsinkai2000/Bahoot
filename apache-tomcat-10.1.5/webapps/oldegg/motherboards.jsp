@@ -109,6 +109,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
           if(request.getParameter("uid") != null) {
           %>
               <a class="nav-item nav-link" href="cart.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"/> Cart</a>
+              <a class="nav-item nav-link" href="orders.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-orders.svg" alt="Wishlist" height="30dp"/> My Purchases</a>
           <%
             }%>
           <%
@@ -271,7 +272,7 @@ ResultSet rset = stmt.executeQuery(sqlStr);
             <div class="col-md-8 col-sm-6 col-xs-12">
               <p class="copyright-text">
                 Copyright &copy; 2023 All Rights Reserved by
-                <a href="#">Ng Hsin-Kai</a> and <a href="#">Irfan Syakir</a>
+                <a href="https://www.instagram.com/asdfghjkl_hk/">Ng Hsin-Kai</a> and <a href="https://www.instagram.com/_fantrash/">Irfan Syakir</a>
               </p>
             </div>
 

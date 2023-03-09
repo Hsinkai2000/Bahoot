@@ -84,6 +84,8 @@ public class checkoutServlet extends HttpServlet {
                         String reduceQTY = "UPDATE " + itemType + " SET qty =" + (qty - qtyBought) + " WHERE id =" + itemID;
                         stmt.executeUpdate(reduceQTY);
 
+                        response.sendRedirect("http://localhost:9999/oldegg/index.jsp?uid=" + uid +"&purchased=yes");
+
                         response.setContentType("text/html");
                         out.println("<html><body>");
                         out.println(

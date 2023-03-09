@@ -45,7 +45,7 @@ create table Carts(
 
 create table Motherboards (
   id int NOT NULL AUTO_INCREMENT,
-  name varchar(50),
+  name varchar(75),
   socket varchar(50),
   price float,
   qty int,
@@ -67,12 +67,12 @@ INSERT INTO Motherboards (name, socket, price, qty, formfactor, link ) VALUES
 	('GIGABYTE Z690 AORUS PRO', 'LGA1700', '519', '71', 'ATX', 'https://m.media-amazon.com/images/I/61BLpnAud-L._AC_SL1000_.jpg '),
 	('ASRock A320M-HDV R4.0', 'AM4', '125', '10', 'MATX', 'https://m.media-amazon.com/images/I/71EXL1PByOL._AC_SX679_.jpg '),
 	('MSI MPG B560I Gaming Edge WiFi', 'LGA1200', '438.17', '54', 'MATX', 'https://m.media-amazon.com/images/I/81l4XjB+uVL._AC_SL1500_.jpg '),
-	('ASUS ROG Strix B550-A', 'AM4', '258.76', '60', 'ATX', 'https://m.media-amazon.com/images/I/91LqAWWBgSL._AC_SL1500_.jpg '),
+	('ASUS ROG Strix Z590 WIFI GUNDAM EDITION (ROG X GUNDAM)', 'LGA1200', '690', '60', 'ATX', 'https://dlcdnwebimgs.asus.com/gain/0136412c-398f-4f33-a6ba-5c6023cd8165/w692'),
 	('ASUS TUF Gaming B760-PLUS WiFi D4', 'LGA1700', '306.97', '69', 'ATX', 'https://m.media-amazon.com/images/I/81Kr0WwOO0L._AC_SL1500_.jpg '),
 	('MSI PRO Z690-A DDR4 ProSeries', 'LGA1700', '277.73', '4', 'ATX', 'https://m.media-amazon.com/images/I/91ZpekDlH3L._AC_SL1500_.jpg '),
 	('MSI MPG Z790 Edge WiFi DDR4', 'LGA1700', '454.66', '13', 'ATX', 'https://m.media-amazon.com/images/I/81LHT-z5-EL._AC_SL1500_.jpg '),
 	('ASUS AM4 TUF Gaming X570-Plus (Wi-Fi) ', 'AM4', '209.99', '27', 'ATX', 'https://m.media-amazon.com/images/I/710hyHWebnL._AC_SL1500_.jpg '),
-	('ASUS ROG MAXIMUS Z690 HERO EVA (ROG X EVANGELION)', 'LGA1700', '895.55', '10', 'ATX', 'https://m.media-amazon.com/images/I/811WsAtV8FL._AC_SL1500_.jpg');
+	('ASUS ROG MAXIMUS Z690 HERO EVA EDITION (ROG X EVANGELION)', 'LGA1700', '895.55', '10', 'ATX', 'https://m.media-amazon.com/images/I/811WsAtV8FL._AC_SL1500_.jpg');
 
 create table GPUs(
   id int NOT NULL AUTO_INCREMENT,
@@ -97,7 +97,7 @@ INSERT INTO GPUs (name, price, qty, link ) VALUES
 	('NVIDIA ASUS TUF GAMING RTX 4080', '2128', '23', 'https://m.media-amazon.com/images/I/81BTQB6jbXL._AC_UL640_FMwebp_QL65_.jpg '),
 	('AMD GIGABYTE RX 6900 XT GAMING OC', '1488', '9', 'https://m.media-amazon.com/images/I/81kQDW0TzoL._AC_UL640_FMwebp_QL65_.jpg '),
 	('NVIDIA ZOTAC GTX 1660 SUPER', '362.07', '24', 'https://m.media-amazon.com/images/I/71AAVqtFfvL._AC_UL640_QL65_.jpg '),
-	('NVIDIA ASUS ROG STRIX RTX 3080 GUNDAM EDITON', '1500', '27', 'https://dlcdnwebimgs.asus.com/gain/A96FC491-FEAA-4DFA-96A8-B95832F87C8B/w1000/h732'),
+	('NVIDIA ASUS ROG STRIX RTX 3080 GUNDAM EDITON (ROG X GUNDAM)', '1500', '27', 'https://dlcdnwebimgs.asus.com/gain/A96FC491-FEAA-4DFA-96A8-B95832F87C8B/w1000/h732'),
 	('NVIDIA MSI GTX 1660 SUPER VENTUS XS', '384.44', '29', 'https://m.media-amazon.com/images/I/619Ui9f--pL._AC_SL1000_.jpg '),
 	('NVIDIA GIGABYTE RTX 3070 GAMING OC', '768.44', '34', 'https://m.media-amazon.com/images/I/71XcVOdHX+S._AC_UY436_FMwebp_QL65_.jpg '),
 	('NVIDIA ZOTAC RTX 4070 TI TRINITY OC', '1145.55', '28', 'https://m.media-amazon.com/images/I/81ywJlcuVOL._AC_UY436_FMwebp_QL65_.jpg '),
@@ -168,7 +168,7 @@ INSERT INTO RAMs (name, speed, module, price, qty, link ) VALUES
 CREATE TABLE Cases 
 (
   id int NOT NULL AUTO_INCREMENT,
-  name varchar(50),
+  name varchar(75),
   form_factor varchar(50),
   price float,
   qty int,
@@ -185,7 +185,9 @@ INSERT INTO Cases (name, form_factor, price, qty, link) VALUES
 	('NZXT H510 Flow', 'ATX', '89.99', '25', 'https://nzxt.com/assets/cms/34299/1632172731-h510flowwhite-1.png?auto=format&fit=crop&h=1000&w=1000 '),
 	('Corsair Crystal 280X RGB', 'MATX', '179.95', '20', 'https://www.corsair.com/medias/sys_master/images/images/h20/h23/9112715329566/-CC-9011135-WW-Gallery-280X-RGB-BLK-01.png '),
 	('Corsair 5000D Airflow', 'ATX', '174.99', '35', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h27/hc1/9659514355742/base-5000d-airflow/Gallery/5000D_AF_WHITE_001/-base-5000d-airflow-Gallery-5000D-AF-WHITE-001.png_1200Wx1200H '),
-	('Asus ROG Strix Helios', 'ATX', '327.98', '12', 'https://dlcdnwebimgs.asus.com/gain/117ACAB9-87EE-4E2B-8D1C-CE9E578768BB/w717/h525 ');
+	('Asus ROG Strix Helios', 'ATX', '327.98', '12', 'https://dlcdnwebimgs.asus.com/gain/117ACAB9-87EE-4E2B-8D1C-CE9E578768BB/w717/h525 '),
+	('Asus ROG Strix Helios EVA EDITION (ROG X EVANGELION)', 'ATX', '427.98', '12', 'https://dlcdnwebimgs.asus.com/files/media/45CA163A-8C91-4CB4-AF6B-323199EB94B4/v1/img/ports_pd.png'),
+	('Asus ROG Strix Helios GUNDAM EDITION (ROG X GUNDAM)', 'ATX', '400', '12', 'https://dlcdnwebimgs.asus.com/files/media/8AB66858-1CDE-4209-8178-D12C3699E0CE/websites/product/img/page/helios/ROG-Strix-Helios-Gundam.png');
 
 CREATE TABLE Storages 
 (
@@ -219,10 +221,11 @@ INSERT INTO Storages (name, capacity, type, interface, price, qty, link ) VALUES
 	('SAMSUNG 980 PRO', '250GB', 'SSD', 'M.2 PCIe 4.0 X4', '160.83', '54', 'https://m.media-amazon.com/images/I/81eujrQV8oL._AC_SL1500_.jpg '),
 	('Western Digital Red NAS', '4TB', 'HDD', 'SATA 6.0 Gb/s', '101.62', '39', 'https://m.media-amazon.com/images/I/710aEelzoRL._AC_SL1500_.jpg '),
 	('Western Digital WD Blue SN570', '1TB', 'SSD', 'M.2 PCIe 3.0 X4', '67', '26', 'https://m.media-amazon.com/images/I/61a+U9YhovL._AC_SL1500_.jpg');
+
 CREATE TABLE Coolers 
 (
   id int NOT NULL AUTO_INCREMENT,
-  name varchar(50),
+  name varchar(75),
   type varchar(50),
   price float,
   qty int,
@@ -239,7 +242,10 @@ INSERT INTO Coolers (name , type, price, qty, link) VALUES
 	('Corsair iCUE H150i ELITE CAPELLIX', 'AIO', '200', '79', 'https://www.corsair.com/us/en/medias/sys_master/images/images/hfe/hbd/9582792048670/base-icue-elite-cooler-config/Gallery/H150i_ELITE_CAPELLIX_01/-base-icue-elite-cooler-config-Gallery-H150i-ELITE-CAPELLIX-01.png_1200Wx1200H '),
 	('Corsair iCUE H100i ELITE CAPELLIX', 'AIO', '149.99', '68', 'https://www.corsair.com/us/en/medias/sys_master/images/images/hd4/h6e/9582790082590/base-icue-elite-cooler-config/Gallery/H100i_ELITE_CAPELLIX_01/-base-icue-elite-cooler-config-Gallery-H100i-ELITE-CAPELLIX-01.png_1200Wx1200H '),
 	('ID-COOLING SE-214-XT', 'AIR', '19.98', '14', 'https://www.idcooling.com/Admin/Tpl/default/Public/kindeditor-4.1.7/attached/image/20211123/20211123150851_36843.jpg '),
-	('Corsair iCUE H150i ELITE LCD', 'AIO', '289.99', '15', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h56/he9/9889310539806/CW-9060062-WW/Gallery/Common/H150i_ELITE_LCD_RENDER_01/-CW-9060062-WW-Gallery-Common-H150i-ELITE-LCD-RENDER-01.png_1200Wx1200H ');
+	('Corsair iCUE H150i ELITE LCD', 'AIO', '289.99', '15', 'https://www.corsair.com/us/en/medias/sys_master/images/images/h56/he9/9889310539806/CW-9060062-WW/Gallery/Common/H150i_ELITE_LCD_RENDER_01/-CW-9060062-WW-Gallery-Common-H150i-ELITE-LCD-RENDER-01.png_1200Wx1200H '),
+	('ASUS ROG LC 360 RGB GUNDAM EDITION (ROG X GUNDAM)', 'AIO', '389.99', '15', 'https://dlcdnwebimgs.asus.com/files/media/6649422D-2667-43AB-885D-682B60333EF4/websites/product/img/page/aio/banner.png'),
+	('ASUS ROG RYUJIN II 360 ARGB EVA EDITION (ROG X EVANGELION)', 'AIO', '400', '15', 'https://dlcdnwebimgs.asus.com/files/media/9735BF64-8140-4566-9F8C-A2048791F74E/v1/img/kv_pd.png');
+
 
 
 create table Users (
@@ -289,9 +295,9 @@ create table Listings (
 ("cpus",7),
 ("motherboards",4),
 ("rams",4),
-("coolers",9),
-("ram",16),
-("ram",18),
+("coolers",10),
+("rams",16),
+("rams",18),
 ("gpus",18),
 ("motherboards",8),
 ("coolers",6),
@@ -334,7 +340,9 @@ create table Listings (
 ("motherboards",3),
 ("gpus",8),
 ("rams",9),
+("coolers",11),
 ("cpus",5),
+("cases",11),
 ("gpus",3),
 ("rams",5),
 ("cpus",17),
@@ -349,7 +357,9 @@ create table Listings (
 ("cpus",1),
 ("coolers",7),
 ("cpus",11),
+("coolers",9),
 ("cpus",8),
+("cases",10),
 ("gpus",15),
 ("motherboards",5),
 ("rams",7),

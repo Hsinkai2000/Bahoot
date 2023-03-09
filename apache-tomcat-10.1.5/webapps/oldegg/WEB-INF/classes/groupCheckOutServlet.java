@@ -127,6 +127,8 @@ public class groupCheckOutServlet extends HttpServlet {
                     //remove from cart
                     String removeCart = "DELETE FROM carts WHERE userID=" +uid;
                     stmtRemoveCart.executeUpdate(removeCart);
+
+                    response.sendRedirect("http://localhost:9999/oldegg/index.jsp?uid=" + uid +"&purchased=yes");
                     
                     LOGGER.info("reduceQTY called");
                     response.setContentType("text/html");

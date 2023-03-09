@@ -5,7 +5,8 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Old Egg | Checkout</title><link rel="icon" href="./images/oldegg-icon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/oldegg-icon.ico" type="image/x-icon">
+    <title>Old Egg | <%=response.getHeader("itemName")%></title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -74,6 +75,7 @@ pageEncoding="UTF-8"%>
           if(request.getParameter("uid") != null) {
           %>
               <a class="nav-item nav-link" href="cart.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"/> Cart</a>
+              <a class="nav-item nav-link" href="orders.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-orders.svg" alt="Wishlist" height="30dp"/> My Purchases</a>
           <%
             }%>
           <%
@@ -123,7 +125,7 @@ pageEncoding="UTF-8"%>
                         id="quantity"
                         value="1"
                         min="1"
-                        max="10"
+                        max="<%=response.getHeader("qty")%>"
                       />
                       <button onclick="increment()">+</button>
                       <br />
@@ -131,6 +133,7 @@ pageEncoding="UTF-8"%>
                       <p hidden id="hiddenprice">
                         <%= response.getHeader("price") %>
                       </p>
+                      <h6>Stock: <%=response.getHeader("qty")%></h6>
                     </div>
                   </div>
                 </div>
@@ -139,7 +142,6 @@ pageEncoding="UTF-8"%>
           </div>
 
           <div class="col-lg-6">
-            <div class="row"></div>
             <div class="row">
               
                 <input type="hidden" name="product_id" value="<%=
@@ -217,33 +219,45 @@ pageEncoding="UTF-8"%>
                     id="cvv"
                     name="cvv"
                     placeholder="Enter your CVV"
-                    maxlength="3"
+                    max="999"
                     required
                   />
                 </div>
-
-                <input hidden name="qty" value="<%=response.getHeader("qty") %>"> <input
-                hidden name="itemType" value="<%=response.getHeader("itemType") %>">
-                <input hidden name="itemID" value="<%=response.getHeader("itemID") %>">
-                <input hidden name="listingId" value="<%=response.getHeader("listingId")
-                %>"> <input hidden name="uid" <% if(response.getHeader("uid") != null)
-                {%>value="<%=response.getHeader("uid") %>"<% } else {%>value=""
-                <%}%> />
+                
+                <input type="hidden" name="qty" value="<%=response.getHeader("qty") %>"> 
+                <input type="hidden" name="itemType" value="<%=response.getHeader("itemType") %>">
+                <input type="hidden" name="itemID" value="<%=response.getHeader("itemID") %>">
+                <input type="hidden" name="listingId" value="<%=response.getHeader("listingId")%>"> 
+                <input type="hidden" name="uid" 
+                  <% if(response.getHeader("uid") != null){%>
+                    value="<%=response.getHeader("uid") %>"
+                  <% } else {%>
+                    value=""
+                  <%}%> 
+                />
+              
                 <div class="row">
                   <div class="col-lg-6">
                     <button type="submit" class="btn bg_orange mt-3">
                       Purchase
                     </button>
-                  </div>
+                  </div></form>
                   <div class="col-lg-6">
-                    <a class="flex-sm-fill text-sm nav-link" href="index.jsp?uid=<%= request.getParameter("uid") != null ? request.getParameter("uid") : "" %>">Cancel</a>
+                    <form method="get" action="viewListing">
+                      <input hidden name="listingId" value="<%=response.getHeader("listingID")%>"/>
+                      <% if(request.getParameter("uid") != null) { %>
+                        <input type="hidden" name="uid" value="<%=response.getHeader("uid")%>">
+                      <% } %>
+                      <button type="submit" class="btn bg_orange mt-3">
+                        Cancel
+                      </button>
                   </div>
                 </div>
-             
+
             </div>
           </div>
         </div>
-      </form>
+      
     </div>
 
     <div class="footer">
@@ -309,7 +323,7 @@ pageEncoding="UTF-8"%>
             <div class="col-md-8 col-sm-6 col-xs-12">
               <p class="copyright-text">
                 Copyright &copy; 2023 All Rights Reserved by
-                <a href="#">Ng Hsin-Kai</a> and <a href="#">Irfan Syakir</a>
+                <a href="https://www.instagram.com/asdfghjkl_hk/">Ng Hsin-Kai</a> and <a href="https://www.instagram.com/_fantrash/">Irfan Syakir</a>
               </p>
             </div>
 

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 09-Mar-2023 00:00:52.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
 09-Mar-2023 00:00:52.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
 09-Mar-2023 00:00:52.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
@@ -201,3 +202,714 @@
 09-Mar-2023 00:26:57.833 INFO [http-nio-9999-exec-10] listingServlet.doPost Add to cart
 09-Mar-2023 00:26:57.833 INFO [http-nio-9999-exec-10] listingServlet.addtocart In function
 09-Mar-2023 00:26:57.835 INFO [http-nio-9999-exec-10] listingServlet.addtocart Added to cart!
+=======
+09-Mar-2023 00:16:16.097 INFO [http-nio-9999-exec-68] loginServlet.doGet MyServlet called
+09-Mar-2023 00:20:30.025 INFO [http-nio-9999-exec-77] listingServlet.doGet userid: 1
+09-Mar-2023 00:20:30.030 INFO [http-nio-9999-exec-77] listingServlet.obtainListing Listing result =18
+09-Mar-2023 00:20:30.032 INFO [http-nio-9999-exec-77] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:25:08.567 INFO [http-nio-9999-exec-69] listingServlet.doGet userid: 1
+09-Mar-2023 00:25:08.572 INFO [http-nio-9999-exec-69] listingServlet.obtainListing Listing result =16
+09-Mar-2023 00:25:08.573 INFO [http-nio-9999-exec-69] listingServlet.createHeader listing type = rams
+09-Mar-2023 00:26:02.071 INFO [http-nio-9999-exec-76] listingServlet.doGet userid: 1
+09-Mar-2023 00:26:02.074 INFO [http-nio-9999-exec-76] listingServlet.obtainListing Listing result =4
+09-Mar-2023 00:26:02.075 INFO [http-nio-9999-exec-76] listingServlet.createHeader listing type = rams
+09-Mar-2023 00:26:41.650 INFO [http-nio-9999-exec-72] listingServlet.doGet userid: 1
+09-Mar-2023 00:26:41.654 INFO [http-nio-9999-exec-72] listingServlet.obtainListing Listing result =4
+09-Mar-2023 00:26:41.654 INFO [http-nio-9999-exec-72] listingServlet.createHeader listing type = rams
+09-Mar-2023 00:26:47.477 INFO [http-nio-9999-exec-73] listingServlet.doPost userid: 1
+09-Mar-2023 00:26:47.482 INFO [http-nio-9999-exec-73] listingServlet.doPost POST
+09-Mar-2023 00:26:47.482 INFO [http-nio-9999-exec-73] listingServlet.doPost Add to cart
+09-Mar-2023 00:26:47.482 INFO [http-nio-9999-exec-73] listingServlet.addtocart In function
+09-Mar-2023 00:26:47.485 INFO [http-nio-9999-exec-73] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:27:49.479 INFO [http-nio-9999-exec-76] listingServlet.doGet userid: 1
+09-Mar-2023 00:27:49.494 INFO [http-nio-9999-exec-76] listingServlet.obtainListing Listing result =13
+09-Mar-2023 00:27:49.495 INFO [http-nio-9999-exec-76] listingServlet.createHeader listing type = motherboards
+09-Mar-2023 00:27:56.271 INFO [http-nio-9999-exec-77] listingServlet.doPost userid: 1
+09-Mar-2023 00:27:56.273 INFO [http-nio-9999-exec-77] listingServlet.doPost POST
+09-Mar-2023 00:27:56.273 INFO [http-nio-9999-exec-77] listingServlet.doPost Make Purchase
+09-Mar-2023 00:27:56.274 INFO [http-nio-9999-exec-77] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:27:56.274 INFO [http-nio-9999-exec-77] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:28:29.939 INFO [http-nio-9999-exec-69] listingServlet.doPost userid: 1
+09-Mar-2023 00:28:29.947 INFO [http-nio-9999-exec-69] listingServlet.doPost POST
+09-Mar-2023 00:28:29.947 INFO [http-nio-9999-exec-69] listingServlet.doPost Add to cart
+09-Mar-2023 00:28:29.947 INFO [http-nio-9999-exec-69] listingServlet.addtocart In function
+09-Mar-2023 00:28:29.950 INFO [http-nio-9999-exec-69] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:28:52.425 INFO [http-nio-9999-exec-71] listingServlet.doPost userid: 1
+09-Mar-2023 00:28:52.428 INFO [http-nio-9999-exec-71] listingServlet.doPost POST
+09-Mar-2023 00:28:52.429 INFO [http-nio-9999-exec-71] listingServlet.doPost Add to cart
+09-Mar-2023 00:28:52.429 INFO [http-nio-9999-exec-71] listingServlet.addtocart In function
+09-Mar-2023 00:28:52.431 INFO [http-nio-9999-exec-71] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:34:27.051 INFO [http-nio-9999-exec-74] listingServlet.doGet userid: 1
+09-Mar-2023 00:34:27.054 INFO [http-nio-9999-exec-74] listingServlet.obtainListing Listing result =2
+09-Mar-2023 00:34:27.055 INFO [http-nio-9999-exec-74] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:34:28.159 INFO [http-nio-9999-exec-75] listingServlet.doPost userid: 1
+09-Mar-2023 00:34:28.162 INFO [http-nio-9999-exec-75] listingServlet.doPost POST
+09-Mar-2023 00:34:28.162 INFO [http-nio-9999-exec-75] listingServlet.doPost Add to cart
+09-Mar-2023 00:34:28.162 INFO [http-nio-9999-exec-75] listingServlet.addtocart In function
+09-Mar-2023 00:34:28.164 INFO [http-nio-9999-exec-75] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:34:52.155 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
+09-Mar-2023 00:34:52.345 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:34:52.346 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+09-Mar-2023 00:34:52.943 INFO [http-nio-9999-exec-74] listingServlet.doGet userid: 1
+09-Mar-2023 00:34:52.946 INFO [http-nio-9999-exec-74] listingServlet.obtainListing Listing result =13
+09-Mar-2023 00:34:52.947 INFO [http-nio-9999-exec-74] listingServlet.createHeader listing type = motherboards
+09-Mar-2023 00:34:54.864 INFO [http-nio-9999-exec-76] listingServlet.doPost userid: 1
+09-Mar-2023 00:34:54.866 INFO [http-nio-9999-exec-76] listingServlet.doPost POST
+09-Mar-2023 00:34:54.867 INFO [http-nio-9999-exec-76] listingServlet.doPost Add to cart
+09-Mar-2023 00:34:54.867 INFO [http-nio-9999-exec-76] listingServlet.addtocart In function
+09-Mar-2023 00:34:54.870 INFO [http-nio-9999-exec-76] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:36:29.452 INFO [http-nio-9999-exec-78] listingServlet.doGet userid: 1
+09-Mar-2023 00:36:29.460 INFO [http-nio-9999-exec-78] listingServlet.obtainListing Listing result =13
+09-Mar-2023 00:36:29.461 INFO [http-nio-9999-exec-78] listingServlet.createHeader listing type = motherboards
+09-Mar-2023 00:36:30.806 INFO [http-nio-9999-exec-79] listingServlet.doPost userid: 1
+09-Mar-2023 00:36:30.809 INFO [http-nio-9999-exec-79] listingServlet.doPost POST
+09-Mar-2023 00:36:30.809 INFO [http-nio-9999-exec-79] listingServlet.doPost Add to cart
+09-Mar-2023 00:36:30.809 INFO [http-nio-9999-exec-79] listingServlet.addtocart In function
+09-Mar-2023 00:36:30.812 INFO [http-nio-9999-exec-79] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:36:32.547 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
+09-Mar-2023 00:36:32.740 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:36:32.740 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+09-Mar-2023 00:36:35.281 INFO [http-nio-9999-exec-85] listingServlet.doGet userid: 1
+09-Mar-2023 00:36:35.284 INFO [http-nio-9999-exec-85] listingServlet.obtainListing Listing result =5
+09-Mar-2023 00:36:35.285 INFO [http-nio-9999-exec-85] listingServlet.createHeader listing type = coolers
+09-Mar-2023 00:36:36.388 INFO [http-nio-9999-exec-84] listingServlet.doPost userid: 1
+09-Mar-2023 00:36:36.391 INFO [http-nio-9999-exec-84] listingServlet.doPost POST
+09-Mar-2023 00:36:36.392 INFO [http-nio-9999-exec-84] listingServlet.doPost Add to cart
+09-Mar-2023 00:36:36.392 INFO [http-nio-9999-exec-84] listingServlet.addtocart In function
+09-Mar-2023 00:36:36.394 INFO [http-nio-9999-exec-84] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:36:42.166 INFO [http-nio-9999-exec-83] listingServlet.doGet userid: 1
+09-Mar-2023 00:36:42.168 INFO [http-nio-9999-exec-83] listingServlet.obtainListing Listing result =2
+09-Mar-2023 00:36:42.169 INFO [http-nio-9999-exec-83] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:36:43.806 INFO [http-nio-9999-exec-75] listingServlet.doPost userid: 1
+09-Mar-2023 00:36:43.810 INFO [http-nio-9999-exec-75] listingServlet.doPost POST
+09-Mar-2023 00:36:43.810 INFO [http-nio-9999-exec-75] listingServlet.doPost Add to cart
+09-Mar-2023 00:36:43.810 INFO [http-nio-9999-exec-75] listingServlet.addtocart In function
+09-Mar-2023 00:36:43.812 INFO [http-nio-9999-exec-75] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:44:39.881 INFO [http-nio-9999-exec-91] listingServlet.doGet userid: 1
+09-Mar-2023 00:44:39.892 INFO [http-nio-9999-exec-91] listingServlet.obtainListing Listing result =2
+09-Mar-2023 00:44:39.892 INFO [http-nio-9999-exec-91] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:44:41.276 INFO [http-nio-9999-exec-92] listingServlet.doPost userid: 1
+09-Mar-2023 00:44:41.280 INFO [http-nio-9999-exec-92] listingServlet.doPost POST
+09-Mar-2023 00:44:41.280 INFO [http-nio-9999-exec-92] listingServlet.doPost Make Purchase
+09-Mar-2023 00:44:41.280 INFO [http-nio-9999-exec-92] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:44:41.280 INFO [http-nio-9999-exec-92] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:44:49.471 INFO [http-nio-9999-exec-93] checkoutServlet.doPost MyServlet called
+09-Mar-2023 00:44:49.490 INFO [http-nio-9999-exec-93] checkoutServlet.doPost Item TYPE!!!!!!= gpus
+09-Mar-2023 00:44:49.491 INFO [http-nio-9999-exec-93] checkoutServlet.doPost purrchased
+09-Mar-2023 00:47:43.692 INFO [http-nio-9999-exec-87] listingServlet.doGet userid: 1
+09-Mar-2023 00:47:43.702 INFO [http-nio-9999-exec-87] listingServlet.obtainListing Listing result =15
+09-Mar-2023 00:47:43.703 INFO [http-nio-9999-exec-87] listingServlet.createHeader listing type = cpus
+09-Mar-2023 00:47:44.049 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] has started
+09-Mar-2023 00:47:44.233 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2023 00:47:44.234 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/oldegg] is completed
+09-Mar-2023 00:47:44.877 INFO [http-nio-9999-exec-91] listingServlet.doPost userid: 1
+09-Mar-2023 00:47:44.883 INFO [http-nio-9999-exec-91] listingServlet.doPost POST
+09-Mar-2023 00:47:44.883 INFO [http-nio-9999-exec-91] listingServlet.doPost Make Purchase
+09-Mar-2023 00:47:44.884 INFO [http-nio-9999-exec-91] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:47:44.884 INFO [http-nio-9999-exec-91] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:47:52.344 INFO [http-nio-9999-exec-86] checkoutServlet.doPost MyServlet called
+09-Mar-2023 00:47:52.350 INFO [http-nio-9999-exec-86] checkoutServlet.doPost Item TYPE!!!!!!= cpus
+09-Mar-2023 00:47:52.352 INFO [http-nio-9999-exec-86] checkoutServlet.doPost purrchased
+09-Mar-2023 00:48:23.419 INFO [http-nio-9999-exec-92] listingServlet.doGet userid: 1
+09-Mar-2023 00:48:23.423 INFO [http-nio-9999-exec-92] listingServlet.obtainListing Listing result =2
+09-Mar-2023 00:48:23.424 INFO [http-nio-9999-exec-92] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:48:24.639 INFO [http-nio-9999-exec-90] listingServlet.doPost userid: 1
+09-Mar-2023 00:48:24.641 INFO [http-nio-9999-exec-90] listingServlet.doPost POST
+09-Mar-2023 00:48:24.641 INFO [http-nio-9999-exec-90] listingServlet.doPost Add to cart
+09-Mar-2023 00:48:24.641 INFO [http-nio-9999-exec-90] listingServlet.addtocart In function
+09-Mar-2023 00:48:24.643 INFO [http-nio-9999-exec-90] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:48:28.160 INFO [http-nio-9999-exec-87] listingServlet.doGet userid: 1
+09-Mar-2023 00:48:28.164 INFO [http-nio-9999-exec-87] listingServlet.obtainListing Listing result =12
+09-Mar-2023 00:48:28.165 INFO [http-nio-9999-exec-87] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:48:29.766 INFO [http-nio-9999-exec-94] listingServlet.doPost userid: 1
+09-Mar-2023 00:48:29.769 INFO [http-nio-9999-exec-94] listingServlet.doPost POST
+09-Mar-2023 00:48:29.769 INFO [http-nio-9999-exec-94] listingServlet.doPost Add to cart
+09-Mar-2023 00:48:29.769 INFO [http-nio-9999-exec-94] listingServlet.addtocart In function
+09-Mar-2023 00:48:29.771 INFO [http-nio-9999-exec-94] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:48:31.450 INFO [http-nio-9999-exec-97] listingServlet.doGet userid: 1
+09-Mar-2023 00:48:31.453 INFO [http-nio-9999-exec-97] listingServlet.obtainListing Listing result =12
+09-Mar-2023 00:48:31.453 INFO [http-nio-9999-exec-97] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:48:32.076 INFO [http-nio-9999-exec-89] listingServlet.doPost userid: 1
+09-Mar-2023 00:48:32.080 INFO [http-nio-9999-exec-89] listingServlet.doPost POST
+09-Mar-2023 00:48:32.080 INFO [http-nio-9999-exec-89] listingServlet.doPost Add to cart
+09-Mar-2023 00:48:32.080 INFO [http-nio-9999-exec-89] listingServlet.addtocart In function
+09-Mar-2023 00:48:32.081 INFO [http-nio-9999-exec-89] listingServlet.addtocart Added to cart!
+09-Mar-2023 00:49:53.063 INFO [http-nio-9999-exec-101] loginServlet.doGet MyServlet called
+09-Mar-2023 00:55:45.062 INFO [http-nio-9999-exec-96] listingServlet.doGet userid: 1
+09-Mar-2023 00:55:45.070 INFO [http-nio-9999-exec-96] listingServlet.obtainListing Listing result =4
+09-Mar-2023 00:55:45.071 INFO [http-nio-9999-exec-96] listingServlet.createHeader listing type = cases
+09-Mar-2023 00:55:47.776 INFO [http-nio-9999-exec-97] listingServlet.doPost userid: 1
+09-Mar-2023 00:55:47.780 INFO [http-nio-9999-exec-97] listingServlet.doPost POST
+09-Mar-2023 00:55:47.780 INFO [http-nio-9999-exec-97] listingServlet.doPost Make Purchase
+09-Mar-2023 00:55:47.780 INFO [http-nio-9999-exec-97] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:55:47.780 INFO [http-nio-9999-exec-97] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:55:52.082 INFO [http-nio-9999-exec-104] listingServlet.doPost userid: 1
+09-Mar-2023 00:55:52.085 INFO [http-nio-9999-exec-104] listingServlet.doPost POST
+09-Mar-2023 00:55:52.085 INFO [http-nio-9999-exec-104] listingServlet.doPost Make Purchase
+09-Mar-2023 00:55:52.085 INFO [http-nio-9999-exec-104] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:55:52.085 INFO [http-nio-9999-exec-104] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 00:58:40.080 INFO [http-nio-9999-exec-100] listingServlet.doGet userid: 1
+09-Mar-2023 00:58:40.086 INFO [http-nio-9999-exec-100] listingServlet.obtainListing Listing result =6
+09-Mar-2023 00:58:40.087 INFO [http-nio-9999-exec-100] listingServlet.createHeader listing type = rams
+09-Mar-2023 00:58:48.609 INFO [http-nio-9999-exec-101] listingServlet.doGet userid: 1
+09-Mar-2023 00:58:48.611 INFO [http-nio-9999-exec-101] listingServlet.obtainListing Listing result =12
+09-Mar-2023 00:58:48.612 INFO [http-nio-9999-exec-101] listingServlet.createHeader listing type = gpus
+09-Mar-2023 00:58:50.078 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 00:58:50.081 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 00:58:50.081 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 00:58:50.081 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 00:58:50.081 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:02:45.302 INFO [http-nio-9999-exec-103] listingServlet.doPost userid: 1
+09-Mar-2023 01:02:45.310 INFO [http-nio-9999-exec-103] listingServlet.doPost POST
+09-Mar-2023 01:02:45.311 INFO [http-nio-9999-exec-103] listingServlet.doPost Make Purchase
+09-Mar-2023 01:02:45.311 INFO [http-nio-9999-exec-103] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:02:45.311 INFO [http-nio-9999-exec-103] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:02:45.397 INFO [http-nio-9999-exec-103] listingServlet.purchaseItem Failed to purchaseorg.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [213] in the jsp file: [/checkout.jsp]
+Syntax error on tokens, delete these tokens
+210:                 <input name="itemID" value="<%=response.getHeader("itemID") %>">
+211:                 <input name="listingId" value="<%=response.getHeader("listingId")%>"> 
+212:                 <input name="uid" <% if(response.getHeader("uid") != null)
+213:                 -->
+214: 
+215:                 {%>value="<%=response.getHeader("uid") %>"<% } else {%>value=""
+216:                 <%}%> />
+
+
+An error occurred at line: [215] in the jsp file: [/checkout.jsp]
+Syntax error on token "else", finally expected
+212:                 <input name="uid" <% if(response.getHeader("uid") != null)
+213:                 -->
+214: 
+215:                 {%>value="<%=response.getHeader("uid") %>"<% } else {%>value=""
+216:                 <%}%> />
+217:                 <div class="row">
+218:                   <div class="col-lg-6">
+
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [549] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [559] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [560] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [562] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+09-Mar-2023 01:02:52.508 INFO [http-nio-9999-exec-96] listingServlet.doGet userid: 1
+09-Mar-2023 01:02:52.512 INFO [http-nio-9999-exec-96] listingServlet.obtainListing Listing result =12
+09-Mar-2023 01:02:52.513 INFO [http-nio-9999-exec-96] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:02:53.462 INFO [http-nio-9999-exec-97] listingServlet.doPost userid: 1
+09-Mar-2023 01:02:53.465 INFO [http-nio-9999-exec-97] listingServlet.doPost POST
+09-Mar-2023 01:02:53.466 INFO [http-nio-9999-exec-97] listingServlet.doPost Make Purchase
+09-Mar-2023 01:02:53.466 INFO [http-nio-9999-exec-97] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:02:53.466 INFO [http-nio-9999-exec-97] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:02:53.532 INFO [http-nio-9999-exec-97] listingServlet.purchaseItem Failed to purchaseorg.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [213] in the jsp file: [/checkout.jsp]
+Syntax error on tokens, delete these tokens
+210:                 <input name="itemID" value="<%=response.getHeader("itemID") %>">
+211:                 <input name="listingId" value="<%=response.getHeader("listingId")%>"> 
+212:                 <input name="uid" <% if(response.getHeader("uid") != null)
+213:                 -->
+214: 
+215:                 {%>value="<%=response.getHeader("uid") %>"<% } else {%>value=""
+216:                 <%}%> />
+
+
+An error occurred at line: [215] in the jsp file: [/checkout.jsp]
+Syntax error on token "else", finally expected
+212:                 <input name="uid" <% if(response.getHeader("uid") != null)
+213:                 -->
+214: 
+215:                 {%>value="<%=response.getHeader("uid") %>"<% } else {%>value=""
+216:                 <%}%> />
+217:                 <div class="row">
+218:                   <div class="col-lg-6">
+
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [548] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [549] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [559] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [560] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [562] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+09-Mar-2023 01:03:34.804 INFO [http-nio-9999-exec-98] listingServlet.doGet userid: 1
+09-Mar-2023 01:03:34.822 INFO [http-nio-9999-exec-98] listingServlet.obtainListing Listing result =14
+09-Mar-2023 01:03:34.825 INFO [http-nio-9999-exec-98] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:03:35.867 INFO [http-nio-9999-exec-99] listingServlet.doPost userid: 1
+09-Mar-2023 01:03:35.869 INFO [http-nio-9999-exec-99] listingServlet.doPost POST
+09-Mar-2023 01:03:35.870 INFO [http-nio-9999-exec-99] listingServlet.doPost Make Purchase
+09-Mar-2023 01:03:35.870 INFO [http-nio-9999-exec-99] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:03:35.870 INFO [http-nio-9999-exec-99] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:03:35.947 INFO [http-nio-9999-exec-99] listingServlet.purchaseItem Failed to purchaseorg.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [209] in the jsp file: [/checkout.jsp]
+Syntax error on token "else", finally expected
+206:                 
+207:                 
+208: 
+209:                 {%>value="<%=response.getHeader("uid") %>"<% } else {%>value=""
+210:                 <%}%> />
+211:                 <div class="row">
+212:                   <div class="col-lg-6">
+
+
+An error occurred at line: [532] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [534] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [534] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [535] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [535] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [537] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [538] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [540] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [543] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [543] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [546] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [547] in the generated java file: [/Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/work/Catalina/localhost/oldegg/org/apache/jsp/checkout_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+09-Mar-2023 01:03:41.925 INFO [http-nio-9999-exec-100] listingServlet.doPost userid: 1
+09-Mar-2023 01:03:41.927 INFO [http-nio-9999-exec-100] listingServlet.doPost POST
+09-Mar-2023 01:03:41.928 INFO [http-nio-9999-exec-100] listingServlet.doPost Make Purchase
+09-Mar-2023 01:03:41.928 INFO [http-nio-9999-exec-100] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:03:41.928 INFO [http-nio-9999-exec-100] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:04:28.488 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 01:04:28.499 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 01:04:28.499 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 01:04:28.500 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:04:28.500 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:04:30.660 INFO [http-nio-9999-exec-103] listingServlet.doGet userid: 1
+09-Mar-2023 01:04:30.662 INFO [http-nio-9999-exec-103] listingServlet.obtainListing Listing result =5
+09-Mar-2023 01:04:30.663 INFO [http-nio-9999-exec-103] listingServlet.createHeader listing type = coolers
+09-Mar-2023 01:04:31.607 INFO [http-nio-9999-exec-96] listingServlet.doPost userid: 1
+09-Mar-2023 01:04:31.610 INFO [http-nio-9999-exec-96] listingServlet.doPost POST
+09-Mar-2023 01:04:31.611 INFO [http-nio-9999-exec-96] listingServlet.doPost Make Purchase
+09-Mar-2023 01:04:31.611 INFO [http-nio-9999-exec-96] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:04:31.611 INFO [http-nio-9999-exec-96] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:04:43.446 INFO [http-nio-9999-exec-97] listingServlet.doPost userid: 1
+09-Mar-2023 01:04:43.448 INFO [http-nio-9999-exec-97] listingServlet.doPost POST
+09-Mar-2023 01:04:43.448 INFO [http-nio-9999-exec-97] listingServlet.doPost Make Purchase
+09-Mar-2023 01:04:43.448 INFO [http-nio-9999-exec-97] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:04:43.448 INFO [http-nio-9999-exec-97] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:05:58.571 INFO [http-nio-9999-exec-98] listingServlet.doPost userid: 1
+09-Mar-2023 01:05:58.582 INFO [http-nio-9999-exec-98] listingServlet.doPost POST
+09-Mar-2023 01:05:58.582 INFO [http-nio-9999-exec-98] listingServlet.doPost Make Purchase
+09-Mar-2023 01:05:58.583 INFO [http-nio-9999-exec-98] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:05:58.583 INFO [http-nio-9999-exec-98] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:06:17.234 INFO [http-nio-9999-exec-99] listingServlet.doPost userid: 1
+09-Mar-2023 01:06:17.236 INFO [http-nio-9999-exec-99] listingServlet.doPost POST
+09-Mar-2023 01:06:17.236 INFO [http-nio-9999-exec-99] listingServlet.doPost Make Purchase
+09-Mar-2023 01:06:17.236 INFO [http-nio-9999-exec-99] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:06:17.236 INFO [http-nio-9999-exec-99] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:06:29.228 INFO [http-nio-9999-exec-100] listingServlet.doPost userid: 1
+09-Mar-2023 01:06:29.231 INFO [http-nio-9999-exec-100] listingServlet.doPost POST
+09-Mar-2023 01:06:29.231 INFO [http-nio-9999-exec-100] listingServlet.doPost Make Purchase
+09-Mar-2023 01:06:29.231 INFO [http-nio-9999-exec-100] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:06:29.231 INFO [http-nio-9999-exec-100] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:08:30.517 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 01:08:30.526 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 01:08:30.527 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 01:08:30.527 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:08:30.527 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:09:23.755 INFO [http-nio-9999-exec-103] listingServlet.doPost userid: 1
+09-Mar-2023 01:09:23.764 INFO [http-nio-9999-exec-103] listingServlet.doPost POST
+09-Mar-2023 01:09:23.764 INFO [http-nio-9999-exec-103] listingServlet.doPost Make Purchase
+09-Mar-2023 01:09:23.764 INFO [http-nio-9999-exec-103] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:09:23.764 INFO [http-nio-9999-exec-103] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:10:59.753 INFO [http-nio-9999-exec-100] listingServlet.doGet userid: 1
+09-Mar-2023 01:10:59.762 INFO [http-nio-9999-exec-100] listingServlet.obtainListing Listing result =9
+09-Mar-2023 01:10:59.763 INFO [http-nio-9999-exec-100] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:11:00.821 INFO [http-nio-9999-exec-101] listingServlet.doPost userid: 1
+09-Mar-2023 01:11:00.824 INFO [http-nio-9999-exec-101] listingServlet.doPost POST
+09-Mar-2023 01:11:00.825 INFO [http-nio-9999-exec-101] listingServlet.doPost Make Purchase
+09-Mar-2023 01:11:00.825 INFO [http-nio-9999-exec-101] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:11:00.825 INFO [http-nio-9999-exec-101] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:11:07.901 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 01:11:07.903 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 01:11:07.903 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 01:11:07.903 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:11:07.903 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:11:26.605 INFO [http-nio-9999-exec-102] listingServlet.doPost userid: 1
+09-Mar-2023 01:11:26.616 INFO [http-nio-9999-exec-102] listingServlet.doPost POST
+09-Mar-2023 01:11:26.616 INFO [http-nio-9999-exec-102] listingServlet.doPost Make Purchase
+09-Mar-2023 01:11:26.616 INFO [http-nio-9999-exec-102] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:11:26.616 INFO [http-nio-9999-exec-102] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:11:40.199 INFO [http-nio-9999-exec-103] listingServlet.doPost userid: 1
+09-Mar-2023 01:11:40.204 INFO [http-nio-9999-exec-103] listingServlet.doPost POST
+09-Mar-2023 01:11:40.204 INFO [http-nio-9999-exec-103] listingServlet.doPost Make Purchase
+09-Mar-2023 01:11:40.204 INFO [http-nio-9999-exec-103] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:11:40.204 INFO [http-nio-9999-exec-103] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:11:52.976 INFO [http-nio-9999-exec-96] listingServlet.doPost userid: 1
+09-Mar-2023 01:11:52.980 INFO [http-nio-9999-exec-96] listingServlet.doPost POST
+09-Mar-2023 01:11:52.980 INFO [http-nio-9999-exec-96] listingServlet.doPost Make Purchase
+09-Mar-2023 01:11:52.980 INFO [http-nio-9999-exec-96] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:11:52.981 INFO [http-nio-9999-exec-96] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:12:00.411 INFO [http-nio-9999-exec-97] listingServlet.doPost userid: 1
+09-Mar-2023 01:12:00.414 INFO [http-nio-9999-exec-97] listingServlet.doPost POST
+09-Mar-2023 01:12:00.414 INFO [http-nio-9999-exec-97] listingServlet.doPost Make Purchase
+09-Mar-2023 01:12:00.415 INFO [http-nio-9999-exec-97] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:12:00.415 INFO [http-nio-9999-exec-97] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:13:36.928 INFO [http-nio-9999-exec-98] listingServlet.doPost userid: 1
+09-Mar-2023 01:13:36.938 INFO [http-nio-9999-exec-98] listingServlet.doPost POST
+09-Mar-2023 01:13:36.938 INFO [http-nio-9999-exec-98] listingServlet.doPost Make Purchase
+09-Mar-2023 01:13:36.938 INFO [http-nio-9999-exec-98] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:13:36.939 INFO [http-nio-9999-exec-98] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:13:50.044 INFO [http-nio-9999-exec-99] listingServlet.doPost userid: 1
+09-Mar-2023 01:13:50.046 INFO [http-nio-9999-exec-99] listingServlet.doPost POST
+09-Mar-2023 01:13:50.047 INFO [http-nio-9999-exec-99] listingServlet.doPost Make Purchase
+09-Mar-2023 01:13:50.047 INFO [http-nio-9999-exec-99] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:13:50.047 INFO [http-nio-9999-exec-99] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:16:40.579 INFO [http-nio-9999-exec-105] listingServlet.doGet userid: 1
+09-Mar-2023 01:16:40.595 INFO [http-nio-9999-exec-105] listingServlet.obtainListing Listing result =7
+09-Mar-2023 01:16:40.596 INFO [http-nio-9999-exec-105] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:16:43.000 INFO [http-nio-9999-exec-103] listingServlet.doGet userid: 1
+09-Mar-2023 01:16:43.003 INFO [http-nio-9999-exec-103] listingServlet.obtainListing Listing result =4
+09-Mar-2023 01:16:43.003 INFO [http-nio-9999-exec-103] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:16:46.093 INFO [http-nio-9999-exec-96] listingServlet.doGet userid: 1
+09-Mar-2023 01:16:46.097 INFO [http-nio-9999-exec-96] listingServlet.obtainListing Listing result =13
+09-Mar-2023 01:16:46.097 INFO [http-nio-9999-exec-96] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:18:55.510 INFO [http-nio-9999-exec-98] listingServlet.doGet userid: 1
+09-Mar-2023 01:18:55.515 INFO [http-nio-9999-exec-98] listingServlet.obtainListing Listing result =12
+09-Mar-2023 01:18:55.516 INFO [http-nio-9999-exec-98] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:18:56.200 INFO [http-nio-9999-exec-99] listingServlet.doPost userid: 1
+09-Mar-2023 01:18:56.204 INFO [http-nio-9999-exec-99] listingServlet.doPost POST
+09-Mar-2023 01:18:56.204 INFO [http-nio-9999-exec-99] listingServlet.doPost Make Purchase
+09-Mar-2023 01:18:56.204 INFO [http-nio-9999-exec-99] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:18:56.204 INFO [http-nio-9999-exec-99] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:21:21.784 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 01:21:21.795 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 01:21:21.795 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 01:21:21.796 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:21:21.796 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:22:10.613 INFO [http-nio-9999-exec-103] listingServlet.doPost userid: 1
+09-Mar-2023 01:22:10.636 INFO [http-nio-9999-exec-103] listingServlet.doPost POST
+09-Mar-2023 01:22:10.636 INFO [http-nio-9999-exec-103] listingServlet.doPost Make Purchase
+09-Mar-2023 01:22:10.636 INFO [http-nio-9999-exec-103] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:22:10.636 INFO [http-nio-9999-exec-103] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:23:16.586 INFO [http-nio-9999-exec-97] listingServlet.doPost userid: 1
+09-Mar-2023 01:23:16.596 INFO [http-nio-9999-exec-97] listingServlet.doPost POST
+09-Mar-2023 01:23:16.596 INFO [http-nio-9999-exec-97] listingServlet.doPost Make Purchase
+09-Mar-2023 01:23:16.596 INFO [http-nio-9999-exec-97] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:23:16.596 INFO [http-nio-9999-exec-97] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:23:21.645 INFO [http-nio-9999-exec-104] listingServlet.doPost userid: 1
+09-Mar-2023 01:23:21.647 INFO [http-nio-9999-exec-104] listingServlet.doPost POST
+09-Mar-2023 01:23:21.647 INFO [http-nio-9999-exec-104] listingServlet.doPost Make Purchase
+09-Mar-2023 01:23:21.647 INFO [http-nio-9999-exec-104] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:23:21.647 INFO [http-nio-9999-exec-104] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:23:38.329 INFO [http-nio-9999-exec-98] listingServlet.doPost userid: 1
+09-Mar-2023 01:23:38.339 INFO [http-nio-9999-exec-98] listingServlet.doPost POST
+09-Mar-2023 01:23:38.339 INFO [http-nio-9999-exec-98] listingServlet.doPost Make Purchase
+09-Mar-2023 01:23:38.339 INFO [http-nio-9999-exec-98] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:23:38.339 INFO [http-nio-9999-exec-98] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:23:46.105 INFO [http-nio-9999-exec-99] checkoutServlet.doPost MyServlet called
+09-Mar-2023 01:23:46.119 INFO [http-nio-9999-exec-99] checkoutServlet.doPost Item TYPE!!!!!!= gpus
+09-Mar-2023 01:23:46.121 INFO [http-nio-9999-exec-99] checkoutServlet.doPost purrchased
+09-Mar-2023 01:25:19.925 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 01:25:19.934 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 01:25:19.934 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 01:25:19.934 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:25:19.935 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:25:53.446 INFO [http-nio-9999-exec-103] listingServlet.doPost userid: 1
+09-Mar-2023 01:25:53.449 INFO [http-nio-9999-exec-103] listingServlet.doPost POST
+09-Mar-2023 01:25:53.449 INFO [http-nio-9999-exec-103] listingServlet.doPost Make Purchase
+09-Mar-2023 01:25:53.449 INFO [http-nio-9999-exec-103] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:25:53.449 INFO [http-nio-9999-exec-103] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:26:03.852 INFO [http-nio-9999-exec-96] listingServlet.doPost userid: 1
+09-Mar-2023 01:26:03.861 INFO [http-nio-9999-exec-96] listingServlet.doPost POST
+09-Mar-2023 01:26:03.861 INFO [http-nio-9999-exec-96] listingServlet.doPost Make Purchase
+09-Mar-2023 01:26:03.862 INFO [http-nio-9999-exec-96] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:26:03.862 INFO [http-nio-9999-exec-96] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:28:18.477 INFO [http-nio-9999-exec-104] listingServlet.doPost userid: 1
+09-Mar-2023 01:28:18.493 INFO [http-nio-9999-exec-104] listingServlet.doPost POST
+09-Mar-2023 01:28:18.493 INFO [http-nio-9999-exec-104] listingServlet.doPost Make Purchase
+09-Mar-2023 01:28:18.493 INFO [http-nio-9999-exec-104] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:28:18.493 INFO [http-nio-9999-exec-104] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:28:20.407 INFO [http-nio-9999-exec-98] listingServlet.doGet userid: 1
+09-Mar-2023 01:28:20.411 INFO [http-nio-9999-exec-98] listingServlet.obtainListing Listing result =12
+09-Mar-2023 01:28:20.412 INFO [http-nio-9999-exec-98] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:28:22.479 INFO [http-nio-9999-exec-99] listingServlet.doGet userid: 1
+09-Mar-2023 01:28:22.482 INFO [http-nio-9999-exec-99] listingServlet.obtainListing Listing result =14
+09-Mar-2023 01:28:22.482 INFO [http-nio-9999-exec-99] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:28:23.822 INFO [http-nio-9999-exec-100] listingServlet.doPost userid: 1
+09-Mar-2023 01:28:23.825 INFO [http-nio-9999-exec-100] listingServlet.doPost POST
+09-Mar-2023 01:28:23.825 INFO [http-nio-9999-exec-100] listingServlet.doPost Make Purchase
+09-Mar-2023 01:28:23.825 INFO [http-nio-9999-exec-100] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:28:23.826 INFO [http-nio-9999-exec-100] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:28:25.290 INFO [http-nio-9999-exec-101] listingServlet.doGet userid: 1
+09-Mar-2023 01:28:25.292 INFO [http-nio-9999-exec-101] listingServlet.obtainListing Listing result =14
+09-Mar-2023 01:28:25.293 INFO [http-nio-9999-exec-101] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:28:42.314 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 01:28:42.322 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 01:28:42.323 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 01:28:42.323 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:28:42.323 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:28:43.597 INFO [http-nio-9999-exec-102] listingServlet.doGet userid: 1
+09-Mar-2023 01:28:43.601 INFO [http-nio-9999-exec-102] listingServlet.obtainListing Listing result =14
+09-Mar-2023 01:28:43.602 INFO [http-nio-9999-exec-102] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:28:53.780 INFO [http-nio-9999-exec-103] listingServlet.doPost userid: 1
+09-Mar-2023 01:28:53.783 INFO [http-nio-9999-exec-103] listingServlet.doPost POST
+09-Mar-2023 01:28:53.783 INFO [http-nio-9999-exec-103] listingServlet.doPost Make Purchase
+09-Mar-2023 01:28:53.783 INFO [http-nio-9999-exec-103] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:28:53.783 INFO [http-nio-9999-exec-103] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:30:06.137 INFO [http-nio-9999-exec-97] listingServlet.doPost userid: 1
+09-Mar-2023 01:30:06.152 INFO [http-nio-9999-exec-97] listingServlet.doPost POST
+09-Mar-2023 01:30:06.152 INFO [http-nio-9999-exec-97] listingServlet.doPost Make Purchase
+09-Mar-2023 01:30:06.153 INFO [http-nio-9999-exec-97] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:30:06.153 INFO [http-nio-9999-exec-97] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:30:17.266 INFO [http-nio-9999-exec-104] listingServlet.doGet userid: 1
+09-Mar-2023 01:30:17.269 INFO [http-nio-9999-exec-104] listingServlet.obtainListing Listing result =14
+09-Mar-2023 01:30:17.270 INFO [http-nio-9999-exec-104] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:30:18.437 INFO [http-nio-9999-exec-98] listingServlet.doGet userid: 1
+09-Mar-2023 01:30:18.439 INFO [http-nio-9999-exec-98] listingServlet.obtainListing Listing result =7
+09-Mar-2023 01:30:18.440 INFO [http-nio-9999-exec-98] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:35:18.347 INFO [http-nio-9999-exec-96] listingServlet.doGet userid: 1
+09-Mar-2023 01:35:18.352 INFO [http-nio-9999-exec-96] listingServlet.obtainListing Listing result =4
+09-Mar-2023 01:35:18.352 INFO [http-nio-9999-exec-96] listingServlet.createHeader listing type = storages
+09-Mar-2023 01:36:27.429 INFO [http-nio-9999-exec-98] listingServlet.doGet userid: 1
+09-Mar-2023 01:36:27.432 INFO [http-nio-9999-exec-98] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:36:27.433 INFO [http-nio-9999-exec-98] listingServlet.createHeader listing type = motherboards
+09-Mar-2023 01:36:33.291 INFO [http-nio-9999-exec-99] listingServlet.doPost userid: 1
+09-Mar-2023 01:36:33.294 INFO [http-nio-9999-exec-99] listingServlet.doPost POST
+09-Mar-2023 01:36:33.295 INFO [http-nio-9999-exec-99] listingServlet.doPost Add to cart
+09-Mar-2023 01:36:33.295 INFO [http-nio-9999-exec-99] listingServlet.addtocart In function
+09-Mar-2023 01:36:33.306 INFO [http-nio-9999-exec-99] listingServlet.addtocart Added to cart!
+09-Mar-2023 01:36:38.011 INFO [http-nio-9999-exec-101] listingServlet.doPost userid: 1
+09-Mar-2023 01:36:38.014 INFO [http-nio-9999-exec-101] listingServlet.doPost POST
+09-Mar-2023 01:36:38.014 INFO [http-nio-9999-exec-101] listingServlet.doPost Make Purchase
+09-Mar-2023 01:36:38.014 INFO [http-nio-9999-exec-101] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:36:38.014 INFO [http-nio-9999-exec-101] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:36:40.399 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 01:36:40.403 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 01:36:40.403 INFO [http-nio-9999-exec-105] listingServlet.doPost Add to cart
+09-Mar-2023 01:36:40.403 INFO [http-nio-9999-exec-105] listingServlet.addtocart In function
+09-Mar-2023 01:36:40.406 INFO [http-nio-9999-exec-105] listingServlet.addtocart Added to cart!
+09-Mar-2023 01:43:03.927 INFO [http-nio-9999-exec-102] listingServlet.doGet userid: 1
+09-Mar-2023 01:43:03.932 INFO [http-nio-9999-exec-102] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:43:03.934 INFO [http-nio-9999-exec-102] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:43:05.224 INFO [http-nio-9999-exec-103] listingServlet.doPost userid: 1
+09-Mar-2023 01:43:05.228 INFO [http-nio-9999-exec-103] listingServlet.doPost POST
+09-Mar-2023 01:43:05.228 INFO [http-nio-9999-exec-103] listingServlet.doPost Make Purchase
+09-Mar-2023 01:43:05.228 INFO [http-nio-9999-exec-103] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:43:05.228 INFO [http-nio-9999-exec-103] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:43:24.404 INFO [http-nio-9999-exec-97] checkoutServlet.doPost MyServlet called
+09-Mar-2023 01:43:24.419 INFO [http-nio-9999-exec-97] checkoutServlet.doPost Item TYPE!!!!!!= gpus
+09-Mar-2023 01:43:24.420 INFO [http-nio-9999-exec-97] checkoutServlet.doPost purrchased
+09-Mar-2023 01:43:38.638 INFO [http-nio-9999-exec-100] listingServlet.doGet userid: 1
+09-Mar-2023 01:43:38.641 INFO [http-nio-9999-exec-100] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:43:38.642 INFO [http-nio-9999-exec-100] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:44:05.152 INFO [http-nio-9999-exec-105] listingServlet.doGet userid: 1
+09-Mar-2023 01:44:05.162 INFO [http-nio-9999-exec-105] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:44:05.163 INFO [http-nio-9999-exec-105] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:44:06.665 INFO [http-nio-9999-exec-102] listingServlet.doPost userid: 1
+09-Mar-2023 01:44:06.669 INFO [http-nio-9999-exec-102] listingServlet.doPost POST
+09-Mar-2023 01:44:06.669 INFO [http-nio-9999-exec-102] listingServlet.doPost Make Purchase
+09-Mar-2023 01:44:06.669 INFO [http-nio-9999-exec-102] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:44:06.669 INFO [http-nio-9999-exec-102] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:44:14.544 INFO [http-nio-9999-exec-103] checkoutServlet.doPost MyServlet called
+09-Mar-2023 01:44:14.549 INFO [http-nio-9999-exec-103] checkoutServlet.doPost Item TYPE!!!!!!= gpus
+09-Mar-2023 01:44:14.552 INFO [http-nio-9999-exec-103] checkoutServlet.doPost purrchased
+09-Mar-2023 01:45:05.211 INFO [http-nio-9999-exec-104] listingServlet.doPost userid: 1
+09-Mar-2023 01:45:05.218 INFO [http-nio-9999-exec-104] listingServlet.doPost POST
+09-Mar-2023 01:45:05.218 INFO [http-nio-9999-exec-104] listingServlet.doPost Make Purchase
+09-Mar-2023 01:45:05.218 INFO [http-nio-9999-exec-104] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:45:05.219 INFO [http-nio-9999-exec-104] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:46:57.076 INFO [http-nio-9999-exec-99] listingServlet.doGet userid: 1
+09-Mar-2023 01:46:57.084 INFO [http-nio-9999-exec-99] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:46:57.085 INFO [http-nio-9999-exec-99] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:47:00.921 INFO [http-nio-9999-exec-101] listingServlet.doGet userid: 1
+09-Mar-2023 01:47:00.924 INFO [http-nio-9999-exec-101] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:47:00.925 INFO [http-nio-9999-exec-101] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:47:09.664 INFO [http-nio-9999-exec-105] listingServlet.doGet userid: 1
+09-Mar-2023 01:47:09.679 INFO [http-nio-9999-exec-105] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:47:09.680 INFO [http-nio-9999-exec-105] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:47:10.842 INFO [http-nio-9999-exec-102] listingServlet.doGet userid: 1
+09-Mar-2023 01:47:10.845 INFO [http-nio-9999-exec-102] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:47:10.845 INFO [http-nio-9999-exec-102] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:47:11.615 INFO [http-nio-9999-exec-103] listingServlet.doGet userid: 1
+09-Mar-2023 01:47:11.618 INFO [http-nio-9999-exec-103] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:47:11.619 INFO [http-nio-9999-exec-103] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:47:12.347 INFO [http-nio-9999-exec-96] listingServlet.doGet userid: 1
+09-Mar-2023 01:47:12.352 INFO [http-nio-9999-exec-96] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:47:12.353 INFO [http-nio-9999-exec-96] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:47:27.864 INFO [http-nio-9999-exec-98] listingServlet.doGet userid: 1
+09-Mar-2023 01:47:27.868 INFO [http-nio-9999-exec-98] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:47:27.869 INFO [http-nio-9999-exec-98] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:47:38.608 INFO [http-nio-9999-exec-99] listingServlet.doGet userid: 1
+09-Mar-2023 01:47:38.611 INFO [http-nio-9999-exec-99] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:47:38.611 INFO [http-nio-9999-exec-99] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:47:40.072 INFO [http-nio-9999-exec-100] listingServlet.doPost userid: 1
+09-Mar-2023 01:47:40.074 INFO [http-nio-9999-exec-100] listingServlet.doPost POST
+09-Mar-2023 01:47:40.074 INFO [http-nio-9999-exec-100] listingServlet.doPost Make Purchase
+09-Mar-2023 01:47:40.074 INFO [http-nio-9999-exec-100] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:47:40.074 INFO [http-nio-9999-exec-100] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:51:26.558 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 01:51:26.568 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 01:51:26.569 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 01:51:26.569 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:51:26.569 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:51:43.979 INFO [http-nio-9999-exec-102] listingServlet.doPost userid: 1
+09-Mar-2023 01:51:43.981 INFO [http-nio-9999-exec-102] listingServlet.doPost POST
+09-Mar-2023 01:51:43.981 INFO [http-nio-9999-exec-102] listingServlet.doPost Make Purchase
+09-Mar-2023 01:51:43.981 INFO [http-nio-9999-exec-102] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:51:43.981 INFO [http-nio-9999-exec-102] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:51:59.004 INFO [http-nio-9999-exec-97] listingServlet.doGet userid: 1
+09-Mar-2023 01:51:59.009 INFO [http-nio-9999-exec-97] listingServlet.obtainListing Listing result =18
+09-Mar-2023 01:51:59.010 INFO [http-nio-9999-exec-97] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:52:00.672 INFO [http-nio-9999-exec-104] listingServlet.doPost userid: 1
+09-Mar-2023 01:52:00.675 INFO [http-nio-9999-exec-104] listingServlet.doPost POST
+09-Mar-2023 01:52:00.675 INFO [http-nio-9999-exec-104] listingServlet.doPost Make Purchase
+09-Mar-2023 01:52:00.675 INFO [http-nio-9999-exec-104] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:52:00.675 INFO [http-nio-9999-exec-104] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:53:38.579 INFO [http-nio-9999-exec-99] listingServlet.doPost userid: 1
+09-Mar-2023 01:53:38.604 INFO [http-nio-9999-exec-99] listingServlet.doPost POST
+09-Mar-2023 01:53:38.604 INFO [http-nio-9999-exec-99] listingServlet.doPost Make Purchase
+09-Mar-2023 01:53:38.605 INFO [http-nio-9999-exec-99] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:53:38.605 INFO [http-nio-9999-exec-99] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:53:56.886 INFO [http-nio-9999-exec-100] listingServlet.doPost userid: 1
+09-Mar-2023 01:53:56.889 INFO [http-nio-9999-exec-100] listingServlet.doPost POST
+09-Mar-2023 01:53:56.889 INFO [http-nio-9999-exec-100] listingServlet.doPost Make Purchase
+09-Mar-2023 01:53:56.889 INFO [http-nio-9999-exec-100] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:53:56.889 INFO [http-nio-9999-exec-100] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:54:08.148 INFO [http-nio-9999-exec-105] listingServlet.doGet userid: 1
+09-Mar-2023 01:54:08.151 INFO [http-nio-9999-exec-105] listingServlet.obtainListing Listing result =11
+09-Mar-2023 01:54:08.152 INFO [http-nio-9999-exec-105] listingServlet.createHeader listing type = motherboards
+09-Mar-2023 01:54:09.087 INFO [http-nio-9999-exec-102] listingServlet.doPost userid: 1
+09-Mar-2023 01:54:09.090 INFO [http-nio-9999-exec-102] listingServlet.doPost POST
+09-Mar-2023 01:54:09.090 INFO [http-nio-9999-exec-102] listingServlet.doPost Make Purchase
+09-Mar-2023 01:54:09.090 INFO [http-nio-9999-exec-102] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:54:09.090 INFO [http-nio-9999-exec-102] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:54:17.542 INFO [http-nio-9999-exec-96] listingServlet.doGet userid: 1
+09-Mar-2023 01:54:17.545 INFO [http-nio-9999-exec-96] listingServlet.obtainListing Listing result =9
+09-Mar-2023 01:54:17.545 INFO [http-nio-9999-exec-96] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:55:28.597 INFO [http-nio-9999-exec-104] listingServlet.doGet userid: 1
+09-Mar-2023 01:55:28.607 INFO [http-nio-9999-exec-104] listingServlet.obtainListing Listing result =9
+09-Mar-2023 01:55:28.607 INFO [http-nio-9999-exec-104] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:55:30.886 INFO [http-nio-9999-exec-98] listingServlet.doGet userid: 1
+09-Mar-2023 01:55:30.890 INFO [http-nio-9999-exec-98] listingServlet.obtainListing Listing result =9
+09-Mar-2023 01:55:30.890 INFO [http-nio-9999-exec-98] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:55:33.349 INFO [http-nio-9999-exec-99] listingServlet.doPost userid: 1
+09-Mar-2023 01:55:33.351 INFO [http-nio-9999-exec-99] listingServlet.doPost POST
+09-Mar-2023 01:55:33.351 INFO [http-nio-9999-exec-99] listingServlet.doPost Make Purchase
+09-Mar-2023 01:55:33.351 INFO [http-nio-9999-exec-99] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:55:33.351 INFO [http-nio-9999-exec-99] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:55:47.068 INFO [http-nio-9999-exec-105] listingServlet.doGet userid: 1
+09-Mar-2023 01:55:47.072 INFO [http-nio-9999-exec-105] listingServlet.obtainListing Listing result =12
+09-Mar-2023 01:55:47.072 INFO [http-nio-9999-exec-105] listingServlet.createHeader listing type = gpus
+09-Mar-2023 01:57:44.113 INFO [http-nio-9999-exec-104] listingServlet.doGet userid: 1
+09-Mar-2023 01:57:44.118 INFO [http-nio-9999-exec-104] listingServlet.obtainListing Listing result =3
+09-Mar-2023 01:57:44.119 INFO [http-nio-9999-exec-104] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:57:45.899 INFO [http-nio-9999-exec-98] listingServlet.doPost userid: 1
+09-Mar-2023 01:57:45.902 INFO [http-nio-9999-exec-98] listingServlet.doPost POST
+09-Mar-2023 01:57:45.902 INFO [http-nio-9999-exec-98] listingServlet.doPost Make Purchase
+09-Mar-2023 01:57:45.902 INFO [http-nio-9999-exec-98] listingServlet.purchaseItem In puchase function
+09-Mar-2023 01:57:45.902 INFO [http-nio-9999-exec-98] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 01:57:50.059 INFO [http-nio-9999-exec-99] listingServlet.doGet userid: 1
+09-Mar-2023 01:57:50.063 INFO [http-nio-9999-exec-99] listingServlet.obtainListing Listing result =4
+09-Mar-2023 01:57:50.063 INFO [http-nio-9999-exec-99] listingServlet.createHeader listing type = cpus
+09-Mar-2023 01:57:55.882 INFO [http-nio-9999-exec-101] listingServlet.doGet userid: 1
+09-Mar-2023 01:57:55.884 INFO [http-nio-9999-exec-101] listingServlet.obtainListing Listing result =15
+09-Mar-2023 01:57:55.885 INFO [http-nio-9999-exec-101] listingServlet.createHeader listing type = cpus
+09-Mar-2023 02:26:18.977 INFO [http-nio-9999-exec-100] listingServlet.doGet userid: 1
+09-Mar-2023 02:26:18.983 INFO [http-nio-9999-exec-100] listingServlet.obtainListing Listing result =18
+09-Mar-2023 02:26:18.985 INFO [http-nio-9999-exec-100] listingServlet.createHeader listing type = motherboards
+09-Mar-2023 02:26:20.442 INFO [http-nio-9999-exec-101] listingServlet.doPost userid: 1
+09-Mar-2023 02:26:20.446 INFO [http-nio-9999-exec-101] listingServlet.doPost POST
+09-Mar-2023 02:26:20.446 INFO [http-nio-9999-exec-101] listingServlet.doPost Make Purchase
+09-Mar-2023 02:26:20.446 INFO [http-nio-9999-exec-101] listingServlet.purchaseItem In puchase function
+09-Mar-2023 02:26:20.447 INFO [http-nio-9999-exec-101] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 02:26:36.897 INFO [http-nio-9999-exec-105] listingServlet.doPost userid: 1
+09-Mar-2023 02:26:36.899 INFO [http-nio-9999-exec-105] listingServlet.doPost POST
+09-Mar-2023 02:26:36.899 INFO [http-nio-9999-exec-105] listingServlet.doPost Make Purchase
+09-Mar-2023 02:26:36.899 INFO [http-nio-9999-exec-105] listingServlet.purchaseItem In puchase function
+09-Mar-2023 02:26:36.900 INFO [http-nio-9999-exec-105] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 02:26:49.977 INFO [http-nio-9999-exec-102] listingServlet.doPost userid: 1
+09-Mar-2023 02:26:49.983 INFO [http-nio-9999-exec-102] listingServlet.doPost POST
+09-Mar-2023 02:26:49.983 INFO [http-nio-9999-exec-102] listingServlet.doPost Make Purchase
+09-Mar-2023 02:26:49.984 INFO [http-nio-9999-exec-102] listingServlet.purchaseItem In puchase function
+09-Mar-2023 02:26:49.984 INFO [http-nio-9999-exec-102] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 02:27:21.431 INFO [http-nio-9999-exec-97] listingServlet.doGet userid: 1
+09-Mar-2023 02:27:21.437 INFO [http-nio-9999-exec-97] listingServlet.obtainListing Listing result =13
+09-Mar-2023 02:27:21.438 INFO [http-nio-9999-exec-97] listingServlet.createHeader listing type = motherboards
+09-Mar-2023 09:47:14.219 INFO [http-nio-9999-exec-102] listingServlet.doGet userid: 1
+09-Mar-2023 09:47:14.224 INFO [http-nio-9999-exec-102] listingServlet.obtainListing Listing result =13
+09-Mar-2023 09:47:14.225 INFO [http-nio-9999-exec-102] listingServlet.createHeader listing type = motherboards
+09-Mar-2023 09:47:15.412 INFO [http-nio-9999-exec-96] listingServlet.doPost userid: 1
+09-Mar-2023 09:47:15.415 INFO [http-nio-9999-exec-96] listingServlet.doPost POST
+09-Mar-2023 09:47:15.415 INFO [http-nio-9999-exec-96] listingServlet.doPost Make Purchase
+09-Mar-2023 09:47:15.415 INFO [http-nio-9999-exec-96] listingServlet.purchaseItem In puchase function
+09-Mar-2023 09:47:15.415 INFO [http-nio-9999-exec-96] listingServlet.getUserEmailName In getUserEmailName function
+09-Mar-2023 09:48:18.432 INFO [http-nio-9999-exec-101] listingServlet.doGet userid: 1
+09-Mar-2023 09:48:18.437 INFO [http-nio-9999-exec-101] listingServlet.obtainListing Listing result =6
+09-Mar-2023 09:48:18.437 INFO [http-nio-9999-exec-101] listingServlet.createHeader listing type = rams
+09-Mar-2023 09:48:21.404 INFO [http-nio-9999-exec-97] listingServlet.doPost userid: 1
+09-Mar-2023 09:48:21.406 INFO [http-nio-9999-exec-97] listingServlet.doPost POST
+09-Mar-2023 09:48:21.406 INFO [http-nio-9999-exec-97] listingServlet.doPost Make Purchase
+09-Mar-2023 09:48:21.406 INFO [http-nio-9999-exec-97] listingServlet.purchaseItem In puchase function
+09-Mar-2023 09:48:21.406 INFO [http-nio-9999-exec-97] listingServlet.getUserEmailName In getUserEmailName function
+>>>>>>> Stashed changes

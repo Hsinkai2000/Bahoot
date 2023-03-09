@@ -1,0 +1,70 @@
+Date : 2023-03-09 11:03:53
+Directory : /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg
+Total : 38 files,  6292 codes, 31 comments, 505 blanks, all 6828 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| HTML     |         17 |      4,996 |          0 |        367 |      5,363 |
+| Java     |         15 |        883 |         26 |        117 |      1,026 |
+| CSS      |          1 |        207 |          5 |         14 |        226 |
+| XML      |          5 |        206 |          0 |          7 |        213 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                              | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                 |         38 |      6,292 |         31 |        505 |      6,828 |
+| . (Files)                                                                                                                         |         17 |      4,996 |          0 |        367 |      5,363 |
+| WEB-INF                                                                                                                           |         15 |        883 |         26 |        117 |      1,026 |
+| WEB-INF/classes                                                                                                                   |         15 |        883 |         26 |        117 |      1,026 |
+| images                                                                                                                            |          5 |        206 |          0 |          7 |        213 |
+| style                                                                                                                             |          1 |        207 |          5 |         14 |        226 |
++-----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                                          | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/Listing.class              | Java     |          8 |          0 |          0 |          8 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/Listing.java               | Java     |         12 |          0 |          4 |         16 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/Motherboards.java          | Java     |         18 |          0 |          3 |         21 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/User.class                 | Java     |          8 |          0 |          0 |          8 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/User.java                  | Java     |         14 |          0 |          3 |         17 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/checkoutServlet.class      | Java     |         39 |          0 |          0 |         39 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/checkoutServlet.java       | Java     |         97 |          5 |         12 |        114 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/groupCheckOutServlet.class | Java     |         68 |          0 |          0 |         68 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/groupCheckOutServlet.java  | Java     |        137 |          6 |         29 |        172 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/listingServlet.class       | Java     |         58 |          0 |          0 |         58 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/listingServlet.java        | Java     |        205 |          8 |         37 |        250 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/loginServlet.class         | Java     |         24 |          0 |          0 |         24 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/loginServlet.java          | Java     |         55 |          4 |          8 |         67 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/signUpServlet.class        | Java     |         44 |          0 |          0 |         44 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/WEB-INF/classes/signupservlet.java         | Java     |         96 |          3 |         21 |        120 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/cart.jsp                                   | HTML     |        331 |          0 |         23 |        354 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/cases.jsp                                  | HTML     |        288 |          0 |         24 |        312 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/checkout.jsp                               | HTML     |        372 |          0 |         18 |        390 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/coolers.jsp                                | HTML     |        288 |          0 |         23 |        311 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/cpu.jsp                                    | HTML     |        288 |          0 |         22 |        310 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/gpu.jsp                                    | HTML     |        288 |          0 |         23 |        311 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/groupcheckout.jsp                          | HTML     |        372 |          0 |         16 |        388 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/images/btn-account.svg                     | XML      |         40 |          0 |          1 |         41 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/images/btn-cart.svg                        | XML      |         40 |          0 |          1 |         41 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/images/btn-orders.svg                      | XML      |         28 |          0 |          2 |         30 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/images/btn-search.svg                      | XML      |         45 |          0 |          2 |         47 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/images/btn-wishlist.svg                    | XML      |         53 |          0 |          1 |         54 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/index.jsp                                  | HTML     |        391 |          0 |         42 |        433 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/login.jsp                                  | HTML     |        123 |          0 |          5 |        128 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/motherboards.jsp                           | HTML     |        289 |          0 |         25 |        314 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/orders.jsp                                 | HTML     |        284 |          0 |         21 |        305 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/ram.jsp                                    | HTML     |        288 |          0 |         23 |        311 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/search.jsp                                 | HTML     |        379 |          0 |         54 |        433 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/signout.jsp                                | HTML     |        206 |          0 |          5 |        211 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/signup.jsp                                 | HTML     |        187 |          0 |          3 |        190 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/storage.jsp                                | HTML     |        288 |          0 |         23 |        311 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/style/style.css                            | CSS      |        207 |          5 |         14 |        226 |
+| /Users/irfansyakir/Documents/OldEgg Project/OldEgg/apache-tomcat-10.1.5/webapps/oldegg/viewListing.jsp                            | HTML     |        334 |          0 |         17 |        351 |
+| Total                                                                                                                             |          |      6,292 |         31 |        505 |      6,828 |
++-----------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

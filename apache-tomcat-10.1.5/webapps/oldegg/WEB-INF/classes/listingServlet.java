@@ -176,6 +176,13 @@ public class listingServlet extends HttpServlet {
 
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
+
+
+            response.sendRedirect("http://localhost:9999/oldegg/index.jsp?uid=" + userID +"&cart=added");
+
+
+
+
             out.println("<html><body>");
             out.println("<p>Product has been added to cart!</p>");
             out.println("<button onclick=\"location.href='index.jsp?uid=" + userID + "'\">Go back to index</button>");

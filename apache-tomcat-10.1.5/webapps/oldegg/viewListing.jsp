@@ -78,6 +78,7 @@ pageEncoding="UTF-8"%>
           if(request.getParameter("uid") != null) {
           %>
               <a class="nav-item nav-link" href="cart.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-cart.svg" alt="Wishlist" height="30dp"/> Cart</a>
+              <a class="nav-item nav-link" href="orders.jsp?uid=<%=request.getParameter("uid")%>"><img src="./images/btn-orders.svg" alt="Wishlist" height="30dp"/> My Purchases</a>
           <%
             }%>
           <%
@@ -114,10 +115,16 @@ pageEncoding="UTF-8"%>
           </div>
           <div class="row">
             <div class="col-lg-12 pb-3">
-              <h3>$<%= response.getHeader("price") %></h3>
+              <h4>$<%= response.getHeader("price") %></h4>
             </div>
           </div>
           <div class="row">
+            <div class="col-lg-12 pb-3">
+              <h4>Stock: <%= response.getHeader("qty") %></h4>
+            </div>
+          </div>
+          <div class="row">
+          
             <div class="col-lg-12">
               <form method="post" action="viewListing">
                 <input type="hidden" name="itemID" value=<%= response.getHeader("itemID") %> ></input>
@@ -172,9 +179,13 @@ pageEncoding="UTF-8"%>
           
           <div class="row">
             <div class="col-lg-12 pb-3">
-              <p class="text-justify"><%= response.getHeader("itemInfo") %></p>
+              <strong>OldEgg Buyer Protection</strong>
+              <p class="text-justify">
+                Receive your item as described or your money back
+              </p>
             </div>
           </div>
+
         </div>
       </div>
       <div class="pb-4 pt-4"></div>
@@ -208,6 +219,7 @@ pageEncoding="UTF-8"%>
                   String link = itemset.getString("link");
                   String name = itemset.getString("name");
                   Float price = itemset.getFloat("price");
+                  String qty = itemset.getString("qty");
                 %>
                 <div class="card card-body" style="height: 500px;min-width: 300px;">
                 <img src="<%= link %>" alt="<%= name %>"" style="height: 200px;width: 200px;">
@@ -296,7 +308,7 @@ pageEncoding="UTF-8"%>
             <div class="col-md-8 col-sm-6 col-xs-12">
               <p class="copyright-text">
                 Copyright &copy; 2023 All Rights Reserved by
-                <a href="#">Ng Hsin-Kai</a> and <a href="#">Irfan Syakir</a>
+                <a href="https://www.instagram.com/asdfghjkl_hk/">Ng Hsin-Kai</a> and <a href="https://www.instagram.com/_fantrash/">Irfan Syakir</a>
               </p>
             </div>
 
