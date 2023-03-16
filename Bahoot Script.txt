@@ -5,9 +5,17 @@ use bahoot;
 drop table if exists responses;
 drop table if exists Users;
 drop table if exists questions;
+drop table if exists set;
+
+create table set (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(50),
+    ownerID int
+);
 
 create table questions (
     id int NOT NULL AUTO_INCREMENT,
+    setID int,
     question varchar(150),
     opt1 int,
     opt2 int,
@@ -28,7 +36,8 @@ create table Users (
 Create table responses (
     id int NOT NULL AUTO_INCREMENT,
     questionNo int,
-    chioce int,
+    choice int,
+    respondee varchar(50),
     primary key (id)
 );
 
