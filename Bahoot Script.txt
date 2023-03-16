@@ -1,0 +1,44 @@
+create database if not exists bahoot;
+
+use bahoot;
+ 
+drop table if exists responses;
+drop table if exists Users;
+drop table if exists questions;
+
+create table questions (
+    id int NOT NULL AUTO_INCREMENT,
+    question varchar(150),
+    opt1 int,
+    opt2 int,
+    opt3 int,
+    opt4 int,
+    primary key(id)
+);
+
+create table Users (
+    id int NOT NULL AUTO_INCREMENT,
+    email varchar(50),
+    name varchar(50),
+    password varchar(50),
+    mobile_number int,
+    primary key (id)
+);
+
+Create table responses (
+    id int NOT NULL AUTO_INCREMENT,
+    questionNo int,
+    chioce int,
+    primary key (id)
+);
+
+INSERT INTO Users (email, name, password, mobile_number) VALUES 
+	('chockhong@gmail.com', 'lim chock hong', 'passwordlim', 837390484),
+	('Jamesliu@gmail.com', 'James Liu', 'passwordliu', 84730572),
+	('KellyTay@gmail.com', 'Kelly tay', 'passwordtay', 94728484),
+	('BrandonTan@gmail.com', 'Brandon Tan', 'passwordTan', 93846289),
+	('DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943);
+
+
+show tables;
+ 
