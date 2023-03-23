@@ -23,6 +23,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
     Button btnSend;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnSend = findViewById(R.id.btnSend);
     }
 
-    public void linktoXX(View v) {
+    public void linkToXX(View v) {
         Log.d("TEST", "ALKSDALKSDJ");
         new HttpTask().execute("https://reqres.in/api/users?page=2"); // Send HTTP request
 

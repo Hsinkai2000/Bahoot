@@ -10,22 +10,48 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 
-@WebServlet("/checkout")
-public class checkoutServlet extends HttpServlet {
-    private static final Logger LOGGER = Logger.getLogger(checkoutServlet.class.getName());
-    static String email;
-    static String name;
-    static String address;
-    static String card_number;
-    static int uid;
-    static int listingID;
-    static int itemID;
-    static String itemType;
-    static int qty;
-    static int qtyBought;
+@WebServlet("/login")
+public class usersServlet extends HttpServlet {
+    private static final Logger LOGGER = Logger.getLogger(loginServlet.class.getName());
+    
+     public void doGet(HttpServletRequest request, HttpServletResponse response)
+                  throws ServletException, IOException {
+            try (
+                        Connection conn = DriverManager.getConnection(
+                                    "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+                                    "root", "password");
+                        Statement stmt = conn.createStatement();) {
+                  String sqlStr = "SELECT * FROM users WHERE email ='" + request.getParameter("email")
+                              + "' AND password ='" + request.getParameter("password") + "'";
+                  ResultSet rset = stmt.executeQuery(sqlStr);
+                  int count = 0;
+                  int id = 0;
+                  
+                  while (rset.next()) {
+                        count++;
+                        id = rset.getInt(1);
+                  }
+                  if (count == 0) {
+                        Object data = "Wrong Email or Password";
+                        response.sendRedirect("http://localhost:9999/oldegg/login.jsp?data=" + data);
+                  } else {
+                        LOGGER.info("MyServlet called");
+                        if (request.getParameter("listingId") != null) {
+                              // response.sendRedirect("http://localhost:9999/oldegg/viewListing.jsp?uid=" + id + "&listingId=" + listingId);
+                              
+                              String queryString = "?uid=" + id  + "&listingId=" + request.getParameter("listingId");
+                              
+                              RequestDispatcher dispatcher = request.getRequestDispatcher("viewListing" + queryString);
+                              dispatcher.forward(request, response);
+                        } else {
+                              response.sendRedirect("http://localhost:9999/oldegg/index.jsp?uid=" + id);
+                        }
+                  }
+            } catch (Exception ex) {
+            }
+            ;
+      }
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         name = request.getParameter("name");
         email = request.getParameter("email");

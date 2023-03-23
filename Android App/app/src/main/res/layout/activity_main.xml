@@ -14,7 +14,7 @@
         android:layout_height="0dp"
         android:id="@+id/btnSend"
         android:layout_weight="2"
-        android:onClick="linktoXX" />
+        android:onClick="linkToXX" />
 
     <Button
         android:layout_width="match_parent"
