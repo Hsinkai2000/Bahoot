@@ -5,22 +5,26 @@ use bahoot;
 drop table if exists responses;
 drop table if exists Users;
 drop table if exists questions;
-drop table if exists set;
+drop table if exists qnSets;
 
-create table set (
+create table qnSets (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(50),
-    ownerID int
+    totalQn int,
+    ownerID int,
+    primary key(id)
 );
 
 create table questions (
     id int NOT NULL AUTO_INCREMENT,
     setID int,
+    qnNo int,
     question varchar(150),
-    opt1 int,
-    opt2 int,
-    opt3 int,
-    opt4 int,
+    opt1 varchar(50),
+    opt2 varchar(50),
+    opt3 varchar(50),
+    opt4 varchar(50),
+    correctOpt int,
     primary key(id)
 );
 
@@ -40,6 +44,18 @@ Create table responses (
     respondee varchar(50),
     primary key (id)
 );
+
+INSERT INTO questions (setID, qnNo, question, opt1,opt2,opt3,opt4,correctOpt) VALUES 
+    (1,1,"If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?","3", "6", "10", "14", 3),
+    (1,2,"Constructors are used to","Build a user interface", "Free Memory", "Initialize a newly created object", "To create a subclass", 3),
+    (1,3,"An object that has more than one form is referred to as:", "inheritance", "interface", "Abstract class", "Polymorphism", 4);
+    
+
+INSERT INTO qnSets (name, totalQn, ownerID) VALUES 
+    ('Object Oriented Programming',3, 1),
+    ('HTML Programming',3, 1),
+    ('Web Servlet Programming',3, 1),    
+    ('Web App Programming',3, 1);
 
 INSERT INTO Users (email, name, password, mobile_number) VALUES 
 	('chockhong@gmail.com', 'lim chock hong', 'passwordlim', 837390484),
