@@ -7,9 +7,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.stream.Collectors;
+
 import android.os.AsyncTask;
 import android.widget.Button;
 import android.widget.TextView;
@@ -27,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void linktoXX(View v) {
         Log.d("TEST", "ALKSDALKSDJ");
-        new HttpTask().execute("http://10.0.0.2:9999/oldegg/signup?email=honda@gmail.com&password=passwordong&name=Honda Ong&confirm=passwordong&mobile=83849233"); // Send HTTP request
+        new HttpTask().execute("https://reqres.in/api/users?page=2"); // Send HTTP request
 
     }
 
@@ -42,8 +48,16 @@ public class MainActivity extends AppCompatActivity {
                 // Get the HTTP response code (e.g., 200 for "OK", 404 for "Not found")
                 // and pass a string description in result to onPostExecute(String result)
                 int responseCode = conn.getResponseCode();
+
                 if (responseCode == HttpURLConnection.HTTP_OK) {  // 200
-                    return "OK (" + responseCode + ")";
+                    InputStream inputStream = conn.getInputStream();
+
+                    String text = new BufferedReader(
+                            new InputStreamReader(inputStream, StandardCharsets.UTF_8))
+                            .lines()
+                            .collect(Collectors.joining("\n"));
+
+                    return "OK (" + responseCode + ", " +  text + ")";
                 } else {
                     return "Fail (" + responseCode + ")";
                 }
