@@ -20,15 +20,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class Register extends AppCompatActivity {
-
     private EditText nameField;
     private EditText emailField;
     private EditText passwordField;
     private EditText confirmPasswordField;
     private EditText phoneNumberField;
-
-    private Button registerField;
-
     private String nameStr;
     private String emailStr;
     private String passwordStr;
@@ -56,8 +52,8 @@ public class Register extends AppCompatActivity {
 
         if (validate()) {
             new HttpTask().execute("http://10.0.2.2:9999/Bahoot/register?name="
-                    + nameStr + "&email=" + emailStr + "&password=" + passwordStr + "&phoneNumber="
-                    + phoneNumberStr);
+                    + nameStr + "&email=" + emailStr + "&password=" + passwordStr
+                    + "&phoneNumber=" + phoneNumberStr);
         }
     }
 
@@ -94,7 +90,6 @@ public class Register extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
             return false;
         }
-
         return true;
     }
 
@@ -142,6 +137,7 @@ public class Register extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), Login.class);
                 intent.putExtra("email", emailStr);
                 startActivity(intent);
+                finish();
             }
         }
     }

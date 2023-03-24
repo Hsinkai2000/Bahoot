@@ -25,7 +25,6 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     private Button option1Button;
     private Button option2Button;
     private Button option3Button;
@@ -34,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
     private TextView nameText;
     private String userID;
 
-    private String nameStr = "";
+    private String currentQuestionSQL;
     private String sqlStr1;
     private String sqlStr2;
     private String sqlStr3;
     private String sqlStr4;
-
+    private String currentQuestionID;
     private String selectedOption;
+    private int count = 0;
 
-    private SQL sql = new SQL();
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,35 +50,17 @@ public class MainActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         userID = extras.getString("userID");
-        /*
-        sqlStr = "SELECT name FROM users WHERE id='" + userID + "'";
-        Log.d("TAG", "userID: " + userID);
-        sql.setStatement(sqlStr);
-        sql.executeQuery();
-        nameStr = sql.getResults();
-        Log.d("TAG", "name: " + nameStr);
-        nameText = findViewById(R.id.mainTextName);
-        nameText.setText(nameStr);*/
 
         option1Button = findViewById(R.id.option1Button);
         option2Button = findViewById(R.id.option2Button);
         option3Button = findViewById(R.id.option3Button);
         option4Button = findViewById(R.id.option4Button);
 
-        sqlStr1 = "SELECT opt1 FROM questions WHERE current='Y'";
-        sqlStr2 = "SELECT opt2 FROM questions WHERE current='Y'";
-        sqlStr3 = "SELECT opt3 FROM questions WHERE current='Y'";
-        sqlStr4 = "SELECT opt4 FROM questions WHERE current='Y'";
+        currentQuestionSQL = "SELECT currentQuestionID FROM session WHERE" +
+                " roomCode = '3005'";
 
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
-                sqlStr1);
-        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
-                sqlStr2);
-        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
-                sqlStr3);
-        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
-                sqlStr4);
-
+                currentQuestionSQL);
     }
 
     public void option1(View v) {
@@ -150,39 +131,86 @@ public class MainActivity extends AppCompatActivity {
         // The String result is passed from doInBackground().
         @Override
         protected void onPostExecute(String result) {
-            if (!result.matches("Correct") && !result.matches("Incorrect")) {
-                if (option1Button.getText().toString().isEmpty())
-                    option1Button.setText(result);
-                else if (option2Button.getText().toString().isEmpty())
-                    option2Button.setText(result);
-                else if (option3Button.getText().toString().isEmpty())
-                    option3Button.setText(result);
-                else if (option4Button.getText().toString().isEmpty())
-                    option4Button.setText(result);
-            }
-            else {
-                Log.d("TAG",result);
-                if (result.matches("Correct")) {
-                    if (selectedOption.matches("1"))
-                        option1Button.setBackgroundColor(Color.GREEN);
-                    else if (selectedOption.matches("2"))
-                        option2Button.setBackgroundColor(Color.GREEN);
-                    else if (selectedOption.matches("3"))
-                        option3Button.setBackgroundColor(Color.GREEN);
-                    else if (selectedOption.matches("4"))
-                        option4Button.setBackgroundColor(Color.GREEN);
-                }
-                else {
-                    if (selectedOption.matches("1"))
-                        option1Button.setBackgroundColor(Color.RED);
-                    else if (selectedOption.matches("2"))
-                        option2Button.setBackgroundColor(Color.RED);
-                    else if (selectedOption.matches("3"))
-                        option3Button.setBackgroundColor(Color.RED);
-                    else if (selectedOption.matches("4"))
-                        option4Button.setBackgroundColor(Color.RED);
-                }
-            }
+            Log.d("TAG","result: " + result);
+            // to retrieve the question from the server
+            if (result.contains("currentQuestionID"))
+                populateButtons(result);
+            // to fill the options in the button TextView
+            else if (result.contains("opt"))
+                buttonQuestions(result);
+            // to change button color based on result
+            else if (result.contains("Question Result:"))
+                buttonResponse(result);
+            // disable buttons if question not retrieved
+            else if (result.isEmpty())
+                noQuestionSet();
         }
     }
+
+    private void populateButtons(String result) {
+
+        currentQuestionID = result.substring(18);
+        Log.d("Tag","currentQuestionID2:" + currentQuestionID);
+        sqlStr1 = "SELECT opt1 FROM questions WHERE id='" + currentQuestionID + "'";
+        sqlStr2 = "SELECT opt2 FROM questions WHERE id='" + currentQuestionID + "'";
+        sqlStr3 = "SELECT opt3 FROM questions WHERE id='" + currentQuestionID + "'";
+        sqlStr4 = "SELECT opt4 FROM questions WHERE id='" + currentQuestionID + "'";
+
+        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                sqlStr1);
+        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                sqlStr2);
+        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                sqlStr3);
+        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                sqlStr4);
+    }
+    private void buttonQuestions(String result) {
+        result = result.substring(5);
+        if (option1Button.getText().toString().isEmpty())
+            option1Button.setText(result);
+        else if (option2Button.getText().toString().isEmpty())
+            option2Button.setText(result);
+        else if (option3Button.getText().toString().isEmpty())
+            option3Button.setText(result);
+        else if (option4Button.getText().toString().isEmpty())
+            option4Button.setText(result);
+
+    }
+
+    private void buttonResponse(String result){
+        Log.d("TAG",result);
+        if (result.matches("Question Result:Correct")) {
+            if (selectedOption.matches("1"))
+                option1Button.setBackgroundColor(Color.GREEN);
+            else if (selectedOption.matches("2"))
+                option2Button.setBackgroundColor(Color.GREEN);
+            else if (selectedOption.matches("3"))
+                option3Button.setBackgroundColor(Color.GREEN);
+            else if (selectedOption.matches("4"))
+                option4Button.setBackgroundColor(Color.GREEN);
+        }
+        else {
+            if (selectedOption.matches("1"))
+                option1Button.setBackgroundColor(Color.RED);
+            else if (selectedOption.matches("2"))
+                option2Button.setBackgroundColor(Color.RED);
+            else if (selectedOption.matches("3"))
+                option3Button.setBackgroundColor(Color.RED);
+            else if (selectedOption.matches("4"))
+                option4Button.setBackgroundColor(Color.RED);
+        }
+    }
+    private void noQuestionSet(){
+        if (count < 1) {
+            option1Button.setEnabled(false);
+            option2Button.setEnabled(false);
+            option3Button.setEnabled(false);
+            option4Button.setEnabled(false);
+            Toast.makeText(getApplicationContext(), "Error, no question found",
+                    Toast.LENGTH_SHORT).show();
+        }
+        count++;
+    }
+
 }

@@ -4,14 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bahootBackground"
     tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/bahoot"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/loginEmailField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="216dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
@@ -20,10 +35,12 @@
 
     <EditText
         android:id="@+id/loginPasswordField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="316dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/prompt_password"
         android:inputType="textPassword"
@@ -34,23 +51,25 @@
         android:id="@+id/signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/bahootButton"
+        android:onClick="signIn"
         android:text="@string/action_sign_in_short"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="signIn"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/toRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="508dp"
-        android:text="Register"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="476dp"
+        android:backgroundTint="@color/bahootButton"
+        android:onClick="toRegister"
+        android:text="@string/register"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="toRegister"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -442,3 +442,967 @@
 24-Mar-2023 12:51:08.749 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 24-Mar-2023 12:51:08.771 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
 24-Mar-2023 12:51:08.789 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 20:13:07.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+24-Mar-2023 20:13:07.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+24-Mar-2023 20:13:07.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+24-Mar-2023 20:13:07.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Mar-2023 20:13:07.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Mar-2023 20:13:07.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Mar-2023 20:13:07.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+24-Mar-2023 20:13:07.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+24-Mar-2023 20:13:07.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2023 20:13:07.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+24-Mar-2023 20:13:07.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+24-Mar-2023 20:13:07.300 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\conf\logging.properties
+24-Mar-2023 20:13:07.300 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2023 20:13:07.300 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2023 20:13:07.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2023 20:13:07.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Mar-2023 20:13:07.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Mar-2023 20:13:07.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Mar-2023 20:13:07.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Mar-2023 20:13:07.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Mar-2023 20:13:07.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+24-Mar-2023 20:13:07.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+24-Mar-2023 20:13:07.302 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\temp
+24-Mar-2023 20:13:07.323 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-19\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;c:\program files (x86)\razer chroma sdk\bin;c:\program files\razer chroma sdk\bin;c:\program files (x86)\razer\chromabroadcast\bin;c:\program files\razer\chromabroadcast\bin;c:\program files (x86)\common files\oracle\java\javapath;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\nvidia corporation\nvidia nvdlisr;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\microsoft sql server\120\tools\binn\;c:\program files\common files\autodesk shared\;c:\users\user\appdata\local\microsoft\windowsapps;c:\windows\system32\config\systemprofile\appdata\local\microsoft\windowsapps;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;C:\windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Users\User\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python310\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;.]
+24-Mar-2023 20:13:07.507 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 20:13:07.523 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [376] milliseconds
+24-Mar-2023 20:13:07.556 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Mar-2023 20:13:07.556 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+24-Mar-2023 20:13:07.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\Bahoot]
+24-Mar-2023 20:13:08.399 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:13:08.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\Bahoot] has finished in [893] ms
+24-Mar-2023 20:13:08.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\docs]
+24-Mar-2023 20:13:09.019 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:13:09.023 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\docs] has finished in [565] ms
+24-Mar-2023 20:13:09.024 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\examples]
+24-Mar-2023 20:13:10.067 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:13:10.123 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\examples] has finished in [1,099] ms
+24-Mar-2023 20:13:10.123 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\host-manager]
+24-Mar-2023 20:13:10.689 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:13:10.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\host-manager] has finished in [573] ms
+24-Mar-2023 20:13:10.697 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\manager]
+24-Mar-2023 20:13:11.261 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:13:11.265 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\manager] has finished in [568] ms
+24-Mar-2023 20:13:11.265 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\ROOT]
+24-Mar-2023 20:13:11.798 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:13:11.802 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\ROOT] has finished in [537] ms
+24-Mar-2023 20:13:11.803 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 20:13:11.838 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4313] milliseconds
+24-Mar-2023 20:28:56.426 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 20:28:56.432 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Mar-2023 20:28:56.452 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 20:28:56.455 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 20:36:31.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+24-Mar-2023 20:36:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+24-Mar-2023 20:36:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+24-Mar-2023 20:36:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Mar-2023 20:36:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Mar-2023 20:36:31.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Mar-2023 20:36:31.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+24-Mar-2023 20:36:31.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+24-Mar-2023 20:36:31.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2023 20:36:31.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+24-Mar-2023 20:36:31.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+24-Mar-2023 20:36:31.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\conf\logging.properties
+24-Mar-2023 20:36:31.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2023 20:36:31.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2023 20:36:31.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2023 20:36:31.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Mar-2023 20:36:31.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Mar-2023 20:36:31.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Mar-2023 20:36:31.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Mar-2023 20:36:31.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Mar-2023 20:36:31.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+24-Mar-2023 20:36:31.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+24-Mar-2023 20:36:31.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\temp
+24-Mar-2023 20:36:31.837 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-19\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;c:\program files (x86)\razer chroma sdk\bin;c:\program files\razer chroma sdk\bin;c:\program files (x86)\razer\chromabroadcast\bin;c:\program files\razer\chromabroadcast\bin;c:\program files (x86)\common files\oracle\java\javapath;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\nvidia corporation\nvidia nvdlisr;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\microsoft sql server\120\tools\binn\;c:\program files\common files\autodesk shared\;c:\users\user\appdata\local\microsoft\windowsapps;c:\windows\system32\config\systemprofile\appdata\local\microsoft\windowsapps;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;C:\windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Users\User\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python310\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;.]
+24-Mar-2023 20:36:32.041 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 20:36:32.063 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [406] milliseconds
+24-Mar-2023 20:36:32.097 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Mar-2023 20:36:32.097 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+24-Mar-2023 20:36:32.108 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\Bahoot]
+24-Mar-2023 20:36:33.759 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:36:33.839 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\Bahoot] has finished in [1,730] ms
+24-Mar-2023 20:36:33.839 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\docs]
+24-Mar-2023 20:36:34.769 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:36:34.775 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\docs] has finished in [936] ms
+24-Mar-2023 20:36:34.775 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\examples]
+24-Mar-2023 20:36:36.085 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:36:36.159 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\examples] has finished in [1,384] ms
+24-Mar-2023 20:36:36.159 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\host-manager]
+24-Mar-2023 20:36:36.807 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:36:36.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\host-manager] has finished in [655] ms
+24-Mar-2023 20:36:36.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\manager]
+24-Mar-2023 20:36:37.457 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:36:37.462 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\manager] has finished in [647] ms
+24-Mar-2023 20:36:37.462 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\ROOT]
+24-Mar-2023 20:36:38.069 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 20:36:38.073 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\ROOT] has finished in [610] ms
+24-Mar-2023 20:36:38.074 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 20:36:38.109 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6045] milliseconds
+24-Mar-2023 20:37:44.236 INFO [http-nio-9999-exec-1] loginServlet.doGet loginServlet called
+24-Mar-2023 20:37:44.368 INFO [http-nio-9999-exec-1] loginServlet.doGet SELECT * FROM users WHERE email ='chockhong@gmail.com' AND password ='passwordlim'
+24-Mar-2023 20:37:44.382 INFO [http-nio-9999-exec-1] loginServlet.doGet Login Successful
+24-Mar-2023 20:37:44.509 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:37:44.517 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:37:44.521 INFO [http-nio-9999-exec-4] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:37:44.525 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:37:47.129 INFO [http-nio-9999-exec-6] responseServlet.doGet responseServlet Called
+24-Mar-2023 20:37:47.131 INFO [http-nio-9999-exec-6] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 20:37:47.134 INFO [http-nio-9999-exec-6] responseServlet.doGet SQL Failedjava.sql.SQLException: Illegal operation on empty result set.
+24-Mar-2023 20:40:32.081 INFO [http-nio-9999-exec-8] registerServlet.doGet registerServlet Called
+24-Mar-2023 20:40:32.088 INFO [http-nio-9999-exec-8] registerServlet.registerToDb INSERT INTO Users Values (null, 'i@g.com', 'irfan', '123', '999')
+24-Mar-2023 20:40:35.992 INFO [http-nio-9999-exec-9] loginServlet.doGet loginServlet called
+24-Mar-2023 20:40:35.995 INFO [http-nio-9999-exec-9] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 20:40:35.996 INFO [http-nio-9999-exec-9] loginServlet.doGet Login Successful
+24-Mar-2023 20:40:36.035 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:40:36.039 INFO [http-nio-9999-exec-1] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:40:36.042 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:40:36.047 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:41:04.116 INFO [http-nio-9999-exec-5] loginServlet.doGet loginServlet called
+24-Mar-2023 20:41:04.118 INFO [http-nio-9999-exec-5] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 20:41:04.118 INFO [http-nio-9999-exec-5] loginServlet.doGet Login Successful
+24-Mar-2023 20:41:04.168 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:41:04.173 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:41:04.176 INFO [http-nio-9999-exec-8] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:41:04.181 INFO [http-nio-9999-exec-9] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:47:22.799 INFO [http-nio-9999-exec-1] loginServlet.doGet loginServlet called
+24-Mar-2023 20:47:22.802 INFO [http-nio-9999-exec-1] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 20:47:22.802 INFO [http-nio-9999-exec-1] loginServlet.doGet Login Successful
+24-Mar-2023 20:47:22.848 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:47:22.852 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:47:22.856 INFO [http-nio-9999-exec-4] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:47:22.858 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:48:45.032 INFO [http-nio-9999-exec-7] loginServlet.doGet loginServlet called
+24-Mar-2023 20:48:45.035 INFO [http-nio-9999-exec-7] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 20:48:45.035 INFO [http-nio-9999-exec-7] loginServlet.doGet Login Successful
+24-Mar-2023 20:48:45.068 INFO [http-nio-9999-exec-8] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:48:45.070 INFO [http-nio-9999-exec-8] SQLServlet.doGet Value: 3
+24-Mar-2023 20:48:45.072 INFO [http-nio-9999-exec-9] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:48:45.074 INFO [http-nio-9999-exec-9] SQLServlet.doGet Value: 6
+24-Mar-2023 20:48:45.075 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:48:45.077 INFO [http-nio-9999-exec-10] SQLServlet.doGet Value: 10
+24-Mar-2023 20:48:45.081 INFO [http-nio-9999-exec-1] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:48:45.082 INFO [http-nio-9999-exec-1] SQLServlet.doGet Value: 14
+24-Mar-2023 20:50:01.455 INFO [http-nio-9999-exec-3] loginServlet.doGet loginServlet called
+24-Mar-2023 20:50:01.457 INFO [http-nio-9999-exec-3] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 20:50:01.457 INFO [http-nio-9999-exec-3] loginServlet.doGet Login Successful
+24-Mar-2023 20:50:01.500 INFO [http-nio-9999-exec-4] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:50:01.502 INFO [http-nio-9999-exec-4] SQLServlet.doGet Value: 3
+24-Mar-2023 20:50:01.504 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:50:01.505 INFO [http-nio-9999-exec-5] SQLServlet.doGet Value: 6
+24-Mar-2023 20:50:01.507 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:50:01.508 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: 10
+24-Mar-2023 20:50:01.510 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:50:01.512 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: 14
+24-Mar-2023 20:50:33.960 INFO [http-nio-9999-exec-9] loginServlet.doGet loginServlet called
+24-Mar-2023 20:50:33.962 INFO [http-nio-9999-exec-9] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 20:50:33.963 INFO [http-nio-9999-exec-9] loginServlet.doGet Login Successful
+24-Mar-2023 20:50:34.003 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:50:34.005 INFO [http-nio-9999-exec-10] SQLServlet.doGet Value: 3
+24-Mar-2023 20:50:34.007 INFO [http-nio-9999-exec-1] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:50:34.008 INFO [http-nio-9999-exec-1] SQLServlet.doGet Value: 6
+24-Mar-2023 20:50:34.010 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:50:34.012 INFO [http-nio-9999-exec-2] SQLServlet.doGet Value: 10
+24-Mar-2023 20:50:34.014 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:50:34.015 INFO [http-nio-9999-exec-3] SQLServlet.doGet Value: 14
+24-Mar-2023 20:51:25.463 INFO [http-nio-9999-exec-5] loginServlet.doGet loginServlet called
+24-Mar-2023 20:51:25.466 INFO [http-nio-9999-exec-5] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 20:51:25.466 INFO [http-nio-9999-exec-5] loginServlet.doGet Login Successful
+24-Mar-2023 20:51:25.563 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:51:25.565 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: 3
+24-Mar-2023 20:51:25.567 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:51:25.568 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: 6
+24-Mar-2023 20:51:25.569 INFO [http-nio-9999-exec-8] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:51:25.571 INFO [http-nio-9999-exec-8] SQLServlet.doGet Value: 10
+24-Mar-2023 20:51:25.573 INFO [http-nio-9999-exec-9] SQLServlet.doGet registerServlet Called
+24-Mar-2023 20:51:25.574 INFO [http-nio-9999-exec-9] SQLServlet.doGet Value: 14
+24-Mar-2023 20:51:28.569 INFO [http-nio-9999-exec-10] responseServlet.doGet responseServlet Called
+24-Mar-2023 20:51:28.571 INFO [http-nio-9999-exec-10] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 20:51:28.572 INFO [http-nio-9999-exec-10] responseServlet.doGet Correct Option: 3
+24-Mar-2023 20:51:28.572 INFO [http-nio-9999-exec-10] responseServlet.doGet Current Question: 1
+24-Mar-2023 20:51:28.573 INFO [http-nio-9999-exec-10] responseServlet.doGet Current Respondee: irfan
+24-Mar-2023 20:51:28.573 INFO [http-nio-9999-exec-10] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'irfan')
+24-Mar-2023 21:33:48.958 INFO [http-nio-9999-exec-10] loginServlet.doGet loginServlet called
+24-Mar-2023 21:33:48.961 INFO [http-nio-9999-exec-10] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 21:33:48.962 INFO [http-nio-9999-exec-10] loginServlet.doGet Login Successful
+24-Mar-2023 21:33:49.010 INFO [http-nio-9999-exec-1] SQLServlet.doGet registerServlet Called
+24-Mar-2023 21:33:49.012 INFO [http-nio-9999-exec-1] SQLServlet.doGet Value: 3
+24-Mar-2023 21:33:49.014 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 21:33:49.016 INFO [http-nio-9999-exec-2] SQLServlet.doGet Value: 6
+24-Mar-2023 21:33:49.018 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 21:33:49.019 INFO [http-nio-9999-exec-3] SQLServlet.doGet Value: 10
+24-Mar-2023 21:33:49.023 INFO [http-nio-9999-exec-4] SQLServlet.doGet registerServlet Called
+24-Mar-2023 21:33:49.024 INFO [http-nio-9999-exec-4] SQLServlet.doGet Value: 14
+24-Mar-2023 21:52:59.617 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 21:53:00.238 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 21:53:00.241 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 21:56:04.550 INFO [http-nio-9999-exec-11] loginServlet.doGet loginServlet called
+24-Mar-2023 21:56:04.554 INFO [http-nio-9999-exec-11] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 21:56:04.555 INFO [http-nio-9999-exec-11] loginServlet.doGet Login Successful
+24-Mar-2023 21:56:04.591 INFO [http-nio-9999-exec-12] SQLServlet.doGet registerServlet Called
+24-Mar-2023 21:56:04.599 INFO [http-nio-9999-exec-12] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: Unknown column 'current' in 'where clause'
+24-Mar-2023 21:56:04.601 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 21:56:04.602 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: Unknown column 'current' in 'where clause'
+24-Mar-2023 21:56:04.604 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 21:56:04.605 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: Unknown column 'current' in 'where clause'
+24-Mar-2023 21:56:04.608 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 21:56:04.609 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: Unknown column 'current' in 'where clause'
+24-Mar-2023 22:03:23.185 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 22:03:23.777 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 22:03:23.779 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 22:04:09.655 INFO [http-nio-9999-exec-13] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:04:09.659 INFO [http-nio-9999-exec-13] SQLServlet.doGet currentQuestionID 1
+24-Mar-2023 22:28:40.536 INFO [http-nio-9999-exec-22] loginServlet.doGet loginServlet called
+24-Mar-2023 22:28:40.538 INFO [http-nio-9999-exec-22] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:28:40.539 INFO [http-nio-9999-exec-22] loginServlet.doGet Login Successful
+24-Mar-2023 22:28:40.584 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:28:40.586 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 3005' at line 1
+24-Mar-2023 22:28:40.588 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:28:40.591 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:28:40.594 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:28:40.597 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:29:00.983 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 22:29:01.578 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 22:29:01.581 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 22:29:07.259 INFO [http-nio-9999-exec-24] loginServlet.doGet loginServlet called
+24-Mar-2023 22:29:07.263 INFO [http-nio-9999-exec-24] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:29:07.264 INFO [http-nio-9999-exec-24] loginServlet.doGet Login Successful
+24-Mar-2023 22:29:07.301 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:29:07.303 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 3005' at line 1
+24-Mar-2023 22:29:07.305 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:29:07.308 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:29:07.311 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:29:07.315 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:31:02.666 INFO [http-nio-9999-exec-31] loginServlet.doGet loginServlet called
+24-Mar-2023 22:31:02.669 INFO [http-nio-9999-exec-31] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:31:02.670 INFO [http-nio-9999-exec-31] loginServlet.doGet Login Successful
+24-Mar-2023 22:31:02.706 INFO [http-nio-9999-exec-32] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:31:02.708 INFO [http-nio-9999-exec-32] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '3005'' at line 1
+24-Mar-2023 22:31:02.712 INFO [http-nio-9999-exec-33] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:31:02.715 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:31:02.718 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:31:02.720 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:32:48.585 INFO [http-nio-9999-exec-35] loginServlet.doGet loginServlet called
+24-Mar-2023 22:32:48.587 INFO [http-nio-9999-exec-35] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:32:48.588 INFO [http-nio-9999-exec-35] loginServlet.doGet Login Successful
+24-Mar-2023 22:32:48.633 INFO [http-nio-9999-exec-31] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:32:48.635 INFO [http-nio-9999-exec-31] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '3005'' at line 1
+24-Mar-2023 22:32:48.637 INFO [http-nio-9999-exec-32] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:32:48.639 INFO [http-nio-9999-exec-33] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:32:48.642 INFO [http-nio-9999-exec-36] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:32:48.648 INFO [http-nio-9999-exec-37] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:33:52.926 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 22:33:53.559 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 22:33:53.563 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 22:33:58.613 INFO [http-nio-9999-exec-34] loginServlet.doGet loginServlet called
+24-Mar-2023 22:33:58.616 INFO [http-nio-9999-exec-34] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:33:58.617 INFO [http-nio-9999-exec-34] loginServlet.doGet Login Successful
+24-Mar-2023 22:33:58.655 INFO [http-nio-9999-exec-31] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:33:58.657 INFO [http-nio-9999-exec-31] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '3005'' at line 1
+24-Mar-2023 22:33:58.659 INFO [http-nio-9999-exec-35] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:33:58.663 INFO [http-nio-9999-exec-38] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:33:58.666 INFO [http-nio-9999-exec-33] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:33:58.668 INFO [http-nio-9999-exec-37] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:34:33.750 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 22:34:34.344 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 22:34:34.347 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 22:34:36.070 INFO [http-nio-9999-exec-41] loginServlet.doGet loginServlet called
+24-Mar-2023 22:34:36.073 INFO [http-nio-9999-exec-41] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:34:36.074 INFO [http-nio-9999-exec-41] loginServlet.doGet Login Successful
+24-Mar-2023 22:34:36.107 INFO [http-nio-9999-exec-35] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:34:36.109 INFO [http-nio-9999-exec-35] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHEREroomCode = '3005'
+24-Mar-2023 22:34:36.109 INFO [http-nio-9999-exec-35] SQLServlet.doGet SQL Failedjava.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '3005'' at line 1
+24-Mar-2023 22:34:36.112 INFO [http-nio-9999-exec-37] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:34:36.113 INFO [http-nio-9999-exec-37] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='null'
+24-Mar-2023 22:34:36.114 INFO [http-nio-9999-exec-32] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:34:36.116 INFO [http-nio-9999-exec-32] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='null'
+24-Mar-2023 22:34:36.118 INFO [http-nio-9999-exec-40] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:34:36.120 INFO [http-nio-9999-exec-40] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='null'
+24-Mar-2023 22:34:36.122 INFO [http-nio-9999-exec-42] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:34:36.123 INFO [http-nio-9999-exec-42] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='null'
+24-Mar-2023 22:35:18.014 INFO [http-nio-9999-exec-33] loginServlet.doGet loginServlet called
+24-Mar-2023 22:35:18.017 INFO [http-nio-9999-exec-33] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:35:18.018 INFO [http-nio-9999-exec-33] loginServlet.doGet Login Successful
+24-Mar-2023 22:35:18.054 INFO [http-nio-9999-exec-31] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:18.055 INFO [http-nio-9999-exec-31] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:35:18.056 INFO [http-nio-9999-exec-31] SQLServlet.doGet currentQuestionID 1
+24-Mar-2023 22:35:18.058 INFO [http-nio-9999-exec-36] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:18.059 INFO [http-nio-9999-exec-36] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='null'
+24-Mar-2023 22:35:18.061 INFO [http-nio-9999-exec-43] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:18.062 INFO [http-nio-9999-exec-43] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='null'
+24-Mar-2023 22:35:18.064 INFO [http-nio-9999-exec-35] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:18.065 INFO [http-nio-9999-exec-35] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='null'
+24-Mar-2023 22:35:18.067 INFO [http-nio-9999-exec-37] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:18.069 INFO [http-nio-9999-exec-37] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='null'
+24-Mar-2023 22:35:44.671 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 22:35:45.253 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 22:35:45.256 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 22:35:50.560 INFO [http-nio-9999-exec-46] loginServlet.doGet loginServlet called
+24-Mar-2023 22:35:50.563 INFO [http-nio-9999-exec-46] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:35:50.563 INFO [http-nio-9999-exec-46] loginServlet.doGet Login Successful
+24-Mar-2023 22:35:50.606 INFO [http-nio-9999-exec-44] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:50.607 INFO [http-nio-9999-exec-44] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:35:50.608 INFO [http-nio-9999-exec-44] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:35:50.610 INFO [http-nio-9999-exec-36] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:50.611 INFO [http-nio-9999-exec-36] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='null'
+24-Mar-2023 22:35:50.614 INFO [http-nio-9999-exec-37] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:50.615 INFO [http-nio-9999-exec-37] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='null'
+24-Mar-2023 22:35:50.617 INFO [http-nio-9999-exec-31] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:50.618 INFO [http-nio-9999-exec-31] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='null'
+24-Mar-2023 22:35:50.620 INFO [http-nio-9999-exec-42] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:35:50.621 INFO [http-nio-9999-exec-42] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='null'
+24-Mar-2023 22:36:40.657 INFO [http-nio-9999-exec-32] loginServlet.doGet loginServlet called
+24-Mar-2023 22:36:40.659 INFO [http-nio-9999-exec-32] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:36:40.660 INFO [http-nio-9999-exec-32] loginServlet.doGet Login Successful
+24-Mar-2023 22:36:40.707 INFO [http-nio-9999-exec-43] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:36:40.709 INFO [http-nio-9999-exec-43] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:36:40.709 INFO [http-nio-9999-exec-43] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:36:40.713 INFO [http-nio-9999-exec-45] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:36:40.715 INFO [http-nio-9999-exec-45] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='null'
+24-Mar-2023 22:36:40.716 INFO [http-nio-9999-exec-47] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:36:40.718 INFO [http-nio-9999-exec-47] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='null'
+24-Mar-2023 22:36:40.719 INFO [http-nio-9999-exec-44] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:36:40.720 INFO [http-nio-9999-exec-44] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='null'
+24-Mar-2023 22:36:40.722 INFO [http-nio-9999-exec-36] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:36:40.723 INFO [http-nio-9999-exec-36] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='null'
+24-Mar-2023 22:38:17.199 INFO [http-nio-9999-exec-49] loginServlet.doGet loginServlet called
+24-Mar-2023 22:38:17.201 INFO [http-nio-9999-exec-49] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:38:17.201 INFO [http-nio-9999-exec-49] loginServlet.doGet Login Successful
+24-Mar-2023 22:38:17.239 INFO [http-nio-9999-exec-47] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:38:17.240 INFO [http-nio-9999-exec-47] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:38:17.241 INFO [http-nio-9999-exec-47] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:38:17.243 INFO [http-nio-9999-exec-50] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:38:17.244 INFO [http-nio-9999-exec-50] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='null'
+24-Mar-2023 22:38:17.246 INFO [http-nio-9999-exec-48] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:38:17.247 INFO [http-nio-9999-exec-48] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='null'
+24-Mar-2023 22:38:17.250 INFO [http-nio-9999-exec-45] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:38:17.251 INFO [http-nio-9999-exec-45] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='null'
+24-Mar-2023 22:38:17.253 INFO [http-nio-9999-exec-44] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:38:17.254 INFO [http-nio-9999-exec-44] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='null'
+24-Mar-2023 22:40:39.274 INFO [http-nio-9999-exec-52] loginServlet.doGet loginServlet called
+24-Mar-2023 22:40:39.276 INFO [http-nio-9999-exec-52] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:40:39.276 INFO [http-nio-9999-exec-52] loginServlet.doGet Login Successful
+24-Mar-2023 22:40:39.322 INFO [http-nio-9999-exec-49] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:40:39.323 INFO [http-nio-9999-exec-49] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:40:39.324 INFO [http-nio-9999-exec-49] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:41:18.203 INFO [http-nio-9999-exec-50] loginServlet.doGet loginServlet called
+24-Mar-2023 22:41:18.206 INFO [http-nio-9999-exec-50] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:41:18.206 INFO [http-nio-9999-exec-50] loginServlet.doGet Login Successful
+24-Mar-2023 22:41:18.251 INFO [http-nio-9999-exec-48] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:41:18.252 INFO [http-nio-9999-exec-48] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:41:18.252 INFO [http-nio-9999-exec-48] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:41:40.872 INFO [http-nio-9999-exec-51] loginServlet.doGet loginServlet called
+24-Mar-2023 22:41:40.873 INFO [http-nio-9999-exec-51] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:41:40.874 INFO [http-nio-9999-exec-51] loginServlet.doGet Login Successful
+24-Mar-2023 22:41:40.921 INFO [http-nio-9999-exec-54] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:41:40.922 INFO [http-nio-9999-exec-54] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:41:40.923 INFO [http-nio-9999-exec-54] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:42:04.911 INFO [http-nio-9999-exec-56] loginServlet.doGet loginServlet called
+24-Mar-2023 22:42:04.913 INFO [http-nio-9999-exec-56] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:42:04.914 INFO [http-nio-9999-exec-56] loginServlet.doGet Login Successful
+24-Mar-2023 22:42:04.954 INFO [http-nio-9999-exec-52] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:42:04.955 INFO [http-nio-9999-exec-52] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:42:04.956 INFO [http-nio-9999-exec-52] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:42:04.958 INFO [http-nio-9999-exec-49] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:42:04.959 INFO [http-nio-9999-exec-49] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='null'
+24-Mar-2023 22:42:04.964 INFO [http-nio-9999-exec-47] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:42:04.966 INFO [http-nio-9999-exec-47] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='null'
+24-Mar-2023 22:42:04.967 INFO [http-nio-9999-exec-50] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:42:04.969 INFO [http-nio-9999-exec-50] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='null'
+24-Mar-2023 22:42:04.976 INFO [http-nio-9999-exec-48] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:42:04.978 INFO [http-nio-9999-exec-48] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='null'
+24-Mar-2023 22:44:44.403 INFO [http-nio-9999-exec-51] loginServlet.doGet loginServlet called
+24-Mar-2023 22:44:44.404 INFO [http-nio-9999-exec-51] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:44:44.405 INFO [http-nio-9999-exec-51] loginServlet.doGet Login Successful
+24-Mar-2023 22:44:44.451 INFO [http-nio-9999-exec-54] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:44:44.453 INFO [http-nio-9999-exec-54] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:44:44.453 INFO [http-nio-9999-exec-54] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:44:44.483 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:44:44.484 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 22:44:44.485 INFO [http-nio-9999-exec-55] SQLServlet.doGet opt1:3
+24-Mar-2023 22:44:44.486 INFO [http-nio-9999-exec-56] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:44:44.487 INFO [http-nio-9999-exec-56] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 22:44:44.488 INFO [http-nio-9999-exec-56] SQLServlet.doGet opt2:6
+24-Mar-2023 22:44:44.488 INFO [http-nio-9999-exec-52] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:44:44.490 INFO [http-nio-9999-exec-52] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 22:44:44.490 INFO [http-nio-9999-exec-52] SQLServlet.doGet opt3:10
+24-Mar-2023 22:44:44.492 INFO [http-nio-9999-exec-49] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:44:44.493 INFO [http-nio-9999-exec-49] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 22:44:44.493 INFO [http-nio-9999-exec-49] SQLServlet.doGet opt4:14
+24-Mar-2023 22:45:27.335 INFO [http-nio-9999-exec-50] responseServlet.doGet responseServlet Called
+24-Mar-2023 22:45:27.337 INFO [http-nio-9999-exec-50] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 22:45:27.337 INFO [http-nio-9999-exec-50] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 22:45:27.338 INFO [http-nio-9999-exec-50] responseServlet.doGet Correct Option: 3
+24-Mar-2023 22:45:27.338 INFO [http-nio-9999-exec-50] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 22:45:27.338 INFO [http-nio-9999-exec-50] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 22:46:03.664 INFO [http-nio-9999-exec-53] loginServlet.doGet loginServlet called
+24-Mar-2023 22:46:03.666 INFO [http-nio-9999-exec-53] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:46:03.666 INFO [http-nio-9999-exec-53] loginServlet.doGet Login Successful
+24-Mar-2023 22:46:03.702 INFO [http-nio-9999-exec-51] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:46:03.704 INFO [http-nio-9999-exec-51] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:46:03.704 INFO [http-nio-9999-exec-51] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:46:03.725 INFO [http-nio-9999-exec-54] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:46:03.727 INFO [http-nio-9999-exec-54] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 22:46:03.727 INFO [http-nio-9999-exec-54] SQLServlet.doGet opt1:3
+24-Mar-2023 22:46:03.729 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:46:03.730 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 22:46:03.730 INFO [http-nio-9999-exec-55] SQLServlet.doGet opt2:6
+24-Mar-2023 22:46:03.732 INFO [http-nio-9999-exec-56] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:46:03.733 INFO [http-nio-9999-exec-56] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 22:46:03.733 INFO [http-nio-9999-exec-56] SQLServlet.doGet opt3:10
+24-Mar-2023 22:46:03.735 INFO [http-nio-9999-exec-52] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:46:03.735 INFO [http-nio-9999-exec-52] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 22:46:03.736 INFO [http-nio-9999-exec-52] SQLServlet.doGet opt4:14
+24-Mar-2023 22:46:04.489 INFO [http-nio-9999-exec-49] responseServlet.doGet responseServlet Called
+24-Mar-2023 22:46:04.491 INFO [http-nio-9999-exec-49] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 22:46:04.491 INFO [http-nio-9999-exec-49] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 22:46:04.491 INFO [http-nio-9999-exec-49] responseServlet.doGet Correct Option: 3
+24-Mar-2023 22:46:04.492 INFO [http-nio-9999-exec-49] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 22:46:04.492 INFO [http-nio-9999-exec-49] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 22:50:36.244 INFO [http-nio-9999-exec-50] loginServlet.doGet loginServlet called
+24-Mar-2023 22:50:36.246 INFO [http-nio-9999-exec-50] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:50:36.247 INFO [http-nio-9999-exec-50] loginServlet.doGet Login Successful
+24-Mar-2023 22:50:36.288 INFO [http-nio-9999-exec-48] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:50:36.290 INFO [http-nio-9999-exec-48] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:50:36.290 INFO [http-nio-9999-exec-48] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:50:36.319 INFO [http-nio-9999-exec-53] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:50:36.321 INFO [http-nio-9999-exec-53] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 22:50:36.321 INFO [http-nio-9999-exec-53] SQLServlet.doGet opt1:3
+24-Mar-2023 22:50:36.323 INFO [http-nio-9999-exec-51] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:50:36.324 INFO [http-nio-9999-exec-51] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 22:50:36.324 INFO [http-nio-9999-exec-51] SQLServlet.doGet opt2:6
+24-Mar-2023 22:50:36.325 INFO [http-nio-9999-exec-54] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:50:36.326 INFO [http-nio-9999-exec-54] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 22:50:36.326 INFO [http-nio-9999-exec-54] SQLServlet.doGet opt3:10
+24-Mar-2023 22:50:36.334 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:50:36.335 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 22:50:36.335 INFO [http-nio-9999-exec-55] SQLServlet.doGet opt4:14
+24-Mar-2023 22:54:11.311 INFO [http-nio-9999-exec-52] loginServlet.doGet loginServlet called
+24-Mar-2023 22:54:11.313 INFO [http-nio-9999-exec-52] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 22:54:11.313 INFO [http-nio-9999-exec-52] loginServlet.doGet Login Successful
+24-Mar-2023 22:54:11.352 INFO [http-nio-9999-exec-49] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:54:11.353 INFO [http-nio-9999-exec-49] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 22:54:11.353 INFO [http-nio-9999-exec-49] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 22:54:11.387 INFO [http-nio-9999-exec-47] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:54:11.389 INFO [http-nio-9999-exec-47] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 22:54:11.389 INFO [http-nio-9999-exec-47] SQLServlet.doGet opt1:3
+24-Mar-2023 22:54:11.391 INFO [http-nio-9999-exec-50] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:54:11.392 INFO [http-nio-9999-exec-50] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 22:54:11.392 INFO [http-nio-9999-exec-50] SQLServlet.doGet opt2:6
+24-Mar-2023 22:54:11.393 INFO [http-nio-9999-exec-48] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:54:11.394 INFO [http-nio-9999-exec-48] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 22:54:11.394 INFO [http-nio-9999-exec-48] SQLServlet.doGet opt3:10
+24-Mar-2023 22:54:11.397 INFO [http-nio-9999-exec-53] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 22:54:11.398 INFO [http-nio-9999-exec-53] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 22:54:11.398 INFO [http-nio-9999-exec-53] SQLServlet.doGet opt4:14
+24-Mar-2023 22:54:12.264 INFO [http-nio-9999-exec-51] responseServlet.doGet responseServlet Called
+24-Mar-2023 22:54:12.265 INFO [http-nio-9999-exec-51] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 22:54:12.266 INFO [http-nio-9999-exec-51] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 22:54:12.266 INFO [http-nio-9999-exec-51] responseServlet.doGet Correct Option: 3
+24-Mar-2023 22:54:12.266 INFO [http-nio-9999-exec-51] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 22:54:12.266 INFO [http-nio-9999-exec-51] responseServlet.doGet INSERT INTO responses Values (null, '1', '4', 'Irfan')
+24-Mar-2023 23:00:47.752 INFO [http-nio-9999-exec-55] loginServlet.doGet loginServlet called
+24-Mar-2023 23:00:47.754 INFO [http-nio-9999-exec-55] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:00:47.755 INFO [http-nio-9999-exec-55] loginServlet.doGet Login Successful
+24-Mar-2023 23:00:47.786 INFO [http-nio-9999-exec-56] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:00:47.788 INFO [http-nio-9999-exec-56] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:00:47.788 INFO [http-nio-9999-exec-56] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:00:47.816 INFO [http-nio-9999-exec-52] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:00:47.817 INFO [http-nio-9999-exec-52] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:00:47.818 INFO [http-nio-9999-exec-52] SQLServlet.doGet opt1:3
+24-Mar-2023 23:00:47.819 INFO [http-nio-9999-exec-49] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:00:47.820 INFO [http-nio-9999-exec-49] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:00:47.821 INFO [http-nio-9999-exec-49] SQLServlet.doGet opt2:6
+24-Mar-2023 23:00:47.822 INFO [http-nio-9999-exec-47] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:00:47.823 INFO [http-nio-9999-exec-47] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:00:47.823 INFO [http-nio-9999-exec-47] SQLServlet.doGet opt3:10
+24-Mar-2023 23:00:47.825 INFO [http-nio-9999-exec-50] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:00:47.826 INFO [http-nio-9999-exec-50] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:00:47.826 INFO [http-nio-9999-exec-50] SQLServlet.doGet opt4:14
+24-Mar-2023 23:00:48.427 INFO [http-nio-9999-exec-48] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:00:48.429 INFO [http-nio-9999-exec-48] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:00:48.429 INFO [http-nio-9999-exec-48] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:00:48.429 INFO [http-nio-9999-exec-48] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:00:48.430 INFO [http-nio-9999-exec-48] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:00:48.430 INFO [http-nio-9999-exec-48] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:00:51.307 INFO [http-nio-9999-exec-53] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:00:51.309 INFO [http-nio-9999-exec-53] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:00:51.309 INFO [http-nio-9999-exec-53] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:00:51.310 INFO [http-nio-9999-exec-53] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:00:51.310 INFO [http-nio-9999-exec-53] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:00:51.310 INFO [http-nio-9999-exec-53] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:02:05.292 INFO [http-nio-9999-exec-54] loginServlet.doGet loginServlet called
+24-Mar-2023 23:02:05.293 INFO [http-nio-9999-exec-54] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:02:05.294 INFO [http-nio-9999-exec-54] loginServlet.doGet Login Successful
+24-Mar-2023 23:02:05.333 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:02:05.334 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:02:05.334 INFO [http-nio-9999-exec-55] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:02:05.353 INFO [http-nio-9999-exec-56] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:02:05.355 INFO [http-nio-9999-exec-56] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:02:05.355 INFO [http-nio-9999-exec-56] SQLServlet.doGet opt1:3
+24-Mar-2023 23:02:05.356 INFO [http-nio-9999-exec-52] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:02:05.357 INFO [http-nio-9999-exec-52] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:02:05.358 INFO [http-nio-9999-exec-52] SQLServlet.doGet opt2:6
+24-Mar-2023 23:02:05.359 INFO [http-nio-9999-exec-49] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:02:05.360 INFO [http-nio-9999-exec-49] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:02:05.360 INFO [http-nio-9999-exec-49] SQLServlet.doGet opt3:10
+24-Mar-2023 23:02:05.371 INFO [http-nio-9999-exec-47] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:02:05.372 INFO [http-nio-9999-exec-47] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:02:05.372 INFO [http-nio-9999-exec-47] SQLServlet.doGet opt4:14
+24-Mar-2023 23:02:06.093 INFO [http-nio-9999-exec-50] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:02:06.095 INFO [http-nio-9999-exec-50] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:02:06.096 INFO [http-nio-9999-exec-50] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:02:06.096 INFO [http-nio-9999-exec-50] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:02:06.096 INFO [http-nio-9999-exec-50] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:02:06.096 INFO [http-nio-9999-exec-50] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:04:56.560 INFO [http-nio-9999-exec-53] loginServlet.doGet loginServlet called
+24-Mar-2023 23:04:56.562 INFO [http-nio-9999-exec-53] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:04:56.562 INFO [http-nio-9999-exec-53] loginServlet.doGet Login Successful
+24-Mar-2023 23:04:56.602 INFO [http-nio-9999-exec-51] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:04:56.603 INFO [http-nio-9999-exec-51] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:04:56.603 INFO [http-nio-9999-exec-51] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:04:56.630 INFO [http-nio-9999-exec-54] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:04:56.632 INFO [http-nio-9999-exec-54] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:04:56.632 INFO [http-nio-9999-exec-54] SQLServlet.doGet opt1:3
+24-Mar-2023 23:04:56.634 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:04:56.635 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:04:56.635 INFO [http-nio-9999-exec-55] SQLServlet.doGet opt2:6
+24-Mar-2023 23:04:56.636 INFO [http-nio-9999-exec-56] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:04:56.637 INFO [http-nio-9999-exec-56] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:04:56.638 INFO [http-nio-9999-exec-56] SQLServlet.doGet opt3:10
+24-Mar-2023 23:04:56.639 INFO [http-nio-9999-exec-52] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:04:56.640 INFO [http-nio-9999-exec-52] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:04:56.640 INFO [http-nio-9999-exec-52] SQLServlet.doGet opt4:14
+24-Mar-2023 23:04:57.199 INFO [http-nio-9999-exec-49] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:04:57.201 INFO [http-nio-9999-exec-49] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:04:57.201 INFO [http-nio-9999-exec-49] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:04:57.201 INFO [http-nio-9999-exec-49] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:04:57.202 INFO [http-nio-9999-exec-49] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:04:57.202 INFO [http-nio-9999-exec-49] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:08:56.720 INFO [http-nio-9999-exec-50] loginServlet.doGet loginServlet called
+24-Mar-2023 23:08:56.722 INFO [http-nio-9999-exec-50] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:08:56.722 INFO [http-nio-9999-exec-50] loginServlet.doGet Login Successful
+24-Mar-2023 23:08:56.764 INFO [http-nio-9999-exec-48] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:08:56.766 INFO [http-nio-9999-exec-48] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:08:56.766 INFO [http-nio-9999-exec-48] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:08:56.792 INFO [http-nio-9999-exec-53] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:08:56.793 INFO [http-nio-9999-exec-53] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:08:56.793 INFO [http-nio-9999-exec-53] SQLServlet.doGet opt1:3
+24-Mar-2023 23:08:56.795 INFO [http-nio-9999-exec-51] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:08:56.797 INFO [http-nio-9999-exec-51] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:08:56.797 INFO [http-nio-9999-exec-51] SQLServlet.doGet opt2:6
+24-Mar-2023 23:08:56.798 INFO [http-nio-9999-exec-54] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:08:56.799 INFO [http-nio-9999-exec-54] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:08:56.799 INFO [http-nio-9999-exec-54] SQLServlet.doGet opt3:10
+24-Mar-2023 23:08:56.801 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:08:56.802 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:08:56.802 INFO [http-nio-9999-exec-55] SQLServlet.doGet opt4:14
+24-Mar-2023 23:08:57.377 INFO [http-nio-9999-exec-56] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:08:57.379 INFO [http-nio-9999-exec-56] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:08:57.379 INFO [http-nio-9999-exec-56] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:08:57.380 INFO [http-nio-9999-exec-56] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:08:57.380 INFO [http-nio-9999-exec-56] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:08:57.380 INFO [http-nio-9999-exec-56] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:08:58.578 INFO [http-nio-9999-exec-52] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:08:58.580 INFO [http-nio-9999-exec-52] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:08:58.580 INFO [http-nio-9999-exec-52] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:08:58.580 INFO [http-nio-9999-exec-52] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:08:58.580 INFO [http-nio-9999-exec-52] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:08:58.581 INFO [http-nio-9999-exec-52] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:08:59.116 INFO [http-nio-9999-exec-49] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:08:59.118 INFO [http-nio-9999-exec-49] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:08:59.118 INFO [http-nio-9999-exec-49] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:08:59.118 INFO [http-nio-9999-exec-49] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:08:59.118 INFO [http-nio-9999-exec-49] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:08:59.118 INFO [http-nio-9999-exec-49] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:08:59.399 INFO [http-nio-9999-exec-47] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:08:59.401 INFO [http-nio-9999-exec-47] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:08:59.401 INFO [http-nio-9999-exec-47] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:08:59.401 INFO [http-nio-9999-exec-47] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:08:59.401 INFO [http-nio-9999-exec-47] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:08:59.401 INFO [http-nio-9999-exec-47] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:11:46.626 INFO [http-nio-9999-exec-48] loginServlet.doGet loginServlet called
+24-Mar-2023 23:11:46.628 INFO [http-nio-9999-exec-48] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:11:46.628 INFO [http-nio-9999-exec-48] loginServlet.doGet Login Successful
+24-Mar-2023 23:11:46.668 INFO [http-nio-9999-exec-53] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:11:46.669 INFO [http-nio-9999-exec-53] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:11:46.669 INFO [http-nio-9999-exec-53] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:11:46.693 INFO [http-nio-9999-exec-51] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:11:46.695 INFO [http-nio-9999-exec-51] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:11:46.695 INFO [http-nio-9999-exec-51] SQLServlet.doGet opt1:3
+24-Mar-2023 23:11:46.697 INFO [http-nio-9999-exec-54] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:11:46.698 INFO [http-nio-9999-exec-54] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:11:46.699 INFO [http-nio-9999-exec-54] SQLServlet.doGet opt2:6
+24-Mar-2023 23:11:46.700 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:11:46.702 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:11:46.702 INFO [http-nio-9999-exec-55] SQLServlet.doGet opt3:10
+24-Mar-2023 23:11:46.704 INFO [http-nio-9999-exec-56] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:11:46.705 INFO [http-nio-9999-exec-56] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:11:46.706 INFO [http-nio-9999-exec-56] SQLServlet.doGet opt4:14
+24-Mar-2023 23:11:47.237 INFO [http-nio-9999-exec-52] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:11:47.239 INFO [http-nio-9999-exec-52] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:11:47.239 INFO [http-nio-9999-exec-52] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:11:47.239 INFO [http-nio-9999-exec-52] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:11:47.239 INFO [http-nio-9999-exec-52] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:11:47.239 INFO [http-nio-9999-exec-52] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:12:13.710 INFO [http-nio-9999-exec-47] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:12:13.712 INFO [http-nio-9999-exec-47] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:12:13.712 INFO [http-nio-9999-exec-47] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:12:13.712 INFO [http-nio-9999-exec-47] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:12:13.712 INFO [http-nio-9999-exec-47] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:12:13.713 INFO [http-nio-9999-exec-47] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:12:15.420 INFO [http-nio-9999-exec-50] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:12:15.422 INFO [http-nio-9999-exec-50] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:12:15.422 INFO [http-nio-9999-exec-50] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:12:15.422 INFO [http-nio-9999-exec-50] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:12:15.422 INFO [http-nio-9999-exec-50] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:12:15.422 INFO [http-nio-9999-exec-50] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:12:17.013 INFO [http-nio-9999-exec-48] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:12:17.015 INFO [http-nio-9999-exec-48] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:12:17.015 INFO [http-nio-9999-exec-48] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:12:17.015 INFO [http-nio-9999-exec-48] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:12:17.016 INFO [http-nio-9999-exec-48] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:12:17.016 INFO [http-nio-9999-exec-48] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:12:17.882 INFO [http-nio-9999-exec-53] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:12:17.884 INFO [http-nio-9999-exec-53] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:12:17.884 INFO [http-nio-9999-exec-53] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:12:17.884 INFO [http-nio-9999-exec-53] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:12:17.884 INFO [http-nio-9999-exec-53] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:12:17.884 INFO [http-nio-9999-exec-53] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:12:18.453 INFO [http-nio-9999-exec-51] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:12:18.455 INFO [http-nio-9999-exec-51] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:12:18.455 INFO [http-nio-9999-exec-51] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:12:18.455 INFO [http-nio-9999-exec-51] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:12:18.455 INFO [http-nio-9999-exec-51] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:12:18.455 INFO [http-nio-9999-exec-51] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:14:44.817 INFO [http-nio-9999-exec-55] loginServlet.doGet loginServlet called
+24-Mar-2023 23:14:44.818 INFO [http-nio-9999-exec-55] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:14:44.819 INFO [http-nio-9999-exec-55] loginServlet.doGet Login Successful
+24-Mar-2023 23:14:44.850 INFO [http-nio-9999-exec-56] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:14:44.852 INFO [http-nio-9999-exec-56] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:14:44.852 INFO [http-nio-9999-exec-56] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:14:44.875 INFO [http-nio-9999-exec-52] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:14:44.876 INFO [http-nio-9999-exec-52] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:14:44.877 INFO [http-nio-9999-exec-52] SQLServlet.doGet opt1:3
+24-Mar-2023 23:14:44.881 INFO [http-nio-9999-exec-49] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:14:44.882 INFO [http-nio-9999-exec-49] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:14:44.883 INFO [http-nio-9999-exec-49] SQLServlet.doGet opt2:6
+24-Mar-2023 23:14:44.884 INFO [http-nio-9999-exec-47] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:14:44.885 INFO [http-nio-9999-exec-47] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:14:44.885 INFO [http-nio-9999-exec-47] SQLServlet.doGet opt3:10
+24-Mar-2023 23:14:44.887 INFO [http-nio-9999-exec-50] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:14:44.888 INFO [http-nio-9999-exec-50] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:14:44.888 INFO [http-nio-9999-exec-50] SQLServlet.doGet opt4:14
+24-Mar-2023 23:14:45.401 INFO [http-nio-9999-exec-48] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:14:45.403 INFO [http-nio-9999-exec-48] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:14:45.403 INFO [http-nio-9999-exec-48] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:14:45.403 INFO [http-nio-9999-exec-48] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:14:45.403 INFO [http-nio-9999-exec-48] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:14:45.403 INFO [http-nio-9999-exec-48] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:14:46.115 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 23:14:46.701 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 23:14:46.704 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 23:15:39.486 INFO [http-nio-9999-exec-54] loginServlet.doGet loginServlet called
+24-Mar-2023 23:15:39.489 INFO [http-nio-9999-exec-54] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:15:39.490 INFO [http-nio-9999-exec-54] loginServlet.doGet Login Successful
+24-Mar-2023 23:15:39.530 INFO [http-nio-9999-exec-48] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:15:39.532 INFO [http-nio-9999-exec-48] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:15:39.532 INFO [http-nio-9999-exec-48] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:15:39.562 INFO [http-nio-9999-exec-50] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:15:39.563 INFO [http-nio-9999-exec-50] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:15:39.564 INFO [http-nio-9999-exec-50] SQLServlet.doGet opt1:3
+24-Mar-2023 23:15:39.568 INFO [http-nio-9999-exec-49] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:15:39.569 INFO [http-nio-9999-exec-49] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:15:39.569 INFO [http-nio-9999-exec-49] SQLServlet.doGet opt2:6
+24-Mar-2023 23:15:39.571 INFO [http-nio-9999-exec-53] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:15:39.572 INFO [http-nio-9999-exec-53] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:15:39.572 INFO [http-nio-9999-exec-53] SQLServlet.doGet opt3:10
+24-Mar-2023 23:15:39.573 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:15:39.574 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:15:39.574 INFO [http-nio-9999-exec-55] SQLServlet.doGet opt4:14
+24-Mar-2023 23:15:40.186 INFO [http-nio-9999-exec-47] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:15:40.188 INFO [http-nio-9999-exec-47] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:15:40.188 INFO [http-nio-9999-exec-47] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:15:40.189 INFO [http-nio-9999-exec-47] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:15:40.189 INFO [http-nio-9999-exec-47] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:15:40.189 INFO [http-nio-9999-exec-47] responseServlet.doGet INSERT INTO responses Values (null, '1', '4', 'Irfan')
+24-Mar-2023 23:16:36.281 INFO [http-nio-9999-exec-48] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:16:36.283 INFO [http-nio-9999-exec-48] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:16:36.283 INFO [http-nio-9999-exec-48] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:16:36.283 INFO [http-nio-9999-exec-48] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:16:36.283 INFO [http-nio-9999-exec-48] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:16:36.283 INFO [http-nio-9999-exec-48] responseServlet.doGet INSERT INTO responses Values (null, '1', '2', 'lim chock hong')
+24-Mar-2023 23:17:14.735 INFO [http-nio-9999-exec-58] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:14.737 INFO [http-nio-9999-exec-58] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:14.737 INFO [http-nio-9999-exec-58] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:14.737 INFO [http-nio-9999-exec-58] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:14.738 INFO [http-nio-9999-exec-58] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:14.738 INFO [http-nio-9999-exec-58] responseServlet.doGet INSERT INTO responses Values (null, '1', '2', 'lim chock hong')
+24-Mar-2023 23:17:17.434 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 23:17:18.018 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 23:17:18.020 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 23:17:20.278 INFO [http-nio-9999-exec-58] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:20.281 INFO [http-nio-9999-exec-58] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:20.281 INFO [http-nio-9999-exec-58] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:20.282 INFO [http-nio-9999-exec-58] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:20.282 INFO [http-nio-9999-exec-58] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:20.282 INFO [http-nio-9999-exec-58] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'lim chock hong')
+24-Mar-2023 23:17:35.333 INFO [http-nio-9999-exec-59] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:35.336 INFO [http-nio-9999-exec-59] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:35.336 INFO [http-nio-9999-exec-59] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:35.336 INFO [http-nio-9999-exec-59] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:35.336 INFO [http-nio-9999-exec-59] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:35.336 INFO [http-nio-9999-exec-59] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'lim chock hong')
+24-Mar-2023 23:17:36.127 INFO [http-nio-9999-exec-50] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:36.129 INFO [http-nio-9999-exec-50] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:36.129 INFO [http-nio-9999-exec-50] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:36.129 INFO [http-nio-9999-exec-50] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:36.130 INFO [http-nio-9999-exec-50] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:36.130 INFO [http-nio-9999-exec-50] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'lim chock hong')
+24-Mar-2023 23:17:37.412 INFO [http-nio-9999-exec-62] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:37.414 INFO [http-nio-9999-exec-62] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:37.414 INFO [http-nio-9999-exec-62] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:37.415 INFO [http-nio-9999-exec-62] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:37.415 INFO [http-nio-9999-exec-62] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:37.415 INFO [http-nio-9999-exec-62] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'lim chock hong')
+24-Mar-2023 23:17:38.044 INFO [http-nio-9999-exec-53] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:38.046 INFO [http-nio-9999-exec-53] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:38.046 INFO [http-nio-9999-exec-53] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:38.047 INFO [http-nio-9999-exec-53] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:38.047 INFO [http-nio-9999-exec-53] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:38.047 INFO [http-nio-9999-exec-53] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'lim chock hong')
+24-Mar-2023 23:17:38.109 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 23:17:38.692 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 23:17:38.694 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 23:17:47.167 INFO [http-nio-9999-exec-57] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:47.170 INFO [http-nio-9999-exec-57] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:47.170 INFO [http-nio-9999-exec-57] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:47.170 INFO [http-nio-9999-exec-57] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:47.171 INFO [http-nio-9999-exec-57] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:47.171 INFO [http-nio-9999-exec-57] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'lim chock hong')
+24-Mar-2023 23:17:48.237 INFO [http-nio-9999-exec-63] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:48.239 INFO [http-nio-9999-exec-63] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:48.239 INFO [http-nio-9999-exec-63] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:48.239 INFO [http-nio-9999-exec-63] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:48.240 INFO [http-nio-9999-exec-63] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:48.240 INFO [http-nio-9999-exec-63] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'lim chock hong')
+24-Mar-2023 23:17:48.737 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 23:17:49.318 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 23:17:49.321 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 23:17:53.101 INFO [http-nio-9999-exec-53] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:53.104 INFO [http-nio-9999-exec-53] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:53.104 INFO [http-nio-9999-exec-53] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:53.104 INFO [http-nio-9999-exec-53] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:53.105 INFO [http-nio-9999-exec-53] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:53.105 INFO [http-nio-9999-exec-53] responseServlet.doGet INSERT INTO responses Values (null, '1', '2', 'lim chock hong')
+24-Mar-2023 23:17:54.263 INFO [http-nio-9999-exec-67] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:54.265 INFO [http-nio-9999-exec-67] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:54.265 INFO [http-nio-9999-exec-67] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:54.265 INFO [http-nio-9999-exec-67] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:54.265 INFO [http-nio-9999-exec-67] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:54.265 INFO [http-nio-9999-exec-67] responseServlet.doGet INSERT INTO responses Values (null, '1', '2', 'lim chock hong')
+24-Mar-2023 23:17:55.126 INFO [http-nio-9999-exec-50] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:17:55.128 INFO [http-nio-9999-exec-50] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:17:55.128 INFO [http-nio-9999-exec-50] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:17:55.128 INFO [http-nio-9999-exec-50] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:17:55.129 INFO [http-nio-9999-exec-50] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 23:17:55.129 INFO [http-nio-9999-exec-50] responseServlet.doGet INSERT INTO responses Values (null, '1', '2', 'lim chock hong')
+24-Mar-2023 23:18:04.869 INFO [http-nio-9999-exec-64] loginServlet.doGet loginServlet called
+24-Mar-2023 23:18:04.871 INFO [http-nio-9999-exec-64] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:18:04.871 INFO [http-nio-9999-exec-64] loginServlet.doGet Login Successful
+24-Mar-2023 23:18:04.907 INFO [http-nio-9999-exec-66] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:04.908 INFO [http-nio-9999-exec-66] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:18:04.908 INFO [http-nio-9999-exec-66] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:18:04.931 INFO [http-nio-9999-exec-65] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:04.932 INFO [http-nio-9999-exec-65] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:04.933 INFO [http-nio-9999-exec-65] SQLServlet.doGet opt1:3
+24-Mar-2023 23:18:04.934 INFO [http-nio-9999-exec-60] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:04.935 INFO [http-nio-9999-exec-60] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:04.935 INFO [http-nio-9999-exec-60] SQLServlet.doGet opt2:6
+24-Mar-2023 23:18:04.937 INFO [http-nio-9999-exec-55] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:04.938 INFO [http-nio-9999-exec-55] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:04.938 INFO [http-nio-9999-exec-55] SQLServlet.doGet opt3:10
+24-Mar-2023 23:18:04.939 INFO [http-nio-9999-exec-47] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:04.940 INFO [http-nio-9999-exec-47] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:04.940 INFO [http-nio-9999-exec-47] SQLServlet.doGet opt4:14
+24-Mar-2023 23:18:05.592 INFO [http-nio-9999-exec-61] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:18:05.594 INFO [http-nio-9999-exec-61] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:18:05.594 INFO [http-nio-9999-exec-61] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:18:05.594 INFO [http-nio-9999-exec-61] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:18:05.595 INFO [http-nio-9999-exec-61] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:18:05.595 INFO [http-nio-9999-exec-61] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:18:16.488 INFO [http-nio-9999-exec-69] loginServlet.doGet loginServlet called
+24-Mar-2023 23:18:16.490 INFO [http-nio-9999-exec-69] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:18:16.490 INFO [http-nio-9999-exec-69] loginServlet.doGet Login Successful
+24-Mar-2023 23:18:16.525 INFO [http-nio-9999-exec-50] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:16.527 INFO [http-nio-9999-exec-50] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:18:16.527 INFO [http-nio-9999-exec-50] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:18:16.543 INFO [http-nio-9999-exec-70] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:16.544 INFO [http-nio-9999-exec-70] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:16.545 INFO [http-nio-9999-exec-70] SQLServlet.doGet opt1:3
+24-Mar-2023 23:18:16.547 INFO [http-nio-9999-exec-66] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:16.548 INFO [http-nio-9999-exec-66] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:16.548 INFO [http-nio-9999-exec-66] SQLServlet.doGet opt2:6
+24-Mar-2023 23:18:16.550 INFO [http-nio-9999-exec-65] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:16.551 INFO [http-nio-9999-exec-65] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:16.551 INFO [http-nio-9999-exec-65] SQLServlet.doGet opt3:10
+24-Mar-2023 23:18:16.553 INFO [http-nio-9999-exec-60] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:16.553 INFO [http-nio-9999-exec-60] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:16.554 INFO [http-nio-9999-exec-60] SQLServlet.doGet opt4:14
+24-Mar-2023 23:18:17.349 INFO [http-nio-9999-exec-55] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:18:17.351 INFO [http-nio-9999-exec-55] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:18:17.351 INFO [http-nio-9999-exec-55] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:18:17.351 INFO [http-nio-9999-exec-55] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:18:17.351 INFO [http-nio-9999-exec-55] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:18:17.351 INFO [http-nio-9999-exec-55] responseServlet.doGet INSERT INTO responses Values (null, '1', '4', 'Irfan')
+24-Mar-2023 23:18:58.087 INFO [http-nio-9999-exec-61] loginServlet.doGet loginServlet called
+24-Mar-2023 23:18:58.089 INFO [http-nio-9999-exec-61] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:18:58.089 INFO [http-nio-9999-exec-61] loginServlet.doGet Login Successful
+24-Mar-2023 23:18:58.130 INFO [http-nio-9999-exec-68] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:58.131 INFO [http-nio-9999-exec-68] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:18:58.132 INFO [http-nio-9999-exec-68] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:18:58.157 INFO [http-nio-9999-exec-69] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:58.158 INFO [http-nio-9999-exec-69] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:58.158 INFO [http-nio-9999-exec-69] SQLServlet.doGet opt1:3
+24-Mar-2023 23:18:58.160 INFO [http-nio-9999-exec-71] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:58.161 INFO [http-nio-9999-exec-71] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:58.162 INFO [http-nio-9999-exec-71] SQLServlet.doGet opt2:6
+24-Mar-2023 23:18:58.165 INFO [http-nio-9999-exec-70] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:58.166 INFO [http-nio-9999-exec-70] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:58.167 INFO [http-nio-9999-exec-70] SQLServlet.doGet opt3:10
+24-Mar-2023 23:18:58.169 INFO [http-nio-9999-exec-66] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:18:58.170 INFO [http-nio-9999-exec-66] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:18:58.170 INFO [http-nio-9999-exec-66] SQLServlet.doGet opt4:14
+24-Mar-2023 23:18:58.745 INFO [http-nio-9999-exec-65] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:18:58.747 INFO [http-nio-9999-exec-65] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:18:58.747 INFO [http-nio-9999-exec-65] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:18:58.747 INFO [http-nio-9999-exec-65] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:18:58.748 INFO [http-nio-9999-exec-65] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:18:58.748 INFO [http-nio-9999-exec-65] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:19:23.129 INFO [http-nio-9999-exec-72] loginServlet.doGet loginServlet called
+24-Mar-2023 23:19:23.130 INFO [http-nio-9999-exec-72] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:19:23.131 INFO [http-nio-9999-exec-72] loginServlet.doGet Login Successful
+24-Mar-2023 23:19:23.168 INFO [http-nio-9999-exec-73] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:19:23.170 INFO [http-nio-9999-exec-73] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:19:23.170 INFO [http-nio-9999-exec-73] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:19:23.189 INFO [http-nio-9999-exec-68] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:19:23.190 INFO [http-nio-9999-exec-68] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:19:23.191 INFO [http-nio-9999-exec-68] SQLServlet.doGet opt1:3
+24-Mar-2023 23:19:23.192 INFO [http-nio-9999-exec-69] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:19:23.193 INFO [http-nio-9999-exec-69] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:19:23.193 INFO [http-nio-9999-exec-69] SQLServlet.doGet opt2:6
+24-Mar-2023 23:19:23.194 INFO [http-nio-9999-exec-71] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:19:23.196 INFO [http-nio-9999-exec-71] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:19:23.196 INFO [http-nio-9999-exec-71] SQLServlet.doGet opt3:10
+24-Mar-2023 23:19:23.202 INFO [http-nio-9999-exec-70] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:19:23.204 INFO [http-nio-9999-exec-70] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:19:23.204 INFO [http-nio-9999-exec-70] SQLServlet.doGet opt4:14
+24-Mar-2023 23:19:23.808 INFO [http-nio-9999-exec-66] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:19:23.810 INFO [http-nio-9999-exec-66] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:19:23.810 INFO [http-nio-9999-exec-66] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:19:23.810 INFO [http-nio-9999-exec-66] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:19:23.811 INFO [http-nio-9999-exec-66] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:19:23.811 INFO [http-nio-9999-exec-66] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:23:50.768 INFO [http-nio-9999-exec-74] loginServlet.doGet loginServlet called
+24-Mar-2023 23:23:50.770 INFO [http-nio-9999-exec-74] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:23:50.770 INFO [http-nio-9999-exec-74] loginServlet.doGet Login Successful
+24-Mar-2023 23:23:50.800 INFO [http-nio-9999-exec-75] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:23:50.801 INFO [http-nio-9999-exec-75] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:23:50.802 INFO [http-nio-9999-exec-75] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:23:50.825 INFO [http-nio-9999-exec-72] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:23:50.827 INFO [http-nio-9999-exec-72] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:23:50.827 INFO [http-nio-9999-exec-72] SQLServlet.doGet opt1:3
+24-Mar-2023 23:23:50.829 INFO [http-nio-9999-exec-73] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:23:50.831 INFO [http-nio-9999-exec-73] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:23:50.831 INFO [http-nio-9999-exec-73] SQLServlet.doGet opt2:6
+24-Mar-2023 23:23:50.832 INFO [http-nio-9999-exec-68] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:23:50.833 INFO [http-nio-9999-exec-68] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:23:50.834 INFO [http-nio-9999-exec-68] SQLServlet.doGet opt3:10
+24-Mar-2023 23:23:50.835 INFO [http-nio-9999-exec-69] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:23:50.836 INFO [http-nio-9999-exec-69] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:23:50.836 INFO [http-nio-9999-exec-69] SQLServlet.doGet opt4:14
+24-Mar-2023 23:23:51.812 INFO [http-nio-9999-exec-71] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:23:51.814 INFO [http-nio-9999-exec-71] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:23:51.814 INFO [http-nio-9999-exec-71] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:23:51.815 INFO [http-nio-9999-exec-71] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:23:51.815 INFO [http-nio-9999-exec-71] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:23:51.815 INFO [http-nio-9999-exec-71] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:33:24.301 INFO [http-nio-9999-exec-76] loginServlet.doGet loginServlet called
+24-Mar-2023 23:33:24.304 INFO [http-nio-9999-exec-76] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:33:24.304 INFO [http-nio-9999-exec-76] loginServlet.doGet Login Successful
+24-Mar-2023 23:33:24.337 INFO [http-nio-9999-exec-77] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:33:24.338 INFO [http-nio-9999-exec-77] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:33:24.338 INFO [http-nio-9999-exec-77] SQLServlet.doGet currentQuestionID:1
+24-Mar-2023 23:33:24.399 INFO [http-nio-9999-exec-74] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:33:24.401 INFO [http-nio-9999-exec-74] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='1  '
+24-Mar-2023 23:33:24.401 INFO [http-nio-9999-exec-74] SQLServlet.doGet opt1:3
+24-Mar-2023 23:33:24.403 INFO [http-nio-9999-exec-75] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:33:24.404 INFO [http-nio-9999-exec-75] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='1  '
+24-Mar-2023 23:33:24.405 INFO [http-nio-9999-exec-75] SQLServlet.doGet opt2:6
+24-Mar-2023 23:33:24.406 INFO [http-nio-9999-exec-72] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:33:24.407 INFO [http-nio-9999-exec-72] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='1  '
+24-Mar-2023 23:33:24.407 INFO [http-nio-9999-exec-72] SQLServlet.doGet opt3:10
+24-Mar-2023 23:33:24.409 INFO [http-nio-9999-exec-73] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:33:24.410 INFO [http-nio-9999-exec-73] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='1  '
+24-Mar-2023 23:33:24.410 INFO [http-nio-9999-exec-73] SQLServlet.doGet opt4:14
+24-Mar-2023 23:33:26.136 INFO [http-nio-9999-exec-68] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:33:26.138 INFO [http-nio-9999-exec-68] responseServlet.doGet Current QuestionID: 1
+24-Mar-2023 23:33:26.138 INFO [http-nio-9999-exec-68] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+24-Mar-2023 23:33:26.138 INFO [http-nio-9999-exec-68] responseServlet.doGet Correct Option: 3
+24-Mar-2023 23:33:26.138 INFO [http-nio-9999-exec-68] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:33:26.138 INFO [http-nio-9999-exec-68] responseServlet.doGet INSERT INTO responses Values (null, '1', '3', 'Irfan')
+24-Mar-2023 23:34:16.564 INFO [http-nio-9999-exec-71] loginServlet.doGet loginServlet called
+24-Mar-2023 23:34:16.566 INFO [http-nio-9999-exec-71] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:34:16.566 INFO [http-nio-9999-exec-71] loginServlet.doGet Login Successful
+24-Mar-2023 23:34:16.602 INFO [http-nio-9999-exec-70] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:34:16.602 INFO [http-nio-9999-exec-70] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:34:16.603 INFO [http-nio-9999-exec-70] SQLServlet.doGet currentQuestionID:3
+24-Mar-2023 23:34:16.629 INFO [http-nio-9999-exec-76] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:34:16.630 INFO [http-nio-9999-exec-76] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='3  '
+24-Mar-2023 23:34:16.631 INFO [http-nio-9999-exec-76] SQLServlet.doGet opt1:inheritance
+24-Mar-2023 23:34:16.632 INFO [http-nio-9999-exec-77] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:34:16.634 INFO [http-nio-9999-exec-77] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='3  '
+24-Mar-2023 23:34:16.634 INFO [http-nio-9999-exec-77] SQLServlet.doGet opt2:interface
+24-Mar-2023 23:34:16.635 INFO [http-nio-9999-exec-74] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:34:16.636 INFO [http-nio-9999-exec-74] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='3  '
+24-Mar-2023 23:34:16.636 INFO [http-nio-9999-exec-74] SQLServlet.doGet opt3:Abstract class
+24-Mar-2023 23:34:16.638 INFO [http-nio-9999-exec-75] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:34:16.639 INFO [http-nio-9999-exec-75] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='3  '
+24-Mar-2023 23:34:16.639 INFO [http-nio-9999-exec-75] SQLServlet.doGet opt4:Polymorphism
+24-Mar-2023 23:34:19.665 INFO [http-nio-9999-exec-72] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:34:19.667 INFO [http-nio-9999-exec-72] responseServlet.doGet Current QuestionID: 3
+24-Mar-2023 23:34:19.667 INFO [http-nio-9999-exec-72] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='3'
+24-Mar-2023 23:34:19.667 INFO [http-nio-9999-exec-72] responseServlet.doGet Correct Option: 4
+24-Mar-2023 23:34:19.667 INFO [http-nio-9999-exec-72] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:34:19.667 INFO [http-nio-9999-exec-72] responseServlet.doGet INSERT INTO responses Values (null, '3', '3', 'Irfan')
+24-Mar-2023 23:42:08.940 INFO [http-nio-9999-exec-68] loginServlet.doGet loginServlet called
+24-Mar-2023 23:42:08.942 INFO [http-nio-9999-exec-68] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 23:42:08.942 INFO [http-nio-9999-exec-68] loginServlet.doGet Login Successful
+24-Mar-2023 23:42:08.986 INFO [http-nio-9999-exec-69] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:42:08.987 INFO [http-nio-9999-exec-69] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '3005'
+24-Mar-2023 23:42:08.987 INFO [http-nio-9999-exec-69] SQLServlet.doGet currentQuestionID:3
+24-Mar-2023 23:42:09.015 INFO [http-nio-9999-exec-71] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:42:09.016 INFO [http-nio-9999-exec-71] SQLServlet.doGet Executing SELECT opt1 FROM questions WHERE id='3  '
+24-Mar-2023 23:42:09.017 INFO [http-nio-9999-exec-71] SQLServlet.doGet opt1:inheritance
+24-Mar-2023 23:42:09.018 INFO [http-nio-9999-exec-70] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:42:09.019 INFO [http-nio-9999-exec-70] SQLServlet.doGet Executing SELECT opt2 FROM questions WHERE id='3  '
+24-Mar-2023 23:42:09.020 INFO [http-nio-9999-exec-70] SQLServlet.doGet opt2:interface
+24-Mar-2023 23:42:09.021 INFO [http-nio-9999-exec-76] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:42:09.022 INFO [http-nio-9999-exec-76] SQLServlet.doGet Executing SELECT opt3 FROM questions WHERE id='3  '
+24-Mar-2023 23:42:09.022 INFO [http-nio-9999-exec-76] SQLServlet.doGet opt3:Abstract class
+24-Mar-2023 23:42:09.023 INFO [http-nio-9999-exec-77] SQLServlet.doGet SQLServlet Called
+24-Mar-2023 23:42:09.024 INFO [http-nio-9999-exec-77] SQLServlet.doGet Executing SELECT opt4 FROM questions WHERE id='3  '
+24-Mar-2023 23:42:09.024 INFO [http-nio-9999-exec-77] SQLServlet.doGet opt4:Polymorphism
+24-Mar-2023 23:42:10.171 INFO [http-nio-9999-exec-74] responseServlet.doGet responseServlet Called
+24-Mar-2023 23:42:10.173 INFO [http-nio-9999-exec-74] responseServlet.doGet Current QuestionID: 3
+24-Mar-2023 23:42:10.173 INFO [http-nio-9999-exec-74] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='3'
+24-Mar-2023 23:42:10.173 INFO [http-nio-9999-exec-74] responseServlet.doGet Correct Option: 4
+24-Mar-2023 23:42:10.173 INFO [http-nio-9999-exec-74] responseServlet.doGet Current Respondee: Irfan
+24-Mar-2023 23:42:10.173 INFO [http-nio-9999-exec-74] responseServlet.doGet INSERT INTO responses Values (null, '3', '3', 'Irfan')
+24-Mar-2023 23:42:28.473 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 23:42:28.479 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Mar-2023 23:42:28.494 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 23:42:28.512 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]

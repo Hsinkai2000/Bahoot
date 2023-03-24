@@ -19,7 +19,7 @@ public class SQLServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        LOGGER.info("registerServlet Called"); 
+        LOGGER.info("SQLServlet Called"); 
 
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
@@ -32,7 +32,7 @@ public class SQLServlet extends HttpServlet {
 
             Statement stmt = conn.createStatement();) {
             
-            //LOGGER.info(sqlStrRegister); // Add a logging statement
+            LOGGER.info("Executing " + sqlStr); // Add a logging statement
             ResultSet rset = stmt.executeQuery(sqlStr);
             ResultSetMetaData rsmd = rset.getMetaData();
             int columnsNumber = rsmd.getColumnCount();
@@ -40,8 +40,8 @@ public class SQLServlet extends HttpServlet {
                 for (int i = 1; i <= columnsNumber; i++) {
                     if (i > 1) System.out.print(",  ");
                     String columnValue = rset.getString(i);
-                    LOGGER.info("Value: " + columnValue);
-                    out.print(columnValue + " " /*+ rsmd.getColumnName(i)*/);
+                    LOGGER.info(rsmd.getColumnName(i) + ":" + columnValue);
+                    out.print(rsmd.getColumnName(i) + ":" +columnValue + " " /*+ rsmd.getColumnName(i)*/);
                     
                 }
                 out.println(" ");

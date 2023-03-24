@@ -16,7 +16,7 @@ public class responseServlet extends HttpServlet {
     static String option;
     static String correctOption;
     static String userID;
-    static String currentQuestion;
+    static String currentQuestionID;
     static String respondee;
 
     @Override
@@ -36,33 +36,38 @@ public class responseServlet extends HttpServlet {
                 "root", "password");
 
             Statement stmt = conn.createStatement();) {
-                
-            String sqlStr = "SELECT correctOPT FROM questions WHERE current='Y'";
-            
-            LOGGER.info(sqlStr); // Add a logging statement
+
+            // get current questionID
+            String sqlStr = "SELECT currentQuestionID FROM session WHERE roomCode ='3005'"; // roomcode hardcoded
             ResultSet rset = stmt.executeQuery(sqlStr);
+            rset.next();
+            currentQuestionID = rset.getString(1);
+            LOGGER.info("Current QuestionID: " + currentQuestionID);
+
+            // get correct option
+            sqlStr = "SELECT correctOPT FROM questions WHERE id='" + currentQuestionID + "'";
+            LOGGER.info(sqlStr); // Add a logging statement
+            rset = stmt.executeQuery(sqlStr);
             rset.next();
             correctOption = rset.getString(1);
             LOGGER.info("Correct Option: " + correctOption);
 
             if (option.matches(correctOption))
-                out.print("Correct");
+                out.print("Question Result:Correct");
             else
-                out.print("Incorrect");
+                out.print("Question Result:Incorrect");
 
-            sqlStr = "SELECT id FROM questions WHERE current ='Y'";
-            rset = stmt.executeQuery(sqlStr);
-            rset.next();
-            currentQuestion = rset.getString(1);
-            LOGGER.info("Current Question: " + currentQuestion);
-
+            
+            // get respondee name
             sqlStr = "SELECT name FROM users WHERE id ='" + userID + "'";
             rset = stmt.executeQuery(sqlStr);
             rset.next();
             respondee = rset.getString(1);
             LOGGER.info("Current Respondee: " + respondee);
 
-            sqlStr = "INSERT INTO responses Values (null, '" + currentQuestion + "', '" + option + "', '" + respondee +"')";
+            // send statistic to DB
+
+            sqlStr = "INSERT INTO responses Values (null, '" + currentQuestionID + "', '" + option + "', '" + respondee +"')";
             LOGGER.info(sqlStr); // Add a logging statement
             stmt.executeUpdate(sqlStr);
                 

@@ -25,19 +25,10 @@ import java.sql.Statement;
 
 
 public class Login extends AppCompatActivity {
-
     private EditText emailField;
     private EditText passwordField;
-
     private String emailStr = "";
     private String passwordStr = "";
-    private String sqlStr = "";
-    //private SQL sql = new SQL();
-    private ResultSet resultSet;
-
-    public Login() throws SQLException {
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
