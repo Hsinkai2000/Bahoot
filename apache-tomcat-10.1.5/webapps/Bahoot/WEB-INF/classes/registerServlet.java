@@ -13,29 +13,32 @@ import jakarta.servlet.annotation.*;
 @WebServlet("/register")
 public class registerServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(registerServlet.class.getName());
-    static String name;
-    static String email;
-    static String password;
-    static String phoneNumber;
+    static String nameStr;
+    static String emailStr;
+    static String passwordStr;
+    static String phoneNumberStr;
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        LOGGER.info("MyServlet called"); // Add a logging statement
+        LOGGER.info("registerServlet Called"); 
 
-        name = request.getParameter("name");
-        email = request.getParameter("email");
-        password = request.getParameter("password");
-        phoneNumber = request.getParameter("phoneNumber");
-        String err = "";
-
-        if (verifyEmail() == false)
-            err = "wfef";
-        else
+        PrintWriter out = response.getWriter();
+        response.setContentType("text/html");
+        
+        nameStr = request.getParameter("name");
+        emailStr = request.getParameter("email");
+        passwordStr = request.getParameter("password");
+        phoneNumberStr = request.getParameter("phoneNumber");
+        
+        if(verifyEmail() && verifyPhoneNumber())
             registerToDb(response);
+        else if (!verifyEmail())
+            out.println("This email address is taken, please try again.");
+        else if (!verifyPhoneNumber())
+            out.println("This phone number is taken, please try again.");
 
-       
     }
 
     private static void registerToDb(HttpServletResponse response) {
@@ -46,9 +49,10 @@ public class registerServlet extends HttpServlet {
                         "root", "password");
 
                 Statement stmt = conn.createStatement();) {
-
-            String sqlStrRegister = "INSERT INTO Users Values (null, '" + email + "', '" + name + "', '" + password
-                    + "', '" + phoneNumber + "')";
+            
+            String sqlStrRegister = "INSERT INTO Users Values (null, '" + emailStr + "', '" + nameStr + "', '" + passwordStr
+                    + "', '" + phoneNumberStr + "')";
+            LOGGER.info(sqlStrRegister); // Add a logging statement
             stmt.executeUpdate(sqlStrRegister);
             
         } catch (SQLException e) {
@@ -67,13 +71,36 @@ public class registerServlet extends HttpServlet {
 
             Statement stmt = conn.createStatement();) {
                 int id = 0;
-                String sqlStrEmail = "SELECT * FROM users WHERE email ='" + email + "'";
+                String sqlStrEmail = "SELECT * FROM users WHERE email ='" + emailStr + "'";
                 ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail);
 
-                if (rsetEmail.next() == false)
-                    return false;
+                if (!rsetEmail.next()) 
+                    return true;  
                 else 
+                    return false;
+            } catch (SQLException e) {
+
+                LOGGER.info("SQL Failed" + e); // Add a logging statement
+            }
+        return false;
+    }
+
+    private static boolean verifyPhoneNumber() {
+        // check if phone number exists
+        try (
+            Connection conn = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+                "root", "password");
+
+            Statement stmt = conn.createStatement();) {
+                int id = 0;
+                String sqlStrPhoneNumber = "SELECT * FROM users WHERE mobile_number ='" + phoneNumberStr + "'";
+                ResultSet rsetPhoneNumber = stmt.executeQuery(sqlStrPhoneNumber);
+
+                if (!rsetPhoneNumber.next())
                     return true;
+                else 
+                    return false;
             } catch (SQLException e) {
 
                 LOGGER.info("SQL Failed" + e); // Add a logging statement

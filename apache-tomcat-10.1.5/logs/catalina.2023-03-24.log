@@ -1,0 +1,332 @@
+24-Mar-2023 10:31:57.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+24-Mar-2023 10:31:57.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+24-Mar-2023 10:31:57.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+24-Mar-2023 10:31:57.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+24-Mar-2023 10:31:57.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+24-Mar-2023 10:31:57.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+24-Mar-2023 10:31:57.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+24-Mar-2023 10:31:57.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+24-Mar-2023 10:31:57.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2023 10:31:57.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 10:31:57.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 10:31:57.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/conf/logging.properties
+24-Mar-2023 10:31:57.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2023 10:31:57.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2023 10:31:57.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 10:31:57.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/temp
+24-Mar-2023 10:31:57.218 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/irfansyakir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+24-Mar-2023 10:31:57.429 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 10:31:57.468 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [439] milliseconds
+24-Mar-2023 10:31:57.503 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Mar-2023 10:31:57.504 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+24-Mar-2023 10:31:57.510 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/docs]
+24-Mar-2023 10:31:57.907 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 10:31:57.931 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/docs] has finished in [420] ms
+24-Mar-2023 10:31:57.931 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/manager]
+24-Mar-2023 10:31:58.111 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 10:31:58.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/manager] has finished in [187] ms
+24-Mar-2023 10:31:58.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/examples]
+24-Mar-2023 10:31:58.363 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 10:31:58.373 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/examples] has finished in [254] ms
+24-Mar-2023 10:31:58.373 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/ROOT]
+24-Mar-2023 10:31:58.531 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 10:31:58.533 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/ROOT] has finished in [160] ms
+24-Mar-2023 10:31:58.534 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/host-manager]
+24-Mar-2023 10:31:58.700 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 10:31:58.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/host-manager] has finished in [167] ms
+24-Mar-2023 10:31:58.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/Bahoot]
+24-Mar-2023 10:31:58.830 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 10:31:58.833 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/Bahoot] has finished in [132] ms
+24-Mar-2023 10:31:58.834 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 10:31:58.839 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1369] milliseconds
+24-Mar-2023 10:33:18.802 INFO [http-nio-9999-exec-1] loginServlet.doGet loginServlet called
+24-Mar-2023 10:33:18.983 INFO [http-nio-9999-exec-1] loginServlet.doGet SELECT * FROM users WHERE email ='i@gmail.com' AND password ='123'
+24-Mar-2023 10:33:27.878 INFO [http-nio-9999-exec-2] loginServlet.doGet loginServlet called
+24-Mar-2023 10:33:27.891 INFO [http-nio-9999-exec-2] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 10:33:27.892 INFO [http-nio-9999-exec-2] loginServlet.doGet Login Successful
+24-Mar-2023 10:33:28.202 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 10:33:28.216 INFO [http-nio-9999-exec-3] SQLServlet.doGet Value: irfan
+24-Mar-2023 10:34:11.179 INFO [http-nio-9999-exec-5] loginServlet.doGet loginServlet called
+24-Mar-2023 10:34:11.245 INFO [http-nio-9999-exec-5] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 10:34:11.256 INFO [http-nio-9999-exec-5] loginServlet.doGet Login Successful
+24-Mar-2023 10:34:11.509 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 10:34:11.518 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: irfan
+24-Mar-2023 10:35:43.262 INFO [http-nio-9999-exec-8] loginServlet.doGet loginServlet called
+24-Mar-2023 10:35:43.333 INFO [http-nio-9999-exec-8] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 10:35:43.345 INFO [http-nio-9999-exec-8] loginServlet.doGet Login Successful
+24-Mar-2023 10:35:43.548 INFO [http-nio-9999-exec-9] SQLServlet.doGet registerServlet Called
+24-Mar-2023 10:35:43.556 INFO [http-nio-9999-exec-9] SQLServlet.doGet Value: irfan
+24-Mar-2023 10:38:16.106 INFO [http-nio-9999-exec-1] loginServlet.doGet loginServlet called
+24-Mar-2023 10:38:16.180 INFO [http-nio-9999-exec-1] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 10:38:16.195 INFO [http-nio-9999-exec-1] loginServlet.doGet Login Successful
+24-Mar-2023 10:38:16.464 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 10:38:16.473 INFO [http-nio-9999-exec-2] SQLServlet.doGet Value: irfan
+24-Mar-2023 11:32:04.553 INFO [http-nio-9999-exec-9] loginServlet.doGet loginServlet called
+24-Mar-2023 11:32:04.647 INFO [http-nio-9999-exec-9] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 11:32:25.664 INFO [http-nio-9999-exec-10] registerServlet.doGet registerServlet Called
+24-Mar-2023 11:32:25.700 INFO [http-nio-9999-exec-10] registerServlet.registerToDb INSERT INTO Users Values (null, 'i@g.com', 'irfan', '123', '12345')
+24-Mar-2023 11:32:29.711 INFO [http-nio-9999-exec-1] loginServlet.doGet loginServlet called
+24-Mar-2023 11:32:29.725 INFO [http-nio-9999-exec-1] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 11:32:29.727 INFO [http-nio-9999-exec-1] loginServlet.doGet Login Successful
+24-Mar-2023 11:32:29.834 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:32:29.843 INFO [http-nio-9999-exec-2] SQLServlet.doGet Value: 3
+24-Mar-2023 11:32:29.869 INFO [http-nio-9999-exec-8] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:32:29.879 INFO [http-nio-9999-exec-8] SQLServlet.doGet Value: 6
+24-Mar-2023 11:32:29.886 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:32:29.894 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: 10
+24-Mar-2023 11:32:29.900 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:32:29.907 INFO [http-nio-9999-exec-5] SQLServlet.doGet Value: 14
+24-Mar-2023 11:33:17.207 INFO [http-nio-9999-exec-3] loginServlet.doGet loginServlet called
+24-Mar-2023 11:33:17.221 INFO [http-nio-9999-exec-3] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 11:33:17.223 INFO [http-nio-9999-exec-3] loginServlet.doGet Login Successful
+24-Mar-2023 11:33:17.339 INFO [http-nio-9999-exec-9] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:33:17.351 INFO [http-nio-9999-exec-9] SQLServlet.doGet Value: 3
+24-Mar-2023 11:33:17.364 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:33:17.373 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: 6
+24-Mar-2023 11:33:17.383 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:33:17.390 INFO [http-nio-9999-exec-10] SQLServlet.doGet Value: 10
+24-Mar-2023 11:33:17.394 INFO [http-nio-9999-exec-1] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:33:17.402 INFO [http-nio-9999-exec-1] SQLServlet.doGet Value: 14
+24-Mar-2023 11:34:17.015 INFO [http-nio-9999-exec-8] loginServlet.doGet loginServlet called
+24-Mar-2023 11:34:17.029 INFO [http-nio-9999-exec-8] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 11:34:17.041 INFO [http-nio-9999-exec-8] loginServlet.doGet Login Successful
+24-Mar-2023 11:34:17.196 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:34:17.203 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: inheritance
+24-Mar-2023 11:34:17.207 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:34:17.214 INFO [http-nio-9999-exec-5] SQLServlet.doGet Value: interface
+24-Mar-2023 11:34:17.219 INFO [http-nio-9999-exec-4] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:34:17.228 INFO [http-nio-9999-exec-4] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 11:34:17.245 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:34:17.251 INFO [http-nio-9999-exec-3] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 11:46:13.725 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 11:46:13.739 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Mar-2023 11:46:13.808 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 11:46:13.820 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 11:46:16.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 11:46:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/conf/logging.properties
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 11:46:16.384 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/temp
+24-Mar-2023 11:46:16.389 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/irfansyakir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+24-Mar-2023 11:46:16.552 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 11:46:16.567 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [276] milliseconds
+24-Mar-2023 11:46:16.583 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Mar-2023 11:46:16.584 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+24-Mar-2023 11:46:16.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/docs]
+24-Mar-2023 11:46:16.868 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 11:46:16.887 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/docs] has finished in [299] ms
+24-Mar-2023 11:46:16.887 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/manager]
+24-Mar-2023 11:46:17.026 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 11:46:17.030 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/manager] has finished in [143] ms
+24-Mar-2023 11:46:17.031 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/examples]
+24-Mar-2023 11:46:17.227 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 11:46:17.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/examples] has finished in [205] ms
+24-Mar-2023 11:46:17.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/ROOT]
+24-Mar-2023 11:46:17.357 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 11:46:17.358 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/ROOT] has finished in [121] ms
+24-Mar-2023 11:46:17.358 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/host-manager]
+24-Mar-2023 11:46:17.476 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 11:46:17.477 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/host-manager] has finished in [119] ms
+24-Mar-2023 11:46:17.477 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/Bahoot]
+24-Mar-2023 11:46:17.600 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 11:46:17.603 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/Bahoot] has finished in [126] ms
+24-Mar-2023 11:46:17.604 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 11:46:17.609 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1041] milliseconds
+24-Mar-2023 11:47:59.844 INFO [http-nio-9999-exec-1] loginServlet.doGet loginServlet called
+24-Mar-2023 11:48:00.021 INFO [http-nio-9999-exec-1] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 11:48:00.041 INFO [http-nio-9999-exec-1] loginServlet.doGet Login Successful
+24-Mar-2023 11:48:00.161 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:48:00.175 INFO [http-nio-9999-exec-2] SQLServlet.doGet Value: inheritance
+24-Mar-2023 11:48:00.186 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:48:00.200 INFO [http-nio-9999-exec-3] SQLServlet.doGet Value: interface
+24-Mar-2023 11:48:00.206 INFO [http-nio-9999-exec-4] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:48:00.212 INFO [http-nio-9999-exec-4] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 11:48:00.219 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:48:00.225 INFO [http-nio-9999-exec-5] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 11:48:01.665 INFO [http-nio-9999-exec-6] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:48:01.672 INFO [http-nio-9999-exec-6] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:48:01.674 INFO [http-nio-9999-exec-6] responseServlet.doGet 4
+24-Mar-2023 11:48:04.595 INFO [http-nio-9999-exec-7] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:48:04.600 INFO [http-nio-9999-exec-7] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:48:04.601 INFO [http-nio-9999-exec-7] responseServlet.doGet 4
+24-Mar-2023 11:48:05.734 INFO [http-nio-9999-exec-8] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:48:05.741 INFO [http-nio-9999-exec-8] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:48:05.743 INFO [http-nio-9999-exec-8] responseServlet.doGet 4
+24-Mar-2023 11:48:06.675 INFO [http-nio-9999-exec-9] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:48:06.679 INFO [http-nio-9999-exec-9] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:48:06.681 INFO [http-nio-9999-exec-9] responseServlet.doGet 4
+24-Mar-2023 11:48:07.696 INFO [http-nio-9999-exec-10] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:48:07.704 INFO [http-nio-9999-exec-10] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:48:07.705 INFO [http-nio-9999-exec-10] responseServlet.doGet 4
+24-Mar-2023 11:49:32.072 INFO [http-nio-9999-exec-2] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:49:32.154 INFO [http-nio-9999-exec-2] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:49:32.169 INFO [http-nio-9999-exec-2] responseServlet.doGet 4
+24-Mar-2023 11:49:32.177 INFO [http-nio-9999-exec-3] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:49:32.181 INFO [http-nio-9999-exec-3] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:49:32.188 INFO [http-nio-9999-exec-3] responseServlet.doGet 4
+24-Mar-2023 11:57:20.996 INFO [http-nio-9999-exec-5] loginServlet.doGet loginServlet called
+24-Mar-2023 11:57:21.074 INFO [http-nio-9999-exec-5] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 11:57:21.092 INFO [http-nio-9999-exec-5] loginServlet.doGet Login Successful
+24-Mar-2023 11:57:21.218 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:57:21.230 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: inheritance
+24-Mar-2023 11:57:21.241 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:57:21.252 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: interface
+24-Mar-2023 11:57:21.264 INFO [http-nio-9999-exec-8] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:57:21.272 INFO [http-nio-9999-exec-8] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 11:57:21.279 INFO [http-nio-9999-exec-9] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:57:21.285 INFO [http-nio-9999-exec-9] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 11:57:22.370 INFO [http-nio-9999-exec-10] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:57:22.400 INFO [http-nio-9999-exec-10] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:57:22.402 INFO [http-nio-9999-exec-10] responseServlet.doGet 4
+24-Mar-2023 11:57:23.327 INFO [http-nio-9999-exec-1] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:57:23.334 INFO [http-nio-9999-exec-1] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:57:23.335 INFO [http-nio-9999-exec-1] responseServlet.doGet 4
+24-Mar-2023 11:57:24.276 INFO [http-nio-9999-exec-2] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:57:24.282 INFO [http-nio-9999-exec-2] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:57:24.284 INFO [http-nio-9999-exec-2] responseServlet.doGet 4
+24-Mar-2023 11:57:24.808 INFO [http-nio-9999-exec-3] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:57:24.814 INFO [http-nio-9999-exec-3] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:57:24.815 INFO [http-nio-9999-exec-3] responseServlet.doGet 4
+24-Mar-2023 11:59:37.017 INFO [http-nio-9999-exec-5] loginServlet.doGet loginServlet called
+24-Mar-2023 11:59:37.085 INFO [http-nio-9999-exec-5] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 11:59:37.093 INFO [http-nio-9999-exec-5] loginServlet.doGet Login Successful
+24-Mar-2023 11:59:37.173 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:59:37.193 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: inheritance
+24-Mar-2023 11:59:37.207 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:59:37.213 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: interface
+24-Mar-2023 11:59:37.215 INFO [http-nio-9999-exec-8] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:59:37.222 INFO [http-nio-9999-exec-8] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 11:59:37.226 INFO [http-nio-9999-exec-9] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:59:37.231 INFO [http-nio-9999-exec-9] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 11:59:38.088 INFO [http-nio-9999-exec-10] responseServlet.doGet responseServlet Called
+24-Mar-2023 11:59:38.094 INFO [http-nio-9999-exec-10] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 11:59:38.096 INFO [http-nio-9999-exec-10] responseServlet.doGet 4
+24-Mar-2023 11:59:59.667 INFO [http-nio-9999-exec-2] loginServlet.doGet loginServlet called
+24-Mar-2023 11:59:59.678 INFO [http-nio-9999-exec-2] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 11:59:59.680 INFO [http-nio-9999-exec-2] loginServlet.doGet Login Successful
+24-Mar-2023 11:59:59.780 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:59:59.791 INFO [http-nio-9999-exec-3] SQLServlet.doGet Value: inheritance
+24-Mar-2023 11:59:59.795 INFO [http-nio-9999-exec-4] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:59:59.802 INFO [http-nio-9999-exec-4] SQLServlet.doGet Value: interface
+24-Mar-2023 11:59:59.805 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:59:59.810 INFO [http-nio-9999-exec-5] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 11:59:59.813 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 11:59:59.820 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 12:00:01.243 INFO [http-nio-9999-exec-7] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:00:01.255 INFO [http-nio-9999-exec-7] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:00:01.257 INFO [http-nio-9999-exec-7] responseServlet.doGet 4
+24-Mar-2023 12:00:47.974 INFO [http-nio-9999-exec-9] loginServlet.doGet loginServlet called
+24-Mar-2023 12:00:48.010 INFO [http-nio-9999-exec-9] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 12:00:48.011 INFO [http-nio-9999-exec-9] loginServlet.doGet Login Successful
+24-Mar-2023 12:00:48.122 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:00:48.131 INFO [http-nio-9999-exec-10] SQLServlet.doGet Value: Build a user interface
+24-Mar-2023 12:00:48.135 INFO [http-nio-9999-exec-1] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:00:48.145 INFO [http-nio-9999-exec-1] SQLServlet.doGet Value: Free Memory
+24-Mar-2023 12:00:48.183 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:00:48.190 INFO [http-nio-9999-exec-2] SQLServlet.doGet Value: Initialize a newly created object
+24-Mar-2023 12:00:48.193 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:00:48.199 INFO [http-nio-9999-exec-3] SQLServlet.doGet Value: To create a subclass
+24-Mar-2023 12:00:52.145 INFO [http-nio-9999-exec-4] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:00:52.157 INFO [http-nio-9999-exec-4] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:00:52.159 INFO [http-nio-9999-exec-4] responseServlet.doGet 3
+24-Mar-2023 12:09:41.008 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 12:09:41.368 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 12:09:41.370 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 12:09:58.842 INFO [http-nio-9999-exec-9] loginServlet.doGet loginServlet called
+24-Mar-2023 12:09:58.921 INFO [http-nio-9999-exec-9] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 12:09:58.950 INFO [http-nio-9999-exec-9] loginServlet.doGet Login Successful
+24-Mar-2023 12:09:59.104 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:09:59.113 INFO [http-nio-9999-exec-10] SQLServlet.doGet Value: Build a user interface
+24-Mar-2023 12:09:59.117 INFO [http-nio-9999-exec-3] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:09:59.124 INFO [http-nio-9999-exec-3] SQLServlet.doGet Value: Free Memory
+24-Mar-2023 12:09:59.134 INFO [http-nio-9999-exec-4] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:09:59.143 INFO [http-nio-9999-exec-4] SQLServlet.doGet Value: Initialize a newly created object
+24-Mar-2023 12:09:59.148 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:09:59.155 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: To create a subclass
+24-Mar-2023 12:10:01.645 INFO [http-nio-9999-exec-1] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:10:01.703 INFO [http-nio-9999-exec-1] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:10:01.708 INFO [http-nio-9999-exec-1] responseServlet.doGet Correct Option: 3
+24-Mar-2023 12:10:01.710 INFO [http-nio-9999-exec-1] responseServlet.doGet Current Question: 2
+24-Mar-2023 12:14:44.126 INFO [http-nio-9999-exec-11] loginServlet.doGet loginServlet called
+24-Mar-2023 12:14:44.189 INFO [http-nio-9999-exec-11] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 12:14:44.202 INFO [http-nio-9999-exec-11] loginServlet.doGet Login Successful
+24-Mar-2023 12:14:44.357 INFO [http-nio-9999-exec-12] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:14:44.363 INFO [http-nio-9999-exec-12] SQLServlet.doGet Value: Build a user interface
+24-Mar-2023 12:14:44.366 INFO [http-nio-9999-exec-13] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:14:44.379 INFO [http-nio-9999-exec-13] SQLServlet.doGet Value: Free Memory
+24-Mar-2023 12:14:44.384 INFO [http-nio-9999-exec-14] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:14:44.392 INFO [http-nio-9999-exec-14] SQLServlet.doGet Value: Initialize a newly created object
+24-Mar-2023 12:14:44.398 INFO [http-nio-9999-exec-15] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:14:44.403 INFO [http-nio-9999-exec-15] SQLServlet.doGet Value: To create a subclass
+24-Mar-2023 12:14:46.238 INFO [http-nio-9999-exec-16] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:14:46.248 INFO [http-nio-9999-exec-16] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:14:46.250 INFO [http-nio-9999-exec-16] responseServlet.doGet Correct Option: 3
+24-Mar-2023 12:14:46.251 INFO [http-nio-9999-exec-16] responseServlet.doGet Current Question: 2
+24-Mar-2023 12:15:01.102 INFO [http-nio-9999-exec-17] loginServlet.doGet loginServlet called
+24-Mar-2023 12:15:01.113 INFO [http-nio-9999-exec-17] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 12:15:01.115 INFO [http-nio-9999-exec-17] loginServlet.doGet Login Successful
+24-Mar-2023 12:15:01.238 INFO [http-nio-9999-exec-18] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:15:01.247 INFO [http-nio-9999-exec-18] SQLServlet.doGet Value: Build a user interface
+24-Mar-2023 12:15:01.253 INFO [http-nio-9999-exec-19] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:15:01.260 INFO [http-nio-9999-exec-19] SQLServlet.doGet Value: Free Memory
+24-Mar-2023 12:15:01.265 INFO [http-nio-9999-exec-20] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:15:01.271 INFO [http-nio-9999-exec-20] SQLServlet.doGet Value: Initialize a newly created object
+24-Mar-2023 12:15:01.284 INFO [http-nio-9999-exec-11] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:15:01.303 INFO [http-nio-9999-exec-11] SQLServlet.doGet Value: To create a subclass
+24-Mar-2023 12:15:03.303 INFO [http-nio-9999-exec-12] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:15:03.314 INFO [http-nio-9999-exec-12] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:15:03.316 INFO [http-nio-9999-exec-12] responseServlet.doGet Correct Option: 3
+24-Mar-2023 12:15:03.317 INFO [http-nio-9999-exec-12] responseServlet.doGet Current Question: 2
+24-Mar-2023 12:16:08.815 INFO [http-nio-9999-exec-14] loginServlet.doGet loginServlet called
+24-Mar-2023 12:16:08.850 INFO [http-nio-9999-exec-14] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 12:16:08.858 INFO [http-nio-9999-exec-14] loginServlet.doGet Login Successful
+24-Mar-2023 12:16:08.960 INFO [http-nio-9999-exec-15] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:16:08.967 INFO [http-nio-9999-exec-15] SQLServlet.doGet Value: Build a user interface
+24-Mar-2023 12:16:08.971 INFO [http-nio-9999-exec-16] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:16:08.978 INFO [http-nio-9999-exec-16] SQLServlet.doGet Value: Free Memory
+24-Mar-2023 12:16:08.983 INFO [http-nio-9999-exec-17] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:16:08.995 INFO [http-nio-9999-exec-17] SQLServlet.doGet Value: Initialize a newly created object
+24-Mar-2023 12:16:09.015 INFO [http-nio-9999-exec-18] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:16:09.025 INFO [http-nio-9999-exec-18] SQLServlet.doGet Value: To create a subclass
+24-Mar-2023 12:16:30.629 INFO [http-nio-9999-exec-20] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:16:30.663 INFO [http-nio-9999-exec-20] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:16:30.664 INFO [http-nio-9999-exec-20] responseServlet.doGet Correct Option: 3
+24-Mar-2023 12:16:30.665 INFO [http-nio-9999-exec-20] responseServlet.doGet Current Question: 2
+24-Mar-2023 12:17:29.971 INFO [http-nio-9999-exec-12] loginServlet.doGet loginServlet called
+24-Mar-2023 12:17:30.012 INFO [http-nio-9999-exec-12] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 12:17:30.015 INFO [http-nio-9999-exec-12] loginServlet.doGet Login Successful
+24-Mar-2023 12:17:30.134 INFO [http-nio-9999-exec-13] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:17:30.139 INFO [http-nio-9999-exec-13] SQLServlet.doGet Value: inheritance
+24-Mar-2023 12:17:30.145 INFO [http-nio-9999-exec-14] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:17:30.150 INFO [http-nio-9999-exec-14] SQLServlet.doGet Value: interface
+24-Mar-2023 12:17:30.155 INFO [http-nio-9999-exec-15] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:17:30.163 INFO [http-nio-9999-exec-15] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 12:17:30.167 INFO [http-nio-9999-exec-16] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:17:30.188 INFO [http-nio-9999-exec-16] SQLServlet.doGet Value: Polymorphism
