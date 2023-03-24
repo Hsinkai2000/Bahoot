@@ -17,6 +17,7 @@ public class responseServlet extends HttpServlet {
     static String correctOption;
     static String userID;
     static String currentQuestion;
+    static String respondee;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -55,8 +56,16 @@ public class responseServlet extends HttpServlet {
             currentQuestion = rset.getString(1);
             LOGGER.info("Current Question: " + currentQuestion);
 
+            sqlStr = "SELECT name FROM users WHERE id ='" + userID + "'";
+            rset = stmt.executeQuery(sqlStr);
+            rset.next();
+            respondee = rset.getString(1);
+            LOGGER.info("Current Respondee: " + respondee);
 
-            
+            sqlStr = "INSERT INTO responses Values (null, '" + currentQuestion + "', '" + option + "', '" + respondee +"')";
+            LOGGER.info(sqlStr); // Add a logging statement
+            stmt.executeUpdate(sqlStr);
+                
             
         } catch (SQLException e) {
 

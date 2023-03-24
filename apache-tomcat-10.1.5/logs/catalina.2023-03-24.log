@@ -330,3 +330,115 @@
 24-Mar-2023 12:17:30.163 INFO [http-nio-9999-exec-15] SQLServlet.doGet Value: Abstract class
 24-Mar-2023 12:17:30.167 INFO [http-nio-9999-exec-16] SQLServlet.doGet registerServlet Called
 24-Mar-2023 12:17:30.188 INFO [http-nio-9999-exec-16] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 12:19:11.813 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 12:19:11.823 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Mar-2023 12:19:11.881 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 12:19:11.896 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 12:43:21.022 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 12:43:21.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 12:43:21.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/conf/logging.properties
+24-Mar-2023 12:43:21.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2023 12:43:21.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2023 12:43:21.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2023 12:43:21.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-Mar-2023 12:43:21.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Mar-2023 12:43:21.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Mar-2023 12:43:21.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Mar-2023 12:43:21.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Mar-2023 12:43:21.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Mar-2023 12:43:21.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 12:43:21.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+24-Mar-2023 12:43:21.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/temp
+24-Mar-2023 12:43:21.038 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/irfansyakir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+24-Mar-2023 12:43:21.214 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 12:43:21.230 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [292] milliseconds
+24-Mar-2023 12:43:21.246 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Mar-2023 12:43:21.246 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+24-Mar-2023 12:43:21.251 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/docs]
+24-Mar-2023 12:43:21.530 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 12:43:21.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/docs] has finished in [298] ms
+24-Mar-2023 12:43:21.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/manager]
+24-Mar-2023 12:43:21.690 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 12:43:21.694 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/manager] has finished in [144] ms
+24-Mar-2023 12:43:21.694 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/examples]
+24-Mar-2023 12:43:21.890 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 12:43:21.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/examples] has finished in [203] ms
+24-Mar-2023 12:43:21.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/ROOT]
+24-Mar-2023 12:43:22.020 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 12:43:22.021 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/ROOT] has finished in [124] ms
+24-Mar-2023 12:43:22.021 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/host-manager]
+24-Mar-2023 12:43:22.141 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 12:43:22.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/host-manager] has finished in [121] ms
+24-Mar-2023 12:43:22.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/Bahoot]
+24-Mar-2023 12:43:22.268 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 12:43:22.272 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/Bahoot] has finished in [130] ms
+24-Mar-2023 12:43:22.273 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 12:43:22.278 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1047] milliseconds
+24-Mar-2023 12:43:29.575 INFO [http-nio-9999-exec-3] loginServlet.doGet loginServlet called
+24-Mar-2023 12:43:29.737 INFO [http-nio-9999-exec-3] loginServlet.doGet SELECT * FROM users WHERE email ='kK@g.com' AND password ='123'
+24-Mar-2023 12:43:40.835 INFO [http-nio-9999-exec-4] loginServlet.doGet loginServlet called
+24-Mar-2023 12:43:40.849 INFO [http-nio-9999-exec-4] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 12:43:40.852 INFO [http-nio-9999-exec-4] loginServlet.doGet Login Successful
+24-Mar-2023 12:43:40.982 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:43:40.994 INFO [http-nio-9999-exec-5] SQLServlet.doGet Value: inheritance
+24-Mar-2023 12:43:41.000 INFO [http-nio-9999-exec-6] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:43:41.007 INFO [http-nio-9999-exec-6] SQLServlet.doGet Value: interface
+24-Mar-2023 12:43:41.011 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:43:41.017 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 12:43:41.019 INFO [http-nio-9999-exec-8] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:43:41.033 INFO [http-nio-9999-exec-8] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 12:43:42.216 INFO [http-nio-9999-exec-9] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:43:42.224 INFO [http-nio-9999-exec-9] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:43:42.227 INFO [http-nio-9999-exec-9] responseServlet.doGet Correct Option: 4
+24-Mar-2023 12:43:42.230 INFO [http-nio-9999-exec-9] responseServlet.doGet Current Question: 3
+24-Mar-2023 12:43:42.234 INFO [http-nio-9999-exec-9] responseServlet.doGet Current Respondee: irfan
+24-Mar-2023 12:45:02.519 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+24-Mar-2023 12:45:02.748 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2023 12:45:02.751 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+24-Mar-2023 12:45:08.330 INFO [http-nio-9999-exec-8] loginServlet.doGet loginServlet called
+24-Mar-2023 12:45:08.344 INFO [http-nio-9999-exec-8] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+24-Mar-2023 12:45:08.347 INFO [http-nio-9999-exec-8] loginServlet.doGet Login Successful
+24-Mar-2023 12:45:08.431 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:45:08.439 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: inheritance
+24-Mar-2023 12:45:08.445 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:45:08.458 INFO [http-nio-9999-exec-2] SQLServlet.doGet Value: interface
+24-Mar-2023 12:45:08.466 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:45:08.476 INFO [http-nio-9999-exec-10] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 12:45:08.496 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:45:08.502 INFO [http-nio-9999-exec-5] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 12:45:18.563 INFO [http-nio-9999-exec-3] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:45:18.583 INFO [http-nio-9999-exec-3] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:45:18.585 INFO [http-nio-9999-exec-3] responseServlet.doGet Correct Option: 4
+24-Mar-2023 12:45:18.586 INFO [http-nio-9999-exec-3] responseServlet.doGet Current Question: 3
+24-Mar-2023 12:45:18.589 INFO [http-nio-9999-exec-3] responseServlet.doGet Current Respondee: irfan
+24-Mar-2023 12:45:18.589 INFO [http-nio-9999-exec-3] responseServlet.doGet INSERT INTO responses Values (null, '3', '4', 'irfan')
+24-Mar-2023 12:46:03.501 INFO [http-nio-9999-exec-11] loginServlet.doGet loginServlet called
+24-Mar-2023 12:46:03.513 INFO [http-nio-9999-exec-11] loginServlet.doGet SELECT * FROM users WHERE email ='chockhong@gmail.com' AND password ='passwordlim'
+24-Mar-2023 12:46:03.516 INFO [http-nio-9999-exec-11] loginServlet.doGet Login Successful
+24-Mar-2023 12:46:03.589 INFO [http-nio-9999-exec-7] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:46:03.597 INFO [http-nio-9999-exec-7] SQLServlet.doGet Value: inheritance
+24-Mar-2023 12:46:03.601 INFO [http-nio-9999-exec-2] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:46:03.610 INFO [http-nio-9999-exec-2] SQLServlet.doGet Value: interface
+24-Mar-2023 12:46:03.616 INFO [http-nio-9999-exec-10] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:46:03.626 INFO [http-nio-9999-exec-10] SQLServlet.doGet Value: Abstract class
+24-Mar-2023 12:46:03.636 INFO [http-nio-9999-exec-5] SQLServlet.doGet registerServlet Called
+24-Mar-2023 12:46:03.641 INFO [http-nio-9999-exec-5] SQLServlet.doGet Value: Polymorphism
+24-Mar-2023 12:46:06.565 INFO [http-nio-9999-exec-12] responseServlet.doGet responseServlet Called
+24-Mar-2023 12:46:06.583 INFO [http-nio-9999-exec-12] responseServlet.doGet SELECT correctOPT FROM questions WHERE current='Y'
+24-Mar-2023 12:46:06.584 INFO [http-nio-9999-exec-12] responseServlet.doGet Correct Option: 4
+24-Mar-2023 12:46:06.585 INFO [http-nio-9999-exec-12] responseServlet.doGet Current Question: 3
+24-Mar-2023 12:46:06.587 INFO [http-nio-9999-exec-12] responseServlet.doGet Current Respondee: lim chock hong
+24-Mar-2023 12:46:06.588 INFO [http-nio-9999-exec-12] responseServlet.doGet INSERT INTO responses Values (null, '3', '4', 'lim chock hong')
+24-Mar-2023 12:51:08.744 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 12:51:08.749 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Mar-2023 12:51:08.771 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+24-Mar-2023 12:51:08.789 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]

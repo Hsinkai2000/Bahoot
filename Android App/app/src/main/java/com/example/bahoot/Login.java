@@ -75,6 +75,7 @@ public class Login extends AppCompatActivity {
         if (passwordStr.isEmpty()) {
             Toast.makeText(this, "Please enter your password",
                     Toast.LENGTH_SHORT).show();
+            return false;
         }
 
         return true;
@@ -127,7 +128,8 @@ public class Login extends AppCompatActivity {
             if (result.contains("Wrong")) {
                 Toast.makeText(getApplicationContext(),result,
                         Toast.LENGTH_SHORT).show();
-            } else {
+            }
+            else if (!result.contains("404")) {
                 Toast.makeText(getApplicationContext(),"Login Successful!",
                         Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -135,7 +137,9 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
                 finish();
 
-
+            } else {
+                Toast.makeText(getApplicationContext(),"Error: Server is down",
+                        Toast.LENGTH_SHORT).show();
             }
         }
     }
