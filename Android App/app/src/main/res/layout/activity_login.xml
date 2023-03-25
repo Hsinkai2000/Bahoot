@@ -1,75 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@color/bahootBackground"
-    tools:context=".Login">
+    android:weightSum="8"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="84dp"
-        android:text="@string/bahoot"
-        android:textColor="#FFFFFF"
-        android:textSize="60sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:srcCompat="@mipmap/bahoot_foreground" />
 
     <EditText
         android:id="@+id/loginEmailField"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
         android:background="@drawable/ic_launcher_background"
         android:backgroundTint="#FFFFFF"
+        android:drawableRight="@android:drawable/sym_action_email"
         android:ems="10"
+        android:fontFamily="@font/roboto"
         android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/loginPasswordField"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="316dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
         android:background="@drawable/ic_launcher_background"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
+        android:fontFamily="@font/roboto"
         android:hint="@string/prompt_password"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/signIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="400dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/bahootButton"
+        android:fontFamily="@font/roboto_bold"
         android:onClick="signIn"
-        android:text="@string/action_sign_in_short"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/action_sign_in_short" />
 
     <Button
         android:id="@+id/toRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="476dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/bahootButton"
+        android:fontFamily="@font/roboto_bold"
         android:onClick="toRegister"
-        android:text="@string/register"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/register" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

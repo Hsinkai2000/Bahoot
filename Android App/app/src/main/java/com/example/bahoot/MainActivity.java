@@ -3,6 +3,7 @@ package com.example.bahoot;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,18 +30,15 @@ public class MainActivity extends AppCompatActivity {
     private Button option2Button;
     private Button option3Button;
     private Button option4Button;
-
-    private TextView nameText;
+    private Button nextQuestion;
+    private TextView questionNumber;
     private String userID;
-
-    private String currentQuestionSQL;
-    private String sqlStr1;
-    private String sqlStr2;
-    private String sqlStr3;
-    private String sqlStr4;
-    private String currentQuestionID;
+    private String roomCode;
     private String selectedOption;
+    private String currentQuestionID;
     private int count = 0;
+    private boolean answered = false;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -50,14 +48,20 @@ public class MainActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         userID = extras.getString("userID");
+        roomCode = extras.getString("roomCode");
 
         option1Button = findViewById(R.id.option1Button);
         option2Button = findViewById(R.id.option2Button);
         option3Button = findViewById(R.id.option3Button);
         option4Button = findViewById(R.id.option4Button);
+        nextQuestion = findViewById(R.id.nextQuestionButton);
+        questionNumber = findViewById(R.id.questionNumberText);
 
-        currentQuestionSQL = "SELECT currentQuestionID FROM session WHERE" +
-                " roomCode = '3005'";
+        nextQuestion.setEnabled(false);
+        Log.d("TAG","answered:" + answered);
+
+        String currentQuestionSQL = "SELECT currentQuestionID FROM session WHERE" +
+                " roomCode = '" + roomCode + "'";
 
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 currentQuestionSQL);
@@ -65,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void option1(View v) {
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/response?option=1" +
-                "&userID=" + userID);
+                "&userID=" + userID + "&roomCode=" + roomCode);
         selectedOption = "1";
         option2Button.setEnabled(false);
         option3Button.setEnabled(false);
@@ -73,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void option2(View v) {
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/response?option=2" +
-                "&userID=" + userID);
+                "&userID=" + userID + "&roomCode=" + roomCode);
         selectedOption = "2";
         option1Button.setEnabled(false);
         option3Button.setEnabled(false);
@@ -81,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void option3(View v) {
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/response?option=3" +
-                "&userID=" + userID);
+                "&userID=" + userID + "&roomCode=" + roomCode);
         selectedOption = "3";
         option1Button.setEnabled(false);
         option2Button.setEnabled(false);
@@ -89,11 +93,43 @@ public class MainActivity extends AppCompatActivity {
     }
     public void option4(View v) {
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/response?option=4" +
-                "&userID=" + userID);
+                "&userID=" + userID + "&roomCode=" + roomCode);
         selectedOption = "4";
         option1Button.setEnabled(false);
         option2Button.setEnabled(false);
         option3Button.setEnabled(false);
+    }
+
+    public void nextQuestionCheck(View v) {
+
+        Log.d("Tag","answerrred:" + answered);
+
+        String nextSQL = "SELECT currentQuestionID FROM session WHERE " +
+                "roomCode = '" + roomCode + "'";
+        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                nextSQL);
+
+    }
+
+    private void nextQuestion(String result){
+
+        String nextQuestionID = result.substring(18);
+        Log.d("TAG","nextQuestionID:" + nextQuestionID);
+
+        if (!nextQuestionID.matches(currentQuestionID)) {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            intent.putExtra("userID", userID);
+            intent.putExtra("roomCode", roomCode);
+            finish();
+            overridePendingTransition(0, 0);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
+        } else {
+            Toast.makeText(this, "Please wait for the instructor to move to " +
+                            "the next question",
+                    Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     private class HttpTask extends AsyncTask<String, Void, String> {
@@ -133,8 +169,16 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String result) {
             Log.d("TAG","result: " + result);
             // to retrieve the question from the server
-            if (result.contains("currentQuestionID"))
-                populateButtons(result);
+            if (result.contains("currentQuestionID")) {
+                Log.d("TAG","answeredLOL:" + answered);
+                if(!answered)
+                    populateQuestions(result);
+                else
+                    nextQuestion(result);
+            }
+            // to fill in question number
+            else if (result.contains("qnNo"))
+                setQuestionNumber(result);
             // to fill the options in the button TextView
             else if (result.contains("opt"))
                 buttonQuestions(result);
@@ -147,14 +191,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void populateButtons(String result) {
+    private void populateQuestions(String result) {
 
         currentQuestionID = result.substring(18);
         Log.d("Tag","currentQuestionID2:" + currentQuestionID);
-        sqlStr1 = "SELECT opt1 FROM questions WHERE id='" + currentQuestionID + "'";
-        sqlStr2 = "SELECT opt2 FROM questions WHERE id='" + currentQuestionID + "'";
-        sqlStr3 = "SELECT opt3 FROM questions WHERE id='" + currentQuestionID + "'";
-        sqlStr4 = "SELECT opt4 FROM questions WHERE id='" + currentQuestionID + "'";
+        String sqlStr1 = "SELECT opt1 FROM questions WHERE id='" + currentQuestionID + "'";
+        String sqlStr2 = "SELECT opt2 FROM questions WHERE id='" + currentQuestionID + "'";
+        String sqlStr3 = "SELECT opt3 FROM questions WHERE id='" + currentQuestionID + "'";
+        String sqlStr4 = "SELECT opt4 FROM questions WHERE id='" + currentQuestionID + "'";
+        String sqlStr5 = "SELECT qnNo FROM questions WHERE id='" + currentQuestionID + "'";
 
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 sqlStr1);
@@ -164,6 +209,14 @@ public class MainActivity extends AppCompatActivity {
                 sqlStr3);
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 sqlStr4);
+        new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                sqlStr5);
+
+    }
+
+    private void setQuestionNumber(String result){
+        String text = "Question " + result.substring(5);
+        questionNumber.setText(text);
     }
     private void buttonQuestions(String result) {
         result = result.substring(5);
@@ -200,6 +253,9 @@ public class MainActivity extends AppCompatActivity {
             else if (selectedOption.matches("4"))
                 option4Button.setBackgroundColor(Color.RED);
         }
+        nextQuestion.setEnabled(true);
+        answered = true;
+        Log.d("TAG","answered:" + answered);
     }
     private void noQuestionSet(){
         if (count < 1) {

@@ -9,6 +9,10 @@ import jakarta.servlet.*; // Tomcat 10
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
+/*
+ * This servlet executes SQL statements sent by the android app and returns the output
+ * This servlet communicates with the android app only
+ */
 
 @WebServlet("/SQL")
 public class SQLServlet extends HttpServlet {
@@ -29,13 +33,14 @@ public class SQLServlet extends HttpServlet {
         try (Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                 "root", "password");
-
             Statement stmt = conn.createStatement();) {
             
             LOGGER.info("Executing " + sqlStr); // Add a logging statement
             ResultSet rset = stmt.executeQuery(sqlStr);
             ResultSetMetaData rsmd = rset.getMetaData();
             int columnsNumber = rsmd.getColumnCount();
+            
+            // print the results of the SQL query
             while (rset.next()) {
                 for (int i = 1; i <= columnsNumber; i++) {
                     if (i > 1) System.out.print(",  ");
@@ -45,16 +50,10 @@ public class SQLServlet extends HttpServlet {
                     
                 }
                 out.println(" ");
-                
             }
             
         } catch (SQLException e) {
-
             LOGGER.info("SQL Failed" + e); // Add a logging statement
         }
-
     }
-
-    
-
 }

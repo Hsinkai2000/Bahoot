@@ -9,13 +9,11 @@ import jakarta.servlet.*; // Tomcat 10
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-
 @WebServlet("/viewQuestions")
 public class questionsServlet extends HttpServlet {
 
     private static final Logger LOGGER = Logger.getLogger(questionsServlet.class.getName());
     int setid, qnNo, totalQn;
-
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)

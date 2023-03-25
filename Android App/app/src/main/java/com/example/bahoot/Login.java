@@ -121,9 +121,8 @@ public class Login extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
             else if (!result.contains("404")) {
-                Toast.makeText(getApplicationContext(),"Login Successful!",
-                        Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                // Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RoomCode.class);
                 intent.putExtra("userID", result);
                 startActivity(intent);
                 finish();

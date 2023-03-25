@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.net.URI;
 import java.net.URL;
@@ -15,9 +14,11 @@ import jakarta.servlet.*; // Tomcat 10
 import jakarta.servlet.http.*;
 import java.net.HttpURLConnection;
 import jakarta.servlet.annotation.*;
-//import javax.servlet.*;             // Tomcat 9
-//import javax.servlet.http.*;
-//import javax.servlet.annotation.*;
+
+/*
+ * This servlet handles the logging in process of the android app
+ * This servlet communicates with the android app only
+ */
 
 @WebServlet("/login")
 public class loginServlet extends HttpServlet {
@@ -37,12 +38,11 @@ public class loginServlet extends HttpServlet {
             emailStr = request.getParameter("email");
             passwordStr = request.getParameter("password");
 
-
             try (Connection conn = DriverManager.getConnection(
                               "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                               "root", "password");
-                  Statement stmt = conn.createStatement();) 
-            {
+                  Statement stmt = conn.createStatement();) {
+
                   String sqlStr = "SELECT * FROM users WHERE email ='" + emailStr
                               + "' AND password ='" + passwordStr + "'";
                   LOGGER.info(sqlStr);
@@ -54,9 +54,9 @@ public class loginServlet extends HttpServlet {
                         out.println(userIDStr);
                         
                   } else {
-                        
                         out.println("Wrong Email or Password");
                   }
+                  
             } catch (Exception ex) {};
       }
 }

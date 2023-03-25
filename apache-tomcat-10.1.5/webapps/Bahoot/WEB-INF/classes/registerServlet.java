@@ -9,6 +9,10 @@ import jakarta.servlet.*; // Tomcat 10
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
+/*
+ * This servlet handles the backend registration of students 
+ * This servlet communicates with the android app only
+ */
 
 @WebServlet("/register")
 public class registerServlet extends HttpServlet {
@@ -22,7 +26,7 @@ public class registerServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        LOGGER.info("registerServlet Called"); 
+        LOGGER.info("registerServlet Called"); // Log to Tomcat Console
 
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
@@ -38,77 +42,65 @@ public class registerServlet extends HttpServlet {
             out.println("This email address is taken, please try again.");
         else if (!verifyPhoneNumber())
             out.println("This phone number is taken, please try again.");
-
+    
     }
 
     private static void registerToDb(HttpServletResponse response) {
         // register user
-        try (
-                Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                        "root", "password");
-
-                Statement stmt = conn.createStatement();) {
+        try (Connection conn = DriverManager.getConnection(
+            "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+            "root", "password");
+             Statement stmt = conn.createStatement();) {
             
             String sqlStrRegister = "INSERT INTO Users Values (null, '" + emailStr + "', '" + nameStr + "', '" + passwordStr
-                    + "', '" + phoneNumberStr + "')";
+                                     + "', '" + phoneNumberStr + "')";
             LOGGER.info(sqlStrRegister); // Add a logging statement
             stmt.executeUpdate(sqlStrRegister);
-            
-        } catch (SQLException e) {
 
+        } catch (SQLException e) {
             LOGGER.info("SQL Failed" + e); // Add a logging statement
         }
-
     }
 
     private static boolean verifyEmail() {
         // check if email exists
-        try (
-            Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                "root", "password");
+        try (Connection conn = DriverManager.getConnection(
+            "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+            "root", "password");
+             Statement stmt = conn.createStatement();) {
+            
+            String sqlStrEmail = "SELECT * FROM users WHERE email ='" + emailStr + "'";
+            ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail);
 
-            Statement stmt = conn.createStatement();) {
-                int id = 0;
-                String sqlStrEmail = "SELECT * FROM users WHERE email ='" + emailStr + "'";
-                ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail);
+            if (!rsetEmail.next()) 
+                return true;  
+            else 
+                return false;
 
-                if (!rsetEmail.next()) 
-                    return true;  
-                else 
-                    return false;
-            } catch (SQLException e) {
-
-                LOGGER.info("SQL Failed" + e); // Add a logging statement
-            }
+        } catch (SQLException e) {
+            LOGGER.info("SQL Failed" + e); // Add a logging statement
+        }
         return false;
     }
 
     private static boolean verifyPhoneNumber() {
         // check if phone number exists
-        try (
-            Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                "root", "password");
+        try (Connection conn = DriverManager.getConnection(
+            "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+            "root", "password");
+             Statement stmt = conn.createStatement();) {
 
-            Statement stmt = conn.createStatement();) {
-                int id = 0;
-                String sqlStrPhoneNumber = "SELECT * FROM users WHERE mobile_number ='" + phoneNumberStr + "'";
-                ResultSet rsetPhoneNumber = stmt.executeQuery(sqlStrPhoneNumber);
+            String sqlStrPhoneNumber = "SELECT * FROM users WHERE mobile_number ='" + phoneNumberStr + "'";
+            ResultSet rsetPhoneNumber = stmt.executeQuery(sqlStrPhoneNumber);
 
-                if (!rsetPhoneNumber.next())
-                    return true;
-                else 
-                    return false;
-            } catch (SQLException e) {
+            if (!rsetPhoneNumber.next())
+                return true;
+            else 
+                return false;
 
-                LOGGER.info("SQL Failed" + e); // Add a logging statement
-            }
+        } catch (SQLException e) {
+            LOGGER.info("SQL Failed" + e); // Add a logging statement
+        }
         return false;
     }
-    
-
-        
-
 }

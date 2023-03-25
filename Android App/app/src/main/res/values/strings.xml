@@ -15,4 +15,8 @@
     <string name="phone_number">Phone Number</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="name">Name</string>
+    <string name="room_code">Room Code</string>
+    <string name="enter_room_code">Enter Room Code</string>
+    <string name="enter">Enter</string>
+    <string name="next_question">Next Question</string>
 </resources>

@@ -1,107 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:background="@color/bahootBackground"
+    android:weightSum="8"
     android:layout_height="match_parent"
-    tools:context=".Register"
-    android:background="@color/bahootBackground">
-
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:paddingTop="60dp"
+    android:paddingBottom="60dp">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="64dp"
+        android:gravity="center"
         android:text="@string/registerText"
         android:textColor="#FFFFFF"
-        android:textSize="60sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="60sp"/>
+
+    <EditText
+        android:id="@+id/registerNameField"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/registerEmailField"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/registerPhoneNumberField"
-        android:layout_width="232dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="536dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/ic_launcher_background"
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/phone_number"
         android:inputType="phone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:maxLength="8"/>
 
     <EditText
         android:id="@+id/registerPasswordField"
-        android:layout_width="232dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="352dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/ic_launcher_background"
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/prompt_password"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPassword"/>
 
     <EditText
         android:id="@+id/registerConfirmPasswordField"
-        android:layout_width="232dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="448dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/ic_launcher_background"
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/confirm_password"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/registerEmailField"
-        android:layout_width="232dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="260dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/white"
-        android:ems="10"
-        android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/registerNameField"
-        android:layout_width="232dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="180dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/white"
-        android:ems="10"
-        android:hint="@string/name"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="632dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/bahootButton"
         android:onClick="register"
-        android:text="@string/registerText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/registerText"/>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

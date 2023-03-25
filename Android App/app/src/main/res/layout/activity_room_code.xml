@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bahootBackground"
+    android:weightSum="8"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/enter_room_code"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"/>
+
+    <EditText
+        android:id="@+id/roomCodeField"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@color/white"
+        android:ems="6"
+        android:hint="@string/room_code"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/bahootButton"
+        android:onClick="enterRoomCode"
+        android:text="@string/enter"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
