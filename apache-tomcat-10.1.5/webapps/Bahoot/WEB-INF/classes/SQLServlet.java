@@ -34,23 +34,40 @@ public class SQLServlet extends HttpServlet {
                 "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                 "root", "password");
             Statement stmt = conn.createStatement();) {
-            
-            LOGGER.info("Executing " + sqlStr); // Add a logging statement
-            ResultSet rset = stmt.executeQuery(sqlStr);
-            ResultSetMetaData rsmd = rset.getMetaData();
-            int columnsNumber = rsmd.getColumnCount();
-                
-            // print the results of the SQL query
-            while (rset.next()) {
-                for (int i = 1; i <= columnsNumber; i++) {
-                    if (i > 1) System.out.print(",  ");
-                    String columnValue = rset.getString(i);
-                    LOGGER.info(rsmd.getColumnName(i) + ":" + columnValue);
-                    out.print(rsmd.getColumnName(i) + ":" +columnValue + " " /*+ rsmd.getColumnName(i)*/);
-                    response.setHeader(rsmd.getColumnName(i), columnValue);
 
+            if (sqlStr.contains("SELECT") || sqlStr.contains("select")) {
+            
+                LOGGER.info("Executing " + sqlStr); // Add a logging statement
+                ResultSet rset = stmt.executeQuery(sqlStr);
+                ResultSetMetaData rsmd = rset.getMetaData();
+                int columnsNumber = rsmd.getColumnCount();
+                    
+                // print the results of the SQL query
+                while (rset.next()) {
+                    for (int i = 1; i <= columnsNumber; i++) {
+                        if (i > 1) System.out.print(",  ");
+                        String columnValue = rset.getString(i);
+                        LOGGER.info(rsmd.getColumnName(i) + ":" + columnValue);
+                        out.print(rsmd.getColumnName(i) + ":" +columnValue + " " /*+ rsmd.getColumnName(i)*/);
+                        response.setHeader(rsmd.getColumnName(i), columnValue);
+
+                    }
                 }
+
+                response.setHeader("SQL","Select");
+
+            } else if (sqlStr.contains("UPDATE") || sqlStr.contains("update")){
+                LOGGER.info("Executing " + sqlStr); // Add a logging statement
+                stmt.executeUpdate(sqlStr);
+                response.setHeader("SQL","Update");
+
+
+            } else if (sqlStr.contains("INSERT") || sqlStr.contains("insert")){
+                LOGGER.info("Executing " + sqlStr); // Add a logging statement
+                stmt.executeUpdate(sqlStr);
+                response.setHeader("SQL","Insert");
             }
+            
             out.flush();
          
         } catch (SQLException e) {

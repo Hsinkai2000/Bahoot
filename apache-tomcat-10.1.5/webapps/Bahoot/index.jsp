@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Old Egg | Home</title>
+    <title>Bahoot!</title>
     
-    <link rel="icon" href="./images/oldegg-icon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/bahoot.ico" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,8 +18,8 @@
 
     <div class="pt-5 d-flex h-100 align-items-center justify-content-center">
       <div class="text-center">
-        <h1 class="d-block pb-5" style="color: white;">
-          Bahoot!
+        <h1 class="d-block pb-5" style="color: white;" >
+          <img src="./images/bahoot-logo-transparent.png" width="500" height="500">
         </h1>
         <input id="name" type="text" class="d-block text-center mt-3" style="padding-left: 200px;padding-right: 200px;" placeholder="Enter your name">
         <button class="btn btn-primary mt-5">Enter Room</button>

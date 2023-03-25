@@ -23,6 +23,8 @@ public class responseServlet extends HttpServlet {
     static String roomCode;
     static String currentQuestionID;
     static String respondee;
+    static String userComment;
+    static String responseTableID;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -36,6 +38,9 @@ public class responseServlet extends HttpServlet {
         option = request.getParameter("option");
         userID = request.getParameter("userID");
         roomCode = request.getParameter("roomCode");
+        userComment = request.getParameter("userComment");
+
+
         
         try (Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
@@ -66,15 +71,26 @@ public class responseServlet extends HttpServlet {
             
             // get respondee name
             sqlStr = "SELECT name FROM users WHERE id ='" + userID + "'";
+            LOGGER.info("Executing " + sqlStr);
             rset = stmt.executeQuery(sqlStr);
             rset.next();
             respondee = rset.getString(1);
             LOGGER.info("Current Respondee: " + respondee);
 
             // send statistic to DB
-            sqlStr = "INSERT INTO responses Values (null, '" + currentQuestionID + "', '" + option + "', '" + respondee +"')";
-            LOGGER.info(sqlStr); // Add a logging statement
+            sqlStr = "INSERT INTO responses (questionNo, choice, respondee, comment ) Values ('" + currentQuestionID + "', '" + option + "', '" + respondee +"','" + userComment +"')";
+            LOGGER.info("Executing " + sqlStr); // Add a logging statement
             stmt.executeUpdate(sqlStr);
+
+            // get latest response Table ID 
+            sqlStr = "SELECT id FROM responses ORDER BY id DESC" ;
+            LOGGER.info("Executing " + sqlStr); // Add a logging statement
+            rset = stmt.executeQuery(sqlStr);
+            rset.next();
+            responseTableID = rset.getString(1);
+            LOGGER.info("Responses Table ID:" + responseTableID);
+            response.setHeader("Response-Table-ID",responseTableID);
+
                 
         } catch (SQLException e) {
             LOGGER.info("SQL Failed" + e); // Add a logging statement

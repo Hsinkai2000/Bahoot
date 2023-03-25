@@ -3,9 +3,13 @@ package com.example.bahoot;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +25,7 @@ import java.util.stream.Collectors;
 
 import android.os.AsyncTask;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.view.View;
 import android.widget.Toast;
@@ -31,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private Button option3Button;
     private Button option4Button;
     private Button nextQuestion;
+    private Button commentButton;
     private TextView questionNumber;
     private String userID;
     private String roomCode;
@@ -44,8 +50,12 @@ public class MainActivity extends AppCompatActivity {
     private String option3;
     private String option4;
     private String questionResult;
+    private String responseTableID;
+    private String userComment;
+    private String sqlUpdateCheck;
     private int count = 0;
     private boolean answered = false;
+    private boolean commenting = false;
 
 
     @SuppressLint("MissingInflatedId")
@@ -64,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         option4Button = findViewById(R.id.option4Button);
         nextQuestion = findViewById(R.id.nextQuestionButton);
         questionNumber = findViewById(R.id.questionNumberText);
+        commentButton = findViewById(R.id.commentButton);
 
         nextQuestion.setEnabled(false);
         Log.d("TAG","answered:" + answered);
@@ -74,23 +85,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void option1(View v) {
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/response?option=1" +
-                "&userID=" + userID + "&roomCode=" + roomCode);
+                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment);
         selectedOption = "1";
 
     }
     public void option2(View v) {
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/response?option=2" +
-                "&userID=" + userID + "&roomCode=" + roomCode);
+                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment);
         selectedOption = "2";
     }
     public void option3(View v) {
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/response?option=3" +
-                "&userID=" + userID + "&roomCode=" + roomCode);
+                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment);
         selectedOption = "3";
     }
     public void option4(View v) {
         new HttpTask().execute("http://10.0.2.2:9999/Bahoot/response?option=4" +
-                "&userID=" + userID + "&roomCode=" + roomCode);
+                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment);
         selectedOption = "4";
     }
 
@@ -132,6 +143,71 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void comment(View v){
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+        String commentText;
+        if (userComment == null) {
+            alert.setTitle("Comment");
+            commentText = "Comment";
+        }
+        else {
+            alert.setTitle("Edit Comment");
+            commentText = "Update Comment";
+        }
+
+        // Set an EditText view to get user input
+        final EditText input = new EditText(this);
+        input.setHint("Enter Comment");
+        input.setHeight(500);
+        input.setText(userComment);
+
+        int maxLength = 500;
+        InputFilter[] fArray = new InputFilter[1];
+        fArray[0] = new InputFilter.LengthFilter(maxLength);
+        input.setFilters(fArray);
+
+        alert.setView(input);
+
+        alert.setPositiveButton(commentText, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                userComment = input.getText().toString();
+                if (answered) {
+                    String updateSQL = "UPDATE responses SET comment='" + userComment
+                            + "' WHERE id='" + responseTableID +"'";
+                    new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                            updateSQL);
+                }
+                try{
+                    if (userComment.isEmpty())
+                        userComment = null;
+                }catch (Exception e){
+
+                }
+
+                if (userComment != null)
+                    commentButton.setText("Edit Comment");
+                else
+                    commentButton.setText("Comment");
+            }
+        });
+
+        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+
+            }
+        });
+        alert.show();
+
+    }
+
+    public void logOut(View v) {
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+        startActivity(intent);
+        finish();
+    }
+
+
     private class HttpTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... strURLs) {
@@ -161,10 +237,16 @@ public class MainActivity extends AppCompatActivity {
                         correctOption = conn.getHeaderField("correctOpt");
                         populateQuestions(2);
                     }
-                    else if (questionResult == null)
+                    else if (questionResult == null) {
                         questionResult = conn.getHeaderField("Result");
+                        responseTableID = conn.getHeaderField("Response-Table-ID");
+                    }
                     else if (answered) {
                         nextQuestionCheck = conn.getHeaderField("currentQuestionID");
+                        sqlUpdateCheck = conn.getHeaderField("SQL");
+                        if (sqlUpdateCheck != null)
+                            if (sqlUpdateCheck.matches("Update"))
+                                commenting = true;
                     }
                     return null;
                 } else {
@@ -187,8 +269,12 @@ public class MainActivity extends AppCompatActivity {
             else if (questionResult != null && !answered)
                 buttonResponse(questionResult);
             // move to next question if answered already
-            else if (answered)
+            else if (answered && !commenting)
                 nextQuestion();
+
+            commenting = false;
+            sqlUpdateCheck = null;
+
         }
     }
 
@@ -215,23 +301,23 @@ public class MainActivity extends AppCompatActivity {
         Log.d("TAG",result);
 
         if (correctOption.matches("1"))
-            option1Button.setBackgroundColor(Color.GREEN);
+            option1Button.setTextColor(Color.GREEN);
         else if (correctOption.matches("2"))
-            option2Button.setBackgroundColor(Color.GREEN);
+            option2Button.setTextColor(Color.GREEN);
         else if (correctOption.matches("3"))
-            option3Button.setBackgroundColor(Color.GREEN);
+            option3Button.setTextColor(Color.GREEN);
         else if (correctOption.matches("4"))
-            option4Button.setBackgroundColor(Color.GREEN);
+            option4Button.setTextColor(Color.GREEN);
 
         if (result.matches("Incorrect")) {
             if (selectedOption.matches("1"))
-                option1Button.setBackgroundColor(Color.RED);
+                option1Button.setTextColor(Color.RED);
             else if (selectedOption.matches("2"))
-                option2Button.setBackgroundColor(Color.RED);
+                option2Button.setTextColor(Color.RED);
             else if (selectedOption.matches("3"))
-                option3Button.setBackgroundColor(Color.RED);
+                option3Button.setTextColor(Color.RED);
             else if (selectedOption.matches("4"))
-                option4Button.setBackgroundColor(Color.RED);
+                option4Button.setTextColor(Color.RED);
         }
 
         option1Button.setEnabled(false);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bahootBackground"
     android:weightSum="8"
     android:layout_height="match_parent"
@@ -8,8 +8,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:paddingStart="40dp"
     android:paddingEnd="40dp"
-    android:paddingTop="60dp"
     android:paddingBottom="60dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/bahoot" />
 
     <TextView
         android:id="@+id/textView"
@@ -30,7 +36,8 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:maxLength="50"/>
 
     <EditText
         android:id="@+id/registerEmailField"
@@ -42,7 +49,8 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:maxLength="50"/>
 
     <EditText
         android:id="@+id/registerPhoneNumberField"
@@ -67,7 +75,8 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/prompt_password"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:maxLength="50"/>
 
     <EditText
         android:id="@+id/registerConfirmPasswordField"
@@ -79,16 +88,18 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/confirm_password"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:maxLength="50"/>
 
     <Button
         android:id="@+id/register"
-        android:layout_gravity="center"
         android:layout_width="250dp"
         android:layout_height="50dp"
+        android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/bahootButton"
         android:onClick="register"
-        android:text="@string/registerText"/>
+        android:text="@string/registerText"
+        android:textColor="@color/white" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

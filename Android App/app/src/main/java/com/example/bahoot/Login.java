@@ -29,6 +29,7 @@ public class Login extends AppCompatActivity {
     private EditText passwordField;
     private String emailStr = "";
     private String passwordStr = "";
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +102,7 @@ public class Login extends AppCompatActivity {
                 if (responseCode == HttpURLConnection.HTTP_OK) {  // 200
 
                     String result = conn.getHeaderField("Login");
+                    userID = conn.getHeaderField("userID");
 
                     return result;
                 } else {
@@ -123,7 +125,7 @@ public class Login extends AppCompatActivity {
             else if (result.matches("Success")) {
                 // Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 Intent intent = new Intent(getApplicationContext(), RoomCode.class);
-                intent.putExtra("userID", result);
+                intent.putExtra("userID", userID);
                 startActivity(intent);
                 finish();
             } else {

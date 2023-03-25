@@ -40,9 +40,9 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Old Egg | Home</title>
+    <title>Bahoot!</title>
     
-    <link rel="icon" href="./images/oldegg-icon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/bahoot.ico" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -53,7 +53,13 @@ pageEncoding="UTF-8"%>
   </head>
   <body class="bg_default" style="background-color: #46178f;padding-left: 100px;padding-right: 100px;">
     <nav class="navbar navbar-light" style="background-color: #46178f;">
-      <a class="navbar-brand " href="index.jsp"><h1 style="color: white;">Bahoot!</h1></a>
+      <a class="navbar-brand " href="index.jsp">
+      <img
+          src="./images/bahoot-logo-transparent.png"
+          width="150dp"
+          height="150dp"
+        />
+      </a>
     </nav>
       
     <h2 class="pb-3 pt-5" style="color: white;">Statistics for [Object Oriented Programming]</h2>

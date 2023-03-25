@@ -51,7 +51,8 @@
         android:backgroundTint="@color/bahootButton"
         android:fontFamily="@font/roboto_bold"
         android:onClick="signIn"
-        android:text="@string/action_sign_in_short" />
+        android:text="@string/action_sign_in_short"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/toRegister"
@@ -62,6 +63,7 @@
         android:backgroundTint="@color/bahootButton"
         android:fontFamily="@font/roboto_bold"
         android:onClick="toRegister"
-        android:text="@string/register" />
+        android:text="@string/register"
+        android:textColor="@color/white" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

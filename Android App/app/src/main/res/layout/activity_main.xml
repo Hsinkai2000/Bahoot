@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/bahootBackground"
     android:weightSum="8"
     android:layout_height="match_parent"
@@ -8,51 +9,95 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:paddingStart="40dp"
     android:paddingEnd="40dp">
-
-    <TextView
-        android:id="@+id/questionNumberText"
+    <TableRow
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/bahoot"
+            android:onClick="logOut"/>
+
+        <TextView
+            android:id="@+id/questionNumberText"
+            android:layout_width="177dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Question"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="75dp"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    </TableRow>
 
     <Button
+        android:id="@+id/option1Button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:id="@+id/option1Button"
-        android:onClick="option1" />
+
+        android:backgroundTint="#0275D8"
+        android:onClick="option1"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/option2Button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:onClick="option2" />
+        android:backgroundTint="#5cb85c"
+        android:onClick="option2"
+        android:textColor="#FFFFFF" />
 
     <Button
 
+        android:id="@+id/option3Button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:id="@+id/option3Button"
+        android:backgroundTint="#5bc0de"
         android:onClick="option3" />
 
     <Button
+        android:id="@+id/option4Button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:id="@+id/option4Button"
+        android:backgroundTint="#f0ad4e"
         android:onClick="option4" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/nextQuestionButton"
-        android:layout_gravity="right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next_question"
-        android:onClick="nextQuestionButton"/>
+        <Button
+            android:id="@+id/commentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="108dp"
+            android:backgroundTint="#d9534f"
+            android:onClick="comment"
+            android:text="Comment"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/nextQuestionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="#d9534f"
+            android:onClick="nextQuestionButton"
+            android:text="@string/next_question"
+            android:textColor="#FFFFFF" />
+
+    </TableRow>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

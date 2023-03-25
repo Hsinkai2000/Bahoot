@@ -52,6 +52,7 @@ public class loginServlet extends HttpServlet {
                         LOGGER.info("Login Successful");
                         userIDStr = rset.getString(1);
                         response.setHeader("Login","Success");
+                        response.setHeader("userID",userIDStr);
                         //out.print("{ \"message\": \"Success!\" }");
                         
                         

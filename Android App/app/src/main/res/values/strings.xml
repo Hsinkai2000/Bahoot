@@ -19,4 +19,5 @@
     <string name="enter_room_code">Enter Room Code</string>
     <string name="enter">Enter</string>
     <string name="next_question">Next Question</string>
+    <string name="comment">Comment</string>
 </resources>
