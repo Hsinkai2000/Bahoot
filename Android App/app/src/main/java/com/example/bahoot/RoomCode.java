@@ -43,7 +43,7 @@ public class RoomCode extends AppCompatActivity {
         } else  {
             Log.d("Tag","Room Code: " + roomCodeStr);
 
-            String SQL = "SELECT * FROM session WHERE " +
+            String SQL = "SELECT id FROM session WHERE " +
                     "roomCode = '"+ roomCodeStr + "'";
 
             new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
@@ -72,7 +72,9 @@ public class RoomCode extends AppCompatActivity {
                     while ((s = buffer.readLine()) != null)
                         output.append(s);
 
-                    return output.toString();
+                    String roomCode = conn.getHeaderField("id");
+
+                    return roomCode;
                 } else {
                     return "Fail (" + responseCode + ")";
                 }
@@ -85,7 +87,7 @@ public class RoomCode extends AppCompatActivity {
         // The String result is passed from doInBackground().
         @Override
         protected void onPostExecute(String result) {
-            if (result.isEmpty()) {
+            if (result == null) {
                 Toast.makeText(getApplicationContext(),"Wrong room code, please try again",
                         Toast.LENGTH_SHORT).show();
             } else {

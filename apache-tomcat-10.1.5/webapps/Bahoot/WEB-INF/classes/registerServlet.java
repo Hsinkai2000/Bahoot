@@ -39,9 +39,10 @@ public class registerServlet extends HttpServlet {
         if(verifyEmail() && verifyPhoneNumber())
             registerToDb(response);
         else if (!verifyEmail())
-            out.println("This email address is taken, please try again.");
+            response.setHeader("Verification","emailTaken");
         else if (!verifyPhoneNumber())
-            out.println("This phone number is taken, please try again.");
+            response.setHeader("Verification","phoneTaken");
+        out.flush();
     
     }
 
@@ -56,6 +57,8 @@ public class registerServlet extends HttpServlet {
                                      + "', '" + phoneNumberStr + "')";
             LOGGER.info(sqlStrRegister); // Add a logging statement
             stmt.executeUpdate(sqlStrRegister);
+            response.setHeader("Verification","Success");
+
 
         } catch (SQLException e) {
             LOGGER.info("SQL Failed" + e); // Add a logging statement
@@ -68,8 +71,10 @@ public class registerServlet extends HttpServlet {
             "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
             "root", "password");
              Statement stmt = conn.createStatement();) {
-            
+
+
             String sqlStrEmail = "SELECT * FROM users WHERE email ='" + emailStr + "'";
+            LOGGER.info(sqlStrEmail);
             ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail);
 
             if (!rsetEmail.next()) 

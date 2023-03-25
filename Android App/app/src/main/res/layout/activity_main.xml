@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textSize="60sp"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
     <Button
@@ -53,6 +53,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next_question"
-        android:onClick="nextQuestionCheck"/>
+        android:onClick="nextQuestionButton"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

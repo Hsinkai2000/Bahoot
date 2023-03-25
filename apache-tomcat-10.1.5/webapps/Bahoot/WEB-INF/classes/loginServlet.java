@@ -33,8 +33,8 @@ public class loginServlet extends HttpServlet {
 
             LOGGER.info("loginServlet called");
             PrintWriter out = response.getWriter();
-            response.setContentType("text/html");
-            
+            response.setContentType("application/json");
+  
             emailStr = request.getParameter("email");
             passwordStr = request.getParameter("password");
 
@@ -51,11 +51,16 @@ public class loginServlet extends HttpServlet {
                   if (rset.next()) {
                         LOGGER.info("Login Successful");
                         userIDStr = rset.getString(1);
-                        out.println(userIDStr);
+                        response.setHeader("Login","Success");
+                        //out.print("{ \"message\": \"Success!\" }");
+                        
                         
                   } else {
-                        out.println("Wrong Email or Password");
+                        response.setHeader("Login","Failure");
+                        //out.print("{ \"message\": \"Failure!\" }");
                   }
+
+                 out.flush();
                   
             } catch (Exception ex) {};
       }

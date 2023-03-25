@@ -18,6 +18,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Register extends AppCompatActivity {
     private EditText nameField;
@@ -63,8 +65,29 @@ public class Register extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
             return false;
         }
-        if (emailStr.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(emailStr).matches()) {
+
+        if (emailStr.isEmpty()) {
+            Toast.makeText(this, "Please enter your email",
+                    Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!Patterns.EMAIL_ADDRESS.matcher(emailStr).matches()) {
             Toast.makeText(this, "Please enter a valid email address",
+                    Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        Pattern pattern = Pattern.compile("^[689]\\d{7}$");
+        Matcher matcher = pattern.matcher(phoneNumberStr);
+
+        if (phoneNumberStr.isEmpty()) {
+            Toast.makeText(this,"Please enter your phone number",
+                    Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        if (!matcher.matches()) {
+            Toast.makeText(this,"Please enter a valid phone number",
                     Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -85,11 +108,8 @@ public class Register extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
             return false;
         }
-        if (phoneNumberStr.isEmpty()) {
-            Toast.makeText(this,"Please enter your phone number",
-                    Toast.LENGTH_SHORT).show();
-            return false;
-        }
+
+
         return true;
     }
 
@@ -107,14 +127,9 @@ public class Register extends AppCompatActivity {
                 int responseCode = conn.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {  // 200
 
-                    InputStream stream = conn.getInputStream();
-                    StringBuffer output = new StringBuffer("");
-                    BufferedReader buffer = new BufferedReader(new InputStreamReader(stream));
-                    String s = "";
-                    while ((s = buffer.readLine()) != null)
-                        output.append(s);
+                    String result = conn.getHeaderField("Verification");
 
-                    return output.toString();
+                    return result;
                 } else {
                     return "Fail (" + responseCode + ")";
                 }
@@ -127,17 +142,29 @@ public class Register extends AppCompatActivity {
         // The String result is passed from doInBackground().
         @Override
         protected void onPostExecute(String result) {
-            Log.d("Error",result);
-            if (!result.isEmpty()) {
-                Toast.makeText(getApplicationContext(),result,
+            if (!result.isEmpty())
+                Log.d("Result:",result);
+
+            if (result.matches("emailTaken")) {
+                Toast.makeText(getApplicationContext(),"This email address is taken, " +
+                                "please try again.",
                         Toast.LENGTH_SHORT).show();
-            } else {
+            }
+            else if (result.matches("phoneTaken")){
+                Toast.makeText(getApplicationContext(),"This phone number is taken, " +
+                                "please try again.",
+                        Toast.LENGTH_SHORT).show();
+            }
+            else if(result.matches("Success")){
                 Toast.makeText(getApplicationContext(),"Registration Successful!",
                         Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), Login.class);
                 intent.putExtra("email", emailStr);
                 startActivity(intent);
                 finish();
+            } else {
+                Toast.makeText(getApplicationContext(),"Error: Unable to verify credentials",
+                        Toast.LENGTH_SHORT).show();
             }
         }
     }
