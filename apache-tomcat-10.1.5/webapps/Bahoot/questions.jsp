@@ -19,13 +19,55 @@ pageEncoding="UTF-8"%>
   </head>
   <body class="bg_default" style="background-color: #46178f;">
 
-    <div class="d-flex h-100 align-items-center justify-content-center">
-        <div class="text-center">
-          <h1 class="d-block pb-5" style="color: white;">
-            <%= response.getHeader("question") %>
-          </h1>
-          <input id="name" type="text" class="d-block text-center mt-3" style="padding-left: 200px;padding-right: 200px;" placeholder="Enter your name">
-          <button class="btn btn-primary mt-5">Enter Room</button>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6">
+            <h1 class="d-block pb-5" style="color: white;">
+              <%= response.getHeader("qnNo")%>) &nbsp;&nbsp;&nbsp;<%= response.getHeader("question") %>
+            </h1>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+        <div class="row" style="height: 200px;">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <button type="button" style="width: 100%; height: 100%; font-size: xx-large;" class="btn btn-primary"><%= response.getHeader("opt1") %></button>
+          </div>
+          <div class="col-lg-4">
+            <button type="button" style="width: 100%; height: 100%; font-size: xx-large;" class="btn btn-success"><%= response.getHeader("opt2") %></button>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+        
+        <br>
+
+        <div class="row" style="height:200px;">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <button type="button" style="width: 100%; height: 100%; font-size: xx-large;" class="btn btn-info"><%= response.getHeader("opt3") %></button>
+          </div>
+          <div class="col-lg-4">
+            <button type="button" style="width: 100%; height: 100%; font-size: xx-large;" class="btn btn-warning"><%= response.getHeader("opt4") %></button>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="row" style="height:200px;">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6"></div>
+          <div class="col-lg-2">
+            <form method="get" action="viewQuestions">
+              <input hidden name="qnNo" value="<%= Integer.parseInt(response.getHeader("qnNo")) +1 %>" >
+              <input hidden name="setid" value="<%= response.getHeader("setid") %>" >
+              <input hidden name="totalQn" value="<%= response.getHeader("totalQn") %>">
+              <button class="btn btn-danger" style="width: 100%;">Next Question</button>
+            </form>            
+          </div>
+          <div class="col-lg-2"></div>
         </div>
       </div>
     
