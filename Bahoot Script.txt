@@ -76,6 +76,19 @@ INSERT INTO Users (email, name, password, mobile_number) VALUES
 	('DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943),
 	('i@g.com', 'Irfan', '123', 96641005);
 
-
+insert into responses (questionNo, choice, respondee) values
+    (1, 3, "chock hong"),
+    (1, 3, "Kelly"),
+    (1, 2, "Brandon"),
+    (1, 4, "Denon"),
+    (2, 3, "chock hong"),
+    (2, 1, "Kelly"),
+    (2, 3, "Brandon"),
+    (2, 2, "Denon"),
+    (3, 2, "chock hong"),
+    (3, 3, "Kelly"),
+    (3, 2, "Brandon"),
+    (3, 4, "Denon");
+    
 show tables;
  

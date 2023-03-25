@@ -1,0 +1,1243 @@
+26-Mar-2023 00:11:26.444 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:11:26.451 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:11:26.452 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:11:26.452 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:11:26.452 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:11:26.452 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:11:26.453 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:11:26.556 INFO [http-nio-9999-exec-7] scoresServlet.doGet Something failed: org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+3: <%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*"%> 
+4: <%
+5: 
+6:     int q1c1 = Integer.parseInt(response.getIntHeader("q1c1"));
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+
+
+An error occurred at line: [7] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+4: <%
+5: 
+6:     int q1c1 = Integer.parseInt(response.getIntHeader("q1c1"));
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+
+
+An error occurred at line: [8] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+5: 
+6:     int q1c1 = Integer.parseInt(response.getIntHeader("q1c1"));
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+
+
+An error occurred at line: [9] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+6:     int q1c1 = Integer.parseInt(response.getIntHeader("q1c1"));
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+
+
+An error occurred at line: [10] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+
+
+An error occurred at line: [11] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+
+
+An error occurred at line: [12] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+
+
+An error occurred at line: [13] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+
+
+An error occurred at line: [14] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+17:     int q3c4 = Integer.parseInt(response.getIntHeader("q3c4"));
+
+
+An error occurred at line: [15] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+17:     int q3c4 = Integer.parseInt(response.getIntHeader("q3c4"));
+18: 
+
+
+An error occurred at line: [16] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+17:     int q3c4 = Integer.parseInt(response.getIntHeader("q3c4"));
+18: 
+19:     int totalq1 = q1c1+q1c2+q1c3+q1c4;
+
+
+An error occurred at line: [17] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+17:     int q3c4 = Integer.parseInt(response.getIntHeader("q3c4"));
+18: 
+19:     int totalq1 = q1c1+q1c2+q1c3+q1c4;
+20:     int totalq2 = q2c1+q2c2+q2c3+q2c4;
+
+
+An error occurred at line: [23] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+20:     int totalq2 = q2c1+q2c2+q2c3+q2c4;
+21:     int totalq3 = q3c1+q3c2+q3c3+q3c4;
+22: 
+23:     int q1c1px = (q1c1/totalq1) * 100
+24:     int q1c2px = (q1c2/totalq1) * 100
+25:     int q1c3px = (q1c3/totalq1) * 100
+26:     int q1c4px = (q1c4/totalq1) * 100
+
+
+An error occurred at line: [24] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+21:     int totalq3 = q3c1+q3c2+q3c3+q3c4;
+22: 
+23:     int q1c1px = (q1c1/totalq1) * 100
+24:     int q1c2px = (q1c2/totalq1) * 100
+25:     int q1c3px = (q1c3/totalq1) * 100
+26:     int q1c4px = (q1c4/totalq1) * 100
+27:     int q2c1px = (q2c1/totalq2) * 100
+
+
+An error occurred at line: [25] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+22: 
+23:     int q1c1px = (q1c1/totalq1) * 100
+24:     int q1c2px = (q1c2/totalq1) * 100
+25:     int q1c3px = (q1c3/totalq1) * 100
+26:     int q1c4px = (q1c4/totalq1) * 100
+27:     int q2c1px = (q2c1/totalq2) * 100
+28:     int q2c2px = (q2c2/totalq2) * 100
+
+
+An error occurred at line: [26] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+23:     int q1c1px = (q1c1/totalq1) * 100
+24:     int q1c2px = (q1c2/totalq1) * 100
+25:     int q1c3px = (q1c3/totalq1) * 100
+26:     int q1c4px = (q1c4/totalq1) * 100
+27:     int q2c1px = (q2c1/totalq2) * 100
+28:     int q2c2px = (q2c2/totalq2) * 100
+29:     int q2c3px = (q2c3/totalq2) * 100
+
+
+An error occurred at line: [27] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+24:     int q1c2px = (q1c2/totalq1) * 100
+25:     int q1c3px = (q1c3/totalq1) * 100
+26:     int q1c4px = (q1c4/totalq1) * 100
+27:     int q2c1px = (q2c1/totalq2) * 100
+28:     int q2c2px = (q2c2/totalq2) * 100
+29:     int q2c3px = (q2c3/totalq2) * 100
+30:     int q2c4px = (q2c4/totalq2) * 100
+
+
+An error occurred at line: [28] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+25:     int q1c3px = (q1c3/totalq1) * 100
+26:     int q1c4px = (q1c4/totalq1) * 100
+27:     int q2c1px = (q2c1/totalq2) * 100
+28:     int q2c2px = (q2c2/totalq2) * 100
+29:     int q2c3px = (q2c3/totalq2) * 100
+30:     int q2c4px = (q2c4/totalq2) * 100
+31:     int q3c1px = (q3c1/totalq3) * 100
+
+
+An error occurred at line: [29] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+26:     int q1c4px = (q1c4/totalq1) * 100
+27:     int q2c1px = (q2c1/totalq2) * 100
+28:     int q2c2px = (q2c2/totalq2) * 100
+29:     int q2c3px = (q2c3/totalq2) * 100
+30:     int q2c4px = (q2c4/totalq2) * 100
+31:     int q3c1px = (q3c1/totalq3) * 100
+32:     int q3c2px = (q3c2/totalq3) * 100
+
+
+An error occurred at line: [30] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+27:     int q2c1px = (q2c1/totalq2) * 100
+28:     int q2c2px = (q2c2/totalq2) * 100
+29:     int q2c3px = (q2c3/totalq2) * 100
+30:     int q2c4px = (q2c4/totalq2) * 100
+31:     int q3c1px = (q3c1/totalq3) * 100
+32:     int q3c2px = (q3c2/totalq3) * 100
+33:     int q3c3px = (q3c3/totalq3) * 100
+
+
+An error occurred at line: [31] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+28:     int q2c2px = (q2c2/totalq2) * 100
+29:     int q2c3px = (q2c3/totalq2) * 100
+30:     int q2c4px = (q2c4/totalq2) * 100
+31:     int q3c1px = (q3c1/totalq3) * 100
+32:     int q3c2px = (q3c2/totalq3) * 100
+33:     int q3c3px = (q3c3/totalq3) * 100
+34:     int q3c4px = (q3c4/totalq3) * 100    
+
+
+An error occurred at line: [32] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+29:     int q2c3px = (q2c3/totalq2) * 100
+30:     int q2c4px = (q2c4/totalq2) * 100
+31:     int q3c1px = (q3c1/totalq3) * 100
+32:     int q3c2px = (q3c2/totalq3) * 100
+33:     int q3c3px = (q3c3/totalq3) * 100
+34:     int q3c4px = (q3c4/totalq3) * 100    
+35: %>
+
+
+An error occurred at line: [33] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+30:     int q2c4px = (q2c4/totalq2) * 100
+31:     int q3c1px = (q3c1/totalq3) * 100
+32:     int q3c2px = (q3c2/totalq3) * 100
+33:     int q3c3px = (q3c3/totalq3) * 100
+34:     int q3c4px = (q3c4/totalq3) * 100    
+35: %>
+36: <!DOCTYPE html>
+
+
+An error occurred at line: [34] in the jsp file: [/stats.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+31:     int q3c1px = (q3c1/totalq3) * 100
+32:     int q3c2px = (q3c2/totalq3) * 100
+33:     int q3c3px = (q3c3/totalq3) * 100
+34:     int q3c4px = (q3c4/totalq3) * 100    
+35: %>
+36: <!DOCTYPE html>
+37: <html lang="en">
+
+
+Stacktrace:
+26-Mar-2023 00:11:52.848 INFO [http-nio-9999-exec-9] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:11:52.853 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:11:52.853 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:11:52.854 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:11:52.854 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:11:52.854 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:11:52.854 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:11:52.930 INFO [http-nio-9999-exec-9] scoresServlet.doGet Something failed: org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [6] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+3: <%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*"%> 
+4: <%
+5: 
+6:     int q1c1 = Integer.parseInt(response.getIntHeader("q1c1"));
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+
+
+An error occurred at line: [7] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+4: <%
+5: 
+6:     int q1c1 = Integer.parseInt(response.getIntHeader("q1c1"));
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+
+
+An error occurred at line: [8] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+5: 
+6:     int q1c1 = Integer.parseInt(response.getIntHeader("q1c1"));
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+
+
+An error occurred at line: [9] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+6:     int q1c1 = Integer.parseInt(response.getIntHeader("q1c1"));
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+
+
+An error occurred at line: [10] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+7:     int q1c2 = Integer.parseInt(response.getIntHeader("q1c2"));
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+
+
+An error occurred at line: [11] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+8:     int q1c3 = Integer.parseInt(response.getIntHeader("q1c3"));
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+
+
+An error occurred at line: [12] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+9:     int q1c4 = Integer.parseInt(response.getIntHeader("q1c4"));
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+
+
+An error occurred at line: [13] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+10:     int q2c1 = Integer.parseInt(response.getIntHeader("q2c1"));
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+
+
+An error occurred at line: [14] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+11:     int q2c2 = Integer.parseInt(response.getIntHeader("q2c2"));
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+17:     int q3c4 = Integer.parseInt(response.getIntHeader("q3c4"));
+
+
+An error occurred at line: [15] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+12:     int q2c3 = Integer.parseInt(response.getIntHeader("q2c3"));
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+17:     int q3c4 = Integer.parseInt(response.getIntHeader("q3c4"));
+18: 
+
+
+An error occurred at line: [16] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+13:     int q2c4 = Integer.parseInt(response.getIntHeader("q2c4"));
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+17:     int q3c4 = Integer.parseInt(response.getIntHeader("q3c4"));
+18: 
+19:     int totalq1 = q1c1+q1c2+q1c3+q1c4;
+
+
+An error occurred at line: [17] in the jsp file: [/stats.jsp]
+The method getIntHeader(String) is undefined for the type HttpServletResponse
+14:     int q3c1 = Integer.parseInt(response.getIntHeader("q3c1"));
+15:     int q3c2 = Integer.parseInt(response.getIntHeader("q3c2"));
+16:     int q3c3 = Integer.parseInt(response.getIntHeader("q3c3"));
+17:     int q3c4 = Integer.parseInt(response.getIntHeader("q3c4"));
+18: 
+19:     int totalq1 = q1c1+q1c2+q1c3+q1c4;
+20:     int totalq2 = q2c1+q2c2+q2c3+q2c4;
+
+
+Stacktrace:
+26-Mar-2023 00:13:32.611 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:13:32.615 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Mar-2023 00:13:32.651 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:13:32.663 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:13:34.299 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+26-Mar-2023 00:13:34.305 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+26-Mar-2023 00:13:34.305 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+26-Mar-2023 00:13:34.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+26-Mar-2023 00:13:34.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+26-Mar-2023 00:13:34.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+26-Mar-2023 00:13:34.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+26-Mar-2023 00:13:34.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+26-Mar-2023 00:13:34.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+26-Mar-2023 00:13:34.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5
+26-Mar-2023 00:13:34.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5
+26-Mar-2023 00:13:34.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/conf/logging.properties
+26-Mar-2023 00:13:34.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2023 00:13:34.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Mar-2023 00:13:34.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Mar-2023 00:13:34.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Mar-2023 00:13:34.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Mar-2023 00:13:34.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Mar-2023 00:13:34.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+26-Mar-2023 00:13:34.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+26-Mar-2023 00:13:34.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Mar-2023 00:13:34.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5
+26-Mar-2023 00:13:34.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5
+26-Mar-2023 00:13:34.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/temp
+26-Mar-2023 00:13:34.344 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+26-Mar-2023 00:13:34.664 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:13:34.713 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [600] milliseconds
+26-Mar-2023 00:13:34.795 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Mar-2023 00:13:34.795 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+26-Mar-2023 00:13:34.811 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/docs]
+26-Mar-2023 00:13:35.921 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:13:35.964 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/docs] has finished in [1,154] ms
+26-Mar-2023 00:13:35.964 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/manager]
+26-Mar-2023 00:13:36.433 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:13:36.438 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/manager] has finished in [474] ms
+26-Mar-2023 00:13:36.438 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/examples]
+26-Mar-2023 00:13:37.016 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:13:37.040 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/examples] has finished in [602] ms
+26-Mar-2023 00:13:37.040 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/ROOT]
+26-Mar-2023 00:13:37.462 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:13:37.464 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/ROOT] has finished in [424] ms
+26-Mar-2023 00:13:37.464 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/host-manager]
+26-Mar-2023 00:13:37.905 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:13:37.907 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/host-manager] has finished in [443] ms
+26-Mar-2023 00:13:37.908 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/Bahoot]
+26-Mar-2023 00:13:38.279 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:13:38.287 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/Bahoot] has finished in [379] ms
+26-Mar-2023 00:13:38.290 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:13:38.309 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3595] milliseconds
+26-Mar-2023 00:13:38.369 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:13:38.521 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:13:38.521 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:13:38.524 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:13:38.524 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:13:38.524 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:13:38.524 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:14:17.357 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:14:17.365 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:14:17.366 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:14:17.366 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:14:17.367 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:14:17.367 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:14:17.368 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:14:17.522 INFO [http-nio-9999-exec-4] scoresServlet.doGet Something failed: org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [68] in the jsp file: [/stats.jsp]
+q1c1px cannot be resolved to a type
+65: 
+66:         <div class="chart-wrap vertical">      
+67:         <div class="progress">
+68:             <div class="progress-bar" role="progressbar" style="width: <% q1c1px %>%" aria-valuenow="<% q1c1px %>" aria-valuemin="0" aria-valuemax="100"></div>
+69:             <div class="progress-bar bg-success" role="progressbar" style="width: <%= q1c2px %>%" aria-valuenow="<%= q1c2px %>" aria-valuemin="0" aria-valuemax="100"></div>
+70:             <div class="progress-bar bg-info" role="progressbar" style="width: <%= q1c3px %>%" aria-valuenow="<%= q1c3px %>" aria-valuemin="0" aria-valuemax="100"></div>
+71:         </div>
+
+
+An error occurred at line: [68] in the jsp file: [/stats.jsp]
+Duplicate local variable out
+65: 
+66:         <div class="chart-wrap vertical">      
+67:         <div class="progress">
+68:             <div class="progress-bar" role="progressbar" style="width: <% q1c1px %>%" aria-valuenow="<% q1c1px %>" aria-valuemin="0" aria-valuemax="100"></div>
+69:             <div class="progress-bar bg-success" role="progressbar" style="width: <%= q1c2px %>%" aria-valuenow="<%= q1c2px %>" aria-valuemin="0" aria-valuemax="100"></div>
+70:             <div class="progress-bar bg-info" role="progressbar" style="width: <%= q1c3px %>%" aria-valuenow="<%= q1c3px %>" aria-valuemin="0" aria-valuemax="100"></div>
+71:         </div>
+
+
+An error occurred at line: [68] in the jsp file: [/stats.jsp]
+Syntax error on token ".", ; expected
+65: 
+66:         <div class="chart-wrap vertical">      
+67:         <div class="progress">
+68:             <div class="progress-bar" role="progressbar" style="width: <% q1c1px %>%" aria-valuenow="<% q1c1px %>" aria-valuemin="0" aria-valuemax="100"></div>
+69:             <div class="progress-bar bg-success" role="progressbar" style="width: <%= q1c2px %>%" aria-valuenow="<%= q1c2px %>" aria-valuemin="0" aria-valuemax="100"></div>
+70:             <div class="progress-bar bg-info" role="progressbar" style="width: <%= q1c3px %>%" aria-valuenow="<%= q1c3px %>" aria-valuemin="0" aria-valuemax="100"></div>
+71:         </div>
+
+
+An error occurred at line: [68] in the jsp file: [/stats.jsp]
+The method write(String) is undefined for the type stats_jsp
+65: 
+66:         <div class="chart-wrap vertical">      
+67:         <div class="progress">
+68:             <div class="progress-bar" role="progressbar" style="width: <% q1c1px %>%" aria-valuenow="<% q1c1px %>" aria-valuemin="0" aria-valuemax="100"></div>
+69:             <div class="progress-bar bg-success" role="progressbar" style="width: <%= q1c2px %>%" aria-valuenow="<%= q1c2px %>" aria-valuemin="0" aria-valuemax="100"></div>
+70:             <div class="progress-bar bg-info" role="progressbar" style="width: <%= q1c3px %>%" aria-valuenow="<%= q1c3px %>" aria-valuemin="0" aria-valuemax="100"></div>
+71:         </div>
+
+
+An error occurred at line: [68] in the jsp file: [/stats.jsp]
+q1c1px cannot be resolved to a type
+65: 
+66:         <div class="chart-wrap vertical">      
+67:         <div class="progress">
+68:             <div class="progress-bar" role="progressbar" style="width: <% q1c1px %>%" aria-valuenow="<% q1c1px %>" aria-valuemin="0" aria-valuemax="100"></div>
+69:             <div class="progress-bar bg-success" role="progressbar" style="width: <%= q1c2px %>%" aria-valuenow="<%= q1c2px %>" aria-valuemin="0" aria-valuemax="100"></div>
+70:             <div class="progress-bar bg-info" role="progressbar" style="width: <%= q1c3px %>%" aria-valuenow="<%= q1c3px %>" aria-valuemin="0" aria-valuemax="100"></div>
+71:         </div>
+
+
+An error occurred at line: [68] in the jsp file: [/stats.jsp]
+Duplicate local variable out
+65: 
+66:         <div class="chart-wrap vertical">      
+67:         <div class="progress">
+68:             <div class="progress-bar" role="progressbar" style="width: <% q1c1px %>%" aria-valuenow="<% q1c1px %>" aria-valuemin="0" aria-valuemax="100"></div>
+69:             <div class="progress-bar bg-success" role="progressbar" style="width: <%= q1c2px %>%" aria-valuenow="<%= q1c2px %>" aria-valuemin="0" aria-valuemax="100"></div>
+70:             <div class="progress-bar bg-info" role="progressbar" style="width: <%= q1c3px %>%" aria-valuenow="<%= q1c3px %>" aria-valuemin="0" aria-valuemax="100"></div>
+71:         </div>
+
+
+An error occurred at line: [68] in the jsp file: [/stats.jsp]
+Syntax error on token ".", ; expected
+65: 
+66:         <div class="chart-wrap vertical">      
+67:         <div class="progress">
+68:             <div class="progress-bar" role="progressbar" style="width: <% q1c1px %>%" aria-valuenow="<% q1c1px %>" aria-valuemin="0" aria-valuemax="100"></div>
+69:             <div class="progress-bar bg-success" role="progressbar" style="width: <%= q1c2px %>%" aria-valuenow="<%= q1c2px %>" aria-valuemin="0" aria-valuemax="100"></div>
+70:             <div class="progress-bar bg-info" role="progressbar" style="width: <%= q1c3px %>%" aria-valuenow="<%= q1c3px %>" aria-valuemin="0" aria-valuemax="100"></div>
+71:         </div>
+
+
+An error occurred at line: [68] in the jsp file: [/stats.jsp]
+The method write(String) is undefined for the type stats_jsp
+65: 
+66:         <div class="chart-wrap vertical">      
+67:         <div class="progress">
+68:             <div class="progress-bar" role="progressbar" style="width: <% q1c1px %>%" aria-valuenow="<% q1c1px %>" aria-valuemin="0" aria-valuemax="100"></div>
+69:             <div class="progress-bar bg-success" role="progressbar" style="width: <%= q1c2px %>%" aria-valuenow="<%= q1c2px %>" aria-valuemin="0" aria-valuemax="100"></div>
+70:             <div class="progress-bar bg-info" role="progressbar" style="width: <%= q1c3px %>%" aria-valuenow="<%= q1c3px %>" aria-valuemin="0" aria-valuemax="100"></div>
+71:         </div>
+
+
+Stacktrace:
+26-Mar-2023 00:14:27.721 INFO [http-nio-9999-exec-5] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:14:27.726 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:14:27.727 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:14:27.727 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:14:27.727 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:14:27.728 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:14:27.728 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:14:51.991 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:14:51.999 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:14:52.000 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:14:52.001 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:14:52.001 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:14:52.002 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:14:52.002 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:15:12.358 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:15:12.366 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:15:12.366 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:15:12.367 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:15:12.367 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:15:12.368 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:15:12.368 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:15:13.110 INFO [http-nio-9999-exec-3] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:15:13.118 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:15:13.119 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:15:13.120 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:15:13.120 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:15:13.121 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:15:13.121 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:15:56.983 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:15:56.992 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:15:56.992 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:15:56.993 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:15:56.993 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:15:56.994 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:15:56.994 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:15:57.102 INFO [http-nio-9999-exec-6] scoresServlet.doGet Something failed: org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [35] in the jsp file: [/stats.jsp]
+The method out(String) is undefined for the type Console
+32:     int q3c1px = (q3c1/totalq3) * 100;
+33:     int q3c2px = (q3c2/totalq3) * 100;
+34:     int q3c3px = (q3c3/totalq3) * 100;
+35:     int q3c4px = (q3c4/totalq3) * 100;    Console.out("lkasjd: " + q1c1px);
+36: %>
+37: <!DOCTYPE html>
+38: <html lang="en">
+
+
+Stacktrace:
+26-Mar-2023 00:16:33.679 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:16:33.682 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Mar-2023 00:16:33.717 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:16:33.732 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:17:53.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+26-Mar-2023 00:17:53.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+26-Mar-2023 00:17:53.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+26-Mar-2023 00:17:53.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+26-Mar-2023 00:17:53.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+26-Mar-2023 00:17:53.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+26-Mar-2023 00:17:53.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+26-Mar-2023 00:17:53.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+8
+26-Mar-2023 00:17:53.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+26-Mar-2023 00:17:53.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5
+26-Mar-2023 00:17:53.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5
+26-Mar-2023 00:17:53.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/conf/logging.properties
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Mar-2023 00:17:53.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5
+26-Mar-2023 00:17:53.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5
+26-Mar-2023 00:17:53.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/temp
+26-Mar-2023 00:17:53.468 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nghsinkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+26-Mar-2023 00:17:53.737 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:17:53.779 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [478] milliseconds
+26-Mar-2023 00:17:53.841 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Mar-2023 00:17:53.841 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+26-Mar-2023 00:17:53.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/docs]
+26-Mar-2023 00:17:54.765 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:17:54.807 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/docs] has finished in [952] ms
+26-Mar-2023 00:17:54.807 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/manager]
+26-Mar-2023 00:17:55.207 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:17:55.212 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/manager] has finished in [405] ms
+26-Mar-2023 00:17:55.212 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/examples]
+26-Mar-2023 00:17:55.744 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:17:55.763 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/examples] has finished in [551] ms
+26-Mar-2023 00:17:55.764 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/ROOT]
+26-Mar-2023 00:17:56.191 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:17:56.194 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/ROOT] has finished in [430] ms
+26-Mar-2023 00:17:56.195 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/host-manager]
+26-Mar-2023 00:17:56.806 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:17:56.808 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/host-manager] has finished in [614] ms
+26-Mar-2023 00:17:56.809 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/Bahoot]
+26-Mar-2023 00:17:57.246 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 00:17:57.255 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nghsinkai/Library/Mobile Documents/com~apple~CloudDocs/NTU/Y2S2/OOP/OldEgg copy/apache-tomcat-10.1.5/webapps/Bahoot] has finished in [446] ms
+26-Mar-2023 00:17:57.257 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 00:17:57.275 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3495] milliseconds
+26-Mar-2023 00:17:59.333 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:17:59.482 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:17:59.482 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:17:59.484 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:17:59.484 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:17:59.485 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:17:59.485 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:18:00.315 INFO [http-nio-9999-exec-1] scoresServlet.doGet Something failed: org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [35] in the jsp file: [/stats.jsp]
+console cannot be resolved
+32:     int q3c1px = (q3c1/totalq3) * 100;
+33:     int q3c2px = (q3c2/totalq3) * 100;
+34:     int q3c3px = (q3c3/totalq3) * 100;
+35:     int q3c4px = (q3c4/totalq3) * 100;    console.log("lkasjd: " + q1c1px);
+36: %>
+37: <!DOCTYPE html>
+38: <html lang="en">
+
+
+Stacktrace:
+26-Mar-2023 00:19:12.593 INFO [http-nio-9999-exec-3] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:19:12.600 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:19:12.600 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:19:12.601 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:19:12.601 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:19:12.602 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:19:12.602 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:19:28.480 INFO [http-nio-9999-exec-5] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:19:28.488 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:19:28.488 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:19:28.489 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:19:28.489 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:19:28.490 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:19:28.490 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:19:38.511 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:19:38.518 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:19:38.518 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:19:38.519 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:19:38.519 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:19:38.520 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:19:38.520 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:19:50.905 INFO [http-nio-9999-exec-9] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:19:50.914 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:19:50.914 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:19:50.915 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:19:50.915 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:19:50.916 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:19:50.916 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:20:03.237 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:20:03.244 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:20:03.244 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:20:03.245 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:20:03.245 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:20:03.246 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:20:03.246 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:20:21.220 INFO [http-nio-9999-exec-3] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:20:21.228 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:20:21.229 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:20:21.229 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:20:21.229 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:20:21.230 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:20:21.230 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:20:21.332 INFO [http-nio-9999-exec-3] scoresServlet.doGet Something failed: org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/stats.jsp]
+Type mismatch: cannot convert from float to int
+21:     int totalq3 = q3c1+q3c2+q3c3+q3c4;
+22: 
+23: 
+24:     int q1c1px = ((float)q1c1/totalq1) * 100;
+25:     int q1c2px = (q1c2/totalq1) * 100;
+26:     int q1c3px = (q1c3/totalq1) * 100;
+27:     int q1c4px = (q1c4/totalq1) * 100;
+
+
+Stacktrace:
+26-Mar-2023 00:20:41.467 INFO [http-nio-9999-exec-5] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:20:41.476 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:20:41.476 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:20:41.477 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:20:41.477 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:20:41.478 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:20:41.478 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:20:58.883 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:20:58.889 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:20:58.889 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:20:58.890 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:20:58.890 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:20:58.890 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:20:58.891 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:21:18.498 INFO [http-nio-9999-exec-9] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:21:18.502 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:21:18.502 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:21:18.503 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:21:18.503 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:21:18.504 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:21:18.504 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:21:42.820 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:21:42.826 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:21:42.826 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:21:42.826 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:21:42.826 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:21:42.827 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:21:42.827 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:21:53.913 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:21:53.920 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:21:53.920 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:21:53.920 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:21:53.920 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:21:53.921 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:21:53.921 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:21:59.909 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:21:59.915 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:21:59.915 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:21:59.916 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:21:59.916 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:21:59.916 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:21:59.916 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:22:05.245 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:22:05.252 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:22:05.252 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:22:05.253 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:22:05.253 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:22:05.253 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:22:05.253 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:22:06.026 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:22:06.035 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:22:06.035 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:22:06.035 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:22:06.035 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:22:06.036 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:22:06.036 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:22:07.880 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:22:07.884 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:22:07.884 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:22:07.885 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:22:07.885 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:22:07.885 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:22:07.885 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:22:46.945 INFO [http-nio-9999-exec-5] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:22:46.952 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:22:46.952 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:22:46.952 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:22:46.952 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:22:46.952 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:22:46.952 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:03.968 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:03.974 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:03.974 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:03.975 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:03.975 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:03.976 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:03.976 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:08.923 INFO [http-nio-9999-exec-9] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:08.930 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:08.930 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:08.930 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:08.930 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:08.931 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:08.931 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:11.928 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:11.935 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:11.935 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:11.935 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:11.935 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:11.935 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:11.936 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:12.567 INFO [http-nio-9999-exec-3] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:12.571 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:12.571 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:12.572 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:12.572 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:12.572 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:12.573 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:12.757 INFO [http-nio-9999-exec-5] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:12.764 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:12.764 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:12.765 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:12.765 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:12.766 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:12.766 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:13.097 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:13.101 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:13.101 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:13.101 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:13.101 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:13.102 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:13.102 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:13.255 INFO [http-nio-9999-exec-9] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:13.262 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:13.263 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:13.263 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:13.263 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:13.264 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:13.264 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:19.445 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:19.451 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:19.451 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:19.451 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:19.451 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:19.451 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:19.452 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:41.343 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:41.349 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:41.349 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:41.349 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:41.349 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:41.350 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:41.350 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:45.250 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:45.256 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:45.257 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:45.257 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:45.257 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:45.257 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:45.257 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:46.214 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:46.221 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:46.221 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:46.222 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:46.222 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:46.223 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:46.223 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:48.607 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:48.616 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:48.616 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:48.617 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:48.617 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:48.617 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:48.617 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:49.051 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:49.058 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:49.058 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:49.058 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:49.058 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:49.058 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:49.059 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:49.257 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:49.261 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:49.261 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:49.262 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:49.262 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:49.262 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:49.262 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:49.593 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:49.598 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:49.598 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:49.599 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:49.599 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:49.599 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:49.599 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:49.930 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:49.936 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:49.936 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:49.936 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:49.937 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:49.937 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:49.937 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:50.255 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:50.259 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:50.259 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:50.259 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:50.260 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:50.260 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:50.260 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:50.428 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:50.433 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:50.433 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:50.433 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:50.434 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:50.434 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:50.434 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:55.507 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:23:55.512 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:23:55.513 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:23:55.513 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:23:55.513 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:23:55.513 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:23:55.513 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:24:19.791 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:24:19.798 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:24:19.798 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:24:19.798 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:24:19.798 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:24:19.798 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:24:19.798 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:24:26.794 INFO [http-nio-9999-exec-9] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:24:26.800 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:24:26.800 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:24:26.801 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:24:26.801 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:24:26.801 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:24:26.801 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:25:27.699 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:25:27.703 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:25:27.704 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:25:27.704 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:25:27.704 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:25:27.704 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:25:27.704 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:26:44.057 INFO [http-nio-9999-exec-5] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:26:44.061 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:26:44.061 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:26:44.061 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:26:44.061 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:26:44.061 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:26:44.061 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:27:53.482 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:27:53.489 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:27:53.490 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:27:53.490 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:27:53.490 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:27:53.490 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:27:53.490 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:28:05.106 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:28:05.112 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:28:05.112 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:28:05.113 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:28:05.113 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:28:05.113 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:28:05.113 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:28:31.815 INFO [http-nio-9999-exec-3] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:28:31.821 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:28:31.821 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:28:31.821 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:28:31.821 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:28:31.822 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:28:31.822 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:29:01.159 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:29:01.164 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:29:01.164 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:29:01.164 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:29:01.164 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:29:01.164 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:29:01.165 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:29:38.699 INFO [http-nio-9999-exec-9] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:29:38.705 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:29:38.705 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:29:38.705 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:29:38.705 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:29:38.705 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:29:38.705 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:30:11.098 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:30:11.102 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:30:11.102 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:30:11.102 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:30:11.102 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:30:11.102 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:30:11.102 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:30:46.105 INFO [http-nio-9999-exec-5] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:30:46.110 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:30:46.110 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:30:46.110 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:30:46.110 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:30:46.111 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:30:46.111 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:30:58.887 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:30:58.892 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:30:58.892 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:30:58.893 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:30:58.893 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:30:58.893 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:30:58.893 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:31:19.941 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:31:19.947 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:31:19.947 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:31:19.947 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:31:19.948 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:31:19.948 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:31:19.948 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:31:41.774 INFO [http-nio-9999-exec-3] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:31:41.778 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:31:41.778 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:31:41.778 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:31:41.779 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:31:41.779 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:31:41.779 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:32:59.005 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:32:59.010 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:32:59.010 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:32:59.010 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:32:59.011 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:32:59.011 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:32:59.011 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:06.708 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:33:06.713 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:33:06.713 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:33:06.713 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:33:06.713 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:06.713 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:33:06.713 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:25.348 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:33:25.351 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:33:25.351 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:33:25.351 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:33:25.352 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:25.352 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:33:25.352 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:29.766 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:33:29.770 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:33:29.770 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:33:29.770 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:33:29.770 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:29.771 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:33:29.771 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:29.956 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:33:29.960 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:33:29.960 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:33:29.961 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:33:29.961 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:29.961 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:33:29.961 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:30.100 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:33:30.104 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:33:30.104 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:33:30.104 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:33:30.104 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:30.104 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:33:30.104 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:30.289 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:33:30.295 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:33:30.295 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:33:30.296 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:33:30.296 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:30.296 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:33:30.296 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:52.329 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:33:52.333 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:33:52.334 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:33:52.334 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:33:52.334 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:33:52.334 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:33:52.334 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:34:25.332 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:34:25.337 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:34:25.337 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:34:25.337 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:34:25.337 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:34:25.337 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:34:25.337 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:34:26.273 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:34:26.277 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:34:26.277 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:34:26.277 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:34:26.277 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:34:26.277 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:34:26.277 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:34:35.169 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:34:35.174 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:34:35.174 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:34:35.174 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:34:35.174 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:34:35.174 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:34:35.174 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:34:52.905 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:34:52.909 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:34:52.909 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:34:52.909 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:34:52.909 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:34:52.909 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:34:52.909 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:06.806 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:35:06.811 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:35:06.811 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:35:06.811 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:35:06.811 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:06.812 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:35:06.812 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:11.408 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:35:11.414 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:35:11.414 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:35:11.414 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:35:11.414 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:11.414 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:35:11.414 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:20.174 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:35:20.179 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:35:20.179 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:35:20.179 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:35:20.179 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:20.179 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:35:20.179 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:24.383 INFO [http-nio-9999-exec-8] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:35:24.390 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:35:24.390 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:35:24.390 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:35:24.390 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:24.390 INFO [http-nio-9999-exec-8] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:35:24.390 INFO [http-nio-9999-exec-8] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:28.072 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:35:28.076 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:35:28.076 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:35:28.076 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:35:28.076 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:28.076 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:35:28.076 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:28.568 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:35:28.573 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:35:28.573 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:35:28.574 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:35:28.574 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:28.574 INFO [http-nio-9999-exec-2] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:35:28.574 INFO [http-nio-9999-exec-2] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:28.729 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:35:28.735 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:35:28.735 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:35:28.735 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:35:28.735 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:28.735 INFO [http-nio-9999-exec-4] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:35:28.735 INFO [http-nio-9999-exec-4] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:30.992 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:35:30.997 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:35:30.997 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:35:30.997 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:35:30.997 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:35:30.997 INFO [http-nio-9999-exec-6] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:35:30.997 INFO [http-nio-9999-exec-6] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:36:35.574 INFO [http-nio-9999-exec-9] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:36:35.580 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:36:35.580 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:36:35.580 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:36:35.580 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:36:35.581 INFO [http-nio-9999-exec-9] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:36:35.581 INFO [http-nio-9999-exec-9] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:36:41.926 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:36:41.932 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:36:41.932 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:36:41.932 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:36:41.932 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:36:41.932 INFO [http-nio-9999-exec-1] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:36:41.932 INFO [http-nio-9999-exec-1] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:36:54.853 INFO [http-nio-9999-exec-3] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:36:54.857 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:36:54.858 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:36:54.858 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:36:54.858 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:36:54.858 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:36:54.858 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:37:04.489 INFO [http-nio-9999-exec-5] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:37:04.492 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:37:04.492 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:37:04.493 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:37:04.493 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:37:04.493 INFO [http-nio-9999-exec-5] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:37:04.493 INFO [http-nio-9999-exec-5] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:37:20.558 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:37:20.564 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:37:20.564 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:37:20.564 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:37:20.564 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:37:20.565 INFO [http-nio-9999-exec-7] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:37:20.565 INFO [http-nio-9999-exec-7] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:38:00.876 INFO [http-nio-9999-exec-10] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:38:00.880 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:38:00.880 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:38:00.880 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:38:00.880 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:38:00.881 INFO [http-nio-9999-exec-10] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:38:00.881 INFO [http-nio-9999-exec-10] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:38:37.370 INFO [http-nio-9999-exec-3] scoresServlet.doGet IN scores servlet
+26-Mar-2023 00:38:37.377 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [1, 3, 2, 4]
+26-Mar-2023 00:38:37.377 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [1, 2, 1, 1]
+26-Mar-2023 00:38:37.378 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [3, 1, 2]
+26-Mar-2023 00:38:37.378 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]
+26-Mar-2023 00:38:37.378 INFO [http-nio-9999-exec-3] scoresServlet.setHeader choice list : [2, 3, 4]
+26-Mar-2023 00:38:37.378 INFO [http-nio-9999-exec-3] scoresServlet.setHeader count list : [2, 1, 1]

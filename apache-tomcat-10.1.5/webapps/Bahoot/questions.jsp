@@ -74,6 +74,12 @@ pageEncoding="UTF-8"%>
       </div>
     
       
+    <br>
+    <br>
+    <br>
+    <footer class="text-white mt-5 p-4 text-center">
+        Copyright &copy; 2023 Bahoot!. All Rights Reserved
+    </footer>
    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

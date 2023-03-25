@@ -16,7 +16,7 @@
   </head>
   <body class="bg_default" style="background-color: #46178f;">
 
-    <div class="d-flex h-100 align-items-center justify-content-center">
+    <div class="pt-5 d-flex h-100 align-items-center justify-content-center">
       <div class="text-center">
         <h1 class="d-block pb-5" style="color: white;">
           Bahoot!
@@ -31,6 +31,12 @@
       
     </div>
     
+    <br>
+    <br>
+    <br>
+    <footer class="text-white mt-5 p-4 text-center">
+        Copyright &copy; 2023 Bahoot!. All Rights Reserved
+    </footer>
       
     
    
