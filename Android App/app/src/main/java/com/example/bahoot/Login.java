@@ -58,7 +58,12 @@ public class Login extends AppCompatActivity {
 
     private boolean validate() {
 
-        if (emailStr.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(emailStr).matches()) {
+        if (emailStr.isEmpty()) {
+            Toast.makeText(this, "Please your email",
+                    Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!Patterns.EMAIL_ADDRESS.matcher(emailStr).matches()) {
             Toast.makeText(this, "Please enter a valid email address",
                     Toast.LENGTH_SHORT).show();
             return false;
@@ -95,14 +100,9 @@ public class Login extends AppCompatActivity {
                 int responseCode = conn.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {  // 200
 
-                    InputStream stream = conn.getInputStream();
-                    StringBuffer output = new StringBuffer("");
-                    BufferedReader buffer = new BufferedReader(new InputStreamReader(stream));
-                    String s = "";
-                    while ((s = buffer.readLine()) != null)
-                        output.append(s);
+                    String result = conn.getHeaderField("Login");
 
-                    return output.toString();
+                    return result;
                 } else {
                     return "Fail (" + responseCode + ")";
                 }
@@ -116,17 +116,16 @@ public class Login extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             Log.d("Error",result);
-            if (result.contains("Wrong")) {
-                Toast.makeText(getApplicationContext(),result,
+            if (result.matches("Failure")) {
+                Toast.makeText(getApplicationContext(),"Wrong Email or Password",
                         Toast.LENGTH_SHORT).show();
             }
-            else if (!result.contains("404")) {
+            else if (result.matches("Success")) {
                 // Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 Intent intent = new Intent(getApplicationContext(), RoomCode.class);
                 intent.putExtra("userID", result);
                 startActivity(intent);
                 finish();
-
             } else {
                 Toast.makeText(getApplicationContext(),"Error: Server is down",
                         Toast.LENGTH_SHORT).show();

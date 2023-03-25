@@ -60,9 +60,9 @@ public class responseServlet extends HttpServlet {
             
             // send the result
             if (option.matches(correctOption))
-                out.print("Question Result:Correct");
+                response.setHeader("Result","Correct");//out.print("Question Result:" + correctOption);
             else
-                out.print("Question Result:Incorrect");
+                response.setHeader("Result","Incorrect");//out.print("Question Result:Incorrect");
             
             // get respondee name
             sqlStr = "SELECT name FROM users WHERE id ='" + userID + "'";

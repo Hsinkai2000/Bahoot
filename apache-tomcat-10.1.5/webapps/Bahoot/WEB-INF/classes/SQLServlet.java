@@ -39,7 +39,7 @@ public class SQLServlet extends HttpServlet {
             ResultSet rset = stmt.executeQuery(sqlStr);
             ResultSetMetaData rsmd = rset.getMetaData();
             int columnsNumber = rsmd.getColumnCount();
-            
+                
             // print the results of the SQL query
             while (rset.next()) {
                 for (int i = 1; i <= columnsNumber; i++) {
@@ -47,11 +47,12 @@ public class SQLServlet extends HttpServlet {
                     String columnValue = rset.getString(i);
                     LOGGER.info(rsmd.getColumnName(i) + ":" + columnValue);
                     out.print(rsmd.getColumnName(i) + ":" +columnValue + " " /*+ rsmd.getColumnName(i)*/);
-                    
+                    response.setHeader(rsmd.getColumnName(i), columnValue);
+
                 }
-                out.println(" ");
             }
-            
+            out.flush();
+         
         } catch (SQLException e) {
             LOGGER.info("SQL Failed" + e); // Add a logging statement
         }
