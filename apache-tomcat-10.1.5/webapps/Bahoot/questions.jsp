@@ -17,8 +17,10 @@ pageEncoding="UTF-8"%>
     />
     <link href="./style/style.css" rel="stylesheet" />
   </head>
-  <body class="bg_default" style="background-color: #46178f;">
-
+  <body class="bg_default" style="background-color: #46178f;padding-left: 100px;padding-right: 100px;">
+    <nav class="navbar navbar-light" style="background-color: #46178f;">
+      <a class="navbar-brand " href="index.jsp"><h1 style="color: white;">Bahoot!</h1></a>
+    </nav>
       <div class="container pt-5">
         <div class="row">
           <div class="col-lg-3"></div>

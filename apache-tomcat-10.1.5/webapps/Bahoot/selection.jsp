@@ -17,8 +17,10 @@ pageEncoding="UTF-8"%>
     />
     <link href="./style/style.css" rel="stylesheet" />
   </head>
-  <body class="bg_default" style="background-color: #46178f;">
-
+  <body class="bg_default" style="background-color: #46178f; padding-left: 100px;padding-right: 100px;">
+    <nav class="navbar navbar-light" style="background-color: #46178f">
+      <a class="navbar-brand " href="index.jsp"><h1 style="color: white;">Bahoot!</h1></a>
+    </nav>
     <% try {
       Connection conn = DriverManager.getConnection(
               "jdbc:mysql://localhost:3306/bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
@@ -28,8 +30,10 @@ pageEncoding="UTF-8"%>
       String queryQuestions = "SELECT * FROM qnSets";
       ResultSet rs = stmt.executeQuery(queryQuestions);
     %>
-      
-    <div class="pt-5">
+    <br>
+    <br>
+    <h2 style="color: white;">Question Sets</h2>
+    <div class="pt-3">
       <div class="row row-cols-1 row-cols-md-6 g-4">
         <% while (rs.next()) {%>
           <div class="col">
