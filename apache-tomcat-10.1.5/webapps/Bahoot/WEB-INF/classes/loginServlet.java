@@ -26,6 +26,7 @@ public class loginServlet extends HttpServlet {
       static String emailStr;
       static String passwordStr;
       static String userIDStr;
+      static String nameStr;
 
       @Override
       public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -51,8 +52,11 @@ public class loginServlet extends HttpServlet {
                   if (rset.next()) {
                         LOGGER.info("Login Successful");
                         userIDStr = rset.getString(1);
+                        nameStr = rset.getString(3);
                         response.setHeader("Login","Success");
                         response.setHeader("userID",userIDStr);
+                        response.setHeader("name",nameStr);
+                        
                         //out.print("{ \"message\": \"Success!\" }");
                         
                         

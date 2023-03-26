@@ -21,5 +21,6 @@
     <string name="next_question">Next Question</string>
     <string name="comment">Comment</string>
     <string name="edit_comment">Edit Comment</string>
+    <string name="zero_score">Score: 0</string>
 
 </resources>

@@ -30,6 +30,7 @@ public class Login extends AppCompatActivity {
     private String emailStr = "";
     private String passwordStr = "";
     private String userID;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +86,7 @@ public class Login extends AppCompatActivity {
         if (extras != null) {
             emailField.setText(extras.getString("email"));
         }
+        passwordField.setText(null);
     }
 
     // Run the HTTP request in a background thread, separating from the main UI thread
@@ -103,6 +105,8 @@ public class Login extends AppCompatActivity {
 
                     String result = conn.getHeaderField("Login");
                     userID = conn.getHeaderField("userID");
+                    name = conn.getHeaderField("name");
+                    Log.d("Name",name);
 
                     return result;
                 } else {
@@ -126,8 +130,8 @@ public class Login extends AppCompatActivity {
                 // Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 Intent intent = new Intent(getApplicationContext(), RoomCode.class);
                 intent.putExtra("userID", userID);
+                intent.putExtra("name", name);
                 startActivity(intent);
-                finish();
             } else {
                 Toast.makeText(getApplicationContext(),"Error: Server is down",
                         Toast.LENGTH_SHORT).show();

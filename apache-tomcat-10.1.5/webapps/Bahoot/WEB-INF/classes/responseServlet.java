@@ -22,9 +22,11 @@ public class responseServlet extends HttpServlet {
     static String userID;
     static String roomCode;
     static String currentQuestionID;
+    static String questionSetID;
     static String respondee;
     static String userComment;
     static String responseTableID;
+    static String result;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -39,9 +41,9 @@ public class responseServlet extends HttpServlet {
         userID = request.getParameter("userID");
         roomCode = request.getParameter("roomCode");
         userComment = request.getParameter("userComment");
+        questionSetID = request.getParameter("qnSetID");
 
 
-        
         try (Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                 "root", "password");
@@ -65,9 +67,9 @@ public class responseServlet extends HttpServlet {
             
             // send the result
             if (option.matches(correctOption))
-                response.setHeader("Result","Correct");//out.print("Question Result:" + correctOption);
+                result = "Correct";
             else
-                response.setHeader("Result","Incorrect");//out.print("Question Result:Incorrect");
+                result = "Incorrect";
             
             // get respondee name
             sqlStr = "SELECT name FROM users WHERE id ='" + userID + "'";
@@ -78,8 +80,8 @@ public class responseServlet extends HttpServlet {
             LOGGER.info("Current Respondee: " + respondee);
 
             // send statistic to DB
-            sqlStr = "INSERT INTO responses (questionNo, choice, respondee, userID, comment ) Values "
-                + "('" + currentQuestionID + "', '" + option + "', '" + respondee +"', '" + userID + "', '" + userComment +"')";
+            sqlStr = "INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values "
+                + "('" + roomCode + "', '" + questionSetID + "', '" + currentQuestionID + "', '" + option + "', '" + result +"', '" + respondee +"', '" + userID + "', '" + userComment +"')";
             LOGGER.info("Executing " + sqlStr); // Add a logging statement
             stmt.executeUpdate(sqlStr);
 
@@ -90,7 +92,9 @@ public class responseServlet extends HttpServlet {
             rset.next();
             responseTableID = rset.getString(1);
             LOGGER.info("Responses Table ID:" + responseTableID);
-            response.setHeader("Response-Table-ID",responseTableID);
+
+            response.setHeader("Result", result);
+            response.setHeader("Response-Table-ID", responseTableID);
 
                 
         } catch (SQLException e) {

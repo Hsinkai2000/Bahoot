@@ -23,6 +23,7 @@ public class RoomCode extends AppCompatActivity {
     private EditText roomCodeField;
     private String roomCodeStr;
     private String userID;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class RoomCode extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         userID = extras.getString("userID");
+        name = extras.getString("name");
 
         roomCodeField = findViewById(R.id.roomCodeField);
     }
@@ -93,9 +95,9 @@ public class RoomCode extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("userID", userID);
+                intent.putExtra("name",name);
                 intent.putExtra("roomCode",roomCodeStr);
                 startActivity(intent);
-                finish();
             }
         }
     }

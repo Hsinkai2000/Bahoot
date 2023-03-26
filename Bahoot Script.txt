@@ -7,6 +7,7 @@ drop table if exists Users;
 drop table if exists questions;
 drop table if exists qnSets;
 drop table if exists session;
+drop table if exists score;
 
 create table qnSets (
     id int NOT NULL AUTO_INCREMENT,
@@ -40,10 +41,13 @@ create table Users (
 
 Create table responses (
     id int NOT NULL AUTO_INCREMENT,
+    roomCode varchar(6),
+    questionSetID int,
     questionNo int,
     choice int,
     respondee varchar(50),
     userID int,
+    result varchar(50),
     comment varchar(500),
     primary key (id)
 );
@@ -52,6 +56,15 @@ Create table session (
     id int NOT NULL AUTO_INCREMENT,
     roomCode varchar(6),
     currentQuestionID int,
+    primary key (id)
+);
+
+Create table score (
+    id int NOT NULL AUTO_INCREMENT,
+    roomCode varchar(6),
+    userID int,
+    name varchar(50),
+    score int,
     primary key (id)
 );
 
@@ -71,29 +84,37 @@ INSERT INTO qnSets (name, totalQn, ownerID) VALUES
     ('Web App Programming',3, 1);
 
 INSERT INTO Users (email, name, password, mobile_number) VALUES 
-	('chockhong@gmail.com', 'lim chock hong', 'passwordlim', 837390484),
+	('chockhong@gmail.com', 'Lim Chock Hong', 'passwordlim', 837390484),
 	('Jamesliu@gmail.com', 'James Liu', 'passwordliu', 84730572),
-	('KellyTay@gmail.com', 'Kelly tay', 'passwordtay', 94728484),
+	('KellyTay@gmail.com', 'Kelly Tay', 'passwordtay', 94728484),
 	('BrandonTan@gmail.com', 'Brandon Tan', 'passwordTan', 93846289),
 	('DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943),
 	('i@g.com', 'Irfan', '123', 96641005);
 
-insert into responses (questionNo, choice, respondee, userID) values
-    (1, 3, "chock hong", 1),
-    (1, 3, "Kelly", 3),
-    (1, 2, "Brandon", 4),
-    (1, 4, "Denon", 5),
-    (2, 3, "chock hong", 1),
-    (2, 1, "Kelly", 3),
-    (2, 3, "Brandon", 4),
-    (2, 2, "Denon", 5),
-    (3, 2, "chock hong", 1),
-    (3, 3, "Kelly", 3),
-    (3, 2, "Brandon", 4),
-    (3, 4, "Denon", 5);
+insert into responses (roomCode, questionSetID, questionNo, choice, respondee, result, userID) values
+    ("774537", 1, 1, 3, "Lim Chock Hong", "Correct", 1),
+    ("774537", 1, 1, 3, "Kelly Tay", "Correct", 3),
+    ("774537", 1, 1, 2, "Brandon Tann", "Incorrect", 4),
+    ("774537", 1, 1, 4, "Denon", "Incorrect", 5),
+    ("774537", 1, 2, 3, "Lim Chock Hong", "Correct", 1),
+    ("774537", 1, 2, 1, "Kelly Tay", "Incorrect", 3),
+    ("774537", 1, 2, 3, "Brandon Tan", "Correct", 4),
+    ("774537", 1, 2, 2, "Lee Denon", "Incorrect", 5),
+    ("774537", 1, 3, 2, "Lim Chock Hong", "Incorrect", 1),
+    ("774537", 1, 3, 3, "Kelly Tay", "Incorrect", 3),
+    ("774537", 1, 3, 2, "Brandon Tan", "Incorrect", 4),
+    ("774537", 1, 3, 4, "Lee Denon", "Correct", 5);
 
-insert into responses (questionNo, choice, respondee, userID, comment) values
-    (1, 3, "chock hong", 1, "ezpz"),
-    (1, 3, "Kelly",3 , "hello");
+insert into responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) values
+    ("774537", 1, 1, 3, "Correct", "James Liu", 2, "ezpz"),
+    ("774537", 1, 2, 4, "Incorrect", "James Liu", 2 , "wtf");
+
+INSERT INTO score (roomCode, userID, name, score) VALUES
+    ('774537', 1, "Lim Chock Hong", 2),
+    ('774537', 2, "James Liu", 1),
+    ('774537', 3, "Kelly Tay", 1),
+    ('774537', 4, "Brandon Tan", 1),
+    ('774537', 5, "Lee Denon", 1);
+
 show tables;
  

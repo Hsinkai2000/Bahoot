@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.Button;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -31,12 +30,15 @@ public class MainActivity extends AppCompatActivity {
     private Button nextQuestion;
     private Button commentButton;
     private TextView questionNumber;
+    private TextView scoreTextView;
     private String userID;
+    private String name;
     private String roomCode;
     private String selectedOption;
     private String correctOption;
     private String currentQuestionID;
     private String currentQuestionNumber;
+    private String questionSetID;
     private String nextQuestionCheck;
     private String option1;
     private String option2;
@@ -46,8 +48,13 @@ public class MainActivity extends AppCompatActivity {
     private String responseTableID;
     private String userComment;
     private String responseTableIDCheck;
+    private String choiceCheck;
+    private String resultCheck;
+    private String scoreStr;
     private int count = 0;
+    private int score;
     private boolean answered = false;
+    private boolean resume = false;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -58,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         userID = extras.getString("userID");
         roomCode = extras.getString("roomCode");
+        name = extras.getString("name");
 
         option1Button = findViewById(R.id.option1Button);
         option2Button = findViewById(R.id.option2Button);
@@ -66,14 +74,20 @@ public class MainActivity extends AppCompatActivity {
         nextQuestion = findViewById(R.id.nextQuestionButton);
         questionNumber = findViewById(R.id.questionNumberText);
         commentButton = findViewById(R.id.commentButton);
+        scoreTextView = findViewById(R.id.scoreText);
 
         // Disables the next question button at the start
         nextQuestion.setEnabled(false);
         Log.d("TAG","answered:" + answered);
-
         // Gets the current question in the room and fills in the questions on screen
         getCurrentQuestionID();
 
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (answered)
+         nextQuestionButton();
     }
 
 
@@ -87,9 +101,10 @@ public class MainActivity extends AppCompatActivity {
     // Function for option 1 button
     public void option1(View v) {
         HttpTask http = new HttpTask();
-        http.setGetResult();
+        http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=1" +
-                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment);
+                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
+                + "&qnSetID=" + questionSetID);
         selectedOption = "1";
 
     }
@@ -97,27 +112,30 @@ public class MainActivity extends AppCompatActivity {
     // Function for option 2 button
     public void option2(View v) {
         HttpTask http = new HttpTask();
-        http.setGetResult();
+        http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=2" +
-                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment);
+                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
+                + "&qnSetID=" + questionSetID);
         selectedOption = "2";
     }
 
     // Function for option 3 button
     public void option3(View v) {
         HttpTask http = new HttpTask();
-        http.setGetResult();
+        http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=3" +
-                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment);
+                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
+                + "&qnSetID=" + questionSetID);
         selectedOption = "3";
     }
 
     // Function for option 4 button
     public void option4(View v) {
         HttpTask http = new HttpTask();
-        http.setGetResult();
+        http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=4" +
-                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment);
+                "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
+                + "&qnSetID=" + questionSetID);
         selectedOption = "4";
     }
 
@@ -129,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         String nextSQL = "SELECT currentQuestionID FROM session WHERE " +
                 "roomCode = '" + roomCode + "'";
         HttpTask httpTask = new HttpTask();
-        httpTask.setDoNextQuestion();
+        httpTask.setDoNextQuestion(true);
         httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 nextSQL);
 
@@ -184,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
                         + "' WHERE id='" + finalTableID +"'";
 
                 HttpTask httpTask = new HttpTask();
-                httpTask.setCommenting();
+                httpTask.setCommenting(true);
                 httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                         updateSQL);
             }
@@ -211,9 +229,23 @@ public class MainActivity extends AppCompatActivity {
         String currentQuestionSQL = "SELECT currentQuestionID FROM session WHERE" +
                 " roomCode = '" + roomCode + "'";
         HttpTask httpTask = new HttpTask();
-        httpTask.setGetCurrentQuestionID();
+        httpTask.setGetCurrentQuestionID(true);
         httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 currentQuestionSQL);
+    }
+
+    // Called when onResume() is called, update the screen upon refreshing
+    private void nextQuestionButton() {
+
+        Log.d("Tag", "answerrred:" + answered);
+
+        String nextSQL = "SELECT currentQuestionID FROM session WHERE " +
+                "roomCode = '" + roomCode + "'";
+        HttpTask httpTask = new HttpTask();
+        httpTask.setDoNextQuestion(true);
+        httpTask.setResuming(true);
+        httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                nextSQL);
     }
 
     /*
@@ -232,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             overridePendingTransition(0, 0);
 
-        } else {
+        } else if (!resume){
             Toast.makeText(getApplicationContext(), "Please wait for the instructor " +
                             "to move to the next question",
                     Toast.LENGTH_SHORT).show();
@@ -242,19 +274,19 @@ public class MainActivity extends AppCompatActivity {
     // Fills in the current question number and options
     private void populateQuestions(int step) {
 
-        // sends a SQL query to the servlet to get the current question
+        // Sends a SQL query to the servlet to get the current question
         if (step == 1) {
             Log.d("Tag", "currentQuestionID:" + currentQuestionID);
             String sqlStr = "SELECT * FROM questions WHERE id='" + currentQuestionID + "'";
 
             HttpTask httpTask = new HttpTask();
-            httpTask.setGetQuestion();
+            httpTask.setGetQuestion(true);
             httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     sqlStr);
 
         }
 
-        // fills in the option's text box with the options
+        // Fills in the option's text box with the options
         else if (step == 2) {
             String text = "Question " + currentQuestionNumber;
             questionNumber.setText(text);
@@ -266,25 +298,53 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // Gets the current score from DB
+    // Creates a new entry if score not found
+    // Fills the score text box
+    private void getScore(int step) {
+
+        String scoreCheckSQL = "SELECT * FROM score WHERE " +
+                "userID='" + userID + "' AND roomCode='" + roomCode + "'";
+        HttpTask httpTask = new HttpTask();
+
+        if (step == 1) {
+            httpTask.setScoreCheck(true);
+            httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                    scoreCheckSQL);
+
+        } else if (step == 2) {
+            httpTask.setScoreCheck(false);
+            score = 0;
+            scoreTextView.setText(R.string.zero_score);
+            scoreCheckSQL = "INSERT INTO score (roomCode, userID, name, score) " +
+                    "VALUES ('" +roomCode +"', '" + userID + "', '"
+                    + name + "', '" + score + "')" ;
+            httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                    scoreCheckSQL);
+
+        }  else if (step == 3) {
+            String text = "Score: " + scoreStr;
+            scoreTextView.setText(text);
+        }
+
+    }
+
     // Checks if the user has already answered the question from previous attempts
     private void answeredCheck(int step) {
+        String result;
 
         if (step == 1) {
             String sqlCheck = "SELECT * FROM responses WHERE "
                     + "questionNo='" + currentQuestionNumber
                     + "' AND userID='" + userID + "'";
             HttpTask httpTask = new HttpTask();
-            httpTask.setAnsweredCheck();
+            httpTask.setAnsweredCheck(true);
             httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     sqlCheck);
 
         } else if (step == 2) {
-            option1Button.setEnabled(false);
-            option2Button.setEnabled(false);
-            option3Button.setEnabled(false);
-            option4Button.setEnabled(false);
-            answered = true;
-            nextQuestion.setEnabled(true);
+            selectedOption = choiceCheck;
+            buttonResponse(resultCheck,true);
             Toast.makeText(getApplicationContext(), "You've already answered this question.\n" +
                             "Please wait for the next question.",
                     Toast.LENGTH_SHORT).show();
@@ -296,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
      * Makes the correct answer show in green
      * If the selected option is incorrect, makes it red
      */
-    private void buttonResponse(String result) {
+    private void buttonResponse(String result, boolean answerCheck) {
         Log.d("TAG",result);
 
         if (correctOption.matches("1"))
@@ -325,6 +385,12 @@ public class MainActivity extends AppCompatActivity {
         option4Button.setEnabled(false);
         nextQuestion.setEnabled(true);
         answered = true;
+
+        if (!answerCheck) {
+            if (result.matches("Correct")) {
+                incrementScore();
+            }
+        }
     }
 
     // Triggers only if no questions are received from the servlet
@@ -342,6 +408,17 @@ public class MainActivity extends AppCompatActivity {
         count++;
     }
 
+    private void incrementScore(){
+        ++score;
+        String scoreIncSQL = "UPDATE SCORE SET score='" + score + "' " +
+                "WHERE userID='" + userID + "' AND roomCode='" + roomCode + "'";
+        HttpTask httpTask = new HttpTask();
+        httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+                scoreIncSQL);
+        String text = "Score: " + String.valueOf(score);
+        scoreTextView.setText(text);
+    }
+
     // Responsible for establishing and sending HTTP requests to the servlet
     private class HttpTask extends AsyncTask<String, Void, String> {
 
@@ -353,29 +430,36 @@ public class MainActivity extends AppCompatActivity {
         private boolean getResult = false;
         private boolean commenting = false;
         private boolean doNextQuestion = false;
+        private boolean resuming = false;
+        private boolean scoreCheck = false;
 
         /*---------------Boolean Flags Setters-----------------*/
 
-        public void setGetCurrentQuestionID(){
-            this.getCurrentQuestionID = true;
+        public void setGetCurrentQuestionID(boolean bool){
+            this.getCurrentQuestionID = bool;
         }
-        public void setGetQuestion(){
-            this.getQuestion = true;
-        }
-
-        public void setAnsweredCheck(){
-            this.answeredCheck = true;
-        }
-        public void setGetResult(){
-            this.getResult = true;
+        public void setGetQuestion(boolean bool){
+            this.getQuestion = bool;
         }
 
-        public void setCommenting(){
-            this.commenting= true;
+        public void setAnsweredCheck(boolean bool){
+            this.answeredCheck = bool;
+        }
+        public void setGetResult(boolean bool){
+            this.getResult = bool;
+        }
+        public void setCommenting(boolean bool){
+            this.commenting= bool;
         }
 
-        public void setDoNextQuestion(){
-            this.doNextQuestion = true;
+        public void setDoNextQuestion(boolean bool){
+            this.doNextQuestion = bool;
+        }
+        public void setResuming(boolean bool){
+            this.resuming = bool;
+        }
+        public void setScoreCheck(boolean bool){
+            this.scoreCheck = bool;
         }
 
         @Override
@@ -402,6 +486,8 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     else if (this.getQuestion){
+
+                        questionSetID = conn.getHeaderField("setID");
                         currentQuestionNumber = conn.getHeaderField("qnNo");
                         option1 = conn.getHeaderField("opt1");
                         option2 = conn.getHeaderField("opt2");
@@ -409,11 +495,15 @@ public class MainActivity extends AppCompatActivity {
                         option4 = conn.getHeaderField("opt4");
                         correctOption = conn.getHeaderField("correctOpt");
                         populateQuestions(2);
+                        getScore(1);
                         answeredCheck(1);
+                        Log.d("setID",questionSetID);
                     }
 
                     if (this.answeredCheck) {
                         responseTableIDCheck = conn.getHeaderField("id");
+                        choiceCheck = conn.getHeaderField("choice");
+                        resultCheck = conn.getHeaderField("result");
                     }
 
                     else if (this.getResult) {
@@ -423,10 +513,17 @@ public class MainActivity extends AppCompatActivity {
 
                     else if (this.doNextQuestion) {
                         nextQuestionCheck = conn.getHeaderField("currentQuestionID");
-
                     }
 
-                    // else if (this.commenting) {}
+                    else if (this.scoreCheck) {
+                        scoreStr = conn.getHeaderField("score");
+                        if (scoreStr == null)
+                            getScore(2);
+                        else {
+                            score = Integer.parseInt(scoreStr);
+                            getScore(3);
+                        }
+                    }
 
                     return null;
 
@@ -455,12 +552,15 @@ public class MainActivity extends AppCompatActivity {
             }
             // show results
             if (questionResult != null && !answered) {
-                buttonResponse(questionResult);
+                buttonResponse(questionResult,false);
                 return;
             }
             // move to next question
             if (doNextQuestion) {
+                if (this.resuming)
+                    resume = true;
                 nextQuestion();
+                resume = false;
             }
         }
     }
