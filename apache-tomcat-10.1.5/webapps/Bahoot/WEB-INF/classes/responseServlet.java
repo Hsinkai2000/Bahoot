@@ -78,7 +78,8 @@ public class responseServlet extends HttpServlet {
             LOGGER.info("Current Respondee: " + respondee);
 
             // send statistic to DB
-            sqlStr = "INSERT INTO responses (questionNo, choice, respondee, comment ) Values ('" + currentQuestionID + "', '" + option + "', '" + respondee +"','" + userComment +"')";
+            sqlStr = "INSERT INTO responses (questionNo, choice, respondee, userID, comment ) Values "
+                + "('" + currentQuestionID + "', '" + option + "', '" + respondee +"', '" + userID + "', '" + userComment +"')";
             LOGGER.info("Executing " + sqlStr); // Add a logging statement
             stmt.executeUpdate(sqlStr);
 

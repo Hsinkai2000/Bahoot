@@ -3646,3 +3646,1091 @@ Stacktrace:
 26-Mar-2023 05:24:53.327 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 26-Mar-2023 05:24:53.353 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
 26-Mar-2023 05:24:53.374 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 09:55:21.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+26-Mar-2023 09:55:21.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+26-Mar-2023 09:55:21.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+26-Mar-2023 09:55:21.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+26-Mar-2023 09:55:21.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+26-Mar-2023 09:55:21.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2023 09:55:21.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+26-Mar-2023 09:55:21.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+26-Mar-2023 09:55:21.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2023 09:55:21.771 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+26-Mar-2023 09:55:21.771 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+26-Mar-2023 09:55:21.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\conf\logging.properties
+26-Mar-2023 09:55:21.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2023 09:55:21.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Mar-2023 09:55:21.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Mar-2023 09:55:21.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Mar-2023 09:55:21.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Mar-2023 09:55:21.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+26-Mar-2023 09:55:21.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+26-Mar-2023 09:55:21.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Mar-2023 09:55:21.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+26-Mar-2023 09:55:21.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+26-Mar-2023 09:55:21.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\temp
+26-Mar-2023 09:55:21.800 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-19\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;c:\program files (x86)\razer chroma sdk\bin;c:\program files\razer chroma sdk\bin;c:\program files (x86)\razer\chromabroadcast\bin;c:\program files\razer\chromabroadcast\bin;c:\program files (x86)\common files\oracle\java\javapath;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\nvidia corporation\nvidia nvdlisr;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\microsoft sql server\120\tools\binn\;c:\program files\common files\autodesk shared\;c:\users\user\appdata\local\microsoft\windowsapps;c:\windows\system32\config\systemprofile\appdata\local\microsoft\windowsapps;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;C:\windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Users\User\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python310\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;.]
+26-Mar-2023 09:55:21.955 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 09:55:21.969 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [309] milliseconds
+26-Mar-2023 09:55:22.003 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Mar-2023 09:55:22.003 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+26-Mar-2023 09:55:22.012 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\Bahoot]
+26-Mar-2023 09:55:22.841 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 09:55:22.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\Bahoot] has finished in [889] ms
+26-Mar-2023 09:55:22.902 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\docs]
+26-Mar-2023 09:55:23.450 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 09:55:23.454 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\docs] has finished in [552] ms
+26-Mar-2023 09:55:23.454 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\examples]
+26-Mar-2023 09:55:24.507 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 09:55:24.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\examples] has finished in [1,116] ms
+26-Mar-2023 09:55:24.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\host-manager]
+26-Mar-2023 09:55:25.113 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 09:55:25.120 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\host-manager] has finished in [550] ms
+26-Mar-2023 09:55:25.120 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\manager]
+26-Mar-2023 09:55:25.673 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 09:55:25.677 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\manager] has finished in [557] ms
+26-Mar-2023 09:55:25.678 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\ROOT]
+26-Mar-2023 09:55:26.189 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 09:55:26.193 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\ROOT] has finished in [515] ms
+26-Mar-2023 09:55:26.194 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 09:55:26.228 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4258] milliseconds
+26-Mar-2023 10:36:48.025 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+26-Mar-2023 10:36:48.641 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 10:36:48.644 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+26-Mar-2023 10:51:40.624 INFO [http-nio-9999-exec-11] loginServlet.doGet loginServlet called
+26-Mar-2023 10:51:40.760 INFO [http-nio-9999-exec-11] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 10:51:40.768 INFO [http-nio-9999-exec-11] loginServlet.doGet Login Successful
+26-Mar-2023 10:51:44.058 INFO [http-nio-9999-exec-12] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:51:44.061 INFO [http-nio-9999-exec-12] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:51:44.062 INFO [http-nio-9999-exec-12] SQLServlet.doGet id:1
+26-Mar-2023 10:51:44.101 INFO [http-nio-9999-exec-13] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:51:44.103 INFO [http-nio-9999-exec-13] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:51:44.103 INFO [http-nio-9999-exec-13] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 10:51:44.108 INFO [http-nio-9999-exec-14] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:51:44.110 INFO [http-nio-9999-exec-14] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 10:51:44.111 INFO [http-nio-9999-exec-14] SQLServlet.doGet id:1
+26-Mar-2023 10:51:44.111 INFO [http-nio-9999-exec-14] SQLServlet.doGet setID:1
+26-Mar-2023 10:51:44.111 INFO [http-nio-9999-exec-14] SQLServlet.doGet qnNo:1
+26-Mar-2023 10:51:44.111 INFO [http-nio-9999-exec-14] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 10:51:44.112 INFO [http-nio-9999-exec-14] SQLServlet.doGet opt1:3
+26-Mar-2023 10:51:44.112 INFO [http-nio-9999-exec-14] SQLServlet.doGet opt2:6
+26-Mar-2023 10:51:44.112 INFO [http-nio-9999-exec-14] SQLServlet.doGet opt3:10
+26-Mar-2023 10:51:44.112 INFO [http-nio-9999-exec-14] SQLServlet.doGet opt4:14
+26-Mar-2023 10:51:44.112 INFO [http-nio-9999-exec-14] SQLServlet.doGet correctOpt:3
+26-Mar-2023 10:51:44.118 INFO [http-nio-9999-exec-15] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:51:44.120 INFO [http-nio-9999-exec-15] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 10:52:18.682 INFO [http-nio-9999-exec-20] loginServlet.doGet loginServlet called
+26-Mar-2023 10:52:18.685 INFO [http-nio-9999-exec-20] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 10:52:18.685 INFO [http-nio-9999-exec-20] loginServlet.doGet Login Successful
+26-Mar-2023 10:52:21.780 INFO [http-nio-9999-exec-11] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:52:21.782 INFO [http-nio-9999-exec-11] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:52:21.783 INFO [http-nio-9999-exec-11] SQLServlet.doGet id:1
+26-Mar-2023 10:52:21.829 INFO [http-nio-9999-exec-12] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:52:21.831 INFO [http-nio-9999-exec-12] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:52:21.831 INFO [http-nio-9999-exec-12] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 10:52:21.835 INFO [http-nio-9999-exec-13] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:52:21.837 INFO [http-nio-9999-exec-13] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 10:52:21.837 INFO [http-nio-9999-exec-13] SQLServlet.doGet id:1
+26-Mar-2023 10:52:21.837 INFO [http-nio-9999-exec-13] SQLServlet.doGet setID:1
+26-Mar-2023 10:52:21.837 INFO [http-nio-9999-exec-13] SQLServlet.doGet qnNo:1
+26-Mar-2023 10:52:21.837 INFO [http-nio-9999-exec-13] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 10:52:21.838 INFO [http-nio-9999-exec-13] SQLServlet.doGet opt1:3
+26-Mar-2023 10:52:21.838 INFO [http-nio-9999-exec-13] SQLServlet.doGet opt2:6
+26-Mar-2023 10:52:21.838 INFO [http-nio-9999-exec-13] SQLServlet.doGet opt3:10
+26-Mar-2023 10:52:21.838 INFO [http-nio-9999-exec-13] SQLServlet.doGet opt4:14
+26-Mar-2023 10:52:21.838 INFO [http-nio-9999-exec-13] SQLServlet.doGet correctOpt:3
+26-Mar-2023 10:52:21.842 INFO [http-nio-9999-exec-14] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:52:21.844 INFO [http-nio-9999-exec-14] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 10:52:22.904 INFO [http-nio-9999-exec-15] responseServlet.doGet responseServlet Called
+26-Mar-2023 10:52:22.906 INFO [http-nio-9999-exec-15] responseServlet.doGet Current QuestionID: 1
+26-Mar-2023 10:52:22.906 INFO [http-nio-9999-exec-15] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+26-Mar-2023 10:52:22.907 INFO [http-nio-9999-exec-15] responseServlet.doGet Correct Option: 3
+26-Mar-2023 10:52:22.907 INFO [http-nio-9999-exec-15] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+26-Mar-2023 10:52:22.907 INFO [http-nio-9999-exec-15] responseServlet.doGet Current Respondee: Irfan
+26-Mar-2023 10:52:22.907 INFO [http-nio-9999-exec-15] responseServlet.doGet Executing INSERT INTO responses (questionNo, choice, respondee, comment ) Values ('1', '1', 'Irfan','null')
+26-Mar-2023 10:52:22.909 INFO [http-nio-9999-exec-15] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+26-Mar-2023 10:52:22.909 INFO [http-nio-9999-exec-15] responseServlet.doGet Responses Table ID:15
+26-Mar-2023 10:52:31.052 INFO [http-nio-9999-exec-16] loginServlet.doGet loginServlet called
+26-Mar-2023 10:52:31.055 INFO [http-nio-9999-exec-16] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 10:52:31.055 INFO [http-nio-9999-exec-16] loginServlet.doGet Login Successful
+26-Mar-2023 10:52:34.520 INFO [http-nio-9999-exec-17] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:52:34.522 INFO [http-nio-9999-exec-17] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:52:34.522 INFO [http-nio-9999-exec-17] SQLServlet.doGet id:1
+26-Mar-2023 10:52:34.559 INFO [http-nio-9999-exec-18] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:52:34.561 INFO [http-nio-9999-exec-18] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:52:34.562 INFO [http-nio-9999-exec-18] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 10:52:34.568 INFO [http-nio-9999-exec-19] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:52:34.570 INFO [http-nio-9999-exec-19] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 10:52:34.570 INFO [http-nio-9999-exec-19] SQLServlet.doGet id:1
+26-Mar-2023 10:52:34.570 INFO [http-nio-9999-exec-19] SQLServlet.doGet setID:1
+26-Mar-2023 10:52:34.571 INFO [http-nio-9999-exec-19] SQLServlet.doGet qnNo:1
+26-Mar-2023 10:52:34.571 INFO [http-nio-9999-exec-19] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 10:52:34.571 INFO [http-nio-9999-exec-19] SQLServlet.doGet opt1:3
+26-Mar-2023 10:52:34.572 INFO [http-nio-9999-exec-19] SQLServlet.doGet opt2:6
+26-Mar-2023 10:52:34.572 INFO [http-nio-9999-exec-19] SQLServlet.doGet opt3:10
+26-Mar-2023 10:52:34.572 INFO [http-nio-9999-exec-19] SQLServlet.doGet opt4:14
+26-Mar-2023 10:52:34.572 INFO [http-nio-9999-exec-19] SQLServlet.doGet correctOpt:3
+26-Mar-2023 10:52:34.578 INFO [http-nio-9999-exec-20] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:52:34.580 INFO [http-nio-9999-exec-20] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 10:52:35.128 INFO [http-nio-9999-exec-11] responseServlet.doGet responseServlet Called
+26-Mar-2023 10:52:35.131 INFO [http-nio-9999-exec-11] responseServlet.doGet Current QuestionID: 1
+26-Mar-2023 10:52:35.132 INFO [http-nio-9999-exec-11] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+26-Mar-2023 10:52:35.132 INFO [http-nio-9999-exec-11] responseServlet.doGet Correct Option: 3
+26-Mar-2023 10:52:35.132 INFO [http-nio-9999-exec-11] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+26-Mar-2023 10:52:35.133 INFO [http-nio-9999-exec-11] responseServlet.doGet Current Respondee: Irfan
+26-Mar-2023 10:52:35.133 INFO [http-nio-9999-exec-11] responseServlet.doGet Executing INSERT INTO responses (questionNo, choice, respondee, comment ) Values ('1', '1', 'Irfan','null')
+26-Mar-2023 10:52:35.134 INFO [http-nio-9999-exec-11] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+26-Mar-2023 10:52:35.134 INFO [http-nio-9999-exec-11] responseServlet.doGet Responses Table ID:16
+26-Mar-2023 10:53:23.417 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] has started
+26-Mar-2023 10:53:24.054 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Mar-2023 10:53:24.056 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Bahoot] is completed
+26-Mar-2023 10:53:41.496 INFO [http-nio-9999-exec-15] loginServlet.doGet loginServlet called
+26-Mar-2023 10:53:41.499 INFO [http-nio-9999-exec-15] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 10:53:41.500 INFO [http-nio-9999-exec-15] loginServlet.doGet Login Successful
+26-Mar-2023 10:53:44.912 INFO [http-nio-9999-exec-20] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:53:44.914 INFO [http-nio-9999-exec-20] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:53:44.914 INFO [http-nio-9999-exec-20] SQLServlet.doGet id:1
+26-Mar-2023 10:53:44.948 INFO [http-nio-9999-exec-18] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:53:44.950 INFO [http-nio-9999-exec-18] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:53:44.951 INFO [http-nio-9999-exec-18] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 10:53:44.954 INFO [http-nio-9999-exec-16] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:53:44.956 INFO [http-nio-9999-exec-16] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 10:53:44.957 INFO [http-nio-9999-exec-16] SQLServlet.doGet id:1
+26-Mar-2023 10:53:44.957 INFO [http-nio-9999-exec-16] SQLServlet.doGet setID:1
+26-Mar-2023 10:53:44.957 INFO [http-nio-9999-exec-16] SQLServlet.doGet qnNo:1
+26-Mar-2023 10:53:44.957 INFO [http-nio-9999-exec-16] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 10:53:44.957 INFO [http-nio-9999-exec-16] SQLServlet.doGet opt1:3
+26-Mar-2023 10:53:44.957 INFO [http-nio-9999-exec-16] SQLServlet.doGet opt2:6
+26-Mar-2023 10:53:44.957 INFO [http-nio-9999-exec-16] SQLServlet.doGet opt3:10
+26-Mar-2023 10:53:44.958 INFO [http-nio-9999-exec-16] SQLServlet.doGet opt4:14
+26-Mar-2023 10:53:44.958 INFO [http-nio-9999-exec-16] SQLServlet.doGet correctOpt:3
+26-Mar-2023 10:53:44.964 INFO [http-nio-9999-exec-14] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:53:44.965 INFO [http-nio-9999-exec-14] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 10:53:48.527 INFO [http-nio-9999-exec-11] responseServlet.doGet responseServlet Called
+26-Mar-2023 10:53:48.530 INFO [http-nio-9999-exec-11] responseServlet.doGet Current QuestionID: 1
+26-Mar-2023 10:53:48.530 INFO [http-nio-9999-exec-11] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+26-Mar-2023 10:53:48.530 INFO [http-nio-9999-exec-11] responseServlet.doGet Correct Option: 3
+26-Mar-2023 10:53:48.530 INFO [http-nio-9999-exec-11] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+26-Mar-2023 10:53:48.531 INFO [http-nio-9999-exec-11] responseServlet.doGet Current Respondee: Irfan
+26-Mar-2023 10:53:48.531 INFO [http-nio-9999-exec-11] responseServlet.doGet Executing INSERT INTO responses (questionNo, choice, respondee, userID, comment ) Values ('1', '1', 'Irfan', '6', 'null')
+26-Mar-2023 10:53:48.532 INFO [http-nio-9999-exec-11] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+26-Mar-2023 10:53:48.532 INFO [http-nio-9999-exec-11] responseServlet.doGet Responses Table ID:15
+26-Mar-2023 10:53:55.160 INFO [http-nio-9999-exec-19] loginServlet.doGet loginServlet called
+26-Mar-2023 10:53:55.163 INFO [http-nio-9999-exec-19] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 10:53:55.163 INFO [http-nio-9999-exec-19] loginServlet.doGet Login Successful
+26-Mar-2023 10:53:58.198 INFO [http-nio-9999-exec-17] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:53:58.201 INFO [http-nio-9999-exec-17] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:53:58.201 INFO [http-nio-9999-exec-17] SQLServlet.doGet id:1
+26-Mar-2023 10:53:58.243 INFO [http-nio-9999-exec-13] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:53:58.245 INFO [http-nio-9999-exec-13] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:53:58.246 INFO [http-nio-9999-exec-13] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 10:53:58.250 INFO [http-nio-9999-exec-12] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:53:58.252 INFO [http-nio-9999-exec-12] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 10:53:58.252 INFO [http-nio-9999-exec-12] SQLServlet.doGet id:1
+26-Mar-2023 10:53:58.252 INFO [http-nio-9999-exec-12] SQLServlet.doGet setID:1
+26-Mar-2023 10:53:58.252 INFO [http-nio-9999-exec-12] SQLServlet.doGet qnNo:1
+26-Mar-2023 10:53:58.253 INFO [http-nio-9999-exec-12] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 10:53:58.253 INFO [http-nio-9999-exec-12] SQLServlet.doGet opt1:3
+26-Mar-2023 10:53:58.253 INFO [http-nio-9999-exec-12] SQLServlet.doGet opt2:6
+26-Mar-2023 10:53:58.253 INFO [http-nio-9999-exec-12] SQLServlet.doGet opt3:10
+26-Mar-2023 10:53:58.253 INFO [http-nio-9999-exec-12] SQLServlet.doGet opt4:14
+26-Mar-2023 10:53:58.253 INFO [http-nio-9999-exec-12] SQLServlet.doGet correctOpt:3
+26-Mar-2023 10:53:58.259 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:53:58.260 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 10:53:58.261 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:15
+26-Mar-2023 10:53:58.261 INFO [http-nio-9999-exec-21] SQLServlet.doGet questionNo:1
+26-Mar-2023 10:53:58.261 INFO [http-nio-9999-exec-21] SQLServlet.doGet choice:1
+26-Mar-2023 10:53:58.261 INFO [http-nio-9999-exec-21] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 10:53:58.261 INFO [http-nio-9999-exec-21] SQLServlet.doGet userID:6
+26-Mar-2023 10:53:58.262 INFO [http-nio-9999-exec-21] SQLServlet.doGet comment:null
+26-Mar-2023 10:55:22.293 INFO [http-nio-9999-exec-21] loginServlet.doGet loginServlet called
+26-Mar-2023 10:55:22.294 INFO [http-nio-9999-exec-21] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 10:55:22.295 INFO [http-nio-9999-exec-21] loginServlet.doGet Login Successful
+26-Mar-2023 10:55:26.969 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:55:26.971 INFO [http-nio-9999-exec-22] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:55:26.971 INFO [http-nio-9999-exec-22] SQLServlet.doGet id:1
+26-Mar-2023 10:55:27.014 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:55:27.016 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:55:27.016 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 10:55:27.020 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:55:27.021 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 10:55:27.021 INFO [http-nio-9999-exec-23] SQLServlet.doGet id:1
+26-Mar-2023 10:55:27.022 INFO [http-nio-9999-exec-23] SQLServlet.doGet setID:1
+26-Mar-2023 10:55:27.022 INFO [http-nio-9999-exec-23] SQLServlet.doGet qnNo:1
+26-Mar-2023 10:55:27.022 INFO [http-nio-9999-exec-23] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 10:55:27.022 INFO [http-nio-9999-exec-23] SQLServlet.doGet opt1:3
+26-Mar-2023 10:55:27.022 INFO [http-nio-9999-exec-23] SQLServlet.doGet opt2:6
+26-Mar-2023 10:55:27.022 INFO [http-nio-9999-exec-23] SQLServlet.doGet opt3:10
+26-Mar-2023 10:55:27.022 INFO [http-nio-9999-exec-23] SQLServlet.doGet opt4:14
+26-Mar-2023 10:55:27.022 INFO [http-nio-9999-exec-23] SQLServlet.doGet correctOpt:3
+26-Mar-2023 10:55:27.030 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:55:27.031 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 10:55:27.031 INFO [http-nio-9999-exec-25] SQLServlet.doGet id:15
+26-Mar-2023 10:55:27.032 INFO [http-nio-9999-exec-25] SQLServlet.doGet questionNo:1
+26-Mar-2023 10:55:27.032 INFO [http-nio-9999-exec-25] SQLServlet.doGet choice:1
+26-Mar-2023 10:55:27.032 INFO [http-nio-9999-exec-25] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 10:55:27.032 INFO [http-nio-9999-exec-25] SQLServlet.doGet userID:6
+26-Mar-2023 10:55:27.032 INFO [http-nio-9999-exec-25] SQLServlet.doGet comment:null
+26-Mar-2023 10:55:29.683 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 10:55:29.685 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 10:55:29.685 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:04:55.452 INFO [http-nio-9999-exec-22] loginServlet.doGet loginServlet called
+26-Mar-2023 11:04:55.455 INFO [http-nio-9999-exec-22] loginServlet.doGet SELECT * FROM users WHERE email ='I@g.com' AND password ='123'
+26-Mar-2023 11:04:55.455 INFO [http-nio-9999-exec-22] loginServlet.doGet Login Successful
+26-Mar-2023 11:04:58.548 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:04:58.550 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:04:58.550 INFO [http-nio-9999-exec-26] SQLServlet.doGet id:1
+26-Mar-2023 11:04:58.597 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:04:58.599 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:04:58.599 INFO [http-nio-9999-exec-23] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:04:58.603 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:04:58.604 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:04:58.604 INFO [http-nio-9999-exec-25] SQLServlet.doGet id:1
+26-Mar-2023 11:04:58.604 INFO [http-nio-9999-exec-25] SQLServlet.doGet setID:1
+26-Mar-2023 11:04:58.604 INFO [http-nio-9999-exec-25] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:04:58.604 INFO [http-nio-9999-exec-25] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:04:58.605 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt1:3
+26-Mar-2023 11:04:58.605 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt2:6
+26-Mar-2023 11:04:58.605 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt3:10
+26-Mar-2023 11:04:58.605 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt4:14
+26-Mar-2023 11:04:58.606 INFO [http-nio-9999-exec-25] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:04:58.615 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:04:58.616 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:04:58.616 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:15
+26-Mar-2023 11:04:58.617 INFO [http-nio-9999-exec-24] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:04:58.617 INFO [http-nio-9999-exec-24] SQLServlet.doGet choice:1
+26-Mar-2023 11:04:58.617 INFO [http-nio-9999-exec-24] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:04:58.617 INFO [http-nio-9999-exec-24] SQLServlet.doGet userID:6
+26-Mar-2023 11:04:58.617 INFO [http-nio-9999-exec-24] SQLServlet.doGet comment:null
+26-Mar-2023 11:05:02.383 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:05:02.385 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:05:02.386 INFO [http-nio-9999-exec-27] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:05:26.112 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:05:26.114 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing UPDATE responses SET comment='hey' WHERE id='null'
+26-Mar-2023 11:05:26.120 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQL Failedcom.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated incorrect DOUBLE value: 'null'
+26-Mar-2023 11:12:15.807 INFO [http-nio-9999-exec-25] loginServlet.doGet loginServlet called
+26-Mar-2023 11:12:15.809 INFO [http-nio-9999-exec-25] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:12:15.809 INFO [http-nio-9999-exec-25] loginServlet.doGet Login Successful
+26-Mar-2023 11:12:18.902 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:12:18.904 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:12:18.904 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:1
+26-Mar-2023 11:12:18.947 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:12:18.949 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:12:18.949 INFO [http-nio-9999-exec-27] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:12:18.953 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:12:18.954 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:12:18.955 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:1
+26-Mar-2023 11:12:18.955 INFO [http-nio-9999-exec-28] SQLServlet.doGet setID:1
+26-Mar-2023 11:12:18.955 INFO [http-nio-9999-exec-28] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:12:18.955 INFO [http-nio-9999-exec-28] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:12:18.955 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt1:3
+26-Mar-2023 11:12:18.955 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt2:6
+26-Mar-2023 11:12:18.955 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt3:10
+26-Mar-2023 11:12:18.955 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt4:14
+26-Mar-2023 11:12:18.956 INFO [http-nio-9999-exec-28] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:12:18.961 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:12:18.962 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:12:18.962 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:15
+26-Mar-2023 11:12:18.962 INFO [http-nio-9999-exec-29] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:12:18.963 INFO [http-nio-9999-exec-29] SQLServlet.doGet choice:1
+26-Mar-2023 11:12:18.963 INFO [http-nio-9999-exec-29] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:12:18.963 INFO [http-nio-9999-exec-29] SQLServlet.doGet userID:6
+26-Mar-2023 11:12:18.963 INFO [http-nio-9999-exec-29] SQLServlet.doGet comment:null
+26-Mar-2023 11:12:27.495 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:12:27.497 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing UPDATE responses SET comment='test' WHERE id='null'
+26-Mar-2023 11:12:27.498 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQL Failedcom.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated incorrect DOUBLE value: 'null'
+26-Mar-2023 11:12:34.027 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:12:34.029 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing UPDATE responses SET comment='test' WHERE id='null'
+26-Mar-2023 11:12:34.030 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQL Failedcom.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated incorrect DOUBLE value: 'null'
+26-Mar-2023 11:20:08.850 INFO [http-nio-9999-exec-27] loginServlet.doGet loginServlet called
+26-Mar-2023 11:20:08.852 INFO [http-nio-9999-exec-27] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:20:08.853 INFO [http-nio-9999-exec-27] loginServlet.doGet Login Successful
+26-Mar-2023 11:20:12.006 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:12.008 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:20:12.008 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:1
+26-Mar-2023 11:20:12.049 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:12.051 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:20:12.051 INFO [http-nio-9999-exec-29] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:20:12.055 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:12.055 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:20:12.056 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 11:20:12.056 INFO [http-nio-9999-exec-21] SQLServlet.doGet setID:1
+26-Mar-2023 11:20:12.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:20:12.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:20:12.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt1:3
+26-Mar-2023 11:20:12.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt2:6
+26-Mar-2023 11:20:12.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt3:10
+26-Mar-2023 11:20:12.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt4:14
+26-Mar-2023 11:20:12.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:20:12.061 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:12.062 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:20:12.062 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:15
+26-Mar-2023 11:20:12.062 INFO [http-nio-9999-exec-30] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:20:12.063 INFO [http-nio-9999-exec-30] SQLServlet.doGet choice:1
+26-Mar-2023 11:20:12.063 INFO [http-nio-9999-exec-30] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:20:12.063 INFO [http-nio-9999-exec-30] SQLServlet.doGet userID:6
+26-Mar-2023 11:20:12.063 INFO [http-nio-9999-exec-30] SQLServlet.doGet comment:null
+26-Mar-2023 11:20:23.249 INFO [http-nio-9999-exec-22] loginServlet.doGet loginServlet called
+26-Mar-2023 11:20:23.251 INFO [http-nio-9999-exec-22] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:20:23.251 INFO [http-nio-9999-exec-22] loginServlet.doGet Login Successful
+26-Mar-2023 11:20:26.641 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:26.643 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:20:26.643 INFO [http-nio-9999-exec-23] SQLServlet.doGet id:1
+26-Mar-2023 11:20:26.680 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:26.681 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:20:26.682 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:20:26.685 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:26.687 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:20:26.687 INFO [http-nio-9999-exec-25] SQLServlet.doGet id:1
+26-Mar-2023 11:20:26.688 INFO [http-nio-9999-exec-25] SQLServlet.doGet setID:1
+26-Mar-2023 11:20:26.688 INFO [http-nio-9999-exec-25] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:20:26.688 INFO [http-nio-9999-exec-25] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:20:26.688 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt1:3
+26-Mar-2023 11:20:26.688 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt2:6
+26-Mar-2023 11:20:26.688 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt3:10
+26-Mar-2023 11:20:26.688 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt4:14
+26-Mar-2023 11:20:26.688 INFO [http-nio-9999-exec-25] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:20:26.693 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:26.695 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:20:26.695 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:15
+26-Mar-2023 11:20:26.695 INFO [http-nio-9999-exec-24] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:20:26.695 INFO [http-nio-9999-exec-24] SQLServlet.doGet choice:1
+26-Mar-2023 11:20:26.695 INFO [http-nio-9999-exec-24] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:20:26.695 INFO [http-nio-9999-exec-24] SQLServlet.doGet userID:6
+26-Mar-2023 11:20:26.695 INFO [http-nio-9999-exec-24] SQLServlet.doGet comment:null
+26-Mar-2023 11:20:37.262 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:37.264 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing UPDATE responses SET comment='wow' WHERE id='15'
+26-Mar-2023 11:20:48.916 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:48.918 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:20:48.918 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:20:50.204 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:50.205 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:20:50.206 INFO [http-nio-9999-exec-27] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:20:52.196 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:20:52.198 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:20:52.198 INFO [http-nio-9999-exec-21] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:21:06.147 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:21:06.149 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:21:06.149 INFO [http-nio-9999-exec-28] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:22:08.598 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:22:08.601 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:22:08.602 INFO [http-nio-9999-exec-25] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:22:08.729 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:22:08.730 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:22:08.731 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:22:08.996 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:22:08.998 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:22:08.998 INFO [http-nio-9999-exec-27] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:22:09.147 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:22:09.149 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:22:09.150 INFO [http-nio-9999-exec-21] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:22:09.379 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:22:09.380 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:22:09.380 INFO [http-nio-9999-exec-29] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:22:11.967 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:22:11.969 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:22:11.969 INFO [http-nio-9999-exec-28] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:30:40.939 INFO [http-nio-9999-exec-27] loginServlet.doGet loginServlet called
+26-Mar-2023 11:30:40.942 INFO [http-nio-9999-exec-27] loginServlet.doGet SELECT * FROM users WHERE email ='I@g.com' AND password ='123'
+26-Mar-2023 11:30:40.942 INFO [http-nio-9999-exec-27] loginServlet.doGet Login Successful
+26-Mar-2023 11:30:44.105 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:30:44.107 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:30:44.107 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 11:30:44.147 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:30:44.149 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:30:44.149 INFO [http-nio-9999-exec-29] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:30:44.152 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:30:44.154 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:30:44.154 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:1
+26-Mar-2023 11:30:44.154 INFO [http-nio-9999-exec-28] SQLServlet.doGet setID:1
+26-Mar-2023 11:30:44.154 INFO [http-nio-9999-exec-28] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:30:44.154 INFO [http-nio-9999-exec-28] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:30:44.154 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt1:3
+26-Mar-2023 11:30:44.154 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt2:6
+26-Mar-2023 11:30:44.155 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt3:10
+26-Mar-2023 11:30:44.155 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt4:14
+26-Mar-2023 11:30:44.155 INFO [http-nio-9999-exec-28] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:30:44.158 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:30:44.160 INFO [http-nio-9999-exec-22] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:30:44.160 INFO [http-nio-9999-exec-22] SQLServlet.doGet id:15
+26-Mar-2023 11:30:44.160 INFO [http-nio-9999-exec-22] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:30:44.160 INFO [http-nio-9999-exec-22] SQLServlet.doGet choice:1
+26-Mar-2023 11:30:44.160 INFO [http-nio-9999-exec-22] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:30:44.160 INFO [http-nio-9999-exec-22] SQLServlet.doGet userID:6
+26-Mar-2023 11:30:44.160 INFO [http-nio-9999-exec-22] SQLServlet.doGet comment:wow
+26-Mar-2023 11:30:50.548 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:30:50.550 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing UPDATE responses SET comment='yay' WHERE id='15'
+26-Mar-2023 11:30:53.681 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:30:53.682 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:30:53.683 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:30:54.627 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:30:54.628 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:30:54.629 INFO [http-nio-9999-exec-23] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:31:23.461 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:31:23.463 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:31:23.463 INFO [http-nio-9999-exec-30] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:31:25.684 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:31:25.685 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:31:25.686 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:33:24.368 INFO [http-nio-9999-exec-27] loginServlet.doGet loginServlet called
+26-Mar-2023 11:33:24.371 INFO [http-nio-9999-exec-27] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:33:24.371 INFO [http-nio-9999-exec-27] loginServlet.doGet Login Successful
+26-Mar-2023 11:33:28.837 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:33:28.839 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:33:28.839 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:1
+26-Mar-2023 11:33:28.880 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:33:28.882 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:33:28.882 INFO [http-nio-9999-exec-21] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:33:28.885 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:33:28.886 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:33:28.887 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:1
+26-Mar-2023 11:33:28.887 INFO [http-nio-9999-exec-29] SQLServlet.doGet setID:1
+26-Mar-2023 11:33:28.887 INFO [http-nio-9999-exec-29] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:33:28.887 INFO [http-nio-9999-exec-29] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:33:28.888 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt1:3
+26-Mar-2023 11:33:28.888 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt2:6
+26-Mar-2023 11:33:28.888 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt3:10
+26-Mar-2023 11:33:28.888 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt4:14
+26-Mar-2023 11:33:28.888 INFO [http-nio-9999-exec-29] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:33:28.895 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:33:28.897 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:33:28.897 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:15
+26-Mar-2023 11:33:28.897 INFO [http-nio-9999-exec-28] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:33:28.897 INFO [http-nio-9999-exec-28] SQLServlet.doGet choice:1
+26-Mar-2023 11:33:28.897 INFO [http-nio-9999-exec-28] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:33:28.897 INFO [http-nio-9999-exec-28] SQLServlet.doGet userID:6
+26-Mar-2023 11:33:28.898 INFO [http-nio-9999-exec-28] SQLServlet.doGet comment:yay
+26-Mar-2023 11:33:31.307 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:33:31.309 INFO [http-nio-9999-exec-22] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:33:31.309 INFO [http-nio-9999-exec-22] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:33:36.775 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:33:36.777 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:33:36.778 INFO [http-nio-9999-exec-30] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:36:01.961 INFO [http-nio-9999-exec-29] loginServlet.doGet loginServlet called
+26-Mar-2023 11:36:01.963 INFO [http-nio-9999-exec-29] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:36:01.963 INFO [http-nio-9999-exec-29] loginServlet.doGet Login Successful
+26-Mar-2023 11:36:05.213 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:36:05.214 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:36:05.214 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:1
+26-Mar-2023 11:36:05.261 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:36:05.263 INFO [http-nio-9999-exec-22] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:36:05.263 INFO [http-nio-9999-exec-22] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:36:05.266 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:36:05.268 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:36:05.268 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:1
+26-Mar-2023 11:36:05.268 INFO [http-nio-9999-exec-30] SQLServlet.doGet setID:1
+26-Mar-2023 11:36:05.268 INFO [http-nio-9999-exec-30] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:36:05.268 INFO [http-nio-9999-exec-30] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:36:05.268 INFO [http-nio-9999-exec-30] SQLServlet.doGet opt1:3
+26-Mar-2023 11:36:05.268 INFO [http-nio-9999-exec-30] SQLServlet.doGet opt2:6
+26-Mar-2023 11:36:05.269 INFO [http-nio-9999-exec-30] SQLServlet.doGet opt3:10
+26-Mar-2023 11:36:05.269 INFO [http-nio-9999-exec-30] SQLServlet.doGet opt4:14
+26-Mar-2023 11:36:05.269 INFO [http-nio-9999-exec-30] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:36:05.273 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:36:05.274 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:36:05.274 INFO [http-nio-9999-exec-26] SQLServlet.doGet id:15
+26-Mar-2023 11:36:05.274 INFO [http-nio-9999-exec-26] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:36:05.274 INFO [http-nio-9999-exec-26] SQLServlet.doGet choice:1
+26-Mar-2023 11:36:05.274 INFO [http-nio-9999-exec-26] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:36:05.274 INFO [http-nio-9999-exec-26] SQLServlet.doGet userID:6
+26-Mar-2023 11:36:05.275 INFO [http-nio-9999-exec-26] SQLServlet.doGet comment:yay
+26-Mar-2023 11:36:05.900 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:36:05.901 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:36:05.902 INFO [http-nio-9999-exec-27] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:36:07.062 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:36:07.064 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:36:07.064 INFO [http-nio-9999-exec-25] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:38:12.021 INFO [http-nio-9999-exec-30] loginServlet.doGet loginServlet called
+26-Mar-2023 11:38:12.023 INFO [http-nio-9999-exec-30] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:38:12.024 INFO [http-nio-9999-exec-30] loginServlet.doGet Login Successful
+26-Mar-2023 11:38:15.881 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:38:15.883 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:38:15.883 INFO [http-nio-9999-exec-26] SQLServlet.doGet id:1
+26-Mar-2023 11:38:15.932 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:38:15.935 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:38:15.935 INFO [http-nio-9999-exec-27] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:38:15.940 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:38:15.941 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet id:1
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet setID:1
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt1:3
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt2:6
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt3:10
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt4:14
+26-Mar-2023 11:38:15.942 INFO [http-nio-9999-exec-25] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:38:15.950 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:38:15.951 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:38:15.952 INFO [http-nio-9999-exec-23] SQLServlet.doGet id:15
+26-Mar-2023 11:38:15.952 INFO [http-nio-9999-exec-23] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:38:15.952 INFO [http-nio-9999-exec-23] SQLServlet.doGet choice:1
+26-Mar-2023 11:38:15.952 INFO [http-nio-9999-exec-23] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:38:15.952 INFO [http-nio-9999-exec-23] SQLServlet.doGet userID:6
+26-Mar-2023 11:38:15.952 INFO [http-nio-9999-exec-23] SQLServlet.doGet comment:yay
+26-Mar-2023 11:38:16.683 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:38:16.685 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:38:16.685 INFO [http-nio-9999-exec-28] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:38:47.794 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:38:47.796 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:38:47.796 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:39:01.485 INFO [http-nio-9999-exec-24] questionsServlet.doGet MyServlet called
+26-Mar-2023 11:39:03.753 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:03.755 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:39:03.755 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:39:12.579 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:12.581 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing UPDATE responses SET comment='wowaaw' WHERE id='15'
+26-Mar-2023 11:39:22.600 INFO [http-nio-9999-exec-29] loginServlet.doGet loginServlet called
+26-Mar-2023 11:39:22.602 INFO [http-nio-9999-exec-29] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:39:22.602 INFO [http-nio-9999-exec-29] loginServlet.doGet Login Successful
+26-Mar-2023 11:39:25.801 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:25.802 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:39:25.803 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:1
+26-Mar-2023 11:39:25.841 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:25.842 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:39:25.842 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:39:25.846 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:25.847 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:39:25.847 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 11:39:25.847 INFO [http-nio-9999-exec-21] SQLServlet.doGet setID:1
+26-Mar-2023 11:39:25.847 INFO [http-nio-9999-exec-21] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:39:25.847 INFO [http-nio-9999-exec-21] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:39:25.847 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt1:3
+26-Mar-2023 11:39:25.848 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt2:6
+26-Mar-2023 11:39:25.848 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt3:10
+26-Mar-2023 11:39:25.848 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt4:14
+26-Mar-2023 11:39:25.848 INFO [http-nio-9999-exec-21] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:39:25.852 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:25.852 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:39:25.853 INFO [http-nio-9999-exec-26] SQLServlet.doGet id:15
+26-Mar-2023 11:39:25.853 INFO [http-nio-9999-exec-26] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:39:25.853 INFO [http-nio-9999-exec-26] SQLServlet.doGet choice:1
+26-Mar-2023 11:39:25.853 INFO [http-nio-9999-exec-26] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:39:25.853 INFO [http-nio-9999-exec-26] SQLServlet.doGet userID:6
+26-Mar-2023 11:39:25.854 INFO [http-nio-9999-exec-26] SQLServlet.doGet comment:wowaaw
+26-Mar-2023 11:39:27.111 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:27.112 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:39:27.112 INFO [http-nio-9999-exec-27] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:39:29.677 INFO [http-nio-9999-exec-25] questionsServlet.doGet MyServlet called
+26-Mar-2023 11:39:31.563 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:31.565 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:39:31.566 INFO [http-nio-9999-exec-28] SQLServlet.doGet currentQuestionID:2
+26-Mar-2023 11:39:31.631 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:31.632 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:39:31.633 INFO [http-nio-9999-exec-29] SQLServlet.doGet currentQuestionID:2
+26-Mar-2023 11:39:31.646 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:31.648 INFO [http-nio-9999-exec-22] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='2'
+26-Mar-2023 11:39:31.648 INFO [http-nio-9999-exec-22] SQLServlet.doGet id:2
+26-Mar-2023 11:39:31.648 INFO [http-nio-9999-exec-22] SQLServlet.doGet setID:1
+26-Mar-2023 11:39:31.648 INFO [http-nio-9999-exec-22] SQLServlet.doGet qnNo:2
+26-Mar-2023 11:39:31.648 INFO [http-nio-9999-exec-22] SQLServlet.doGet question:Constructors are used to
+26-Mar-2023 11:39:31.648 INFO [http-nio-9999-exec-22] SQLServlet.doGet opt1:Build a user interface
+26-Mar-2023 11:39:31.648 INFO [http-nio-9999-exec-22] SQLServlet.doGet opt2:Free Memory
+26-Mar-2023 11:39:31.649 INFO [http-nio-9999-exec-22] SQLServlet.doGet opt3:Initialize a newly created object
+26-Mar-2023 11:39:31.649 INFO [http-nio-9999-exec-22] SQLServlet.doGet opt4:To create a subclass
+26-Mar-2023 11:39:31.649 INFO [http-nio-9999-exec-22] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:39:31.655 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:31.657 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='2' AND userID='6'
+26-Mar-2023 11:39:38.947 INFO [http-nio-9999-exec-21] responseServlet.doGet responseServlet Called
+26-Mar-2023 11:39:38.949 INFO [http-nio-9999-exec-21] responseServlet.doGet Current QuestionID: 2
+26-Mar-2023 11:39:38.949 INFO [http-nio-9999-exec-21] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='2'
+26-Mar-2023 11:39:38.949 INFO [http-nio-9999-exec-21] responseServlet.doGet Correct Option: 3
+26-Mar-2023 11:39:38.950 INFO [http-nio-9999-exec-21] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+26-Mar-2023 11:39:38.950 INFO [http-nio-9999-exec-21] responseServlet.doGet Current Respondee: Irfan
+26-Mar-2023 11:39:38.950 INFO [http-nio-9999-exec-21] responseServlet.doGet Executing INSERT INTO responses (questionNo, choice, respondee, userID, comment ) Values ('2', '3', 'Irfan', '6', 'null')
+26-Mar-2023 11:39:38.951 INFO [http-nio-9999-exec-21] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+26-Mar-2023 11:39:38.951 INFO [http-nio-9999-exec-21] responseServlet.doGet Responses Table ID:16
+26-Mar-2023 11:39:48.244 INFO [http-nio-9999-exec-29] loginServlet.doGet loginServlet called
+26-Mar-2023 11:39:48.246 INFO [http-nio-9999-exec-29] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:39:48.246 INFO [http-nio-9999-exec-29] loginServlet.doGet Login Successful
+26-Mar-2023 11:39:51.920 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:51.921 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:39:51.922 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:1
+26-Mar-2023 11:39:51.957 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:51.959 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:39:51.959 INFO [http-nio-9999-exec-28] SQLServlet.doGet currentQuestionID:2
+26-Mar-2023 11:39:51.963 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:51.964 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='2'
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:2
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet setID:1
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet qnNo:2
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet question:Constructors are used to
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt1:Build a user interface
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt2:Free Memory
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt3:Initialize a newly created object
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt4:To create a subclass
+26-Mar-2023 11:39:51.965 INFO [http-nio-9999-exec-29] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:39:51.969 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:39:51.970 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='2' AND userID='6'
+26-Mar-2023 11:39:51.970 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:16
+26-Mar-2023 11:39:51.970 INFO [http-nio-9999-exec-30] SQLServlet.doGet questionNo:2
+26-Mar-2023 11:39:51.971 INFO [http-nio-9999-exec-30] SQLServlet.doGet choice:3
+26-Mar-2023 11:39:51.971 INFO [http-nio-9999-exec-30] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:39:51.971 INFO [http-nio-9999-exec-30] SQLServlet.doGet userID:6
+26-Mar-2023 11:39:51.971 INFO [http-nio-9999-exec-30] SQLServlet.doGet comment:null
+26-Mar-2023 11:42:13.185 INFO [http-nio-9999-exec-26] loginServlet.doGet loginServlet called
+26-Mar-2023 11:42:13.187 INFO [http-nio-9999-exec-26] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:42:13.188 INFO [http-nio-9999-exec-26] loginServlet.doGet Login Successful
+26-Mar-2023 11:42:16.498 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:16.500 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:42:16.500 INFO [http-nio-9999-exec-23] SQLServlet.doGet id:1
+26-Mar-2023 11:42:16.547 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:16.549 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:42:16.549 INFO [http-nio-9999-exec-27] SQLServlet.doGet currentQuestionID:2
+26-Mar-2023 11:42:16.552 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:16.553 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='2'
+26-Mar-2023 11:42:16.554 INFO [http-nio-9999-exec-25] SQLServlet.doGet id:2
+26-Mar-2023 11:42:16.554 INFO [http-nio-9999-exec-25] SQLServlet.doGet setID:1
+26-Mar-2023 11:42:16.554 INFO [http-nio-9999-exec-25] SQLServlet.doGet qnNo:2
+26-Mar-2023 11:42:16.554 INFO [http-nio-9999-exec-25] SQLServlet.doGet question:Constructors are used to
+26-Mar-2023 11:42:16.554 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt1:Build a user interface
+26-Mar-2023 11:42:16.554 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt2:Free Memory
+26-Mar-2023 11:42:16.554 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt3:Initialize a newly created object
+26-Mar-2023 11:42:16.554 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt4:To create a subclass
+26-Mar-2023 11:42:16.555 INFO [http-nio-9999-exec-25] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:42:16.560 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:16.561 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='2' AND userID='6'
+26-Mar-2023 11:42:16.562 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:16
+26-Mar-2023 11:42:16.562 INFO [http-nio-9999-exec-28] SQLServlet.doGet questionNo:2
+26-Mar-2023 11:42:16.562 INFO [http-nio-9999-exec-28] SQLServlet.doGet choice:3
+26-Mar-2023 11:42:16.562 INFO [http-nio-9999-exec-28] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:42:16.562 INFO [http-nio-9999-exec-28] SQLServlet.doGet userID:6
+26-Mar-2023 11:42:16.562 INFO [http-nio-9999-exec-28] SQLServlet.doGet comment:null
+26-Mar-2023 11:42:44.228 INFO [http-nio-9999-exec-22] loginServlet.doGet loginServlet called
+26-Mar-2023 11:42:44.231 INFO [http-nio-9999-exec-22] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:42:44.231 INFO [http-nio-9999-exec-22] loginServlet.doGet Login Successful
+26-Mar-2023 11:42:47.427 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:47.429 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:42:47.429 INFO [http-nio-9999-exec-26] SQLServlet.doGet id:1
+26-Mar-2023 11:42:47.466 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:47.467 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:42:47.467 INFO [http-nio-9999-exec-23] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:42:47.471 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:47.472 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet id:1
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet setID:1
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet opt1:3
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet opt2:6
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet opt3:10
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet opt4:14
+26-Mar-2023 11:42:47.473 INFO [http-nio-9999-exec-27] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:42:47.480 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:47.480 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:42:49.979 INFO [http-nio-9999-exec-28] responseServlet.doGet responseServlet Called
+26-Mar-2023 11:42:49.980 INFO [http-nio-9999-exec-28] responseServlet.doGet Current QuestionID: 1
+26-Mar-2023 11:42:49.980 INFO [http-nio-9999-exec-28] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+26-Mar-2023 11:42:49.981 INFO [http-nio-9999-exec-28] responseServlet.doGet Correct Option: 3
+26-Mar-2023 11:42:49.981 INFO [http-nio-9999-exec-28] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+26-Mar-2023 11:42:49.981 INFO [http-nio-9999-exec-28] responseServlet.doGet Current Respondee: Irfan
+26-Mar-2023 11:42:49.981 INFO [http-nio-9999-exec-28] responseServlet.doGet Executing INSERT INTO responses (questionNo, choice, respondee, userID, comment ) Values ('1', '3', 'Irfan', '6', 'null')
+26-Mar-2023 11:42:49.982 INFO [http-nio-9999-exec-28] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+26-Mar-2023 11:42:49.982 INFO [http-nio-9999-exec-28] responseServlet.doGet Responses Table ID:15
+26-Mar-2023 11:42:52.114 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:42:52.116 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:42:52.116 INFO [http-nio-9999-exec-21] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:42:58.788 INFO [http-nio-9999-exec-24] loginServlet.doGet loginServlet called
+26-Mar-2023 11:42:58.789 INFO [http-nio-9999-exec-24] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:42:58.790 INFO [http-nio-9999-exec-24] loginServlet.doGet Login Successful
+26-Mar-2023 11:43:01.862 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:43:01.864 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:43:01.865 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:1
+26-Mar-2023 11:43:01.913 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:43:01.915 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:43:01.915 INFO [http-nio-9999-exec-28] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:43:01.919 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:43:01.920 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet setID:1
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt1:3
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt2:6
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt3:10
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet opt4:14
+26-Mar-2023 11:43:01.921 INFO [http-nio-9999-exec-21] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:43:01.925 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:43:01.926 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:43:01.926 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:15
+26-Mar-2023 11:43:01.927 INFO [http-nio-9999-exec-24] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:43:01.927 INFO [http-nio-9999-exec-24] SQLServlet.doGet choice:3
+26-Mar-2023 11:43:01.927 INFO [http-nio-9999-exec-24] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:43:01.927 INFO [http-nio-9999-exec-24] SQLServlet.doGet userID:6
+26-Mar-2023 11:43:01.927 INFO [http-nio-9999-exec-24] SQLServlet.doGet comment:null
+26-Mar-2023 11:43:04.959 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:43:04.961 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:43:04.961 INFO [http-nio-9999-exec-29] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:43:17.329 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:43:17.331 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing UPDATE responses SET comment='bla' WHERE id='15'
+26-Mar-2023 11:55:30.280 INFO [http-nio-9999-exec-28] loginServlet.doGet loginServlet called
+26-Mar-2023 11:55:30.282 INFO [http-nio-9999-exec-28] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:55:30.283 INFO [http-nio-9999-exec-28] loginServlet.doGet Login Successful
+26-Mar-2023 11:55:34.055 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:55:34.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:55:34.057 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 11:55:34.096 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:55:34.097 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:55:34.097 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:55:34.101 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:55:34.102 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:1
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet setID:1
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt1:3
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt2:6
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt3:10
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt4:14
+26-Mar-2023 11:55:34.103 INFO [http-nio-9999-exec-29] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:55:34.107 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:55:34.108 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:55:34.109 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:15
+26-Mar-2023 11:55:34.109 INFO [http-nio-9999-exec-30] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:55:34.109 INFO [http-nio-9999-exec-30] SQLServlet.doGet choice:3
+26-Mar-2023 11:55:34.109 INFO [http-nio-9999-exec-30] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:55:34.109 INFO [http-nio-9999-exec-30] SQLServlet.doGet userID:6
+26-Mar-2023 11:55:34.109 INFO [http-nio-9999-exec-30] SQLServlet.doGet comment:bla
+26-Mar-2023 11:56:26.407 INFO [http-nio-9999-exec-25] loginServlet.doGet loginServlet called
+26-Mar-2023 11:56:26.409 INFO [http-nio-9999-exec-25] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:56:26.409 INFO [http-nio-9999-exec-25] loginServlet.doGet Login Successful
+26-Mar-2023 11:56:29.589 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:29.590 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:56:29.591 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:1
+26-Mar-2023 11:56:29.632 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:29.633 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:56:29.634 INFO [http-nio-9999-exec-21] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:56:29.638 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:29.639 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:56:29.639 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:1
+26-Mar-2023 11:56:29.639 INFO [http-nio-9999-exec-24] SQLServlet.doGet setID:1
+26-Mar-2023 11:56:29.639 INFO [http-nio-9999-exec-24] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:56:29.639 INFO [http-nio-9999-exec-24] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:56:29.639 INFO [http-nio-9999-exec-24] SQLServlet.doGet opt1:3
+26-Mar-2023 11:56:29.639 INFO [http-nio-9999-exec-24] SQLServlet.doGet opt2:6
+26-Mar-2023 11:56:29.639 INFO [http-nio-9999-exec-24] SQLServlet.doGet opt3:10
+26-Mar-2023 11:56:29.640 INFO [http-nio-9999-exec-24] SQLServlet.doGet opt4:14
+26-Mar-2023 11:56:29.640 INFO [http-nio-9999-exec-24] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:56:29.647 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:29.648 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:56:29.648 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:15
+26-Mar-2023 11:56:29.648 INFO [http-nio-9999-exec-29] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:56:29.648 INFO [http-nio-9999-exec-29] SQLServlet.doGet choice:3
+26-Mar-2023 11:56:29.648 INFO [http-nio-9999-exec-29] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:56:29.649 INFO [http-nio-9999-exec-29] SQLServlet.doGet userID:6
+26-Mar-2023 11:56:29.649 INFO [http-nio-9999-exec-29] SQLServlet.doGet comment:bla
+26-Mar-2023 11:56:31.328 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:31.330 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing UPDATE responses SET comment='' WHERE id='15'
+26-Mar-2023 11:56:34.113 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:34.115 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing UPDATE responses SET comment='wda' WHERE id='15'
+26-Mar-2023 11:56:37.013 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:37.015 INFO [http-nio-9999-exec-22] SQLServlet.doGet Executing UPDATE responses SET comment='' WHERE id='15'
+26-Mar-2023 11:56:41.145 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:41.147 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing UPDATE responses SET comment='wow' WHERE id='15'
+26-Mar-2023 11:56:49.980 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:56:49.982 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing UPDATE responses SET comment='wowda' WHERE id='15'
+26-Mar-2023 11:59:12.179 INFO [http-nio-9999-exec-23] loginServlet.doGet loginServlet called
+26-Mar-2023 11:59:12.181 INFO [http-nio-9999-exec-23] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 11:59:12.181 INFO [http-nio-9999-exec-23] loginServlet.doGet Login Successful
+26-Mar-2023 11:59:15.573 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:59:15.575 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:59:15.576 INFO [http-nio-9999-exec-25] SQLServlet.doGet id:1
+26-Mar-2023 11:59:15.663 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:59:15.665 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 11:59:15.665 INFO [http-nio-9999-exec-21] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 11:59:15.669 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:59:15.670 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 11:59:15.670 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:1
+26-Mar-2023 11:59:15.670 INFO [http-nio-9999-exec-28] SQLServlet.doGet setID:1
+26-Mar-2023 11:59:15.671 INFO [http-nio-9999-exec-28] SQLServlet.doGet qnNo:1
+26-Mar-2023 11:59:15.671 INFO [http-nio-9999-exec-28] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 11:59:15.671 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt1:3
+26-Mar-2023 11:59:15.671 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt2:6
+26-Mar-2023 11:59:15.671 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt3:10
+26-Mar-2023 11:59:15.671 INFO [http-nio-9999-exec-28] SQLServlet.doGet opt4:14
+26-Mar-2023 11:59:15.671 INFO [http-nio-9999-exec-28] SQLServlet.doGet correctOpt:3
+26-Mar-2023 11:59:15.675 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:59:15.676 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 11:59:15.677 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:15
+26-Mar-2023 11:59:15.677 INFO [http-nio-9999-exec-24] SQLServlet.doGet questionNo:1
+26-Mar-2023 11:59:15.677 INFO [http-nio-9999-exec-24] SQLServlet.doGet choice:3
+26-Mar-2023 11:59:15.677 INFO [http-nio-9999-exec-24] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 11:59:15.677 INFO [http-nio-9999-exec-24] SQLServlet.doGet userID:6
+26-Mar-2023 11:59:15.677 INFO [http-nio-9999-exec-24] SQLServlet.doGet comment:wowda
+26-Mar-2023 11:59:19.013 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:59:19.015 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing UPDATE responses SET comment='dd' WHERE id='15'
+26-Mar-2023 11:59:26.462 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 11:59:26.464 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing UPDATE responses SET comment='what' WHERE id='15'
+26-Mar-2023 12:02:40.961 INFO [http-nio-9999-exec-28] loginServlet.doGet loginServlet called
+26-Mar-2023 12:02:40.963 INFO [http-nio-9999-exec-28] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 12:02:40.964 INFO [http-nio-9999-exec-28] loginServlet.doGet Login Successful
+26-Mar-2023 12:02:44.403 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:02:44.404 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:02:44.405 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:1
+26-Mar-2023 12:02:44.449 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:02:44.450 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:02:44.450 INFO [http-nio-9999-exec-29] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 12:02:44.454 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:02:44.455 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 12:02:44.455 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:1
+26-Mar-2023 12:02:44.455 INFO [http-nio-9999-exec-30] SQLServlet.doGet setID:1
+26-Mar-2023 12:02:44.455 INFO [http-nio-9999-exec-30] SQLServlet.doGet qnNo:1
+26-Mar-2023 12:02:44.455 INFO [http-nio-9999-exec-30] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 12:02:44.455 INFO [http-nio-9999-exec-30] SQLServlet.doGet opt1:3
+26-Mar-2023 12:02:44.456 INFO [http-nio-9999-exec-30] SQLServlet.doGet opt2:6
+26-Mar-2023 12:02:44.456 INFO [http-nio-9999-exec-30] SQLServlet.doGet opt3:10
+26-Mar-2023 12:02:44.456 INFO [http-nio-9999-exec-30] SQLServlet.doGet opt4:14
+26-Mar-2023 12:02:44.456 INFO [http-nio-9999-exec-30] SQLServlet.doGet correctOpt:3
+26-Mar-2023 12:02:44.462 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:02:44.463 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 12:02:44.463 INFO [http-nio-9999-exec-26] SQLServlet.doGet id:15
+26-Mar-2023 12:02:44.463 INFO [http-nio-9999-exec-26] SQLServlet.doGet questionNo:1
+26-Mar-2023 12:02:44.463 INFO [http-nio-9999-exec-26] SQLServlet.doGet choice:3
+26-Mar-2023 12:02:44.464 INFO [http-nio-9999-exec-26] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 12:02:44.464 INFO [http-nio-9999-exec-26] SQLServlet.doGet userID:6
+26-Mar-2023 12:02:44.464 INFO [http-nio-9999-exec-26] SQLServlet.doGet comment:what
+26-Mar-2023 12:08:55.544 INFO [http-nio-9999-exec-26] questionsServlet.doGet MyServlet called
+26-Mar-2023 12:09:24.770 INFO [http-nio-9999-exec-25] loginServlet.doGet loginServlet called
+26-Mar-2023 12:09:24.773 INFO [http-nio-9999-exec-25] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 12:09:24.773 INFO [http-nio-9999-exec-25] loginServlet.doGet Login Successful
+26-Mar-2023 12:09:34.636 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:09:34.638 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:09:34.638 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 12:09:34.640 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:09:34.641 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:09:34.642 INFO [http-nio-9999-exec-28] SQLServlet.doGet id:1
+26-Mar-2023 12:09:34.674 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:09:34.675 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:09:34.676 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 12:09:34.680 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:09:34.681 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 12:09:34.682 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:1
+26-Mar-2023 12:09:34.682 INFO [http-nio-9999-exec-29] SQLServlet.doGet setID:1
+26-Mar-2023 12:09:34.682 INFO [http-nio-9999-exec-29] SQLServlet.doGet qnNo:1
+26-Mar-2023 12:09:34.682 INFO [http-nio-9999-exec-29] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 12:09:34.682 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt1:3
+26-Mar-2023 12:09:34.682 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt2:6
+26-Mar-2023 12:09:34.682 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt3:10
+26-Mar-2023 12:09:34.682 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt4:14
+26-Mar-2023 12:09:34.683 INFO [http-nio-9999-exec-29] SQLServlet.doGet correctOpt:3
+26-Mar-2023 12:09:34.689 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:09:34.690 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 12:09:34.690 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:15
+26-Mar-2023 12:09:34.690 INFO [http-nio-9999-exec-30] SQLServlet.doGet questionNo:1
+26-Mar-2023 12:09:34.690 INFO [http-nio-9999-exec-30] SQLServlet.doGet choice:3
+26-Mar-2023 12:09:34.691 INFO [http-nio-9999-exec-30] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 12:09:34.691 INFO [http-nio-9999-exec-30] SQLServlet.doGet userID:6
+26-Mar-2023 12:09:34.691 INFO [http-nio-9999-exec-30] SQLServlet.doGet comment:what
+26-Mar-2023 12:09:34.717 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:09:34.719 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:09:34.719 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 12:09:34.722 INFO [http-nio-9999-exec-22] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:09:34.723 INFO [http-nio-9999-exec-22] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+26-Mar-2023 12:09:34.723 INFO [http-nio-9999-exec-22] SQLServlet.doGet id:1
+26-Mar-2023 12:09:34.723 INFO [http-nio-9999-exec-22] SQLServlet.doGet setID:1
+26-Mar-2023 12:09:34.723 INFO [http-nio-9999-exec-22] SQLServlet.doGet qnNo:1
+26-Mar-2023 12:09:34.723 INFO [http-nio-9999-exec-22] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+26-Mar-2023 12:09:34.723 INFO [http-nio-9999-exec-22] SQLServlet.doGet opt1:3
+26-Mar-2023 12:09:34.723 INFO [http-nio-9999-exec-22] SQLServlet.doGet opt2:6
+26-Mar-2023 12:09:34.724 INFO [http-nio-9999-exec-22] SQLServlet.doGet opt3:10
+26-Mar-2023 12:09:34.724 INFO [http-nio-9999-exec-22] SQLServlet.doGet opt4:14
+26-Mar-2023 12:09:34.724 INFO [http-nio-9999-exec-22] SQLServlet.doGet correctOpt:3
+26-Mar-2023 12:09:34.727 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:09:34.728 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='1' AND userID='6'
+26-Mar-2023 12:09:34.728 INFO [http-nio-9999-exec-27] SQLServlet.doGet id:15
+26-Mar-2023 12:09:34.728 INFO [http-nio-9999-exec-27] SQLServlet.doGet questionNo:1
+26-Mar-2023 12:09:34.728 INFO [http-nio-9999-exec-27] SQLServlet.doGet choice:3
+26-Mar-2023 12:09:34.729 INFO [http-nio-9999-exec-27] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 12:09:34.729 INFO [http-nio-9999-exec-27] SQLServlet.doGet userID:6
+26-Mar-2023 12:09:34.729 INFO [http-nio-9999-exec-27] SQLServlet.doGet comment:what
+26-Mar-2023 12:10:01.234 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:01.235 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:10:01.236 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:1
+26-Mar-2023 12:10:03.113 INFO [http-nio-9999-exec-22] questionsServlet.doGet MyServlet called
+26-Mar-2023 12:10:13.152 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:13.154 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:10:13.154 INFO [http-nio-9999-exec-23] SQLServlet.doGet currentQuestionID:2
+26-Mar-2023 12:10:13.200 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:13.201 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:10:13.202 INFO [http-nio-9999-exec-21] SQLServlet.doGet currentQuestionID:2
+26-Mar-2023 12:10:13.215 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:13.217 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='2'
+26-Mar-2023 12:10:13.217 INFO [http-nio-9999-exec-24] SQLServlet.doGet id:2
+26-Mar-2023 12:10:13.217 INFO [http-nio-9999-exec-24] SQLServlet.doGet setID:1
+26-Mar-2023 12:10:13.217 INFO [http-nio-9999-exec-24] SQLServlet.doGet qnNo:2
+26-Mar-2023 12:10:13.217 INFO [http-nio-9999-exec-24] SQLServlet.doGet question:Constructors are used to
+26-Mar-2023 12:10:13.218 INFO [http-nio-9999-exec-24] SQLServlet.doGet opt1:Build a user interface
+26-Mar-2023 12:10:13.218 INFO [http-nio-9999-exec-24] SQLServlet.doGet opt2:Free Memory
+26-Mar-2023 12:10:13.218 INFO [http-nio-9999-exec-24] SQLServlet.doGet opt3:Initialize a newly created object
+26-Mar-2023 12:10:13.218 INFO [http-nio-9999-exec-24] SQLServlet.doGet opt4:To create a subclass
+26-Mar-2023 12:10:13.218 INFO [http-nio-9999-exec-24] SQLServlet.doGet correctOpt:3
+26-Mar-2023 12:10:13.238 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:13.239 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='2' AND userID='6'
+26-Mar-2023 12:10:30.339 INFO [http-nio-9999-exec-26] responseServlet.doGet responseServlet Called
+26-Mar-2023 12:10:30.341 INFO [http-nio-9999-exec-26] responseServlet.doGet Current QuestionID: 2
+26-Mar-2023 12:10:30.342 INFO [http-nio-9999-exec-26] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='2'
+26-Mar-2023 12:10:30.342 INFO [http-nio-9999-exec-26] responseServlet.doGet Correct Option: 3
+26-Mar-2023 12:10:30.342 INFO [http-nio-9999-exec-26] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+26-Mar-2023 12:10:30.342 INFO [http-nio-9999-exec-26] responseServlet.doGet Current Respondee: Irfan
+26-Mar-2023 12:10:30.342 INFO [http-nio-9999-exec-26] responseServlet.doGet Executing INSERT INTO responses (questionNo, choice, respondee, userID, comment ) Values ('2', '1', 'Irfan', '6', 'laggy')
+26-Mar-2023 12:10:30.343 INFO [http-nio-9999-exec-26] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+26-Mar-2023 12:10:30.343 INFO [http-nio-9999-exec-26] responseServlet.doGet Responses Table ID:16
+26-Mar-2023 12:10:38.898 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:38.900 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing UPDATE responses SET comment='lago' WHERE id='16'
+26-Mar-2023 12:10:42.971 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:42.973 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:10:42.973 INFO [http-nio-9999-exec-29] SQLServlet.doGet currentQuestionID:2
+26-Mar-2023 12:10:44.502 INFO [http-nio-9999-exec-25] questionsServlet.doGet MyServlet called
+26-Mar-2023 12:10:45.981 INFO [http-nio-9999-exec-28] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:45.982 INFO [http-nio-9999-exec-28] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:10:45.983 INFO [http-nio-9999-exec-28] SQLServlet.doGet currentQuestionID:3
+26-Mar-2023 12:10:46.041 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:46.043 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:10:46.043 INFO [http-nio-9999-exec-26] SQLServlet.doGet currentQuestionID:3
+26-Mar-2023 12:10:46.049 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:46.050 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='3'
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet id:3
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet setID:1
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet qnNo:3
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet question:An object that has more than one form is referred to as:
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet opt1:inheritance
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet opt2:interface
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet opt3:Abstract class
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet opt4:Polymorphism
+26-Mar-2023 12:10:46.051 INFO [http-nio-9999-exec-23] SQLServlet.doGet correctOpt:4
+26-Mar-2023 12:10:46.055 INFO [http-nio-9999-exec-27] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:46.056 INFO [http-nio-9999-exec-27] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='3' AND userID='6'
+26-Mar-2023 12:10:49.954 INFO [http-nio-9999-exec-22] responseServlet.doGet responseServlet Called
+26-Mar-2023 12:10:49.956 INFO [http-nio-9999-exec-22] responseServlet.doGet Current QuestionID: 3
+26-Mar-2023 12:10:49.956 INFO [http-nio-9999-exec-22] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='3'
+26-Mar-2023 12:10:49.956 INFO [http-nio-9999-exec-22] responseServlet.doGet Correct Option: 4
+26-Mar-2023 12:10:49.957 INFO [http-nio-9999-exec-22] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+26-Mar-2023 12:10:49.957 INFO [http-nio-9999-exec-22] responseServlet.doGet Current Respondee: Irfan
+26-Mar-2023 12:10:49.957 INFO [http-nio-9999-exec-22] responseServlet.doGet Executing INSERT INTO responses (questionNo, choice, respondee, userID, comment ) Values ('3', '3', 'Irfan', '6', 'null')
+26-Mar-2023 12:10:49.958 INFO [http-nio-9999-exec-22] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+26-Mar-2023 12:10:49.958 INFO [http-nio-9999-exec-22] responseServlet.doGet Responses Table ID:17
+26-Mar-2023 12:10:59.532 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:10:59.534 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing UPDATE responses SET comment='afterwards' WHERE id='17'
+26-Mar-2023 12:11:12.972 INFO [http-nio-9999-exec-22] loginServlet.doGet loginServlet called
+26-Mar-2023 12:11:12.973 INFO [http-nio-9999-exec-22] loginServlet.doGet SELECT * FROM users WHERE email ='i@g.com' AND password ='123'
+26-Mar-2023 12:11:12.974 INFO [http-nio-9999-exec-22] loginServlet.doGet Login Successful
+26-Mar-2023 12:11:16.166 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:11:16.168 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:11:16.168 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 12:11:16.213 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:11:16.214 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:11:16.215 INFO [http-nio-9999-exec-30] SQLServlet.doGet currentQuestionID:3
+26-Mar-2023 12:11:16.218 INFO [http-nio-9999-exec-25] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:11:16.219 INFO [http-nio-9999-exec-25] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='3'
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet id:3
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet setID:1
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet qnNo:3
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet question:An object that has more than one form is referred to as:
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt1:inheritance
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt2:interface
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt3:Abstract class
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet opt4:Polymorphism
+26-Mar-2023 12:11:16.220 INFO [http-nio-9999-exec-25] SQLServlet.doGet correctOpt:4
+26-Mar-2023 12:11:16.224 INFO [http-nio-9999-exec-26] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:11:16.226 INFO [http-nio-9999-exec-26] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='3' AND userID='6'
+26-Mar-2023 12:11:16.226 INFO [http-nio-9999-exec-26] SQLServlet.doGet id:17
+26-Mar-2023 12:11:16.226 INFO [http-nio-9999-exec-26] SQLServlet.doGet questionNo:3
+26-Mar-2023 12:11:16.226 INFO [http-nio-9999-exec-26] SQLServlet.doGet choice:3
+26-Mar-2023 12:11:16.226 INFO [http-nio-9999-exec-26] SQLServlet.doGet respondee:Irfan
+26-Mar-2023 12:11:16.226 INFO [http-nio-9999-exec-26] SQLServlet.doGet userID:6
+26-Mar-2023 12:11:16.226 INFO [http-nio-9999-exec-26] SQLServlet.doGet comment:afterwards
+26-Mar-2023 12:11:36.587 INFO [http-nio-9999-exec-22] loginServlet.doGet loginServlet called
+26-Mar-2023 12:11:36.588 INFO [http-nio-9999-exec-22] loginServlet.doGet SELECT * FROM users WHERE email ='chockhong@gmail.com' AND password ='passwordlim'
+26-Mar-2023 12:11:36.589 INFO [http-nio-9999-exec-22] loginServlet.doGet Login Successful
+26-Mar-2023 12:11:45.768 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:11:45.770 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:11:45.770 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 12:11:45.843 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:11:45.844 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:11:45.845 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:3
+26-Mar-2023 12:11:45.848 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:11:45.849 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='3'
+26-Mar-2023 12:11:45.849 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:3
+26-Mar-2023 12:11:45.849 INFO [http-nio-9999-exec-29] SQLServlet.doGet setID:1
+26-Mar-2023 12:11:45.849 INFO [http-nio-9999-exec-29] SQLServlet.doGet qnNo:3
+26-Mar-2023 12:11:45.850 INFO [http-nio-9999-exec-29] SQLServlet.doGet question:An object that has more than one form is referred to as:
+26-Mar-2023 12:11:45.850 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt1:inheritance
+26-Mar-2023 12:11:45.850 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt2:interface
+26-Mar-2023 12:11:45.850 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt3:Abstract class
+26-Mar-2023 12:11:45.850 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt4:Polymorphism
+26-Mar-2023 12:11:45.850 INFO [http-nio-9999-exec-29] SQLServlet.doGet correctOpt:4
+26-Mar-2023 12:11:45.853 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:11:45.854 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='3' AND userID='1'
+26-Mar-2023 12:11:45.855 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:9
+26-Mar-2023 12:11:45.855 INFO [http-nio-9999-exec-30] SQLServlet.doGet questionNo:3
+26-Mar-2023 12:11:45.855 INFO [http-nio-9999-exec-30] SQLServlet.doGet choice:2
+26-Mar-2023 12:11:45.855 INFO [http-nio-9999-exec-30] SQLServlet.doGet respondee:chock hong
+26-Mar-2023 12:11:45.855 INFO [http-nio-9999-exec-30] SQLServlet.doGet userID:1
+26-Mar-2023 12:11:45.855 INFO [http-nio-9999-exec-30] SQLServlet.doGet comment:null
+26-Mar-2023 12:12:33.691 INFO [http-nio-9999-exec-27] loginServlet.doGet loginServlet called
+26-Mar-2023 12:12:33.693 INFO [http-nio-9999-exec-27] loginServlet.doGet SELECT * FROM users WHERE email ='DenonLee@gmail.com' AND password ='passwordDenon'
+26-Mar-2023 12:12:48.615 INFO [http-nio-9999-exec-22] loginServlet.doGet loginServlet called
+26-Mar-2023 12:12:48.617 INFO [http-nio-9999-exec-22] loginServlet.doGet SELECT * FROM users WHERE email ='DenonLee@gmail.com' AND password ='passwordLee'
+26-Mar-2023 12:12:48.618 INFO [http-nio-9999-exec-22] loginServlet.doGet Login Successful
+26-Mar-2023 12:12:52.283 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:12:52.285 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:12:52.285 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 12:12:52.325 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:12:52.327 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:12:52.327 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:3
+26-Mar-2023 12:12:52.331 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:12:52.331 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='3'
+26-Mar-2023 12:12:52.332 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:3
+26-Mar-2023 12:12:52.332 INFO [http-nio-9999-exec-29] SQLServlet.doGet setID:1
+26-Mar-2023 12:12:52.332 INFO [http-nio-9999-exec-29] SQLServlet.doGet qnNo:3
+26-Mar-2023 12:12:52.333 INFO [http-nio-9999-exec-29] SQLServlet.doGet question:An object that has more than one form is referred to as:
+26-Mar-2023 12:12:52.333 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt1:inheritance
+26-Mar-2023 12:12:52.333 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt2:interface
+26-Mar-2023 12:12:52.333 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt3:Abstract class
+26-Mar-2023 12:12:52.333 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt4:Polymorphism
+26-Mar-2023 12:12:52.333 INFO [http-nio-9999-exec-29] SQLServlet.doGet correctOpt:4
+26-Mar-2023 12:12:52.337 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:12:52.337 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='3' AND userID='5'
+26-Mar-2023 12:12:52.338 INFO [http-nio-9999-exec-30] SQLServlet.doGet id:12
+26-Mar-2023 12:12:52.338 INFO [http-nio-9999-exec-30] SQLServlet.doGet questionNo:3
+26-Mar-2023 12:12:52.338 INFO [http-nio-9999-exec-30] SQLServlet.doGet choice:4
+26-Mar-2023 12:12:52.338 INFO [http-nio-9999-exec-30] SQLServlet.doGet respondee:Denon
+26-Mar-2023 12:12:52.338 INFO [http-nio-9999-exec-30] SQLServlet.doGet userID:5
+26-Mar-2023 12:12:52.338 INFO [http-nio-9999-exec-30] SQLServlet.doGet comment:null
+26-Mar-2023 12:13:46.191 INFO [http-nio-9999-exec-22] loginServlet.doGet loginServlet called
+26-Mar-2023 12:13:46.193 INFO [http-nio-9999-exec-22] loginServlet.doGet SELECT * FROM users WHERE email ='JamesLiu@gmail.com' AND password ='passwordliu'
+26-Mar-2023 12:13:46.193 INFO [http-nio-9999-exec-22] loginServlet.doGet Login Successful
+26-Mar-2023 12:13:49.348 INFO [http-nio-9999-exec-21] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:13:49.350 INFO [http-nio-9999-exec-21] SQLServlet.doGet Executing SELECT id FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:13:49.351 INFO [http-nio-9999-exec-21] SQLServlet.doGet id:1
+26-Mar-2023 12:13:49.380 INFO [http-nio-9999-exec-24] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:13:49.381 INFO [http-nio-9999-exec-24] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+26-Mar-2023 12:13:49.381 INFO [http-nio-9999-exec-24] SQLServlet.doGet currentQuestionID:3
+26-Mar-2023 12:13:49.385 INFO [http-nio-9999-exec-29] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:13:49.386 INFO [http-nio-9999-exec-29] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='3'
+26-Mar-2023 12:13:49.386 INFO [http-nio-9999-exec-29] SQLServlet.doGet id:3
+26-Mar-2023 12:13:49.387 INFO [http-nio-9999-exec-29] SQLServlet.doGet setID:1
+26-Mar-2023 12:13:49.387 INFO [http-nio-9999-exec-29] SQLServlet.doGet qnNo:3
+26-Mar-2023 12:13:49.387 INFO [http-nio-9999-exec-29] SQLServlet.doGet question:An object that has more than one form is referred to as:
+26-Mar-2023 12:13:49.387 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt1:inheritance
+26-Mar-2023 12:13:49.387 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt2:interface
+26-Mar-2023 12:13:49.387 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt3:Abstract class
+26-Mar-2023 12:13:49.387 INFO [http-nio-9999-exec-29] SQLServlet.doGet opt4:Polymorphism
+26-Mar-2023 12:13:49.387 INFO [http-nio-9999-exec-29] SQLServlet.doGet correctOpt:4
+26-Mar-2023 12:13:49.390 INFO [http-nio-9999-exec-30] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:13:49.391 INFO [http-nio-9999-exec-30] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionNo='3' AND userID='2'
+26-Mar-2023 12:13:51.763 INFO [http-nio-9999-exec-25] responseServlet.doGet responseServlet Called
+26-Mar-2023 12:13:51.765 INFO [http-nio-9999-exec-25] responseServlet.doGet Current QuestionID: 3
+26-Mar-2023 12:13:51.765 INFO [http-nio-9999-exec-25] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='3'
+26-Mar-2023 12:13:51.765 INFO [http-nio-9999-exec-25] responseServlet.doGet Correct Option: 4
+26-Mar-2023 12:13:51.765 INFO [http-nio-9999-exec-25] responseServlet.doGet Executing SELECT name FROM users WHERE id ='2'
+26-Mar-2023 12:13:51.765 INFO [http-nio-9999-exec-25] responseServlet.doGet Current Respondee: James Liu
+26-Mar-2023 12:13:51.765 INFO [http-nio-9999-exec-25] responseServlet.doGet Executing INSERT INTO responses (questionNo, choice, respondee, userID, comment ) Values ('3', '3', 'James Liu', '2', 'null')
+26-Mar-2023 12:13:51.766 INFO [http-nio-9999-exec-25] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+26-Mar-2023 12:13:51.766 INFO [http-nio-9999-exec-25] responseServlet.doGet Responses Table ID:18
+26-Mar-2023 12:13:59.481 INFO [http-nio-9999-exec-23] SQLServlet.doGet SQLServlet Called
+26-Mar-2023 12:13:59.482 INFO [http-nio-9999-exec-23] SQLServlet.doGet Executing UPDATE responses SET comment='wtf' WHERE id='18'
+26-Mar-2023 12:22:32.179 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 12:22:32.184 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Mar-2023 12:22:32.198 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+26-Mar-2023 12:22:32.220 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]

@@ -20,4 +20,6 @@
     <string name="enter">Enter</string>
     <string name="next_question">Next Question</string>
     <string name="comment">Comment</string>
+    <string name="edit_comment">Edit Comment</string>
+
 </resources>
