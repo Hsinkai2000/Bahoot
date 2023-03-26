@@ -43,6 +43,9 @@ public class responseServlet extends HttpServlet {
         userComment = request.getParameter("userComment");
         questionSetID = request.getParameter("qnSetID");
 
+        if (option == null)
+            option = "0";
+
 
         try (Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
@@ -64,12 +67,14 @@ public class responseServlet extends HttpServlet {
             rset.next();
             correctOption = rset.getString(1);
             LOGGER.info("Correct Option: " + correctOption);
-            
+
+        
             // send the result
             if (option.matches(correctOption))
                 result = "Correct";
             else
                 result = "Incorrect";
+            
             
             // get respondee name
             sqlStr = "SELECT name FROM users WHERE id ='" + userID + "'";

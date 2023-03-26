@@ -32,9 +32,9 @@ public class scoresServlet extends HttpServlet {
                 Statement stmt2 = conn.createStatement();
                 Statement stmt3 = conn.createStatement();) {
 
-                String query1 = "Select choice, COUNT(*) AS count from responses where questionNo = 1 group by choice";
-                String query2 = "Select choice, COUNT(*) AS count from responses where questionNo = 2 group by choice";
-                String query3 = "Select choice, COUNT(*) AS count from responses where questionNo = 3 group by choice"; 
+                String query1 = "Select choice, COUNT(*) AS count from responses where questionNo = 1 and choice != 0 group by choice";
+                String query2 = "Select choice, COUNT(*) AS count from responses where questionNo = 2 and choice != 0 group by choice";
+                String query3 = "Select choice, COUNT(*) AS count from responses where questionNo = 3 and choice != 0 group by choice"; 
 
                 ResultSet rs1 = stmt1.executeQuery(query1);
                 ResultSet rs2 = stmt2.executeQuery(query2);
@@ -62,6 +62,7 @@ public class scoresServlet extends HttpServlet {
             }
             LOGGER.info("choice list : " + choice);
             LOGGER.info("count list : " + count);
+
             if(!choice.contains(1)){
                 choice.add(1);
                 count.add(0);

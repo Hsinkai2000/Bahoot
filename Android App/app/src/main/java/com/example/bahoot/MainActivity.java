@@ -8,6 +8,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.text.InputFilter;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +20,7 @@ import java.net.URL;
 
 import android.os.AsyncTask;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Button commentButton;
     private TextView questionNumber;
     private TextView scoreTextView;
+    private ProgressBar progressBar;
     private String userID;
     private String name;
     private String roomCode;
@@ -54,7 +57,9 @@ public class MainActivity extends AppCompatActivity {
     private int count = 0;
     private int score;
     private boolean answered = false;
-    private boolean resume = false;
+
+    private countDownTimer cdt;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -76,41 +81,57 @@ public class MainActivity extends AppCompatActivity {
         commentButton = findViewById(R.id.commentButton);
         scoreTextView = findViewById(R.id.scoreText);
 
+        progressBar = findViewById(R.id.progressBar);
+
         // Disables the next question button at the start
         nextQuestion.setEnabled(false);
-        Log.d("TAG","answered:" + answered);
+        nextQuestion.setVisibility(View.GONE);
+
         // Gets the current question in the room and fills in the questions on screen
         getCurrentQuestionID();
-
     }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (answered)
-         nextQuestionButton();
-    }
-
 
     /*--------------------------------Buttons-----------------------------------------------------*/
+    // Function for logging out
     public void logOut(View v) {
-        Intent intent = new Intent(getApplicationContext(), Login.class);
-        startActivity(intent);
-        finish();
-    }
 
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+        final TextView tv = new TextView(this);
+        tv.setText(R.string.log_out_prompt);
+        tv.setPadding(75,75,0,0);
+        tv.setTextSize(20);
+
+        alert.setTitle("Log Out");
+        alert.setView(tv);
+
+        alert.setPositiveButton("Log Out", (dialog, whichButton) -> {
+            Intent intent = new Intent(getApplicationContext(), Login.class);
+            startActivity(intent);
+            finish();
+        });
+
+        alert.setNegativeButton("Cancel", (dialog, whichButton) -> {
+
+        });
+
+        alert.show();
+
+
+    }
     // Function for option 1 button
     public void option1(View v) {
+        cdt.cancel();
         HttpTask http = new HttpTask();
         http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=1" +
                 "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
                 + "&qnSetID=" + questionSetID);
         selectedOption = "1";
-
     }
-
     // Function for option 2 button
     public void option2(View v) {
+        cdt.cancel();
         HttpTask http = new HttpTask();
         http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=2" +
@@ -121,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Function for option 3 button
     public void option3(View v) {
+        cdt.cancel();
         HttpTask http = new HttpTask();
         http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=3" +
@@ -131,6 +153,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Function for option 4 button
     public void option4(View v) {
+        cdt.cancel();
         HttpTask http = new HttpTask();
         http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=4" +
@@ -141,16 +164,12 @@ public class MainActivity extends AppCompatActivity {
 
     // Function for next question button
     public void nextQuestionButton(View v) {
-
-        Log.d("Tag", "answerrred:" + answered);
-
         String nextSQL = "SELECT currentQuestionID FROM session WHERE " +
                 "roomCode = '" + roomCode + "'";
         HttpTask httpTask = new HttpTask();
         httpTask.setDoNextQuestion(true);
         httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 nextSQL);
-
     }
 
     /*
@@ -159,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
      * Sends the comment/ updated comment to the servlet
      */
     public void comment(View v) {
-
         String tableID ="";
 
         if (responseTableID != null)
@@ -172,21 +190,25 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
 
         String commentText;
+        final String[] confirmText = new String[1];
         if (userComment == null) {
             alert.setTitle("Comment");
             commentText = "Comment";
+            confirmText[0] = "Comment Sent!";
         }
         else {
             alert.setTitle("Edit Comment");
             commentText = "Update Comment";
+            confirmText[0] = "Comment Updated!";
         }
 
         // Set an EditText view to get user input
         final EditText input = new EditText(this);
         input.setHint("Enter Comment");
         input.setHeight(500);
+        input.setPadding(100,75,0,0);
         input.setText(userComment);
-
+        // Creates a maxLength filter of 500 for the input
         int maxLength = 500;
         InputFilter[] fArray = new InputFilter[1];
         fArray[0] = new InputFilter.LengthFilter(maxLength);
@@ -202,9 +224,16 @@ public class MainActivity extends AppCompatActivity {
                         + "' WHERE id='" + finalTableID +"'";
 
                 HttpTask httpTask = new HttpTask();
-                httpTask.setCommenting(true);
                 httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                         updateSQL);
+
+                if (userComment.isEmpty())
+                    confirmText[0] = "Comment Deleted!";
+
+                if (answered)
+                    Toast.makeText(getApplicationContext(), confirmText[0],
+                            Toast.LENGTH_SHORT).show();
+
             }
 
             if (userComment.isEmpty())
@@ -217,13 +246,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         alert.setNegativeButton("Cancel", (dialog, whichButton) -> {
-
+            // Nothing happens upon clicking cancel
         });
         alert.show();
     }
-
     /*--------------------------------Methods-----------------------------------------------------*/
-
     // Gets the roomCode's currentQuestionID column value from the session table
     private void getCurrentQuestionID() {
         String currentQuestionSQL = "SELECT currentQuestionID FROM session WHERE" +
@@ -233,28 +260,12 @@ public class MainActivity extends AppCompatActivity {
         httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 currentQuestionSQL);
     }
-
-    // Called when onResume() is called, update the screen upon refreshing
-    private void nextQuestionButton() {
-
-        Log.d("Tag", "answerrred:" + answered);
-
-        String nextSQL = "SELECT currentQuestionID FROM session WHERE " +
-                "roomCode = '" + roomCode + "'";
-        HttpTask httpTask = new HttpTask();
-        httpTask.setDoNextQuestion(true);
-        httpTask.setResuming(true);
-        httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
-                nextSQL);
-    }
-
     /*
      * Check if the next question has been set by comparing it with the current question
      * If set, move to next question
      * Else stay
      */
     private void nextQuestion() {
-
         if (!nextQuestionCheck.matches(currentQuestionID)) {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             intent.putExtra("userID", userID);
@@ -264,7 +275,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             overridePendingTransition(0, 0);
 
-        } else if (!resume){
+        } else {
             Toast.makeText(getApplicationContext(), "Please wait for the instructor " +
                             "to move to the next question",
                     Toast.LENGTH_SHORT).show();
@@ -273,19 +284,15 @@ public class MainActivity extends AppCompatActivity {
 
     // Fills in the current question number and options
     private void populateQuestions(int step) {
-
         // Sends a SQL query to the servlet to get the current question
         if (step == 1) {
-            Log.d("Tag", "currentQuestionID:" + currentQuestionID);
             String sqlStr = "SELECT * FROM questions WHERE id='" + currentQuestionID + "'";
 
             HttpTask httpTask = new HttpTask();
             httpTask.setGetQuestion(true);
             httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     sqlStr);
-
         }
-
         // Fills in the option's text box with the options
         else if (step == 2) {
             String text = "Question " + currentQuestionNumber;
@@ -295,14 +302,12 @@ public class MainActivity extends AppCompatActivity {
             option3Button.setText(option3);
             option4Button.setText(option4);
         }
-
     }
 
-    // Gets the current score from DB
+    // Gets the current score from DB and updates the score count
     // Creates a new entry if score not found
     // Fills the score text box
     private void getScore(int step) {
-
         String scoreCheckSQL = "SELECT * FROM score WHERE " +
                 "userID='" + userID + "' AND roomCode='" + roomCode + "'";
         HttpTask httpTask = new HttpTask();
@@ -326,13 +331,10 @@ public class MainActivity extends AppCompatActivity {
             String text = "Score: " + scoreStr;
             scoreTextView.setText(text);
         }
-
     }
 
     // Checks if the user has already answered the question from previous attempts
     private void answeredCheck(int step) {
-        String result;
-
         if (step == 1) {
             String sqlCheck = "SELECT * FROM responses WHERE "
                     + "questionNo='" + currentQuestionNumber
@@ -343,10 +345,11 @@ public class MainActivity extends AppCompatActivity {
                     sqlCheck);
 
         } else if (step == 2) {
+            cdt.cancel();
             selectedOption = choiceCheck;
             buttonResponse(resultCheck,true);
-            Toast.makeText(getApplicationContext(), "You've already answered this question.\n" +
-                            "Please wait for the next question.",
+            Toast.makeText(getApplicationContext(), "You've already answered this " +
+                            "question.\n" + "Please wait for the next question.",
                     Toast.LENGTH_SHORT).show();
         }
     }
@@ -357,7 +360,6 @@ public class MainActivity extends AppCompatActivity {
      * If the selected option is incorrect, makes it red
      */
     private void buttonResponse(String result, boolean answerCheck) {
-        Log.d("TAG",result);
 
         if (correctOption.matches("1"))
             option1Button.setTextColor(Color.GREEN);
@@ -368,15 +370,17 @@ public class MainActivity extends AppCompatActivity {
         else if (correctOption.matches("4"))
             option4Button.setTextColor(Color.GREEN);
 
-        if (result.matches("Incorrect")) {
-            if (selectedOption.matches("1"))
-                option1Button.setTextColor(Color.RED);
-            else if (selectedOption.matches("2"))
-                option2Button.setTextColor(Color.RED);
-            else if (selectedOption.matches("3"))
-                option3Button.setTextColor(Color.RED);
-            else if (selectedOption.matches("4"))
-                option4Button.setTextColor(Color.RED);
+        if (selectedOption != null) {
+            if (result.matches("Incorrect")) {
+                if (selectedOption.matches("1"))
+                    option1Button.setTextColor(Color.RED);
+                else if (selectedOption.matches("2"))
+                    option2Button.setTextColor(Color.RED);
+                else if (selectedOption.matches("3"))
+                    option3Button.setTextColor(Color.RED);
+                else if (selectedOption.matches("4"))
+                    option4Button.setTextColor(Color.RED);
+            }
         }
 
         option1Button.setEnabled(false);
@@ -384,8 +388,10 @@ public class MainActivity extends AppCompatActivity {
         option3Button.setEnabled(false);
         option4Button.setEnabled(false);
         nextQuestion.setEnabled(true);
+        nextQuestion.setVisibility(View.VISIBLE);
         answered = true;
 
+        // Increment score only if the answer has just been given
         if (!answerCheck) {
             if (result.matches("Correct")) {
                 incrementScore();
@@ -402,12 +408,14 @@ public class MainActivity extends AppCompatActivity {
             option4Button.setEnabled(false);
             commentButton.setEnabled(false);
             nextQuestion.setEnabled(false);
+            nextQuestion.setVisibility(View.GONE);
             Toast.makeText(getApplicationContext(), "Error, no question found",
                     Toast.LENGTH_SHORT).show();
         }
-        count++;
+        count++; // makes sure that this function is called only once
     }
 
+    // Increments the score counter and updates the DB
     private void incrementScore(){
         ++score;
         String scoreIncSQL = "UPDATE SCORE SET score='" + score + "' " +
@@ -428,9 +436,7 @@ public class MainActivity extends AppCompatActivity {
         private boolean getQuestion = false;
         private boolean answeredCheck = false;
         private boolean getResult = false;
-        private boolean commenting = false;
         private boolean doNextQuestion = false;
-        private boolean resuming = false;
         private boolean scoreCheck = false;
 
         /*---------------Boolean Flags Setters-----------------*/
@@ -441,22 +447,14 @@ public class MainActivity extends AppCompatActivity {
         public void setGetQuestion(boolean bool){
             this.getQuestion = bool;
         }
-
         public void setAnsweredCheck(boolean bool){
             this.answeredCheck = bool;
         }
         public void setGetResult(boolean bool){
             this.getResult = bool;
         }
-        public void setCommenting(boolean bool){
-            this.commenting= bool;
-        }
-
         public void setDoNextQuestion(boolean bool){
             this.doNextQuestion = bool;
-        }
-        public void setResuming(boolean bool){
-            this.resuming = bool;
         }
         public void setScoreCheck(boolean bool){
             this.scoreCheck = bool;
@@ -485,8 +483,7 @@ public class MainActivity extends AppCompatActivity {
                         populateQuestions(1);
                     }
 
-                    else if (this.getQuestion){
-
+                    else if (this.getQuestion) {
                         questionSetID = conn.getHeaderField("setID");
                         currentQuestionNumber = conn.getHeaderField("qnNo");
                         option1 = conn.getHeaderField("opt1");
@@ -497,7 +494,6 @@ public class MainActivity extends AppCompatActivity {
                         populateQuestions(2);
                         getScore(1);
                         answeredCheck(1);
-                        Log.d("setID",questionSetID);
                     }
 
                     if (this.answeredCheck) {
@@ -524,7 +520,6 @@ public class MainActivity extends AppCompatActivity {
                             getScore(3);
                         }
                     }
-
                     return null;
 
                 } else {
@@ -539,12 +534,19 @@ public class MainActivity extends AppCompatActivity {
         // The String result is passed from doInBackground().
         @Override
         protected void onPostExecute(String result) {
-
             // disable buttons if question is not retrieved
             if (currentQuestionID == null) {
                 noQuestionSet();
                 return;
             }
+            // Start the timer
+            if (getCurrentQuestionID) {
+                cdt = new countDownTimer(20000,
+                                        1000);
+                cdt.start();
+                return;
+            }
+
             // disable buttons if user has already answered the question in previous attempts
             if (this.answeredCheck && responseTableIDCheck != null) {
                 answeredCheck(2);
@@ -557,11 +559,32 @@ public class MainActivity extends AppCompatActivity {
             }
             // move to next question
             if (doNextQuestion) {
-                if (this.resuming)
-                    resume = true;
                 nextQuestion();
-                resume = false;
             }
+        }
+    }
+
+    public class countDownTimer extends CountDownTimer {
+
+        public countDownTimer(long millisInFuture, long countDownInterval) {
+            super(millisInFuture, countDownInterval);
+        }
+
+        @Override
+        public void onTick(long millisUntilFinished) {
+
+            int progress = (int) (millisUntilFinished/1000);
+
+            progressBar.setProgress(progressBar.getMax()-progress);
+        }
+
+        @Override
+        public void onFinish() {
+            HttpTask http = new HttpTask();
+            http.setGetResult(true);
+            http.execute("http://10.0.2.2:9999/Bahoot/response?" +
+                    "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
+                    + "&qnSetID=" + questionSetID);
         }
     }
 }

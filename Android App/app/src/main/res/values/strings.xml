@@ -22,5 +22,6 @@
     <string name="comment">Comment</string>
     <string name="edit_comment">Edit Comment</string>
     <string name="zero_score">Score: 0</string>
+    <string name="log_out_prompt">Are you sure you want to log out?</string>
 
 </resources>
