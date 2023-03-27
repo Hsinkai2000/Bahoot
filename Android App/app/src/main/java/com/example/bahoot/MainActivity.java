@@ -589,7 +589,7 @@ public class MainActivity extends AppCompatActivity {
             http.setGetResult(true);
             http.execute("http://10.0.2.2:9999/Bahoot/response?" +
                     "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
-                    + "&qnSetID=" + questionSetID);
+                    + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         }
     }
 }

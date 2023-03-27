@@ -171,11 +171,11 @@ pageEncoding="UTF-8"%>
 
              <div class="chart-wrap vertical">      
             <div class="progress" style="height: 30px;">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: <%= option0px %>%; height:100%;" aria-valuenow="<%= option0px %>" aria-valuemin="0" aria-valuemax="100"><h5><%= option0CountArray.get(i) %></h5></div>
-                <div class="progress-bar" role="progressbar" style="width: <%= option1px %>%; height:100%;" aria-valuenow="<%= option1px %>" aria-valuemin="0" aria-valuemax="100"><h5><%= option1CountArray.get(i) %></h5></div>
-                <div class="progress-bar bg-success" role="progressbar" style="width: <%= option2px %>%" aria-valuenow="<%= option2px %>" aria-valuemin="0" aria-valuemax="100"><h5><%= option2CountArray.get(i) %></h5></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: <%= option3px %>%" aria-valuenow="<%= option3px %>" aria-valuemin="0" aria-valuemax="100"><h5><%= option3CountArray.get(i) %></h5></div>
-                <div class="progress-bar bg-warning" role="progressbar" style="width: <%= option4px %>%" aria-valuenow="<%= option4px %>" aria-valuemin="0" aria-valuemax="100"><h5><%= option4CountArray.get(i) %></h5></div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: <%= option0px %>%; height:100%;" aria-valuenow="<%= option0px %>" aria-valuemin="0" aria-valuemax="100"><h5>Did Not Answer: <%= option0CountArray.get(i) %></h5></div>
+                <div class="progress-bar" role="progressbar" style="width: <%= option1px %>%; height:100%;" aria-valuenow="<%= option1px %>" aria-valuemin="0" aria-valuemax="100"><h5>A: <%= option1CountArray.get(i) %></h5></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: <%= option2px %>%" aria-valuenow="<%= option2px %>" aria-valuemin="0" aria-valuemax="100"><h5>B: <%= option2CountArray.get(i) %></h5></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: <%= option3px %>%" aria-valuenow="<%= option3px %>" aria-valuemin="0" aria-valuemax="100"><h5>C: <%= option3CountArray.get(i) %></h5></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: <%= option4px %>%" aria-valuenow="<%= option4px %>" aria-valuemin="0" aria-valuemax="100"><h5>D: <%= option4CountArray.get(i) %></h5></div>
             </div>
         </div>
         </div>

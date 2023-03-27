@@ -72,6 +72,8 @@ INSERT INTO questions (setID, qnNo, question, opt1, opt2, opt3, opt4, correctOpt
 	('1', '1', 'If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?', '3', '6', '10', '14', '3 '),
 	('1', '2', 'Constructors are used to', 'Build a user interface', 'Free Memory', 'Initialize a newly created object', 'To create a subclass', '3 '),
 	('1', '3', 'An object that has more than one form is referred to as:', 'inheritance', 'interface', 'Abstract class', 'Polymorphism', '4 '),
+	('1', '4', ' In which access should a constructor be defined, so that object of the class can be created in any function?', 'Any access specifier will work', 'Public', ' Protected', 'Private', '2'),
+	('1', '5', 'Which access specifier is usually used for data members of a class?', 'Private', 'Protected', 'Public', 'Default', '1'),
 	('2', '1', 'Choose the correct HTML element for the largest heading:', '<h6>', '<h1>', '<heading>', '<head>', '2 '),
 	('2', '2', 'Choose the correct HTML element to define important text', '<b>', '<i>', '<important>', '<strong>', '4 '),
 	('2', '3', 'Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?', 'alt', 'src', 'title', 'longdesc', '1 '),
@@ -87,7 +89,7 @@ INSERT INTO session (roomCode, currentQuestionID) VALUES
     
 
 INSERT INTO qnSets (name, totalQn, ownerID) VALUES 
-    ('Object Oriented Programming',3, 1),
+    ('Object Oriented Programming', 5, 1),
     ('HTML Programming',3, 1),
     ('Web Servlet Programming',3, 1),    
     ('Web App Programming',3, 1);
@@ -102,9 +104,10 @@ INSERT INTO Users (email, name, password, mobile_number) VALUES
 
 insert into responses (roomCode, questionSetID, questionNo, choice, respondee, result, userID) values
     ("774537", 1, 1, 3, "Lim Chock Hong", "Correct", 1),
+    ("774537", 1, 1, 4, "James Liu", "Incorrect", 2),
     ("774537", 1, 1, 3, "Kelly Tay", "Correct", 3),
-    ("774537", 1, 1, 2, "Brandon Tann", "Incorrect", 4),
-    ("774537", 1, 1, 4, "Denon", "Incorrect", 5),
+    ("774537", 1, 1, 2, "Brandon Tan", "Incorrect", 4),
+    ("774537", 1, 1, 4, "Lee Denon", "Incorrect", 5),
     ("774537", 1, 2, 3, "Lim Chock Hong", "Correct", 1),
     ("774537", 1, 2, 1, "Kelly Tay", "Incorrect", 3),
     ("774537", 1, 2, 3, "Brandon Tan", "Correct", 4),
@@ -112,7 +115,14 @@ insert into responses (roomCode, questionSetID, questionNo, choice, respondee, r
     ("774537", 1, 3, 2, "Lim Chock Hong", "Incorrect", 1),
     ("774537", 1, 3, 3, "Kelly Tay", "Incorrect", 3),
     ("774537", 1, 3, 2, "Brandon Tan", "Incorrect", 4),
-    ("774537", 1, 3, 4, "Lee Denon", "Correct", 5);
+    ("774537", 1, 4, 2, "Lee Denon", "Correct", 5),
+    ("774537", 1, 4, 2, "Kelly Tay", "Correct", 3),
+    ("774537", 1, 4, 1, "Brandon Tan", "Incorrect", 4),
+    ("774537", 1, 4, 3, "James Liu", "Incorrect", 2),
+    ("774537", 1, 5, 1, "Lee Denon", "Correct", 5),
+    ("774537", 1, 5, 0, "Kelly Tay", "Correct", 3),
+    ("774537", 1, 5, 2, "Brandon Tan", "Incorrect", 4),
+    ("774537", 1, 5, 3, "James Liu", "Incorrect", 2);
 
 insert into responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) values
     ("774537", 1, 1, 3, "Correct", "James Liu", 2, "ezpz"),
