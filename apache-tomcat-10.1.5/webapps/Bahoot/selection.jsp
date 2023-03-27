@@ -35,10 +35,21 @@ pageEncoding="UTF-8"%>
       Statement stmt = conn.createStatement();
       String queryQuestions = "SELECT * FROM qnSets";
       ResultSet rs = stmt.executeQuery(queryQuestions);
+
+
+
+      try {
+        Statement insertStmt = conn.createStatement();
+        String insertSQL = "INSERT INTO session (roomCode, currentQuestionID) VALUES ('"+request.getParameter("roomCode")+"',0)";
+        insertStmt.executeUpdate(insertSQL);
+      } catch (Exception e) {
+
+      }
     %>
     <br>
     <br>
     <h2 style="color: white;">Question Sets</h2>
+
     <div class="pt-3">
       <div class="row row-cols-1 row-cols-md-6 g-4">
         <% while (rs.next()) {%>
@@ -51,6 +62,7 @@ pageEncoding="UTF-8"%>
                 <form method="get" action="viewQuestions">
                   <input hidden name="setid" value="<%= rs.getInt("id") %>" >
                   <input hidden name="totalQn" value="<%= rs.getInt("totalQn") %>">
+                  <input hidden name="roomCode" value=<%=request.getParameter("roomCode")%>>
                   <button type="submit" class="btn btn-info">Host</button>
                 </form>
               </div>
@@ -59,12 +71,13 @@ pageEncoding="UTF-8"%>
         <%}%>
       </div>
     </div>
+ 
 
     <br>
     <br>
     <br>
     <footer class="text-white mt-5 p-4 text-center">
-        Copyright &copy; 2023 Bahoot!. All Rights Reserved
+        Copyright &copy; 2023 Bahoot!. All Rights Reserved 
     </footer>
     
     <script

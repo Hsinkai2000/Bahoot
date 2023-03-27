@@ -23,6 +23,7 @@ public class responseServlet extends HttpServlet {
     static String roomCode;
     static String currentQuestionID;
     static String questionSetID;
+    static String questionNumber;
     static String respondee;
     static String userComment;
     static String responseTableID;
@@ -42,6 +43,7 @@ public class responseServlet extends HttpServlet {
         roomCode = request.getParameter("roomCode");
         userComment = request.getParameter("userComment");
         questionSetID = request.getParameter("qnSetID");
+        questionNumber = request.getParameter("qnNo");
 
         if (option == null)
             option = "0";
@@ -86,7 +88,7 @@ public class responseServlet extends HttpServlet {
 
             // send statistic to DB
             sqlStr = "INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values "
-                + "('" + roomCode + "', '" + questionSetID + "', '" + currentQuestionID + "', '" + option + "', '" + result +"', '" + respondee +"', '" + userID + "', '" + userComment +"')";
+                + "('" + roomCode + "', '" + questionSetID + "', '" + questionNumber + "', '" + option + "', '" + result +"', '" + respondee +"', '" + userID + "', '" + userComment +"')";
             LOGGER.info("Executing " + sqlStr); // Add a logging statement
             stmt.executeUpdate(sqlStr);
 

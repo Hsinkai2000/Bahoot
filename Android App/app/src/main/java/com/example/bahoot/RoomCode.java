@@ -22,6 +22,7 @@ public class RoomCode extends AppCompatActivity {
 
     private EditText roomCodeField;
     private String roomCodeStr;
+    private String currentQuestionID;
     private String userID;
     private String name;
 
@@ -45,7 +46,7 @@ public class RoomCode extends AppCompatActivity {
         } else  {
             Log.d("Tag","Room Code: " + roomCodeStr);
 
-            String SQL = "SELECT id FROM session WHERE " +
+            String SQL = "SELECT * FROM session WHERE " +
                     "roomCode = '"+ roomCodeStr + "'";
 
             new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
@@ -67,14 +68,9 @@ public class RoomCode extends AppCompatActivity {
                 if (responseCode == HttpURLConnection.HTTP_OK) {  // 200
                     InputStream inputStream = conn.getInputStream();
 
-                    InputStream stream = conn.getInputStream();
-                    StringBuffer output = new StringBuffer("");
-                    BufferedReader buffer = new BufferedReader(new InputStreamReader(stream));
-                    String s = "";
-                    while ((s = buffer.readLine()) != null)
-                        output.append(s);
-
                     String roomCode = conn.getHeaderField("id");
+                    currentQuestionID = conn.getHeaderField("currentQuestionID");
+
 
                     return roomCode;
                 } else {
@@ -92,12 +88,17 @@ public class RoomCode extends AppCompatActivity {
             if (result == null) {
                 Toast.makeText(getApplicationContext(),"Wrong room code, please try again",
                         Toast.LENGTH_SHORT).show();
-            } else {
+            } else if (!currentQuestionID.matches("0")){
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("userID", userID);
                 intent.putExtra("name",name);
                 intent.putExtra("roomCode",roomCodeStr);
                 startActivity(intent);
+
+            } else {
+                Toast.makeText(getApplicationContext(),"The Instructor has not " +
+                                "set the question yet. Please wait",
+                        Toast.LENGTH_SHORT).show();
             }
         }
     }

@@ -21,15 +21,17 @@
         <h1 class="d-block pb-5" style="color: white;" >
           <img src="./images/bahoot-logo-transparent.png" width="500" height="500">
         </h1>
-        <input id="name" type="text" class="d-block text-center mt-3" style="padding-left: 200px;padding-right: 200px;" placeholder="Enter your name">
-        <button class="btn btn-primary mt-5">Enter Room</button>
+        <form method="get" action="selection.jsp">
+          <input id="roomCode" name="roomCode" type="text" class="d-block text-center mt-3 " style="padding-left: 200px;padding-right: 200px;" placeholder="Enter Room Code!" maxLength="6" required>
+          <button type="submit" class="btn btn-primary mt-5">Host Bahoot!</button>
+        <form method="get" action="viewQuestions">
       </div>
     </div>
-    
+    <!---
     <div class="container-fluid fixed-bottom bg-light text-center ">
       <a class="m-0 p-3" href="selection.jsp">Host your own Bahoot!</a>
       
-    </div>
+    </div> -->
     
     <br>
     <br>

@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=1" +
                 "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
-                + "&qnSetID=" + questionSetID);
+                + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         selectedOption = "1";
     }
     // Function for option 2 button
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=2" +
                 "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
-                + "&qnSetID=" + questionSetID);
+                + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         selectedOption = "2";
     }
 
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=3" +
                 "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
-                + "&qnSetID=" + questionSetID);
+                + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         selectedOption = "3";
     }
 
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
         http.setGetResult(true);
         http.execute("http://10.0.2.2:9999/Bahoot/response?option=4" +
                 "&userID=" + userID + "&roomCode=" + roomCode + "&userComment=" + userComment
-                + "&qnSetID=" + questionSetID);
+                + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         selectedOption = "4";
     }
 
@@ -336,9 +336,10 @@ public class MainActivity extends AppCompatActivity {
     // Checks if the user has already answered the question from previous attempts
     private void answeredCheck(int step) {
         if (step == 1) {
-            String sqlCheck = "SELECT * FROM responses WHERE "
-                    + "questionNo='" + currentQuestionNumber
-                    + "' AND userID='" + userID + "'";
+            String sqlCheck = "SELECT * FROM responses WHERE questionSetID='" + questionSetID
+                    + "' AND questionNo='" + currentQuestionNumber
+                    + "' AND userID='" + userID + "'"
+                    + " AND roomCode='" + roomCode + "'";
             HttpTask httpTask = new HttpTask();
             httpTask.setAnsweredCheck(true);
             httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
@@ -491,6 +492,8 @@ public class MainActivity extends AppCompatActivity {
                         option3 = conn.getHeaderField("opt3");
                         option4 = conn.getHeaderField("opt4");
                         correctOption = conn.getHeaderField("correctOpt");
+                        if (questionSetID == null)
+                            return null;
                         populateQuestions(2);
                         getScore(1);
                         answeredCheck(1);
@@ -534,8 +537,10 @@ public class MainActivity extends AppCompatActivity {
         // The String result is passed from doInBackground().
         @Override
         protected void onPostExecute(String result) {
+
             // disable buttons if question is not retrieved
             if (currentQuestionID == null) {
+                Log.d("qID","null");
                 noQuestionSet();
                 return;
             }

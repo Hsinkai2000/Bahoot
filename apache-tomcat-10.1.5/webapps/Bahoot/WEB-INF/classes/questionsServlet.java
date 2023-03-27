@@ -13,14 +13,19 @@ import jakarta.servlet.annotation.*;
 public class questionsServlet extends HttpServlet {
 
     private static final Logger LOGGER = Logger.getLogger(questionsServlet.class.getName());
-    int setid, qnNo, totalQn;
+    int setid, qnNo, totalQn,questionID;
+    String roomCode;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
         LOGGER.info("MyServlet called");
+
         setid = Integer.parseInt(request.getParameter("setid"));
         totalQn = Integer.parseInt(request.getParameter("totalQn"));
+        roomCode = request.getParameter("roomCode");
+        LOGGER.info("roomCode: " + roomCode);
+
         if(request.getParameter("qnNo") != null){
                 qnNo = Integer.parseInt(request.getParameter("qnNo"));
         }else{
@@ -34,11 +39,15 @@ public class questionsServlet extends HttpServlet {
 
                         Statement stmt = conn.createStatement();
                         Statement stmt2 = conn.createStatement();
-                        updateCurrentQn(stmt2, qnNo);
+                        
                         String queryQuestions = "SELECT * FROM questions WHERE setID = " + setid + " AND qnNo = " + qnNo;
                         ResultSet rs = stmt.executeQuery(queryQuestions);
                         rs.next();
 
+                        questionID = rs.getInt("id");
+                        updateCurrentQn(stmt2, questionID);
+
+                        response.setHeader("roomCode",roomCode);
                         response.setIntHeader("setid", setid);
                         response.setIntHeader("qnNo",qnNo);
                         response.setIntHeader("totalQn", totalQn);
@@ -55,7 +64,9 @@ public class questionsServlet extends HttpServlet {
                 }
         }
         else{
-                RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("display");
+                request.setAttribute("setID",Integer.toString(setid));
+                request.setAttribute("roomCode",roomCode);
                 rd.forward(request,response);
         }
     }
