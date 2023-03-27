@@ -11,10 +11,13 @@ pageEncoding="UTF-8"%>
     ArrayList<String> option4Array = new ArrayList<String>();
     ArrayList<String> correctOptArray = new ArrayList<String>();
 
+    ArrayList<Statement> choiceStmtArray = new ArrayList<Statement>();
+    ArrayList<String> queryChoiceArray = new ArrayList<String>();
+    ArrayList<ResultSet> choiceRSArray = new ArrayList<ResultSet>();
+
     ArrayList<Statement> responseStmtArray = new ArrayList<Statement>();
     ArrayList<String> queryResponseArray = new ArrayList<String>();
     ArrayList<ResultSet> responseRSArray = new ArrayList<ResultSet>();
-
     
     String roomCode = response.getHeader("roomCode");
     String setID = response.getHeader("setID");
@@ -46,12 +49,24 @@ pageEncoding="UTF-8"%>
       }
 
       for (int i = 0; i < questionCount; i++) {
+        choiceStmtArray.add(conn.createStatement());
+        queryChoiceArray.add("SELECT choice, COUNT(*) AS count FROM responses WHERE roomCode='"+ roomCode +"' AND questionSetID = '"+ setID +"' AND questionNo='" + (i+1) + "' GROUP BY choice");
+        choiceRSArray.add(choiceStmtArray.get(i).executeQuery(queryChoiceArray.get(i)));
+
         responseStmtArray.add(conn.createStatement());
-        queryResponseArray.add("SELECT choice, COUNT(*) AS count FROM responses WHERE roomCode='"+ roomCode +"' AND questionSetID = '"+ setID +"' AND questionNo='" + (i+1) + "' GROUP BY choice");
-        
+        queryResponseArray.add("SELECT * FROM responses WHERE roomCode='"+ roomCode +"' AND questionSetID = '"+ setID +"' AND questionNo='" + (i+1) + "'");
         responseRSArray.add(responseStmtArray.get(i).executeQuery(queryResponseArray.get(i)));
 
+    
       }
+
+
+
+
+
+
+
+
         
       for (int i = 0; i < questionCount; i++) {
         int totalCount = 0;
@@ -61,19 +76,19 @@ pageEncoding="UTF-8"%>
         int option3Count = 0;
         int option4Count = 0;
 
-        while (responseRSArray.get(i).next()) {
-            if (responseRSArray.get(i).getInt("choice") == 0)
-                option0Count = responseRSArray.get(i).getInt("count");
-            if (responseRSArray.get(i).getInt("choice") == 1)
-                option1Count = responseRSArray.get(i).getInt("count");
-            if (responseRSArray.get(i).getInt("choice") == 2)
-                option2Count = responseRSArray.get(i).getInt("count");
-            if (responseRSArray.get(i).getInt("choice") == 3)
-                option3Count = responseRSArray.get(i).getInt("count");
-            if (responseRSArray.get(i).getInt("choice") == 4)
-                option4Count = responseRSArray.get(i).getInt("count");
+        while (choiceRSArray.get(i).next()) {
+            if (choiceRSArray.get(i).getInt("choice") == 0)
+                option0Count = choiceRSArray.get(i).getInt("count");
+            if (choiceRSArray.get(i).getInt("choice") == 1)
+                option1Count = choiceRSArray.get(i).getInt("count");
+            if (choiceRSArray.get(i).getInt("choice") == 2)
+                option2Count = choiceRSArray.get(i).getInt("count");
+            if (choiceRSArray.get(i).getInt("choice") == 3)
+                option3Count = choiceRSArray.get(i).getInt("count");
+            if (choiceRSArray.get(i).getInt("choice") == 4)
+                option4Count = choiceRSArray.get(i).getInt("count");
 
-            totalCount += responseRSArray.get(i).getInt("count");
+            totalCount += choiceRSArray.get(i).getInt("count");
         }
         totalCountArray.add(totalCount);
         option0CountArray.add(option0Count);
@@ -81,6 +96,10 @@ pageEncoding="UTF-8"%>
         option2CountArray.add(option2Count);
         option3CountArray.add(option3Count);
         option4CountArray.add(option4Count);
+
+
+
+
       } 
 
     } catch (Exception e) {
@@ -104,6 +123,12 @@ pageEncoding="UTF-8"%>
       crossorigin="anonymous"
     />
     <link href="./style/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVpHTPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </head>
   <body class="bg_default" style="background-color: #46178f;padding-left: 100px;padding-right: 100px;">
     <nav class="navbar navbar-light" style="background-color: #46178f;">
@@ -120,7 +145,10 @@ pageEncoding="UTF-8"%>
     <h2 class="pb-3 pt-5" style="color: white;">Statistics for <%=setName%></h2>
 
     <%for (int i = 0; i < questionCount; i++) {%>
-        <%
+
+        <%  
+            
+
             double option0px = (((double)option0CountArray.get(i)/totalCountArray.get(i)) * 100);
             double option1px = (((double)option1CountArray.get(i)/totalCountArray.get(i)) * 100);
             double option2px = (((double)option2CountArray.get(i)/totalCountArray.get(i)) * 100);
@@ -133,9 +161,7 @@ pageEncoding="UTF-8"%>
             <br>
             <div class="row">
                 <div class="col-1">
-                    <button class="btn btn-primary" style="color:white;">A:</button> 
-                   
-                     
+                    <button class="btn btn-primary" style="color:white;">A:</button>  
                 </div>
                 <div class="col-5 text-left">
                     <p style="color:<% if (correctOptArray.get(i).matches("1")) {%>greenYellow<%} else {%> white <%}%>;"><%=option1Array.get(i)%></p>
@@ -170,24 +196,86 @@ pageEncoding="UTF-8"%>
             </div>
 
              <div class="chart-wrap vertical">      
-            <div class="progress" style="height: 30px;">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: <%= option0px %>%; height:100%;" aria-valuenow="<%= option0px %>" aria-valuemin="0" aria-valuemax="100"><h5>Did Not Answer: <%= option0CountArray.get(i) %></h5></div>
-                <div class="progress-bar" role="progressbar" style="width: <%= option1px %>%; height:100%;" aria-valuenow="<%= option1px %>" aria-valuemin="0" aria-valuemax="100"><h5>A: <%= option1CountArray.get(i) %></h5></div>
-                <div class="progress-bar bg-success" role="progressbar" style="width: <%= option2px %>%" aria-valuenow="<%= option2px %>" aria-valuemin="0" aria-valuemax="100"><h5>B: <%= option2CountArray.get(i) %></h5></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: <%= option3px %>%" aria-valuenow="<%= option3px %>" aria-valuemin="0" aria-valuemax="100"><h5>C: <%= option3CountArray.get(i) %></h5></div>
-                <div class="progress-bar bg-warning" role="progressbar" style="width: <%= option4px %>%" aria-valuenow="<%= option4px %>" aria-valuemin="0" aria-valuemax="100"><h5>D: <%= option4CountArray.get(i) %></h5></div>
+                <div class="progress" style="height: 30px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: <%= option0px %>%; height:100%;" aria-valuenow="<%= option0px %>" aria-valuemin="0" aria-valuemax="100"><h5>Did Not Answer: <%= option0CountArray.get(i) %></h5></div>
+                    <div class="progress-bar" role="progressbar" style="width: <%= option1px %>%; height:100%;" aria-valuenow="<%= option1px %>" aria-valuemin="0" aria-valuemax="100"><h5>A: <%= option1CountArray.get(i) %></h5></div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: <%= option2px %>%" aria-valuenow="<%= option2px %>" aria-valuemin="0" aria-valuemax="100"><h5>B: <%= option2CountArray.get(i) %></h5></div>
+                    <div class="progress-bar bg-info" role="progressbar" style="width: <%= option3px %>%" aria-valuenow="<%= option3px %>" aria-valuemin="0" aria-valuemax="100"><h5>C: <%= option3CountArray.get(i) %></h5></div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: <%= option4px %>%" aria-valuenow="<%= option4px %>" aria-valuemin="0" aria-valuemax="100"><h5>D: <%= option4CountArray.get(i) %></h5></div>
+                </div>
+              </div>
+        </div>
+        <br>
+        
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#commentModal<%= i %>">
+          See Comments and Submitted Answers
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="commentModal<%= i %>" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="scoreModalLabel">Comments and Submitted Answers</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Selected Option</th>
+                      <th scope="col">Comment</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <% int j = 0; while (responseRSArray.get(i).next()) {%>
+  
+                  <tr>
+                    <th scope="row"><%=j+1%></th>
+                    <td> <%=responseRSArray.get(i).getString("respondee")%></td>
+                    <td <%if(correctOptArray.get(i).matches(responseRSArray.get(i).getString("choice"))) {%> style="color:green"  <%}%> > <%=responseRSArray.get(i).getString("choice").replaceAll("0","Did not answer")%></td>
+                    <td><%=responseRSArray.get(i).getString("comment").replaceAll("null"," ")%></td>
+                  </tr>
+                  <%j++;%>
+                  
+                <%}%>
+                            
+                </tbody>
+              </table>
+  
+                
+              
+              </div>
+              <div class="modal-footer">
+                
+              </div>
             </div>
-        </div>
+          </div>
         </div>
         <br>
         <br>
+
+       
+
+
     <%}%>
+
+     
+    
 
     
     <br>
     <footer class="text-white mt-5 p-4 text-center">
         Copyright &copy; 2023 Bahoot!. All Rights Reserved
     </footer>
+
+  
 
     
     <script

@@ -35,7 +35,7 @@ public class RoomCode extends AppCompatActivity {
         userID = extras.getString("userID");
         name = extras.getString("name");
 
-        roomCodeField = findViewById(R.id.roomCodeField);
+        roomCodeField = findViewById(R.id.room_code_field);
     }
     public void enterRoomCode(View view){
         roomCodeStr = roomCodeField.getText().toString();

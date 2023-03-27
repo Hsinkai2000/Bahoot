@@ -38,11 +38,12 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        nameField = findViewById(R.id.registerNameField);
-        emailField = findViewById(R.id.registerEmailField);
-        passwordField = findViewById(R.id.registerPasswordField);
-        confirmPasswordField = findViewById(R.id.registerConfirmPasswordField);
-        phoneNumberField = findViewById(R.id.registerPhoneNumberField);
+        nameField = findViewById(R.id.register_name);
+        emailField = findViewById(R.id.register_email);
+        phoneNumberField = findViewById(R.id.register_phone_number);
+        passwordField = findViewById(R.id.register_password);
+        confirmPasswordField = findViewById(R.id.register_confirm_password);
+
     }
 
     public void register(View view) {

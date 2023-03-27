@@ -51,12 +51,16 @@ public class registerServlet extends HttpServlet {
         try (Connection conn = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
             "root", "password");
-             Statement stmt = conn.createStatement();) {
-            
-            String sqlStrRegister = "INSERT INTO Users Values (null, '" + emailStr + "', '" + nameStr + "', '" + passwordStr
-                                     + "', '" + phoneNumberStr + "')";
-            LOGGER.info(sqlStrRegister); // Add a logging statement
-            stmt.executeUpdate(sqlStrRegister);
+             ) {
+                
+            String sqlStrRegister = "INSERT INTO Users Values (null, ?, ?, ?, ?)";
+            PreparedStatement pstmt = conn.prepareStatement(sqlStrRegister);
+            pstmt.setString(1, emailStr);
+            pstmt.setString(2, nameStr);
+            pstmt.setString(3, passwordStr);
+            pstmt.setString(4, phoneNumberStr);
+            pstmt.executeUpdate();
+
             response.setHeader("Verification","Success");
 
 
@@ -70,12 +74,13 @@ public class registerServlet extends HttpServlet {
         try (Connection conn = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
             "root", "password");
-             Statement stmt = conn.createStatement();) {
+             ) {
 
-
-            String sqlStrEmail = "SELECT * FROM users WHERE email ='" + emailStr + "'";
-            LOGGER.info(sqlStrEmail);
-            ResultSet rsetEmail = stmt.executeQuery(sqlStrEmail);
+            String sqlStrEmail = "SELECT * FROM users WHERE email = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sqlStrEmail);
+            pstmt.setString(1, emailStr);
+            ResultSet rsetEmail = pstmt.executeQuery();
+                
 
             if (!rsetEmail.next()) 
                 return true;  
@@ -93,11 +98,13 @@ public class registerServlet extends HttpServlet {
         try (Connection conn = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
             "root", "password");
-             Statement stmt = conn.createStatement();) {
-
-            String sqlStrPhoneNumber = "SELECT * FROM users WHERE mobile_number ='" + phoneNumberStr + "'";
-            ResultSet rsetPhoneNumber = stmt.executeQuery(sqlStrPhoneNumber);
-
+             ) {
+            
+            String sqlStrPhoneNumber = "SELECT * FROM users WHERE mobile_number = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sqlStrPhoneNumber);
+            pstmt.setString(1, phoneNumberStr);
+            ResultSet rsetPhoneNumber = pstmt.executeQuery();
+                
             if (!rsetPhoneNumber.next())
                 return true;
             else 

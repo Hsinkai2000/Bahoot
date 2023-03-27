@@ -42,12 +42,13 @@ public class loginServlet extends HttpServlet {
             try (Connection conn = DriverManager.getConnection(
                               "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                               "root", "password");
-                  Statement stmt = conn.createStatement();) {
+                  ) {
 
-                  String sqlStr = "SELECT * FROM users WHERE email ='" + emailStr
-                              + "' AND password ='" + passwordStr + "'";
-                  LOGGER.info(sqlStr);
-                  ResultSet rset = stmt.executeQuery(sqlStr);
+                  String sqlStr = "SELECT * FROM users WHERE email = ? AND password = ?";
+                  PreparedStatement pstmt = conn.prepareStatement(sqlStr);
+                  pstmt.setString(1, emailStr);
+                  pstmt.setString(2, passwordStr);
+                  ResultSet rset = pstmt.executeQuery();
                   
                   if (rset.next()) {
                         LOGGER.info("Login Successful");
@@ -56,13 +57,11 @@ public class loginServlet extends HttpServlet {
                         response.setHeader("Login","Success");
                         response.setHeader("userID",userIDStr);
                         response.setHeader("name",nameStr);
-                        
-                        //out.print("{ \"message\": \"Success!\" }");
-                        
+                  
                         
                   } else {
                         response.setHeader("Login","Failure");
-                        //out.print("{ \"message\": \"Failure!\" }");
+
                   }
 
                  out.flush();

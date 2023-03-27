@@ -37,8 +37,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        emailField = findViewById(R.id.loginEmailField);
-        passwordField = findViewById(R.id.loginPasswordField);
+        emailField = findViewById(R.id.login_email);
+        passwordField = findViewById(R.id.login_password);
 
     }
 
@@ -104,9 +104,14 @@ public class Login extends AppCompatActivity {
                 if (responseCode == HttpURLConnection.HTTP_OK) {  // 200
 
                     String result = conn.getHeaderField("Login");
-                    userID = conn.getHeaderField("userID");
-                    name = conn.getHeaderField("name");
-                    Log.d("Name",name);
+
+                    try {
+                        userID = conn.getHeaderField("userID");
+                        name = conn.getHeaderField("name");
+
+                    } catch (Exception e) {
+
+                    }
 
                     return result;
                 } else {

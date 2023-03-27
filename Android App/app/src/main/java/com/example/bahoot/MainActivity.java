@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.text.InputFilter;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 
@@ -187,37 +189,35 @@ public class MainActivity extends AppCompatActivity {
 
         String finalTableID = tableID;
 
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View dialogView = inflater.inflate(R.layout.dialog_comment, null);
+
+
+        EditText et = dialogView.findViewById(R.id.comment_editText);
+        et.setText(userComment);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setView(dialogView);
+
 
         String commentText;
         final String[] confirmText = new String[1];
         if (userComment == null) {
-            alert.setTitle("Comment");
+            builder.setTitle("Comment");
             commentText = "Comment";
             confirmText[0] = "Comment Sent!";
         }
         else {
-            alert.setTitle("Edit Comment");
+            builder.setTitle("Edit Comment");
             commentText = "Update Comment";
             confirmText[0] = "Comment Updated!";
         }
 
-        // Set an EditText view to get user input
-        final EditText input = new EditText(this);
-        input.setHint("Enter Comment");
-        input.setHeight(500);
-        input.setPadding(100,75,0,0);
-        input.setText(userComment);
-        // Creates a maxLength filter of 500 for the input
-        int maxLength = 500;
-        InputFilter[] fArray = new InputFilter[1];
-        fArray[0] = new InputFilter.LengthFilter(maxLength);
-        input.setFilters(fArray);
 
-        alert.setView(input);
+        builder.setPositiveButton(commentText, (dialog, id) -> {
 
-        alert.setPositiveButton(commentText, (dialog, whichButton) -> {
-            userComment = input.getText().toString();
+            userComment = et.getText().toString();
 
             if (answered) {
                 String updateSQL = "UPDATE responses SET comment='" + userComment
@@ -245,10 +245,12 @@ public class MainActivity extends AppCompatActivity {
                 commentButton.setText(R.string.comment);
         });
 
-        alert.setNegativeButton("Cancel", (dialog, whichButton) -> {
+        builder.setNegativeButton("Cancel", (dialog, whichButton) -> {
             // Nothing happens upon clicking cancel
         });
-        alert.show();
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
     /*--------------------------------Methods-----------------------------------------------------*/
     // Gets the roomCode's currentQuestionID column value from the session table
@@ -328,6 +330,7 @@ public class MainActivity extends AppCompatActivity {
                     scoreCheckSQL);
 
         }  else if (step == 3) {
+            score = Integer.parseInt(scoreStr);
             String text = "Score: " + scoreStr;
             scoreTextView.setText(text);
         }
@@ -516,12 +519,7 @@ public class MainActivity extends AppCompatActivity {
 
                     else if (this.scoreCheck) {
                         scoreStr = conn.getHeaderField("score");
-                        if (scoreStr == null)
-                            getScore(2);
-                        else {
-                            score = Integer.parseInt(scoreStr);
-                            getScore(3);
-                        }
+
                     }
                     return null;
 
@@ -562,6 +560,17 @@ public class MainActivity extends AppCompatActivity {
                 buttonResponse(questionResult,false);
                 return;
             }
+
+            if (this.scoreCheck) {
+                if(scoreStr == null)
+                    getScore(2);
+                else
+                    getScore(3);
+
+
+                return;
+            }
+
             // move to next question
             if (doNextQuestion) {
                 nextQuestion();

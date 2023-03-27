@@ -1,105 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/bahootBackground"
-    android:weightSum="8"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/registerLayout"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bahootBackground"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:paddingStart="40dp"
-    android:paddingEnd="40dp"
-    android:paddingBottom="60dp">
+    android:padding="16dp">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/bahootLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@mipmap/bahoot" />
 
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/register_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:fontFamily="@font/inter_extra_bold"
         android:text="@string/registerText"
-        android:textColor="#FFFFFF"
-        android:textSize="60sp"/>
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:gravity="center" />
+
 
     <EditText
-        android:id="@+id/registerNameField"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/white"
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/white"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName"
-        android:maxLength="50"/>
+        android:fontFamily="@font/inter_semi_bold"
+        android:padding="16dp" />
 
     <EditText
-        android:id="@+id/registerEmailField"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/white"
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
         android:ems="10"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
-        android:maxLength="50"/>
+        android:fontFamily="@font/inter_semi_bold"
+        android:padding="16dp" />
 
     <EditText
-        android:id="@+id/registerPhoneNumberField"
-        android:layout_gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/white"
+        android:id="@+id/register_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
         android:ems="10"
         android:hint="@string/phone_number"
         android:inputType="phone"
-        android:maxLength="8"/>
+        android:fontFamily="@font/inter_semi_bold"
+        android:padding="16dp" />
 
     <EditText
-        android:id="@+id/registerPasswordField"
-        android:layout_gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/white"
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
         android:ems="10"
         android:hint="@string/prompt_password"
         android:inputType="textPassword"
-        android:maxLength="50"/>
+        android:fontFamily="@font/inter_semi_bold"
+        android:padding="16dp" />
 
     <EditText
-        android:id="@+id/registerConfirmPasswordField"
-        android:layout_gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/white"
+        android:id="@+id/register_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
         android:ems="10"
         android:hint="@string/confirm_password"
         android:inputType="textPassword"
-        android:maxLength="50"/>
+        android:fontFamily="@font/inter_semi_bold"
+        android:padding="16dp" />
 
     <Button
-        android:id="@+id/register"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:id="@+id/registerButton"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/bahootButton"
-        android:onClick="register"
+        android:fontFamily="@font/inter_semi_bold"
         android:text="@string/registerText"
-        android:textColor="@color/white" />
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:onClick="register"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

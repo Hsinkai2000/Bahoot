@@ -7,35 +7,41 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:paddingStart="40dp"
-    android:paddingEnd="40dp">
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
     <TableRow
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/bahoot" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/bahoot" />
 
-        <TextView
-            android:id="@+id/questionNumberText"
-            android:layout_width="177dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Question"
-            android:textColor="@color/white"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/questionNumberText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:fontFamily="@font/inter_extra_bold"
+        android:text="Question"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="75dp"
-            android:layout_gravity="center"
-            app:srcCompat="@android:drawable/ic_menu_myplaces"
-            android:onClick="logOut"/>
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        android:onClick="logOut"/>
 
     </TableRow>
 
@@ -46,12 +52,13 @@
         android:layout_height="wrap_content"
         android:indeterminate="false"
         android:max="20"
-        android:minHeight="50dp"
+        android:minHeight="24dp"
         android:minWidth="200dp"
         android:progress="0"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/option1Button"
@@ -60,7 +67,8 @@
         android:layout_weight="1.75"
         android:backgroundTint="#0275D8"
         android:onClick="option1"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/option2Button"
@@ -69,7 +77,8 @@
         android:layout_weight="1.75"
         android:backgroundTint="#5cb85c"
         android:onClick="option2"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
 
     <Button
 
@@ -78,7 +87,8 @@
         android:layout_height="0dp"
         android:layout_weight="1.75"
         android:backgroundTint="#5bc0de"
-        android:onClick="option3" />
+        android:onClick="option3"
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/option4Button"
@@ -86,41 +96,53 @@
         android:layout_height="0dp"
         android:layout_weight="1.75"
         android:backgroundTint="#f0ad4e"
-        android:onClick="option4" />
+        android:onClick="option4"
+        android:textSize="18sp"/>
+
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
 
         <Button
             android:id="@+id/commentButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
             android:backgroundTint="#d9534f"
             android:onClick="comment"
+            android:fontFamily="@font/inter_extra_bold"
             android:text="Comment"
-            android:textColor="#FFFFFF" />
-
-        <TextView
-            android:id="@+id/scoreText"
-            android:layout_width="102dp"
-            android:layout_height="37dp"
-            android:layout_gravity="center"
-            android:text="Score"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/nextQuestionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
             android:backgroundTint="#d9534f"
             android:onClick="nextQuestionButton"
             android:text="@string/next_question"
-            android:textColor="#FFFFFF" />
+            android:fontFamily="@font/inter_extra_bold"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
     </TableRow>
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inter_extra_bold"
+        android:text="Score"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
