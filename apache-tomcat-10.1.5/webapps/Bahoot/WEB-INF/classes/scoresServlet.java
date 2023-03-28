@@ -29,10 +29,10 @@ public class scoresServlet extends HttpServlet {
                 LOGGER.info("setID: " + request.getParameter("setID"));
 
                 String setID = (String)request.getAttribute("setID");
-                String roomCode = (String)request.getAttribute("roomCode");
+                String roomCode = (String)request.getAttribute("room_code");
 
                 response.setHeader("setID",setID);
-                response.setHeader("roomCode",roomCode);
+                response.setHeader("room_code",roomCode);
 
                 LOGGER.info(roomCode);
                 
@@ -44,7 +44,7 @@ public class scoresServlet extends HttpServlet {
                 
                 Statement setIDstmt = conn.createStatement();) {
 
-                String setIDquery = "SELECT * FROM qnsets where id='" +setID + "'";
+                String setIDquery = "SELECT * FROM question_sets where id='" +setID + "'";
                 ResultSet siq = setIDstmt.executeQuery(setIDquery);
 
                 siq.next();

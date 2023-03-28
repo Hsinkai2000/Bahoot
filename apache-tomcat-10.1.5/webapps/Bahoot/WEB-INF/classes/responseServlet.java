@@ -40,7 +40,7 @@ public class responseServlet extends HttpServlet {
 
         option = request.getParameter("option");
         userID = request.getParameter("userID");
-        roomCode = request.getParameter("roomCode");
+        roomCode = request.getParameter("room_code");
         userComment = request.getParameter("userComment");
         questionSetID = request.getParameter("qnSetID");
         questionNumber = request.getParameter("qnNo");
@@ -56,7 +56,7 @@ public class responseServlet extends HttpServlet {
             Statement stmt = conn.createStatement();) {
 
             // get current questionID
-            String sqlStr = "SELECT currentQuestionID FROM session WHERE roomCode ='" + roomCode +"'";
+            String sqlStr = "SELECT current_question_id FROM session WHERE room_code ='" + roomCode +"'";
             ResultSet rset = stmt.executeQuery(sqlStr);
             rset.next();
             currentQuestionID = rset.getString(1);
@@ -87,7 +87,7 @@ public class responseServlet extends HttpServlet {
             LOGGER.info("Current Respondee: " + respondee);
 
             // send statistic to DB
-            sqlStr = "INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values "
+            sqlStr = "INSERT INTO responses (room_code, questionSetID, questionNo, choice, result, respondee, userID, comment) Values "
                 + "('" + roomCode + "', '" + questionSetID + "', '" + questionNumber + "', '" + option + "', '" + result +"', '" + respondee +"', '" + userID + "', '" + userComment +"')";
             LOGGER.info("Executing " + sqlStr); // Add a logging statement
             stmt.executeUpdate(sqlStr);

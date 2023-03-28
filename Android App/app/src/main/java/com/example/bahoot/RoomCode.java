@@ -47,7 +47,7 @@ public class RoomCode extends AppCompatActivity {
             Log.d("Tag","Room Code: " + roomCodeStr);
 
             String SQL = "SELECT * FROM session WHERE " +
-                    "roomCode = '"+ roomCodeStr + "'";
+                    "room_code = '"+ roomCodeStr + "'";
 
             new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     SQL);
@@ -69,7 +69,7 @@ public class RoomCode extends AppCompatActivity {
                     InputStream inputStream = conn.getInputStream();
 
                     String roomCode = conn.getHeaderField("id");
-                    currentQuestionID = conn.getHeaderField("currentQuestionID");
+                    currentQuestionID = conn.getHeaderField("current_question_id");
 
 
                     return roomCode;
@@ -92,7 +92,7 @@ public class RoomCode extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("userID", userID);
                 intent.putExtra("name",name);
-                intent.putExtra("roomCode",roomCodeStr);
+                intent.putExtra("room_code",roomCodeStr);
                 startActivity(intent);
 
             } else {

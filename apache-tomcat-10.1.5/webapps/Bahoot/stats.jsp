@@ -19,7 +19,7 @@ pageEncoding="UTF-8"%>
     ArrayList<String> queryResponseArray = new ArrayList<String>();
     ArrayList<ResultSet> responseRSArray = new ArrayList<ResultSet>();
     
-    String roomCode = response.getHeader("roomCode");
+    String roomCode = response.getHeader("room_code");
     String setID = response.getHeader("setID");
 
     ArrayList<Integer> totalCountArray = new ArrayList<Integer>();
@@ -50,11 +50,11 @@ pageEncoding="UTF-8"%>
 
       for (int i = 0; i < questionCount; i++) {
         choiceStmtArray.add(conn.createStatement());
-        queryChoiceArray.add("SELECT choice, COUNT(*) AS count FROM responses WHERE roomCode='"+ roomCode +"' AND questionSetID = '"+ setID +"' AND questionNo='" + (i+1) + "' GROUP BY choice");
+        queryChoiceArray.add("SELECT choice, COUNT(*) AS count FROM responses WHERE room_code='"+ roomCode +"' AND questionSetID = '"+ setID +"' AND questionNo='" + (i+1) + "' GROUP BY choice");
         choiceRSArray.add(choiceStmtArray.get(i).executeQuery(queryChoiceArray.get(i)));
 
         responseStmtArray.add(conn.createStatement());
-        queryResponseArray.add("SELECT * FROM responses WHERE roomCode='"+ roomCode +"' AND questionSetID = '"+ setID +"' AND questionNo='" + (i+1) + "'");
+        queryResponseArray.add("SELECT * FROM responses WHERE room_code='"+ roomCode +"' AND questionSetID = '"+ setID +"' AND questionNo='" + (i+1) + "'");
         responseRSArray.add(responseStmtArray.get(i).executeQuery(queryResponseArray.get(i)));
 
     

@@ -22,7 +22,7 @@
           <img src="./images/bahoot-logo-transparent.png" width="500" height="500">
         </h1>
         <form method="get" action="selection.jsp">
-          <input id="roomCode" name="roomCode" type="text" class="d-block text-center mt-3 " style="padding-left: 200px;padding-right: 200px;" placeholder="Enter Room Code!" maxLength="6" required>
+          <input id="room_code" name="room_code" type="text" class="d-block text-center mt-3 " style="padding-left: 200px;padding-right: 200px;" placeholder="Enter Room Code!" maxLength="6" required>
           <button type="submit" class="btn btn-primary mt-5">Host Bahoot!</button>
         <form method="get" action="viewQuestions">
       </div>

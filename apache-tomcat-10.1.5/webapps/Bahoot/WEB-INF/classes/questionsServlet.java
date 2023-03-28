@@ -23,8 +23,8 @@ public class questionsServlet extends HttpServlet {
 
         setid = Integer.parseInt(request.getParameter("setid"));
         totalQn = Integer.parseInt(request.getParameter("totalQn"));
-        roomCode = request.getParameter("roomCode");
-        LOGGER.info("roomCode: " + roomCode);
+        roomCode = request.getParameter("room_code");
+        LOGGER.info("room_code: " + roomCode);
 
         if(request.getParameter("qnNo") != null){
                 qnNo = Integer.parseInt(request.getParameter("qnNo"));
@@ -47,7 +47,7 @@ public class questionsServlet extends HttpServlet {
                         questionID = rs.getInt("id");
                         updateCurrentQn(stmt2, questionID);
 
-                        response.setHeader("roomCode",roomCode);
+                        response.setHeader("room_code",roomCode);
                         response.setIntHeader("setid", setid);
                         response.setIntHeader("qnNo",qnNo);
                         response.setIntHeader("totalQn", totalQn);
@@ -66,14 +66,14 @@ public class questionsServlet extends HttpServlet {
         else{
                 RequestDispatcher rd = request.getRequestDispatcher("display");
                 request.setAttribute("setID",Integer.toString(setid));
-                request.setAttribute("roomCode",roomCode);
+                request.setAttribute("room_code",roomCode);
                 rd.forward(request,response);
         }
     }
 
     private static void updateCurrentQn(Statement stmt, int qnNo){
         try{
-                String setQnNO = "Update session set currentQuestionID = " + qnNo;
+                String setQnNO = "Update session set current_question_id = " + qnNo;
                 stmt.executeUpdate(setQnNO);
         }catch(Exception e){
                 LOGGER.info("set qn NO failed: "+ e);

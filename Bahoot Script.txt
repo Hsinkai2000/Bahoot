@@ -5,11 +5,11 @@ use bahoot;
 drop table if exists responses;
 drop table if exists Users;
 drop table if exists questions;
-drop table if exists qnSets;
+drop table if exists question_sets;
 drop table if exists session;
 drop table if exists score;
 
-create table qnSets (
+create table question_sets (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(50),
     totalQn int,
@@ -41,7 +41,7 @@ create table Users (
 
 Create table responses (
     id int NOT NULL AUTO_INCREMENT,
-    roomCode varchar(6),
+    room_code varchar(6),
     questionSetID int,
     questionNo int,
     choice int,
@@ -54,14 +54,14 @@ Create table responses (
 
 Create table session (
     id int NOT NULL AUTO_INCREMENT,
-    roomCode varchar(6) UNIQUE,
-    currentQuestionID int,
+    room_code varchar(6) UNIQUE,
+    current_question_id int,
     primary key (id)
 );
 
 Create table score (
     id int NOT NULL AUTO_INCREMENT,
-    roomCode varchar(6),
+    room_code varchar(6),
     userID int,
     name varchar(50),
     score int,
@@ -84,11 +84,11 @@ INSERT INTO questions (setID, qnNo, question, opt1, opt2, opt3, opt4, correctOpt
 	('4', '2', 'Which of the following passes information from JSP to included JSP?', '<%jsp:param>', '<%jsp:page>', '<%jsp:import>', '<%jsp:useBean>', '1 '),
 	('4', '3', 'Which of the following attributes can be used to generate a PDF page?', 'contentType', 'generatePdf', 'typePDF', 'contentPDF', '1 ');
 
-INSERT INTO session (roomCode, currentQuestionID) VALUES
+INSERT INTO session (room_code, current_question_id) VALUES
     ("774537",1);
     
 
-INSERT INTO qnSets (name, totalQn, ownerID) VALUES 
+INSERT INTO question_sets (name, totalQn, ownerID) VALUES 
     ('Object Oriented Programming', 5, 1),
     ('HTML Programming',3, 1),
     ('Web Servlet Programming',3, 1),    
@@ -102,7 +102,7 @@ INSERT INTO Users (email, name, password, mobile_number) VALUES
 	('DenonLee@gmail.com', 'Lee Denon', 'passwordLee', 84927943),
 	('i@g.com', 'Irfan', '123', 96641005);
 
-INSERT INTO responses (roomCode, questionSetID, questionNo, choice, respondee, result, userID, comment) 
+INSERT INTO responses (room_code, questionSetID, questionNo, choice, respondee, result, userID, comment) 
 VALUES 
     ("774537", 1, 1, 3, "Lim Chock Hong", "Correct", 1, "Great question, really made me think outside the box."),
     ("774537", 1, 1, 4, "James Liu", "Incorrect", 2, "I appreciated the challenge in this question, it helped me grow my knowledge."),
@@ -127,7 +127,7 @@ VALUES
     ("774537", 1, 5, 3, "James Liu", "Incorrect", 2, "Thank you for including this question - it helped me identify an area where I need to study more.");
 
 
-INSERT INTO score (roomCode, userID, name, score) VALUES
+INSERT INTO score (room_code, userID, name, score) VALUES
     ('774537', 1, "Lim Chock Hong", 2),
     ('774537', 2, "James Liu", 1),
     ('774537', 3, "Kelly Tay", 1),

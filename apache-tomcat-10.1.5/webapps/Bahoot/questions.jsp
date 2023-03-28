@@ -4,7 +4,7 @@ pageEncoding="UTF-8"%>
 <% 
  
   String[] optArray = {response.getHeader("opt1"),response.getHeader("opt2"),response.getHeader("opt3"),response.getHeader("opt4")};
-  String roomCode = response.getHeader("roomCode");
+  String roomCode = response.getHeader("room_code");
 
   for (int i = 0; i < 4; i++) {
       optArray[i] = optArray[i].replaceAll("<", "&lt;").replaceAll(">", "&gt;");
@@ -82,7 +82,7 @@ pageEncoding="UTF-8"%>
               <input hidden name="qnNo" value="<%= Integer.parseInt(response.getHeader("qnNo")) +1 %>" >
               <input hidden name="setid" value="<%= response.getHeader("setid") %>" >
               <input hidden name="totalQn" value="<%= response.getHeader("totalQn") %>">
-              <input hidden name="roomCode" value="<%= response.getHeader("roomCode") %>">
+              <input hidden name="room_code" value="<%= response.getHeader("room_code") %>">
               <button class="btn btn-danger" style="width: 100%;">Next Question</button>
             </form>            
           </div>

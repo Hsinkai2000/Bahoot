@@ -33,14 +33,14 @@ pageEncoding="UTF-8"%>
               "root", "password");
 
       Statement stmt = conn.createStatement();
-      String queryQuestions = "SELECT * FROM qnSets";
+      String queryQuestions = "SELECT * FROM question_sets";
       ResultSet rs = stmt.executeQuery(queryQuestions);
 
 
 
       try {
         Statement insertStmt = conn.createStatement();
-        String insertSQL = "INSERT INTO session (roomCode, currentQuestionID) VALUES ('"+request.getParameter("roomCode")+"',0)";
+        String insertSQL = "INSERT INTO session (room_code, current_question_id) VALUES ('"+request.getParameter("room_code")+"',0)";
         insertStmt.executeUpdate(insertSQL);
       } catch (Exception e) {
 
@@ -62,7 +62,7 @@ pageEncoding="UTF-8"%>
                 <form method="get" action="viewQuestions">
                   <input hidden name="setid" value="<%= rs.getInt("id") %>" >
                   <input hidden name="totalQn" value="<%= rs.getInt("totalQn") %>">
-                  <input hidden name="roomCode" value=<%=request.getParameter("roomCode")%>>
+                  <input hidden name="room_code" value=<%=request.getParameter("room_code")%>>
                   <button type="submit" class="btn btn-info">Host</button>
                 </form>
               </div>
