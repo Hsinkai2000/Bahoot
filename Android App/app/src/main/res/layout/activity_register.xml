@@ -61,7 +61,8 @@
         android:hint="@string/phone_number"
         android:inputType="phone"
         android:fontFamily="@font/inter_semi_bold"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:maxLength="8"/>
 
     <EditText
         android:id="@+id/register_password"

@@ -934,3 +934,728 @@ Stacktrace:
 28-Mar-2023 00:56:48.216 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 28-Mar-2023 00:56:48.237 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
 28-Mar-2023 00:56:48.254 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+28-Mar-2023 11:09:48.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+28-Mar-2023 11:09:48.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/conf/logging.properties
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+28-Mar-2023 11:09:48.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+28-Mar-2023 11:09:48.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+28-Mar-2023 11:09:48.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5
+28-Mar-2023 11:09:48.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/temp
+28-Mar-2023 11:09:48.682 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/irfansyakir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+28-Mar-2023 11:09:48.853 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+28-Mar-2023 11:09:48.886 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [354] milliseconds
+28-Mar-2023 11:09:48.904 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Mar-2023 11:09:48.905 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+28-Mar-2023 11:09:48.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/docs]
+28-Mar-2023 11:09:49.203 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Mar-2023 11:09:49.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/docs] has finished in [313] ms
+28-Mar-2023 11:09:49.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/manager]
+28-Mar-2023 11:09:49.367 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Mar-2023 11:09:49.372 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/manager] has finished in [148] ms
+28-Mar-2023 11:09:49.372 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/examples]
+28-Mar-2023 11:09:49.569 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Mar-2023 11:09:49.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/examples] has finished in [204] ms
+28-Mar-2023 11:09:49.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/ROOT]
+28-Mar-2023 11:09:49.705 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Mar-2023 11:09:49.706 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/ROOT] has finished in [130] ms
+28-Mar-2023 11:09:49.706 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/host-manager]
+28-Mar-2023 11:09:49.825 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Mar-2023 11:09:49.826 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/host-manager] has finished in [120] ms
+28-Mar-2023 11:09:49.826 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/Bahoot]
+28-Mar-2023 11:09:49.949 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Mar-2023 11:09:49.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/irfansyakir/Documents/Bahoot/apache-tomcat-10.1.5/webapps/Bahoot] has finished in [127] ms
+28-Mar-2023 11:09:49.954 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+28-Mar-2023 11:09:49.959 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1072] milliseconds
+28-Mar-2023 11:10:56.708 INFO [http-nio-9999-exec-2] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:10:56.711 INFO [http-nio-9999-exec-2] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:11:04.037 INFO [http-nio-9999-exec-6] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:11:04.038 INFO [http-nio-9999-exec-6] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:11:05.443 INFO [http-nio-9999-exec-9] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:11:05.444 INFO [http-nio-9999-exec-9] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:11:06.472 INFO [http-nio-9999-exec-1] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:11:06.472 INFO [http-nio-9999-exec-1] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:11:07.939 INFO [http-nio-9999-exec-3] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:11:07.940 INFO [http-nio-9999-exec-3] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:11:10.421 INFO [http-nio-9999-exec-2] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:11:10.421 INFO [http-nio-9999-exec-2] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:11:10.423 INFO [http-nio-9999-exec-2] scoresServlet.doGet IN scores servlet
+28-Mar-2023 11:11:10.424 INFO [http-nio-9999-exec-2] scoresServlet.doGet setID: null
+28-Mar-2023 11:11:10.424 INFO [http-nio-9999-exec-2] scoresServlet.doGet 774537
+28-Mar-2023 11:12:24.187 INFO [http-nio-9999-exec-4] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:12:24.188 INFO [http-nio-9999-exec-4] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:12:26.437 INFO [http-nio-9999-exec-8] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:12:26.437 INFO [http-nio-9999-exec-8] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:12:27.502 INFO [http-nio-9999-exec-5] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:12:27.503 INFO [http-nio-9999-exec-5] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:12:28.242 INFO [http-nio-9999-exec-7] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:12:28.243 INFO [http-nio-9999-exec-7] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:12:29.306 INFO [http-nio-9999-exec-10] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:12:29.307 INFO [http-nio-9999-exec-10] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:12:30.108 INFO [http-nio-9999-exec-4] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:12:30.109 INFO [http-nio-9999-exec-4] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:12:30.109 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+28-Mar-2023 11:12:30.109 INFO [http-nio-9999-exec-4] scoresServlet.doGet setID: null
+28-Mar-2023 11:12:30.109 INFO [http-nio-9999-exec-4] scoresServlet.doGet 123
+28-Mar-2023 11:13:38.296 INFO [http-nio-9999-exec-8] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:13:38.300 INFO [http-nio-9999-exec-8] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:13:46.880 INFO [http-nio-9999-exec-5] loginServlet.doGet loginServlet called
+28-Mar-2023 11:13:46.936 INFO [http-nio-9999-exec-5] loginServlet.doGet Login Successful
+28-Mar-2023 11:13:57.719 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:13:57.728 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing SELECT * FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:13:57.736 INFO [http-nio-9999-exec-7] SQLServlet.doGet id:1
+28-Mar-2023 11:13:57.738 INFO [http-nio-9999-exec-7] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:13:57.738 INFO [http-nio-9999-exec-7] SQLServlet.doGet currentQuestionID:1
+28-Mar-2023 11:13:59.111 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:13:59.146 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:13:59.149 INFO [http-nio-9999-exec-10] SQLServlet.doGet currentQuestionID:1
+28-Mar-2023 11:13:59.167 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:13:59.172 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+28-Mar-2023 11:13:59.175 INFO [http-nio-9999-exec-1] SQLServlet.doGet id:1
+28-Mar-2023 11:13:59.176 INFO [http-nio-9999-exec-1] SQLServlet.doGet setID:1
+28-Mar-2023 11:13:59.176 INFO [http-nio-9999-exec-1] SQLServlet.doGet qnNo:1
+28-Mar-2023 11:13:59.176 INFO [http-nio-9999-exec-1] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+28-Mar-2023 11:13:59.176 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt1:3
+28-Mar-2023 11:13:59.176 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt2:6
+28-Mar-2023 11:13:59.176 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt3:10
+28-Mar-2023 11:13:59.176 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt4:14
+28-Mar-2023 11:13:59.177 INFO [http-nio-9999-exec-1] SQLServlet.doGet correctOpt:3
+28-Mar-2023 11:13:59.217 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:13:59.222 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:13:59.265 INFO [http-nio-9999-exec-3] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:13:59.269 INFO [http-nio-9999-exec-3] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='1' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:13:59.443 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:13:59.450 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing INSERT INTO score (roomCode, userID, name, score) VALUES ('774537', '6', 'Irfan', '0')
+28-Mar-2023 11:14:04.906 INFO [http-nio-9999-exec-2] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:14:04.940 INFO [http-nio-9999-exec-2] responseServlet.doGet Current QuestionID: 1
+28-Mar-2023 11:14:04.940 INFO [http-nio-9999-exec-2] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+28-Mar-2023 11:14:04.942 INFO [http-nio-9999-exec-2] responseServlet.doGet Correct Option: 3
+28-Mar-2023 11:14:04.942 INFO [http-nio-9999-exec-2] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:14:04.944 INFO [http-nio-9999-exec-2] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:14:04.949 INFO [http-nio-9999-exec-2] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '1', '3', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:14:04.952 INFO [http-nio-9999-exec-2] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:14:04.955 INFO [http-nio-9999-exec-2] responseServlet.doGet Responses Table ID:22
+28-Mar-2023 11:14:05.014 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:05.018 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing UPDATE SCORE SET score='1' WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:14:12.734 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:12.757 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing UPDATE responses SET comment='ez pz' WHERE id='22'
+28-Mar-2023 11:14:14.730 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:14.764 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:14:14.767 INFO [http-nio-9999-exec-9] SQLServlet.doGet currentQuestionID:1
+28-Mar-2023 11:14:17.087 INFO [http-nio-9999-exec-10] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:14:17.093 INFO [http-nio-9999-exec-10] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:14:22.451 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:22.471 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:14:22.473 INFO [http-nio-9999-exec-7] SQLServlet.doGet currentQuestionID:2
+28-Mar-2023 11:14:23.413 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:23.441 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:14:23.443 INFO [http-nio-9999-exec-9] SQLServlet.doGet currentQuestionID:2
+28-Mar-2023 11:14:23.453 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:23.456 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='2'
+28-Mar-2023 11:14:23.457 INFO [http-nio-9999-exec-10] SQLServlet.doGet id:2
+28-Mar-2023 11:14:23.458 INFO [http-nio-9999-exec-10] SQLServlet.doGet setID:1
+28-Mar-2023 11:14:23.458 INFO [http-nio-9999-exec-10] SQLServlet.doGet qnNo:2
+28-Mar-2023 11:14:23.458 INFO [http-nio-9999-exec-10] SQLServlet.doGet question:Constructors are used to
+28-Mar-2023 11:14:23.459 INFO [http-nio-9999-exec-10] SQLServlet.doGet opt1:Build a user interface
+28-Mar-2023 11:14:23.459 INFO [http-nio-9999-exec-10] SQLServlet.doGet opt2:Free Memory
+28-Mar-2023 11:14:23.459 INFO [http-nio-9999-exec-10] SQLServlet.doGet opt3:Initialize a newly created object
+28-Mar-2023 11:14:23.459 INFO [http-nio-9999-exec-10] SQLServlet.doGet opt4:To create a subclass
+28-Mar-2023 11:14:23.459 INFO [http-nio-9999-exec-10] SQLServlet.doGet correctOpt:3
+28-Mar-2023 11:14:23.470 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:23.473 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:14:23.474 INFO [http-nio-9999-exec-1] SQLServlet.doGet id:6
+28-Mar-2023 11:14:23.474 INFO [http-nio-9999-exec-1] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:14:23.474 INFO [http-nio-9999-exec-1] SQLServlet.doGet userID:6
+28-Mar-2023 11:14:23.474 INFO [http-nio-9999-exec-1] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:14:23.474 INFO [http-nio-9999-exec-1] SQLServlet.doGet score:1
+28-Mar-2023 11:14:23.509 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:23.513 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='2' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:14:26.814 INFO [http-nio-9999-exec-3] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:14:26.827 INFO [http-nio-9999-exec-3] responseServlet.doGet Current QuestionID: 2
+28-Mar-2023 11:14:26.827 INFO [http-nio-9999-exec-3] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='2'
+28-Mar-2023 11:14:26.828 INFO [http-nio-9999-exec-3] responseServlet.doGet Correct Option: 3
+28-Mar-2023 11:14:26.828 INFO [http-nio-9999-exec-3] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:14:26.829 INFO [http-nio-9999-exec-3] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:14:26.829 INFO [http-nio-9999-exec-3] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '2', '4', 'Incorrect', 'Irfan', '6', 'null')
+28-Mar-2023 11:14:26.833 INFO [http-nio-9999-exec-3] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:14:26.835 INFO [http-nio-9999-exec-3] responseServlet.doGet Responses Table ID:23
+28-Mar-2023 11:14:41.760 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:41.784 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing UPDATE responses SET comment='what kind of question is this????' WHERE id='23'
+28-Mar-2023 11:14:44.365 INFO [http-nio-9999-exec-3] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:14:44.367 INFO [http-nio-9999-exec-3] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:14:47.099 INFO [http-nio-9999-exec-6] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:47.116 INFO [http-nio-9999-exec-6] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:14:47.124 INFO [http-nio-9999-exec-6] SQLServlet.doGet currentQuestionID:3
+28-Mar-2023 11:14:47.577 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:47.582 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:14:47.584 INFO [http-nio-9999-exec-2] SQLServlet.doGet currentQuestionID:3
+28-Mar-2023 11:14:47.593 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:47.598 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='3'
+28-Mar-2023 11:14:47.599 INFO [http-nio-9999-exec-7] SQLServlet.doGet id:3
+28-Mar-2023 11:14:47.600 INFO [http-nio-9999-exec-7] SQLServlet.doGet setID:1
+28-Mar-2023 11:14:47.600 INFO [http-nio-9999-exec-7] SQLServlet.doGet qnNo:3
+28-Mar-2023 11:14:47.601 INFO [http-nio-9999-exec-7] SQLServlet.doGet question:An object that has more than one form is referred to as:
+28-Mar-2023 11:14:47.601 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt1:inheritance
+28-Mar-2023 11:14:47.601 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt2:interface
+28-Mar-2023 11:14:47.601 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt3:Abstract class
+28-Mar-2023 11:14:47.601 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt4:Polymorphism
+28-Mar-2023 11:14:47.602 INFO [http-nio-9999-exec-7] SQLServlet.doGet correctOpt:4
+28-Mar-2023 11:14:47.624 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:47.629 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:14:47.630 INFO [http-nio-9999-exec-9] SQLServlet.doGet id:6
+28-Mar-2023 11:14:47.631 INFO [http-nio-9999-exec-9] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:14:47.631 INFO [http-nio-9999-exec-9] SQLServlet.doGet userID:6
+28-Mar-2023 11:14:47.631 INFO [http-nio-9999-exec-9] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:14:47.631 INFO [http-nio-9999-exec-9] SQLServlet.doGet score:1
+28-Mar-2023 11:14:47.643 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:47.646 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='3' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:14:48.717 INFO [http-nio-9999-exec-1] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:14:48.729 INFO [http-nio-9999-exec-1] responseServlet.doGet Current QuestionID: 3
+28-Mar-2023 11:14:48.729 INFO [http-nio-9999-exec-1] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='3'
+28-Mar-2023 11:14:48.731 INFO [http-nio-9999-exec-1] responseServlet.doGet Correct Option: 4
+28-Mar-2023 11:14:48.732 INFO [http-nio-9999-exec-1] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:14:48.740 INFO [http-nio-9999-exec-1] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:14:48.741 INFO [http-nio-9999-exec-1] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '3', '4', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:14:48.749 INFO [http-nio-9999-exec-1] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:14:48.750 INFO [http-nio-9999-exec-1] responseServlet.doGet Responses Table ID:24
+28-Mar-2023 11:14:48.758 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:48.762 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing UPDATE SCORE SET score='2' WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:14:54.078 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:54.119 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing UPDATE responses SET comment='tooooo ez' WHERE id='24'
+28-Mar-2023 11:14:55.963 INFO [http-nio-9999-exec-3] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:14:55.965 INFO [http-nio-9999-exec-3] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:14:57.398 INFO [http-nio-9999-exec-6] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:57.405 INFO [http-nio-9999-exec-6] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:14:57.406 INFO [http-nio-9999-exec-6] SQLServlet.doGet currentQuestionID:4
+28-Mar-2023 11:14:57.985 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:57.990 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:14:57.991 INFO [http-nio-9999-exec-2] SQLServlet.doGet currentQuestionID:4
+28-Mar-2023 11:14:58.004 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:58.008 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='4'
+28-Mar-2023 11:14:58.009 INFO [http-nio-9999-exec-7] SQLServlet.doGet id:4
+28-Mar-2023 11:14:58.010 INFO [http-nio-9999-exec-7] SQLServlet.doGet setID:1
+28-Mar-2023 11:14:58.010 INFO [http-nio-9999-exec-7] SQLServlet.doGet qnNo:4
+28-Mar-2023 11:14:58.010 INFO [http-nio-9999-exec-7] SQLServlet.doGet question: In which access should a constructor be defined, so that object of the class can be created in any function?
+28-Mar-2023 11:14:58.010 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt1:Any access specifier will work
+28-Mar-2023 11:14:58.010 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt2:Public
+28-Mar-2023 11:14:58.010 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt3: Protected
+28-Mar-2023 11:14:58.010 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt4:Private
+28-Mar-2023 11:14:58.010 INFO [http-nio-9999-exec-7] SQLServlet.doGet correctOpt:2
+28-Mar-2023 11:14:58.024 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:58.029 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:14:58.031 INFO [http-nio-9999-exec-9] SQLServlet.doGet id:6
+28-Mar-2023 11:14:58.031 INFO [http-nio-9999-exec-9] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:14:58.031 INFO [http-nio-9999-exec-9] SQLServlet.doGet userID:6
+28-Mar-2023 11:14:58.031 INFO [http-nio-9999-exec-9] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:14:58.031 INFO [http-nio-9999-exec-9] SQLServlet.doGet score:2
+28-Mar-2023 11:14:58.042 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:58.046 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='4' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:14:59.913 INFO [http-nio-9999-exec-1] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:14:59.925 INFO [http-nio-9999-exec-1] responseServlet.doGet Current QuestionID: 4
+28-Mar-2023 11:14:59.926 INFO [http-nio-9999-exec-1] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='4'
+28-Mar-2023 11:14:59.926 INFO [http-nio-9999-exec-1] responseServlet.doGet Correct Option: 2
+28-Mar-2023 11:14:59.926 INFO [http-nio-9999-exec-1] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:14:59.926 INFO [http-nio-9999-exec-1] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:14:59.927 INFO [http-nio-9999-exec-1] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '4', '2', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:14:59.928 INFO [http-nio-9999-exec-1] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:14:59.929 INFO [http-nio-9999-exec-1] responseServlet.doGet Responses Table ID:25
+28-Mar-2023 11:14:59.943 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:14:59.946 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing UPDATE SCORE SET score='3' WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:15:01.151 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:15:01.154 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:15:01.155 INFO [http-nio-9999-exec-4] SQLServlet.doGet currentQuestionID:4
+28-Mar-2023 11:15:04.574 INFO [http-nio-9999-exec-5] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:15:04.579 INFO [http-nio-9999-exec-5] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:15:06.061 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:15:06.075 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:15:06.076 INFO [http-nio-9999-exec-2] SQLServlet.doGet currentQuestionID:5
+28-Mar-2023 11:15:06.380 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:15:06.388 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:15:06.390 INFO [http-nio-9999-exec-7] SQLServlet.doGet currentQuestionID:5
+28-Mar-2023 11:15:06.398 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:15:06.403 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='5'
+28-Mar-2023 11:15:06.405 INFO [http-nio-9999-exec-9] SQLServlet.doGet id:5
+28-Mar-2023 11:15:06.405 INFO [http-nio-9999-exec-9] SQLServlet.doGet setID:1
+28-Mar-2023 11:15:06.406 INFO [http-nio-9999-exec-9] SQLServlet.doGet qnNo:5
+28-Mar-2023 11:15:06.406 INFO [http-nio-9999-exec-9] SQLServlet.doGet question:Which access specifier is usually used for data members of a class?
+28-Mar-2023 11:15:06.406 INFO [http-nio-9999-exec-9] SQLServlet.doGet opt1:Private
+28-Mar-2023 11:15:06.406 INFO [http-nio-9999-exec-9] SQLServlet.doGet opt2:Protected
+28-Mar-2023 11:15:06.406 INFO [http-nio-9999-exec-9] SQLServlet.doGet opt3:Public
+28-Mar-2023 11:15:06.406 INFO [http-nio-9999-exec-9] SQLServlet.doGet opt4:Default
+28-Mar-2023 11:15:06.406 INFO [http-nio-9999-exec-9] SQLServlet.doGet correctOpt:1
+28-Mar-2023 11:15:06.423 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:15:06.429 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:15:06.432 INFO [http-nio-9999-exec-8] SQLServlet.doGet id:6
+28-Mar-2023 11:15:06.432 INFO [http-nio-9999-exec-8] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:15:06.433 INFO [http-nio-9999-exec-8] SQLServlet.doGet userID:6
+28-Mar-2023 11:15:06.433 INFO [http-nio-9999-exec-8] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:15:06.433 INFO [http-nio-9999-exec-8] SQLServlet.doGet score:3
+28-Mar-2023 11:15:06.442 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:15:06.446 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='5' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:15:26.494 INFO [http-nio-9999-exec-8] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:15:26.521 INFO [http-nio-9999-exec-8] responseServlet.doGet Current QuestionID: 5
+28-Mar-2023 11:15:26.522 INFO [http-nio-9999-exec-8] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='5'
+28-Mar-2023 11:15:26.523 INFO [http-nio-9999-exec-8] responseServlet.doGet Correct Option: 1
+28-Mar-2023 11:15:26.525 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:15:26.527 INFO [http-nio-9999-exec-8] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:15:26.527 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '5', '0', 'Incorrect', 'Irfan', '6', 'null')
+28-Mar-2023 11:15:26.534 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:15:26.535 INFO [http-nio-9999-exec-8] responseServlet.doGet Responses Table ID:26
+28-Mar-2023 11:15:35.278 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:15:35.307 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing UPDATE responses SET comment='ran out of time bruh' WHERE id='26'
+28-Mar-2023 11:15:37.761 INFO [http-nio-9999-exec-4] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:15:37.764 INFO [http-nio-9999-exec-4] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:15:37.765 INFO [http-nio-9999-exec-4] scoresServlet.doGet IN scores servlet
+28-Mar-2023 11:15:37.766 INFO [http-nio-9999-exec-4] scoresServlet.doGet setID: null
+28-Mar-2023 11:15:37.766 INFO [http-nio-9999-exec-4] scoresServlet.doGet 774537
+28-Mar-2023 11:17:58.243 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:17:58.253 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT * FROM session WHERE roomCode = '77453'
+28-Mar-2023 11:18:03.658 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:03.666 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT * FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:18:03.669 INFO [http-nio-9999-exec-1] SQLServlet.doGet id:1
+28-Mar-2023 11:18:03.669 INFO [http-nio-9999-exec-1] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:18:03.669 INFO [http-nio-9999-exec-1] SQLServlet.doGet currentQuestionID:1
+28-Mar-2023 11:18:03.829 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:03.832 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:18:03.833 INFO [http-nio-9999-exec-4] SQLServlet.doGet currentQuestionID:1
+28-Mar-2023 11:18:03.838 INFO [http-nio-9999-exec-6] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:03.844 INFO [http-nio-9999-exec-6] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+28-Mar-2023 11:18:03.845 INFO [http-nio-9999-exec-6] SQLServlet.doGet id:1
+28-Mar-2023 11:18:03.845 INFO [http-nio-9999-exec-6] SQLServlet.doGet setID:1
+28-Mar-2023 11:18:03.846 INFO [http-nio-9999-exec-6] SQLServlet.doGet qnNo:1
+28-Mar-2023 11:18:03.846 INFO [http-nio-9999-exec-6] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+28-Mar-2023 11:18:03.846 INFO [http-nio-9999-exec-6] SQLServlet.doGet opt1:3
+28-Mar-2023 11:18:03.846 INFO [http-nio-9999-exec-6] SQLServlet.doGet opt2:6
+28-Mar-2023 11:18:03.846 INFO [http-nio-9999-exec-6] SQLServlet.doGet opt3:10
+28-Mar-2023 11:18:03.846 INFO [http-nio-9999-exec-6] SQLServlet.doGet opt4:14
+28-Mar-2023 11:18:03.846 INFO [http-nio-9999-exec-6] SQLServlet.doGet correctOpt:3
+28-Mar-2023 11:18:03.853 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:03.857 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:18:03.864 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:03.872 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='1' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:18:03.981 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:03.986 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing INSERT INTO score (roomCode, userID, name, score) VALUES ('774537', '6', 'Irfan', '0')
+28-Mar-2023 11:18:19.507 INFO [http-nio-9999-exec-8] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:18:19.527 INFO [http-nio-9999-exec-8] responseServlet.doGet Current QuestionID: 1
+28-Mar-2023 11:18:19.527 INFO [http-nio-9999-exec-8] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+28-Mar-2023 11:18:19.530 INFO [http-nio-9999-exec-8] responseServlet.doGet Correct Option: 3
+28-Mar-2023 11:18:19.530 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:18:19.531 INFO [http-nio-9999-exec-8] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:18:19.531 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '1', '3', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:18:19.533 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:18:19.534 INFO [http-nio-9999-exec-8] responseServlet.doGet Responses Table ID:22
+28-Mar-2023 11:18:19.559 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:19.563 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing UPDATE SCORE SET score='1' WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:18:23.531 INFO [http-nio-9999-exec-4] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:18:23.532 INFO [http-nio-9999-exec-4] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:18:31.723 INFO [http-nio-9999-exec-8] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:18:31.724 INFO [http-nio-9999-exec-8] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:18:45.860 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:45.892 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing UPDATE responses SET comment='ez' WHERE id='22'
+28-Mar-2023 11:18:51.680 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:18:51.694 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing UPDATE responses SET comment='' WHERE id='22'
+28-Mar-2023 11:19:00.900 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:00.919 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing UPDATE responses SET comment='ez pz' WHERE id='22'
+28-Mar-2023 11:19:07.093 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:07.120 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:19:07.122 INFO [http-nio-9999-exec-9] SQLServlet.doGet currentQuestionID:2
+28-Mar-2023 11:19:07.864 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:07.869 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:19:07.871 INFO [http-nio-9999-exec-8] SQLServlet.doGet currentQuestionID:2
+28-Mar-2023 11:19:07.882 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:07.887 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='2'
+28-Mar-2023 11:19:07.890 INFO [http-nio-9999-exec-1] SQLServlet.doGet id:2
+28-Mar-2023 11:19:07.891 INFO [http-nio-9999-exec-1] SQLServlet.doGet setID:1
+28-Mar-2023 11:19:07.891 INFO [http-nio-9999-exec-1] SQLServlet.doGet qnNo:2
+28-Mar-2023 11:19:07.891 INFO [http-nio-9999-exec-1] SQLServlet.doGet question:Constructors are used to
+28-Mar-2023 11:19:07.891 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt1:Build a user interface
+28-Mar-2023 11:19:07.892 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt2:Free Memory
+28-Mar-2023 11:19:07.892 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt3:Initialize a newly created object
+28-Mar-2023 11:19:07.892 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt4:To create a subclass
+28-Mar-2023 11:19:07.892 INFO [http-nio-9999-exec-1] SQLServlet.doGet correctOpt:3
+28-Mar-2023 11:19:07.912 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:07.917 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:19:07.919 INFO [http-nio-9999-exec-4] SQLServlet.doGet id:6
+28-Mar-2023 11:19:07.919 INFO [http-nio-9999-exec-4] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:19:07.919 INFO [http-nio-9999-exec-4] SQLServlet.doGet userID:6
+28-Mar-2023 11:19:07.919 INFO [http-nio-9999-exec-4] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:19:07.919 INFO [http-nio-9999-exec-4] SQLServlet.doGet score:1
+28-Mar-2023 11:19:07.928 INFO [http-nio-9999-exec-6] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:07.931 INFO [http-nio-9999-exec-6] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='2' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:19:12.076 INFO [http-nio-9999-exec-2] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:19:12.093 INFO [http-nio-9999-exec-2] responseServlet.doGet Current QuestionID: 2
+28-Mar-2023 11:19:12.093 INFO [http-nio-9999-exec-2] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='2'
+28-Mar-2023 11:19:12.094 INFO [http-nio-9999-exec-2] responseServlet.doGet Correct Option: 3
+28-Mar-2023 11:19:12.094 INFO [http-nio-9999-exec-2] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:19:12.095 INFO [http-nio-9999-exec-2] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:19:12.096 INFO [http-nio-9999-exec-2] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '2', '1', 'Incorrect', 'Irfan', '6', 'null')
+28-Mar-2023 11:19:12.098 INFO [http-nio-9999-exec-2] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:19:12.098 INFO [http-nio-9999-exec-2] responseServlet.doGet Responses Table ID:23
+28-Mar-2023 11:19:16.903 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:16.914 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing UPDATE responses SET comment='wtf' WHERE id='23'
+28-Mar-2023 11:19:18.770 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:18.782 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:19:18.784 INFO [http-nio-9999-exec-5] SQLServlet.doGet currentQuestionID:2
+28-Mar-2023 11:19:25.032 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:25.077 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:19:25.079 INFO [http-nio-9999-exec-9] SQLServlet.doGet currentQuestionID:2
+28-Mar-2023 11:19:28.464 INFO [http-nio-9999-exec-2] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:19:28.467 INFO [http-nio-9999-exec-2] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:19:32.291 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:32.328 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:19:32.345 INFO [http-nio-9999-exec-5] SQLServlet.doGet currentQuestionID:3
+28-Mar-2023 11:19:33.310 INFO [http-nio-9999-exec-3] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:33.344 INFO [http-nio-9999-exec-3] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:19:33.347 INFO [http-nio-9999-exec-3] SQLServlet.doGet currentQuestionID:3
+28-Mar-2023 11:19:33.360 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:33.362 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='3'
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet id:3
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet setID:1
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet qnNo:3
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet question:An object that has more than one form is referred to as:
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet opt1:inheritance
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet opt2:interface
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet opt3:Abstract class
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet opt4:Polymorphism
+28-Mar-2023 11:19:33.363 INFO [http-nio-9999-exec-9] SQLServlet.doGet correctOpt:4
+28-Mar-2023 11:19:33.371 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:33.375 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:19:33.376 INFO [http-nio-9999-exec-4] SQLServlet.doGet id:6
+28-Mar-2023 11:19:33.376 INFO [http-nio-9999-exec-4] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:19:33.376 INFO [http-nio-9999-exec-4] SQLServlet.doGet userID:6
+28-Mar-2023 11:19:33.376 INFO [http-nio-9999-exec-4] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:19:33.376 INFO [http-nio-9999-exec-4] SQLServlet.doGet score:1
+28-Mar-2023 11:19:33.397 INFO [http-nio-9999-exec-6] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:33.403 INFO [http-nio-9999-exec-6] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='3' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:19:39.768 INFO [http-nio-9999-exec-8] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:19:39.819 INFO [http-nio-9999-exec-8] responseServlet.doGet Current QuestionID: 3
+28-Mar-2023 11:19:39.819 INFO [http-nio-9999-exec-8] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='3'
+28-Mar-2023 11:19:39.821 INFO [http-nio-9999-exec-8] responseServlet.doGet Correct Option: 4
+28-Mar-2023 11:19:39.822 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:19:39.824 INFO [http-nio-9999-exec-8] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:19:39.827 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '3', '4', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:19:39.829 INFO [http-nio-9999-exec-8] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:19:39.830 INFO [http-nio-9999-exec-8] responseServlet.doGet Responses Table ID:24
+28-Mar-2023 11:19:39.843 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:39.846 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing UPDATE SCORE SET score='2' WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:19:45.891 INFO [http-nio-9999-exec-6] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:19:45.894 INFO [http-nio-9999-exec-6] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:19:51.984 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:52.010 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:19:52.016 INFO [http-nio-9999-exec-8] SQLServlet.doGet currentQuestionID:4
+28-Mar-2023 11:19:52.455 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:52.463 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:19:52.465 INFO [http-nio-9999-exec-2] SQLServlet.doGet currentQuestionID:4
+28-Mar-2023 11:19:52.489 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:52.493 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='4'
+28-Mar-2023 11:19:52.494 INFO [http-nio-9999-exec-5] SQLServlet.doGet id:4
+28-Mar-2023 11:19:52.494 INFO [http-nio-9999-exec-5] SQLServlet.doGet setID:1
+28-Mar-2023 11:19:52.494 INFO [http-nio-9999-exec-5] SQLServlet.doGet qnNo:4
+28-Mar-2023 11:19:52.495 INFO [http-nio-9999-exec-5] SQLServlet.doGet question: In which access should a constructor be defined, so that object of the class can be created in any function?
+28-Mar-2023 11:19:52.495 INFO [http-nio-9999-exec-5] SQLServlet.doGet opt1:Any access specifier will work
+28-Mar-2023 11:19:52.495 INFO [http-nio-9999-exec-5] SQLServlet.doGet opt2:Public
+28-Mar-2023 11:19:52.495 INFO [http-nio-9999-exec-5] SQLServlet.doGet opt3: Protected
+28-Mar-2023 11:19:52.495 INFO [http-nio-9999-exec-5] SQLServlet.doGet opt4:Private
+28-Mar-2023 11:19:52.495 INFO [http-nio-9999-exec-5] SQLServlet.doGet correctOpt:2
+28-Mar-2023 11:19:52.505 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:52.509 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:19:52.510 INFO [http-nio-9999-exec-7] SQLServlet.doGet id:6
+28-Mar-2023 11:19:52.510 INFO [http-nio-9999-exec-7] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:19:52.510 INFO [http-nio-9999-exec-7] SQLServlet.doGet userID:6
+28-Mar-2023 11:19:52.510 INFO [http-nio-9999-exec-7] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:19:52.510 INFO [http-nio-9999-exec-7] SQLServlet.doGet score:2
+28-Mar-2023 11:19:52.515 INFO [http-nio-9999-exec-3] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:19:52.518 INFO [http-nio-9999-exec-3] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='4' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:20:03.272 INFO [http-nio-9999-exec-6] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:20:03.319 INFO [http-nio-9999-exec-6] responseServlet.doGet Current QuestionID: 4
+28-Mar-2023 11:20:03.320 INFO [http-nio-9999-exec-6] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='4'
+28-Mar-2023 11:20:03.321 INFO [http-nio-9999-exec-6] responseServlet.doGet Correct Option: 2
+28-Mar-2023 11:20:03.322 INFO [http-nio-9999-exec-6] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:20:03.323 INFO [http-nio-9999-exec-6] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:20:03.324 INFO [http-nio-9999-exec-6] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '4', '3', 'Incorrect', 'Irfan', '6', 'null')
+28-Mar-2023 11:20:03.326 INFO [http-nio-9999-exec-6] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:20:03.327 INFO [http-nio-9999-exec-6] responseServlet.doGet Responses Table ID:25
+28-Mar-2023 11:20:06.629 INFO [http-nio-9999-exec-1] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:20:06.631 INFO [http-nio-9999-exec-1] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:20:08.981 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:20:09.012 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:20:09.013 INFO [http-nio-9999-exec-2] SQLServlet.doGet currentQuestionID:5
+28-Mar-2023 11:20:09.149 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:20:09.154 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '774537'
+28-Mar-2023 11:20:09.155 INFO [http-nio-9999-exec-5] SQLServlet.doGet currentQuestionID:5
+28-Mar-2023 11:20:09.160 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:20:09.163 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='5'
+28-Mar-2023 11:20:09.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet id:5
+28-Mar-2023 11:20:09.169 INFO [http-nio-9999-exec-7] SQLServlet.doGet setID:1
+28-Mar-2023 11:20:09.169 INFO [http-nio-9999-exec-7] SQLServlet.doGet qnNo:5
+28-Mar-2023 11:20:09.170 INFO [http-nio-9999-exec-7] SQLServlet.doGet question:Which access specifier is usually used for data members of a class?
+28-Mar-2023 11:20:09.170 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt1:Private
+28-Mar-2023 11:20:09.170 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt2:Protected
+28-Mar-2023 11:20:09.170 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt3:Public
+28-Mar-2023 11:20:09.170 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt4:Default
+28-Mar-2023 11:20:09.170 INFO [http-nio-9999-exec-7] SQLServlet.doGet correctOpt:1
+28-Mar-2023 11:20:09.175 INFO [http-nio-9999-exec-3] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:20:09.178 INFO [http-nio-9999-exec-3] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='774537'
+28-Mar-2023 11:20:09.179 INFO [http-nio-9999-exec-3] SQLServlet.doGet id:6
+28-Mar-2023 11:20:09.179 INFO [http-nio-9999-exec-3] SQLServlet.doGet roomCode:774537
+28-Mar-2023 11:20:09.179 INFO [http-nio-9999-exec-3] SQLServlet.doGet userID:6
+28-Mar-2023 11:20:09.179 INFO [http-nio-9999-exec-3] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:20:09.179 INFO [http-nio-9999-exec-3] SQLServlet.doGet score:2
+28-Mar-2023 11:20:09.187 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:20:09.191 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='5' AND userID='6' AND roomCode='774537'
+28-Mar-2023 11:20:29.267 INFO [http-nio-9999-exec-10] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:20:29.302 INFO [http-nio-9999-exec-10] responseServlet.doGet Current QuestionID: 5
+28-Mar-2023 11:20:29.303 INFO [http-nio-9999-exec-10] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='5'
+28-Mar-2023 11:20:29.304 INFO [http-nio-9999-exec-10] responseServlet.doGet Correct Option: 1
+28-Mar-2023 11:20:29.304 INFO [http-nio-9999-exec-10] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:20:29.305 INFO [http-nio-9999-exec-10] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:20:29.306 INFO [http-nio-9999-exec-10] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('774537', '1', '5', '0', 'Incorrect', 'Irfan', '6', 'null')
+28-Mar-2023 11:20:29.308 INFO [http-nio-9999-exec-10] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:20:29.309 INFO [http-nio-9999-exec-10] responseServlet.doGet Responses Table ID:26
+28-Mar-2023 11:20:40.124 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:20:40.139 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing UPDATE responses SET comment='ran out of time bruh' WHERE id='26'
+28-Mar-2023 11:20:42.453 INFO [http-nio-9999-exec-1] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:20:42.455 INFO [http-nio-9999-exec-1] questionsServlet.doGet roomCode: 774537
+28-Mar-2023 11:20:42.456 INFO [http-nio-9999-exec-1] scoresServlet.doGet IN scores servlet
+28-Mar-2023 11:20:42.456 INFO [http-nio-9999-exec-1] scoresServlet.doGet setID: null
+28-Mar-2023 11:20:42.456 INFO [http-nio-9999-exec-1] scoresServlet.doGet 774537
+28-Mar-2023 11:22:46.467 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:22:46.490 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing SELECT * FROM session WHERE roomCode = '123'
+28-Mar-2023 11:22:58.946 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:22:58.953 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT * FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:02.264 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:02.273 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT * FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:02.274 INFO [http-nio-9999-exec-5] SQLServlet.doGet id:3
+28-Mar-2023 11:23:02.275 INFO [http-nio-9999-exec-5] SQLServlet.doGet roomCode:123
+28-Mar-2023 11:23:02.275 INFO [http-nio-9999-exec-5] SQLServlet.doGet currentQuestionID:0
+28-Mar-2023 11:23:12.010 INFO [http-nio-9999-exec-5] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:23:12.011 INFO [http-nio-9999-exec-5] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:23:17.943 INFO [http-nio-9999-exec-3] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:17.969 INFO [http-nio-9999-exec-3] SQLServlet.doGet Executing SELECT * FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:17.971 INFO [http-nio-9999-exec-3] SQLServlet.doGet id:3
+28-Mar-2023 11:23:17.972 INFO [http-nio-9999-exec-3] SQLServlet.doGet roomCode:123
+28-Mar-2023 11:23:17.972 INFO [http-nio-9999-exec-3] SQLServlet.doGet currentQuestionID:1
+28-Mar-2023 11:23:18.137 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:18.143 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:18.146 INFO [http-nio-9999-exec-9] SQLServlet.doGet currentQuestionID:1
+28-Mar-2023 11:23:18.159 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:18.162 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='1'
+28-Mar-2023 11:23:18.164 INFO [http-nio-9999-exec-7] SQLServlet.doGet id:1
+28-Mar-2023 11:23:18.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet setID:1
+28-Mar-2023 11:23:18.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet qnNo:1
+28-Mar-2023 11:23:18.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet question:If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?
+28-Mar-2023 11:23:18.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt1:3
+28-Mar-2023 11:23:18.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt2:6
+28-Mar-2023 11:23:18.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt3:10
+28-Mar-2023 11:23:18.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet opt4:14
+28-Mar-2023 11:23:18.165 INFO [http-nio-9999-exec-7] SQLServlet.doGet correctOpt:3
+28-Mar-2023 11:23:18.178 INFO [http-nio-9999-exec-6] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:18.182 INFO [http-nio-9999-exec-6] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:18.190 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:18.195 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='1' AND userID='6' AND roomCode='123'
+28-Mar-2023 11:23:18.338 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:18.342 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing INSERT INTO score (roomCode, userID, name, score) VALUES ('123', '6', 'Irfan', '0')
+28-Mar-2023 11:23:22.840 INFO [http-nio-9999-exec-5] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:23:22.860 INFO [http-nio-9999-exec-5] responseServlet.doGet Current QuestionID: 1
+28-Mar-2023 11:23:22.861 INFO [http-nio-9999-exec-5] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='1'
+28-Mar-2023 11:23:22.861 INFO [http-nio-9999-exec-5] responseServlet.doGet Correct Option: 3
+28-Mar-2023 11:23:22.861 INFO [http-nio-9999-exec-5] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:23:22.862 INFO [http-nio-9999-exec-5] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:23:22.862 INFO [http-nio-9999-exec-5] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('123', '1', '1', '3', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:23:22.863 INFO [http-nio-9999-exec-5] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:23:22.864 INFO [http-nio-9999-exec-5] responseServlet.doGet Responses Table ID:27
+28-Mar-2023 11:23:22.877 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:22.885 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing UPDATE SCORE SET score='1' WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:29.744 INFO [http-nio-9999-exec-3] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:29.756 INFO [http-nio-9999-exec-3] SQLServlet.doGet Executing UPDATE responses SET comment='first' WHERE id='27'
+28-Mar-2023 11:23:31.841 INFO [http-nio-9999-exec-9] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:23:31.843 INFO [http-nio-9999-exec-9] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:23:32.956 INFO [http-nio-9999-exec-6] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:32.977 INFO [http-nio-9999-exec-6] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:32.978 INFO [http-nio-9999-exec-6] SQLServlet.doGet currentQuestionID:2
+28-Mar-2023 11:23:33.114 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:33.117 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:33.119 INFO [http-nio-9999-exec-2] SQLServlet.doGet currentQuestionID:2
+28-Mar-2023 11:23:33.129 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:33.131 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='2'
+28-Mar-2023 11:23:33.133 INFO [http-nio-9999-exec-8] SQLServlet.doGet id:2
+28-Mar-2023 11:23:33.133 INFO [http-nio-9999-exec-8] SQLServlet.doGet setID:1
+28-Mar-2023 11:23:33.134 INFO [http-nio-9999-exec-8] SQLServlet.doGet qnNo:2
+28-Mar-2023 11:23:33.134 INFO [http-nio-9999-exec-8] SQLServlet.doGet question:Constructors are used to
+28-Mar-2023 11:23:33.134 INFO [http-nio-9999-exec-8] SQLServlet.doGet opt1:Build a user interface
+28-Mar-2023 11:23:33.134 INFO [http-nio-9999-exec-8] SQLServlet.doGet opt2:Free Memory
+28-Mar-2023 11:23:33.134 INFO [http-nio-9999-exec-8] SQLServlet.doGet opt3:Initialize a newly created object
+28-Mar-2023 11:23:33.134 INFO [http-nio-9999-exec-8] SQLServlet.doGet opt4:To create a subclass
+28-Mar-2023 11:23:33.134 INFO [http-nio-9999-exec-8] SQLServlet.doGet correctOpt:3
+28-Mar-2023 11:23:33.140 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:33.144 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:33.146 INFO [http-nio-9999-exec-1] SQLServlet.doGet id:7
+28-Mar-2023 11:23:33.146 INFO [http-nio-9999-exec-1] SQLServlet.doGet roomCode:123
+28-Mar-2023 11:23:33.146 INFO [http-nio-9999-exec-1] SQLServlet.doGet userID:6
+28-Mar-2023 11:23:33.146 INFO [http-nio-9999-exec-1] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:23:33.146 INFO [http-nio-9999-exec-1] SQLServlet.doGet score:1
+28-Mar-2023 11:23:33.152 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:33.154 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='2' AND userID='6' AND roomCode='123'
+28-Mar-2023 11:23:34.711 INFO [http-nio-9999-exec-5] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:23:34.714 INFO [http-nio-9999-exec-5] responseServlet.doGet Current QuestionID: 2
+28-Mar-2023 11:23:34.714 INFO [http-nio-9999-exec-5] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='2'
+28-Mar-2023 11:23:34.715 INFO [http-nio-9999-exec-5] responseServlet.doGet Correct Option: 3
+28-Mar-2023 11:23:34.715 INFO [http-nio-9999-exec-5] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:23:34.716 INFO [http-nio-9999-exec-5] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:23:34.717 INFO [http-nio-9999-exec-5] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('123', '1', '2', '3', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:23:34.721 INFO [http-nio-9999-exec-5] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:23:34.722 INFO [http-nio-9999-exec-5] responseServlet.doGet Responses Table ID:28
+28-Mar-2023 11:23:34.741 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:34.745 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing UPDATE SCORE SET score='2' WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:38.281 INFO [http-nio-9999-exec-6] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:38.294 INFO [http-nio-9999-exec-6] SQLServlet.doGet Executing UPDATE responses SET comment='2nd' WHERE id='28'
+28-Mar-2023 11:23:39.857 INFO [http-nio-9999-exec-2] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:23:39.859 INFO [http-nio-9999-exec-2] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:23:40.852 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:40.855 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:40.857 INFO [http-nio-9999-exec-1] SQLServlet.doGet currentQuestionID:3
+28-Mar-2023 11:23:41.029 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:41.034 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:41.035 INFO [http-nio-9999-exec-10] SQLServlet.doGet currentQuestionID:3
+28-Mar-2023 11:23:41.053 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:41.056 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='3'
+28-Mar-2023 11:23:41.057 INFO [http-nio-9999-exec-5] SQLServlet.doGet id:3
+28-Mar-2023 11:23:41.057 INFO [http-nio-9999-exec-5] SQLServlet.doGet setID:1
+28-Mar-2023 11:23:41.058 INFO [http-nio-9999-exec-5] SQLServlet.doGet qnNo:3
+28-Mar-2023 11:23:41.058 INFO [http-nio-9999-exec-5] SQLServlet.doGet question:An object that has more than one form is referred to as:
+28-Mar-2023 11:23:41.058 INFO [http-nio-9999-exec-5] SQLServlet.doGet opt1:inheritance
+28-Mar-2023 11:23:41.058 INFO [http-nio-9999-exec-5] SQLServlet.doGet opt2:interface
+28-Mar-2023 11:23:41.058 INFO [http-nio-9999-exec-5] SQLServlet.doGet opt3:Abstract class
+28-Mar-2023 11:23:41.058 INFO [http-nio-9999-exec-5] SQLServlet.doGet opt4:Polymorphism
+28-Mar-2023 11:23:41.058 INFO [http-nio-9999-exec-5] SQLServlet.doGet correctOpt:4
+28-Mar-2023 11:23:41.087 INFO [http-nio-9999-exec-3] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:41.128 INFO [http-nio-9999-exec-3] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:41.130 INFO [http-nio-9999-exec-3] SQLServlet.doGet id:7
+28-Mar-2023 11:23:41.130 INFO [http-nio-9999-exec-3] SQLServlet.doGet roomCode:123
+28-Mar-2023 11:23:41.130 INFO [http-nio-9999-exec-3] SQLServlet.doGet userID:6
+28-Mar-2023 11:23:41.130 INFO [http-nio-9999-exec-3] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:23:41.130 INFO [http-nio-9999-exec-3] SQLServlet.doGet score:2
+28-Mar-2023 11:23:41.145 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:41.153 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='3' AND userID='6' AND roomCode='123'
+28-Mar-2023 11:23:43.166 INFO [http-nio-9999-exec-9] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:23:43.172 INFO [http-nio-9999-exec-9] responseServlet.doGet Current QuestionID: 3
+28-Mar-2023 11:23:43.172 INFO [http-nio-9999-exec-9] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='3'
+28-Mar-2023 11:23:43.173 INFO [http-nio-9999-exec-9] responseServlet.doGet Correct Option: 4
+28-Mar-2023 11:23:43.173 INFO [http-nio-9999-exec-9] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:23:43.173 INFO [http-nio-9999-exec-9] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:23:43.173 INFO [http-nio-9999-exec-9] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('123', '1', '3', '4', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:23:43.175 INFO [http-nio-9999-exec-9] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:23:43.176 INFO [http-nio-9999-exec-9] responseServlet.doGet Responses Table ID:29
+28-Mar-2023 11:23:43.181 INFO [http-nio-9999-exec-7] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:43.183 INFO [http-nio-9999-exec-7] SQLServlet.doGet Executing UPDATE SCORE SET score='3' WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:46.803 INFO [http-nio-9999-exec-6] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:23:46.805 INFO [http-nio-9999-exec-6] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:23:47.915 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:47.935 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:47.937 INFO [http-nio-9999-exec-8] SQLServlet.doGet currentQuestionID:4
+28-Mar-2023 11:23:48.117 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:48.121 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:48.123 INFO [http-nio-9999-exec-1] SQLServlet.doGet currentQuestionID:4
+28-Mar-2023 11:23:48.132 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:48.135 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='4'
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet id:4
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet setID:1
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet qnNo:4
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet question: In which access should a constructor be defined, so that object of the class can be created in any function?
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet opt1:Any access specifier will work
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet opt2:Public
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet opt3: Protected
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet opt4:Private
+28-Mar-2023 11:23:48.136 INFO [http-nio-9999-exec-10] SQLServlet.doGet correctOpt:2
+28-Mar-2023 11:23:48.144 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:48.154 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:48.156 INFO [http-nio-9999-exec-5] SQLServlet.doGet id:7
+28-Mar-2023 11:23:48.156 INFO [http-nio-9999-exec-5] SQLServlet.doGet roomCode:123
+28-Mar-2023 11:23:48.157 INFO [http-nio-9999-exec-5] SQLServlet.doGet userID:6
+28-Mar-2023 11:23:48.157 INFO [http-nio-9999-exec-5] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:23:48.157 INFO [http-nio-9999-exec-5] SQLServlet.doGet score:3
+28-Mar-2023 11:23:48.163 INFO [http-nio-9999-exec-3] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:48.165 INFO [http-nio-9999-exec-3] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='4' AND userID='6' AND roomCode='123'
+28-Mar-2023 11:23:49.812 INFO [http-nio-9999-exec-4] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:23:49.816 INFO [http-nio-9999-exec-4] responseServlet.doGet Current QuestionID: 4
+28-Mar-2023 11:23:49.816 INFO [http-nio-9999-exec-4] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='4'
+28-Mar-2023 11:23:49.817 INFO [http-nio-9999-exec-4] responseServlet.doGet Correct Option: 2
+28-Mar-2023 11:23:49.817 INFO [http-nio-9999-exec-4] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:23:49.818 INFO [http-nio-9999-exec-4] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:23:49.818 INFO [http-nio-9999-exec-4] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('123', '1', '4', '2', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:23:49.820 INFO [http-nio-9999-exec-4] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:23:49.821 INFO [http-nio-9999-exec-4] responseServlet.doGet Responses Table ID:30
+28-Mar-2023 11:23:49.843 INFO [http-nio-9999-exec-9] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:49.847 INFO [http-nio-9999-exec-9] SQLServlet.doGet Executing UPDATE SCORE SET score='4' WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:51.151 INFO [http-nio-9999-exec-7] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:23:51.154 INFO [http-nio-9999-exec-7] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:23:52.353 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:52.359 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:52.362 INFO [http-nio-9999-exec-2] SQLServlet.doGet currentQuestionID:5
+28-Mar-2023 11:23:52.518 INFO [http-nio-9999-exec-8] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:52.523 INFO [http-nio-9999-exec-8] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:52.525 INFO [http-nio-9999-exec-8] SQLServlet.doGet currentQuestionID:5
+28-Mar-2023 11:23:52.530 INFO [http-nio-9999-exec-1] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:52.532 INFO [http-nio-9999-exec-1] SQLServlet.doGet Executing SELECT * FROM questions WHERE id='5'
+28-Mar-2023 11:23:52.533 INFO [http-nio-9999-exec-1] SQLServlet.doGet id:5
+28-Mar-2023 11:23:52.533 INFO [http-nio-9999-exec-1] SQLServlet.doGet setID:1
+28-Mar-2023 11:23:52.533 INFO [http-nio-9999-exec-1] SQLServlet.doGet qnNo:5
+28-Mar-2023 11:23:52.533 INFO [http-nio-9999-exec-1] SQLServlet.doGet question:Which access specifier is usually used for data members of a class?
+28-Mar-2023 11:23:52.533 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt1:Private
+28-Mar-2023 11:23:52.533 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt2:Protected
+28-Mar-2023 11:23:52.533 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt3:Public
+28-Mar-2023 11:23:52.533 INFO [http-nio-9999-exec-1] SQLServlet.doGet opt4:Default
+28-Mar-2023 11:23:52.534 INFO [http-nio-9999-exec-1] SQLServlet.doGet correctOpt:1
+28-Mar-2023 11:23:52.543 INFO [http-nio-9999-exec-10] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:52.547 INFO [http-nio-9999-exec-10] SQLServlet.doGet Executing SELECT * FROM score WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:52.548 INFO [http-nio-9999-exec-10] SQLServlet.doGet id:7
+28-Mar-2023 11:23:52.549 INFO [http-nio-9999-exec-10] SQLServlet.doGet roomCode:123
+28-Mar-2023 11:23:52.549 INFO [http-nio-9999-exec-10] SQLServlet.doGet userID:6
+28-Mar-2023 11:23:52.549 INFO [http-nio-9999-exec-10] SQLServlet.doGet name:Irfan
+28-Mar-2023 11:23:52.549 INFO [http-nio-9999-exec-10] SQLServlet.doGet score:4
+28-Mar-2023 11:23:52.552 INFO [http-nio-9999-exec-5] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:52.556 INFO [http-nio-9999-exec-5] SQLServlet.doGet Executing SELECT * FROM responses WHERE questionSetID='1' AND questionNo='5' AND userID='6' AND roomCode='123'
+28-Mar-2023 11:23:53.407 INFO [http-nio-9999-exec-3] responseServlet.doGet responseServlet Called
+28-Mar-2023 11:23:53.411 INFO [http-nio-9999-exec-3] responseServlet.doGet Current QuestionID: 5
+28-Mar-2023 11:23:53.411 INFO [http-nio-9999-exec-3] responseServlet.doGet SELECT correctOPT FROM questions WHERE id='5'
+28-Mar-2023 11:23:53.412 INFO [http-nio-9999-exec-3] responseServlet.doGet Correct Option: 1
+28-Mar-2023 11:23:53.412 INFO [http-nio-9999-exec-3] responseServlet.doGet Executing SELECT name FROM users WHERE id ='6'
+28-Mar-2023 11:23:53.412 INFO [http-nio-9999-exec-3] responseServlet.doGet Current Respondee: Irfan
+28-Mar-2023 11:23:53.412 INFO [http-nio-9999-exec-3] responseServlet.doGet Executing INSERT INTO responses (roomCode, questionSetID, questionNo, choice, result, respondee, userID, comment) Values ('123', '1', '5', '1', 'Correct', 'Irfan', '6', 'null')
+28-Mar-2023 11:23:53.415 INFO [http-nio-9999-exec-3] responseServlet.doGet Executing SELECT id FROM responses ORDER BY id DESC
+28-Mar-2023 11:23:53.416 INFO [http-nio-9999-exec-3] responseServlet.doGet Responses Table ID:31
+28-Mar-2023 11:23:53.423 INFO [http-nio-9999-exec-4] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:53.426 INFO [http-nio-9999-exec-4] SQLServlet.doGet Executing UPDATE SCORE SET score='5' WHERE userID='6' AND roomCode='123'
+28-Mar-2023 11:23:55.541 INFO [http-nio-9999-exec-7] questionsServlet.doGet MyServlet called
+28-Mar-2023 11:23:55.542 INFO [http-nio-9999-exec-7] questionsServlet.doGet roomCode: 123
+28-Mar-2023 11:23:55.543 INFO [http-nio-9999-exec-7] scoresServlet.doGet IN scores servlet
+28-Mar-2023 11:23:55.543 INFO [http-nio-9999-exec-7] scoresServlet.doGet setID: null
+28-Mar-2023 11:23:55.543 INFO [http-nio-9999-exec-7] scoresServlet.doGet 123
+28-Mar-2023 11:23:56.706 INFO [http-nio-9999-exec-2] SQLServlet.doGet SQLServlet Called
+28-Mar-2023 11:23:56.710 INFO [http-nio-9999-exec-2] SQLServlet.doGet Executing SELECT currentQuestionID FROM session WHERE roomCode = '123'
+28-Mar-2023 11:23:56.710 INFO [http-nio-9999-exec-2] SQLServlet.doGet currentQuestionID:5
+28-Mar-2023 11:28:37.995 INFO [http-nio-9999-exec-5] registerServlet.doGet registerServlet Called
+28-Mar-2023 11:28:44.114 INFO [http-nio-9999-exec-6] registerServlet.doGet registerServlet Called
+28-Mar-2023 11:28:48.262 INFO [http-nio-9999-exec-1] registerServlet.doGet registerServlet Called
+28-Mar-2023 11:29:27.479 INFO [http-nio-9999-exec-8] loginServlet.doGet loginServlet called
+28-Mar-2023 11:29:27.511 INFO [http-nio-9999-exec-8] loginServlet.doGet Login Successful
+28-Mar-2023 11:30:26.484 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+28-Mar-2023 11:30:26.493 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-Mar-2023 11:30:26.531 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+28-Mar-2023 11:30:26.559 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
