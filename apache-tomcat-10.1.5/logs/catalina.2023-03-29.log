@@ -1,0 +1,67 @@
+29-Mar-2023 14:24:59.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+29-Mar-2023 14:24:59.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+29-Mar-2023 14:24:59.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+29-Mar-2023 14:24:59.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+29-Mar-2023 14:24:59.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+29-Mar-2023 14:24:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+29-Mar-2023 14:24:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+29-Mar-2023 14:24:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+29-Mar-2023 14:24:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Mar-2023 14:24:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+29-Mar-2023 14:24:59.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+29-Mar-2023 14:24:59.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\conf\logging.properties
+29-Mar-2023 14:24:59.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Mar-2023 14:24:59.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Mar-2023 14:24:59.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Mar-2023 14:24:59.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Mar-2023 14:24:59.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Mar-2023 14:24:59.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Mar-2023 14:24:59.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Mar-2023 14:24:59.066 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Mar-2023 14:24:59.066 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+29-Mar-2023 14:24:59.066 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5
+29-Mar-2023 14:24:59.066 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\temp
+29-Mar-2023 14:24:59.086 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-19\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;c:\program files (x86)\razer chroma sdk\bin;c:\program files\razer chroma sdk\bin;c:\program files (x86)\razer\chromabroadcast\bin;c:\program files\razer\chromabroadcast\bin;c:\program files (x86)\common files\oracle\java\javapath;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\nvidia corporation\nvidia nvdlisr;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\microsoft sql server\120\tools\binn\;c:\program files\common files\autodesk shared\;c:\users\user\appdata\local\microsoft\windowsapps;c:\windows\system32\config\systemprofile\appdata\local\microsoft\windowsapps;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;C:\windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Users\User\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python310\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;.]
+29-Mar-2023 14:24:59.269 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+29-Mar-2023 14:24:59.284 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [372] milliseconds
+29-Mar-2023 14:24:59.315 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Mar-2023 14:24:59.315 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+29-Mar-2023 14:24:59.324 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\Bahoot]
+29-Mar-2023 14:25:00.188 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Mar-2023 14:25:00.246 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\Bahoot] has finished in [921] ms
+29-Mar-2023 14:25:00.246 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\docs]
+29-Mar-2023 14:25:00.791 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Mar-2023 14:25:00.795 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\docs] has finished in [548] ms
+29-Mar-2023 14:25:00.795 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\examples]
+29-Mar-2023 14:25:01.828 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Mar-2023 14:25:01.888 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\examples] has finished in [1,093] ms
+29-Mar-2023 14:25:01.888 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\host-manager]
+29-Mar-2023 14:25:02.446 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Mar-2023 14:25:02.453 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\host-manager] has finished in [565] ms
+29-Mar-2023 14:25:02.454 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\manager]
+29-Mar-2023 14:25:02.999 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Mar-2023 14:25:03.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\manager] has finished in [549] ms
+29-Mar-2023 14:25:03.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\ROOT]
+29-Mar-2023 14:25:03.520 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Mar-2023 14:25:03.524 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Documents\School\Bahoot\apache-tomcat-10.1.5\webapps\ROOT] has finished in [521] ms
+29-Mar-2023 14:25:03.525 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+29-Mar-2023 14:25:03.559 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4274] milliseconds
+29-Mar-2023 14:25:07.482 INFO [http-nio-9999-exec-6] questionsServlet.doGet MyServlet called
+29-Mar-2023 14:25:07.485 INFO [http-nio-9999-exec-6] questionsServlet.doGet room_code: 774537
+29-Mar-2023 14:25:10.038 INFO [http-nio-9999-exec-8] questionsServlet.doGet MyServlet called
+29-Mar-2023 14:25:10.038 INFO [http-nio-9999-exec-8] questionsServlet.doGet room_code: 774537
+29-Mar-2023 14:25:10.557 INFO [http-nio-9999-exec-10] questionsServlet.doGet MyServlet called
+29-Mar-2023 14:25:10.557 INFO [http-nio-9999-exec-10] questionsServlet.doGet room_code: 774537
+29-Mar-2023 14:25:10.960 INFO [http-nio-9999-exec-2] questionsServlet.doGet MyServlet called
+29-Mar-2023 14:25:10.960 INFO [http-nio-9999-exec-2] questionsServlet.doGet room_code: 774537
+29-Mar-2023 14:25:11.473 INFO [http-nio-9999-exec-3] questionsServlet.doGet MyServlet called
+29-Mar-2023 14:25:11.473 INFO [http-nio-9999-exec-3] questionsServlet.doGet room_code: 774537
+29-Mar-2023 14:25:11.958 INFO [http-nio-9999-exec-6] questionsServlet.doGet MyServlet called
+29-Mar-2023 14:25:11.958 INFO [http-nio-9999-exec-6] questionsServlet.doGet room_code: 774537
+29-Mar-2023 14:25:11.959 INFO [http-nio-9999-exec-6] scoresServlet.doGet IN scores servlet
+29-Mar-2023 14:25:11.959 INFO [http-nio-9999-exec-6] scoresServlet.doGet setID: null
+29-Mar-2023 14:25:11.959 INFO [http-nio-9999-exec-6] scoresServlet.doGet 774537
+29-Mar-2023 14:25:22.044 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+29-Mar-2023 14:25:22.049 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Mar-2023 14:25:22.070 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+29-Mar-2023 14:25:22.086 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
