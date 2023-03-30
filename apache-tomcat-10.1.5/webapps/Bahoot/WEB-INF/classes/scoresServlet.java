@@ -37,18 +37,28 @@ public class scoresServlet extends HttpServlet {
                 LOGGER.info(roomCode);
                 
 
-            try (Connection conn = DriverManager.getConnection(
+            try (
+                Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/Bahoot?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
                 "root", "password");
-
                 
-                Statement setIDstmt = conn.createStatement();) {
+                Statement setIDstmt = conn.createStatement();
+                Statement getRankingStmt = conn.createStatement();
+                ) {
 
                 String setIDquery = "SELECT * FROM question_sets where id='" +setID + "'";
                 ResultSet siq = setIDstmt.executeQuery(setIDquery);
 
-                siq.next();
+                String getRankingQuery = "SELECT * FROM score WHERE room_code = " + roomCode + " ORDER BY score DESC";
+                ResultSet rankingRS = getRankingStmt.executeQuery(getRankingQuery);
+                
+                for(int i = 1; i<4; i++){
+                    rankingRS.next();
+                    response.setHeader(String.format("name%d",i),rankingRS.getString("name"));
+                    response.setHeader(String.format("score%d",i),rankingRS.getString("score"));
+                }
 
+                siq.next();
                 String setName = siq.getString("name");
                 response.setHeader("setName", setName);
                 

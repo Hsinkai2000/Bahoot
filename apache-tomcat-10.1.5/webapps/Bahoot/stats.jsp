@@ -141,6 +141,95 @@ pageEncoding="UTF-8"%>
       
     <h2 class="pb-3 pt-5" style="color: white;">Statistics for <%=setName%></h2>
 
+    <br>
+    <br>
+    <h2 style="color:white;">Ranking</h2>
+    <br>
+    <div id="ranking" style="color:white;" class="text-center pb-5">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 btn" style="background-color: gold;">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h1>1</h1>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>
+                                    <%= response.getHeader("name1") %>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3>
+                                    <%= response.getHeader("score1") %>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4"></div>
+            
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 btn mr-2" style="background-color:silver;">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h1>2</h1>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="row">
+
+                            <div class="col-lg-12">
+                                <h2>
+                                    <%= response.getHeader("name2") %>
+                                </h2>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3>
+                                    <%= response.getHeader("score2") %>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 btn ml-2" style="background-color: burlywood;">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h1>3</h1>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>
+                                    <%= response.getHeader("name3") %>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3>
+                                    <%= response.getHeader("score3") %>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
     <%for (int i = 0; i < questionCount; i++) {%>
 
         <%  
@@ -153,7 +242,8 @@ pageEncoding="UTF-8"%>
             double option4px = (((double)option4CountArray.get(i)/totalCountArray.get(i)) * 100);
         
         %>
-        <div id="qn1">
+
+        <div id="qn1" class="pt-5">
             <h3 style="color:white;"><%=(i+1)%>) <%=questionArray.get(i)%></h3>
             <br>
             <div class="row">
@@ -262,6 +352,7 @@ pageEncoding="UTF-8"%>
               </table>
   
               </div>
+
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
               </div>
@@ -271,12 +362,29 @@ pageEncoding="UTF-8"%>
         <br>
         <br>
 
+
+
        
 
 
     <%}%>
 
      
+    
+    <div class="row">
+        <div class="col-lg-8"></div>
+        <div class="col-lg-2">
+            <form method="post" action="endSession">
+                <input hidden name="room_code" value="<%= request.getParameter("room_code") %>">
+                    <button class="btn btn-danger" type="submit" style="color: white;width: 100%;">End Session</button>               
+            </form>            
+        </div>
+        <div class="col-lg-2">
+            <a href="selection.jsp?room_code=<%= request.getParameter("room_code") %>">
+                <button class="btn btn-success" style="color: white;width: 100%;">Choose new questions</button>
+            </a>
+        </div>
+    </div>
     
 
     
