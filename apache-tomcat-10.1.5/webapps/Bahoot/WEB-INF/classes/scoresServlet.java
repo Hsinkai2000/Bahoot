@@ -53,9 +53,10 @@ public class scoresServlet extends HttpServlet {
                 ResultSet rankingRS = getRankingStmt.executeQuery(getRankingQuery);
                 
                 for(int i = 1; i<4; i++){
-                    rankingRS.next();
-                    response.setHeader(String.format("name%d",i),rankingRS.getString("name"));
-                    response.setHeader(String.format("score%d",i),rankingRS.getString("score"));
+                    if(rankingRS.next()){
+                        response.setHeader(String.format("name%d",i),rankingRS.getString("name"));
+                        response.setHeader(String.format("score%d",i),rankingRS.getString("score"));
+                    }                    
                 }
 
                 siq.next();
