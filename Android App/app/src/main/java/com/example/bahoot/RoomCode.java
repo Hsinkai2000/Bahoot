@@ -86,19 +86,16 @@ public class RoomCode extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             if (result == null) {
-                Toast.makeText(getApplicationContext(),"Wrong room code, please try again",
+                Toast.makeText(getApplicationContext(), "Wrong room code, please try again",
                         Toast.LENGTH_SHORT).show();
-            } else if (!currentQuestionID.matches("0")){
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            } else {
+                Intent intent = new Intent(getApplicationContext(), WaitingScreen.class);
                 intent.putExtra("userID", userID);
-                intent.putExtra("name",name);
-                intent.putExtra("room_code",roomCodeStr);
+                intent.putExtra("name", name);
+                intent.putExtra("room_code", roomCodeStr);
                 startActivity(intent);
 
-            } else {
-                Toast.makeText(getApplicationContext(),"The Instructor has not " +
-                                "set the question yet. Please wait",
-                        Toast.LENGTH_SHORT).show();
+
             }
         }
     }

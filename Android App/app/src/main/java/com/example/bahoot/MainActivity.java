@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -89,6 +92,16 @@ public class MainActivity extends AppCompatActivity {
         nextQuestion.setEnabled(false);
         nextQuestion.setVisibility(View.GONE);
 
+        Bundle wait = new Bundle();
+        wait.putString("userID", userID);
+        wait.putString("room_code", roomCode);
+        wait.putString("name",name);
+
+        Intent serviceIntent = new Intent(this, WaitingService.class);
+        serviceIntent.putExtras(extras);
+
+        startService(serviceIntent);
+
         // Gets the current question in the room and fills in the questions on screen
         getCurrentQuestionID();
     }
@@ -166,12 +179,24 @@ public class MainActivity extends AppCompatActivity {
 
     // Function for next question button
     public void nextQuestionButton(View v) {
-        String nextSQL = "SELECT current_question_id FROM session WHERE " +
-                "room_code = '" + roomCode + "'";
-        HttpTask httpTask = new HttpTask();
-        httpTask.setDoNextQuestion(true);
-        httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
-                nextSQL);
+
+        if (!nextQuestionCheck.matches("-1")) {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            intent.putExtra("userID", userID);
+            intent.putExtra("room_code", roomCode);
+            finish();
+            overridePendingTransition(0, 0);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
+        }  else if (nextQuestionCheck.matches("-1")){
+            Intent intent = new Intent(getApplicationContext(), Stats.class);
+            intent.putExtra("userID", userID);
+            intent.putExtra("room_code", roomCode);
+            finish();
+            overridePendingTransition(0, 0);
+            startActivity(intent);
+            overridePendingTransition(0, 0);
+        }
     }
 
     /*
@@ -392,7 +417,6 @@ public class MainActivity extends AppCompatActivity {
         option3Button.setEnabled(false);
         option4Button.setEnabled(false);
         nextQuestion.setEnabled(true);
-        nextQuestion.setVisibility(View.VISIBLE);
         answered = true;
 
         // Increment score only if the answer has just been given
@@ -601,4 +625,39 @@ public class MainActivity extends AppCompatActivity {
                     + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         }
     }
+
+    private BroadcastReceiver httpReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            nextQuestionCheck = intent.getStringExtra("currentQuestionID");
+
+            if (nextQuestionCheck != null) {
+
+                if (!nextQuestionCheck.matches(currentQuestionID)) {
+
+                    nextQuestion.setVisibility(View.VISIBLE);
+                }
+            }
+
+
+        }
+    };
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        IntentFilter intentFilter = new IntentFilter("http_request");
+        registerReceiver(httpReceiver, intentFilter);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        unregisterReceiver(httpReceiver);
+        Intent serviceIntent = new Intent(this, WaitingService.class);
+        stopService(serviceIntent);
+    }
+
+
+
 }
