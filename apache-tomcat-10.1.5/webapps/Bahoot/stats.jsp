@@ -38,6 +38,10 @@ pageEncoding="UTF-8"%>
       String queryQuestions = "SELECT * FROM questions where setID='" + setID +"'";
       ResultSet rs = stmt.executeQuery(queryQuestions);
 
+      Statement stmt0 = conn.createStatement();
+      String updateZero = "UPDATE session SET current_question_id=0 WHERE room_code='" + roomCode + "'";
+      stmt0.execute(updateZero);
+
       while (rs.next()) {
         ++questionCount;
         questionArray.add(rs.getString("question"));
@@ -59,13 +63,6 @@ pageEncoding="UTF-8"%>
 
     
       }
-
-
-
-
-
-
-
 
         
       for (int i = 0; i < questionCount; i++) {
@@ -234,26 +231,39 @@ pageEncoding="UTF-8"%>
                     </tr>
                   </thead>
                   <tbody>
-                  <% int j = 0; while (responseRSArray.get(i).next()) {%>
+                  <%  int j = 0; while (responseRSArray.get(i).next()) {
+
+                      String name = responseRSArray.get(i).getString("respondee");
+                      String selectedOption = responseRSArray.get(i).getString("choice");
+                      String comment = responseRSArray.get(i).getString("comment");
+
+                      boolean correctOption = correctOptArray.get(i).matches(selectedOption);
+
+                      selectedOption = selectedOption.replaceAll("0","Did Not Answer");
+                      selectedOption = selectedOption.replaceAll("1","A");
+                      selectedOption = selectedOption.replaceAll("2","B");
+                      selectedOption = selectedOption.replaceAll("3","C");
+                      selectedOption = selectedOption.replaceAll("4","D");
+                      comment = comment.replaceAll("null"," ");
+                
+                  %>
   
                   <tr>
-                    <th scope="row"><%=j+1%></th>
-                    <td> <%=responseRSArray.get(i).getString("respondee")%></td>
-                    <td <%if(correctOptArray.get(i).matches(responseRSArray.get(i).getString("choice"))) {%> style="color:green"  <%}%> > <%=responseRSArray.get(i).getString("choice").replaceAll("0","Did not answer")%></td>
-                    <td><%=responseRSArray.get(i).getString("comment").replaceAll("null"," ")%></td>
+                    <th scope="row"><%=(j+1)%></th>
+                    <td> <%=name%></td>
+                    <td <% if(correctOption) { %> style="color:green" <%}%> > <%=selectedOption%></td>
+                    <td><%=comment%></td>
                   </tr>
-                  <%j++;%>
+                      <%j++;%>
                   
                 <%}%>
-                            
+       
                 </tbody>
               </table>
   
-                
-              
               </div>
               <div class="modal-footer">
-                
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>

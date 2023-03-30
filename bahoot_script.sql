@@ -22,10 +22,10 @@ create table questions (
     setID int,
     qnNo int,
     question varchar(150),
-    opt1 varchar(50),
-    opt2 varchar(50),
-    opt3 varchar(50),
-    opt4 varchar(50),
+    opt1 varchar(100),
+    opt2 varchar(100),
+    opt3 varchar(100),
+    opt4 varchar(100),
     correctOpt int,
     primary key(id)
 );
@@ -72,28 +72,39 @@ INSERT INTO questions (setID, qnNo, question, opt1, opt2, opt3, opt4, correctOpt
 	('1', '1', 'If a super class has a total of 10 instances, what is the total number of instances of subclasses can there be?', '3', '6', '10', '14', '3 '),
 	('1', '2', 'Constructors are used to', 'Build a user interface', 'Free Memory', 'Initialize a newly created object', 'To create a subclass', '3 '),
 	('1', '3', 'An object that has more than one form is referred to as:', 'inheritance', 'interface', 'Abstract class', 'Polymorphism', '4 '),
-	('1', '4', ' In which access should a constructor be defined, so that object of the class can be created in any function?', 'Any access specifier will work', 'Public', ' Protected', 'Private', '2'),
-	('1', '5', 'Which access specifier is usually used for data members of a class?', 'Private', 'Protected', 'Public', 'Default', '1'),
+	('1', '4', ' In which access should a constructor be defined so that object of the class can be created in any function?', 'Any access specifier will work', 'Public', ' Protected', 'Private', '2 '),
+	('1', '5', 'Which access specifier is usually used for data members of a class?', 'Private', 'Protected', 'Public', 'Default', '1 '),
 	('2', '1', 'Choose the correct HTML element for the largest heading:', '<h6>', '<h1>', '<heading>', '<head>', '2 '),
 	('2', '2', 'Choose the correct HTML element to define important text', '<b>', '<i>', '<important>', '<strong>', '4 '),
-	('2', '3', 'Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?', 'alt', 'src', 'title', 'longdesc', '1 '),
+	('2', '3', 'Which HTML attribute specifies an alternate text for an image if the image cannot be displayed?', 'alt', 'src', 'title', 'longdesc', '1 '),
 	('3', '1', 'Which of the following code is used to get an attribute in a HTTP Session object in servlets?', 'session.alterAttribute(String name)', 'session.getAttribute(String name)', 'session.updateAttribute(String name)', 'session.setAttribute(String name)', '2 '),
 	('3', '2', 'Which method is used to get three-letter abbreviation for locale’s country in servlets?', ' Locale.getISO3Country()', 'Response.getISO3Country()', 'Request.getISO3Country()', ' Local.retrieveISO3Country()', '3 '),
 	('3', '3', 'Which of the following code retrieves the body of the request as binary data?', 'DataInputStream data = new InputStream()', 'DataInputStream data = response.getInputStream()', 'DataInputStream data = request.fetchInputStream()', 'DataInputStream data = request.getInputStream()', '4 '),
 	('4', '1', 'Which of the following does not supports JSP directly?', 'Weblogic Server', 'Tomcat Server', 'Apache HTTP Server', 'WebSphere Server', '3 '),
 	('4', '2', 'Which of the following passes information from JSP to included JSP?', '<%jsp:param>', '<%jsp:page>', '<%jsp:import>', '<%jsp:useBean>', '1 '),
-	('4', '3', 'Which of the following attributes can be used to generate a PDF page?', 'contentType', 'generatePdf', 'typePDF', 'contentPDF', '1 ');
-
+	('4', '3', 'Which of the following attributes can be used to generate a PDF page?', 'contentType', 'generatePdf', 'typePDF', 'contentPDF', '1 '),
+	('5', '1', 'A discrete random variable can take on which of the following types of values?', 'Only non-integer values', 'Only integer values', 'Both integer and non-integer values', 'None of the above', '2 '),
+	('5', '2', 'What is the formula for the z-score of a value in a dataset?', '(mean - value) / standard deviation', '(value + mean) / standard deviation', '(mean - value) * standard deviation', '(value - mean) / standard deviation', '4 '),
+	('5', '3', 'The probability of an event occurring is always which of the following?', 'A value greater than 1', 'A value between 0 and 1', 'A value less than 0', 'None of the above', '2 '),
+	('5', '4', 'In a normal distribution, what percentage of the data falls within one standard deviation of the mean?', 'Approximately 99%', 'Approximately 95%', 'Approximately 68%', 'None of the above', '3 '),
+	('5', '5', 'What is the z-score of a value of 28 in a dataset with a mean of 20 and a standard deviation of 4?', '2', '4', '8', '20', '1'),
+    ('6', '1', 'What is the syntax for declaring a public variable in a C# script in Unity?', 'public type variableName;', 'public variableName;', 'variableName public;', 'type variableName public;', '1 '),
+    ('6', '2', 'Which method in Unity is called once per frame and is often used for updating the game state?', 'Start()', 'FixedUpdate()', 'Update()', 'LateUpdate()', '3 '),
+	('6', '3', 'What is the syntax for accessing a component attached to the same GameObject as a script in Unity?', 'this.componentName', 'GameObject.componentName', 'GameObject.GetComponent<componentType>()', 'this.GetComponent<componentType>()', '4 '),
+	('6', '4', 'Which method in Unity is called at a fixed interval, and is often used for physics calculations?', 'Start()', 'FixedUpdate()', 'Update()', 'LateUpdate()', '2 '),
+	('6', '5', 'What is the purpose of the OnCollisionEnter() method in a Unity script?', 'To detect when a collision occurs between two GameObjects', 'To set the position of a GameObject in the scene', 'To update the score or other game state variables', 'To initialize a component when the script is loaded', '1');
 
 INSERT INTO session (room_code, current_question_id) VALUES
-    ("774537",1);
+    ("774537",0);
 
     
 INSERT INTO question_sets (name, totalQn, ownerID) VALUES 
     ('Object Oriented Programming', 5, 1),
     ('HTML Programming',3, 1),
     ('Web Servlet Programming',3, 1),    
-    ('Web App Programming',3, 1);
+    ('Web App Programming',3, 1),
+    ('Engineering Mathematics 1', 5, 1),
+    ('Unity Programming',5, 1);
 
 
 INSERT INTO Users (email, name, password, mobile_number) VALUES 
@@ -146,3 +157,9 @@ SELECT * FROM responses;
 
 show tables;
  
+
+
+
+
+
+    

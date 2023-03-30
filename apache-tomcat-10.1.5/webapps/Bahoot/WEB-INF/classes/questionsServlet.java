@@ -24,7 +24,7 @@ public class questionsServlet extends HttpServlet {
         setid = Integer.parseInt(request.getParameter("setid"));
         totalQn = Integer.parseInt(request.getParameter("totalQn"));
         roomCode = request.getParameter("room_code");
-        LOGGER.info("room_code: " + roomCode);
+        LOGGER.info("setId: " + setid);
 
         if(request.getParameter("qnNo") != null){
                 qnNo = Integer.parseInt(request.getParameter("qnNo"));
@@ -64,6 +64,7 @@ public class questionsServlet extends HttpServlet {
                 }
         }
         else{
+                
                 RequestDispatcher rd = request.getRequestDispatcher("display");
                 request.setAttribute("setID",Integer.toString(setid));
                 request.setAttribute("room_code",roomCode);

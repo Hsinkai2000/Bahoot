@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%> 
-<%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*"%> 
+<%@ page import ="java.io.*,java.util.*,java.sql.*,java.text.*,java.lang.*"%> 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,19 +43,23 @@ pageEncoding="UTF-8"%>
         String insertSQL = "INSERT INTO session (room_code, current_question_id) VALUES ('"+request.getParameter("room_code")+"',0)";
         insertStmt.executeUpdate(insertSQL);
       } catch (Exception e) {
-
+        
       }
     %>
     <br>
     <br>
+    <h1 style="color:aqua;"> Room Code: <%=request.getParameter("room_code")%> </h1>
     <h2 style="color: white;">Question Sets</h2>
 
-    <div class="pt-3">
-      <div class="row row-cols-1 row-cols-md-6 g-4">
+    
+    
+
+    <div class="container">
+      <div class="row">
         <% while (rs.next()) {%>
-          <div class="col">
+          <div class="col-sm-4 g-2">
             <div class="card h-100">
-              <div class="card-body">
+              <div class="card-body font-weight-bold">
                 <h1 class="card-text"><%= rs.getString("name") %></h1>
               </div>
               <div class="card-footer">
@@ -68,9 +72,14 @@ pageEncoding="UTF-8"%>
               </div>
             </div>
           </div>
-        <%}%>
+        <%} %>
       </div>
     </div>
+
+
+
+
+   
  
 
     <br>
