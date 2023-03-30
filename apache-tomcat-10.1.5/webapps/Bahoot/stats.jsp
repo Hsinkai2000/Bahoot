@@ -39,7 +39,7 @@ pageEncoding="UTF-8"%>
       ResultSet rs = stmt.executeQuery(queryQuestions);
 
       Statement stmt0 = conn.createStatement();
-      String updateZero = "UPDATE session SET current_question_id=0 WHERE room_code='" + roomCode + "'";
+      String updateZero = "UPDATE session SET current_question_id=-1 WHERE room_code='" + roomCode + "'";
       stmt0.execute(updateZero);
 
       while (rs.next()) {
@@ -148,6 +148,7 @@ pageEncoding="UTF-8"%>
     <div id="ranking" style="color:white;" class="text-center pb-5">
         <div class="row">
             <div class="col-lg-4"></div>
+            <% if(response.getHeader("name1")!=null){ %>
             <div class="col-lg-4 btn" style="background-color: gold;">
                 <div class="row">
                     <div class="col-lg-2">
@@ -172,12 +173,14 @@ pageEncoding="UTF-8"%>
                 </div>
                 
             </div>
+            <%}%>
             <div class="col-lg-4"></div>
             
         </div>
         <br>
         <div class="row">
             <div class="col-lg-2"></div>
+            <% if(response.getHeader("name2")!=null){ %>
             <div class="col-lg-4 btn mr-2" style="background-color:silver;">
                 <div class="row">
                     <div class="col-lg-2">
@@ -203,29 +206,32 @@ pageEncoding="UTF-8"%>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 btn ml-2" style="background-color: burlywood;">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <h1>3</h1>
-                    </div>
-                    <div class="col-lg-10">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h2>
-                                    <%= response.getHeader("name3") %>
-                                </h2>
-                            </div>
+            <%}%>
+            <% if(response.getHeader("name3")!=null){ %>
+                <div class="col-lg-4 btn ml-2" style="background-color: burlywood;">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <h1>3</h1>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h3>
-                                    <%= response.getHeader("score3") %>
-                                </h3>
+                        <div class="col-lg-10">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h2>
+                                        <%= response.getHeader("name3") %>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3>
+                                        <%= response.getHeader("score3") %>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <%}%>
             <div class="col-lg-2"></div>
         </div>
     </div>
