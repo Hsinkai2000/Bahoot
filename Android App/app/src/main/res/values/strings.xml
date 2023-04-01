@@ -25,5 +25,6 @@
     <string name="log_out_prompt">Are you sure you want to log out?</string>
     <string name="bahoot_description">Bahoot!</string>
     <string name="enter_comment">Enter Comment</string>
+    <string name="scan_QR">Scan QR</string>
 
 </resources>

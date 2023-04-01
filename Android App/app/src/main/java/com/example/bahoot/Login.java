@@ -47,7 +47,7 @@ public class Login extends AppCompatActivity {
         passwordStr = passwordField.getText().toString();
 
         if (validate()) {
-            new HttpTask().execute("http://10.0.2.2:9999/Bahoot/login?email="
+            new HttpTask().execute("http://192.168.1.107:9999/Bahoot/login?email="
                    + emailStr + "&password=" + passwordStr);
         }
 

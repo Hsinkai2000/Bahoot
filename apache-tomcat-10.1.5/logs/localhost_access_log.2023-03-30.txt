@@ -254,6 +254,8 @@
 0:0:0:0:0:0:0:1 - - [30/Mar/2023:11:49:58 +0800] "GET /Bahoot/style/style.css HTTP/1.1" 404 781
 0:0:0:0:0:0:0:1 - - [30/Mar/2023:11:50:18 +0800] "GET /Bahoot/viewQuestions?qnNo=6&setid=1&totalQn=5&room_code=999 HTTP/1.1" 200 27863
 0:0:0:0:0:0:0:1 - - [30/Mar/2023:11:50:18 +0800] "GET /Bahoot/style/style.css HTTP/1.1" 404 781
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:11:51:09 +0800] "GET /Bahoot/index.jsp HTTP/1.1" 200 1908
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:11:51:09 +0800] "GET /Bahoot/style/style.css HTTP/1.1" 404 781
 127.0.0.1 - - [30/Mar/2023:11:53:30 +0800] "GET /Bahoot/login?email=i@g.com&password=123 HTTP/1.1" 200 5
 127.0.0.1 - - [30/Mar/2023:11:53:36 +0800] "GET /Bahoot/SQL?sql=SELECT%20*%20FROM%20session%20WHERE%20room_code%20=%20'456' HTTP/1.1" 200 52
 127.0.0.1 - - [30/Mar/2023:11:53:36 +0800] "GET /Bahoot/SQL?sql=SELECT%20current_question_id%20FROM%20session%20WHERE%20room_code%20=%20'456' HTTP/1.1" 200 33

@@ -48,6 +48,9 @@ pageEncoding="UTF-8"%>
     %>
     <br>
     <br>
+    <% String responseCode = request.getParameter("responseCode"); 
+    String qrCodeUrl = "https://api.qrserver.com/v1/create-qr-code/?data=" + request.getParameter("room_code"); %>
+    <img src="<%= qrCodeUrl %>" alt="QR Code" />
     <h1 style="color:aqua;"> Room Code: <%=request.getParameter("room_code")%> </h1>
     <h2 style="color: white;">Question Sets</h2>
 

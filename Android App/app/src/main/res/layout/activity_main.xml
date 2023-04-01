@@ -114,9 +114,12 @@
             android:fontFamily="@font/inter_extra_bold"
             android:text="Comment"
             android:textColor="#FFFFFF"
+
+            android:paddingRight="5sp"
             android:textSize="16sp"/>
 
         <Button
+            android:paddingLeft="5sp"
             android:id="@+id/nextQuestionButton"
             android:layout_width="0dp"
             android:layout_height="50dp"

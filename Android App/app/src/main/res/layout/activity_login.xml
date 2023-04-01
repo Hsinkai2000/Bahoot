@@ -25,6 +25,8 @@
         android:ems="10"
         android:fontFamily="@font/inter_semi_bold"
         android:hint="@string/prompt_email"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         android:inputType="textEmailAddress"
         android:padding="16dp" />
 
@@ -37,6 +39,8 @@
         android:ems="10"
         android:fontFamily="@font/inter_semi_bold"
         android:hint="@string/prompt_password"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         android:inputType="textPassword"
         android:padding="16dp" />
 

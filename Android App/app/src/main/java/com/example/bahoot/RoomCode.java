@@ -1,5 +1,7 @@
 package com.example.bahoot;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +12,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.journeyapps.barcodescanner.ScanContract;
+import com.journeyapps.barcodescanner.ScanOptions;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,6 +31,8 @@ public class RoomCode extends AppCompatActivity {
     private String userID;
     private String name;
 
+    private Button btnScanQR;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +41,32 @@ public class RoomCode extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         userID = extras.getString("userID");
         name = extras.getString("name");
+        btnScanQR = findViewById(R.id.btnScanQR);
+        btnScanQR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scanCode();
+            }
+        });
 
         roomCodeField = findViewById(R.id.room_code_field);
     }
+
+    private void scanCode() {
+        ScanOptions option = new ScanOptions();
+        option.setPrompt("Volume up for flash");
+        option.setBeepEnabled(true);
+        option.setOrientationLocked(true);
+        option.setCaptureActivity(CaptureAct.class);
+        barLauncher.launch(option);
+    }
+
+    ActivityResultLauncher<ScanOptions>barLauncher = registerForActivityResult(new ScanContract(), result -> {
+       if (result.getContents() != null){
+           roomCodeField.setText(result.getContents());
+       }
+    });
+
     public void enterRoomCode(View view){
         roomCodeStr = roomCodeField.getText().toString();
 
@@ -49,7 +79,7 @@ public class RoomCode extends AppCompatActivity {
             String SQL = "SELECT * FROM session WHERE " +
                     "room_code = '"+ roomCodeStr + "'";
 
-            new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+            new HttpTask().execute("http://192.168.1.107:9999/Bahoot/SQL?sql=" +
                     SQL);
         }
     }
