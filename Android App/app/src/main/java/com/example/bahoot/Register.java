@@ -54,7 +54,7 @@ public class Register extends AppCompatActivity {
         phoneNumberStr = phoneNumberField.getText().toString();
 
         if (validate()) {
-            new HttpTask().execute("http://192.168.1.107:9999/Bahoot/register?name="
+            new HttpTask().execute("http://192.168.1.11:9999/Bahoot/register?name="
                     + nameStr + "&email=" + emailStr + "&password=" + passwordStr
                     + "&phoneNumber=" + phoneNumberStr);
         }

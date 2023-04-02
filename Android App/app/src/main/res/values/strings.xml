@@ -26,5 +26,7 @@
     <string name="bahoot_description">Bahoot!</string>
     <string name="enter_comment">Enter Comment</string>
     <string name="scan_QR">Scan QR</string>
+    <string name="home">Home</string>
+    <string name="your_score">Your Score</string>
 
 </resources>

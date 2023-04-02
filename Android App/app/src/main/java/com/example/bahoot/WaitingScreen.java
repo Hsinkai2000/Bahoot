@@ -10,13 +10,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class WaitingScreen extends AppCompatActivity {
 
     private String userID;
     private String roomCode;
     private String name;
-
+    private Intent serviceIntent;
     private TextView waitingText;
 
     private int count = 0;
@@ -38,13 +39,16 @@ public class WaitingScreen extends AppCompatActivity {
         wait.putString("room_code", roomCode);
         wait.putString("name",name);
 
-        Intent serviceIntent = new Intent(this, WaitingService.class);
+        serviceIntent = new Intent(this, WaitingService.class);
+        try {
+            stopService(serviceIntent);
+        } catch (Exception e) {
+
+        }
+
         serviceIntent.putExtras(extras);
-
         startService(serviceIntent);
-
     }
-
 
 
     private BroadcastReceiver httpReceiver = new BroadcastReceiver() {
@@ -57,7 +61,8 @@ public class WaitingScreen extends AppCompatActivity {
         public void onReceive(Context context, Intent intent) {
             String currentQuestionID = intent.getStringExtra("currentQuestionID");
             if (currentQuestionID != null) {
-                if (!currentQuestionID.matches("0")) {
+                if (!currentQuestionID.matches("0")
+                        && !currentQuestionID.matches("-1")) {
                     goToMain();
                 } else {
                     if (count == 0)
@@ -83,6 +88,7 @@ public class WaitingScreen extends AppCompatActivity {
         intent.putExtra("name",name);
         intent.putExtra("room_code",roomCode);
         startActivity(intent);
+        finish();
         Log.d("huh??",roomCode);
     }
 
@@ -96,10 +102,26 @@ public class WaitingScreen extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        unregisterReceiver(httpReceiver);
-        Intent serviceIntent = new Intent(this, WaitingService.class);
-        stopService(serviceIntent);
+        try {
+            unregisterReceiver(httpReceiver);
+            stopService(serviceIntent);
+        } catch (Exception e) {
+
+        }
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        try {
+            unregisterReceiver(httpReceiver);
+            stopService(serviceIntent);
+        } catch (Exception e) {
+
+        }
+    }
+
+
 
 
 }

@@ -40,6 +40,13 @@ public class Login extends AppCompatActivity {
         emailField = findViewById(R.id.login_email);
         passwordField = findViewById(R.id.login_password);
 
+        Intent serviceIntent = new Intent(this, WaitingService.class);
+        try {
+            stopService(serviceIntent);
+        } catch (Exception e) {
+
+        }
+
     }
 
     public void signIn (View view) throws SQLException {
@@ -47,7 +54,7 @@ public class Login extends AppCompatActivity {
         passwordStr = passwordField.getText().toString();
 
         if (validate()) {
-            new HttpTask().execute("http://192.168.1.107:9999/Bahoot/login?email="
+            new HttpTask().execute("http://192.168.1.11:9999/Bahoot/login?email="
                    + emailStr + "&password=" + passwordStr);
         }
 

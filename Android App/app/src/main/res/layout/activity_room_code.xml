@@ -76,6 +76,7 @@
         android:text="@string/scan_QR"
         app:layout_constraintTop_toBottomOf="@+id/enterButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="scanCode"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

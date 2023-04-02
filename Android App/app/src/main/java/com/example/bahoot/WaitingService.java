@@ -6,6 +6,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -22,6 +23,7 @@ public class WaitingService extends Service {
     private String userID;
     private String roomCode;
     private String name;
+
 
     private static final int INTERVAL = 1000; // 1 second
 
@@ -57,6 +59,13 @@ public class WaitingService extends Service {
         }, 0, INTERVAL);
     }
 
+    private void stopTimer() {
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
+    }
+
     private void sendHttpRequest() {
         URL url = null;
         HttpURLConnection conn = null;
@@ -64,7 +73,7 @@ public class WaitingService extends Service {
             String currentQuestionSQL = "SELECT current_question_id FROM session WHERE" +
                     " room_code = '" + roomCode + "'";
 
-            url = new URL("http://192.168.1.107:9999/Bahoot/SQL?sql=" +
+            url = new URL("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
                     currentQuestionSQL);
 
             conn = (HttpURLConnection) url.openConnection();
@@ -77,6 +86,7 @@ public class WaitingService extends Service {
                 Intent intent = new Intent("http_request");
                 intent.putExtra("currentQuestionID", currentQuestionID);
                 sendBroadcast(intent);
+                Log.d("Still working", "still working!!");
 
 
             } else {
@@ -90,6 +100,13 @@ public class WaitingService extends Service {
             }
         }
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        stopTimer();
+    }
+
 
 
 }

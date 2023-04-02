@@ -78,6 +78,19 @@ pageEncoding="UTF-8"%>
         <%} %>
       </div>
     </div>
+    
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-lg-8"></div>
+        <div class="col-lg-2">
+            <form method="post" action="endSession">
+                <input hidden name="room_code" value="<%= request.getParameter("room_code") %>">
+                    <button class="btn btn-danger" type="submit" style="color: white;width: 100%;">End Session</button>               
+            </form>            
+        </div>
+    </div>
 
 
 

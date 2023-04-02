@@ -31,7 +31,6 @@ public class RoomCode extends AppCompatActivity {
     private String userID;
     private String name;
 
-    private Button btnScanQR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,18 +40,11 @@ public class RoomCode extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         userID = extras.getString("userID");
         name = extras.getString("name");
-        btnScanQR = findViewById(R.id.btnScanQR);
-        btnScanQR.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                scanCode();
-            }
-        });
 
         roomCodeField = findViewById(R.id.room_code_field);
     }
 
-    private void scanCode() {
+    public void scanCode(View view) {
         ScanOptions option = new ScanOptions();
         option.setPrompt("Volume up for flash");
         option.setBeepEnabled(true);
@@ -79,10 +71,13 @@ public class RoomCode extends AppCompatActivity {
             String SQL = "SELECT * FROM session WHERE " +
                     "room_code = '"+ roomCodeStr + "'";
 
-            new HttpTask().execute("http://192.168.1.107:9999/Bahoot/SQL?sql=" +
+            new HttpTask().execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
                     SQL);
         }
     }
+
+
+
     private class HttpTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... strURLs) {
