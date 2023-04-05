@@ -37,11 +37,8 @@ public class Stats extends AppCompatActivity {
         tvScore = findViewById(R.id.scoreText);
         HttpTask httpTask = new HttpTask();
         httpTask.setGetScore(true);
-        httpTask.execute("http://192.168.1.11:9999/Bahoot/getScore?userID="
+        httpTask.execute("http://10.0.2.2:9999/Bahoot/getScore?userID="
                 +userID+"&room_code="+roomCode); // Send HTTP request
-
-
-
     }
 
     public void home(View v) {
@@ -52,7 +49,6 @@ public class Stats extends AppCompatActivity {
         finish();
         startActivity(intent);
     }
-
 
     private class HttpTask extends AsyncTask<String, Void, String> {
         private boolean getScore;

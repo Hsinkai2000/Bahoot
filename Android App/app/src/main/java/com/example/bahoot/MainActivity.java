@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         cdt.cancel();
         HttpTask http = new HttpTask();
         http.setGetResult(true);
-        http.execute("http://192.168.1.11:9999/Bahoot/response?option=1" +
+        http.execute("http://10.0.2.2:9999/Bahoot/response?option=1" +
                 "&userID=" + userID + "&room_code=" + roomCode + "&userComment=" + userComment
                 + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         selectedOption = "1";
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         cdt.cancel();
         HttpTask http = new HttpTask();
         http.setGetResult(true);
-        http.execute("http://192.168.1.11:9999/Bahoot/response?option=2" +
+        http.execute("http://10.0.2.2:9999/Bahoot/response?option=2" +
                 "&userID=" + userID + "&room_code=" + roomCode + "&userComment=" + userComment
                 + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         selectedOption = "2";
@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
         cdt.cancel();
         HttpTask http = new HttpTask();
         http.setGetResult(true);
-        http.execute("http://192.168.1.11:9999/Bahoot/response?option=3" +
+        http.execute("http://10.0.2.2:9999/Bahoot/response?option=3" +
                 "&userID=" + userID + "&room_code=" + roomCode + "&userComment=" + userComment
                 + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         selectedOption = "3";
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
         cdt.cancel();
         HttpTask http = new HttpTask();
         http.setGetResult(true);
-        http.execute("http://192.168.1.11:9999/Bahoot/response?option=4" +
+        http.execute("http://10.0.2.2:9999/Bahoot/response?option=4" +
                 "&userID=" + userID + "&room_code=" + roomCode + "&userComment=" + userComment
                 + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         selectedOption = "4";
@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
                         + "' WHERE id='" + finalTableID +"'";
 
                 HttpTask httpTask = new HttpTask();
-                httpTask.execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
+                httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                         updateSQL);
 
                 if (userComment.isEmpty())
@@ -288,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
                 " room_code = '" + roomCode + "'";
         HttpTask httpTask = new HttpTask();
         httpTask.setGetCurrentQuestionID(true);
-        httpTask.execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
+        httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 currentQuestionSQL);
     }
     /*
@@ -322,7 +322,7 @@ public class MainActivity extends AppCompatActivity {
 
             HttpTask httpTask = new HttpTask();
             httpTask.setGetQuestion(true);
-            httpTask.execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
+            httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     sqlStr);
         }
         // Fills in the option's text box with the options
@@ -347,7 +347,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (step == 1) {
             httpTask.setScoreCheck(true);
-            httpTask.execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
+            httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     scoreCheckSQL);
 
         } else if (step == 2) {
@@ -357,7 +357,7 @@ public class MainActivity extends AppCompatActivity {
             scoreCheckSQL = "INSERT INTO score (room_code, userID, name, score) " +
                     "VALUES ('" + roomCode +"', '" + userID + "', '"
                     + name + "', '" + score + "')" ;
-            httpTask.execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
+            httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     scoreCheckSQL);
 
         }  else if (step == 3) {
@@ -376,7 +376,7 @@ public class MainActivity extends AppCompatActivity {
                     + " AND room_code='" + roomCode + "'";
             HttpTask httpTask = new HttpTask();
             httpTask.setAnsweredCheck(true);
-            httpTask.execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
+            httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     sqlCheck);
 
         } else if (step == 2) {
@@ -455,7 +455,7 @@ public class MainActivity extends AppCompatActivity {
         String scoreIncSQL = "UPDATE SCORE SET score='" + score + "' " +
                 "WHERE userID='" + userID + "' AND room_code='" + roomCode + "'";
         HttpTask httpTask = new HttpTask();
-        httpTask.execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
+        httpTask.execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                 scoreIncSQL);
         String text = "Score: " + String.valueOf(score);
         scoreTextView.setText(text);
@@ -626,7 +626,7 @@ public class MainActivity extends AppCompatActivity {
         public void onFinish() {
             HttpTask http = new HttpTask();
             http.setGetResult(true);
-            http.execute("http://192.168.1.11:9999/Bahoot/response?" +
+            http.execute("http://10.0.2.2:9999/Bahoot/response?" +
                     "&userID=" + userID + "&room_code=" + roomCode + "&userComment=" + userComment
                     + "&qnSetID=" + questionSetID + "&qnNo=" + currentQuestionNumber);
         }

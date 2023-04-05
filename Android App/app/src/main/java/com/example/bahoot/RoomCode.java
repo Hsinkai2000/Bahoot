@@ -71,7 +71,7 @@ public class RoomCode extends AppCompatActivity {
             String SQL = "SELECT * FROM session WHERE " +
                     "room_code = '"+ roomCodeStr + "'";
 
-            new HttpTask().execute("http://192.168.1.11:9999/Bahoot/SQL?sql=" +
+            new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
                     SQL);
         }
     }

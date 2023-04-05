@@ -76,25 +76,31 @@ pageEncoding="UTF-8"%>
             </div>
           </div>
         <%} %>
+       
       </div>
     </div>
     
     <br>
     <br>
 
-    <div class="row">
-        <div class="col-lg-8"></div>
-        <div class="col-lg-2">
-            <form method="post" action="endSession">
-                <input hidden name="room_code" value="<%= request.getParameter("room_code") %>">
-                    <button class="btn btn-danger" type="submit" style="color: white;width: 100%;">End Session</button>               
-            </form>            
+
+    <div class="row" style="height: 50px;">
+      <div class="col-lg-8"></div>
+      <div class="col-lg-2">
+        <div class="row">
+          <form class="col-lg-6" method="post" action="endSession">
+            <input hidden name="room_code" value="<%= request.getParameter("room_code") %>">
+                <button class="btn btn-danger h-100" type="submit" style="color: white;width: 100%;">End Session</button>               
+          </form>    
+          <div class="col-lg-6">
+            <a href="createQuestion.jsp?room_code=<%=request.getParameter("room_code")%></a>"><button class="btn btn-primary">Create Question Set</button></a>
+          </div>     
         </div>
-    </div>
-
-
-
-
+          
+      </div>
+      <div class="col-lg-2"></div>
+      
+  </div>
    
  
 
