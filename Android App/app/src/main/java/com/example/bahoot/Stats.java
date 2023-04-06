@@ -33,11 +33,12 @@ public class Stats extends AppCompatActivity {
         userID = extras.getString("userID");
         roomCode = extras.getString("room_code");
         name = extras.getString("name");
+        Log.d("Room Code Stats", roomCode);
 
         tvScore = findViewById(R.id.scoreText);
         HttpTask httpTask = new HttpTask();
         httpTask.setGetScore(true);
-        httpTask.execute("http://10.0.2.2:9999/Bahoot/getScore?userID="
+        httpTask.execute("http://10.91.253.112:9999/Bahoot/getScore?userID="
                 +userID+"&room_code="+roomCode); // Send HTTP request
     }
 

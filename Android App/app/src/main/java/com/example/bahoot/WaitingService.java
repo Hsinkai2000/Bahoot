@@ -73,7 +73,7 @@ public class WaitingService extends Service {
             String currentQuestionSQL = "SELECT current_question_id FROM session WHERE" +
                     " room_code = '" + roomCode + "'";
 
-            url = new URL("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+            url = new URL("http://10.91.253.112:9999/Bahoot/SQL?sql=" +
                     currentQuestionSQL);
 
             conn = (HttpURLConnection) url.openConnection();

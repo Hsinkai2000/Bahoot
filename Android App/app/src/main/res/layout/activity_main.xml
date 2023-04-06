@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:indeterminate="false"
-        android:max="20"
+        android:max="17"
         android:minHeight="24dp"
         android:minWidth="200dp"
         android:progress="0"

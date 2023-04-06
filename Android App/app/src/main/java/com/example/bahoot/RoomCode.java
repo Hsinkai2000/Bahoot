@@ -31,17 +31,25 @@ public class RoomCode extends AppCompatActivity {
     private String userID;
     private String name;
 
+    private String previousRoomCode = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room_code);
 
+        roomCodeField = findViewById(R.id.room_code_field);
+
         Bundle extras = getIntent().getExtras();
         userID = extras.getString("userID");
         name = extras.getString("name");
+        if (extras.getString("room_code") != null) {
+            previousRoomCode = extras.getString("room_code");
+            roomCodeField.setText(previousRoomCode);
+        }
 
-        roomCodeField = findViewById(R.id.room_code_field);
+
     }
 
     public void scanCode(View view) {
@@ -71,7 +79,7 @@ public class RoomCode extends AppCompatActivity {
             String SQL = "SELECT * FROM session WHERE " +
                     "room_code = '"+ roomCodeStr + "'";
 
-            new HttpTask().execute("http://10.0.2.2:9999/Bahoot/SQL?sql=" +
+            new HttpTask().execute("http://10.91.253.112:9999/Bahoot/SQL?sql=" +
                     SQL);
         }
     }

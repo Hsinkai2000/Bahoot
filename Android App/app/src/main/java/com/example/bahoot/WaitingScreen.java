@@ -88,7 +88,7 @@ public class WaitingScreen extends AppCompatActivity {
         intent.putExtra("name",name);
         intent.putExtra("room_code",roomCode);
         startActivity(intent);
-        finish();
+
         Log.d("huh??",roomCode);
     }
 
